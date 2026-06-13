@@ -1,5 +1,3 @@
-// For adding custom fonts with other frameworks, see:
-// https://tailwindcss.com/docs/font-family
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
@@ -24,9 +22,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={cn('font-sans', inter.variable)}>
+    <html
+      lang="pt-BR"
+      data-scroll-behavior="smooth"
+      className={cn('font-sans', inter.variable)}
+    >
       <body className={`${inter.variable} ${fontMono.variable} antialiased`}>
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   )
