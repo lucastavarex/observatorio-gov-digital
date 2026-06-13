@@ -42,6 +42,37 @@ Acesse [http://localhost:3000](http://localhost:3000).
 
 ---
 
+## Qualidade de código
+
+O projeto usa [Biome](https://biomejs.dev/) para lint, formatação e organização de imports, e [Lefthook](https://lefthook.dev/) para rodar checagens automaticamente no pre-commit.
+
+### Scripts disponíveis
+
+```bash
+npm run lint    # verifica lint, formatação e imports em todo o projeto
+npm run format  # formata arquivos manualmente (sem lint)
+```
+
+### Git hooks (pre-commit)
+
+Após `npm install`, o script `prepare` instala os hooks do Lefthook. Em cada commit, o Biome roda **apenas nos arquivos staged**, aplica correções seguras (`check --write`) e re-adiciona os arquivos corrigidos ao stage.
+
+Se os hooks não estiverem ativos (por exemplo, após clonar o repositório sem rodar `npm install`), execute:
+
+```bash
+npx lefthook install
+```
+
+Para testar o hook manualmente, sem commitar:
+
+```bash
+npx lefthook run pre-commit
+```
+
+Se o commit for bloqueado, corrija os erros reportados pelo Biome ou rode `npm run lint` para inspecionar o projeto inteiro.
+
+---
+
 ## Roadmap
 
 | Marco | Prazo |
