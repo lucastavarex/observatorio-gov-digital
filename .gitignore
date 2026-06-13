@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+src/assets/obgd_v6_fontes_e_indicadores.xlsx
