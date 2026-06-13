@@ -9,8 +9,6 @@ Portal público e interativo de monitoramento da transformação digital no seto
 - MBC (Movimento Brasil Competitivo) — parceiro institucional, manterá a plataforma na AWS no longo prazo
 - MGI (Ministério da Gestão e Inovação em Serviços Públicos) — vinculação institucional
 
-**Contrato:** 5h semanais · 6 meses · R$ 12.000/mês (desenvolvedor autônomo)
-
 **Princípio central:** Acessibilidade e clareza para o público geral, não especialistas.
 
 ## Contexto e escopo
