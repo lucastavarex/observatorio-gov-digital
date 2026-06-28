@@ -12,19 +12,6 @@ Portal público e interativo de monitoramento da transformação digital no seto
 
 **Parceiros:** Insper/CGPP (execução técnica) · MBC/Movimento Brasil Competitivo (financiamento) · MGI/Ministério da Gestão e Inovação (vinculação institucional).
 
-**Prazo:** primeira versão pública em novembro de 2026; operação completa até dezembro de 2027.
-
----
-
-## Estado atual da implementação
-
-O projeto está em fase inicial. Apenas o esqueleto existe:
-
-- `src/app/(app)/page.tsx` — única página renderizada; exibe apenas "Em construção..."
-- `src/components/ui/` — 3 componentes shadcn instalados: `Button`, `Breadcrumb`, `Sheet`
-- `src/components/home/` — **vazio** (componentes da home page ainda não foram criados)
-- `src/data/` — **vazio** (camada de dados ainda não foi implementada)
-
 Antes de criar qualquer componente ou rota nova, confirme o escopo de features com o usuário — o produto ainda está em definição.
 
 ---
@@ -44,6 +31,7 @@ src/
 ├── data/                   # vazio — funções de acesso aos dados
 ├── lib/
 │   └── utils.ts            # cn() — clsx + tailwind-merge
+├── local_assets/           # gitignored — documentos e CSVs do cliente (ver abaixo)
 └── proxy.ts                # middleware Next.js (passthrough)
 ```
 
@@ -70,15 +58,19 @@ Cada objetivo recebe um `sub_indice` de 0–100. A média dos sub-índices dispo
 
 ---
 
-## Dados disponíveis
+## Dados disponíveis (`src/local_assets/`)
 
-Três escopos de dados, cada um com os mesmos 3 arquivos:
+A pasta `src/local_assets/` é **gitignored** — Não commitar.
 
-| Escopo | Abrangência | Registros aprox. |
+### CSVs de índice (`indice_obgd/csvs/`)
+
+Três escopos disponíveis, cada um com os mesmos 3 arquivos:
+
+| Pasta | Escopo | Registros aprox. |
 |---|---|---|
-| Nacional | Brasil agregado | 10 objetivos |
-| Estadual | 27 estados (UF) | 27 × 10 objetivos |
-| Capitais | 27 capitais | 27 × 10 objetivos |
+| `indice_nacional/` | Brasil agregado | 10 objetivos |
+| `indice_estadual/` | 27 estados (UF) | 27 × 10 objetivos |
+| `indice_capitais/` | 27 capitais | 27 × 10 objetivos |
 
 **`indice_*.csv`** — sub-índice por objetivo por ente:
 ```
@@ -106,6 +98,15 @@ rank, categoria, indice_geral, n_objetivos_com_dados
 - Índice nacional: **58,26**
 - Top 3 estados: PI 93,52 · MG 92,27 · RJ 92,02
 - Top 3 capitais: Belo Horizonte 94,89 · Brasília 94,84 · Salvador 94,80
+
+### Outros arquivos em `local_assets/`
+
+- `obgd_v6_fontes_e_indicadores.xlsx` — definição completa dos indicadores e fontes (v6)
+- `Obs Brasileiro Governo Digital Kick Off Dez 2025.pptx` — deck de kick-off
+- `Observatório Brasileiro de Governo Digital_Rev17062025.docx` — documento principal do projeto
+- `Projeto de Pesquisa_Observatório Brasileiro de Governo Digital_Contexto.pdf` — contexto de pesquisa
+- `RelatorioCapitais.docx-1.pdf` — relatório de capitais
+- `RelatorioParcial_IndiceEstadual.docx-1.pdf` — relatório parcial do índice estadual
 
 ---
 
