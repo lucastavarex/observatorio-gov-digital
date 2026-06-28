@@ -40,5 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-src/assets/obgd_v6_fontes_e_indicadores.xlsx
-src/assets/perguntas_respostas.md
+# local assets
+src/local_assets/
