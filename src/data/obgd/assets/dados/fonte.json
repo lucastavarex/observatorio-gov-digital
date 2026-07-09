@@ -1,0 +1,138 @@
+[
+  {
+    "id": "tic_gov",
+    "nome": "TIC Governo Eletrônico",
+    "instituicao": "CETIC.br",
+    "ano_base": 2023,
+    "formato": null,
+    "granularidade": ["orgaos", "prefeituras", "prefeituras_uf"],
+    "anos_disponiveis": [2013, 2015, 2017, 2019, 2021, 2023]
+  },
+  {
+    "id": "tic_saude",
+    "nome": "TIC Saúde",
+    "instituicao": "CETIC.br",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["estabelecimentos"],
+    "anos_disponiveis": [
+      2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024
+    ]
+  },
+  {
+    "id": "tic_educacao",
+    "nome": "TIC Educação",
+    "instituicao": "CETIC.br",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["escolas", "professores"],
+    "anos_disponiveis": [
+      2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022,
+      2023, 2024
+    ]
+  },
+  {
+    "id": "tic_cultura",
+    "nome": "TIC Cultura",
+    "instituicao": "CETIC.br",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["equipamentos_culturais"],
+    "anos_disponiveis": [2016, 2018, 2020, 2022, 2024]
+  },
+  {
+    "id": "tic_domicilios",
+    "nome": "TIC Domicílios",
+    "instituicao": "CETIC.br",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["individuos"],
+    "anos_disponiveis": [
+      2008, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024
+    ]
+  },
+  {
+    "id": "iesgo",
+    "nome": "iESGo",
+    "instituicao": "TCU",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["orgaos_federais"],
+    "anos_disponiveis": [2024]
+  },
+  {
+    "id": "iospd",
+    "nome": "IOSPD",
+    "instituicao": "ABEP-TIC",
+    "ano_base": 2025,
+    "formato": null,
+    "granularidade": ["uf"],
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025]
+  },
+  {
+    "id": "anatel",
+    "nome": "ANATEL Telecomunicações",
+    "instituicao": "ANATEL",
+    "ano_base": 2025,
+    "formato": null,
+    "granularidade": ["municipio", "uf", "nacional"],
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025]
+  },
+  {
+    "id": "censo_escolar",
+    "nome": "Censo Escolar",
+    "instituicao": "INEP",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["escola", "uf", "nacional"],
+    "anos_disponiveis": [
+      2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
+      2019, 2020, 2021, 2022, 2023, 2024
+    ]
+  },
+  {
+    "id": "pnad_tic",
+    "nome": "PNAD Contínua TIC",
+    "instituicao": "IBGE",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["uf", "nacional"],
+    "anos_disponiveis": [2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024]
+  },
+  {
+    "id": "sgd_sat",
+    "nome": "Painel de Satisfação Gov.br",
+    "instituicao": "SGD/MGI",
+    "ano_base": 2025,
+    "formato": null,
+    "granularidade": ["nacional"],
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025]
+  },
+  {
+    "id": "munic",
+    "nome": "MUNIC - Pesquisa de Informações Básicas Municipais",
+    "instituicao": "IBGE",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["prefeituras"],
+    "anos_disponiveis": [2019, 2024]
+  },
+  {
+    "id": "estadic",
+    "nome": "ESTADIC - Pesquisa de Informações Básicas Estaduais",
+    "instituicao": "IBGE",
+    "ano_base": 2024,
+    "formato": null,
+    "granularidade": ["governo_estadual"],
+    "anos_disponiveis": [2024]
+  },
+  {
+    "id": "igovsisp",
+    "nome": "iGovSISP",
+    "instituicao": "SGD/MGI",
+    "ano_base": 2025,
+    "formato": null,
+    "granularidade": ["orgaos_federais_sisp"],
+    "anos_disponiveis": [2023, 2024, 2025]
+  }
+]

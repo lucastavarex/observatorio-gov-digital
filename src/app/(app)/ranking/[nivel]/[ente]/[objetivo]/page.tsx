@@ -2,20 +2,11 @@ import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { VariavelAcoes } from '@/components/shared/variavel-acoes'
-import { getEnte, getNivel, getObjetivoScore, niveis } from '@/data/indicators'
+import { formatScore, getObjetivoScore, niveis } from '@/data/indicators'
+import { generateObjetivoParams, getEnteComVariaveis } from '@/data/obgd/server'
 
 export function generateStaticParams() {
-  return niveis.flatMap(nivel =>
-    nivel.entes.flatMap(ente =>
-      ente.objetivos
-        .filter(o => o.nota !== null)
-        .map(o => ({
-          nivel: nivel.key,
-          ente: ente.slug,
-          objetivo: o.objetivoSlug,
-        }))
-    )
-  )
+  return generateObjetivoParams()
 }
 
 export default async function ObjetivoIndicadorPage({
@@ -28,8 +19,8 @@ export default async function ObjetivoIndicadorPage({
     ente: enteSlug,
     objetivo: objetivoSlug,
   } = await params
-  const nivel = getNivel(nivelKey)
-  const ente = getEnte(nivelKey, enteSlug)
+  const nivel = niveis.find(n => n.key === nivelKey)
+  const ente = getEnteComVariaveis(nivelKey, enteSlug)
   const objetivo = ente ? getObjetivoScore(ente, objetivoSlug) : undefined
 
   if (!nivel || !ente || !objetivo || objetivo.nota === null) {
@@ -51,6 +42,9 @@ export default async function ObjetivoIndicadorPage({
           <div>
             <span className="block text-sm font-medium text-muted-foreground">
               {ente.nome} · Objetivo {String(objetivo.numero).padStart(2, '0')}
+              {objetivo.posicaoNoObjetivo != null && (
+                <> · {objetivo.posicaoNoObjetivo}º no ranking</>
+              )}
             </span>
             <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text text-4xl font-bold leading-tight tracking-tight text-transparent sm:text-5xl">
               {objetivo.titulo}
@@ -61,7 +55,7 @@ export default async function ObjetivoIndicadorPage({
               Sub-índice do objetivo
             </span>
             <span className="block bg-linear-to-br from-primary to-primary-glow bg-clip-text text-7xl font-bold leading-tight tracking-tight tabular-nums text-transparent sm:text-8xl">
-              {objetivo.nota}
+              {formatScore(objetivo.nota)}
             </span>
           </div>
         </div>
@@ -77,34 +71,41 @@ export default async function ObjetivoIndicadorPage({
         </div>
 
         <div className="-mx-6 mt-3 border-t sm:-mx-10">
-          {objetivo.variaveis.map(variavel => (
-            <div
-              key={variavel.slug}
-              className="flex items-center gap-4 border-b px-6 py-6 transition-colors hover:bg-primary/5 sm:px-10"
-            >
-              <div className="min-w-0">
-                <Link
-                  href={`/ranking/${nivel.key}/${ente.slug}/${objetivo.objetivoSlug}/${variavel.slug}`}
-                  className="block min-w-0"
-                >
-                  <span className="block truncate text-sm font-medium text-primary">
-                    {variavel.nome}
+          {objetivo.variaveis.length === 0 ? (
+            <p className="px-6 py-8 text-sm text-muted-foreground sm:px-10">
+              Não há indicadores detalhados disponíveis para este objetivo neste
+              ente.
+            </p>
+          ) : (
+            objetivo.variaveis.map(variavel => (
+              <div
+                key={variavel.slug}
+                className="flex items-center gap-4 border-b px-6 py-6 transition-colors hover:bg-primary/5 sm:px-10"
+              >
+                <div className="min-w-0">
+                  <Link
+                    href={`/ranking/${nivel.key}/${ente.slug}/${objetivo.objetivoSlug}/${variavel.slug}`}
+                    className="block min-w-0"
+                  >
+                    <span className="block truncate text-sm font-medium text-primary">
+                      {variavel.nome}
+                    </span>
+                  </Link>
+                  <span className="mt-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                    Fonte: {variavel.fonte} · {variavel.anoFonte}
                   </span>
-                </Link>
-                <span className="mt-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                  Fonte: {variavel.fonte}
+                </div>
+                <VariavelAcoes
+                  nome={variavel.nome}
+                  fonteUrl={variavel.fonteUrl}
+                  arquivo={variavel.arquivo}
+                />
+                <span className="ml-auto shrink-0 text-sm font-semibold tabular-nums text-foreground">
+                  {formatScore(variavel.nota)}
                 </span>
               </div>
-              <VariavelAcoes
-                nome={variavel.nome}
-                fonteUrl={variavel.fonteUrl}
-                arquivo={variavel.arquivo}
-              />
-              <span className="ml-auto shrink-0 text-sm font-semibold tabular-nums text-foreground">
-                {variavel.nota}
-              </span>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
     </section>

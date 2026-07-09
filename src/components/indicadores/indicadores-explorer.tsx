@@ -1,6 +1,5 @@
 'use client'
 
-import { ChevronDown } from 'lucide-react'
 import * as React from 'react'
 import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
 import {
@@ -8,6 +7,7 @@ import {
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
 import {
+  ANO_INDICE,
   type Ente,
   formatScore,
   mediasPorObjetivo,
@@ -21,14 +21,11 @@ import { cn } from '@/lib/utils'
 const CORES = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)']
 const MEDIA_COR = 'var(--chart-4)'
 const MAX_ENTES = 3
-const ANOS = [2026, 2025, 2024, 2023, 2022]
 
 export function IndicadoresExplorer() {
   const [nivelKey, setNivelKey] = React.useState<NivelKey | null>(null)
   const [enteSlugs, setEnteSlugs] = React.useState<string[]>([])
   const [objetivoSlug, setObjetivoSlug] = React.useState<string | null>(null)
-  const [ano, setAno] = React.useState(ANOS[0])
-  const [anoAberto, setAnoAberto] = React.useState(false)
 
   const nivel = niveis.find(n => n.key === nivelKey) ?? null
   const medias = nivel ? mediasPorObjetivo(nivel) : []
@@ -93,12 +90,21 @@ export function IndicadoresExplorer() {
 
   const entesObjetivo =
     nivel && objIndex >= 0
-      ? nivel.entes.map(e => ({
-          nome: e.nome,
-          indiceGeral: e.objetivos[objIndex]?.nota ?? 0,
-        }))
+      ? nivel.entes
+          .map(e => {
+            const nota = e.objetivos[objIndex]?.nota
+            return nota != null ? { nome: e.nome, indiceGeral: nota } : null
+          })
+          .filter((x): x is { nome: string; indiceGeral: number } => x !== null)
       : []
-  const destaques = entesSelecionados.map(e => e.objetivos[objIndex]?.nota ?? 0)
+  const destaques = entesSelecionados
+    .map(e => e.objetivos[objIndex]?.nota)
+    .filter((n): n is number => typeof n === 'number')
+
+  const mediaIndiceGeral =
+    nivel && nivel.entes.length
+      ? nivel.entes.reduce((s, e) => s + e.indiceGeral, 0) / nivel.entes.length
+      : null
 
   return (
     <section className="pb-12">
@@ -110,7 +116,7 @@ export function IndicadoresExplorer() {
           Explorar indicadores
         </h1>
 
-        {/* Filtros de nível — largura total, linha pontilhada até a borda direita */}
+        {/* Filtros de nível — largura total */}
         <div className="dash-b -mx-6 mt-10 px-6 pb-4 sm:-mx-10 sm:px-10">
           <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
             Nível de governo
@@ -137,54 +143,12 @@ export function IndicadoresExplorer() {
               })}
             </div>
 
-            {/* Filtro por ano */}
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => setAnoAberto(v => !v)}
-                aria-expanded={anoAberto}
-                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-primary/5 hover:text-primary"
-              >
-                {ano}
-                <ChevronDown
-                  aria-hidden="true"
-                  className={cn(
-                    'size-4 transition-transform',
-                    anoAberto && 'rotate-180'
-                  )}
-                />
-              </button>
-              {anoAberto && (
-                <>
-                  <button
-                    type="button"
-                    aria-label="Fechar seletor de ano"
-                    className="fixed inset-0 z-10 cursor-default"
-                    onClick={() => setAnoAberto(false)}
-                  />
-                  <div className="absolute right-0 z-20 mt-1 w-28 rounded-lg border bg-background p-1 shadow-md">
-                    {ANOS.map(a => (
-                      <button
-                        key={a}
-                        type="button"
-                        onClick={() => {
-                          setAno(a)
-                          setAnoAberto(false)
-                        }}
-                        className={cn(
-                          'block w-full rounded-md px-3 py-1.5 text-left text-sm transition-colors',
-                          a === ano
-                            ? 'bg-primary/10 font-medium text-primary'
-                            : 'text-foreground hover:bg-primary/5 hover:text-primary'
-                        )}
-                      >
-                        {a}
-                      </button>
-                    ))}
-                  </div>
-                </>
-              )}
-            </div>
+            <span
+              className="rounded-full border border-border px-4 py-2.5 text-sm font-medium text-muted-foreground"
+              title="Snapshot da edição atual do índice"
+            >
+              Edição {ANO_INDICE}
+            </span>
           </div>
         </div>
 
@@ -214,6 +178,8 @@ export function IndicadoresExplorer() {
                   const idx = enteSlugs.indexOf(e.slug)
                   const isActive = idx >= 0
                   const bloqueado = !isActive && enteSlugs.length >= MAX_ENTES
+                  const subIndice =
+                    objIndex >= 0 ? e.objetivos[objIndex]?.nota : null
                   return (
                     <li key={e.slug}>
                       <button
@@ -239,8 +205,17 @@ export function IndicadoresExplorer() {
                           )}
                           <span className="truncate">{e.nome}</span>
                         </span>
-                        <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
-                          {formatScore(e.indiceGeral)}
+                        <span className="flex shrink-0 flex-col items-end leading-tight">
+                          <span className="text-xs tabular-nums text-muted-foreground">
+                            {subIndice != null
+                              ? formatScore(subIndice)
+                              : formatScore(e.indiceGeral)}
+                          </span>
+                          {subIndice != null && (
+                            <span className="text-[10px] tabular-nums text-muted-foreground/70">
+                              geral {formatScore(e.indiceGeral)}
+                            </span>
+                          )}
                         </span>
                       </button>
                     </li>
@@ -335,14 +310,22 @@ export function IndicadoresExplorer() {
                   </div>
                 </div>
 
-                {nivel!.isRanking && nivel!.entes.length >= 5 && (
+                {nivel!.isRanking && entesObjetivo.length >= 5 && (
                   <div>
                     <h2 className="text-sm font-bold text-foreground">
                       Distribuição · {objetivoTitulo}
                     </h2>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Nota dos {nivel!.entes.length} entes no objetivo, com
-                      destaque para os selecionados.
+                      Sub-índice dos {entesObjetivo.length} entes no objetivo,
+                      com destaque para os selecionados
+                      {mediaIndiceGeral != null && (
+                        <>
+                          . Índice geral médio do nível:{' '}
+                          {formatScore(mediaIndiceGeral)} (referência
+                          provisória)
+                        </>
+                      )}
+                      .
                     </p>
                     <div className="mt-4">
                       <DistribuicaoChart

@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "tipo": "nacional",
+    "codigo": "BR",
+    "nome": "Brasil",
+    "uf_sigla": null,
+    "regiao": null
+  },
+  {
+    "id": 2,
+    "tipo": "uf",
+    "codigo": "RO",
+    "nome": "Rondônia",
+    "uf_sigla": "RO",
+    "regiao": "N"
+  },
+  {
+    "id": 3,
+    "tipo": "uf",
+    "codigo": "AC",
+    "nome": "Acre",
+    "uf_sigla": "AC",
+    "regiao": "N"
+  },
+  {
+    "id": 4,
+    "tipo": "uf",
+    "codigo": "AM",
+    "nome": "Amazonas",
+    "uf_sigla": "AM",
+    "regiao": "N"
+  },
+  {
+    "id": 5,
+    "tipo": "uf",
+    "codigo": "RR",
+    "nome": "Roraima",
+    "uf_sigla": "RR",
+    "regiao": "N"
+  },
+  {
+    "id": 6,
+    "tipo": "uf",
+    "codigo": "PA",
+    "nome": "Pará",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 7,
+    "tipo": "uf",
+    "codigo": "AP",
+    "nome": "Amapá",
+    "uf_sigla": "AP",
+    "regiao": "N"
+  },
+  {
+    "id": 8,
+    "tipo": "uf",
+    "codigo": "TO",
+    "nome": "Tocantins",
+    "uf_sigla": "TO",
+    "regiao": "N"
+  },
+  {
+    "id": 9,
+    "tipo": "uf",
+    "codigo": "MA",
+    "nome": "Maranhão",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 10,
+    "tipo": "uf",
+    "codigo": "PI",
+    "nome": "Piauí",
+    "uf_sigla": "PI",
+    "regiao": "NE"
+  },
+  {
+    "id": 11,
+    "tipo": "uf",
+    "codigo": "CE",
+    "nome": "Ceará",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 12,
+    "tipo": "uf",
+    "codigo": "RN",
+    "nome": "Rio Grande do Norte",
+    "uf_sigla": "RN",
+    "regiao": "NE"
+  },
+  {
+    "id": 13,
+    "tipo": "uf",
+    "codigo": "PB",
+    "nome": "Paraíba",
+    "uf_sigla": "PB",
+    "regiao": "NE"
+  },
+  {
+    "id": 14,
+    "tipo": "uf",
+    "codigo": "PE",
+    "nome": "Pernambuco",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 15,
+    "tipo": "uf",
+    "codigo": "AL",
+    "nome": "Alagoas",
+    "uf_sigla": "AL",
+    "regiao": "NE"
+  },
+  {
+    "id": 16,
+    "tipo": "uf",
+    "codigo": "SE",
+    "nome": "Sergipe",
+    "uf_sigla": "SE",
+    "regiao": "NE"
+  },
+  {
+    "id": 17,
+    "tipo": "uf",
+    "codigo": "BA",
+    "nome": "Bahia",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 18,
+    "tipo": "uf",
+    "codigo": "MG",
+    "nome": "Minas Gerais",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 19,
+    "tipo": "uf",
+    "codigo": "ES",
+    "nome": "Espírito Santo",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 20,
+    "tipo": "uf",
+    "codigo": "RJ",
+    "nome": "Rio de Janeiro",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 21,
+    "tipo": "uf",
+    "codigo": "SP",
+    "nome": "São Paulo",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 22,
+    "tipo": "uf",
+    "codigo": "PR",
+    "nome": "Paraná",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 23,
+    "tipo": "uf",
+    "codigo": "SC",
+    "nome": "Santa Catarina",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 24,
+    "tipo": "uf",
+    "codigo": "RS",
+    "nome": "Rio Grande do Sul",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 25,
+    "tipo": "uf",
+    "codigo": "MS",
+    "nome": "Mato Grosso do Sul",
+    "uf_sigla": "MS",
+    "regiao": "CO"
+  },
+  {
+    "id": 26,
+    "tipo": "uf",
+    "codigo": "MT",
+    "nome": "Mato Grosso",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 27,
+    "tipo": "uf",
+    "codigo": "GO",
+    "nome": "Goiás",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 28,
+    "tipo": "uf",
+    "codigo": "DF",
+    "nome": "Distrito Federal",
+    "uf_sigla": "DF",
+    "regiao": "CO"
+  },
+  {
+    "id": 29,
+    "tipo": "capital",
+    "codigo": "1100205",
+    "nome": "Porto Velho",
+    "uf_sigla": "RO",
+    "regiao": "N"
+  },
+  {
+    "id": 30,
+    "tipo": "capital",
+    "codigo": "1200401",
+    "nome": "Rio Branco",
+    "uf_sigla": "AC",
+    "regiao": "N"
+  },
+  {
+    "id": 31,
+    "tipo": "capital",
+    "codigo": "1302603",
+    "nome": "Manaus",
+    "uf_sigla": "AM",
+    "regiao": "N"
+  },
+  {
+    "id": 32,
+    "tipo": "capital",
+    "codigo": "1400100",
+    "nome": "Boa Vista",
+    "uf_sigla": "RR",
+    "regiao": "N"
+  },
+  {
+    "id": 33,
+    "tipo": "capital",
+    "codigo": "1501402",
+    "nome": "Belém",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 34,
+    "tipo": "capital",
+    "codigo": "1600303",
+    "nome": "Macapá",
+    "uf_sigla": "AP",
+    "regiao": "N"
+  },
+  {
+    "id": 35,
+    "tipo": "capital",
+    "codigo": "1721000",
+    "nome": "Palmas",
+    "uf_sigla": "TO",
+    "regiao": "N"
+  },
+  {
+    "id": 36,
+    "tipo": "capital",
+    "codigo": "2111300",
+    "nome": "São Luís",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 37,
+    "tipo": "capital",
+    "codigo": "2211001",
+    "nome": "Teresina",
+    "uf_sigla": "PI",
+    "regiao": "NE"
+  },
+  {
+    "id": 38,
+    "tipo": "capital",
+    "codigo": "2304400",
+    "nome": "Fortaleza",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 39,
+    "tipo": "capital",
+    "codigo": "2408102",
+    "nome": "Natal",
+    "uf_sigla": "RN",
+    "regiao": "NE"
+  },
+  {
+    "id": 40,
+    "tipo": "capital",
+    "codigo": "2507507",
+    "nome": "João Pessoa",
+    "uf_sigla": "PB",
+    "regiao": "NE"
+  },
+  {
+    "id": 41,
+    "tipo": "capital",
+    "codigo": "2611606",
+    "nome": "Recife",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 42,
+    "tipo": "capital",
+    "codigo": "2704302",
+    "nome": "Maceió",
+    "uf_sigla": "AL",
+    "regiao": "NE"
+  },
+  {
+    "id": 43,
+    "tipo": "capital",
+    "codigo": "2800308",
+    "nome": "Aracaju",
+    "uf_sigla": "SE",
+    "regiao": "NE"
+  },
+  {
+    "id": 44,
+    "tipo": "capital",
+    "codigo": "2927408",
+    "nome": "Salvador",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 45,
+    "tipo": "capital",
+    "codigo": "3106200",
+    "nome": "Belo Horizonte",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 46,
+    "tipo": "capital",
+    "codigo": "3205309",
+    "nome": "Vitória",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 47,
+    "tipo": "capital",
+    "codigo": "3304557",
+    "nome": "Rio de Janeiro",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 48,
+    "tipo": "capital",
+    "codigo": "3550308",
+    "nome": "São Paulo",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 49,
+    "tipo": "capital",
+    "codigo": "4106902",
+    "nome": "Curitiba",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 50,
+    "tipo": "capital",
+    "codigo": "4205407",
+    "nome": "Florianópolis",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 51,
+    "tipo": "capital",
+    "codigo": "4314902",
+    "nome": "Porto Alegre",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 52,
+    "tipo": "capital",
+    "codigo": "5002704",
+    "nome": "Campo Grande",
+    "uf_sigla": "MS",
+    "regiao": "CO"
+  },
+  {
+    "id": 53,
+    "tipo": "capital",
+    "codigo": "5103403",
+    "nome": "Cuiabá",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 54,
+    "tipo": "capital",
+    "codigo": "5208707",
+    "nome": "Goiânia",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 55,
+    "tipo": "capital",
+    "codigo": "5300108",
+    "nome": "Brasília",
+    "uf_sigla": "DF",
+    "regiao": "CO"
+  }
+]

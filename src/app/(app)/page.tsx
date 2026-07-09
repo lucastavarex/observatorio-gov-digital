@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 function getNivelEstadual() {
   const nivel = niveis.find(n => n.key === 'estadual')
   if (!nivel) {
-    throw new Error('Nível estadual não encontrado nos mocks')
+    throw new Error('Nível estadual não encontrado nos dados')
   }
   return nivel
 }
@@ -263,8 +263,14 @@ export default function HomePage() {
           </div>
           <div className="overflow-hidden rounded-2xl border bg-card p-4 shadow-sm">
             <EnteRankingList
-              entes={estadual.entes.slice(0, 6)}
+              entes={estadual.entes.slice(0, 6).map((e, i) => ({
+                slug: e.slug,
+                nome: e.nome,
+                valorPrincipal: e.indiceGeral,
+                posicao: i + 1,
+              }))}
               basePath="/ranking/estadual"
+              colunaValor="Índice geral"
             />
           </div>
         </div>

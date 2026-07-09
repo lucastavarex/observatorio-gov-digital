@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "nome": "Governança do Governo Digital",
+    "descricao": "Qualificar a gestão e governança das políticas de governo digital, promovendo a colaboração entre União, Distrito Federal, estados e municípios."
+  },
+  {
+    "id": 2,
+    "nome": "Qualidade dos Serviços Digitais",
+    "descricao": "Aprimorar a qualidade dos serviços públicos com abordagem inclusiva, acessível, proativa e em canais integrados de atendimento, com atenção à experiência dos usuários."
+  },
+  {
+    "id": 3,
+    "nome": "Identificação Única",
+    "descricao": "Implementar e manter solução estruturante de identificação única e nacional, com ampla disponibilidade e validade para todos os entes federados."
+  },
+  {
+    "id": 4,
+    "nome": "Segurança e LGPD",
+    "descricao": "Ampliar a resiliência e a maturidade das estruturas tecnológicas governamentais com atenção à privacidade, proteção de dados pessoais, segurança da informação e segurança cibernética."
+  },
+  {
+    "id": 5,
+    "nome": "Dados e Interoperabilidade",
+    "descricao": "Qualificar a tomada de decisões e a oferta de serviços nas organizações públicas com o reuso constante e de forma ética dos dados disponíveis para análises, interoperabilidade e personalização."
+  },
+  {
+    "id": 6,
+    "nome": "Infraestrutura",
+    "descricao": "Dispor de infraestrutura moderna, segura, escalável e robusta para a implantação e evolução de soluções de governo digital, promovendo soluções estruturantes compartilhadas."
+  },
+  {
+    "id": 7,
+    "nome": "Inovação e Tecnologias Emergentes",
+    "descricao": "Estimular e fomentar o desenvolvimento do ecossistema de inovação e de governo digital, envolvendo todos os entes federados e a sociedade, gerando novas oportunidades."
+  },
+  {
+    "id": 8,
+    "nome": "Eficiência e Processos",
+    "descricao": "Otimizar e promover a eficiência dos processos das organizações públicas por meio da racionalização de procedimentos e compartilhamento de soluções para problemas comuns."
+  },
+  {
+    "id": 9,
+    "nome": "Transparência e Participação",
+    "descricao": "Contribuir para a ampliação da abertura e da transparência das organizações públicas, para legitimar o controle e a participação social."
+  },
+  {
+    "id": 10,
+    "nome": "Competências em Governo Digital",
+    "descricao": "Desenvolver competências nas pessoas e equipes para consolidar a cultura de governo digital e inovação nas organizações públicas."
+  }
+]

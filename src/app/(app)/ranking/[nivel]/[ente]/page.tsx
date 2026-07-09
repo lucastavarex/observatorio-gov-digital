@@ -23,16 +23,26 @@ export function generateStaticParams() {
 
 export default async function EntePage({
   params,
+  searchParams,
 }: {
   params: Promise<{ nivel: string; ente: string }>
+  searchParams: Promise<{ objetivo?: string }>
 }) {
   const { nivel: nivelKey, ente: enteSlug } = await params
+  const { objetivo: objetivoQuery } = await searchParams
   const nivel = getNivel(nivelKey)
   const ente = getEnte(nivelKey, enteSlug)
 
   if (!nivel || !ente) {
     notFound()
   }
+
+  const objetivoAtivo =
+    ente.objetivos.find(
+      o => o.objetivoSlug === objetivoQuery && o.nota !== null
+    ) ??
+    ente.objetivos.find(o => o.nota !== null) ??
+    ente.objetivos[0]
 
   const medias = mediasPorObjetivo(nivel)
   const radarEixos = ente.objetivos.map(objetivo => ({
@@ -58,7 +68,20 @@ export default async function EntePage({
       : []),
   ]
   const semDados = ente.objetivos.filter(o => o.nota === null)
-  const mostrarDistribuicao = nivel.isRanking && nivel.entes.length >= 5
+  const mostrarDistribuicao =
+    nivel.isRanking &&
+    nivel.entes.length >= 5 &&
+    objetivoAtivo?.nota !== null &&
+    objetivoAtivo?.nota !== undefined
+
+  const entesNoObjetivo = nivel.entes
+    .map(e => {
+      const obj = e.objetivos.find(
+        o => o.objetivoSlug === objetivoAtivo.objetivoSlug
+      )
+      return obj?.nota != null ? { nome: e.nome, indiceGeral: obj.nota } : null
+    })
+    .filter((x): x is { nome: string; indiceGeral: number } => x !== null)
 
   return (
     <section className="pb-12">
@@ -79,13 +102,30 @@ export default async function EntePage({
             <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text text-4xl font-bold leading-tight tracking-tight text-transparent sm:text-5xl">
               {ente.nome}
             </h1>
+            {objetivoAtivo?.nota != null && (
+              <p className="mt-2 text-sm text-muted-foreground">
+                Obj. {String(objetivoAtivo.numero).padStart(2, '0')} —{' '}
+                {objetivoAtivo.titulo}
+                {objetivoAtivo.posicaoNoObjetivo != null && (
+                  <>
+                    {' '}
+                    · {objetivoAtivo.posicaoNoObjetivo}º no ranking do objetivo
+                  </>
+                )}
+              </p>
+            )}
           </div>
           <div className="flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
             <span className="block pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
-              Índice Geral
+              Sub-índice do objetivo
             </span>
             <span className="block bg-linear-to-br from-primary to-primary-glow bg-clip-text text-7xl font-bold leading-tight tracking-tight tabular-nums text-transparent sm:text-8xl">
-              {formatScore(ente.indiceGeral)}
+              {objetivoAtivo?.nota != null
+                ? formatScore(objetivoAtivo.nota)
+                : '—'}
+            </span>
+            <span className="mt-1 block text-xs text-muted-foreground">
+              Índice geral (provisório): {formatScore(ente.indiceGeral)}
             </span>
           </div>
         </div>
@@ -137,19 +177,16 @@ export default async function EntePage({
           {mostrarDistribuicao && (
             <div>
               <h2 className="text-sm font-bold text-foreground">
-                Posição no nível
+                Posição no objetivo
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Distribuição do índice geral entre os {nivel.entes.length}{' '}
-                entes, com destaque para {ente.nome}.
+                Distribuição do sub-índice de {objetivoAtivo.titulo} entre os{' '}
+                {entesNoObjetivo.length} entes, com destaque para {ente.nome}.
               </p>
               <div className="mt-4">
                 <DistribuicaoChart
-                  entes={nivel.entes.map(e => ({
-                    nome: e.nome,
-                    indiceGeral: e.indiceGeral,
-                  }))}
-                  destaques={[ente.indiceGeral]}
+                  entes={entesNoObjetivo}
+                  destaques={[objetivoAtivo.nota!]}
                   selecionados={[ente.nome]}
                   alturaClasse="h-[26rem] sm:h-[30rem]"
                   horizontal
@@ -163,7 +200,7 @@ export default async function EntePage({
         {/* Cabeçalho da lista */}
         <div className="mt-14 flex items-center justify-between text-xs font-medium uppercase tracking-wide text-muted-foreground">
           <span>Objetivo da ENGD</span>
-          <span>Nota (0–100)</span>
+          <span>Sub-índice (0–100)</span>
         </div>
 
         <div className="-mx-6 mt-3 border-t sm:-mx-10">
@@ -188,7 +225,7 @@ export default async function EntePage({
                   </span>
                 ) : (
                   <span className="text-sm font-semibold tabular-nums text-foreground">
-                    {objetivo.nota}
+                    {formatScore(objetivo.nota!)}
                   </span>
                 )}
               </>

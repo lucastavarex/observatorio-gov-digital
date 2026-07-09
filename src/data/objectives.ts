@@ -14,11 +14,11 @@ export type Objective = {
 export const objectives: Objective[] = [
   {
     slug: 'gestao-e-governanca',
-    title: 'Gestão e Governança',
+    title: 'Governança do Governo Digital',
     summary:
-      'Qualificar a gestão e governança das políticas de governo digital, promovendo a colaboração entre União, estados, Distrito Federal e municípios.',
+      'Qualificar a gestão e governança das políticas de governo digital, promovendo a colaboração entre União, Distrito Federal, estados e municípios.',
     description:
-      'Qualificar a gestão e governança das políticas de governo digital, promovendo a colaboração entre União, estados, Distrito Federal e municípios. Uma estratégia com amplitude nacional e capilaridade em todos os municípios demanda diretrizes concretas para sua institucionalização e governança, articulando uma atuação em rede, replicável nas escalas regionais e locais, para estabelecer políticas de estado para a transformação digital dos governos, com sustentabilidade e previsão de recursos.',
+      'Qualificar a gestão e governança das políticas de governo digital, promovendo a colaboração entre União, Distrito Federal, estados e municípios. Uma estratégia com amplitude nacional e capilaridade em todos os municípios demanda diretrizes concretas para sua institucionalização e governança, articulando uma atuação em rede, replicável nas escalas regionais e locais, para estabelecer políticas de estado para a transformação digital dos governos, com sustentabilidade e previsão de recursos.',
     recommendations: [
       {
         label: 'Recomendação 1.1',
@@ -44,11 +44,11 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'qualidade-dos-servicos-publicos',
-    title: 'Qualidade dos Serviços Públicos',
+    title: 'Qualidade dos Serviços Digitais',
     summary:
-      'Aprimorar continuamente os serviços públicos com foco no cidadão, tornando-os inclusivos, acessíveis, descomplicados e eficientes.',
+      'Aprimorar a qualidade dos serviços públicos com abordagem inclusiva, acessível, proativa e em canais integrados de atendimento, com atenção à experiência dos usuários.',
     description:
-      'O foco é centrado no cidadão. A avaliação e a experiência do usuário devem orientar a eficiência governamental e intensificar a entrega de valor. Os serviços devem ser continuamente aprimorados, inclusivos, acessíveis, descomplicados e eficientes, contribuindo para um governo mais proativo e eficaz.',
+      'Aprimorar a qualidade dos serviços públicos com abordagem inclusiva, acessível, proativa e em canais integrados de atendimento, com atenção à experiência dos usuários. A avaliação e a experiência do usuário devem orientar a eficiência governamental e intensificar a entrega de valor.',
     recommendations: [
       {
         label: 'Recomendação 2.1',
@@ -74,11 +74,11 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'identidade-unica-do-cidadao',
-    title: 'Identidade Única do Cidadão',
+    title: 'Identificação Única',
     summary:
-      'Implementar uma solução estruturante de identificação única e nacional, vinculada à Carteira de Identidade Nacional, com segurança e validade em todo o país.',
+      'Implementar e manter solução estruturante de identificação única e nacional, com ampla disponibilidade e validade para todos os entes federados.',
     description:
-      'Implementar uma solução estruturante de identificação única e nacional, vinculada à Carteira de Identidade Nacional, com segurança e validade em todo o país. A identidade digital única funciona como conexão entre o mundo físico e o digital nos serviços públicos, reduzindo fraudes e burocracia.',
+      'Implementar e manter solução estruturante de identificação única e nacional, com ampla disponibilidade e validade para todos os entes federados. A identidade digital única funciona como conexão entre o mundo físico e o digital nos serviços públicos, reduzindo fraudes e burocracia.',
     recommendations: [
       {
         label: 'Recomendação 3.1',
@@ -112,9 +112,9 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'privacidade-e-seguranca',
-    title: 'Privacidade e Segurança',
+    title: 'Segurança e LGPD',
     summary:
-      'Ampliar a resiliência e a maturidade das estruturas tecnológicas governamentais com atenção à privacidade, proteção de dados, segurança da informação e segurança cibernética.',
+      'Ampliar a resiliência e a maturidade das estruturas tecnológicas governamentais com atenção à privacidade, proteção de dados pessoais, segurança da informação e segurança cibernética.',
     description:
       'Ampliar a resiliência e a maturidade das estruturas tecnológicas governamentais com atenção à privacidade, proteção de dados pessoais, segurança da informação e segurança cibernética. Um mundo cada vez mais digitalizado demanda proteção crescente para resguardar dados de cidadãos e governos contra ameaças cibernéticas, garantindo conformidade com requisitos de segurança e privacidade.',
     recommendations: [
@@ -142,9 +142,9 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'inteligencia-de-dados',
-    title: 'Inteligência de Dados',
+    title: 'Dados e Interoperabilidade',
     summary:
-      'Qualificar a tomada de decisões e a oferta de serviços com o reuso constante e ético dos dados disponíveis para análises, interoperabilidade e personalização.',
+      'Qualificar a tomada de decisões e a oferta de serviços nas organizações públicas com o reuso constante e de forma ética dos dados disponíveis para análises, interoperabilidade e personalização.',
     description:
       'Qualificar a tomada de decisões e a oferta de serviços nas organizações públicas com o reuso constante e de forma ética dos dados disponíveis para análises, interoperabilidade e personalização. A estratégia propõe eliminar a necessidade de os cidadãos reunirem documentos que o governo já possui, reduzindo a burocracia e permitindo um governo proativo, que atenda antes mesmo da solicitação.',
     recommendations: [
@@ -172,11 +172,11 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'infraestrutura-digital',
-    title: 'Infraestrutura Digital',
+    title: 'Infraestrutura',
     summary:
-      'Dispor de infraestrutura moderna, segura, escalável e robusta, com princípios de sustentabilidade, para a implantação e evolução de soluções de governo digital.',
+      'Dispor de infraestrutura moderna, segura, escalável e robusta para a implantação e evolução de soluções de governo digital, promovendo soluções estruturantes compartilhadas.',
     description:
-      'Dispor de infraestrutura moderna, segura, escalável e robusta, considerando princípios de sustentabilidade, para a implantação e evolução de soluções de governo digital, promovendo soluções estruturantes compartilhadas, uso de padrões comuns e a integração entre os entes federados. A infraestrutura que sustenta os serviços públicos digitais inclui conectividade, plataformas, capacidade de processamento, armazenamento e padrões tecnológicos.',
+      'Dispor de infraestrutura moderna, segura, escalável e robusta para a implantação e evolução de soluções de governo digital, promovendo soluções estruturantes compartilhadas, uso de padrões comuns e a integração entre os entes federados. A infraestrutura que sustenta os serviços públicos digitais inclui conectividade, plataformas, capacidade de processamento, armazenamento e padrões tecnológicos.',
     recommendations: [
       {
         label: 'Recomendação 6.1',
@@ -202,11 +202,11 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'ecossistema-de-inovacao',
-    title: 'Ecossistema de Inovação',
+    title: 'Inovação e Tecnologias Emergentes',
     summary:
-      'Estimular e promover o desenvolvimento do ecossistema de inovação e o uso de tecnologias emergentes de governo digital, envolvendo os entes federados e a sociedade.',
+      'Estimular e fomentar o desenvolvimento do ecossistema de inovação e de governo digital, envolvendo todos os entes federados e a sociedade, gerando novas oportunidades.',
     description:
-      'Estimular e promover o desenvolvimento do ecossistema de inovação e o uso de tecnologias emergentes de governo digital, envolvendo os entes federados e a sociedade. Busca-se criar um ambiente propício que reúna setor público, empresas, centros de pesquisa, aceleradoras e sociedade civil, com foco nas necessidades dos cidadãos e nas potencialidades governamentais.',
+      'Estimular e fomentar o desenvolvimento do ecossistema de inovação e de governo digital, envolvendo todos os entes federados e a sociedade, gerando novas oportunidades. Busca-se criar um ambiente propício que reúna setor público, empresas, centros de pesquisa, aceleradoras e sociedade civil, com foco nas necessidades dos cidadãos e nas potencialidades governamentais.',
     recommendations: [
       {
         label: 'Recomendação 7.1',
@@ -236,11 +236,11 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'eficiencia-e-colaboracao',
-    title: 'Eficiência e Colaboração',
+    title: 'Eficiência e Processos',
     summary:
-      'Otimizar e promover a eficiência dos processos das organizações públicas por meio da racionalização de procedimentos e do compartilhamento de soluções para problemas comuns.',
+      'Otimizar e promover a eficiência dos processos das organizações públicas por meio da racionalização de procedimentos e compartilhamento de soluções para problemas comuns.',
     description:
-      'Otimizar e promover a eficiência dos processos das organizações públicas por meio da racionalização de procedimentos e do compartilhamento de soluções para problemas comuns. Busca-se abandonar perspectivas analógicas e adotar uma lógica digital que maximize o valor da informação e a interoperabilidade.',
+      'Otimizar e promover a eficiência dos processos das organizações públicas por meio da racionalização de procedimentos e compartilhamento de soluções para problemas comuns. Busca-se abandonar perspectivas analógicas e adotar uma lógica digital que maximize o valor da informação e a interoperabilidade.',
     recommendations: [
       {
         label: 'Recomendação 8.1',
@@ -276,9 +276,9 @@ export const objectives: Objective[] = [
     slug: 'transparencia-e-participacao',
     title: 'Transparência e Participação',
     summary:
-      'Ampliar a abertura e a transparência das organizações públicas e potencializar a colaboração com a sociedade para entregar valor público.',
+      'Contribuir para a ampliação da abertura e da transparência das organizações públicas, para legitimar o controle e a participação social.',
     description:
-      'Contribuir para a ampliação da abertura e da transparência das organizações públicas, bem como potencializar a colaboração com a sociedade para entregar valor público. As tecnologias digitais permitem maior transparência das atividades e gastos públicos, abrindo novos canais para a participação cidadã nas decisões governamentais e expandindo dados abertos e meios de controle social.',
+      'Contribuir para a ampliação da abertura e da transparência das organizações públicas, para legitimar o controle e a participação social. As tecnologias digitais permitem maior transparência das atividades e gastos públicos, abrindo novos canais para a participação cidadã nas decisões governamentais e expandindo dados abertos e meios de controle social.',
     recommendations: [
       {
         label: 'Recomendação 9.1',
@@ -296,11 +296,11 @@ export const objectives: Objective[] = [
   },
   {
     slug: 'competencias-e-capacitacao',
-    title: 'Competências e Capacitação',
+    title: 'Competências em Governo Digital',
     summary:
-      'Desenvolver competências nas pessoas e equipes em governo digital e inovação nas organizações públicas, ampliando a atração e a retenção de talentos.',
+      'Desenvolver competências nas pessoas e equipes para consolidar a cultura de governo digital e inovação nas organizações públicas.',
     description:
-      'Desenvolver competências nas pessoas e equipes em governo digital e inovação nas organizações públicas, ampliando a atração e a retenção de talentos. A transformação digital requer desenvolver novos conhecimentos e habilidades, estabelecer uma nova cultura organizacional e fomentar o pensamento digital para melhorar o uso da tecnologia no governo.',
+      'Desenvolver competências nas pessoas e equipes para consolidar a cultura de governo digital e inovação nas organizações públicas. A transformação digital requer desenvolver novos conhecimentos e habilidades, estabelecer uma nova cultura organizacional e fomentar o pensamento digital para melhorar o uso da tecnologia no governo.',
     recommendations: [
       {
         label: 'Recomendação 10.1',
