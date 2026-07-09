@@ -21,17 +21,21 @@ Antes de criar qualquer componente ou rota nova, confirme o escopo de features c
 ```
 src/
 ├── app/
-│   ├── (app)/
-│   │   └── page.tsx        # placeholder "Em construção..."
-│   ├── globals.css         # design tokens (Tailwind v4 + shadcn)
-│   └── layout.tsx          # root layout (lang="pt-BR", Inter + JetBrains Mono)
+│   ├── (app)/              # rotas do portal (home, indicadores, ranking, …)
+│   ├── globals.css         # design tokens (Tailwind v4 + shadcn) + utilitários dash-*
+│   └── layout.tsx          # root layout (header, footer, Plus Jakarta Sans)
 ├── components/
-│   ├── home/               # vazio — componentes da página inicial
+│   ├── charts/             # recharts (radar, distribuição)
+│   ├── content/            # notícias, publicações, formulário de contato
+│   ├── indicadores/        # explorador comparativo (client)
+│   ├── layout/             # site-header, site-footer
+│   ├── ranking/            # lista e explorador de ranking
+│   ├── shared/             # FAQ, copy-button, ações de variável
 │   └── ui/                 # componentes shadcn/ui
-├── data/                   # vazio — funções de acesso aos dados
+├── data/                   # mocks tipados (indicators, objectives, ranking, …)
 ├── lib/
 │   └── utils.ts            # cn() — clsx + tailwind-merge
-├── local_assets/           # gitignored — documentos e CSVs do cliente (ver abaixo)
+├── local_assets/           # gitignored — dados reais do cliente (ainda não ligados)
 └── proxy.ts                # middleware Next.js (passthrough)
 ```
 
@@ -112,18 +116,18 @@ rank, categoria, indice_geral, n_objetivos_com_dados
 
 ## Design system
 
-Definido em `src/app/globals.css` via tokens CSS (Tailwind v4 + shadcn `radix-lyra`).
+Definido em `src/app/globals.css` via tokens CSS (Tailwind v4 + shadcn `radix-lyra`), alinhado ao protótipo de UI.
 
 | Token | Cor | Uso |
 |---|---|---|
-| `primary` | `#0D1F3C` (navy) | cor principal da marca, textos de destaque |
-| `accent` | `#0EA5E9` (cyan) | destaques, links, chart-1 |
-| `chart-2` | `#22C55E` (verde) | gráficos secundários |
-| `chart-4` | cyan médio | gráficos terciários |
+| `primary` | `#4775ca` | cor principal da marca, CTAs, destaques |
+| `primary-glow` | `#89aef0` | gradiente de títulos (`from-primary to-primary-glow`) |
+| `chart-1`…`chart-4` | azul / laranja / verde / cinza | séries de gráficos |
+| utilitários `dash-*` | linhas pontilhadas laterais/topo | layout das seções |
 
-Fontes: **Inter** (sans-serif padrão) · **JetBrains Mono** (mono). Idioma: `pt-BR`.
+Fontes: **Plus Jakarta Sans** (sans) · **JetBrains Mono** (mono). Idioma: `pt-BR`.
 
-**Regra:** use sempre tokens semânticos (`bg-primary`, `text-accent`, `text-muted-foreground`) — nunca valores literais de cor.
+**Regra:** use sempre tokens semânticos (`bg-primary`, `text-muted-foreground`, `to-primary-glow`) — nunca valores literais de cor em componentes.
 
 ---
 

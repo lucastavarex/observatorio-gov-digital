@@ -60,6 +60,7 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-primary-glow: var(--primary-glow);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -78,34 +79,35 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.22 0.063 256); /* navy #0D1F3C */
+  --primary: #4775ca;
+  --primary-glow: #89aef0;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.665 0.172 217); /* cyan #0EA5E9 */
-  --accent-foreground: oklch(0.985 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.9848 0 0);
   --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.665 0.172 217);
-  --chart-1: oklch(0.665 0.172 217); /* cyan */
-  --chart-2: oklch(0.723 0.196 145); /* verde #22C55E */
-  --chart-3: oklch(0.22 0.063 256); /* navy */
-  --chart-4: oklch(0.556 0.13 217); /* cyan médio */
-  --chart-5: oklch(0.82 0.12 145); /* verde claro */
+  --input: oklch(0.87 0 0);
+  --ring: #4775ca;
+  --chart-1: #4775ca;
+  --chart-2: #e08a2e;
+  --chart-3: #2f9e6b;
+  --chart-4: #94a3b8;
+  --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary: #4775ca;
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-  --font-sans: Inter, sans-serif;
+  --sidebar-ring: #4775ca;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: JetBrains Mono, monospace;
   --shadow-color: hsl(160 50% 10%);
@@ -146,7 +148,8 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
+  --primary: #89aef0;
+  --primary-glow: #b8d0f7;
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -158,22 +161,22 @@
   --destructive-foreground: oklch(0.9848 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
+  --ring: #89aef0;
+  --chart-1: #89aef0;
+  --chart-2: #e08a2e;
+  --chart-3: #2f9e6b;
+  --chart-4: #94a3b8;
   --chart-5: oklch(0.269 0 0);
   --radius: 0.6rem;
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary: #89aef0;
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-  --font-sans: Inter, sans-serif;
+  --sidebar-ring: #89aef0;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: JetBrains Mono, monospace;
   --shadow-color: hsl(0 0% 0%);
@@ -200,15 +203,124 @@
 }
 
 @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
     @apply font-sans;
   }
+
   body {
     letter-spacing: var(--tracking-normal);
     @apply bg-background text-foreground;
   }
-  * {
-    @apply border-border outline-ring/50;
+
+  a:focus-visible,
+  button:focus-visible,
+  select:focus-visible,
+  summary:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@utility dash-x {
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      var(--border) 0 9px,
+      transparent 9px 18px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--border) 0 9px,
+      transparent 9px 18px
+    );
+  background-position: left, right;
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+}
+
+@utility dash-l {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--border) 0 9px,
+    transparent 9px 18px
+  );
+  background-position: left;
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+}
+
+@utility dash-t {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--border) 0 9px,
+    transparent 9px 18px
+  );
+  background-position: top;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+}
+
+@utility dash-b {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--border) 0 9px,
+    transparent 9px 18px
+  );
+  background-position: bottom;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+}
+
+@utility dash-y {
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--border) 0 9px,
+      transparent 9px 18px
+    ),
+    repeating-linear-gradient(
+      to right,
+      var(--border) 0 9px,
+      transparent 9px 18px
+    );
+  background-position: top, bottom;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+}
+
+@utility dash-br {
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--border) 0 9px,
+      transparent 9px 18px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--border) 0 9px,
+      transparent 9px 18px
+    );
+  background-position: bottom, right;
+  background-size:
+    100% 1px,
+    1px 100%;
+  background-repeat: no-repeat;
 }
