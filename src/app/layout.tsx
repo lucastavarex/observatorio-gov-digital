@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { Toaster } from 'sonner'
-
 import { SiteFooter } from '@/components/layout/site-footer'
 import { SiteHeader } from '@/components/layout/site-header'
 import { cn } from '@/lib/utils'
@@ -37,11 +36,10 @@ export default function RootLayout({
           Pular para o conteúdo
         </a>
         <SiteHeader />
-        <main
-          id="conteudo"
-          className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-7xl flex-col px-4 sm:px-6 lg:px-8 [&>section]:flex [&>section]:min-h-0 [&>section]:flex-1 [&>section]:flex-col [&>section]:!pb-0 [&_.dash-x]:flex-1"
-        >
-          {children}
+        {/* Footer cola no conteúdo em páginas curtas; dash-x corre até a borda do footer. */}
+        <main id="conteudo" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Linhas tracejadas verticais contínuas até o footer (como no protótipo). */}
+          <div className="dash-x">{children}</div>
         </main>
         <SiteFooter />
         <Toaster richColors position="top-right" />

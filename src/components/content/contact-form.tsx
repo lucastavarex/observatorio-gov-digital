@@ -2,17 +2,18 @@
 
 import * as React from 'react'
 import { toast } from 'sonner'
+
+import { Input } from '@/components/custom/input'
+import { SelectTrigger } from '@/components/custom/select-trigger'
+import { Textarea } from '@/components/custom/textarea'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import {
   Select,
   SelectContent,
   SelectItem,
-  SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { Textarea } from '@/components/ui/textarea'
 
 const SUBJECT_OPTIONS = [
   'Dúvida geral',
@@ -50,14 +51,14 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
-        <Label htmlFor="name" className="text-foreground">
+        <Label htmlFor="name" className="text-primary">
           Nome completo
         </Label>
         <Input id="name" name="name" placeholder="Seu nome" required />
       </div>
 
       <div className="flex flex-col gap-2">
-        <Label htmlFor="email" className="text-foreground">
+        <Label htmlFor="email" className="text-primary">
           E-mail
         </Label>
         <Input
@@ -70,7 +71,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <Label htmlFor="subject" className="text-foreground">
+        <Label htmlFor="subject" className="text-primary">
           Assunto
         </Label>
         <Select
@@ -93,7 +94,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <Label htmlFor="message" className="text-foreground">
+        <Label htmlFor="message" className="text-primary">
           Sua mensagem
         </Label>
         <Textarea
@@ -105,13 +106,24 @@ export function ContactForm() {
         />
       </div>
 
-      <Button
-        type="submit"
-        disabled={submitting}
-        className="h-auto rounded-full bg-foreground px-8 py-4 text-background text-sm hover:bg-foreground/90"
-      >
-        {submitting ? 'Enviando...' : 'Enviar mensagem'}
-      </Button>
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+        <Button
+          type="submit"
+          disabled={submitting}
+          className="h-auto rounded-full bg-primary px-8 py-4 text-primary-foreground text-sm hover:bg-primary/90"
+        >
+          {submitting ? 'Enviando...' : 'Enviar'}
+        </Button>
+        <p className="min-w-0 flex-1 basis-48 text-muted-foreground text-sm">
+          ou envie um e-mail para{' '}
+          <a
+            href="mailto:mbc@mbc.org.br"
+            className="font-semibold text-primary underline underline-offset-4 hover:opacity-70"
+          >
+            mbc@mbc.org.br
+          </a>
+        </p>
+      </div>
     </form>
   )
 }

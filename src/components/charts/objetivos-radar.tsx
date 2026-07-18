@@ -29,7 +29,7 @@ function wrap(text: string, max = 16): string[] {
   const linhas: string[] = []
   let atual = ''
   for (const palavra of text.split(' ')) {
-    if (atual && (atual + ' ' + palavra).length > max) {
+    if (atual && `${atual} ${palavra}`.length > max) {
       linhas.push(atual)
       atual = palavra
     } else {

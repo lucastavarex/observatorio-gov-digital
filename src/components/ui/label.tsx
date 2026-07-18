@@ -1,15 +1,19 @@
+'use client'
+
+import { Label as LabelPrimitive } from 'radix-ui'
 import type * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-function Label({ className, ...props }: React.ComponentProps<'label'>) {
+function Label({
+  className,
+  ...props
+}: React.ComponentProps<typeof LabelPrimitive.Root>) {
   return (
-    // Association with controls is done by consumers via htmlFor / nesting.
-    // biome-ignore lint/a11y/noLabelWithoutControl: reusable label primitive
-    <label
+    <LabelPrimitive.Root
       data-slot="label"
       className={cn(
-        'flex items-center gap-2 font-medium text-sm leading-none select-none',
+        'flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50',
         className
       )}
       {...props}

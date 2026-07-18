@@ -108,7 +108,7 @@ export function IndicadoresExplorer() {
 
   return (
     <section className="pb-12">
-      <div className="dash-x px-6 pb-16 pt-28 sm:px-10">
+      <div className="px-6 pb-16 pt-28 sm:px-10">
         <span className="text-sm font-medium text-muted-foreground">
           Indicadores
         </span>
@@ -117,7 +117,7 @@ export function IndicadoresExplorer() {
         </h1>
 
         {/* Filtros de nível — largura total */}
-        <div className="dash-b -mx-6 mt-10 px-6 pb-4 sm:-mx-10 sm:px-10">
+        <div className="dash-t dash-b -mx-6 mt-10 px-6 pt-8 pb-4 sm:-mx-10 sm:px-10">
           <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
             Nível de governo
           </span>
@@ -187,7 +187,7 @@ export function IndicadoresExplorer() {
                         disabled={bloqueado}
                         onClick={() => alternarEnte(e.slug)}
                         className={cn(
-                          'flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-sm transition-colors',
+                          'flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
                           isActive
                             ? 'bg-primary/10 font-medium text-primary'
                             : bloqueado
@@ -246,7 +246,7 @@ export function IndicadoresExplorer() {
                           disabled={!coberto}
                           onClick={() => setObjetivoSlug(obj.slug)}
                           className={cn(
-                            'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm transition-colors',
+                            'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
                             !coberto
                               ? 'cursor-not-allowed text-muted-foreground/50'
                               : isActive
@@ -340,8 +340,26 @@ export function IndicadoresExplorer() {
                 )}
               </div>
             ) : (
-              <div className="flex h-full min-h-64 items-center justify-center rounded-xl border border-dashed p-8 text-center">
-                <p className="max-w-xs text-sm text-muted-foreground">
+              <div className="relative flex h-full min-h-64 items-center justify-center rounded-xl p-8 text-center">
+                <svg
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 h-full w-full"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    rx="13.5"
+                    fill="none"
+                    stroke="var(--border)"
+                    strokeWidth="1"
+                    strokeDasharray="9 9"
+                    style={{
+                      width: 'calc(100% - 1px)',
+                      height: 'calc(100% - 1px)',
+                    }}
+                  />
+                </svg>
+                <p className="max-w-xs text-muted-foreground text-sm">
                   Selecione <span className="font-medium">nível</span>,{' '}
                   <span className="font-medium">ente(s)</span> e{' '}
                   <span className="font-medium">objetivo</span>

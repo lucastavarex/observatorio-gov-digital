@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 type FooterItem = {
@@ -41,13 +40,6 @@ export function SiteFooter() {
               <span>Observatório Brasileiro</span>
               <span>de Governo Digital</span>
             </p>
-            <Image
-              src="/logos/mgi.png"
-              alt="Ministério da Gestão e da Inovação em Serviços Públicos — Governo Federal"
-              width={365}
-              height={135}
-              className="mt-6 h-16 w-auto object-contain"
-            />
           </div>
 
           <nav className="flex flex-col gap-6 md:flex-row md:flex-wrap md:items-start md:gap-x-8 md:gap-y-8">

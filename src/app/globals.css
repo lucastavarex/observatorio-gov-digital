@@ -2,7 +2,8 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+/* Site light-only: `dark:` só aplica com classe `.dark` (nunca setada). */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -75,11 +76,12 @@
 }
 
 :root {
+  color-scheme: light;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #4775ca;
+  --primary: #377ec1;
   --primary-glow: #89aef0;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
@@ -92,8 +94,8 @@
   --destructive-foreground: oklch(0.9848 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.87 0 0);
-  --ring: #4775ca;
-  --chart-1: #4775ca;
+  --ring: #377ec1;
+  --chart-1: #377ec1;
   --chart-2: #e08a2e;
   --chart-3: #2f9e6b;
   --chart-4: #94a3b8;
@@ -101,12 +103,12 @@
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #4775ca;
+  --sidebar-primary: #377ec1;
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: #4775ca;
+  --sidebar-ring: #377ec1;
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: JetBrains Mono, monospace;
@@ -232,9 +234,13 @@
   *,
   ::before,
   ::after {
+    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     animation-iteration-count: 1 !important;
+    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     transition-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     scroll-behavior: auto !important;
   }
 }
@@ -323,4 +329,25 @@
     100% 1px,
     1px 100%;
   background-repeat: no-repeat;
+}
+
+/* ScrollRevealText — máscaras por palavra (GSAP + SplitType) */
+/* Antes do JS: cor “não revelada” (evita flicker do texto cheio → mascarado). */
+.split-word:not([data-ready]) {
+  color: color-mix(in oklch, var(--foreground) 20%, var(--background));
+}
+
+.split-word .word {
+  position: relative;
+}
+
+.split-word .line-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+  opacity: 0.8;
 }

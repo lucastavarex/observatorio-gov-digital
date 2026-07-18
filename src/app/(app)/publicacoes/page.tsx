@@ -5,7 +5,7 @@ export const metadata = { title: 'Publicações' }
 export default function PublicacoesPage() {
   return (
     <section className="pb-12">
-      <div className="dash-x">
+      <div>
         {/* Cabeçalho */}
         <div className="px-6 pb-5 pt-28 sm:px-10">
           <span className="text-sm font-medium text-muted-foreground">
