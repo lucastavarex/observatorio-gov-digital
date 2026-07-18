@@ -1,6 +1,8 @@
 import { objectives } from '@/data/objectives'
 import { ANO_INDICE, capitalByUfSigla, indiceLong } from './load'
-import type { IndiceLongRow } from './types'
+import type { IndiceLongRow, SerieHistoricaPonto } from './types'
+
+export type { SerieHistoricaPonto }
 
 export type NivelKey = 'federal' | 'estadual' | 'municipal'
 
@@ -27,6 +29,10 @@ export type Variavel = {
   anoFonte: number
   indicadorCodigo: string
   fonteId: string
+  /** Evolução temporal (ano × valor 0–100). */
+  serieHistorica: SerieHistoricaPonto[]
+  /** `true` enquanto a série vier do gerador mock. */
+  serieHistoricaMock: boolean
 }
 
 export type ObjetivoScore = {

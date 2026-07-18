@@ -13,6 +13,7 @@ import {
   slugify,
   type Variavel,
 } from './queries'
+import { getSerieHistorica } from './serie-historica'
 import type { DetalheRow } from './types'
 
 const FONTE_URLS: Record<string, string> = {
@@ -60,7 +61,7 @@ function detalheCategoriaKey(
   return capital?.uf_sigla ?? codigo
 }
 
-function buildVariavel(row: DetalheRow): Variavel {
+function buildVariavel(row: DetalheRow, enteCodigo: string): Variavel {
   const chave = `${row.fonte}/${row.indicador}`
   const meta = indicadorByChave.get(chave)
   const fonteMeta = fonteById.get(row.fonte)
@@ -95,6 +96,14 @@ function buildVariavel(row: DetalheRow): Variavel {
     anoFonte: row.ano_fonte,
     indicadorCodigo: row.indicador,
     fonteId: row.fonte,
+    serieHistorica: getSerieHistorica({
+      indicadorChave: chave,
+      fonteId: row.fonte,
+      enteCodigo,
+      anoAtual: row.ano_fonte,
+      valorAtual: row.valor_normalizado,
+    }),
+    serieHistoricaMock: true,
   }
 }
 
@@ -108,7 +117,7 @@ function attachVariaveis(ente: Ente, dataNivel: Nivel['dataNivel']): Ente {
     descricao: objectives[obj.numero - 1]?.description ?? obj.descricao,
     variaveis: detalhes
       .filter(d => d.objetivo === obj.numero)
-      .map(buildVariavel)
+      .map(row => buildVariavel(row, ente.codigo))
       .sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR')),
   }))
 

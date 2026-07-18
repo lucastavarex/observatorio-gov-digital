@@ -1,6 +1,7 @@
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { SerieHistoricaChart } from '@/components/charts/serie-historica-chart'
 import { VariavelAcoes } from '@/components/shared/variavel-acoes'
 import {
   formatScore,
@@ -51,8 +52,8 @@ export default async function VariavelPage({
           <ArrowLeft className="size-5" />
         </Link>
 
-        <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-4">
-          <div>
+        <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-4 sm:flex-nowrap">
+          <div className="min-w-0 flex-1">
             <span className="block text-sm font-medium text-muted-foreground">
               {ente.nome} · {objetivo.titulo}
             </span>
@@ -60,7 +61,7 @@ export default async function VariavelPage({
               {variavel.nome}
             </h1>
           </div>
-          <div className="flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
+          <div className="shrink-0 flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
             <span className="block pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
               Nota normalizada
             </span>
@@ -107,6 +108,24 @@ export default async function VariavelPage({
               {variavel.normalizacao}
             </dd>
           </dl>
+        </div>
+
+        {/* Série histórica */}
+        <div className="mt-12 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <h2 className="text-sm font-bold text-foreground">
+            Evolução temporal
+          </h2>
+          {variavel.serieHistoricaMock && (
+            <span className="text-xs font-medium text-muted-foreground">
+              {/* Dados ilustrativos */}
+            </span>
+          )}
+        </div>
+        <div className="mt-3">
+          <SerieHistoricaChart
+            pontos={variavel.serieHistorica}
+            nome={variavel.nome}
+          />
         </div>
 
         {/* Tabela de metadados do valor */}

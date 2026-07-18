@@ -21,6 +21,7 @@ export {
   objetivosComCobertura,
   type RankingItem,
   rankingDoNivel,
+  type SerieHistoricaPonto,
   slugify,
   type TabelaLinha,
   type Variavel,
