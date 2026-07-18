@@ -166,11 +166,31 @@ export function DistribuicaoChart({
     const largura = Number(vb.width ?? 0)
     const altura = Number(vb.height ?? 0)
 
-    const alturaBadge = Math.min(24, altura - 6)
+    const alturaBadge = Math.min(24, Math.max(16, altura - 6))
     const larguraBadge = texto.length * 6.4 + 20
-    // Encostado à direita, dentro da barra (recuo de 8px); nunca antes do início.
-    const bx = Math.max(x + 6, x + largura - larguraBadge - 8)
-    const by = y + (altura - alturaBadge) / 2
+
+    let bx: number
+    let by: number
+    if (horizontal) {
+      // Encostado à direita, dentro da barra (recuo de 8px); nunca antes do início.
+      bx = Math.max(x + 6, x + largura - larguraBadge - 8)
+      by = y + (altura - alturaBadge) / 2
+    } else {
+      // Centralizado na barra, perto do topo (pode ultrapassar a largura da barra).
+      bx = x + (largura - larguraBadge) / 2
+      by = y + Math.min(6, Math.max(0, (altura - alturaBadge) / 2))
+
+      // Clamp horizontal para não cortar na primeira/última coluna.
+      const parent = props?.parentViewBox as
+        | { x?: number; width?: number }
+        | undefined
+      if (parent?.width != null) {
+        const pad = 4
+        const minX = Number(parent.x ?? 0) + pad
+        const maxX = Number(parent.x ?? 0) + Number(parent.width) - pad
+        bx = Math.max(minX, Math.min(bx, maxX - larguraBadge))
+      }
+    }
 
     return (
       <g>
@@ -277,6 +297,7 @@ export function DistribuicaoChart({
               isAnimationActive={false}
             >
               {cells}
+              <LabelList dataKey="badgeText" content={renderBadge} />
             </Bar>
           </BarChart>
         )}

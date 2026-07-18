@@ -332,8 +332,7 @@ export function IndicadoresExplorer() {
                         entes={entesObjetivo}
                         destaques={destaques}
                         selecionados={entesSelecionados.map(e => e.nome)}
-                        horizontal
-                        alturaClasse="h-[24rem]"
+                        alturaClasse="h-72"
                       />
                     </div>
                   </div>

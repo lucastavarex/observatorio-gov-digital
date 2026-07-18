@@ -188,8 +188,7 @@ export default async function EntePage({
                   entes={entesNoObjetivo}
                   destaques={[objetivoAtivo.nota!]}
                   selecionados={[ente.nome]}
-                  alturaClasse="h-[26rem] sm:h-[30rem]"
-                  horizontal
+                  alturaClasse="h-72"
                   badge={ente.nome}
                 />
               </div>
