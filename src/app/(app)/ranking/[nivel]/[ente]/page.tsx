@@ -183,12 +183,12 @@ export default async function EntePage({
                 Distribuição do sub-índice de {objetivoAtivo.titulo} entre os{' '}
                 {entesNoObjetivo.length} entes, com destaque para {ente.nome}.
               </p>
-              <div className="mt-4">
+              <div className="mt-12">
                 <DistribuicaoChart
                   entes={entesNoObjetivo}
                   destaques={[objetivoAtivo.nota!]}
                   selecionados={[ente.nome]}
-                  alturaClasse="h-72"
+                  alturaClasse="h-100"
                   badge={ente.nome}
                 />
               </div>
