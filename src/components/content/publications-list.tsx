@@ -10,7 +10,11 @@ import {
 } from 'lucide-react'
 import * as React from 'react'
 
-import { publicationCategories, publications } from '@/data/publications'
+import {
+  type Publication,
+  publicationCategories,
+  publications,
+} from '@/data/publications'
 import { cn } from '@/lib/utils'
 
 const categoryMeta: Record<string, { icon: LucideIcon; label: string }> = {
@@ -19,6 +23,49 @@ const categoryMeta: Record<string, { icon: LucideIcon; label: string }> = {
   Eventos: { icon: CalendarDays, label: 'Evento' },
   Vídeos: { icon: Video, label: 'Vídeo' },
   Relatórios: { icon: BarChart3, label: 'Relatório' },
+}
+
+export function PublicationsGrid({ items }: { items: Publication[] }) {
+  return (
+    <div className="dash-t grid grid-cols-1 md:grid-cols-2">
+      {items.map((publication, i) => {
+        const meta = categoryMeta[publication.category]
+        const Icon = meta?.icon ?? FileText
+
+        return (
+          <a
+            key={publication.title}
+            href={publication.href}
+            className={cn(
+              'group flex flex-col p-6 transition-colors dash-b hover:bg-primary/5 sm:p-8',
+              i % 2 === 0 && 'md:dash-br'
+            )}
+          >
+            <div className="flex items-center justify-between gap-4 text-sm">
+              <span className="flex items-center gap-2 text-foreground">
+                <span className="flex size-6 shrink-0 items-center justify-center rounded-full">
+                  <Icon aria-hidden="true" className="size-3.5" />
+                </span>
+                <span className="font-medium">
+                  {meta?.label ?? publication.category}
+                </span>
+              </span>
+              <span className="text-muted-foreground">{publication.date}</span>
+            </div>
+
+            <div className="mt-6">
+              <h2 className="font-semibold text-xl tracking-tight">
+                {publication.title}
+              </h2>
+              <p className="mt-3 text-muted-foreground text-sm">
+                {publication.excerpt}
+              </p>
+            </div>
+          </a>
+        )
+      })}
+    </div>
+  )
 }
 
 export function PublicationsList() {
@@ -52,46 +99,7 @@ export function PublicationsList() {
         })}
       </div>
 
-      <div className="dash-t grid grid-cols-1 md:grid-cols-2">
-        {filtered.map((publication, i) => {
-          const meta = categoryMeta[publication.category]
-          const Icon = meta?.icon ?? FileText
-
-          return (
-            <a
-              key={publication.title}
-              href={publication.href}
-              className={cn(
-                'group flex flex-col p-6 transition-colors dash-b hover:bg-primary/5 sm:p-8',
-                i % 2 === 0 && 'md:dash-br'
-              )}
-            >
-              <div className="flex items-center justify-between gap-4 text-sm">
-                <span className="flex items-center gap-2 text-foreground">
-                  <span className="flex size-6 shrink-0 items-center justify-center rounded-full">
-                    <Icon aria-hidden="true" className="size-3.5" />
-                  </span>
-                  <span className="font-medium">
-                    {meta?.label ?? publication.category}
-                  </span>
-                </span>
-                <span className="text-muted-foreground">
-                  {publication.date}
-                </span>
-              </div>
-
-              <div className="mt-6">
-                <h2 className="font-semibold text-xl tracking-tight">
-                  {publication.title}
-                </h2>
-                <p className="mt-3 text-muted-foreground text-sm">
-                  {publication.excerpt}
-                </p>
-              </div>
-            </a>
-          )
-        })}
-      </div>
+      <PublicationsGrid items={filtered} />
     </>
   )
 }

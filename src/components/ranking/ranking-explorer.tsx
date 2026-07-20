@@ -54,7 +54,7 @@ export function RankingExplorer() {
 
   return (
     <section className="pb-12">
-      <div className="dash-x px-6 pb-16 pt-28 sm:px-10">
+      <div className="px-6 pb-16 pt-28 sm:px-10">
         <span className="text-sm font-medium text-muted-foreground">
           Ranking
         </span>
@@ -69,102 +69,107 @@ export function RankingExplorer() {
           disponível como referência provisória.
         </p>
 
-        {/* Filtros de nível */}
-        <div className="mt-8 flex flex-wrap gap-2">
-          {niveis.map(item => {
-            const isActive = item.isRanking && item.key === active
-            return (
-              <button
-                key={item.key}
-                type="button"
-                onClick={() => selecionar(item.key)}
-                className={cn(
-                  'rounded-full border px-5 py-2.5 text-sm font-medium transition-colors',
-                  isActive
-                    ? 'border-primary bg-primary/10 text-primary'
-                    : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
-                )}
-              >
-                {item.label}
-              </button>
-            )
-          })}
-        </div>
+        {/* Nível (esquerda) e Ordenar por (direita) */}
+        <div className="dash-t -mx-6 mt-8 grid gap-8 px-6 pt-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Nível de governo
+            </span>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {niveis.map(item => {
+                const isActive = item.isRanking && item.key === active
+                return (
+                  <button
+                    key={item.key}
+                    type="button"
+                    onClick={() => selecionar(item.key)}
+                    className={cn(
+                      'rounded-full border px-5 py-2.5 text-sm font-medium transition-colors',
+                      isActive
+                        ? 'border-primary bg-primary/10 text-primary'
+                        : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
+                    )}
+                  >
+                    {item.label}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
 
-        {/* Objetivo + ordenação */}
-        {nivel.isRanking && (
-          <div className="mt-8 space-y-4">
-            <div>
+          {nivel.isRanking && (
+            <div className="lg:dash-l lg:pl-8">
               <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                Objetivo da ENGD
+                Ordenar por
               </span>
               <div className="mt-3 flex flex-wrap gap-2">
-                {objectives.map((obj, i) => {
-                  const numero = i + 1
-                  const coberto = cobertura[i]
-                  const isActive = numero === objetivoNumero
+                {(
+                  [
+                    ['objetivo', 'Objetivo selecionado'],
+                    ['indice_geral', 'Índice geral'],
+                  ] as const
+                ).map(([key, label]) => {
+                  const isActive = ordenacao === key
                   return (
                     <button
-                      key={obj.slug}
+                      key={key}
                       type="button"
-                      disabled={!coberto}
-                      title={
-                        coberto ? obj.title : 'Sem dados neste nível de governo'
-                      }
-                      onClick={() => setObjetivoNumero(numero)}
+                      onClick={() => setOrdenacao(key)}
                       className={cn(
-                        'rounded-full border px-3.5 py-2 text-sm font-medium transition-colors',
-                        !coberto
-                          ? 'cursor-not-allowed border-border/60 text-muted-foreground/40'
-                          : isActive
-                            ? 'border-primary bg-primary/10 text-primary'
-                            : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
+                        'rounded-full border px-4 py-2 text-sm font-medium transition-colors',
+                        isActive
+                          ? 'border-primary bg-primary/10 text-primary'
+                          : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
                       )}
                     >
-                      <span className="tabular-nums">
-                        {String(numero).padStart(2, '0')}
-                      </span>
-                      <span className="ml-1.5 hidden sm:inline">
-                        {obj.title}
-                      </span>
+                      {label}
                     </button>
                   )
                 })}
               </div>
+              <p className="mt-3 text-muted-foreground text-sm">
+                {labelOrdenacao}
+              </p>
             </div>
+          )}
+        </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                  Ordenar por
-                </span>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  {(
-                    [
-                      ['objetivo', 'Objetivo selecionado'],
-                      ['indice_geral', 'Índice geral'],
-                    ] as const
-                  ).map(([key, label]) => {
-                    const isActive = ordenacao === key
-                    return (
-                      <button
-                        key={key}
-                        type="button"
-                        onClick={() => setOrdenacao(key)}
-                        className={cn(
-                          'rounded-full border px-4 py-2 text-sm font-medium transition-colors',
-                          isActive
-                            ? 'border-primary bg-primary/10 text-primary'
-                            : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
-                        )}
-                      >
-                        {label}
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-              <p className="text-sm text-muted-foreground">{labelOrdenacao}</p>
+        {/* Objetivo da ENGD — só quando ordena por objetivo */}
+        {nivel.isRanking && ordenacao === 'objetivo' && (
+          <div className="dash-t dash-b -mx-6 mt-6 px-6 py-6 sm:-mx-10 sm:px-10">
+            <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Objetivo da ENGD
+            </span>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {objectives.map((obj, i) => {
+                const numero = i + 1
+                const coberto = cobertura[i]
+                const isActive = numero === objetivoNumero
+                return (
+                  <button
+                    key={obj.slug}
+                    type="button"
+                    disabled={!coberto}
+                    title={
+                      coberto ? obj.title : 'Sem dados neste nível de governo'
+                    }
+                    onClick={() => setObjetivoNumero(numero)}
+                    className={cn(
+                      'inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors',
+                      !coberto
+                        ? 'cursor-not-allowed border-border text-muted-foreground/40'
+                        : isActive
+                          ? 'border-primary bg-primary/10 text-primary'
+                          : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
+                    )}
+                  >
+                    <span className="tabular-nums opacity-70">
+                      {String(numero).padStart(2, '0')}
+                    </span>
+                    {obj.title}
+                  </button>
+                )
+              })}
             </div>
           </div>
         )}

@@ -1,7 +1,13 @@
 import Image from 'next/image'
 import { Fragment } from 'react'
 
+import { ScrollRevealText } from '@/components/shared/scroll-reveal-text'
+import { observatorioLead } from '@/data/site-copy'
+
 export const metadata = { title: 'Sobre' }
+
+const introText =
+  'O Observatório Brasileiro de Governo Digital acompanha, de forma permanente e baseada em evidências, a maturidade digital de estados e municípios brasileiros. Reunindo indicadores sobre interoperabilidade, governança e capacidade digital do setor público, o projeto dá transparência à transformação digital do governo e ajuda a identificar gargalos e disseminar boas práticas.'
 
 const ENGD_TERM = 'Estratégia Nacional de Governo Digital'
 const ENGD_URL =
@@ -30,17 +36,17 @@ const partners = [
   {
     src: '/logos/mgi.png',
     alt: 'Ministério da Gestão e da Inovação em Serviços Públicos',
-    width: 365,
-    height: 135,
-    size: 'h-20 sm:h-24',
+    width: 2377,
+    height: 479,
+    size: 'h-12 sm:h-16',
     href: 'https://www.gov.br/gestao/pt-br',
   },
   {
     src: '/logos/mbc.png',
     alt: 'Movimento Brasil Competitivo',
-    width: 247,
-    height: 86,
-    size: 'h-14 sm:h-16',
+    width: 442,
+    height: 150,
+    size: 'h-12 sm:h-14',
     href: 'https://www.mbc.org.br/',
   },
   {
@@ -56,7 +62,7 @@ const partners = [
 const sections = [
   {
     title: 'Sobre o Observatório',
-    lead: 'O Observatório Brasileiro de Governo Digital é uma plataforma pública de monitoramento da transformação digital no setor público brasileiro, criada para acompanhar e analisar, de forma transparente e baseada em evidências, a evolução das políticas de governo digital nos diferentes níveis da administração pública.',
+    lead: observatorioLead,
     paragraphs: [
       'A plataforma consolida dados provenientes de diversas bases oficiais e os organiza em indicadores comparáveis, alinhados à Estratégia Nacional de Governo Digital (ENGD). Com isso, apoia gestores públicos, pesquisadores, organizações e cidadãos na compreensão dos avanços, desafios e oportunidades da transformação digital no Brasil.',
       'Concebido como um ambiente público de consulta e análise, o Observatório oferece painéis interativos, indicadores, documentação metodológica e séries históricas. Mais do que reunir dados, transforma informações dispersas em conhecimento acessível, promovendo maior transparência e fortalecendo a tomada de decisão baseada em evidências.',
@@ -97,7 +103,7 @@ const historyParagraphs = [
   'A primeira versão da plataforma reúne indicadores estratégicos organizados conforme os objetivos da Estratégia Nacional de Governo Digital, estabelecendo as bases para um sistema permanente de acompanhamento da maturidade digital do setor público brasileiro e sua evolução ao longo do tempo.',
 ]
 
-const members: { name: string; linkedin: string | null }[] = [
+const members: { name: string; linkedin: string | null; role?: string }[] = [
   {
     name: 'Ivar Hartmann',
     linkedin: 'https://www.linkedin.com/in/ivar-alberto-hartmann-44b19110/',
@@ -122,35 +128,36 @@ const members: { name: string; linkedin: string | null }[] = [
   {
     name: 'Gabriel Croquer',
     linkedin: 'https://www.linkedin.com/in/gabriel-croquer-853657161/',
+    role: 'Engenheiro de Dados',
   },
   {
     name: 'Luiza Tuler Veloso',
     linkedin: 'https://www.linkedin.com/in/luiza-tuler-veloso/',
+    role: 'Cientista de Dados',
   },
   {
     name: 'Lucas Tavares',
     linkedin: 'https://www.linkedin.com/in/lucastavarex/',
+    role: 'Desenvolvedor',
   },
   {
     name: 'Caio Jacintho',
     linkedin: 'https://www.linkedin.com/in/caio-jacintho/',
+    role: 'Designer',
   },
 ]
 
 export default function SobrePage() {
   return (
     <section className="pb-12">
-      <div className="dash-x px-6 pb-16 pt-28 sm:px-10">
-        <p className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          O Observatório Brasileiro de Governo Digital acompanha, de forma
-          permanente e baseada em evidências, a maturidade digital de estados e
-          municípios brasileiros. Reunindo indicadores sobre interoperabilidade,
-          governança e capacidade digital do setor público, o projeto dá
-          transparência à transformação digital do governo e ajuda a identificar
-          gargalos e disseminar boas práticas.
-        </p>
+      <div className="px-6 pt-0 pb-16 sm:px-10">
+        <ScrollRevealText
+          text={introText}
+          trackClassName="-mt-16"
+          className="max-w-4xl font-medium text-2xl leading-snug tracking-tight sm:text-4xl sm:leading-snug"
+        />
 
-        <div className="-mx-6 mt-16 border-y px-6 py-16 sm:-mx-10 sm:px-10">
+        <div className="-mx-6 mt-40 border-y px-6 py-10 sm:-mx-10 sm:px-10">
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
             {partners.map(partner => (
               <a
@@ -233,7 +240,7 @@ export default function SobrePage() {
           </div>
         </div>
 
-        <div className="-mx-6 mt-24 grid grid-cols-2 border-t sm:-mx-10 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="-mx-6 mt-24 grid grid-cols-2 border-x border-t sm:-mx-10 sm:grid-cols-3 lg:grid-cols-4">
           {members.map(member => (
             <div
               key={member.name}
@@ -241,19 +248,21 @@ export default function SobrePage() {
             >
               {/* Placeholder da foto: retângulo cinza (substituir por imagem futuramente) */}
               <div className="aspect-square w-full rounded-md bg-muted" />
-              <div className="mt-3">
-                <h3 className="text-sm font-semibold text-foreground">
-                  {member.name}
-                </h3>
-                <p className="mt-0.5 text-xs text-muted-foreground">
-                  Consultor
-                </p>
+              <div className="mt-3 flex items-end justify-between gap-2">
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-foreground text-sm">
+                    {member.name}
+                  </h3>
+                  <p className="mt-0.5 text-muted-foreground text-xs">
+                    {member.role ?? 'Consultor'}
+                  </p>
+                </div>
                 {member.linkedin && (
                   <a
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 ml-auto flex w-fit shrink-0 transition-opacity hover:opacity-70"
+                    className="flex shrink-0 transition-opacity hover:opacity-70"
                   >
                     <span className="sr-only">
                       Perfil de {member.name} no LinkedIn (abre em nova aba)
@@ -263,7 +272,6 @@ export default function SobrePage() {
                       aria-hidden="true"
                       className="size-5 text-primary"
                     >
-                      {/* fundo branco atrás do recorte das letras "in" */}
                       <rect
                         x="3"
                         y="3"
@@ -272,7 +280,6 @@ export default function SobrePage() {
                         rx="3"
                         fill="#fff"
                       />
-                      {/* quadrado azul arredondado com o "in" recortado */}
                       <path
                         fill="currentColor"
                         d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"

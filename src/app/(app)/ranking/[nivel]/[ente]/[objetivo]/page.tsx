@@ -29,7 +29,7 @@ export default async function ObjetivoIndicadorPage({
 
   return (
     <section className="pb-12">
-      <div className="dash-x relative px-6 pb-16 pt-20 sm:px-10">
+      <div className="relative px-6 pb-16 pt-20 sm:px-10">
         <Link
           href={`/ranking/${nivel.key}/${ente.slug}`}
           aria-label={`Voltar para ${ente.nome}`}

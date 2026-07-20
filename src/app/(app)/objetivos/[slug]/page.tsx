@@ -1,7 +1,6 @@
-import { ArrowLeft } from 'lucide-react'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+import { BackButton } from '@/components/shared/back-button'
 import { getObjective, getObjectiveNumber, objectives } from '@/data/objectives'
 
 export function generateStaticParams() {
@@ -34,14 +33,12 @@ export default async function ObjetivoPage({
 
   return (
     <section className="pb-12">
-      <div className="dash-x relative px-6 pb-16 pt-28 sm:px-10">
-        <Link
-          href="/objetivos"
-          aria-label="Voltar para Objetivos"
-          className="absolute left-6 top-12 inline-flex items-center text-muted-foreground transition-colors hover:text-primary sm:left-10"
-        >
-          <ArrowLeft className="size-5" />
-        </Link>
+      <div className="relative px-6 pb-16 pt-28 sm:px-10">
+        <BackButton
+          fallbackHref="/objetivos"
+          label="Voltar para Objetivos"
+          className="absolute top-12 left-6 inline-flex items-center text-muted-foreground transition-colors hover:text-primary sm:left-10"
+        />
         <span className="block text-sm font-medium text-muted-foreground">
           Objetivo {String(number).padStart(2, '0')}
         </span>

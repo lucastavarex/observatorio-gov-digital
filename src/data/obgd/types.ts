@@ -62,3 +62,19 @@ export type DetalheRow = {
   valor_normalizado: number
   ano_fonte: number
 }
+
+/** Observação multi-ano (schema de `indicador_valor.json`). */
+export type IndicadorValorRow = {
+  indicador_chave: string | null
+  fonte_id: string
+  indicador: string
+  ente_id: number
+  ano: number | null
+  valor_normalizado: number
+}
+
+/** Ponto de série histórica para gráficos (UI). */
+export type SerieHistoricaPonto = {
+  ano: number
+  valor: number
+}

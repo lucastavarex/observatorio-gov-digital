@@ -1,6 +1,36 @@
+# Lefthook — Git hooks do projeto
+#
+# Este arquivo configura o que roda automaticamente no `git commit`.
+# Após `npm install`, o script `prepare` executa `lefthook install` e
+# registra o hook pre-commit em `.git/hooks`.
+#
+# Como funciona o pre-commit:
+# 1. Só olha arquivos staged que batem no `glob` abaixo.
+# 2. Roda Biome em sequência (`parallel: false`) para não competir ao
+#    reescrever os mesmos arquivos:
+#    - format: formatação
+#    - lint: regras de lint (com fixes seguros)
+#    - check: validação final (format + lint + organize imports)
+# 3. `--write` aplica correções automáticas quando possível.
+# 4. `stage_fixed: true` re-adiciona ao stage os arquivos que o Biome
+#    alterou, para o commit já ir com o código corrigido.
+# 5. Se sobrar erro não auto-corrigível, o commit é bloqueado.
+#
+# Testar sem commitar: `npx lefthook run pre-commit`
+# Reinstalar hooks:    `npx lefthook install`
+
 pre-commit:
+  parallel: false
   commands:
-    biome:
+    biome-format:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}'
+      run: npx @biomejs/biome format --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      stage_fixed: true
+    biome-lint:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}'
+      run: npx @biomejs/biome lint --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      stage_fixed: true
+    biome-check:
       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}'
       run: npx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
       stage_fixed: true

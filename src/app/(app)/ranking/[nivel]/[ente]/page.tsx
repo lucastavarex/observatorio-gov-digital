@@ -85,7 +85,7 @@ export default async function EntePage({
 
   return (
     <section className="pb-12">
-      <div className="dash-x relative px-6 pb-16 pt-20 sm:px-10">
+      <div className="relative px-6 pb-16 pt-20 sm:px-10">
         <Link
           href="/ranking"
           aria-label="Voltar para Ranking"
@@ -183,13 +183,12 @@ export default async function EntePage({
                 Distribuição do sub-índice de {objetivoAtivo.titulo} entre os{' '}
                 {entesNoObjetivo.length} entes, com destaque para {ente.nome}.
               </p>
-              <div className="mt-4">
+              <div className="mt-12">
                 <DistribuicaoChart
                   entes={entesNoObjetivo}
                   destaques={[objetivoAtivo.nota!]}
                   selecionados={[ente.nome]}
-                  alturaClasse="h-[26rem] sm:h-[30rem]"
-                  horizontal
+                  alturaClasse="h-100"
                   badge={ente.nome}
                 />
               </div>

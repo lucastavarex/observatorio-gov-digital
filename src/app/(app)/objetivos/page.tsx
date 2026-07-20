@@ -7,7 +7,7 @@ export const metadata = { title: 'Objetivos' }
 export default function ObjetivosPage() {
   return (
     <section className="pb-12">
-      <div className="dash-x px-6 pb-16 pt-28 sm:px-10">
+      <div className="px-6 pb-16 pt-28 sm:px-10">
         <span className="text-sm font-medium text-muted-foreground">
           Objetivos
         </span>

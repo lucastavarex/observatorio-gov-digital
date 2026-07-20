@@ -26,19 +26,6 @@ const fontes = [
   },
 ]
 
-const objetivos = [
-  'Governança de TI',
-  'Qualidade dos Serviços Públicos',
-  'Identificação Única',
-  'Segurança da Informação e Proteção de Dados',
-  'Dados e Interoperabilidade',
-  'Infraestrutura Digital',
-  'Inovação e Tecnologias Emergentes',
-  'Eficiência dos Processos',
-  'Transparência e Participação',
-  'Competências Digitais',
-]
-
 type Etapa = {
   label: string
   paragraphs: string[]
@@ -132,7 +119,7 @@ const principios = [
 export default function MetodologiaPage() {
   return (
     <section className="pb-12">
-      <div className="dash-x px-6 pb-16 pt-28 sm:px-10">
+      <div className="px-6 pb-16 pt-28 sm:px-10">
         <span className="text-sm font-medium text-muted-foreground">
           Metodologia
         </span>
@@ -164,11 +151,11 @@ export default function MetodologiaPage() {
           </Button>
         </div>
 
-        <div className="-mx-6 mt-16 border-t sm:-mx-10" />
-        <h2 className="mt-16 text-sm font-bold text-foreground">
+        <div aria-hidden="true" className="dash-t -mx-6 mt-16 h-px sm:-mx-10" />
+        <h2 className="mt-8 font-bold text-foreground text-sm">
           Estrutura metodológica
         </h2>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+        <p className="max-w-2xl text-muted-foreground text-sm leading-relaxed">
           A construção dos indicadores segue cinco etapas principais.
         </p>
         <div className="-mx-6 mt-6 dash-t sm:-mx-10">
@@ -226,26 +213,26 @@ export default function MetodologiaPage() {
           Os indicadores são organizados conforme os dez objetivos estratégicos
           da Estratégia Nacional de Governo Digital.
         </p>
-        <ol className="mt-6 grid grid-cols-1 gap-px overflow-hidden rounded-lg border bg-border sm:grid-flow-col sm:grid-rows-5 sm:grid-cols-2">
-          {objetivos.map((objetivo, index) => (
-            <li key={objetivo} className="bg-background">
+        <ol className="mt-6 grid grid-cols-1 gap-px overflow-hidden rounded-lg border bg-border sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-5">
+          {objectives.map((objetivo, index) => (
+            <li key={objetivo.slug} className="bg-background">
               <Link
-                href={`/objetivos/${objectives[index].slug}`}
+                href={`/objetivos/${objetivo.slug}`}
                 className="flex items-center gap-4 px-5 py-4 transition-colors hover:bg-muted/60"
               >
-                <span className="text-sm font-semibold tabular-nums text-primary">
+                <span className="font-semibold text-primary text-sm tabular-nums">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                <span className="text-sm font-medium text-foreground">
-                  {objetivo}
+                <span className="font-medium text-foreground text-sm">
+                  {objetivo.title}
                 </span>
               </Link>
             </li>
           ))}
         </ol>
 
-        <div className="-mx-6 mt-16 border-t sm:-mx-10" />
-        <h2 className="mt-16 text-sm font-bold text-foreground">
+        <div aria-hidden="true" className="dash-t -mx-6 mt-16 h-px sm:-mx-10" />
+        <h2 className="mt-8 font-bold text-foreground text-sm">
           Principais fontes de dados
         </h2>
         <div className="mt-6 flex flex-wrap gap-2">
@@ -262,8 +249,8 @@ export default function MetodologiaPage() {
           ))}
         </div>
 
-        <div className="-mx-6 mt-16 border-t sm:-mx-10" />
-        <h2 className="mt-16 text-sm font-bold text-foreground">
+        <div aria-hidden="true" className="dash-t -mx-6 mt-16 h-px sm:-mx-10" />
+        <h2 className="mt-8 font-bold text-foreground text-sm">
           Evolução contínua da metodologia
         </h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -275,8 +262,8 @@ export default function MetodologiaPage() {
           municipal.
         </p>
 
-        <div className="-mx-6 mt-16 border-t sm:-mx-10" />
-        <h2 className="mt-16 text-sm font-bold text-foreground">
+        <div aria-hidden="true" className="dash-t -mx-6 mt-16 h-px sm:-mx-10" />
+        <h2 className="mt-8 font-bold text-foreground text-sm">
           Princípios da metodologia
         </h2>
         <div className="-mx-6 mt-6 dash-t sm:-mx-10">

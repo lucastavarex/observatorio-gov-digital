@@ -129,7 +129,7 @@ export function SiteHeader() {
                       aria-expanded={isOpen}
                       onClick={() => setOpenMenu(isOpen ? null : item.href)}
                       className={cn(
-                        'flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors',
+                        'flex items-center gap-1 rounded-md px-2 py-2 text-[13px] font-medium transition-colors',
                         active
                           ? 'text-primary'
                           : isOpen
@@ -200,7 +200,7 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    'relative rounded-md px-3 py-2 text-sm font-medium transition-colors',
+                    'relative rounded-md px-2 py-2 text-[13px] font-medium transition-colors',
                     active
                       ? 'text-primary'
                       : 'text-muted-foreground hover:text-foreground'
