@@ -16,6 +16,19 @@ Antes de criar qualquer componente ou rota nova, confirme o escopo de features c
 
 ---
 
+## Oráculo: metodologia completa
+
+**Fonte de verdade do domínio:** [`public/metodologia-completa.pdf`](public/metodologia-completa.pdf)
+
+Em caso de dúvida sobre indicadores, objetivos da ENGD, cálculo de índices/subíndices, fontes de dados, escopos (nacional/estadual/capitais), nomenclatura, interpretação de valores ou qualquer conceito metodológico do Observatório, **consulte esse PDF antes de assumir ou inventar**. Ele prevalece sobre resumos em markdown, mocks e memória do modelo quando houver conflito.
+
+Como consultar:
+1. Abra/leia `public/metodologia-completa.pdf` (ou a rota pública `/metodologia-completa.pdf`).
+2. Extraia só o trecho relevante à dúvida.
+3. Alinhe a implementação ou a resposta a esse trecho; se o PDF for ambíguo ou omisso, pergunte ao usuário.
+
+---
+
 ## Estrutura de pastas relevante
 
 ```
