@@ -1,30 +1,9 @@
-import Link from 'next/link'
-
+import { VariantLink } from '@/components/shared/variant-link'
 import { Button } from '@/components/ui/button'
+import { fontes } from '@/data/fontes'
 import { objectives } from '@/data/objectives'
 
 export const metadata = { title: 'Metodologia' }
-
-const fontes = [
-  { name: 'CETIC.br', url: 'https://cetic.br/' },
-  {
-    name: 'Ministério da Gestão e Inovação (MGI)',
-    url: 'https://www.gov.br/gestao/pt-br',
-  },
-  { name: 'Gov.br', url: 'https://www.gov.br/pt-br' },
-  {
-    name: 'Tribunal de Contas da União (TCU)',
-    url: 'https://portal.tcu.gov.br/',
-  },
-  { name: 'IBGE', url: 'https://www.ibge.gov.br/' },
-  { name: 'INEP', url: 'https://www.gov.br/inep/pt-br' },
-  { name: 'ANATEL', url: 'https://www.gov.br/anatel/pt-br' },
-  { name: 'ABEP-TIC', url: 'https://abep-tic.org.br/' },
-  {
-    name: 'Controladoria-Geral da União (CGU)',
-    url: 'https://www.gov.br/cgu/pt-br',
-  },
-]
 
 type Etapa = {
   label: string
@@ -216,7 +195,7 @@ export default function MetodologiaPage() {
         <ol className="mt-6 grid grid-cols-1 gap-px overflow-hidden rounded-lg border bg-border sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-5">
           {objectives.map((objetivo, index) => (
             <li key={objetivo.slug} className="bg-background">
-              <Link
+              <VariantLink
                 href={`/objetivos/${objetivo.slug}`}
                 className="flex items-center gap-4 px-5 py-4 transition-colors hover:bg-muted/60"
               >
@@ -226,31 +205,29 @@ export default function MetodologiaPage() {
                 <span className="font-medium text-foreground text-sm">
                   {objetivo.title}
                 </span>
-              </Link>
+              </VariantLink>
             </li>
           ))}
         </ol>
 
-        <div aria-hidden="true" className="dash-t -mx-6 mt-16 h-px sm:-mx-10" />
-        <h2 className="mt-8 font-bold text-foreground text-sm">
+        <div className="-mx-6 mt-16 border-t sm:-mx-10" />
+        <h2 className="mt-16 text-sm font-bold text-foreground">
           Principais fontes de dados
         </h2>
         <div className="mt-6 flex flex-wrap gap-2">
           {fontes.map(fonte => (
-            <a
-              key={fonte.name}
-              href={fonte.url}
-              target="_blank"
-              rel="noopener noreferrer"
+            <VariantLink
+              key={fonte.slug}
+              href={`/metodologia/fontes/${fonte.slug}`}
               className="rounded-full border px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
             >
               {fonte.name}
-            </a>
+            </VariantLink>
           ))}
         </div>
 
-        <div aria-hidden="true" className="dash-t -mx-6 mt-16 h-px sm:-mx-10" />
-        <h2 className="mt-8 font-bold text-foreground text-sm">
+        <div className="-mx-6 mt-16 border-t sm:-mx-10" />
+        <h2 className="mt-16 text-sm font-bold text-foreground">
           Evolução contínua da metodologia
         </h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -262,8 +239,8 @@ export default function MetodologiaPage() {
           municipal.
         </p>
 
-        <div aria-hidden="true" className="dash-t -mx-6 mt-16 h-px sm:-mx-10" />
-        <h2 className="mt-8 font-bold text-foreground text-sm">
+        <div className="-mx-6 mt-16 border-t sm:-mx-10" />
+        <h2 className="mt-16 text-sm font-bold text-foreground">
           Princípios da metodologia
         </h2>
         <div className="-mx-6 mt-6 dash-t sm:-mx-10">

@@ -1,0 +1,14 @@
+---
+description: Consultar a metodologia completa (PDF) como oráculo do domínio OBGD
+alwaysApply: true
+---
+
+# Oráculo: metodologia completa
+
+**Fonte de verdade:** `public/metodologia-completa.pdf` (também em `/metodologia-completa.pdf`).
+
+Quando houver dúvida sobre indicadores, objetivos da ENGD, cálculo de índices/subíndices, fontes de dados, escopos (nacional/estadual/capitais), nomenclatura ou interpretação metodológica:
+
+1. Consulte o PDF antes de assumir ou inventar.
+2. Em conflito com markdown, mocks ou memória do modelo, o PDF prevalece.
+3. Se o PDF for ambíguo ou omisso, pergunte ao usuário.

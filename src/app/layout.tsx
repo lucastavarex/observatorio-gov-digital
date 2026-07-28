@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import { Toaster } from 'sonner'
 import { SiteFooter } from '@/components/layout/site-footer'
 import { SiteHeader } from '@/components/layout/site-header'
+import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 
 import './globals.css'
@@ -42,7 +42,7 @@ export default function RootLayout({
           <div className="dash-x">{children}</div>
         </main>
         <SiteFooter />
-        <Toaster richColors position="top-right" />
+        <Toaster position="bottom-right" />
       </body>
     </html>
   )

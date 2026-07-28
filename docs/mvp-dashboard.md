@@ -1,5 +1,9 @@
 # MVP do Dashboard OBGD — Guia de Estudo
 
+> **Atenção (2026-07-28):** decisões e status atuais da plataforma (o que foi feito, mocks, pedidos a Gabriel/Luiza) estão em **[`docs/acompanhamento-plataforma.md`](./acompanhamento-plataforma.md)**.
+>
+> Este guia permanece como background de estudo dos dados / MVP antigo.
+
 > Documento de referência para entender os dados fornecidos pelo cliente, o escopo acordado do MVP, os gráficos possíveis e o que ainda falta para features futuras.
 >
 > Última atualização: jul/2026 · Fonte canônica: `src/local_assets/dados-v2/`

@@ -107,10 +107,7 @@ export default async function EntePage({
                 Obj. {String(objetivoAtivo.numero).padStart(2, '0')} —{' '}
                 {objetivoAtivo.titulo}
                 {objetivoAtivo.posicaoNoObjetivo != null && (
-                  <>
-                    {' '}
-                    · {objetivoAtivo.posicaoNoObjetivo}º no ranking do objetivo
-                  </>
+                  <> · {objetivoAtivo.posicaoNoObjetivo}º no ranking</>
                 )}
               </p>
             )}
@@ -123,9 +120,6 @@ export default async function EntePage({
               {objetivoAtivo?.nota != null
                 ? formatScore(objetivoAtivo.nota)
                 : '—'}
-            </span>
-            <span className="mt-1 block text-xs text-muted-foreground">
-              Índice geral (provisório): {formatScore(ente.indiceGeral)}
             </span>
           </div>
         </div>
@@ -189,7 +183,6 @@ export default async function EntePage({
                   destaques={[objetivoAtivo.nota!]}
                   selecionados={[ente.nome]}
                   alturaClasse="h-100"
-                  badge={ente.nome}
                 />
               </div>
             </div>

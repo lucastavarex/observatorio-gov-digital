@@ -1,5 +1,10 @@
 # Implementação: Ranking por Objetivo + Dados Reais
 
+> **Atenção (2026-07-28):** para o estado atual de produto (índice geral removido da UI, sem página de variável, temáticas mock, `/v2`, pedidos à frente de dados), use o documento canônico:
+> **[`docs/acompanhamento-plataforma.md`](./acompanhamento-plataforma.md)**.
+>
+> Este arquivo permanece como histórico técnico da 1ª integração com `dados-v2`. Trechos que falam em índice geral “provisório” ou drill-down de variável estão desatualizados.
+
 > Documento técnico e de produto sobre a migração do protótipo (mocks) para os dados canônicos do OBGD, e o ajuste de visualização **por objetivo ENGD** solicitado pelo cliente.
 >
 > Escopo: Ranking, Indicadores, drill-down e camada de dados · Edição do índice: **2026** · Fonte versionada: `src/data/obgd/assets/`

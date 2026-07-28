@@ -13,6 +13,12 @@ Portal público e interativo de monitoramento da transformação digital no seto
 
 **Princípio central:** Acessibilidade e clareza para o público geral, não especialistas.
 
+## Oráculo: metodologia completa
+
+**Fonte de verdade do domínio:** `public/metodologia-completa.pdf`
+
+Se houver dúvida sobre indicadores, objetivos da ENGD, cálculo de índices/subíndices, fontes, escopos federativos ou qualquer conceito metodológico, **leia esse PDF antes de assumir**. Em conflito com resumos em markdown, mocks ou memória do modelo, o PDF prevalece. Se o documento for ambíguo ou omisso, pergunte ao usuário.
+
 ## Contexto e escopo
 
 O Observatório monitora os avanços da transformação digital dos governos federal, estaduais e municipais do Brasil. Está alinhado à Estratégia Nacional de Governo Digital (ENGD), Decreto nº 12.069/2024, e à Portaria SGD/MGI nº 4.248/2024.

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 
 import { IndicadoresExplorer } from '@/components/indicadores/indicadores-explorer'
 
@@ -9,5 +10,9 @@ export const metadata: Metadata = {
 }
 
 export default function IndicadoresPage() {
-  return <IndicadoresExplorer />
+  return (
+    <Suspense fallback={null}>
+      <IndicadoresExplorer />
+    </Suspense>
+  )
 }

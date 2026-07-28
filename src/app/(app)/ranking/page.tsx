@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 
 import { RankingExplorer } from '@/components/ranking/ranking-explorer'
 
@@ -9,5 +10,9 @@ export const metadata: Metadata = {
 }
 
 export default function RankingPage() {
-  return <RankingExplorer />
+  return (
+    <Suspense fallback={null}>
+      <RankingExplorer />
+    </Suspense>
+  )
 }

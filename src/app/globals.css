@@ -234,13 +234,9 @@
   *,
   ::before,
   ::after {
-    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     animation-duration: 0.01ms !important;
-    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     animation-iteration-count: 1 !important;
-    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     transition-duration: 0.01ms !important;
-    /* biome-ignore lint/complexity/noImportantStyles: force reduced motion */
     scroll-behavior: auto !important;
   }
 }
@@ -329,6 +325,25 @@
     100% 1px,
     1px 100%;
   background-repeat: no-repeat;
+}
+
+/* Toast centralizado (sonner): a lista tem largura fixa e o toast é absoluto,
+   ancorado à esquerda dela — então um toast com largura de conteúdo fica preso
+   à esquerda. Colocando-o em fluxo com margem automática, ele se centraliza de
+   verdade dentro da lista (que já é centralizada na tela). */
+[data-sonner-toaster][data-x-position="center"] [data-sonner-toast] {
+  position: relative !important;
+  margin-inline: auto !important;
+}
+
+/* Descrição do toast: Sonner aplica opacidade baixa demais. */
+[data-sonner-toast] [data-description] {
+  color: color-mix(
+    in oklch,
+    var(--popover-foreground) 75%,
+    transparent
+  ) !important;
+  opacity: 1 !important;
 }
 
 /* ScrollRevealText — máscaras por palavra (GSAP + SplitType) */
