@@ -19,6 +19,7 @@ import {
   primeiroObjetivoSelecionavel,
 } from '@/data/objectives-availability'
 import { rankingTematico, tematicas } from '@/data/tematicas'
+import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { ufDeEnte } from '@/lib/geo/entes-geo'
 import {
   parseRankingSearchParams,
@@ -31,6 +32,7 @@ type Vista = 'grafico' | 'mapa'
 export function RankingExplorer() {
   const router = useRouter()
   const searchParams = useSearchParams()
+  const { link } = usePlatformVariant()
   const filtros = React.useMemo(
     () => parseRankingSearchParams(searchParams),
     [searchParams]
@@ -55,23 +57,25 @@ export function RankingExplorer() {
         const primeiro = primeiroObjetivoSelecionavel(cob)
         next.objetivo = objectives[primeiro - 1].slug
       }
-      router.replace(rankingHref(next), { scroll: false })
+      router.replace(link(rankingHref(next)), { scroll: false })
     },
-    [filtros, router]
+    [filtros, link, router]
   )
 
   React.useEffect(() => {
     if (!objetivoSelecionavel(objetivoNumero - 1, cobertura)) {
       const primeiro = primeiroObjetivoSelecionavel(cobertura)
       router.replace(
-        rankingHref({
-          ...filtros,
-          objetivo: objectives[primeiro - 1].slug,
-        }),
+        link(
+          rankingHref({
+            ...filtros,
+            objetivo: objectives[primeiro - 1].slug,
+          })
+        ),
         { scroll: false }
       )
     }
-  }, [cobertura, objetivoNumero, filtros, router])
+  }, [cobertura, objetivoNumero, filtros, link, router])
 
   const objetivo = objectives[objetivoNumero - 1]
   const tematica = tematicas.find(t => t.slug === tagSlug) ?? tematicas[0]
@@ -107,23 +111,24 @@ export function RankingExplorer() {
       const uf = ufDeEnte('estadual', e.nome)
       if (uf) {
         const path = `/ranking/${active}/${e.slug}`
+        const href = objetivoQuery ? `${path}?${objetivoQuery}` : path
         dados.push({
           uf,
           nome: e.nome,
           valor: e.valorPrincipal,
-          href: objetivoQuery ? `${path}?${objetivoQuery}` : path,
+          href: link(href),
         })
       }
     }
     return dados
-  }, [active, lista, objetivoQuery])
+  }, [active, link, lista, objetivoQuery])
 
   const podeMapa = active === 'estadual' && mapaDados.length >= 5
 
   function selecionar(key: NivelKey) {
     const alvo = niveis.find(n => n.key === key)
     if (alvo && !alvo.isRanking && alvo.entes[0]) {
-      router.push(`/ranking/${key}/${alvo.entes[0].slug}`)
+      router.push(link(`/ranking/${key}/${alvo.entes[0].slug}`))
       return
     }
     if (key === 'estadual' || key === 'municipal') {
@@ -278,7 +283,7 @@ export function RankingExplorer() {
         <div className="mt-12">
           <EnteRankingList
             entes={lista}
-            basePath={`/ranking/${nivel.key}`}
+            basePath={link(`/ranking/${nivel.key}`)}
             colunaValor="Sub-índice"
             nivelKey={nivel.key}
             hrefQuery={objetivoQuery}
