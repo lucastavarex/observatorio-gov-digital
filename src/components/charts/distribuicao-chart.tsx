@@ -4,7 +4,6 @@ import {
   Bar,
   BarChart,
   Cell,
-  LabelList,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -24,8 +23,6 @@ type DistribuicaoChartProps = {
   alturaClasse?: string
   /** Barras horizontais (faixas no eixo Y). Padrão: barras verticais. */
   horizontal?: boolean
-  /** Texto exibido num badge no canto superior direito do gráfico. */
-  badge?: string
   /** Nomes de entes a destacar na lista do tooltip. */
   selecionados?: string[]
 }
@@ -136,15 +133,9 @@ export function DistribuicaoChart({
   destaques,
   alturaClasse = 'h-64',
   horizontal = false,
-  badge,
   selecionados,
 }: DistribuicaoChartProps) {
   const faixas = montarFaixas(entes, destaques)
-  // Só a faixa do ente carrega o texto do badge (usado pelo LabelList).
-  const dados = faixas.map(faixa => ({
-    ...faixa,
-    badgeText: faixa.temDestaque && badge ? badge : '',
-  }))
 
   const cells = faixas.map(faixa => (
     <Cell key={faixa.rotulo} fill={faixa.temDestaque ? AZUL : CINZA} />
@@ -152,79 +143,13 @@ export function DistribuicaoChart({
 
   const tickStyle = { fill: 'var(--muted-foreground)', fontSize: 11 }
 
-  // Badge branco com o nome do ente, desenhado dentro da barra destacada.
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const renderBadge = (props: any) => {
-    const texto = props?.value ? String(props.value) : ''
-    const vb = props?.viewBox as
-      | { x?: number; y?: number; width?: number; height?: number }
-      | undefined
-    if (!texto || !vb) return null
-
-    const x = Number(vb.x ?? 0)
-    const y = Number(vb.y ?? 0)
-    const largura = Number(vb.width ?? 0)
-    const altura = Number(vb.height ?? 0)
-
-    const alturaBadge = Math.min(24, Math.max(16, altura - 6))
-    const larguraBadge = texto.length * 6.4 + 20
-
-    let bx: number
-    let by: number
-    if (horizontal) {
-      // Encostado à direita, dentro da barra (recuo de 8px); nunca antes do início.
-      bx = Math.max(x + 6, x + largura - larguraBadge - 8)
-      by = y + (altura - alturaBadge) / 2
-    } else {
-      // Centralizado na barra, perto do topo (pode ultrapassar a largura da barra).
-      bx = x + (largura - larguraBadge) / 2
-      by = y + Math.min(6, Math.max(0, (altura - alturaBadge) / 2))
-
-      // Clamp horizontal para não cortar na primeira/última coluna.
-      const parent = props?.parentViewBox as
-        | { x?: number; width?: number }
-        | undefined
-      if (parent?.width != null) {
-        const pad = 4
-        const minX = Number(parent.x ?? 0) + pad
-        const maxX = Number(parent.x ?? 0) + Number(parent.width) - pad
-        bx = Math.max(minX, Math.min(bx, maxX - larguraBadge))
-      }
-    }
-
-    return (
-      <g>
-        <rect
-          x={bx}
-          y={by}
-          width={larguraBadge}
-          height={alturaBadge}
-          rx={alturaBadge / 2}
-          fill="#ffffff"
-          stroke="rgba(71, 117, 202, 0.25)"
-        />
-        <text
-          x={bx + larguraBadge / 2}
-          y={by + alturaBadge / 2}
-          textAnchor="middle"
-          dominantBaseline="central"
-          fill={AZUL}
-          fontSize={11}
-          fontWeight={600}
-        >
-          {texto}
-        </text>
-      </g>
-    )
-  }
-
   return (
     <div className={`w-full ${alturaClasse}`}>
       <ResponsiveContainer width="100%" height="100%">
         {horizontal ? (
           <BarChart
             layout="vertical"
-            data={dados}
+            data={faixas}
             margin={{ top: 8, right: 16, bottom: 4, left: 4 }}
           >
             <XAxis
@@ -260,12 +185,11 @@ export function DistribuicaoChart({
               isAnimationActive={false}
             >
               {cells}
-              <LabelList dataKey="badgeText" content={renderBadge} />
             </Bar>
           </BarChart>
         ) : (
           <BarChart
-            data={dados}
+            data={faixas}
             margin={{ top: 8, right: 8, bottom: 4, left: -20 }}
           >
             <XAxis
@@ -297,7 +221,6 @@ export function DistribuicaoChart({
               isAnimationActive={false}
             >
               {cells}
-              <LabelList dataKey="badgeText" content={renderBadge} />
             </Bar>
           </BarChart>
         )}

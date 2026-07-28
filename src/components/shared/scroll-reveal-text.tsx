@@ -13,6 +13,11 @@ interface ScrollRevealTextProps {
   className?: string
   /** Classes extras do wrapper (margens, etc.). */
   trackClassName?: string
+  /**
+   * Posição de início do ScrollTrigger (ex.: `'top top'`, `'top 65%'`).
+   * Default `'top top'` — adequado a páginas em que o bloco já está alto no load.
+   */
+  start?: string
 }
 
 /**
@@ -23,6 +28,7 @@ export function ScrollRevealText({
   text,
   className = '',
   trackClassName = '',
+  start = 'top top',
 }: ScrollRevealTextProps) {
   const trackRef = useRef<HTMLDivElement>(null)
   const paraRef = useRef<HTMLParagraphElement>(null)
@@ -69,10 +75,9 @@ export function ScrollRevealText({
         gsap
           .timeline({
             scrollTrigger: {
-              // Track (não o parágrafo): no load o topo ainda não cruzou o viewport,
-              // então o reveal só avança com o scroll — evita texto já revelado em /sobre.
+              // Track (não o parágrafo): o `start` é configurável por página.
               trigger: trackRef.current,
-              start: 'top top',
+              start,
               end: 'bottom 35%',
               scrub: 1,
             },
@@ -102,7 +107,7 @@ export function ScrollRevealText({
       split?.revert()
       delete el.dataset.ready
     }
-  }, [text, reducedMotion])
+  }, [text, reducedMotion, start])
 
   return (
     <div ref={trackRef} className={`relative ${trackClassName}`}>

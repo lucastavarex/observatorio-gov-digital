@@ -1,13 +1,16 @@
 'use client'
 
+import { useRouter, useSearchParams } from 'next/navigation'
 import * as React from 'react'
-import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
+import { toast } from 'sonner'
+import { ComparativoBarChart } from '@/components/charts/comparativo-bar-chart'
 import {
   ObjetivosRadar,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
+import { BandeiraEnte } from '@/components/shared/bandeira-ente'
+import { FilterPill } from '@/components/shared/filter-pill'
 import {
-  ANO_INDICE,
   type Ente,
   formatScore,
   mediasPorObjetivo,
@@ -15,37 +18,73 @@ import {
   niveis,
 } from '@/data/indicators'
 import { objectives } from '@/data/objectives'
+import { notaTematica, tematicas, variaveisPorTematica } from '@/data/tematicas'
+import { bandeiraSrc } from '@/lib/geo/entes-geo'
+import {
+  type IndicadoresFiltros,
+  indicadoresHref,
+  MAX_ENTES_COMPARATIVO,
+  normalizarIndicadoresFiltros,
+  parseIndicadoresSearchParams,
+} from '@/lib/indicadores-url'
 import { cn } from '@/lib/utils'
 
-// Cores das séries (até 3 entes comparados).
-const CORES = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)']
+const CORES = [
+  'var(--chart-1)',
+  'var(--chart-2)',
+  'var(--chart-3)',
+  'var(--chart-5)',
+  '#b4536a',
+]
 const MEDIA_COR = 'var(--chart-4)'
-const MAX_ENTES = 3
 
 export function IndicadoresExplorer() {
-  const [nivelKey, setNivelKey] = React.useState<NivelKey | null>(null)
-  const [enteSlugs, setEnteSlugs] = React.useState<string[]>([])
-  const [objetivoSlug, setObjetivoSlug] = React.useState<string | null>(null)
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const filtros = React.useMemo(
+    () => parseIndicadoresSearchParams(searchParams),
+    [searchParams]
+  )
+
+  const nivelKey = filtros.nivel
+  const enteSlugs = filtros.entes
+  const modo = filtros.por
+  const tagSlug = filtros.tema
 
   const nivel = niveis.find(n => n.key === nivelKey) ?? null
   const medias = nivel ? mediasPorObjetivo(nivel) : []
 
+  const atualizar = React.useCallback(
+    (patch: Partial<IndicadoresFiltros>) => {
+      const next = normalizarIndicadoresFiltros({ ...filtros, ...patch })
+      router.replace(indicadoresHref(next), { scroll: false })
+    },
+    [filtros, router]
+  )
+
   function selecionarNivel(key: NivelKey) {
     const alvo = niveis.find(n => n.key === key)
-    setNivelKey(key)
-    setObjetivoSlug(null)
-    // Federal é entidade única: já seleciona o ente automaticamente.
-    setEnteSlugs(
-      alvo && !alvo.isRanking && alvo.entes[0] ? [alvo.entes[0].slug] : []
-    )
+    atualizar({
+      nivel: key,
+      tema: null,
+      entes:
+        alvo && !alvo.isRanking && alvo.entes[0] ? [alvo.entes[0].slug] : [],
+    })
   }
 
   function alternarEnte(slug: string) {
-    setEnteSlugs(prev => {
-      if (prev.includes(slug)) return prev.filter(s => s !== slug)
-      if (prev.length >= MAX_ENTES) return prev
-      return [...prev, slug]
-    })
+    if (enteSlugs.includes(slug)) {
+      atualizar({ entes: enteSlugs.filter(s => s !== slug) })
+      return
+    }
+    if (enteSlugs.length >= MAX_ENTES_COMPARATIVO) {
+      toast('Limite de 5 entes atingido', {
+        description: 'Desselecione um para selecionar outro.',
+        position: 'bottom-right',
+      })
+      return
+    }
+    atualizar({ entes: [...enteSlugs, slug] })
   }
 
   const entesSelecionados: Ente[] = nivel
@@ -54,14 +93,23 @@ export function IndicadoresExplorer() {
         .filter((e): e is Ente => Boolean(e))
     : []
 
-  const objIndex = objetivoSlug
-    ? objectives.findIndex(o => o.slug === objetivoSlug)
-    : -1
-  const objetivoCoberto = objIndex >= 0 && medias[objIndex] !== null
-  const objetivoTitulo = objIndex >= 0 ? objectives[objIndex].title : ''
+  const porObjetivos = modo === 'objetivos'
+  const tematica = tagSlug
+    ? (tematicas.find(t => t.slug === tagSlug) ?? null)
+    : null
+
+  const selecaoAtiva = porObjetivos ? true : Boolean(tematica)
+  const rotuloSelecao = porObjetivos
+    ? 'Perfil por objetivo'
+    : (tematica?.nome ?? '')
+
+  const valorEnte = (e: Ente): number | null => {
+    if (!porObjetivos && tematica) return notaTematica(e, tematica.slug)
+    return null
+  }
 
   const completo = Boolean(
-    nivel && entesSelecionados.length >= 1 && objetivoCoberto
+    nivel && entesSelecionados.length >= 1 && selecaoAtiva
   )
 
   const radarEixos = objectives.map((o, i) => ({
@@ -88,103 +136,98 @@ export function IndicadoresExplorer() {
       : []),
   ]
 
-  const entesObjetivo =
-    nivel && objIndex >= 0
-      ? nivel.entes
-          .map(e => {
-            const nota = e.objetivos[objIndex]?.nota
-            return nota != null ? { nome: e.nome, indiceGeral: nota } : null
-          })
-          .filter((x): x is { nome: string; indiceGeral: number } => x !== null)
-      : []
-  const destaques = entesSelecionados
-    .map(e => e.objetivos[objIndex]?.nota)
-    .filter((n): n is number => typeof n === 'number')
+  const barrasTematicas =
+    tematica &&
+    entesSelecionados.map((e, idx) => ({
+      nome: e.nome,
+      valor: notaTematica(e, tematica.slug),
+      cor: CORES[idx],
+    }))
 
-  const mediaIndiceGeral =
-    nivel && nivel.entes.length
-      ? nivel.entes.reduce((s, e) => s + e.indiceGeral, 0) / nivel.entes.length
-      : null
+  const varsTag = tematica ? (variaveisPorTematica[tematica.slug] ?? []) : []
 
   return (
     <section className="pb-12">
-      <div className="px-6 pb-16 pt-28 sm:px-10">
+      <div className="px-6 pt-28 pb-16 sm:px-10">
         <span className="text-sm font-medium text-muted-foreground">
           Indicadores
         </span>
-        <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text text-4xl font-bold leading-tight tracking-tight text-transparent sm:text-5xl">
+        <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
           Explorar indicadores
         </h1>
 
-        {/* Filtros de nível — largura total */}
-        <div className="dash-t dash-b -mx-6 mt-10 px-6 pt-8 pb-4 sm:-mx-10 sm:px-10">
-          <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            Nível de governo
-          </span>
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap gap-2">
-              {niveis.map(item => {
-                const isActive = item.key === nivelKey
-                return (
-                  <button
-                    key={item.key}
-                    type="button"
-                    onClick={() => selecionarNivel(item.key)}
-                    className={cn(
-                      'rounded-full border px-5 py-2.5 text-sm font-medium transition-colors',
-                      isActive
-                        ? 'border-primary bg-primary/10 text-primary'
-                        : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
-                    )}
-                  >
-                    {item.label}
-                  </button>
-                )
-              })}
-            </div>
-
-            <span
-              className="rounded-full border border-border px-4 py-2.5 text-sm font-medium text-muted-foreground"
-              title="Snapshot da edição atual do índice"
-            >
-              Edição {ANO_INDICE}
+        <div className="dash-y -mx-6 mt-10 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
+          <div>
+            <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
+              Nível de governo
             </span>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {niveis.map(item => (
+                <FilterPill
+                  key={item.key}
+                  active={item.key === nivelKey}
+                  onClick={() => selecionarNivel(item.key)}
+                  className="px-5 py-2.5"
+                >
+                  {item.label}
+                </FilterPill>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:dash-l lg:pl-8">
+            <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
+              Ordenar por
+            </span>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <FilterPill
+                active={porObjetivos}
+                onClick={() => atualizar({ por: 'objetivos', tema: null })}
+              >
+                Objetivos da ENGD
+              </FilterPill>
+              <FilterPill
+                active={!porObjetivos}
+                onClick={() => atualizar({ por: 'tematicas' })}
+              >
+                Categorias temáticas
+              </FilterPill>
+            </div>
           </div>
         </div>
 
-        {/* Colunas: controles à esquerda, gráficos à direita */}
         <div className="mt-8 grid gap-8 lg:grid-cols-2">
-          {/* Coluna esquerda: entes e objetivos */}
-          <div className="grid grid-cols-2">
-            {/* Entes */}
-            <div className="flex flex-col pr-4">
+          <div
+            className={cn('grid', porObjetivos ? 'grid-cols-1' : 'grid-cols-2')}
+          >
+            <div className={cn('flex flex-col', !porObjetivos && 'pr-4')}>
               <div className="flex items-baseline justify-between gap-2 px-3 pb-2">
-                <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
                   Ente
                 </span>
                 {nivel?.isRanking && (
                   <span className="text-[10px] text-muted-foreground">
-                    {enteSlugs.length}/{MAX_ENTES}
+                    {enteSlugs.length}/{MAX_ENTES_COMPARATIVO}
                   </span>
                 )}
               </div>
               <ul className="flex flex-col gap-1">
                 {!nivel && (
-                  <li className="px-3 py-2 text-sm text-muted-foreground">
+                  <li className="px-3 py-2 text-muted-foreground text-sm">
                     Selecione um nível.
                   </li>
                 )}
                 {nivel?.entes.map(e => {
                   const idx = enteSlugs.indexOf(e.slug)
                   const isActive = idx >= 0
-                  const bloqueado = !isActive && enteSlugs.length >= MAX_ENTES
-                  const subIndice =
-                    objIndex >= 0 ? e.objetivos[objIndex]?.nota : null
+                  const bloqueado =
+                    !isActive && enteSlugs.length >= MAX_ENTES_COMPARATIVO
+                  const valor = selecaoAtiva ? valorEnte(e) : null
                   return (
                     <li key={e.slug}>
                       <button
                         type="button"
-                        disabled={bloqueado}
+                        aria-disabled={bloqueado}
                         onClick={() => alternarEnte(e.slug)}
                         className={cn(
                           'flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
@@ -203,20 +246,17 @@ export function IndicadoresExplorer() {
                               style={{ backgroundColor: CORES[idx] }}
                             />
                           )}
+                          <BandeiraEnte
+                            src={bandeiraSrc(nivel.key, e.slug)}
+                            nome={e.nome}
+                          />
                           <span className="truncate">{e.nome}</span>
                         </span>
-                        <span className="flex shrink-0 flex-col items-end leading-tight">
-                          <span className="text-xs tabular-nums text-muted-foreground">
-                            {subIndice != null
-                              ? formatScore(subIndice)
-                              : formatScore(e.indiceGeral)}
+                        {valor != null && (
+                          <span className="shrink-0 text-muted-foreground text-xs tabular-nums">
+                            {formatScore(valor)}
                           </span>
-                          {subIndice != null && (
-                            <span className="text-[10px] tabular-nums text-muted-foreground/70">
-                              geral {formatScore(e.indiceGeral)}
-                            </span>
-                          )}
-                        </span>
+                        )}
                       </button>
                     </li>
                   )
@@ -224,122 +264,131 @@ export function IndicadoresExplorer() {
               </ul>
             </div>
 
-            {/* Objetivos */}
-            <div className="dash-x flex flex-col px-4">
-              <div className="px-3 pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                Objetivo
-              </div>
-              <ul className="flex flex-col gap-1">
-                {!nivel && (
-                  <li className="px-3 py-2 text-sm text-muted-foreground">
-                    Selecione um nível.
-                  </li>
-                )}
-                {nivel &&
-                  objectives.map((obj, i) => {
-                    const coberto = medias[i] !== null
-                    const isActive = obj.slug === objetivoSlug
-                    return (
-                      <li key={obj.slug}>
-                        <button
-                          type="button"
-                          disabled={!coberto}
-                          onClick={() => setObjetivoSlug(obj.slug)}
-                          className={cn(
-                            'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
-                            !coberto
-                              ? 'cursor-not-allowed text-muted-foreground/50'
-                              : isActive
+            {!porObjetivos && (
+              <div className="dash-x flex flex-col px-4">
+                <div className="px-3 pb-2 font-medium text-muted-foreground text-xs uppercase tracking-wide">
+                  Categoria
+                </div>
+                <ul className="flex flex-col gap-1">
+                  {!nivel && (
+                    <li className="px-3 py-2 text-muted-foreground text-sm">
+                      Selecione um nível.
+                    </li>
+                  )}
+                  {nivel &&
+                    tematicas.map(tag => {
+                      const isActive = tag.slug === tagSlug
+                      return (
+                        <li key={tag.slug}>
+                          <button
+                            type="button"
+                            onClick={() => atualizar({ tema: tag.slug })}
+                            className={cn(
+                              'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
+                              isActive
                                 ? 'bg-primary/10 font-medium text-primary'
                                 : 'text-foreground hover:bg-primary/5 hover:text-primary'
-                          )}
-                        >
-                          <span className="shrink-0 tabular-nums text-muted-foreground">
-                            {String(i + 1).padStart(2, '0')}
-                          </span>
-                          <span className="truncate">{obj.title}</span>
-                        </button>
-                      </li>
-                    )
-                  })}
-              </ul>
-            </div>
+                            )}
+                          >
+                            <span className="truncate">{tag.nome}</span>
+                          </button>
+                        </li>
+                      )
+                    })}
+                </ul>
+              </div>
+            )}
           </div>
 
-          {/* Coluna direita: gráficos */}
           <div>
             {completo ? (
               <div className="space-y-8">
-                <div>
-                  <h2 className="text-sm font-bold text-foreground">
-                    Perfil por objetivo
-                  </h2>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Comparação dos entes selecionados nos dez objetivos da ENGD.
-                  </p>
-
-                  {/* Legenda do radar */}
-                  <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
-                    {entesSelecionados.map((e, idx) => (
-                      <span
-                        key={e.slug}
-                        className="inline-flex items-center gap-1.5"
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="size-2.5 rounded-full"
-                          style={{ backgroundColor: CORES[idx] }}
-                        />
-                        {e.nome}
-                      </span>
-                    ))}
-                    {mostrarMedia && (
-                      <span className="inline-flex items-center gap-1.5">
-                        <span
-                          aria-hidden="true"
-                          className="size-2.5 rounded-full"
-                          style={{ backgroundColor: MEDIA_COR }}
-                        />
-                        Média do nível
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="mt-2">
-                    <ObjetivosRadar eixos={radarEixos} series={radarSeries} />
-                  </div>
-                </div>
-
-                {nivel!.isRanking && entesObjetivo.length >= 5 && (
+                {porObjetivos ? (
                   <div>
-                    <h2 className="text-sm font-bold text-foreground">
-                      Distribuição · {objetivoTitulo}
+                    <h2 className="font-bold text-foreground text-sm">
+                      Perfil por objetivo
                     </h2>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Sub-índice dos {entesObjetivo.length} entes no objetivo,
-                      com destaque para os selecionados
-                      {mediaIndiceGeral != null && (
-                        <>
-                          . Índice geral médio do nível:{' '}
-                          {formatScore(mediaIndiceGeral)} (referência
-                          provisória)
-                        </>
-                      )}
-                      .
+                    <p className="mt-1 text-muted-foreground text-sm">
+                      Comparação dos entes selecionados nos objetivos da ENGD
+                      com cobertura de dados.
                     </p>
-                    <div className="mt-4">
-                      <DistribuicaoChart
-                        entes={entesObjetivo}
-                        destaques={destaques}
-                        selecionados={entesSelecionados.map(e => e.nome)}
-                        alturaClasse="h-72"
-                      />
+                    <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-muted-foreground text-xs">
+                      {entesSelecionados.map((e, idx) => (
+                        <span
+                          key={e.slug}
+                          className="inline-flex items-center gap-1.5"
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="size-2.5 rounded-full"
+                            style={{ backgroundColor: CORES[idx] }}
+                          />
+                          {e.nome}
+                        </span>
+                      ))}
+                      {mostrarMedia && (
+                        <span className="inline-flex items-center gap-1.5">
+                          <span
+                            aria-hidden="true"
+                            className="size-2.5 rounded-full"
+                            style={{ backgroundColor: MEDIA_COR }}
+                          />
+                          Média do nível
+                        </span>
+                      )}
                     </div>
+                    <div className="mt-2">
+                      <ObjetivosRadar eixos={radarEixos} series={radarSeries} />
+                    </div>
+                  </div>
+                ) : (
+                  <div>
+                    <h2 className="font-bold text-foreground text-sm">
+                      Comparativo · {rotuloSelecao}
+                    </h2>
+                    <p className="mt-1 text-muted-foreground text-sm">
+                      Score temático ilustrativo (mock) dos entes selecionados.
+                    </p>
+                    {barrasTematicas && (
+                      <div className="mt-4">
+                        <ComparativoBarChart entes={barrasTematicas} />
+                      </div>
+                    )}
+                    {varsTag.length > 0 && (
+                      <div className="dash-t mt-8 pt-6">
+                        <h3 className="font-bold text-foreground text-sm">
+                          Variáveis atreladas à tag
+                        </h3>
+                        <p className="mt-1 text-muted-foreground text-xs">
+                          Lista mock — aguarda mapeamento oficial da frente de
+                          dados.
+                        </p>
+                        <ul className="mt-4 border-t">
+                          {varsTag.map(v => (
+                            <li
+                              key={v.slug}
+                              className="flex items-center justify-between gap-3 border-b py-3"
+                            >
+                              <span className="min-w-0">
+                                <span className="block text-foreground text-xs font-medium">
+                                  {v.nome}
+                                </span>
+                                <span className="mt-0.5 block text-[10px] text-muted-foreground uppercase tracking-wide">
+                                  {v.fonte}
+                                </span>
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
             ) : (
               <div className="relative flex h-full min-h-64 items-center justify-center rounded-xl p-8 text-center">
+                {/* Borda tracejada no mesmo padrão das linhas laterais da
+                    página (traço 9px / vão 9px, cor --border). */}
                 <svg
                   aria-hidden="true"
                   className="pointer-events-none absolute inset-0 h-full w-full"
@@ -359,9 +408,14 @@ export function IndicadoresExplorer() {
                   />
                 </svg>
                 <p className="max-w-xs text-muted-foreground text-sm">
-                  Selecione <span className="font-medium">nível</span>,{' '}
-                  <span className="font-medium">ente(s)</span> e{' '}
-                  <span className="font-medium">objetivo</span>
+                  Selecione <span className="font-medium">nível</span> e{' '}
+                  <span className="font-medium">ente(s)</span>
+                  {!porObjetivos && (
+                    <>
+                      {' '}
+                      e <span className="font-medium">categoria</span>
+                    </>
+                  )}
                   <br />
                   para visualizar os gráficos.
                 </p>

@@ -117,14 +117,18 @@ function buildEnte(
   const objetivos: ObjetivoScore[] = objectives.map((objetivo, index) => {
     const numero = index + 1
     const row = byObj.get(numero)
+    // Objetivo 3 desabilitado por decisão de produto (mesmo com linhas no JSON).
+    const desabilitadoPorPolitica = numero === 3
 
     return {
       objetivoSlug: objetivo.slug,
       numero,
       titulo: objetivo.title,
       descricao: objetivo.description,
-      nota: row ? round1(row.sub_indice) : null,
-      posicaoNoObjetivo: row?.posicao_no_objetivo ?? null,
+      nota: desabilitadoPorPolitica || !row ? null : round1(row.sub_indice),
+      posicaoNoObjetivo: desabilitadoPorPolitica
+        ? null
+        : (row?.posicao_no_objetivo ?? null),
       variaveis: [],
     }
   })
@@ -134,6 +138,7 @@ function buildEnte(
     nome,
     nivel: nivelKey,
     codigo,
+    // Mantido no modelo para compatibilidade com o JSON; não expor na UI.
     indiceGeral: round1(indiceGeral),
     nObjetivosComDados,
     objetivos,
@@ -160,8 +165,8 @@ function buildNivel(key: NivelKey): Nivel {
     buildEnte(key, meta.dataNivel, u.codigo, u.nome)
   )
 
-  // Default order by índice geral (provisional); UI re-sorts by objective.
-  entes.sort((a, b) => b.indiceGeral - a.indiceGeral)
+  // Ordem estável por nome; a UI reordena por objetivo ou tag temática.
+  entes.sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'))
 
   return {
     key,
@@ -221,44 +226,27 @@ export function objetivosComCobertura(nivel: Nivel): boolean[] {
   )
 }
 
-export type OrdenacaoRanking = 'objetivo' | 'indice_geral'
+/** @deprecated Índice geral removido da UI; mantido só por compatibilidade de imports. */
+export type OrdenacaoRanking = 'objetivo'
 
 export type RankingItem = {
   slug: string
   nome: string
   codigo: string
-  /** Valor principal conforme a ordenação ativa. */
+  /** Sub-índice do objetivo pelo qual se ordena. */
   valorPrincipal: number
   subIndice: number | null
-  indiceGeral: number
   posicao: number
 }
 
 /**
- * Ranking de entes do nível, ordenado por objetivo ou por índice geral.
+ * Ranking de entes do nível pelo sub-índice de um objetivo.
  */
 export function rankingDoNivel(
   nivel: Nivel,
   objetivoNumero: number,
-  ordenacao: OrdenacaoRanking
+  _ordenacao: OrdenacaoRanking = 'objetivo'
 ): RankingItem[] {
-  if (ordenacao === 'indice_geral') {
-    return [...nivel.entes]
-      .sort((a, b) => b.indiceGeral - a.indiceGeral)
-      .map((e, i) => {
-        const obj = e.objetivos[objetivoNumero - 1]
-        return {
-          slug: e.slug,
-          nome: e.nome,
-          codigo: e.codigo,
-          valorPrincipal: e.indiceGeral,
-          subIndice: obj?.nota ?? null,
-          indiceGeral: e.indiceGeral,
-          posicao: i + 1,
-        }
-      })
-  }
-
   const comDados = nivel.entes
     .map(e => {
       const obj = e.objetivos[objetivoNumero - 1]
@@ -268,9 +256,11 @@ export function rankingDoNivel(
     })
     .filter((x): x is { ente: Ente; obj: ObjetivoScore } => x !== null)
     .sort((a, b) => {
-      const pa = a.obj.posicaoNoObjetivo ?? 999
-      const pb = b.obj.posicaoNoObjetivo ?? 999
-      if (pa !== pb) return pa - pb
+      // Preferir posição oficial quando ambos têm; senão ordenar por nota
+      // (necessário ao misturar capitais reais com municípios mock).
+      const pa = a.obj.posicaoNoObjetivo
+      const pb = b.obj.posicaoNoObjetivo
+      if (pa != null && pb != null && pa !== pb) return pa - pb
       return (b.obj.nota ?? 0) - (a.obj.nota ?? 0)
     })
 
@@ -280,8 +270,7 @@ export function rankingDoNivel(
     codigo: ente.codigo,
     valorPrincipal: obj.nota!,
     subIndice: obj.nota,
-    indiceGeral: ente.indiceGeral,
-    posicao: obj.posicaoNoObjetivo ?? i + 1,
+    posicao: i + 1,
   }))
 }
 

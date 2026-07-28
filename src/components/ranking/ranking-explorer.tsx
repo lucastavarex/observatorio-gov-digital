@@ -1,97 +1,171 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import * as React from 'react'
 import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
 import { EnteRankingList } from '@/components/ranking/ente-ranking-list'
+import { FilterPill } from '@/components/shared/filter-pill'
+import { type DadoMapa, MapaBrasil } from '@/components/shared/mapa-brasil'
+import { ObjetivoChip } from '@/components/shared/objetivo-chip'
 import {
   type NivelKey,
   niveis,
-  type OrdenacaoRanking,
   objetivosComCobertura,
   rankingDoNivel,
 } from '@/data/indicators'
-import { objectives } from '@/data/objectives'
-import { cn } from '@/lib/utils'
+import { getObjectiveNumber, objectives } from '@/data/objectives'
+import {
+  objetivoSelecionavel,
+  primeiroObjetivoSelecionavel,
+} from '@/data/objectives-availability'
+import { rankingTematico, tematicas } from '@/data/tematicas'
+import { ufDeEnte } from '@/lib/geo/entes-geo'
+import {
+  parseRankingSearchParams,
+  type RankingFiltros,
+  rankingHref,
+} from '@/lib/ranking-url'
 
-function primeiroObjetivoCoberto(cobertura: boolean[]): number {
-  const idx = cobertura.findIndex(Boolean)
-  return idx >= 0 ? idx + 1 : 1
-}
+type Vista = 'grafico' | 'mapa'
 
 export function RankingExplorer() {
   const router = useRouter()
-  const [active, setActive] = React.useState<NivelKey>('estadual')
-  const [objetivoNumero, setObjetivoNumero] = React.useState(1)
-  const [ordenacao, setOrdenacao] = React.useState<OrdenacaoRanking>('objetivo')
+  const searchParams = useSearchParams()
+  const filtros = React.useMemo(
+    () => parseRankingSearchParams(searchParams),
+    [searchParams]
+  )
+  const [vista, setVista] = React.useState<Vista>('grafico')
+
+  const active = filtros.nivel
+  const modo = filtros.por
+  const objetivoNumero = getObjectiveNumber(filtros.objetivo) || 1
+  const tagSlug = filtros.tema
 
   const nivel = niveis.find(n => n.key === active) ?? niveis[1]
   const cobertura = React.useMemo(() => objetivosComCobertura(nivel), [nivel])
 
+  const atualizar = React.useCallback(
+    (patch: Partial<RankingFiltros>) => {
+      const next: RankingFiltros = { ...filtros, ...patch }
+      const nivelAlvo = niveis.find(n => n.key === next.nivel) ?? niveis[1]
+      const cob = objetivosComCobertura(nivelAlvo)
+      const num = getObjectiveNumber(next.objetivo)
+      if (!num || !objetivoSelecionavel(num - 1, cob)) {
+        const primeiro = primeiroObjetivoSelecionavel(cob)
+        next.objetivo = objectives[primeiro - 1].slug
+      }
+      router.replace(rankingHref(next), { scroll: false })
+    },
+    [filtros, router]
+  )
+
   React.useEffect(() => {
-    if (!cobertura[objetivoNumero - 1]) {
-      setObjetivoNumero(primeiroObjetivoCoberto(cobertura))
+    if (!objetivoSelecionavel(objetivoNumero - 1, cobertura)) {
+      const primeiro = primeiroObjetivoSelecionavel(cobertura)
+      router.replace(
+        rankingHref({
+          ...filtros,
+          objetivo: objectives[primeiro - 1].slug,
+        }),
+        { scroll: false }
+      )
     }
-  }, [cobertura, objetivoNumero])
+  }, [cobertura, objetivoNumero, filtros, router])
 
   const objetivo = objectives[objetivoNumero - 1]
-  const ranking = rankingDoNivel(nivel, objetivoNumero, ordenacao)
+  const tematica = tematicas.find(t => t.slug === tagSlug) ?? tematicas[0]
+
+  const rankingObjetivo = rankingDoNivel(nivel, objetivoNumero, 'objetivo')
+  const rankingTema = rankingTematico(nivel.entes, tagSlug)
+
+  const lista =
+    modo === 'objetivos'
+      ? rankingObjetivo.map(e => ({
+          slug: e.slug,
+          nome: e.nome,
+          valorPrincipal: e.valorPrincipal,
+          posicao: e.posicao,
+        }))
+      : rankingTema.map(e => ({
+          slug: e.slug,
+          nome: e.nome,
+          valorPrincipal: e.valor,
+          posicao: e.posicao,
+        }))
+
+  const rotuloSelecao =
+    modo === 'objetivos' ? (objetivo?.title ?? '') : tematica.nome
+
+  const objetivoQuery =
+    modo === 'objetivos' && objetivo ? `objetivo=${objetivo.slug}` : undefined
+
+  const mapaDados: DadoMapa[] = React.useMemo(() => {
+    if (active !== 'estadual') return []
+    const dados: DadoMapa[] = []
+    for (const e of lista) {
+      const uf = ufDeEnte('estadual', e.nome)
+      if (uf) {
+        const path = `/ranking/${active}/${e.slug}`
+        dados.push({
+          uf,
+          nome: e.nome,
+          valor: e.valorPrincipal,
+          href: objetivoQuery ? `${path}?${objetivoQuery}` : path,
+        })
+      }
+    }
+    return dados
+  }, [active, lista, objetivoQuery])
+
+  const podeMapa = active === 'estadual' && mapaDados.length >= 5
 
   function selecionar(key: NivelKey) {
     const alvo = niveis.find(n => n.key === key)
-    // Federal é entidade única: pula a lista e vai direto aos objetivos do ente.
     if (alvo && !alvo.isRanking && alvo.entes[0]) {
       router.push(`/ranking/${key}/${alvo.entes[0].slug}`)
       return
     }
-    setActive(key)
+    if (key === 'estadual' || key === 'municipal') {
+      atualizar({ nivel: key })
+      if (key !== 'estadual') setVista('grafico')
+    }
   }
-
-  const labelOrdenacao =
-    ordenacao === 'objetivo'
-      ? `Ordenado por Obj. ${String(objetivoNumero).padStart(2, '0')} — ${objetivo?.title ?? ''}`
-      : 'Ordenado por Índice geral (provisório)'
 
   return (
     <section className="pb-12">
-      <div className="px-6 pb-16 pt-28 sm:px-10">
+      <div className="px-6 pt-28 pb-16 sm:px-10">
         <span className="text-sm font-medium text-muted-foreground">
           Ranking
         </span>
-        <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text text-4xl font-bold leading-tight tracking-tight text-transparent sm:text-5xl">
+        <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
           Ranking de maturidade
           <br />
           digital dos governos
         </h1>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Escolha um nível de governo e um objetivo da ENGD para ordenar os
-          entes pelo sub-índice correspondente. O índice geral permanece
-          disponível como referência provisória.
+        <p className="mt-6 max-w-2xl text-base text-muted-foreground leading-relaxed">
+          Escolha um nível de governo e um objetivo da ENGD (ou uma categoria
+          temática) para ordenar os entes pelo sub-índice correspondente. Não há
+          média geral entre objetivos.
         </p>
 
-        {/* Nível (esquerda) e Ordenar por (direita) */}
-        <div className="dash-t -mx-6 mt-8 grid gap-8 px-6 pt-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
+        <div className="dash-y -mx-6 mt-8 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
           <div>
-            <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
               Nível de governo
             </span>
             <div className="mt-3 flex flex-wrap gap-2">
               {niveis.map(item => {
                 const isActive = item.isRanking && item.key === active
                 return (
-                  <button
+                  <FilterPill
                     key={item.key}
-                    type="button"
+                    active={isActive}
                     onClick={() => selecionar(item.key)}
-                    className={cn(
-                      'rounded-full border px-5 py-2.5 text-sm font-medium transition-colors',
-                      isActive
-                        ? 'border-primary bg-primary/10 text-primary'
-                        : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
-                    )}
+                    className="px-5 py-2.5"
                   >
                     {item.label}
-                  </button>
+                  </FilterPill>
                 )
               })}
             </div>
@@ -99,126 +173,115 @@ export function RankingExplorer() {
 
           {nivel.isRanking && (
             <div className="lg:dash-l lg:pl-8">
-              <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
                 Ordenar por
               </span>
               <div className="mt-3 flex flex-wrap gap-2">
-                {(
-                  [
-                    ['objetivo', 'Objetivo selecionado'],
-                    ['indice_geral', 'Índice geral'],
-                  ] as const
-                ).map(([key, label]) => {
-                  const isActive = ordenacao === key
-                  return (
-                    <button
-                      key={key}
-                      type="button"
-                      onClick={() => setOrdenacao(key)}
-                      className={cn(
-                        'rounded-full border px-4 py-2 text-sm font-medium transition-colors',
-                        isActive
-                          ? 'border-primary bg-primary/10 text-primary'
-                          : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
-                      )}
-                    >
-                      {label}
-                    </button>
-                  )
-                })}
+                <FilterPill
+                  active={modo === 'objetivos'}
+                  onClick={() => atualizar({ por: 'objetivos' })}
+                >
+                  Objetivos da ENGD
+                </FilterPill>
+                <FilterPill
+                  active={modo === 'tematicas'}
+                  onClick={() => atualizar({ por: 'tematicas' })}
+                >
+                  Categorias temáticas
+                </FilterPill>
               </div>
-              <p className="mt-3 text-muted-foreground text-sm">
-                {labelOrdenacao}
-              </p>
             </div>
           )}
         </div>
 
-        {/* Objetivo da ENGD — só quando ordena por objetivo */}
-        {nivel.isRanking && ordenacao === 'objetivo' && (
-          <div className="dash-t dash-b -mx-6 mt-6 px-6 py-6 sm:-mx-10 sm:px-10">
-            <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-              Objetivo da ENGD
+        {nivel.isRanking && (
+          <div className="-mx-6 mt-0 px-6 py-6 sm:-mx-10 sm:px-10">
+            <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
+              {modo === 'objetivos' ? 'Objetivo da ENGD' : 'Categoria temática'}
             </span>
             <div className="mt-3 flex flex-wrap gap-2">
-              {objectives.map((obj, i) => {
-                const numero = i + 1
-                const coberto = cobertura[i]
-                const isActive = numero === objetivoNumero
-                return (
-                  <button
-                    key={obj.slug}
-                    type="button"
-                    disabled={!coberto}
-                    title={
-                      coberto ? obj.title : 'Sem dados neste nível de governo'
-                    }
-                    onClick={() => setObjetivoNumero(numero)}
-                    className={cn(
-                      'inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors',
-                      !coberto
-                        ? 'cursor-not-allowed border-border text-muted-foreground/40'
-                        : isActive
-                          ? 'border-primary bg-primary/10 text-primary'
-                          : 'border-border text-muted-foreground hover:bg-primary/5 hover:text-primary'
-                    )}
-                  >
-                    <span className="tabular-nums opacity-70">
-                      {String(numero).padStart(2, '0')}
-                    </span>
-                    {obj.title}
-                  </button>
-                )
-              })}
+              {modo === 'objetivos'
+                ? objectives.map((obj, i) => (
+                    <ObjetivoChip
+                      key={obj.slug}
+                      numero={i + 1}
+                      slug={obj.slug}
+                      title={obj.title}
+                      nivel={nivel.key}
+                      cobertoPelosDados={cobertura[i]}
+                      active={i + 1 === objetivoNumero}
+                      onSelect={() => atualizar({ objetivo: obj.slug })}
+                    />
+                  ))
+                : tematicas.map(tag => (
+                    <FilterPill
+                      key={tag.slug}
+                      active={tag.slug === tagSlug}
+                      onClick={() => atualizar({ tema: tag.slug })}
+                    >
+                      {tag.nome}
+                    </FilterPill>
+                  ))}
             </div>
           </div>
         )}
 
-        {/* Distribuição do valor pelo qual se ordena */}
-        {nivel.isRanking && ranking.length >= 5 && (
-          <div className="mt-12">
-            <h2 className="text-sm font-bold text-foreground">
-              Distribuição
-              {ordenacao === 'objetivo'
-                ? ` · ${objetivo?.title ?? ''}`
-                : ' · Índice geral'}
-            </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Quantidade de entes por faixa de{' '}
-              {ordenacao === 'objetivo'
-                ? 'sub-índice do objetivo'
-                : 'índice geral'}{' '}
-              (0–100).
-            </p>
+        {nivel.isRanking && lista.length >= 5 && (
+          <div className="dash-t -mx-6 mt-12 px-6 pt-10 sm:-mx-10 sm:px-10">
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <h2 className="font-bold text-foreground text-sm">
+                  {vista === 'mapa' && podeMapa ? 'Mapa' : 'Distribuição'} ·{' '}
+                  {rotuloSelecao}
+                </h2>
+                <p className="mt-1 text-muted-foreground text-sm">
+                  {vista === 'mapa' && podeMapa
+                    ? 'Sub-índice de cada ente no mapa do Brasil (0–100).'
+                    : 'Quantidade de entes por faixa de sub-índice (0–100).'}
+                </p>
+              </div>
+              {podeMapa && (
+                <div className="flex shrink-0 gap-2">
+                  {(
+                    [
+                      ['grafico', 'Gráfico'],
+                      ['mapa', 'Mapa'],
+                    ] as const
+                  ).map(([key, label]) => (
+                    <FilterPill
+                      key={key}
+                      active={vista === key}
+                      onClick={() => setVista(key)}
+                      className="px-4 py-1.5"
+                    >
+                      {label}
+                    </FilterPill>
+                  ))}
+                </div>
+              )}
+            </div>
             <div className="mt-4">
-              <DistribuicaoChart
-                entes={ranking.map(e => ({
-                  nome: e.nome,
-                  indiceGeral: e.valorPrincipal,
-                }))}
-              />
+              {vista === 'mapa' && podeMapa ? (
+                <MapaBrasil dados={mapaDados} />
+              ) : (
+                <DistribuicaoChart
+                  entes={lista.map(e => ({
+                    nome: e.nome,
+                    indiceGeral: e.valorPrincipal,
+                  }))}
+                />
+              )}
             </div>
           </div>
         )}
 
-        {/* Lista de entes do nível selecionado */}
         <div className="mt-12">
           <EnteRankingList
-            entes={ranking.map(e => ({
-              slug: e.slug,
-              nome: e.nome,
-              valorPrincipal: e.valorPrincipal,
-              valorSecundario:
-                ordenacao === 'objetivo' ? e.indiceGeral : e.subIndice,
-              posicao: e.posicao,
-            }))}
+            entes={lista}
             basePath={`/ranking/${nivel.key}`}
-            colunaValor={
-              ordenacao === 'objetivo' ? 'Sub-índice' : 'Índice geral'
-            }
-            colunaSecundaria={
-              ordenacao === 'objetivo' ? 'Índice geral' : 'Sub-índice'
-            }
+            colunaValor="Sub-índice"
+            nivelKey={nivel.key}
+            hrefQuery={objetivoQuery}
           />
         </div>
       </div>

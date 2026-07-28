@@ -1,15 +1,14 @@
 import Link from 'next/link'
 
-import { formatScore } from '@/data/indicators'
+import { BandeiraEnte } from '@/components/shared/bandeira-ente'
+import { formatScore, type NivelKey } from '@/data/indicators'
+import { bandeiraSrc } from '@/lib/geo/entes-geo'
 
 type EnteRankingItem = {
   slug: string
   nome: string
-  /** Valor principal (sub-índice ou índice geral, conforme ordenação). */
   valorPrincipal: number
-  /** Valor secundário exibido em muted (opcional). */
   valorSecundario?: number | null
-  /** Posição explícita; se omitida, usa o índice do array. */
   posicao?: number
 }
 
@@ -18,30 +17,30 @@ type EnteRankingListProps = {
   basePath: string
   colunaValor?: string
   colunaSecundaria?: string
+  nivelKey?: NivelKey
+  /** Query string sem `?` (ex. `objetivo=gestao-e-governanca`). */
+  hrefQuery?: string
 }
 
-/**
- * Lista de ranking de entes no mesmo padrão visual da página Ranking, porém com
- * cada linha navegável para a página de detalhe do ente.
- */
 export function EnteRankingList({
   entes,
   basePath,
-  colunaValor = 'Índice',
+  colunaValor = 'Sub-índice',
   colunaSecundaria,
+  nivelKey,
+  hrefQuery,
 }: EnteRankingListProps) {
   return (
     <div>
-      {/* Cabeçalho da tabela */}
-      <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wide text-muted-foreground">
+      <div className="flex items-center justify-between font-medium text-muted-foreground text-xs uppercase tracking-wide">
         <span>Ente</span>
         <span className="flex items-center gap-4">
           {colunaSecundaria && (
-            <span className="hidden w-16 text-right sm:inline">
+            <span className="hidden text-right whitespace-nowrap sm:inline">
               {colunaSecundaria}
             </span>
           )}
-          <span className="w-16 text-right">{colunaValor}</span>
+          <span className="text-right whitespace-nowrap">{colunaValor}</span>
         </span>
       </div>
 
@@ -51,24 +50,34 @@ export function EnteRankingList({
           return (
             <Link
               key={ente.slug}
-              href={`${basePath}/${ente.slug}`}
+              href={
+                hrefQuery
+                  ? `${basePath}/${ente.slug}?${hrefQuery}`
+                  : `${basePath}/${ente.slug}`
+              }
               className="flex items-center gap-4 border-b px-6 py-5 transition-colors hover:bg-primary/5 sm:px-10"
             >
-              <span className="w-8 shrink-0 text-sm tabular-nums text-muted-foreground">
+              <span className="w-8 shrink-0 text-muted-foreground text-sm tabular-nums">
                 {String(posicao).padStart(2, '0')}
               </span>
-              <span className="flex-1 text-sm font-medium text-primary">
+              {nivelKey && (
+                <BandeiraEnte
+                  src={bandeiraSrc(nivelKey, ente.slug)}
+                  nome={ente.nome}
+                />
+              )}
+              <span className="flex-1 font-medium text-primary text-sm">
                 {ente.nome}
               </span>
               <span className="flex items-center gap-4">
                 {colunaSecundaria && (
-                  <span className="hidden w-16 text-right text-sm tabular-nums text-muted-foreground sm:inline">
+                  <span className="hidden text-right text-muted-foreground text-sm tabular-nums sm:inline">
                     {ente.valorSecundario != null
                       ? formatScore(ente.valorSecundario)
                       : '—'}
                   </span>
                 )}
-                <span className="w-16 text-right text-sm font-semibold tabular-nums text-foreground">
+                <span className="text-right font-semibold text-foreground text-sm tabular-nums">
                   {formatScore(ente.valorPrincipal)}
                 </span>
               </span>

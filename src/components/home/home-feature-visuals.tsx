@@ -1,23 +1,37 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { Download } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { Download, Info } from 'lucide-react'
+import { useState } from 'react'
+import { toast } from 'sonner'
 
 import {
   ObjetivosRadar,
   type RadarEixo,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
+import { type DadoMapa, MapaBrasil } from '@/components/shared/mapa-brasil'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
 import { type Ente, formatScore } from '@/data/indicators'
 import { objectives } from '@/data/objectives'
+import { isObjetivo3, OBJETIVO_3_MOTIVO } from '@/data/objectives-availability'
+import { ufDeEnte } from '@/lib/geo/entes-geo'
 import { cn } from '@/lib/utils'
 
 /** Miniaturas das feature rows da home — dados reais do nível estadual. */
 
-const CORES = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)'] as const
+const CORES = [
+  'var(--chart-1)',
+  'var(--chart-2)',
+  'var(--chart-3)',
+  'var(--chart-5)',
+  '#b4536a',
+] as const
 const COR_MEDIA = 'var(--chart-4)'
-const MAX_SELECIONADOS = 3
+const MAX_SELECIONADOS = 5
 
 const RADAR_EIXOS: RadarEixo[] = objectives.map((objetivo, i) => ({
   eixo: String(i + 1).padStart(2, '0'),
@@ -28,6 +42,14 @@ export type VariavelTeaser = {
   slug: string
   nome: string
   fonte: string
+}
+
+function primeiroObjetivoComNota(entes: Ente[]): string {
+  const obj = objectives.find(
+    (o, i) =>
+      !isObjetivo3(o.slug) && entes.some(e => e.objetivos[i]?.nota != null)
+  )
+  return obj?.slug ?? objectives[0].slug
 }
 
 export function VisualPerfil({
@@ -41,12 +63,20 @@ export function VisualPerfil({
     entes[0]?.slug ?? '',
   ])
 
-  const alternar = (slug: string) =>
-    setSelecionados(atual => {
-      if (atual.includes(slug)) return atual.filter(s => s !== slug)
-      if (atual.length >= MAX_SELECIONADOS) return atual
-      return [...atual, slug]
-    })
+  const alternar = (slug: string) => {
+    if (selecionados.includes(slug)) {
+      setSelecionados(atual => atual.filter(s => s !== slug))
+      return
+    }
+    if (selecionados.length >= MAX_SELECIONADOS) {
+      toast('Limite de 5 entes atingido', {
+        description: 'Desselecione um para selecionar outro.',
+        position: 'bottom-right',
+      })
+      return
+    }
+    setSelecionados(atual => [...atual, slug])
+  }
 
   const escolhidos = selecionados
     .map(slug => entes.find(e => e.slug === slug))
@@ -75,13 +105,16 @@ export function VisualPerfil({
           const idx = selecionados.indexOf(ente.slug)
           const ativo = idx !== -1
           const bloqueado = !ativo && limiteAtingido
+          const notaDestaque = ente.objetivos.find(
+            o => o.nota != null && !isObjetivo3(o.numero)
+          )?.nota
           return (
             <li key={ente.slug}>
               <button
                 type="button"
                 onClick={() => alternar(ente.slug)}
-                disabled={bloqueado}
                 aria-pressed={ativo}
+                aria-disabled={bloqueado}
                 className={cn(
                   'flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs transition-colors',
                   ativo
@@ -104,9 +137,11 @@ export function VisualPerfil({
                   }
                 />
                 <span className="truncate">{ente.nome}</span>
-                <span className="ml-auto shrink-0 tabular-nums">
-                  {formatScore(ente.indiceGeral)}
-                </span>
+                {notaDestaque != null && (
+                  <span className="ml-auto shrink-0 tabular-nums">
+                    {formatScore(notaDestaque)}
+                  </span>
+                )}
               </button>
             </li>
           )
@@ -120,103 +155,120 @@ export function VisualPerfil({
   )
 }
 
-export function VisualRanking({ entes }: { entes: Ente[] }) {
+export function VisualMapa({ entes }: { entes: Ente[] }) {
+  const [objetivoSlug, setObjetivoSlug] = useState(() =>
+    primeiroObjetivoComNota(entes)
+  )
+
+  const notaDe = (ente: Ente) =>
+    ente.objetivos.find(o => o.objetivoSlug === objetivoSlug)?.nota ?? null
+
+  const dados: DadoMapa[] = entes.flatMap(ente => {
+    const uf = ufDeEnte('estadual', ente.nome)
+    const nota = notaDe(ente)
+    if (!uf || nota === null) return []
+    return [
+      {
+        uf,
+        nome: ente.nome,
+        valor: nota,
+        href: `/ranking/estadual/${ente.slug}`,
+      },
+    ]
+  })
+
   return (
-    <div className="w-full">
-      <div className="flex items-center justify-between border-b pb-2 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
-        <span>Ente</span>
-        <span>Índice</span>
+    <div className="flex w-full flex-col gap-6 sm:flex-row">
+      <div className="w-full shrink-0 sm:w-max sm:self-center">
+        <ul className="space-y-0.5">
+          {objectives.map((objetivo, i) => {
+            const desabilitado = isObjetivo3(objetivo.slug)
+            const ativo = objetivo.slug === objetivoSlug
+            const botao = (
+              <button
+                type="button"
+                disabled={desabilitado}
+                onClick={() => setObjetivoSlug(objetivo.slug)}
+                aria-pressed={ativo}
+                className={cn(
+                  'flex w-full items-center gap-2 rounded-md py-1.5 pr-2 pl-1 text-left text-xs leading-snug whitespace-nowrap transition-colors',
+                  desabilitado
+                    ? 'cursor-not-allowed text-muted-foreground/40'
+                    : ativo
+                      ? 'bg-primary/5 font-medium text-foreground'
+                      : 'text-muted-foreground hover:bg-primary/5 hover:text-foreground'
+                )}
+              >
+                <span className="w-5 shrink-0 text-[11px] text-muted-foreground tabular-nums">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span>{objetivo.title}</span>
+                {desabilitado && (
+                  <Info
+                    className="size-3 shrink-0 opacity-70"
+                    aria-hidden="true"
+                  />
+                )}
+              </button>
+            )
+
+            return (
+              <li key={objetivo.slug}>
+                {desabilitado ? (
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <span className="block w-full">{botao}</span>
+                    </TooltipTrigger>
+                    <TooltipContent
+                      side="top"
+                      className="max-w-xs text-left leading-relaxed"
+                    >
+                      <p className="mb-1 font-semibold">
+                        Objetivo desabilitado
+                      </p>
+                      <p>{OBJETIVO_3_MOTIVO}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                ) : (
+                  botao
+                )}
+              </li>
+            )
+          })}
+        </ul>
       </div>
 
-      <ul className="mt-3 space-y-3">
-        {entes.map((ente, i) => (
-          <li key={ente.slug} className="flex items-center gap-4">
-            <span className="w-5 shrink-0 text-[11px] tabular-nums text-muted-foreground">
-              {String(i + 1).padStart(2, '0')}
-            </span>
-            <span className="w-40 shrink-0 truncate text-foreground text-xs">
-              {ente.nome}
-            </span>
-            <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-primary/10">
-              <span
-                className="block h-full rounded-full bg-primary"
-                style={{
-                  width: `${ente.indiceGeral}%`,
-                  opacity: i === 0 ? 1 : 0.45,
-                }}
-              />
-            </span>
-            <span className="w-9 shrink-0 text-right font-medium text-foreground text-xs tabular-nums">
-              {formatScore(ente.indiceGeral)}
-            </span>
-          </li>
-        ))}
-      </ul>
+      <div className="min-w-0 flex-1">
+        <MapaBrasil dados={dados} />
+      </div>
     </div>
   )
 }
 
-const POSICOES = [
-  { left: '1%', top: '6px' },
-  { left: '27%', top: '44px' },
-  { left: '53%', top: '8px' },
-  { left: '13%', top: '122px' },
-  { left: '40%', top: '150px' },
-  { left: '65%', top: '98px' },
-  { left: '3%', top: '232px' },
-  { left: '31%', top: '208px' },
-  { left: '58%', top: '240px' },
-]
-
 export function VisualDados({ variaveis }: { variaveis: VariavelTeaser[] }) {
-  const [canDrag, setCanDrag] = useState(false)
-
-  useEffect(() => {
-    const motionMq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const pointerMq = window.matchMedia('(pointer: fine)')
-    const update = () => setCanDrag(!motionMq.matches && pointerMq.matches)
-    update()
-    motionMq.addEventListener('change', update)
-    pointerMq.addEventListener('change', update)
-    return () => {
-      motionMq.removeEventListener('change', update)
-      pointerMq.removeEventListener('change', update)
-    }
-  }, [])
-
   return (
-    <div className="relative grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:block lg:h-[21rem]">
-      {variaveis.map((variavel, i) => {
-        const pos = POSICOES[i % POSICOES.length]
-        return (
-          <motion.div
-            key={variavel.slug}
-            drag={canDrag}
-            dragMomentum={false}
-            whileDrag={canDrag ? { scale: 1.04, zIndex: 20 } : undefined}
-            style={{ left: pos.left, top: pos.top }}
-            className={cn(
-              'flex items-start justify-between gap-3 rounded-xl border bg-card p-4 shadow-sm lg:absolute lg:w-56',
-              canDrag && 'cursor-grab active:cursor-grabbing'
-            )}
+    <ul className="w-full border-t">
+      {variaveis.slice(0, 5).map(variavel => (
+        <li
+          key={variavel.slug}
+          className="flex items-center justify-between gap-3 border-b py-3"
+        >
+          <span className="min-w-0">
+            <span className="block font-semibold text-foreground text-xs leading-snug">
+              {variavel.nome}
+            </span>
+            <span className="mt-1 inline-block font-medium text-[10px] text-muted-foreground/70">
+              {variavel.fonte}
+            </span>
+          </span>
+          <span
+            aria-hidden="true"
+            className="flex size-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"
           >
-            <span className="min-w-0">
-              <span className="block font-semibold text-foreground text-xs leading-snug line-clamp-2!">
-                {variavel.nome}
-              </span>
-              <span className="mt-2 inline-block rounded-full bg-primary/10 px-2 py-0.5 font-medium text-[10px] text-primary">
-                <span className="line-clamp-1!">{variavel.fonte}</span>
-              </span>
-            </span>
-            <span
-              aria-hidden="true"
-              className="flex size-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"
-            >
-              <Download className="size-3.5" />
-            </span>
-          </motion.div>
-        )
-      })}
-    </div>
+            <Download className="size-3.5" />
+          </span>
+        </li>
+      ))}
+    </ul>
   )
 }

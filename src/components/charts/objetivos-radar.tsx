@@ -142,12 +142,14 @@ export function ObjetivosRadar({ eixos, series }: ObjetivosRadarProps) {
   })
 
   return (
-    <div className="h-[26rem] w-full sm:h-[30rem]">
+    <div className="h-[22rem] w-full sm:h-[25rem]">
       <ResponsiveContainer width="100%" height="100%">
+        {/* Margens laterais reservam espaço para os rótulos dos eixos, que
+            saem na horizontal e eram cortados pela borda do container. */}
         <RadarChart
           data={data}
-          outerRadius="76%"
-          margin={{ top: 8, right: 12, bottom: 8, left: 12 }}
+          outerRadius="80%"
+          margin={{ top: 12, right: 76, bottom: 12, left: 76 }}
         >
           <PolarGrid stroke="var(--border)" />
           <PolarAngleAxis

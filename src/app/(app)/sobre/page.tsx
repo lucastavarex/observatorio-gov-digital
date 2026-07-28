@@ -103,47 +103,61 @@ const historyParagraphs = [
   'A primeira versão da plataforma reúne indicadores estratégicos organizados conforme os objetivos da Estratégia Nacional de Governo Digital, estabelecendo as bases para um sistema permanente de acompanhamento da maturidade digital do setor público brasileiro e sua evolução ao longo do tempo.',
 ]
 
-const members: { name: string; linkedin: string | null; role?: string }[] = [
+const members: {
+  name: string
+  linkedin: string | null
+  role?: string
+  photo?: string
+}[] = [
   {
     name: 'Ivar Hartmann',
     linkedin: 'https://www.linkedin.com/in/ivar-alberto-hartmann-44b19110/',
+    photo: '/pessoas/ivar-hartmann.jpg',
   },
   {
     name: 'Maria Carolina Foss',
     linkedin: 'https://www.linkedin.com/in/maria-carolina-foss-49925320',
+    photo: '/pessoas/carolina-foss.jpg',
   },
   {
     name: 'Suelane Garcia Fontes',
     linkedin: 'https://www.linkedin.com/in/suelane-garcia/',
+    photo: '/pessoas/suelane-garcia.jpg',
   },
   {
     name: 'Bruno da Cunha de Oliveira',
     linkedin:
       'https://www.linkedin.com/in/bruno-da-cunha-de-oliveira-5b1820395/',
+    photo: '/pessoas/bruno-da-cunha.jpg',
   },
   {
     name: 'Daniela Matos',
     linkedin: 'https://www.linkedin.com/in/daniela-matos-santos/?locale=pt',
+    photo: '/pessoas/daniela-matos.jpg',
   },
   {
     name: 'Gabriel Croquer',
     linkedin: 'https://www.linkedin.com/in/gabriel-croquer-853657161/',
     role: 'Engenheiro de Dados',
+    photo: '/pessoas/gabriel-croquer.jpg',
   },
   {
     name: 'Luiza Tuler Veloso',
     linkedin: 'https://www.linkedin.com/in/luiza-tuler-veloso/',
     role: 'Cientista de Dados',
+    photo: '/pessoas/luiza-veloso.png',
   },
   {
     name: 'Lucas Tavares',
     linkedin: 'https://www.linkedin.com/in/lucastavarex/',
     role: 'Desenvolvedor',
+    photo: '/pessoas/lucas-tavares.jpg',
   },
   {
     name: 'Caio Jacintho',
     linkedin: 'https://www.linkedin.com/in/caio-jacintho/',
     role: 'Designer',
+    photo: '/pessoas/caio-jacintho.webp',
   },
 ]
 
@@ -241,55 +255,92 @@ export default function SobrePage() {
         </div>
 
         <div className="-mx-6 mt-24 grid grid-cols-2 border-x border-t sm:-mx-10 sm:grid-cols-3 lg:grid-cols-4">
-          {members.map(member => (
-            <div
-              key={member.name}
-              className="flex flex-col border-b border-r p-4 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r sm:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n)]:border-r lg:[&:nth-child(4n)]:border-r-0"
-            >
-              {/* Placeholder da foto: retângulo cinza (substituir por imagem futuramente) */}
-              <div className="aspect-square w-full rounded-md bg-muted" />
-              <div className="mt-3 flex items-end justify-between gap-2">
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-foreground text-sm">
-                    {member.name}
-                  </h3>
-                  <p className="mt-0.5 text-muted-foreground text-xs">
-                    {member.role ?? 'Consultor'}
-                  </p>
-                </div>
-                {member.linkedin && (
+          {members.map(member => {
+            const photoContent = member.photo ? (
+              <Image
+                src={member.photo}
+                alt=""
+                fill
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                className="object-cover"
+              />
+            ) : null
+
+            return (
+              <div
+                key={member.name}
+                className="flex flex-col border-b border-r p-4 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r sm:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n)]:border-r lg:[&:nth-child(4n)]:border-r-0"
+              >
+                {member.linkedin ? (
                   <a
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex shrink-0 transition-opacity hover:opacity-70"
+                    aria-label={`Perfil de ${member.name} no LinkedIn (abre em nova aba)`}
+                    className="relative aspect-square w-full overflow-hidden rounded-md bg-muted transition-opacity hover:opacity-80"
                   >
-                    <span className="sr-only">
-                      Perfil de {member.name} no LinkedIn (abre em nova aba)
-                    </span>
-                    <svg
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      className="size-5 text-primary"
-                    >
-                      <rect
-                        x="3"
-                        y="3"
-                        width="18"
-                        height="18"
-                        rx="3"
-                        fill="#fff"
-                      />
-                      <path
-                        fill="currentColor"
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                      />
-                    </svg>
+                    {photoContent}
                   </a>
+                ) : (
+                  <div className="relative aspect-square w-full overflow-hidden rounded-md bg-muted">
+                    {photoContent}
+                  </div>
                 )}
+                <div className="mt-3 flex items-end justify-between gap-2">
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-foreground text-sm">
+                      {member.linkedin ? (
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline-offset-4 hover:underline"
+                        >
+                          {member.name}
+                          <span className="sr-only"> (abre em nova aba)</span>
+                        </a>
+                      ) : (
+                        member.name
+                      )}
+                    </h3>
+                    <p className="mt-0.5 text-muted-foreground text-xs">
+                      {member.role ?? 'Consultor'}
+                    </p>
+                  </div>
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex shrink-0 transition-opacity hover:opacity-70"
+                    >
+                      <span className="sr-only">
+                        LinkedIn de {member.name} (abre em nova aba)
+                      </span>
+                      <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        className="size-5 text-primary"
+                      >
+                        <rect
+                          x="3"
+                          y="3"
+                          width="18"
+                          height="18"
+                          rx="3"
+                          fill="#fff"
+                        />
+                        <path
+                          fill="currentColor"
+                          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* Histórico: título à esquerda, texto à direita (mesmo layout da seção de abertura) */}

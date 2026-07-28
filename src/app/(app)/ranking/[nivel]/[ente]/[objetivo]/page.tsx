@@ -64,7 +64,6 @@ export default async function ObjetivoIndicadorPage({
           {objetivo.descricao}
         </p>
 
-        {/* Cabeçalho da lista de variáveis */}
         <div className="mt-12 flex items-center justify-between gap-4 text-xs font-medium uppercase tracking-wide text-muted-foreground">
           <span>Variável / indicador</span>
           <span>Nota (0–100)</span>
@@ -80,17 +79,12 @@ export default async function ObjetivoIndicadorPage({
             objetivo.variaveis.map(variavel => (
               <div
                 key={variavel.slug}
-                className="flex items-center gap-4 border-b px-6 py-6 transition-colors hover:bg-primary/5 sm:px-10"
+                className="flex items-center gap-4 border-b px-6 py-6 sm:px-10"
               >
                 <div className="min-w-0">
-                  <Link
-                    href={`/ranking/${nivel.key}/${ente.slug}/${objetivo.objetivoSlug}/${variavel.slug}`}
-                    className="block min-w-0"
-                  >
-                    <span className="block truncate text-sm font-medium text-primary">
-                      {variavel.nome}
-                    </span>
-                  </Link>
+                  <span className="block truncate text-sm font-medium text-foreground">
+                    {variavel.nome}
+                  </span>
                   <span className="mt-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">
                     Fonte: {variavel.fonte} · {variavel.anoFonte}
                   </span>

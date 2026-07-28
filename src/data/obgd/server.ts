@@ -144,24 +144,6 @@ export function getEnteComVariaveis(
   return full
 }
 
-/** Params estáticos para rotas de variável (somente Server). */
-export function generateVariavelParams() {
-  return niveis.flatMap(nivel =>
-    nivel.entes.flatMap(ente => {
-      const full = getEnteComVariaveis(nivel.key, ente.slug)
-      if (!full) return []
-      return full.objetivos.flatMap(objetivo =>
-        objetivo.variaveis.map(variavel => ({
-          nivel: nivel.key as NivelKey,
-          ente: ente.slug,
-          objetivo: objetivo.objetivoSlug,
-          variavel: variavel.slug,
-        }))
-      )
-    })
-  )
-}
-
 /** Params estáticos para rotas de objetivo com dados. */
 export function generateObjetivoParams() {
   return niveis.flatMap(nivel =>

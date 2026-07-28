@@ -10,9 +10,9 @@ import {
   Trophy,
 } from 'lucide-react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import * as React from 'react'
 import { Button } from '@/components/ui/button'
+import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { cn } from '@/lib/utils'
 
 type NavChild = {
@@ -63,14 +63,34 @@ const navItems: NavItem[] = [
 ]
 
 export function SiteHeader() {
-  const pathname = usePathname()
+  const { rankingOn, link, barePath } = usePlatformVariant()
   const [open, setOpen] = React.useState(false)
   // href do menu suspenso aberto no desktop (null = todos fechados)
   const [openMenu, setOpenMenu] = React.useState<string | null>(null)
   const navRef = React.useRef<HTMLElement>(null)
 
-  const isActive = (href: string) =>
-    href === '/' ? pathname === '/' : pathname.startsWith(href)
+  const items = React.useMemo(
+    () =>
+      navItems.map(item => {
+        if (!item.children) {
+          return { ...item, href: link(item.href) }
+        }
+        const children = item.children
+          .filter(c => rankingOn || c.href !== '/ranking')
+          .map(c => ({ ...c, href: link(c.href) }))
+        return { ...item, href: link(item.href), children }
+      }),
+    [link, rankingOn]
+  )
+
+  const isActive = (href: string) => {
+    const bare = href.startsWith('/v2')
+      ? href === '/v2'
+        ? '/'
+        : href.slice(3) || '/'
+      : href
+    return bare === '/' ? barePath === '/' : barePath.startsWith(bare)
+  }
 
   // Fecha o menu com Esc ou ao clicar fora da navegação (teclado + mouse)
   React.useEffect(() => {
@@ -98,7 +118,7 @@ export function SiteHeader() {
       <header className="sticky top-0 z-50 w-full border-b bg-background">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo à esquerda */}
-          <Link href="/" className="flex items-center gap-2.5">
+          <Link href={link('/')} className="flex items-center gap-2.5">
             <span className="flex flex-col leading-none">
               <span className="text-sm font-semibold tracking-tight sm:text-base">
                 Observatório Brasileiro
@@ -111,7 +131,7 @@ export function SiteHeader() {
 
           {/* Menu à direita (desktop) */}
           <nav ref={navRef} className="hidden items-center gap-1 md:flex">
-            {navItems.map(item => {
+            {items.map(item => {
               if (item.children) {
                 const active = item.children.some(c => isActive(c.href))
                 const isOpen = openMenu === item.href
@@ -237,7 +257,7 @@ export function SiteHeader() {
             className="border-t md:hidden"
           >
             <div className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6">
-              {navItems.map(item => {
+              {items.map(item => {
                 if (item.children) {
                   return (
                     <div key={item.href} className="flex flex-col gap-1">
