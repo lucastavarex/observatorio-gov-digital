@@ -19,6 +19,7 @@ import {
 } from '@/data/indicators'
 import { objectives } from '@/data/objectives'
 import { notaTematica, tematicas, variaveisPorTematica } from '@/data/tematicas'
+import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { bandeiraSrc } from '@/lib/geo/entes-geo'
 import {
   type IndicadoresFiltros,
@@ -41,6 +42,7 @@ const MEDIA_COR = 'var(--chart-4)'
 export function IndicadoresExplorer() {
   const router = useRouter()
   const searchParams = useSearchParams()
+  const { link } = usePlatformVariant()
   const filtros = React.useMemo(
     () => parseIndicadoresSearchParams(searchParams),
     [searchParams]
@@ -57,9 +59,9 @@ export function IndicadoresExplorer() {
   const atualizar = React.useCallback(
     (patch: Partial<IndicadoresFiltros>) => {
       const next = normalizarIndicadoresFiltros({ ...filtros, ...patch })
-      router.replace(indicadoresHref(next), { scroll: false })
+      router.replace(link(indicadoresHref(next)), { scroll: false })
     },
-    [filtros, router]
+    [filtros, link, router]
   )
 
   function selecionarNivel(key: NivelKey) {
