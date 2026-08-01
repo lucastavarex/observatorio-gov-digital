@@ -160,6 +160,12 @@ flowchart TD
 
 - Nota técnica mock dos 4 objetivos precários (texto placeholder até validação)
 
+### 3.8 Contato (`/contato`) — e-mail via Resend
+
+- Formulário funcional: Server Action + Resend; destino de produção `mbc@mbc.org.br`
+- Validação no servidor, honeypot anti-bot, Reply-To do visitante, toasts Sonner
+- Documentação completa (setup, env, produção, troubleshooting): **[`docs/contato-resend.md`](./contato-resend.md)**
+
 ---
 
 ## 4. O que ficou de fora / foi revertido ou adiado
@@ -240,6 +246,7 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 5. `/ranking/.../{objetivo}` — sem Recomendações; download à esquerda do título da variável
 6. `/v2` — versão sem ranking; `/v2/indicadores/estadual/sp/{objetivo}` — lista + download (sem posição no ranking)
 7. `/metodologia` — nota dos objetivos precários (mock)
+8. `/contato` — envio de mensagem (requer env Resend; ver [`contato-resend.md`](./contato-resend.md))
 
 ---
 
@@ -255,13 +262,15 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 | Feature ranking A/B          | `src/lib/features/`, `src/proxy.ts`                         |
 | Queries OBGD                 | `src/data/obgd/queries.ts`, `src/data/obgd/server.ts`       |
 | Mapa / bandeiras             | `src/components/shared/mapa-brasil.tsx`, `src/lib/geo/`     |
+| Contato / Resend             | `src/app/actions/contact.ts`, `src/components/content/contact-form.tsx`, [`docs/contato-resend.md`](./contato-resend.md) |
 
 ---
 
-## 9. Documentos legados neste `docs/`
+## 9. Documentos neste `docs/`
 
 | Arquivo                                   | Situação                                                                                                                                                                                                             |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `contato-resend.md`                     | **Ativo** — formulário `/contato`, Resend, env, produção e troubleshooting                                                                                                                                    |
 | `pedidos-dados-gabriel.md`              | **Removido** — conteúdo absorvido na §5                                                                                                                                                                       |
 | `serie-historica-mock.md`               | **Removido** — status absorvido nas §§2–4                                                                                                                                                                    |
 | `implementacao-ranking-por-objetivo.md` | Histórico técnico da 1ª integração com dados reais; trechos sobre “índice geral provisório” e página de variável estão**desatualizados**. Usar **este** arquivo para decisão de produto atual |

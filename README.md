@@ -67,6 +67,12 @@ npm run dev
 
 Acesse [http://localhost:3000](http://localhost:3000).
 
+### Formulário de contato (Resend)
+
+A página `/contato` envia mensagens por e-mail via [Resend](https://resend.com). Configure `RESEND_API_KEY`, `RESEND_FROM_EMAIL` e `CONTACT_TO_EMAIL` no `.env` (veja `.env.example`).
+
+Documentação completa (arquitetura, setup local/produção, troubleshooting): **[`docs/contato-resend.md`](docs/contato-resend.md)**.
+
 ---
 
 ## Qualidade de código

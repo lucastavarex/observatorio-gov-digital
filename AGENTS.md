@@ -34,7 +34,8 @@ Como consultar:
 ```
 src/
 ├── app/
-│   ├── (app)/              # rotas do portal (home, indicadores, ranking, …)
+│   ├── (app)/              # rotas do portal (home, indicadores, ranking, contato, …)
+│   ├── actions/            # Server Actions (ex.: contato / Resend)
 │   ├── globals.css         # design tokens (Tailwind v4 + shadcn) + utilitários dash-*
 │   └── layout.tsx          # root layout (header, footer, Plus Jakarta Sans)
 ├── components/
@@ -47,10 +48,13 @@ src/
 │   └── ui/                 # componentes shadcn/ui
 ├── data/                   # mocks tipados (indicators, objectives, ranking, …)
 ├── lib/
+│   ├── contact.ts          # assuntos e limites do formulário de contato
 │   └── utils.ts            # cn() — clsx + tailwind-merge
 ├── local_assets/           # gitignored — dados reais do cliente (ainda não ligados)
 └── proxy.ts                # middleware Next.js (passthrough)
 ```
+
+**Contato / e-mail:** a feature de `/contato` (Resend + Server Action) está documentada em [`docs/contato-resend.md`](docs/contato-resend.md). Não invente outro provedor ou fluxo sem alinhar com esse doc.
 
 ---
 
