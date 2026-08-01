@@ -63,6 +63,7 @@ function detalheCategoriaKey(
 
 function buildVariavel(row: DetalheRow, enteCodigo: string): Variavel {
   const chave = `${row.fonte}/${row.indicador}`
+  const conceptId = row.concept_id || chave
   const meta = indicadorByChave.get(chave)
   const fonteMeta = fonteById.get(row.fonte)
   const fonteLabel = fonteMeta
@@ -89,13 +90,15 @@ function buildVariavel(row: DetalheRow, enteCodigo: string): Variavel {
       ...(row.sub_itens ? [{ item: 'Sub-item', valor: row.sub_itens }] : []),
     ],
     arquivo: {
-      nome: `${slug}.csv`,
-      tamanho: '—',
+      nome: `obgd-${slug}.csv`,
+      tamanho: 'CSV',
       tabelas: 1,
     },
     anoFonte: row.ano_fonte,
     indicadorCodigo: row.indicador,
     fonteId: row.fonte,
+    conceptId,
+    subItens: row.sub_itens,
     serieHistorica: getSerieHistorica({
       indicadorChave: chave,
       fonteId: row.fonte,

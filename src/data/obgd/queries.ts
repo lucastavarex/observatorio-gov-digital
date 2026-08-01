@@ -29,6 +29,9 @@ export type Variavel = {
   anoFonte: number
   indicadorCodigo: string
   fonteId: string
+  /** Chave do indicador (`fonte/codigo`), para export CSV. */
+  conceptId: string
+  subItens: string | null
   /** Evolução temporal (ano × valor 0–100). */
   serieHistorica: SerieHistoricaPonto[]
   /** `true` enquanto a série vier do gerador mock. */

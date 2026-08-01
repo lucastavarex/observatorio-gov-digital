@@ -102,7 +102,7 @@ export default async function HomePage() {
     {
       titulo: 'Dados abertos e verificáveis',
       texto:
-        'Cada variável traz a fonte oficial e os dados para download, com metodologia transparente.',
+        'Cada variável traz a fonte oficial e o download do recorte usado no índice (valores normalizados do snapshot), com metodologia transparente.',
       cta: { label: 'Ver metodologia', href: link('/metodologia') },
       visual: <VisualDados variaveis={variaveisDestaque} />,
       show: true,

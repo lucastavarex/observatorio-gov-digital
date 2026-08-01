@@ -117,6 +117,9 @@ export function ObjetivoVariaveis({
                   nome={variavel.nome}
                   fonteUrl={variavel.fonteUrl}
                   arquivo={variavel.arquivo}
+                  nivelKey={nivel.key}
+                  conceptId={variavel.conceptId}
+                  subItens={variavel.subItens}
                 />
                 <span className="ml-auto shrink-0 text-sm font-semibold tabular-nums text-foreground">
                   {formatScore(variavel.nota)}

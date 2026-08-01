@@ -1,6 +1,7 @@
 import { VariantLink } from '@/components/shared/variant-link'
 import { Button } from '@/components/ui/button'
 import { fontes } from '@/data/fontes'
+import { hasObgdExportForMetodologiaSlug } from '@/data/obgd/export-rows'
 import { objectives } from '@/data/objectives'
 
 export const metadata = { title: 'Metodologia' }
@@ -215,15 +216,17 @@ export default function MetodologiaPage() {
           Principais fontes de dados
         </h2>
         <div className="mt-6 flex flex-wrap gap-2">
-          {fontes.map(fonte => (
-            <VariantLink
-              key={fonte.slug}
-              href={`/metodologia/fontes/${fonte.slug}`}
-              className="rounded-full border px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
-            >
-              {fonte.name}
-            </VariantLink>
-          ))}
+          {fontes
+            .filter(fonte => hasObgdExportForMetodologiaSlug(fonte.slug))
+            .map(fonte => (
+              <VariantLink
+                key={fonte.slug}
+                href={`/metodologia/fontes/${fonte.slug}`}
+                className="rounded-full border px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+              >
+                {fonte.name}
+              </VariantLink>
+            ))}
         </div>
 
         <div className="-mx-6 mt-16 border-t sm:-mx-10" />

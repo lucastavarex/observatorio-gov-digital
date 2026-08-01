@@ -17,7 +17,7 @@ export const faqItems: FaqItem[] = [
   {
     pergunta: 'De onde vêm os dados?',
     resposta:
-      'Os indicadores são construídos a partir de bases oficiais e verificáveis. Em cada objetivo é possível ver as variáveis que o compõem, a fonte original e baixar os dados que sustentam a nota.',
+      'Os indicadores são construídos a partir de bases oficiais e verificáveis. Em cada objetivo é possível ver as variáveis que o compõem, abrir o site da fonte e baixar o CSV com os valores normalizados usados no Observatório (recorte do índice, não o microdado bruto completo).',
   },
   {
     pergunta: 'O que é a média do nível no radar?',

@@ -152,9 +152,9 @@ flowchart TD
 
 #### Fora de escopo deste ajuste
 
-- Downloads reais (continua CSV mock em `VariavelAcoes`)
 - Reabrir ou renomear `/ranking` na variante B
 - Drill-down por categoria temática (só objetivos ENGD, como no ranking)
+- Export em massa no explorer de Indicadores (fase 2)
 
 ### 3.7 Metodologia
 
@@ -177,7 +177,7 @@ flowchart TD
 | Municípios extras (~100k+ hab.)                             | Adiado; UI municipal = capitais                                                 |
 | Loading/abertura da home                                     | Removido após tentativa (flash, UX, SEO)                                       |
 | Catálogo 50–60 tags (expansão futura)                      | v3 entregou **16 tags** oficiais; scores reais ligados; expansão se vier      |
-| Downloads reais de variáveis                                | Ainda CSV mock no cliente (`VariavelAcoes`)                                   |
+| Série histórica multi-ano por variável                      | Ainda mock; snapshot atual é anual                                            |
 | Texto final do tooltip do Obj. 3                             | Copy provisório                                                                |
 | Conteúdo final da nota dos objetivos precários             | Mock                                                                            |
 | Recomendações na página de objetivo do ranking            | Removidas para alinhar ao designer (ficam em`/objetivos`)                     |
@@ -194,7 +194,7 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 | ------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | Motivo Obj. 3                  | `objectives-availability.ts` → `OBJETIVO_3_MOTIVO` | Texto até validação oficial                                                        |
 | 4 objetivos precários         | `OBJETIVOS_PRECARIOS_MOCK`                            | Nota técnica na metodologia / chips                                                  |
-| Download de variável          | `VariavelAcoes`                                       | Gera CSV de exemplo no browser                                                        |
+| Série histórica por variável  | `serie-historica.ts`                                  | Ainda gerador mock (último ponto = valor real)                                        |
 | Campo`indiceGeral` no modelo | `queries.ts` / charts                                 | Pode existir no JSON/modelo;**não** é exposto como ranking/média geral na UI |
 
 ### 5.1b Tags (dados-v3) — já integradas
@@ -214,15 +214,19 @@ Documentação completa: [`integracao-dados-v3-tags.md`](./integracao-dados-v3-t
 2. **Quatro objetivos precários**
 
    - Quais são; o que foi avaliado; o que ficou de fora e por quê
-3. **Downloads**
-
-   - URL ou arquivo real por indicador (ou pacote objetivo × ente)
-4. **Municípios extras** *(quando retomar o produto)*
+3. **Municípios extras** *(quando retomar o produto)*
 
    - Lista no threshold + `indice_objetivo` (e tags) no mesmo schema das capitais + posições
-5. **Índice geral**
+4. **Índice geral**
 
    - **Não publicar** na plataforma. Se o JSON mantiver `indice_geral`, tratar como legado interno.
+
+### 5.1c Downloads curados (resolvido)
+
+- CSV real via `GET /api/obgd/export` a partir de `detalhes_*` (valores normalizados do snapshot)
+- Por variável (nível): `?nivel=&conceptId=`
+- Por fonte (metodologia): `?metodologiaSlug=` — recorte OBGD, não microdado bruto
+- Ver também [`integracao-dados-v3-tags.md`](./integracao-dados-v3-tags.md) § downloads
 
 ### 5.3 Explicitamente fora de pedido de dados nesta fase
 
@@ -293,3 +297,4 @@ Documentação completa: [`integracao-dados-v3-tags.md`](./integracao-dados-v3-t
 5. **Loading da home** tentado e **removido**
 6. **Este documento** como fonte única de acompanhamento de produto
 7. **dados-v3 + tags reais** — sync de assets, desmock de temáticas; ver [`integracao-dados-v3-tags.md`](./integracao-dados-v3-tags.md)
+8. **Downloads curados** — CSV real a partir de `detalhes_*` (variável × nível e fonte × OBGD); Metodologia sem fake de base completa

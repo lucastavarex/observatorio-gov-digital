@@ -259,8 +259,20 @@ Se a entrega voltar a incluir JSON flat oficiais com `ano_indice` preenchido, o 
 - Filtro ou dual-view **cidadão × gestor** (`audiencia` / `tag.lado`)
 - Score oficial pré-calculado pela frente de dados (substituiria o nosso `indice_por_tag` se o contrato for outro)
 - Expansão do catálogo além das 16 tags
-- Downloads reais de variáveis (ainda mock em `VariavelAcoes`)
 - Texto oficial do Objetivo 3 e nota dos objetivos precários
+
+---
+
+## 12. Downloads curados (CSV)
+
+A plataforma **não** hospeda microdados brutos das fontes. O download entrega o recorte usado no índice:
+
+| Endpoint | Uso |
+|---|---|
+| `GET /api/obgd/export?nivel=estadual&conceptId=tic_gov/B1` | Indicador em todas as unidades do nível |
+| `GET /api/obgd/export?metodologiaSlug=cetic-br` | Todos os indicadores dessa fonte no OBGD (3 níveis) |
+
+UI: `VariavelAcoes` (página do objetivo); em `/metodologia`, a lista “Principais fontes” e o bloco de download em `/metodologia/fontes/[slug]` só incluem fontes com linhas em `detalhes_*` (`hasObgdExportForMetodologiaSlug`). Schema: `src/lib/export-obgd-csv.ts`, `src/data/obgd/export-rows.ts`.
 
 ---
 
