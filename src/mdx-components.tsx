@@ -1,5 +1,10 @@
 import type { MDXComponents } from 'mdx/types'
-import type { ComponentPropsWithoutRef } from 'react'
+import {
+  Children,
+  type ComponentPropsWithoutRef,
+  isValidElement,
+  type ReactNode,
+} from 'react'
 
 import { cn } from '@/lib/utils'
 
@@ -52,6 +57,17 @@ function MdxImg({
   )
 }
 
+/** Markdown wraps lone images in <p>; our chart placeholder is a <figure>. */
+function isImageOnlyParagraph(children: ReactNode): boolean {
+  const nodes = Children.toArray(children).filter(child => {
+    if (typeof child === 'string') return child.trim().length > 0
+    return true
+  })
+  if (nodes.length !== 1) return false
+  const only = nodes[0]
+  return isValidElement(only) && (only.type === MdxImg || only.type === 'img')
+}
+
 const components: MDXComponents = {
   h1: ({ className, ...props }) => (
     <h1
@@ -89,15 +105,22 @@ const components: MDXComponents = {
       {...props}
     />
   ),
-  p: ({ className, ...props }) => (
-    <p
-      className={cn(
-        'mt-4 text-sm leading-relaxed text-muted-foreground',
-        className
-      )}
-      {...props}
-    />
-  ),
+  p: ({ className, children, ...props }) => {
+    if (isImageOnlyParagraph(children)) {
+      return <>{children}</>
+    }
+    return (
+      <p
+        className={cn(
+          'mt-4 text-sm leading-relaxed text-muted-foreground',
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </p>
+    )
+  },
   a: ({ className, ...props }) => (
     <a
       className={cn(
