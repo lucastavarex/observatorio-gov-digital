@@ -7,6 +7,7 @@ import { EnteRankingList } from '@/components/ranking/ente-ranking-list'
 import { FilterPill } from '@/components/shared/filter-pill'
 import { type DadoMapa, MapaBrasil } from '@/components/shared/mapa-brasil'
 import { ObjetivoChip } from '@/components/shared/objetivo-chip'
+import { GLOSSARIO, oQueAvaliaObjetivo } from '@/data/help-copy'
 import {
   type NivelKey,
   niveis,
@@ -228,6 +229,19 @@ export function RankingExplorer() {
                     </FilterPill>
                   ))}
             </div>
+            {modo === 'objetivos' && objetivo && (
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                <span className="font-medium text-foreground">
+                  Este objetivo avalia:{' '}
+                </span>
+                {oQueAvaliaObjetivo(objetivo.slug).blurb}
+              </p>
+            )}
+            {modo === 'tematicas' && tematica.descricao && (
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                {tematica.descricao}
+              </p>
+            )}
           </div>
         )}
 
@@ -240,9 +254,13 @@ export function RankingExplorer() {
                   {rotuloSelecao}
                 </h2>
                 <p className="mt-1 text-muted-foreground text-sm">
-                  {vista === 'mapa' && podeMapa
-                    ? 'Sub-índice de cada ente no mapa do Brasil (0–100).'
-                    : 'Quantidade de entes por faixa de sub-índice (0–100).'}
+                  {modo === 'tematicas'
+                    ? vista === 'mapa' && podeMapa
+                      ? 'Score da tag de cada ente no mapa do Brasil (0–100).'
+                      : 'Quantidade de entes por faixa de score da tag (0–100).'
+                    : vista === 'mapa' && podeMapa
+                      ? 'Sub-índice de cada ente no mapa do Brasil (0–100).'
+                      : 'Quantidade de entes por faixa de sub-índice (0–100).'}
                 </p>
               </div>
               {podeMapa && (
@@ -284,7 +302,10 @@ export function RankingExplorer() {
           <EnteRankingList
             entes={lista}
             basePath={link(`/ranking/${nivel.key}`)}
-            colunaValor="Sub-índice"
+            colunaValor={modo === 'tematicas' ? 'Score da tag' : 'Sub-índice'}
+            colunaValorTip={
+              modo === 'tematicas' ? GLOSSARIO.scoreTag : GLOSSARIO.subIndice
+            }
             nivelKey={nivel.key}
             hrefQuery={objetivoQuery}
           />

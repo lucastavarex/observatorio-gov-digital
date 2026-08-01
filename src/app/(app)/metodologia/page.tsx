@@ -60,10 +60,10 @@ const etapas: Etapa[] = [
     ],
   },
   {
-    label: '05 · Cálculo do índice',
+    label: '05 · Cálculo dos subíndices',
     paragraphs: [
-      'O cálculo ocorre em dois níveis. Nos subíndices, para cada um dos dez objetivos da ENGD é calculada a média simples dos indicadores associados — todos com o mesmo peso nesta versão do Observatório.',
-      'O Índice Geral do Governo Digital corresponde à média dos dez subíndices, oferecendo uma visão consolidada da evolução da transformação digital no país. A metodologia foi concebida para permitir futuras evoluções, incluindo novas fontes, indicadores adicionais e modelos de ponderação.',
+      'Para cada um dos dez objetivos da ENGD é calculada a média simples dos indicadores associados — todos com o mesmo peso nesta versão do Observatório. O resultado é o sub-índice do objetivo (escala 0 a 100) para cada ente.',
+      'A plataforma apresenta rankings e comparativos sempre por objetivo (ou por categoria temática, quando disponível). Não há média geral entre os dez objetivos na interface: cada nota deve ser lida no contexto do objetivo ou da tag selecionada. A metodologia continua aberta a novas fontes, indicadores e modelos de ponderação.',
     ],
   },
 ]

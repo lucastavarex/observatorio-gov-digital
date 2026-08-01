@@ -1,6 +1,9 @@
+'use client'
+
 import Link from 'next/link'
 
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
+import { InfoTip } from '@/components/shared/info-tip'
 import { formatScore, type NivelKey } from '@/data/indicators'
 import { bandeiraSrc } from '@/lib/geo/entes-geo'
 
@@ -17,6 +20,8 @@ type EnteRankingListProps = {
   basePath: string
   colunaValor?: string
   colunaSecundaria?: string
+  /** Texto do InfoTip ao lado do cabeçalho da coluna de valor. */
+  colunaValorTip?: string
   nivelKey?: NivelKey
   /** Query string sem `?` (ex. `objetivo=gestao-e-governanca`). */
   hrefQuery?: string
@@ -27,6 +32,7 @@ export function EnteRankingList({
   basePath,
   colunaValor = 'Sub-índice',
   colunaSecundaria,
+  colunaValorTip,
   nivelKey,
   hrefQuery,
 }: EnteRankingListProps) {
@@ -40,7 +46,14 @@ export function EnteRankingList({
               {colunaSecundaria}
             </span>
           )}
-          <span className="text-right whitespace-nowrap">{colunaValor}</span>
+          <span className="inline-flex items-center gap-1 text-right whitespace-nowrap">
+            {colunaValor}
+            {colunaValorTip && (
+              <InfoTip label={`O que significa ${colunaValor}?`}>
+                {colunaValorTip}
+              </InfoTip>
+            )}
+          </span>
         </span>
       </div>
 

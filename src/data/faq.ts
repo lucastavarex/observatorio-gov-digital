@@ -20,9 +20,14 @@ export const faqItems: FaqItem[] = [
       'Os indicadores são construídos a partir de bases oficiais e verificáveis. Em cada objetivo é possível ver as variáveis que o compõem, a fonte original e baixar os dados que sustentam a nota.',
   },
   {
+    pergunta: 'O que é a média do nível no radar?',
+    resposta:
+      'Para cada objetivo, é a média das notas dos entes daquele nível (por exemplo, todos os estados) que têm dado. Serve só de referência de comparação — não é um ranking e não mistura objetivos diferentes.',
+  },
+  {
     pergunta: 'Posso comparar diferentes entes?',
     resposta:
-      'Sim. Na página de Indicadores você seleciona até três entes e visualiza os perfis lado a lado no radar; no Ranking, é possível explorar cada ente do nível até o objetivo e baixar as variáveis associadas.',
+      'Sim. Na página de Indicadores você seleciona até cinco entes e visualiza os perfis lado a lado no radar; no Ranking, é possível explorar cada ente do nível até o objetivo e ver as variáveis associadas.',
   },
   {
     pergunta: 'Os dados são atualizados?',
