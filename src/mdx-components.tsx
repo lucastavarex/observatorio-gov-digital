@@ -137,8 +137,15 @@ const components: MDXComponents = {
       {...props}
     />
   ),
+  // `---` + `##` duplicava a linha: o hr e o border-t do h2. Esconde o hr nesse caso.
   hr: ({ className, ...props }) => (
-    <hr className={cn('my-10 border-border', className)} {...props} />
+    <hr
+      className={cn(
+        'my-10 border-border has-[+h2]:m-0 has-[+h2]:hidden',
+        className
+      )}
+      {...props}
+    />
   ),
   strong: ({ className, ...props }) => (
     <strong
