@@ -112,27 +112,32 @@ const members: {
   {
     name: 'Ivar Hartmann',
     linkedin: 'https://www.linkedin.com/in/ivar-alberto-hartmann-44b19110/',
+    role: 'Professor Coordenador Acadêmico',
     photo: '/pessoas/ivar-hartmann.jpg',
   },
   {
     name: 'Maria Carolina Foss',
     linkedin: 'https://www.linkedin.com/in/maria-carolina-foss-49925320',
+    role: 'Professora Coordenadora Acadêmica',
     photo: '/pessoas/carolina-foss.jpg',
   },
   {
     name: 'Suelane Garcia Fontes',
     linkedin: 'https://www.linkedin.com/in/suelane-garcia/',
+    role: 'Professora Coordenadora Técnica de Dados',
     photo: '/pessoas/suelane-garcia.jpg',
   },
   {
     name: 'Bruno da Cunha de Oliveira',
     linkedin:
       'https://www.linkedin.com/in/bruno-da-cunha-de-oliveira-5b1820395/',
+    role: 'Assistente de Pesquisa',
     photo: '/pessoas/bruno-da-cunha.jpg',
   },
   {
     name: 'Daniela Matos',
     linkedin: 'https://www.linkedin.com/in/daniela-matos-santos/?locale=pt',
+    role: 'Assistente de Pesquisa',
     photo: '/pessoas/daniela-matos.jpg',
   },
   {
