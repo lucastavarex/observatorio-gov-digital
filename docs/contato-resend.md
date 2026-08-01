@@ -21,7 +21,8 @@ Não há persistência em banco ou CMS: o canal de entrega é apenas o e-mail. O
 | Destino (produção) | `mbc@mbc.org.br` |
 | Persistência | Nenhuma (somente e-mail) |
 | Anti-spam MVP | Campo honeypot oculto |
-| Validação | Manual no servidor (sem Zod) |
+| Validação | Zod (`contactFormSchema`) + React Hook Form no cliente; Zod de novo na Server Action |
+| UX de erro | Mensagens inline abaixo de cada campo (cliente); toast só para falha de envio |
 
 ---
 
@@ -36,26 +37,32 @@ sequenceDiagram
   participant Inbox as Caixa destino
 
   Visitor->>Form: Preenche e envia
-  Form->>Action: FormData
-  Action->>Action: Honeypot + validação
-  alt Honeypot preenchido
-    Action-->>Form: ok true (silencioso)
-  else Dados inválidos
-    Action-->>Form: ok false + mensagem
+  Form->>Form: React Hook Form + Zod (resolver)
+  alt Dados inválidos no cliente
+    Form-->>Visitor: Erro inline sob o campo
   else Dados válidos
-    Action->>Resend: emails.send
-    Resend->>Inbox: E-mail com Reply-To do visitante
-    Action-->>Form: ok true ou erro genérico
+    Form->>Action: FormData
+    Action->>Action: Honeypot + Zod (mesmo schema)
+    alt Honeypot preenchido
+      Action-->>Form: ok true (silencioso)
+    else Dados inválidos
+      Action-->>Form: ok false + mensagem
+    else Dados válidos
+      Action->>Resend: emails.send
+      Resend->>Inbox: E-mail com Reply-To do visitante
+      Action-->>Form: ok true ou erro genérico
+    end
+    Form-->>Visitor: Toast Sonner
   end
-  Form-->>Visitor: Toast Sonner
 ```
 
 ### Fluxo resumido
 
-1. O cliente monta `FormData` a partir do `<form>` e chama `sendContactMessage`.
-2. A action ignora bots (honeypot), valida campos e limites.
-3. Em sucesso, chama `resend.emails.send` com texto + HTML escapado.
-4. O formulário limpa os campos (incluindo remount do Select de assunto) e exibe toast.
+1. O cliente valida com React Hook Form + `zodResolver(contactFormSchema)` e mostra erros sob cada campo.
+2. Se válido, monta `FormData` (inclui honeypot) e chama `sendContactMessage`.
+3. A action ignora bots (honeypot) e revalida com o mesmo schema Zod.
+4. Em sucesso, chama `resend.emails.send` com texto + HTML escapado.
+5. O formulário limpa os campos (incluindo remount do Select de assunto) e exibe toast.
 
 ---
 
@@ -64,13 +71,13 @@ sequenceDiagram
 | Arquivo | Papel |
 | --- | --- |
 | [`src/app/(app)/contato/page.tsx`](../src/app/(app)/contato/page.tsx) | Página `/contato` (layout + formulário) |
-| [`src/components/content/contact-form.tsx`](../src/components/content/contact-form.tsx) | UI do formulário (client), toasts, honeypot, reset do Select |
+| [`src/components/content/contact-form.tsx`](../src/components/content/contact-form.tsx) | UI (React Hook Form), erros inline, toasts, honeypot, reset do Select |
 | [`src/app/actions/contact.ts`](../src/app/actions/contact.ts) | Server Action: validação + envio Resend |
-| [`src/lib/contact.ts`](../src/lib/contact.ts) | `SUBJECT_OPTIONS`, limites e type guard compartilhados |
+| [`src/lib/contact.ts`](../src/lib/contact.ts) | `SUBJECT_OPTIONS`, limites, schema Zod e `parseContactFormData` |
 | [`.env.example`](../.env.example) | Modelo das variáveis de ambiente |
 | `.env` | Segredos locais (**não versionar**) |
 
-Dependência npm: `resend`.
+Dependências npm: `resend`, `zod`, `react-hook-form`, `@hookform/resolvers`.
 
 ---
 
@@ -191,9 +198,11 @@ CONTACT_TO_EMAIL=mbc@mbc.org.br
 
 ## 8. UX e comportamentos do formulário
 
+- Validação no submit via React Hook Form + Zod; erros aparecem **abaixo de cada campo** (borda `aria-invalid`).
+- `noValidate` no `<form>` para não misturar validação nativa do browser com as mensagens inline.
 - Loading no botão (`Enviando…`) enquanto a action roda.
-- Toasts via Sonner (sucesso / erro).
-- Após sucesso: `form.reset()`, limpa estado de assunto e **remonta** o Select Radix (`key` incrementada) para voltar ao placeholder — o Select controlado não zera só com `value` vazio/`undefined`.
+- Toasts via Sonner para **sucesso** e **falha de envio** (não para validação de campo).
+- Após sucesso: `reset()` do RHF, limpa estado e **remonta** o Select Radix (`key` incrementada) para voltar ao placeholder.
 - Fallback humano: link `mailto:mbc@mbc.org.br` ao lado do botão Enviar.
 
 ---
@@ -203,8 +212,8 @@ CONTACT_TO_EMAIL=mbc@mbc.org.br
 | Caso | Resultado esperado |
 | --- | --- |
 | Envio completo válido | Toast de sucesso; e-mail na caixa destino; formulário limpo (assunto no placeholder) |
-| Assunto vazio | Toast “Selecione um assunto.” (cliente); servidor também rejeita se faltar |
-| E-mail inválido | Toast de erro de validação |
+| Assunto vazio | Erro inline “Selecione um assunto.” sob o Select |
+| E-mail inválido | Erro inline “Informe um e-mail válido.” sob o campo |
 | Env vars ausentes | Toast genérico; log no servidor |
 | Honeypot preenchido (DevTools) | Toast de sucesso **sem** chamada efetiva ao Resend |
 | Reply no e-mail recebido | Resposta endereçada ao e-mail do visitante |

@@ -48,7 +48,7 @@ src/
 │   └── ui/                 # componentes shadcn/ui
 ├── data/                   # mocks tipados (indicators, objectives, ranking, …)
 ├── lib/
-│   ├── contact.ts          # assuntos e limites do formulário de contato
+│   ├── contact.ts          # assuntos, limites e schema Zod do formulário de contato
 │   └── utils.ts            # cn() — clsx + tailwind-merge
 ├── local_assets/           # gitignored — dados reais do cliente (ainda não ligados)
 └── proxy.ts                # middleware Next.js (passthrough)
