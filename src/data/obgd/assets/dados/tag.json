@@ -1,0 +1,98 @@
+[
+  {
+    "id": "conectividade",
+    "nome": "Conectividade",
+    "descricao": "Acesso à internet, banda larga, cobertura móvel e Wi-Fi — infraestrutura de conexão que chega à população e às escolas.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "canais-digitais-atendimento",
+    "nome": "Canais digitais de atendimento",
+    "descricao": "Meios digitais de contato e atendimento ao cidadão: portais, aplicativos, chatbot, agendamento, protocolo, ouvidoria, e-mail e redes sociais.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "servicos-publicos-digitais",
+    "nome": "Serviços públicos digitais",
+    "descricao": "Serviços transacionais e informacionais prestados ao cidadão pela internet: certidões, nota fiscal, prova de vida, consulta a processos, download de documentos, informações públicas no site e a clareza (linguagem cidadã) desses serviços. Distinto de 'canais de atendimento' (contato) e de 'sistemas e serviços digitais' (capacidade interna do órgão).",
+    "lado": "cidadao"
+  },
+  {
+    "id": "cidades-inteligentes",
+    "nome": "Cidades inteligentes",
+    "descricao": "Tecnologias urbanas de sensoriamento e gestão da cidade: semáforos e iluminação inteligentes, sensores, monitoramento urbano, GPS no transporte, bilhete eletrônico, centros de controle operacional.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "pagamento-digital",
+    "nome": "Pagamento digital",
+    "descricao": "Pagamento de serviços, tributos e taxas por meios digitais (Pix, cartão, boleto, guias) sem presença física.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "identidade-digital",
+    "nome": "Identidade digital e autenticação",
+    "descricao": "Identificação e autenticação do cidadão no digital: login único (gov.br), assinatura eletrônica, biometria, carteira/documentos de identidade digitais. Reservada a variáveis cujo assunto É identidade — não a serviços que apenas usam login.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "saude-digital",
+    "nome": "Saúde digital",
+    "descricao": "Serviços de saúde mediados por tecnologia: telessaúde, receita e prontuário eletrônicos, agendamento de consultas.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "educacao-digital",
+    "nome": "Educação digital",
+    "descricao": "Serviços educacionais digitais e conectividade escolar: matrícula, rematrícula e transferência online, internet nas escolas.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "transparencia-dados-abertos",
+    "nome": "Transparência e dados abertos",
+    "descricao": "Publicação ativa de informação pública ao cidadão: portais de transparência, dados abertos, orçamento em tempo real, canais de LAI.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "inclusao-acessibilidade",
+    "nome": "Inclusão e acessibilidade",
+    "descricao": "Redução de barreiras de acesso: acessibilidade dos sites (LIBRAS, texto alternativo), inclusão digital, telecentros e pontos de acesso público.",
+    "lado": "cidadao"
+  },
+  {
+    "id": "gestao-planejamento-ti",
+    "nome": "Gestão e planejamento de TI",
+    "descricao": "Governança, estrutura, estratégia e planejamento da tecnologia da informação no órgão (comitês, PDTIC, gestão de processos de TI).",
+    "lado": "gestor"
+  },
+  {
+    "id": "servicos-digitais",
+    "nome": "Sistemas e serviços digitais",
+    "descricao": "Capacidade de construir e operar sistemas e serviços digitais do órgão — tanto os públicos (desenvolvimento, plataformas de serviço, integração) quanto os sistemas internos de gestão (ERP, CRM, BI, RH, patrimônio, contabilidade).",
+    "lado": "gestor"
+  },
+  {
+    "id": "dados-interoperabilidade",
+    "nome": "Dados e interoperabilidade",
+    "descricao": "Gestão, reuso e troca de dados entre sistemas: interoperabilidade, integração de bases, uso de dados para decisão.",
+    "lado": "gestor"
+  },
+  {
+    "id": "seguranca-lgpd",
+    "nome": "Segurança e LGPD",
+    "descricao": "Privacidade, proteção de dados pessoais, segurança da informação e cibersegurança — aparece sob governança, infraestrutura e competências.",
+    "lado": "gestor"
+  },
+  {
+    "id": "contratacoes",
+    "nome": "Contratações e compras",
+    "descricao": "Contratações e compras públicas mediadas por tecnologia: pregão eletrônico, licitações, contratação de soluções de TI.",
+    "lado": "gestor"
+  },
+  {
+    "id": "infraestrutura",
+    "nome": "Infraestrutura e plataformas",
+    "descricao": "Infraestrutura tecnológica do Estado: datacenter, nuvem, redes e plataformas digitais compartilhadas que sustentam as soluções de governo.",
+    "lado": "gestor"
+  }
+]

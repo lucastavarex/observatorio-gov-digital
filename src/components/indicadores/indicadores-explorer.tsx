@@ -159,11 +159,14 @@ export function IndicadoresExplorer() {
 
   const barrasTematicas =
     tematica &&
-    entesSelecionados.map((e, idx) => ({
-      nome: e.nome,
-      valor: notaTematica(e, tematica.slug),
-      cor: CORES[idx],
-    }))
+    entesSelecionados
+      .map((e, idx) => {
+        const valor = notaTematica(e, tematica.slug)
+        return valor == null ? null : { nome: e.nome, valor, cor: CORES[idx] }
+      })
+      .filter(
+        (x): x is { nome: string; valor: number; cor: string } => x !== null
+      )
 
   const varsTag = tematica ? (variaveisPorTematica[tematica.slug] ?? []) : []
 
@@ -386,7 +389,8 @@ export function IndicadoresExplorer() {
                       Comparativo · {rotuloSelecao}
                     </h2>
                     <p className="mt-1 text-muted-foreground text-sm">
-                      Score temático ilustrativo (mock) dos entes selecionados.
+                      Score da tag (média dos indicadores ativos) dos entes
+                      selecionados.
                     </p>
                     {barrasTematicas && (
                       <div className="mt-4">
@@ -399,8 +403,7 @@ export function IndicadoresExplorer() {
                           Variáveis atreladas à tag
                         </h3>
                         <p className="mt-1 text-muted-foreground text-xs">
-                          Lista mock — aguarda mapeamento oficial da frente de
-                          dados.
+                          Indicadores ativos associados a esta tag.
                         </p>
                         <ul className="mt-4 border-t">
                           {varsTag.map(v => (

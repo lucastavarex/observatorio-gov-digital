@@ -1,14 +1,14 @@
 # MVP do Dashboard OBGD — Guia de Estudo
 
-> **Atenção (2026-07-28):** decisões e status atuais da plataforma (o que foi feito, mocks, pedidos a Gabriel/Luiza) estão em **[`docs/acompanhamento-plataforma.md`](./acompanhamento-plataforma.md)**.
+> **Atenção (2026-08-01):** decisões e status atuais da plataforma estão em **[`docs/acompanhamento-plataforma.md`](./acompanhamento-plataforma.md)**. A fonte canônica do app passou a ser **dados-v3** (tags reais); ver **[`docs/integracao-dados-v3-tags.md`](./integracao-dados-v3-tags.md)**.
 >
-> Este guia permanece como background de estudo dos dados / MVP antigo.
+> Este guia permanece como background de estudo dos dados / MVP antigo (ainda descreve `dados-v2` na seção de estrutura).
 
 > Documento de referência para entender os dados fornecidos pelo cliente, o escopo acordado do MVP, os gráficos possíveis e o que ainda falta para features futuras.
 >
-> Última atualização: jul/2026 · Fonte canônica: `src/local_assets/dados-v2/`
+> Última atualização: jul/2026 · Fonte descrita abaixo: `src/local_assets/dados-v2/` (histórico)
 >
-> **Status:** planejamento e estudo — a implementação do dashboard ainda não foi iniciada.
+> **Status:** planejamento e estudo — supersedido em grande parte pela implementação atual.
 
 ---
 

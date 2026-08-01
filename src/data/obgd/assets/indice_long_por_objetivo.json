@@ -6,8 +6,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 70.97,
-    "indice_geral": 57.57,
+    "sub_indice": 65.25,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -18,8 +18,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 60.56,
-    "indice_geral": 57.57,
+    "sub_indice": 59.91,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -30,8 +30,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 53.99,
-    "indice_geral": 57.57,
+    "sub_indice": 48.98,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -42,8 +42,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 43.95,
-    "indice_geral": 57.57,
+    "sub_indice": 43.19,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -54,8 +54,8 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 55.4,
-    "indice_geral": 57.57,
+    "sub_indice": 61.11,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -66,8 +66,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 69.06,
-    "indice_geral": 57.57,
+    "sub_indice": 57.95,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -78,8 +78,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 30.76,
-    "indice_geral": 57.57,
+    "sub_indice": 54.83,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -90,8 +90,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 66.95,
-    "indice_geral": 57.57,
+    "sub_indice": 67,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -102,8 +102,8 @@
     "objetivo": 9,
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
-    "sub_indice": 55.04,
-    "indice_geral": 57.57,
+    "sub_indice": 54.82,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -114,8 +114,8 @@
     "objetivo": 10,
     "objetivo_nome": "Competências em Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 69.06,
-    "indice_geral": 57.57,
+    "sub_indice": 65.87,
+    "indice_geral": 57.89,
     "n_objetivos_com_dados": 10,
     "posicao_no_objetivo": 1
   },
@@ -126,8 +126,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 70.88,
+    "sub_indice": 100,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -138,10 +138,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 75.53,
-    "indice_geral": 70.88,
+    "sub_indice": 73.69,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 11
+    "posicao_no_objetivo": 12
   },
   {
     "nivel": "uf",
@@ -150,8 +150,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 70.88,
+    "sub_indice": 100,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -162,8 +162,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 70.88,
+    "sub_indice": 0,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 27
   },
@@ -174,8 +174,8 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 70.88,
+    "sub_indice": 50,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 13
   },
@@ -186,8 +186,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 70.88,
+    "sub_indice": 100,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -198,10 +198,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 91.67,
-    "indice_geral": 70.88,
+    "sub_indice": 100,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 6
+    "posicao_no_objetivo": 1
   },
   {
     "nivel": "uf",
@@ -210,8 +210,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 70.88,
+    "sub_indice": 100,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -223,7 +223,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 20.74,
-    "indice_geral": 70.88,
+    "indice_geral": 71.6,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 27
   },
@@ -234,8 +234,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 77.75,
+    "sub_indice": 100,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -246,8 +246,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 87.32,
-    "indice_geral": 77.75,
+    "sub_indice": 85.19,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 5
   },
@@ -258,8 +258,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 77.75,
+    "sub_indice": 100,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -270,8 +270,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 77.75,
+    "sub_indice": 60,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -282,8 +282,8 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 75.0,
-    "indice_geral": 77.75,
+    "sub_indice": 75,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 2
   },
@@ -294,8 +294,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 77.75,
+    "sub_indice": 50,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -306,10 +306,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 77.75,
+    "sub_indice": 40,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 13
+    "posicao_no_objetivo": 23
   },
   {
     "nivel": "uf",
@@ -318,8 +318,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 77.75,
+    "sub_indice": 100,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -331,7 +331,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 60.76,
-    "indice_geral": 77.75,
+    "indice_geral": 74.55,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 15
   },
@@ -342,8 +342,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 34.99,
+    "sub_indice": 0,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -354,8 +354,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 31.89,
-    "indice_geral": 34.99,
+    "sub_indice": 33.56,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 25
   },
@@ -366,8 +366,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 34.99,
+    "sub_indice": 50,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -378,8 +378,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 34.99,
+    "sub_indice": 60,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -391,7 +391,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 19.64,
-    "indice_geral": 34.99,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -402,8 +402,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 34.99,
+    "sub_indice": 50,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -414,10 +414,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 33.33,
-    "indice_geral": 34.99,
+    "sub_indice": 60,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 24
+    "posicao_no_objetivo": 20
   },
   {
     "nivel": "uf",
@@ -426,8 +426,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 34.99,
+    "sub_indice": 0,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -439,7 +439,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 70.02,
-    "indice_geral": 34.99,
+    "indice_geral": 38.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 10
   },
@@ -450,8 +450,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 31.16,
+    "sub_indice": 0,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -462,8 +462,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 31.61,
-    "indice_geral": 31.16,
+    "sub_indice": 30.83,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 26
   },
@@ -475,7 +475,7 @@
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
     "sub_indice": 66.65,
-    "indice_geral": 31.16,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 14
   },
@@ -486,8 +486,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 40.0,
-    "indice_geral": 31.16,
+    "sub_indice": 40,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 22
   },
@@ -499,7 +499,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 12.5,
-    "indice_geral": 31.16,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -510,8 +510,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 31.16,
+    "sub_indice": 50,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -522,10 +522,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 25.0,
-    "indice_geral": 31.16,
+    "sub_indice": 60,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 25
+    "posicao_no_objetivo": 20
   },
   {
     "nivel": "uf",
@@ -534,8 +534,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 31.16,
+    "sub_indice": 0,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -547,7 +547,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 54.66,
-    "indice_geral": 31.16,
+    "indice_geral": 34.96,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -559,7 +559,7 @@
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
     "sub_indice": 33.3,
-    "indice_geral": 56.97,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 12
   },
@@ -570,8 +570,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 44.7,
-    "indice_geral": 56.97,
+    "sub_indice": 43.61,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 22
   },
@@ -582,8 +582,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 56.97,
+    "sub_indice": 50,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -594,8 +594,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 56.97,
+    "sub_indice": 100,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -606,8 +606,8 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 25.0,
-    "indice_geral": 56.97,
+    "sub_indice": 25,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 16
   },
@@ -618,8 +618,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 56.97,
+    "sub_indice": 100,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -630,8 +630,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 8.33,
-    "indice_geral": 56.97,
+    "sub_indice": 20,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 27
   },
@@ -642,8 +642,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 56.97,
+    "sub_indice": 100,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -655,7 +655,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 51.42,
-    "indice_geral": 56.97,
+    "indice_geral": 58.15,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -667,7 +667,7 @@
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
     "sub_indice": 33.3,
-    "indice_geral": 59.03,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 12
   },
@@ -678,8 +678,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 55.6,
-    "indice_geral": 59.03,
+    "sub_indice": 56.68,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -690,8 +690,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 59.03,
+    "sub_indice": 100,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -702,8 +702,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 59.03,
+    "sub_indice": 80,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -715,7 +715,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 12.5,
-    "indice_geral": 59.03,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -726,8 +726,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 59.03,
+    "sub_indice": 100,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -738,10 +738,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 59.03,
+    "sub_indice": 80,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 13
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -750,8 +750,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 59.03,
+    "sub_indice": 0,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -763,7 +763,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 83.17,
-    "indice_geral": 59.03,
+    "indice_geral": 60.63,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 4
   },
@@ -774,8 +774,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 66.96,
+    "sub_indice": 100,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -786,8 +786,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 80.36,
-    "indice_geral": 66.96,
+    "sub_indice": 78.4,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 10
   },
@@ -798,8 +798,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 66.96,
+    "sub_indice": 50,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -810,8 +810,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 66.96,
+    "sub_indice": 80,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -823,7 +823,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 28.57,
-    "indice_geral": 66.96,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 15
   },
@@ -834,8 +834,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 66.96,
+    "sub_indice": 50,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -846,10 +846,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 66.96,
+    "sub_indice": 40,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 13
+    "posicao_no_objetivo": 23
   },
   {
     "nivel": "uf",
@@ -858,8 +858,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 66.96,
+    "sub_indice": 100,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -870,8 +870,8 @@
     "objetivo": 9,
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
-    "sub_indice": 47.0,
-    "indice_geral": 66.96,
+    "sub_indice": 47,
+    "indice_geral": 63.78,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 26
   },
@@ -882,8 +882,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 55.96,
+    "sub_indice": 0,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -894,8 +894,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 50.17,
-    "indice_geral": 55.96,
+    "sub_indice": 48.95,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -906,8 +906,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 55.96,
+    "sub_indice": 50,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -918,8 +918,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 55.96,
+    "sub_indice": 60,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -930,8 +930,8 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 25.0,
-    "indice_geral": 55.96,
+    "sub_indice": 25,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 16
   },
@@ -942,8 +942,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 55.96,
+    "sub_indice": 100,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -954,10 +954,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 58.33,
-    "indice_geral": 55.96,
+    "sub_indice": 80,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 18
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -966,8 +966,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 55.96,
+    "sub_indice": 100,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -979,7 +979,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 60.11,
-    "indice_geral": 55.96,
+    "indice_geral": 58.23,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 16
   },
@@ -990,8 +990,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.74,
+    "sub_indice": 100,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1002,8 +1002,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 92.46,
-    "indice_geral": 93.74,
+    "sub_indice": 92.65,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1014,8 +1014,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.74,
+    "sub_indice": 100,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1026,8 +1026,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.74,
+    "sub_indice": 100,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1039,7 +1039,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 66.07,
-    "indice_geral": 93.74,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -1050,8 +1050,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.74,
+    "sub_indice": 100,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1062,8 +1062,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.74,
+    "sub_indice": 100,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1074,8 +1074,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.74,
+    "sub_indice": 100,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1087,7 +1087,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 85.11,
-    "indice_geral": 93.74,
+    "indice_geral": 93.76,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 2
   },
@@ -1098,8 +1098,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 58.85,
+    "sub_indice": 0,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -1110,10 +1110,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 73.61,
-    "indice_geral": 58.85,
+    "sub_indice": 74.25,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 12
+    "posicao_no_objetivo": 11
   },
   {
     "nivel": "uf",
@@ -1122,8 +1122,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 58.85,
+    "sub_indice": 100,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1134,8 +1134,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 58.85,
+    "sub_indice": 80,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -1147,7 +1147,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 62.5,
-    "indice_geral": 58.85,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 8
   },
@@ -1158,8 +1158,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 58.85,
+    "sub_indice": 100,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1170,10 +1170,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 58.85,
+    "sub_indice": 40,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 22
+    "posicao_no_objetivo": 23
   },
   {
     "nivel": "uf",
@@ -1182,8 +1182,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 58.85,
+    "sub_indice": 0,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -1195,7 +1195,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 63.58,
-    "indice_geral": 58.85,
+    "indice_geral": 57.81,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 12
   },
@@ -1206,8 +1206,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 37.68,
+    "sub_indice": 0,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -1218,8 +1218,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 29.66,
-    "indice_geral": 37.68,
+    "sub_indice": 28.94,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 27
   },
@@ -1231,7 +1231,7 @@
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
     "sub_indice": 16.65,
-    "indice_geral": 37.68,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 25
   },
@@ -1242,8 +1242,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 37.68,
+    "sub_indice": 80,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -1255,7 +1255,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 12.5,
-    "indice_geral": 37.68,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -1266,8 +1266,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 37.68,
+    "sub_indice": 100,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1278,8 +1278,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 41.67,
-    "indice_geral": 37.68,
+    "sub_indice": 40,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -1290,8 +1290,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 37.68,
+    "sub_indice": 0,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -1303,7 +1303,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 58.64,
-    "indice_geral": 37.68,
+    "indice_geral": 37.41,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -1314,8 +1314,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 48.45,
+    "sub_indice": 0,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -1326,8 +1326,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 38.9,
-    "indice_geral": 48.45,
+    "sub_indice": 37.95,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 24
   },
@@ -1339,7 +1339,7 @@
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
     "sub_indice": 66.65,
-    "indice_geral": 48.45,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 14
   },
@@ -1350,8 +1350,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 40.0,
-    "indice_geral": 48.45,
+    "sub_indice": 40,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 22
   },
@@ -1363,7 +1363,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 19.64,
-    "indice_geral": 48.45,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -1374,8 +1374,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 48.45,
+    "sub_indice": 50,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -1386,10 +1386,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 58.33,
-    "indice_geral": 48.45,
+    "sub_indice": 80,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 18
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -1398,8 +1398,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 48.45,
+    "sub_indice": 100,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1411,7 +1411,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 62.53,
-    "indice_geral": 48.45,
+    "indice_geral": 50.75,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 14
   },
@@ -1422,8 +1422,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 79.47,
+    "sub_indice": 100,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1434,8 +1434,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 72.06,
-    "indice_geral": 79.47,
+    "sub_indice": 70.3,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 13
   },
@@ -1446,8 +1446,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 79.47,
+    "sub_indice": 100,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1458,8 +1458,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 79.47,
+    "sub_indice": 60,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -1471,7 +1471,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 69.64,
-    "indice_geral": 79.47,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 5
   },
@@ -1482,8 +1482,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 79.47,
+    "sub_indice": 50,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -1494,10 +1494,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 91.67,
-    "indice_geral": 79.47,
+    "sub_indice": 100,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 6
+    "posicao_no_objetivo": 1
   },
   {
     "nivel": "uf",
@@ -1506,8 +1506,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 79.47,
+    "sub_indice": 100,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1519,7 +1519,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 71.87,
-    "indice_geral": 79.47,
+    "indice_geral": 80.2,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 9
   },
@@ -1530,8 +1530,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 38.81,
+    "sub_indice": 0,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -1542,8 +1542,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 41.12,
-    "indice_geral": 38.81,
+    "sub_indice": 40.12,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -1554,8 +1554,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 38.81,
+    "sub_indice": 0,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 26
   },
@@ -1566,8 +1566,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 38.81,
+    "sub_indice": 80,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -1579,7 +1579,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 62.5,
-    "indice_geral": 38.81,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 8
   },
@@ -1590,8 +1590,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 38.81,
+    "sub_indice": 50,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -1602,10 +1602,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 58.33,
-    "indice_geral": 38.81,
+    "sub_indice": 80,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 18
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -1614,8 +1614,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 38.81,
+    "sub_indice": 0,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -1627,7 +1627,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 57.34,
-    "indice_geral": 38.81,
+    "indice_geral": 41.11,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -1639,7 +1639,7 @@
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
     "sub_indice": 33.3,
-    "indice_geral": 47.01,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 12
   },
@@ -1650,10 +1650,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 48.32,
-    "indice_geral": 47.01,
+    "sub_indice": 47.14,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 20
+    "posicao_no_objetivo": 21
   },
   {
     "nivel": "uf",
@@ -1662,8 +1662,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 47.01,
+    "sub_indice": 50,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -1674,8 +1674,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 40.0,
-    "indice_geral": 47.01,
+    "sub_indice": 40,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 22
   },
@@ -1687,7 +1687,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 17.86,
-    "indice_geral": 47.01,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 22
   },
@@ -1698,8 +1698,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 47.01,
+    "sub_indice": 50,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -1710,10 +1710,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 25.0,
-    "indice_geral": 47.01,
+    "sub_indice": 60,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 25
+    "posicao_no_objetivo": 20
   },
   {
     "nivel": "uf",
@@ -1722,8 +1722,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 47.01,
+    "sub_indice": 100,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1735,7 +1735,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 58.64,
-    "indice_geral": 47.01,
+    "indice_geral": 50.77,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -1747,7 +1747,7 @@
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
     "sub_indice": 33.3,
-    "indice_geral": 48.12,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 12
   },
@@ -1758,10 +1758,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 47.64,
-    "indice_geral": 48.12,
+    "sub_indice": 48.92,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 21
+    "posicao_no_objetivo": 20
   },
   {
     "nivel": "uf",
@@ -1770,8 +1770,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 48.12,
+    "sub_indice": 0,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 26
   },
@@ -1782,8 +1782,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 20.0,
-    "indice_geral": 48.12,
+    "sub_indice": 20,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 25
   },
@@ -1795,7 +1795,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 12.5,
-    "indice_geral": 48.12,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -1806,8 +1806,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 48.12,
+    "sub_indice": 100,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1818,10 +1818,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 48.12,
+    "sub_indice": 80,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 13
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -1830,8 +1830,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 48.12,
+    "sub_indice": 100,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1843,7 +1843,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 52.98,
-    "indice_geral": 48.12,
+    "indice_geral": 49.74,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 22
   },
@@ -1854,8 +1854,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.26,
+    "sub_indice": 100,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1866,10 +1866,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 84.29,
-    "indice_geral": 92.26,
+    "sub_indice": 84.67,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 7
+    "posicao_no_objetivo": 6
   },
   {
     "nivel": "uf",
@@ -1878,8 +1878,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.26,
+    "sub_indice": 100,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1890,8 +1890,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.26,
+    "sub_indice": 100,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1903,7 +1903,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 80.36,
-    "indice_geral": 92.26,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1914,8 +1914,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.26,
+    "sub_indice": 100,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1926,10 +1926,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 91.67,
-    "indice_geral": 92.26,
+    "sub_indice": 80,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 6
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -1938,8 +1938,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.26,
+    "sub_indice": 100,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -1951,7 +1951,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 74.02,
-    "indice_geral": 92.26,
+    "indice_geral": 91,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 6
   },
@@ -1962,8 +1962,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 59.16,
+    "sub_indice": 0,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -1974,10 +1974,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 69.22,
-    "indice_geral": 59.16,
+    "sub_indice": 69.98,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 15
+    "posicao_no_objetivo": 14
   },
   {
     "nivel": "uf",
@@ -1986,8 +1986,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 59.16,
+    "sub_indice": 50,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 19
   },
@@ -1998,8 +1998,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 59.16,
+    "sub_indice": 80,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -2011,7 +2011,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 19.64,
-    "indice_geral": 59.16,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -2022,8 +2022,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 59.16,
+    "sub_indice": 50,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -2034,8 +2034,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 59.16,
+    "sub_indice": 100,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2046,8 +2046,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 59.16,
+    "sub_indice": 100,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2059,7 +2059,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 63.54,
-    "indice_geral": 59.16,
+    "indice_geral": 59.24,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 13
   },
@@ -2070,8 +2070,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.45,
+    "sub_indice": 100,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2082,10 +2082,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 88.75,
-    "indice_geral": 91.45,
+    "sub_indice": 89.03,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 3
+    "posicao_no_objetivo": 2
   },
   {
     "nivel": "uf",
@@ -2094,8 +2094,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.45,
+    "sub_indice": 100,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2106,8 +2106,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.45,
+    "sub_indice": 100,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2119,7 +2119,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 67.86,
-    "indice_geral": 91.45,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 6
   },
@@ -2130,8 +2130,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.45,
+    "sub_indice": 100,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2142,8 +2142,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.45,
+    "sub_indice": 100,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2154,8 +2154,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.45,
+    "sub_indice": 100,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2167,7 +2167,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 66.41,
-    "indice_geral": 91.45,
+    "indice_geral": 91.48,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 11
   },
@@ -2178,8 +2178,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 83.62,
+    "sub_indice": 100,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2190,10 +2190,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 87.88,
-    "indice_geral": 83.62,
+    "sub_indice": 88.18,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 4
+    "posicao_no_objetivo": 3
   },
   {
     "nivel": "uf",
@@ -2202,8 +2202,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 83.62,
+    "sub_indice": 100,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2214,8 +2214,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 83.62,
+    "sub_indice": 100,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2226,8 +2226,8 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 75.0,
-    "indice_geral": 83.62,
+    "sub_indice": 75,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 2
   },
@@ -2238,8 +2238,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 83.62,
+    "sub_indice": 100,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2250,10 +2250,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 83.62,
+    "sub_indice": 80,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 13
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -2262,8 +2262,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 83.62,
+    "sub_indice": 50,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -2275,7 +2275,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 73.07,
-    "indice_geral": 83.62,
+    "indice_geral": 85.14,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 8
   },
@@ -2286,8 +2286,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 62.25,
+    "sub_indice": 0,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -2298,10 +2298,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 69.73,
-    "indice_geral": 62.25,
+    "sub_indice": 68.03,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 14
+    "posicao_no_objetivo": 15
   },
   {
     "nivel": "uf",
@@ -2310,8 +2310,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 62.25,
+    "sub_indice": 100,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2322,8 +2322,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 62.25,
+    "sub_indice": 80,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -2335,7 +2335,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 19.64,
-    "indice_geral": 62.25,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -2346,8 +2346,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 62.25,
+    "sub_indice": 100,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2358,10 +2358,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 91.67,
-    "indice_geral": 62.25,
+    "sub_indice": 100,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 6
+    "posicao_no_objetivo": 1
   },
   {
     "nivel": "uf",
@@ -2370,8 +2370,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 62.25,
+    "sub_indice": 50,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -2383,7 +2383,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 49.19,
-    "indice_geral": 62.25,
+    "indice_geral": 62.99,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 25
   },
@@ -2394,8 +2394,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 46.4,
+    "sub_indice": 0,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 18
   },
@@ -2406,8 +2406,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 59.7,
-    "indice_geral": 46.4,
+    "sub_indice": 58.24,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -2419,7 +2419,7 @@
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
     "sub_indice": 66.65,
-    "indice_geral": 46.4,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 14
   },
@@ -2430,8 +2430,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 46.4,
+    "sub_indice": 60,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -2443,7 +2443,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 73.22,
-    "indice_geral": 46.4,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 4
   },
@@ -2454,8 +2454,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 46.4,
+    "sub_indice": 50,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -2466,10 +2466,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 58.33,
-    "indice_geral": 46.4,
+    "sub_indice": 80,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 18
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -2478,8 +2478,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 46.4,
+    "sub_indice": 0,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -2491,7 +2491,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 49.74,
-    "indice_geral": 46.4,
+    "indice_geral": 48.65,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 24
   },
@@ -2502,8 +2502,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.39,
+    "sub_indice": 100,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2514,10 +2514,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 89.06,
-    "indice_geral": 91.39,
+    "sub_indice": 86.88,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 2
+    "posicao_no_objetivo": 4
   },
   {
     "nivel": "uf",
@@ -2526,8 +2526,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.39,
+    "sub_indice": 100,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2538,8 +2538,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.39,
+    "sub_indice": 100,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2551,7 +2551,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 62.5,
-    "indice_geral": 91.39,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 8
   },
@@ -2562,8 +2562,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.39,
+    "sub_indice": 100,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2574,10 +2574,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 91.67,
-    "indice_geral": 91.39,
+    "sub_indice": 100,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 6
+    "posicao_no_objetivo": 1
   },
   {
     "nivel": "uf",
@@ -2586,8 +2586,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 91.39,
+    "sub_indice": 100,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2599,7 +2599,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 79.28,
-    "indice_geral": 91.39,
+    "indice_geral": 92.07,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 5
   },
@@ -2611,7 +2611,7 @@
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
     "sub_indice": 33.3,
-    "indice_geral": 76.3,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 12
   },
@@ -2622,10 +2622,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 83.59,
-    "indice_geral": 76.3,
+    "sub_indice": 83.99,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 8
+    "posicao_no_objetivo": 7
   },
   {
     "nivel": "uf",
@@ -2635,7 +2635,7 @@
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
     "sub_indice": 66.65,
-    "indice_geral": 76.3,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 14
   },
@@ -2646,8 +2646,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 76.3,
+    "sub_indice": 80,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -2659,7 +2659,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 33.93,
-    "indice_geral": 76.3,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 14
   },
@@ -2670,8 +2670,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 76.3,
+    "sub_indice": 100,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2682,8 +2682,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 76.3,
+    "sub_indice": 100,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2694,8 +2694,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 76.3,
+    "sub_indice": 100,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2707,7 +2707,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 89.19,
-    "indice_geral": 76.3,
+    "indice_geral": 76.34,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2718,8 +2718,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 72.86,
+    "sub_indice": 100,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2730,10 +2730,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 85.29,
-    "indice_geral": 72.86,
+    "sub_indice": 83.21,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 6
+    "posicao_no_objetivo": 9
   },
   {
     "nivel": "uf",
@@ -2742,8 +2742,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 72.86,
+    "sub_indice": 100,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2754,8 +2754,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 20.0,
-    "indice_geral": 72.86,
+    "sub_indice": 20,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 25
   },
@@ -2767,7 +2767,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 62.5,
-    "indice_geral": 72.86,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 8
   },
@@ -2778,8 +2778,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 72.86,
+    "sub_indice": 50,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 17
   },
@@ -2790,10 +2790,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 72.86,
+    "sub_indice": 80,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 12
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -2802,8 +2802,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 72.86,
+    "sub_indice": 100,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2815,7 +2815,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 54.57,
-    "indice_geral": 72.86,
+    "indice_geral": 72.25,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 21
   },
@@ -2826,8 +2826,8 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 89.88,
+    "sub_indice": 100,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2838,10 +2838,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 82.93,
-    "indice_geral": 89.88,
+    "sub_indice": 83.35,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 9
+    "posicao_no_objetivo": 8
   },
   {
     "nivel": "uf",
@@ -2850,8 +2850,8 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 89.88,
+    "sub_indice": 100,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2862,8 +2862,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 89.88,
+    "sub_indice": 80,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -2875,7 +2875,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 62.5,
-    "indice_geral": 89.88,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 8
   },
@@ -2886,8 +2886,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 89.88,
+    "sub_indice": 100,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2898,8 +2898,8 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 89.88,
+    "sub_indice": 100,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2910,8 +2910,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 89.88,
+    "sub_indice": 100,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -2923,7 +2923,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 83.54,
-    "indice_geral": 89.88,
+    "indice_geral": 89.93,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 3
   },
@@ -2935,7 +2935,7 @@
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
     "sub_indice": 33.3,
-    "indice_geral": 57.55,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 12
   },
@@ -2946,8 +2946,8 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 60.26,
-    "indice_geral": 57.55,
+    "sub_indice": 61.23,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 16
   },
@@ -2959,7 +2959,7 @@
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
     "sub_indice": 66.65,
-    "indice_geral": 57.55,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 14
   },
@@ -2970,8 +2970,8 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 57.55,
+    "sub_indice": 80,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -2983,7 +2983,7 @@
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
     "sub_indice": 12.5,
-    "indice_geral": 57.55,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 23
   },
@@ -2994,8 +2994,8 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 57.55,
+    "sub_indice": 100,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 1
   },
@@ -3006,10 +3006,10 @@
     "objetivo": 7,
     "objetivo_nome": "Inovação e Tecnologias Emergentes",
     "ano_indice": 2026,
-    "sub_indice": 91.67,
-    "indice_geral": 57.55,
+    "sub_indice": 80,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
-    "posicao_no_objetivo": 6
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "uf",
@@ -3018,8 +3018,8 @@
     "objetivo": 8,
     "objetivo_nome": "Eficiência e Processos",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 57.55,
+    "sub_indice": 0,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 20
   },
@@ -3031,7 +3031,7 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 73.54,
-    "indice_geral": 57.55,
+    "indice_geral": 56.36,
     "n_objetivos_com_dados": 9,
     "posicao_no_objetivo": 7
   },
@@ -3042,9 +3042,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 77.43,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3054,9 +3054,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 65.48,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 67.33,
+    "indice_geral": 77.43,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 23
   },
   {
@@ -3066,9 +3066,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 77.43,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3078,9 +3078,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 77.43,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3090,9 +3090,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 77.43,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -3102,22 +3102,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 76.33,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 25
-  },
-  {
-    "nivel": "capital",
-    "unidade": "1100205",
-    "unidade_nome": "Porto Velho",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
+    "sub_indice": 85.8,
+    "indice_geral": 77.43,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 14
   },
   {
     "nivel": "capital",
@@ -3127,8 +3115,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 88.89,
-    "indice_geral": 78.84,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 77.43,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3138,9 +3126,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 47.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3150,9 +3138,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 42.86,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 46.67,
+    "indice_geral": 47.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 27
   },
   {
@@ -3162,9 +3150,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 47.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 25
   },
   {
@@ -3174,9 +3162,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 20.0,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 20,
+    "indice_geral": 47.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 24
   },
   {
@@ -3186,9 +3174,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 47.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -3198,22 +3186,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 91.94,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 20
-  },
-  {
-    "nivel": "capital",
-    "unidade": "1200401",
-    "unidade_nome": "Rio Branco",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 85.16,
+    "indice_geral": 47.09,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 15
   },
   {
     "nivel": "capital",
@@ -3223,8 +3199,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 51.99,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 47.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -3234,9 +3210,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.48,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3246,9 +3222,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 88.69,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 89.33,
+    "indice_geral": 96.48,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -3258,9 +3234,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.48,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3270,9 +3246,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.48,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3282,9 +3258,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.48,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3294,22 +3270,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 95.2,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 7
-  },
-  {
-    "nivel": "capital",
-    "unidade": "1302603",
-    "unidade_nome": "Manaus",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
+    "sub_indice": 97.12,
+    "indice_geral": 96.48,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 3
   },
   {
     "nivel": "capital",
@@ -3319,8 +3283,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 88.89,
-    "indice_geral": 96.6,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 96.48,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3330,9 +3294,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 62.31,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3342,10 +3306,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 82.74,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 13
+    "sub_indice": 83.33,
+    "indice_geral": 62.31,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 12
   },
   {
     "nivel": "capital",
@@ -3354,9 +3318,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 62.31,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3366,9 +3330,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 40.0,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 40,
+    "indice_geral": 62.31,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 21
   },
   {
@@ -3378,9 +3342,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 62.31,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -3390,22 +3354,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 60.27,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 46.16,
+    "indice_geral": 62.31,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 27
-  },
-  {
-    "nivel": "capital",
-    "unidade": "1400100",
-    "unidade_nome": "Boa Vista",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 23
   },
   {
     "nivel": "capital",
@@ -3415,8 +3367,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 66.67,
-    "indice_geral": 62.46,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 62.31,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 18
   },
   {
@@ -3426,9 +3378,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 58.12,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3438,9 +3390,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 73.21,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 75.33,
+    "indice_geral": 58.12,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -3450,9 +3402,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 58.12,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3462,9 +3414,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 58.12,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 27
   },
   {
@@ -3474,9 +3426,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 58.12,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -3486,22 +3438,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 93.3,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 19
-  },
-  {
-    "nivel": "capital",
-    "unidade": "1501402",
-    "unidade_nome": "Belém",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 17
+    "sub_indice": 75.98,
+    "indice_geral": 58.12,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 21
   },
   {
     "nivel": "capital",
@@ -3511,8 +3451,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 55.56,
-    "indice_geral": 61.09,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 58.12,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 24
   },
   {
@@ -3522,9 +3462,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 86.55,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3534,9 +3474,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 92.86,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 93.33,
+    "indice_geral": 86.55,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 6
   },
   {
@@ -3546,9 +3486,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 86.55,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3558,9 +3498,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 60,
+    "indice_geral": 86.55,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 16
   },
   {
@@ -3570,9 +3510,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 86.55,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3582,22 +3522,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 91.19,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 21
-  },
-  {
-    "nivel": "capital",
-    "unidade": "1600303",
-    "unidade_nome": "Macapá",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 17
+    "sub_indice": 74.72,
+    "indice_geral": 86.55,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 22
   },
   {
     "nivel": "capital",
@@ -3607,8 +3535,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 86.06,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 86.55,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -3618,9 +3546,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 60.28,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3630,10 +3558,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 57.74,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 25
+    "sub_indice": 57.33,
+    "indice_geral": 60.28,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 26
   },
   {
     "nivel": "capital",
@@ -3642,9 +3570,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 60.28,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3654,9 +3582,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 40.0,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 40,
+    "indice_geral": 60.28,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 21
   },
   {
@@ -3666,9 +3594,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 60.28,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -3678,22 +3606,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 78.08,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 24
-  },
-  {
-    "nivel": "capital",
-    "unidade": "1721000",
-    "unidade_nome": "Palmas",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 16.67,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 27
+    "sub_indice": 46.85,
+    "indice_geral": 60.28,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 26
   },
   {
     "nivel": "capital",
@@ -3703,8 +3619,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 58.78,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 60.28,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -3714,9 +3630,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 82.62,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3726,10 +3642,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 84.52,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 10
+    "sub_indice": 85.33,
+    "indice_geral": 82.62,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 9
   },
   {
     "nivel": "capital",
@@ -3738,9 +3654,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 82.62,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3750,9 +3666,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 60,
+    "indice_geral": 82.62,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 16
   },
   {
@@ -3762,9 +3678,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 82.62,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3774,22 +3690,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 93.9,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 17
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2111300",
-    "unidade_nome": "São Luís",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 23
+    "sub_indice": 66.34,
+    "indice_geral": 82.62,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 24
   },
   {
     "nivel": "capital",
@@ -3799,8 +3703,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 66.67,
-    "indice_geral": 81.89,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 82.62,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 18
   },
   {
@@ -3810,9 +3714,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 76.01,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3822,9 +3726,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 78.57,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 80,
+    "indice_geral": 76.01,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 17
   },
   {
@@ -3834,9 +3738,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 76.01,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3846,9 +3750,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 76.01,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3858,9 +3762,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 76.01,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -3870,22 +3774,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 94.19,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 14
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2211001",
-    "unidade_nome": "Teresina",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
+    "sub_indice": 96.51,
+    "indice_geral": 76.01,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 4
   },
   {
     "nivel": "capital",
@@ -3895,8 +3787,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 55.56,
-    "indice_geral": 78.54,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 76.01,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 24
   },
   {
@@ -3906,9 +3798,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 85.24,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3918,10 +3810,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 12
+    "sub_indice": 84,
+    "indice_geral": 85.24,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 11
   },
   {
     "nivel": "capital",
@@ -3930,9 +3822,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 85.24,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3942,9 +3834,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 80,
+    "indice_geral": 85.24,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 10
   },
   {
@@ -3954,9 +3846,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 85.24,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -3966,22 +3858,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 95.18,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 8
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2304400",
-    "unidade_nome": "Fortaleza",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 17
+    "sub_indice": 77.11,
+    "indice_geral": 85.24,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 19
   },
   {
     "nivel": "capital",
@@ -3991,8 +3871,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 55.56,
-    "indice_geral": 85.09,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 85.24,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 24
   },
   {
@@ -4002,9 +3882,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 77.19,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4014,9 +3894,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 80.95,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 82,
+    "indice_geral": 77.19,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 14
   },
   {
@@ -4026,9 +3906,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 77.19,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4038,9 +3918,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 20.0,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 20,
+    "indice_geral": 77.19,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 24
   },
   {
@@ -4050,9 +3930,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 77.19,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4062,21 +3942,9 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 95.37,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 5
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2408102",
-    "unidade_nome": "Natal",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 77.22,
+    "indice_geral": 77.19,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 17
   },
   {
@@ -4087,8 +3955,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 61.11,
-    "indice_geral": 78.01,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 77.19,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 23
   },
   {
@@ -4098,9 +3966,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 87.18,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4110,9 +3978,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 94.64,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 94.67,
+    "indice_geral": 87.18,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 5
   },
   {
@@ -4122,9 +3990,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 87.18,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4134,9 +4002,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 60,
+    "indice_geral": 87.18,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 16
   },
   {
@@ -4146,9 +4014,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 87.18,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4158,21 +4026,9 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 94.53,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 11
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2507507",
-    "unidade_nome": "João Pessoa",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 66.72,
+    "indice_geral": 87.18,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 23
   },
   {
@@ -4183,8 +4039,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 88.89,
-    "indice_geral": 86.01,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 87.18,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4194,9 +4050,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 91.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4206,10 +4062,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 83.93,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 11
+    "sub_indice": 85.33,
+    "indice_geral": 91.47,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 9
   },
   {
     "nivel": "capital",
@@ -4218,9 +4074,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 91.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4230,9 +4086,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 80,
+    "indice_geral": 91.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 10
   },
   {
@@ -4242,9 +4098,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 91.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4254,22 +4110,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 95.34,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 6
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2611606",
-    "unidade_nome": "Recife",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
+    "sub_indice": 97.2,
+    "indice_geral": 91.47,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 2
   },
   {
     "nivel": "capital",
@@ -4279,8 +4123,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 92.13,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 91.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -4290,9 +4134,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 68.98,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4302,10 +4146,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 55.36,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 26
+    "sub_indice": 58.67,
+    "indice_geral": 68.98,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 25
   },
   {
     "nivel": "capital",
@@ -4314,9 +4158,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 68.98,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4326,9 +4170,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 60,
+    "indice_geral": 68.98,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 16
   },
   {
@@ -4338,9 +4182,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 68.98,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -4350,22 +4194,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 94.07,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 15
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2704302",
-    "unidade_nome": "Maceió",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 86.44,
+    "indice_geral": 68.98,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 13
   },
   {
     "nivel": "capital",
@@ -4375,8 +4207,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 71.32,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 68.98,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -4386,9 +4218,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 80.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4398,10 +4230,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 72.02,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 21
+    "sub_indice": 73.33,
+    "indice_geral": 80.74,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 22
   },
   {
     "nivel": "capital",
@@ -4410,9 +4242,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 80.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4422,9 +4254,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 60.0,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 60,
+    "indice_geral": 80.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 16
   },
   {
@@ -4434,9 +4266,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 80.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4446,22 +4278,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 95.67,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 4
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2800308",
-    "unidade_nome": "Aracaju",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 87.4,
+    "indice_geral": 80.74,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 8
   },
   {
     "nivel": "capital",
@@ -4471,8 +4291,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 44.44,
-    "indice_geral": 81.93,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 80.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 27
   },
   {
@@ -4482,9 +4302,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4494,9 +4314,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 95.83,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 96,
+    "indice_geral": 95.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 3
   },
   {
@@ -4506,9 +4326,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4518,9 +4338,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4530,9 +4350,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4542,22 +4362,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 94.04,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 16
-  },
-  {
-    "nivel": "capital",
-    "unidade": "2927408",
-    "unidade_nome": "Salvador",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
+    "sub_indice": 96.42,
+    "indice_geral": 95.74,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 5
   },
   {
     "nivel": "capital",
@@ -4567,8 +4375,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 95.96,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 95.74,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -4578,9 +4386,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.46,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4590,10 +4398,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 99.4,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 2
+    "sub_indice": 100,
+    "indice_geral": 96.46,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 1
   },
   {
     "nivel": "capital",
@@ -4602,9 +4410,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.46,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4614,9 +4422,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.46,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4626,9 +4434,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 96.46,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4638,21 +4446,9 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 95.78,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 3
-  },
-  {
-    "nivel": "capital",
-    "unidade": "3106200",
-    "unidade_nome": "Belo Horizonte",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 97.47,
+    "indice_geral": 96.46,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4663,8 +4459,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 96.62,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 96.46,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -4674,9 +4470,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 75.78,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4686,10 +4482,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 85.71,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 83.33,
+    "indice_geral": 75.78,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 12
   },
   {
     "nivel": "capital",
@@ -4698,9 +4494,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 75.78,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 25
   },
   {
@@ -4710,9 +4506,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 80,
+    "indice_geral": 75.78,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 10
   },
   {
@@ -4722,9 +4518,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 75.78,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4734,22 +4530,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 97.06,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
-  },
-  {
-    "nivel": "capital",
-    "unidade": "3205309",
-    "unidade_nome": "Vitória",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 50.0,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 23
+    "sub_indice": 78.23,
+    "indice_geral": 75.78,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 16
   },
   {
     "nivel": "capital",
@@ -4759,8 +4543,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 88.89,
-    "indice_geral": 75.21,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 75.78,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4770,9 +4554,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 87.94,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4782,10 +4566,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 80.36,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 15
+    "sub_indice": 82,
+    "indice_geral": 87.94,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 14
   },
   {
     "nivel": "capital",
@@ -4794,9 +4578,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 87.94,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4806,9 +4590,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 80,
+    "indice_geral": 87.94,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 10
   },
   {
@@ -4818,9 +4602,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 87.94,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4830,22 +4614,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 78.24,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 23
-  },
-  {
-    "nivel": "capital",
-    "unidade": "3304557",
-    "unidade_nome": "Rio de Janeiro",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
+    "sub_indice": 86.94,
+    "indice_geral": 87.94,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 10
   },
   {
     "nivel": "capital",
@@ -4855,8 +4627,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 66.67,
-    "indice_geral": 88.16,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 87.94,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 18
   },
   {
@@ -4866,9 +4638,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 92.85,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4878,9 +4650,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 73.81,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 76,
+    "indice_geral": 92.85,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 19
   },
   {
@@ -4890,9 +4662,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 92.85,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4902,9 +4674,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 92.85,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4914,9 +4686,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 92.85,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4926,22 +4698,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 93.58,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 18
-  },
-  {
-    "nivel": "capital",
-    "unidade": "3550308",
-    "unidade_nome": "São Paulo",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 1
+    "sub_indice": 96.15,
+    "indice_geral": 92.85,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 6
   },
   {
     "nivel": "capital",
@@ -4951,8 +4711,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 93.15,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 92.85,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -4962,9 +4722,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4974,9 +4734,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4986,9 +4746,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -4998,9 +4758,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5010,9 +4770,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5022,22 +4782,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 96.4,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 2
-  },
-  {
-    "nivel": "capital",
-    "unidade": "4106902",
-    "unidade_nome": "Curitiba",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 87.84,
+    "indice_geral": 95.09,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 7
   },
   {
     "nivel": "capital",
@@ -5047,8 +4795,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 94.69,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 95.09,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -5058,9 +4806,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 71.91,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5070,9 +4818,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 76.19,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 77.33,
+    "indice_geral": 71.91,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 18
   },
   {
@@ -5082,9 +4830,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 71.91,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5094,9 +4842,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 80,
+    "indice_geral": 71.91,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 10
   },
   {
@@ -5106,9 +4854,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 71.91,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 20
   },
   {
@@ -5118,22 +4866,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 61.96,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 26
-  },
-  {
-    "nivel": "capital",
-    "unidade": "4205407",
-    "unidade_nome": "Florianópolis",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 17
+    "sub_indice": 57.18,
+    "indice_geral": 71.91,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 25
   },
   {
     "nivel": "capital",
@@ -5143,8 +4879,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 88.89,
-    "indice_geral": 71.71,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 71.91,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5154,9 +4890,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 79.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5166,9 +4902,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 91.67,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 92,
+    "indice_geral": 79.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 7
   },
   {
@@ -5178,9 +4914,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 0.0,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 0,
+    "indice_geral": 79.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 25
   },
   {
@@ -5190,9 +4926,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 79.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5202,9 +4938,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 79.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5214,22 +4950,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 94.23,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 13
-  },
-  {
-    "nivel": "capital",
-    "unidade": "4314902",
-    "unidade_nome": "Porto Alegre",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 86.54,
+    "indice_geral": 79.47,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 12
   },
   {
     "nivel": "capital",
@@ -5239,8 +4963,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 77.78,
-    "indice_geral": 80.88,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 79.47,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 8
   },
   {
@@ -5250,9 +4974,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 81.1,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5262,9 +4986,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 72.02,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 74,
+    "indice_geral": 81.1,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 21
   },
   {
@@ -5274,9 +4998,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 81.1,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5286,9 +5010,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 40.0,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 40,
+    "indice_geral": 81.1,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 21
   },
   {
@@ -5298,9 +5022,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 81.1,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5310,21 +5034,9 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 95.05,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
-  },
-  {
-    "nivel": "capital",
-    "unidade": "5002704",
-    "unidade_nome": "Campo Grande",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 87.03,
+    "indice_geral": 81.1,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 9
   },
   {
@@ -5335,8 +5047,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 66.67,
-    "indice_geral": 82.13,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 81.1,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 18
   },
   {
@@ -5346,9 +5058,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 86.37,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5358,10 +5070,10 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 80.36,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 15
+    "sub_indice": 81.33,
+    "indice_geral": 86.37,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 16
   },
   {
     "nivel": "capital",
@@ -5370,9 +5082,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 86.37,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5382,9 +5094,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 80.0,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 80,
+    "indice_geral": 86.37,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 10
   },
   {
@@ -5394,9 +5106,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 86.37,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5406,22 +5118,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 94.28,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 12
-  },
-  {
-    "nivel": "capital",
-    "unidade": "5103403",
-    "unidade_nome": "Cuiabá",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 66.67,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 17
+    "sub_indice": 76.57,
+    "indice_geral": 86.37,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 20
   },
   {
     "nivel": "capital",
@@ -5431,8 +5131,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 66.67,
-    "indice_geral": 86.0,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 86.37,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 18
   },
   {
@@ -5442,9 +5142,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 78.49,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5454,9 +5154,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 61.31,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 63.33,
+    "indice_geral": 78.49,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 24
   },
   {
@@ -5466,9 +5166,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 78.49,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5478,9 +5178,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 20.0,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 20,
+    "indice_geral": 78.49,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 24
   },
   {
@@ -5490,9 +5190,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 78.49,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5502,22 +5202,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 78.67,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 22
-  },
-  {
-    "nivel": "capital",
-    "unidade": "5208707",
-    "unidade_nome": "Goiânia",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 77.2,
+    "indice_geral": 78.49,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 18
   },
   {
     "nivel": "capital",
@@ -5527,8 +5215,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 88.89,
-    "indice_geral": 79.03,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 78.49,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5538,9 +5226,9 @@
     "objetivo": 1,
     "objetivo_nome": "Governança do Governo Digital",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.97,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5550,9 +5238,9 @@
     "objetivo": 2,
     "objetivo_nome": "Qualidade dos Serviços Digitais",
     "ano_indice": 2026,
-    "sub_indice": 95.83,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 96,
+    "indice_geral": 95.97,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 3
   },
   {
@@ -5562,9 +5250,9 @@
     "objetivo": 3,
     "objetivo_nome": "Identificação Única",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.97,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5574,9 +5262,9 @@
     "objetivo": 4,
     "objetivo_nome": "Segurança e LGPD",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.97,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5586,9 +5274,9 @@
     "objetivo": 5,
     "objetivo_nome": "Dados e Interoperabilidade",
     "ano_indice": 2026,
-    "sub_indice": 100.0,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
+    "sub_indice": 100,
+    "indice_geral": 95.97,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   },
   {
@@ -5598,22 +5286,10 @@
     "objetivo": 6,
     "objetivo_nome": "Infraestrutura",
     "ano_indice": 2026,
-    "sub_indice": 94.89,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 10
-  },
-  {
-    "nivel": "capital",
-    "unidade": "5300108",
-    "unidade_nome": "Brasília",
-    "objetivo": 7,
-    "objetivo_nome": "Inovação e Tecnologias Emergentes",
-    "ano_indice": 2026,
-    "sub_indice": 83.33,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
-    "posicao_no_objetivo": 9
+    "sub_indice": 86.93,
+    "indice_geral": 95.97,
+    "n_objetivos_com_dados": 7,
+    "posicao_no_objetivo": 11
   },
   {
     "nivel": "capital",
@@ -5623,8 +5299,8 @@
     "objetivo_nome": "Transparência e Participação",
     "ano_indice": 2026,
     "sub_indice": 88.89,
-    "indice_geral": 95.37,
-    "n_objetivos_com_dados": 8,
+    "indice_geral": 95.97,
+    "n_objetivos_com_dados": 7,
     "posicao_no_objetivo": 1
   }
 ]
