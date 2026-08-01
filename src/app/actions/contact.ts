@@ -2,17 +2,13 @@
 
 import { Resend } from 'resend'
 
-import { CONTACT_LIMITS, isContactSubject } from '@/lib/contact'
+import { parseContactFormData } from '@/lib/contact'
 
 export type ContactActionResult = { ok: true } | { ok: false; error: string }
 
 function getString(formData: FormData, key: string): string {
   const value = formData.get(key)
   return typeof value === 'string' ? value.trim() : ''
-}
-
-function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
 function escapeHtml(value: string): string {
@@ -33,30 +29,16 @@ export async function sendContactMessage(
     return { ok: true }
   }
 
-  const name = getString(formData, 'name')
-  const email = getString(formData, 'email')
-  const subject = getString(formData, 'subject')
-  const message = getString(formData, 'message')
-
-  if (!name || !email || !subject || !message) {
-    return { ok: false, error: 'Preencha todos os campos obrigatórios.' }
+  const parsed = parseContactFormData(formData)
+  if (!parsed.success) {
+    return {
+      ok: false,
+      error:
+        parsed.error.issues[0]?.message ?? 'Verifique os campos do formulário.',
+    }
   }
 
-  if (name.length > CONTACT_LIMITS.name) {
-    return { ok: false, error: 'O nome informado é muito longo.' }
-  }
-
-  if (email.length > CONTACT_LIMITS.email || !isValidEmail(email)) {
-    return { ok: false, error: 'Informe um e-mail válido.' }
-  }
-
-  if (!isContactSubject(subject)) {
-    return { ok: false, error: 'Selecione um assunto válido.' }
-  }
-
-  if (message.length > CONTACT_LIMITS.message) {
-    return { ok: false, error: 'A mensagem é muito longa.' }
-  }
+  const { name, email, subject, message } = parsed.data
 
   const apiKey = process.env.RESEND_API_KEY
   const from = process.env.RESEND_FROM_EMAIL

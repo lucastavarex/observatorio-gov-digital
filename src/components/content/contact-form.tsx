@@ -1,6 +1,8 @@
 'use client'
 
+import { zodResolver } from '@hookform/resolvers/zod'
 import * as React from 'react'
+import { Controller, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { sendContactMessage } from '@/app/actions/contact'
@@ -15,24 +17,50 @@ import {
   SelectItem,
   SelectValue,
 } from '@/components/ui/select'
-import { SUBJECT_OPTIONS } from '@/lib/contact'
+import {
+  type ContactFormValues,
+  type ContactSubject,
+  contactFormSchema,
+  SUBJECT_OPTIONS,
+} from '@/lib/contact'
+
+function FieldError({ id, message }: { id: string; message?: string }) {
+  if (!message) return null
+  return (
+    <p id={id} role="alert" className="text-destructive text-sm">
+      {message}
+    </p>
+  )
+}
 
 export function ContactForm() {
-  const [submitting, setSubmitting] = React.useState(false)
-  const [subject, setSubject] = React.useState('')
   const [subjectKey, setSubjectKey] = React.useState(0)
+  const honeypotRef = React.useRef<HTMLInputElement>(null)
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    if (!subject) {
-      toast.error('Selecione um assunto.')
-      return
-    }
+  const {
+    register,
+    control,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactFormValues>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      subject: '' as ContactSubject,
+      message: '',
+    },
+  })
 
-    const form = event.currentTarget
-    const formData = new FormData(form)
+  async function onSubmit(values: ContactFormValues) {
+    const formData = new FormData()
+    formData.set('name', values.name)
+    formData.set('email', values.email)
+    formData.set('subject', values.subject)
+    formData.set('message', values.message)
+    formData.set('company_url_hp', honeypotRef.current?.value ?? '')
 
-    setSubmitting(true)
     try {
       const result = await sendContactMessage(formData)
 
@@ -41,8 +69,7 @@ export function ContactForm() {
         return
       }
 
-      form.reset()
-      setSubject('')
+      reset()
       setSubjectKey(key => key + 1)
       toast.success('Mensagem enviada!', {
         description: 'Retornaremos o seu contato em breve.',
@@ -51,16 +78,15 @@ export function ContactForm() {
       toast.error(
         'Não foi possível enviar a mensagem. Tente novamente mais tarde.'
       )
-    } finally {
-      setSubmitting(false)
     }
   }
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={handleSubmit(onSubmit)}
       className="relative flex flex-col gap-6"
       autoComplete="on"
+      noValidate
     >
       {/* Honeypot — leave empty; hidden from users / autofill */}
       <div
@@ -69,6 +95,7 @@ export function ContactForm() {
       >
         <label htmlFor="company_url_hp">Company URL</label>
         <input
+          ref={honeypotRef}
           id="company_url_hp"
           name="company_url_hp"
           type="text"
@@ -82,7 +109,15 @@ export function ContactForm() {
         <Label htmlFor="name" className="text-primary">
           Nome completo
         </Label>
-        <Input id="name" name="name" placeholder="Seu nome" required />
+        <Input
+          id="name"
+          placeholder="Seu nome"
+          autoComplete="name"
+          aria-invalid={!!errors.name}
+          aria-describedby={errors.name ? 'name-error' : undefined}
+          {...register('name')}
+        />
+        <FieldError id="name-error" message={errors.name?.message} />
       </div>
 
       <div className="flex flex-col gap-2">
@@ -91,35 +126,47 @@ export function ContactForm() {
         </Label>
         <Input
           id="email"
-          name="email"
           type="email"
           placeholder="voce@exemplo.com"
-          required
+          autoComplete="email"
+          aria-invalid={!!errors.email}
+          aria-describedby={errors.email ? 'email-error' : undefined}
+          {...register('email')}
         />
+        <FieldError id="email-error" message={errors.email?.message} />
       </div>
 
       <div className="flex flex-col gap-2">
         <Label htmlFor="subject" className="text-primary">
           Assunto
         </Label>
-        <Select
-          key={subjectKey}
-          value={subject || undefined}
-          onValueChange={setSubject}
-          required
-        >
-          <SelectTrigger id="subject">
-            <SelectValue placeholder="Selecionar assunto" />
-          </SelectTrigger>
-          <SelectContent position="popper">
-            {SUBJECT_OPTIONS.map(option => (
-              <SelectItem key={option} value={option}>
-                {option}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-        <input type="hidden" name="subject" value={subject} />
+        <Controller
+          control={control}
+          name="subject"
+          render={({ field }) => (
+            <Select
+              key={subjectKey}
+              value={field.value || undefined}
+              onValueChange={field.onChange}
+            >
+              <SelectTrigger
+                id="subject"
+                aria-invalid={!!errors.subject}
+                aria-describedby={errors.subject ? 'subject-error' : undefined}
+              >
+                <SelectValue placeholder="Selecionar assunto" />
+              </SelectTrigger>
+              <SelectContent position="popper">
+                {SUBJECT_OPTIONS.map(option => (
+                  <SelectItem key={option} value={option}>
+                    {option}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
+        />
+        <FieldError id="subject-error" message={errors.subject?.message} />
       </div>
 
       <div className="flex flex-col gap-2">
@@ -128,20 +175,22 @@ export function ContactForm() {
         </Label>
         <Textarea
           id="message"
-          name="message"
           rows={5}
           placeholder="Descreva a sua solicitação..."
-          required
+          aria-invalid={!!errors.message}
+          aria-describedby={errors.message ? 'message-error' : undefined}
+          {...register('message')}
         />
+        <FieldError id="message-error" message={errors.message?.message} />
       </div>
 
       <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
         <Button
           type="submit"
-          disabled={submitting}
+          disabled={isSubmitting}
           className="h-auto rounded-full bg-primary px-8 py-4 text-primary-foreground text-sm hover:bg-primary/90"
         >
-          {submitting ? 'Enviando...' : 'Enviar'}
+          {isSubmitting ? 'Enviando...' : 'Enviar'}
         </Button>
         <p className="min-w-0 flex-1 basis-48 text-muted-foreground text-sm">
           ou envie um e-mail para{' '}
