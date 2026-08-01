@@ -31,11 +31,9 @@ export function MapaBrasil({
 }) {
   const router = useRouter()
   const porUf = React.useMemo(() => new Map(dados.map(d => [d.uf, d])), [dados])
-  const valores = dados.map(d => d.valor)
-  const min = valores.length ? Math.min(...valores) : 0
-  const max = valores.length ? Math.max(...valores) : 100
-  const corDe = (v: number) =>
-    interpolarCor(max === min ? 0.5 : (v - min) / (max - min))
+  const min = 0
+  const max = 100
+  const corDe = (v: number) => interpolarCor(Math.min(1, Math.max(0, v / 100)))
 
   const containerRef = React.useRef<HTMLDivElement>(null)
   const [hover, setHover] = React.useState<{
