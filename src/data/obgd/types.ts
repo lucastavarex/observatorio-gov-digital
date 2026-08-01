@@ -38,7 +38,7 @@ export type IndicadorRow = {
   pergunta: string | null
   escala: string | null
   populacao: string | null
-  objetivo_id: number
+  objetivo_id: number | null
   tags: string[]
   audiencia: 'cidadao' | 'gestor' | 'ambos' | null
   status: string

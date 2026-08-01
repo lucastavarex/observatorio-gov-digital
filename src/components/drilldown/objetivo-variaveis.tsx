@@ -1,7 +1,15 @@
 import { ArrowLeft } from 'lucide-react'
 import type { DrilldownBasePath } from '@/components/drilldown/ente-detail'
+import { FontesRecorte } from '@/components/shared/fontes-recorte'
+import { InfoTip } from '@/components/shared/info-tip'
 import { VariantLink } from '@/components/shared/variant-link'
 import { VariavelAcoes } from '@/components/shared/variavel-acoes'
+import {
+  fontesDoObjetivo,
+  fontesPorNomes,
+  GLOSSARIO,
+  oQueAvaliaObjetivo,
+} from '@/data/help-copy'
 import {
   type Ente,
   formatScore,
@@ -24,6 +32,14 @@ export function ObjetivoVariaveis({
   basePath,
   showRankingUi,
 }: ObjetivoVariaveisProps) {
+  const { blurb, detalhe } = oQueAvaliaObjetivo(objetivo.objetivoSlug)
+  const fontesCatalogo = fontesDoObjetivo(objetivo.numero)
+  const fontesDasVariaveis = fontesPorNomes(
+    objetivo.variaveis.map(v => v.fonte)
+  )
+  const fontes =
+    fontesDasVariaveis.length > 0 ? fontesDasVariaveis : fontesCatalogo
+
   return (
     <section className="pb-12">
       <div className="relative px-6 pb-16 pt-20 sm:px-10">
@@ -48,8 +64,11 @@ export function ObjetivoVariaveis({
             </h1>
           </div>
           <div className="flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
-            <span className="block pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
+            <span className="inline-flex items-center justify-end gap-1 pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
               Sub-índice do objetivo
+              <InfoTip label="O que é o sub-índice?">
+                {GLOSSARIO.subIndice}
+              </InfoTip>
             </span>
             <span className="block bg-linear-to-br from-primary to-primary-glow bg-clip-text text-7xl font-bold leading-tight tracking-tight tabular-nums text-transparent sm:text-8xl">
               {formatScore(objetivo.nota)}
@@ -57,9 +76,17 @@ export function ObjetivoVariaveis({
           </div>
         </div>
 
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          {objetivo.descricao}
-        </p>
+        <div className="mt-6 max-w-2xl rounded-lg border border-border bg-muted/30 px-4 py-3">
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            O que está sendo avaliado
+          </p>
+          <p className="mt-1 text-sm font-medium text-foreground">{blurb}</p>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {detalhe}
+          </p>
+        </div>
+
+        <FontesRecorte fontes={fontes} titulo="Fontes deste objetivo" />
 
         <div className="mt-12 flex items-center justify-between gap-4 text-xs font-medium uppercase tracking-wide text-muted-foreground">
           <span>Variável / indicador</span>
@@ -90,6 +117,9 @@ export function ObjetivoVariaveis({
                   nome={variavel.nome}
                   fonteUrl={variavel.fonteUrl}
                   arquivo={variavel.arquivo}
+                  nivelKey={nivel.key}
+                  conceptId={variavel.conceptId}
+                  subItens={variavel.subItens}
                 />
                 <span className="ml-auto shrink-0 text-sm font-semibold tabular-nums text-foreground">
                   {formatScore(variavel.nota)}

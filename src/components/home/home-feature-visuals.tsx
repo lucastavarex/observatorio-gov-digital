@@ -1,6 +1,7 @@
 'use client'
 
 import { Download, Info } from 'lucide-react'
+import Link from 'next/link'
 import { useState } from 'react'
 import { toast } from 'sonner'
 
@@ -42,6 +43,8 @@ export type VariavelTeaser = {
   slug: string
   nome: string
   fonte: string
+  /** Página do objetivo (onde o download da variável está disponível). */
+  href: string
 }
 
 function primeiroObjetivoComNota(entes: Ente[]): string {
@@ -271,24 +274,26 @@ export function VisualDados({ variaveis }: { variaveis: VariavelTeaser[] }) {
   return (
     <ul className="w-full border-t">
       {variaveis.slice(0, 5).map(variavel => (
-        <li
-          key={variavel.slug}
-          className="flex items-center justify-between gap-3 border-b py-3"
-        >
-          <span className="min-w-0">
-            <span className="block font-semibold text-foreground text-xs leading-snug">
-              {variavel.nome}
-            </span>
-            <span className="mt-1 inline-block font-medium text-[10px] text-muted-foreground/70">
-              {variavel.fonte}
-            </span>
-          </span>
-          <span
-            aria-hidden="true"
-            className="flex size-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"
+        <li key={`${variavel.href}:${variavel.slug}`} className="border-b">
+          <Link
+            href={variavel.href}
+            className="flex items-center justify-between gap-3 py-3 transition-colors hover:bg-muted/40"
           >
-            <Download className="size-3.5" />
-          </span>
+            <span className="min-w-0">
+              <span className="block font-semibold text-foreground text-xs leading-snug">
+                {variavel.nome}
+              </span>
+              <span className="mt-1 inline-block font-medium text-[10px] text-muted-foreground/70">
+                {variavel.fonte}
+              </span>
+            </span>
+            <span
+              aria-hidden="true"
+              className="flex size-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"
+            >
+              <Download className="size-3.5" />
+            </span>
+          </Link>
         </li>
       ))}
     </ul>

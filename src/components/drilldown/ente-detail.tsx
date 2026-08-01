@@ -1,10 +1,14 @@
+'use client'
+
 import { ArrowLeft } from 'lucide-react'
 import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
 import {
   ObjetivosRadar,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
+import { InfoTip } from '@/components/shared/info-tip'
 import { VariantLink } from '@/components/shared/variant-link'
+import { GLOSSARIO } from '@/data/help-copy'
 import {
   type Ente,
   formatScore,
@@ -117,8 +121,11 @@ export function EnteDetail({
             )}
           </div>
           <div className="flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
-            <span className="block pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
+            <span className="inline-flex items-center justify-end gap-1 pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
               Sub-índice do objetivo
+              <InfoTip label="O que é o sub-índice?">
+                {GLOSSARIO.subIndice}
+              </InfoTip>
             </span>
             <span className="block bg-linear-to-br from-primary to-primary-glow bg-clip-text text-7xl font-bold leading-tight tracking-tight tabular-nums text-transparent sm:text-8xl">
               {objetivoAtivo?.nota != null
@@ -140,7 +147,7 @@ export function EnteDetail({
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
               {nivel.entes.length > 1
-                ? `Nota do ente em cada objetivo ativo, comparada à média do nível ${nivel.label.toLowerCase()}.`
+                ? `Nota do ente em cada objetivo ativo, comparada à média do nível ${nivel.label.toLowerCase()} (média das notas dos entes desse nível que têm dado — não é média entre objetivos).`
                 : inativos.length > 0
                   ? `Nota do ente nos objetivos da ENGD com dados disponíveis.`
                   : 'Nota do ente em cada um dos dez objetivos da ENGD.'}
@@ -151,9 +158,12 @@ export function EnteDetail({
                 {ente.nome}
               </span>
               {nivel.entes.length > 1 && (
-                <span className="inline-flex items-center gap-1.5">
+                <span className="inline-flex items-center gap-1">
                   <span className="size-2.5 rounded-full bg-chart-4" />
                   Média do nível
+                  <InfoTip label="O que é a média do nível?">
+                    {GLOSSARIO.mediaDoNivel}
+                  </InfoTip>
                 </span>
               )}
             </div>
@@ -192,7 +202,12 @@ export function EnteDetail({
 
         <div className="mt-14 flex items-center justify-between text-xs font-medium uppercase tracking-wide text-muted-foreground">
           <span>Objetivo da ENGD</span>
-          <span>Sub-índice (0–100)</span>
+          <span className="inline-flex items-center gap-1 normal-case tracking-normal">
+            <span className="uppercase tracking-wide">Sub-índice (0–100)</span>
+            <InfoTip label="O que é o sub-índice?">
+              {GLOSSARIO.subIndice}
+            </InfoTip>
+          </span>
         </div>
 
         <div className="-mx-6 mt-3 border-t sm:-mx-10">

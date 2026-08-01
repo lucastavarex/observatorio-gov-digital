@@ -46,9 +46,16 @@ const mediasEstadual = mediasPorObjetivo(estadual)
 
 const enteComVariaveis = getEnteComVariaveis('estadual', enteDestaque.slug)
 const variaveisDestaque = (enteComVariaveis?.objetivos ?? [])
-  .flatMap(o => o.variaveis)
+  .flatMap(o => {
+    if (o.nota === null) return []
+    return o.variaveis.map(v => ({
+      slug: v.slug,
+      nome: v.nome,
+      fonte: v.fonte,
+      path: `/indicadores/estadual/${enteDestaque.slug}/${o.objetivoSlug}`,
+    }))
+  })
   .slice(0, 5)
-  .map(v => ({ slug: v.slug, nome: v.nome, fonte: v.fonte }))
 
 const parceiros = [
   {
@@ -102,9 +109,16 @@ export default async function HomePage() {
     {
       titulo: 'Dados abertos e verificáveis',
       texto:
-        'Cada variável traz a fonte oficial e os dados para download, com metodologia transparente.',
+        'Cada variável traz a fonte oficial e o download do recorte usado no índice (valores normalizados do snapshot), com metodologia transparente.',
       cta: { label: 'Ver metodologia', href: link('/metodologia') },
-      visual: <VisualDados variaveis={variaveisDestaque} />,
+      visual: (
+        <VisualDados
+          variaveis={variaveisDestaque.map(v => ({
+            ...v,
+            href: link(v.path),
+          }))}
+        />
+      ),
       show: true,
     },
   ].filter(r => r.show)

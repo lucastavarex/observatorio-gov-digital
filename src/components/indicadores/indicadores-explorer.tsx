@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import * as React from 'react'
 import { toast } from 'sonner'
@@ -9,9 +10,19 @@ import {
   ObjetivosRadar,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
+import { EntendaGraficoPanel } from '@/components/indicadores/entenda-grafico-panel'
+import { ObjetivosAvaliaList } from '@/components/indicadores/objetivos-avalia-list'
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
 import { FilterPill } from '@/components/shared/filter-pill'
+import { FontesRecorte } from '@/components/shared/fontes-recorte'
+import { HomeFaq } from '@/components/shared/home-faq'
+import { InfoTip } from '@/components/shared/info-tip'
 import { VariantLink } from '@/components/shared/variant-link'
+import {
+  fontesPorNomes,
+  fontesTodosObjetivosAtivos,
+  GLOSSARIO,
+} from '@/data/help-copy'
 import {
   type Ente,
   formatScore,
@@ -170,6 +181,15 @@ export function IndicadoresExplorer() {
 
   const varsTag = tematica ? (variaveisPorTematica[tematica.slug] ?? []) : []
 
+  const fontesRecorte = React.useMemo(() => {
+    if (!completo) return []
+    if (porObjetivos) return fontesTodosObjetivosAtivos()
+    const nomes = tematica
+      ? (variaveisPorTematica[tematica.slug] ?? []).map(v => v.fonte)
+      : []
+    return fontesPorNomes(nomes)
+  }, [completo, porObjetivos, tematica])
+
   return (
     <section className="pb-12">
       <div className="px-6 pt-28 pb-16 sm:px-10">
@@ -179,6 +199,23 @@ export function IndicadoresExplorer() {
         <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
           Explorar indicadores
         </h1>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+          Compare estados, capitais e o governo federal nos objetivos da ENGD ou
+          em categorias temáticas. As notas vêm de indicadores de fontes
+          públicas — sem precisar de uma média geral entre objetivos.{' '}
+          <Link
+            href="/metodologia"
+            className="font-medium text-primary underline-offset-2 hover:underline"
+          >
+            Como calculamos
+          </Link>
+        </p>
+
+        <EntendaGraficoPanel
+          modo={porObjetivos ? 'objetivos' : 'tematicas'}
+          tagNome={tematica?.nome}
+          tagDescricao={tematica?.descricao}
+        />
 
         <div className="dash-y -mx-6 mt-10 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
           <div>
@@ -329,12 +366,17 @@ export function IndicadoresExplorer() {
               <div className="space-y-8">
                 {porObjetivos ? (
                   <div>
-                    <h2 className="font-bold text-foreground text-sm">
-                      Perfil por objetivo
-                    </h2>
+                    <div className="flex items-center gap-1.5">
+                      <h2 className="font-bold text-foreground text-sm">
+                        Perfil por objetivo
+                      </h2>
+                      <InfoTip label="O que é o sub-índice?">
+                        {GLOSSARIO.subIndice}
+                      </InfoTip>
+                    </div>
                     <p className="mt-1 text-muted-foreground text-sm">
                       Comparação dos entes selecionados nos objetivos da ENGD
-                      com cobertura de dados.
+                      com cobertura de dados. Cada eixo é um sub-índice (0–100).
                     </p>
                     <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-muted-foreground text-xs">
                       {entesSelecionados.map((e, idx) => (
@@ -352,13 +394,16 @@ export function IndicadoresExplorer() {
                         </VariantLink>
                       ))}
                       {mostrarMedia && (
-                        <span className="inline-flex items-center gap-1.5">
+                        <span className="inline-flex items-center gap-1">
                           <span
                             aria-hidden="true"
                             className="size-2.5 rounded-full"
                             style={{ backgroundColor: MEDIA_COR }}
                           />
                           Média do nível
+                          <InfoTip label="O que é a média do nível?">
+                            {GLOSSARIO.mediaDoNivel}
+                          </InfoTip>
                         </span>
                       )}
                     </div>
@@ -382,15 +427,22 @@ export function IndicadoresExplorer() {
                         </VariantLink>
                       ))}
                     </div>
+                    <ObjetivosAvaliaList />
+                    <FontesRecorte fontes={fontesRecorte} />
                   </div>
                 ) : (
                   <div>
-                    <h2 className="font-bold text-foreground text-sm">
-                      Comparativo · {rotuloSelecao}
-                    </h2>
+                    <div className="flex items-center gap-1.5">
+                      <h2 className="font-bold text-foreground text-sm">
+                        Comparativo · {rotuloSelecao}
+                      </h2>
+                      <InfoTip label="O que é o score da tag?">
+                        {GLOSSARIO.scoreTag}
+                      </InfoTip>
+                    </div>
                     <p className="mt-1 text-muted-foreground text-sm">
-                      Score da tag (média dos indicadores ativos) dos entes
-                      selecionados.
+                      {tematica?.descricao ??
+                        'Score da tag (média dos indicadores ativos) dos entes selecionados.'}
                     </p>
                     {barrasTematicas && (
                       <div className="mt-4">
@@ -424,6 +476,7 @@ export function IndicadoresExplorer() {
                         </ul>
                       </div>
                     )}
+                    <FontesRecorte fontes={fontesRecorte} />
                   </div>
                 )}
               </div>
@@ -464,6 +517,23 @@ export function IndicadoresExplorer() {
               </div>
             )}
           </div>
+        </div>
+
+        <div className="dash-t mt-16 pt-10">
+          <h2 className="font-bold text-foreground text-lg tracking-tight">
+            Perguntas frequentes
+          </h2>
+          <p className="mt-1 max-w-xl text-sm text-muted-foreground">
+            Respostas rápidas sobre o que medimos, de onde vêm os dados e como
+            comparar entes.{' '}
+            <Link
+              href="/metodologia"
+              className="font-medium text-primary underline-offset-2 hover:underline"
+            >
+              Metodologia completa
+            </Link>
+          </p>
+          <HomeFaq />
         </div>
       </div>
     </section>

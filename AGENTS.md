@@ -56,6 +56,8 @@ src/
 
 **Contato / e-mail:** a feature de `/contato` (Resend + Server Action) está documentada em [`docs/contato-resend.md`](docs/contato-resend.md). Não invente outro provedor ou fluxo sem alinhar com esse doc.
 
+**Metodologia (Markdown → páginas + PDF):** relatório metodológico em MDX/Next e download do PDF estático documentados em [`docs/metodologia-mdx-pdf.md`](docs/metodologia-mdx-pdf.md). Não invente outro pipeline de conteúdo ou geração de PDF no portal sem alinhar com esse doc.
+
 **Dados OBGD / tags:** fonte versionada em `src/data/obgd/assets/`; sync a partir de `local_assets/dados-v3` documentado em [`docs/integracao-dados-v3-tags.md`](docs/integracao-dados-v3-tags.md). Status de produto: [`docs/acompanhamento-plataforma.md`](docs/acompanhamento-plataforma.md).
 
 ---
