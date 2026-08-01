@@ -7,7 +7,7 @@ export function generateStaticParams() {
   return generateObjetivoParams()
 }
 
-export default async function ObjetivoIndicadorPage({
+export default async function IndicadoresObjetivoPage({
   params,
 }: {
   params: Promise<{ nivel: string; ente: string; objetivo: string }>
@@ -30,8 +30,8 @@ export default async function ObjetivoIndicadorPage({
       nivel={nivel}
       ente={ente}
       objetivo={{ ...objetivo, nota: objetivo.nota }}
-      basePath="/ranking"
-      showRankingUi
+      basePath="/indicadores"
+      showRankingUi={false}
     />
   )
 }

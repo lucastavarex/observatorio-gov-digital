@@ -1,0 +1,251 @@
+import { ArrowLeft } from 'lucide-react'
+import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
+import {
+  ObjetivosRadar,
+  type RadarSerie,
+} from '@/components/charts/objetivos-radar'
+import { VariantLink } from '@/components/shared/variant-link'
+import {
+  type Ente,
+  formatScore,
+  mediasPorObjetivo,
+  type Nivel,
+} from '@/data/indicators'
+import {
+  filtrarValoresPorIndices,
+  formatNotaObjetivosInativos,
+  objetivosParaRadar,
+} from '@/data/objectives-availability'
+import { cn } from '@/lib/utils'
+
+export type DrilldownBasePath = '/ranking' | '/indicadores'
+
+type EnteDetailProps = {
+  nivel: Nivel
+  ente: Ente
+  objetivoQuery?: string
+  basePath: DrilldownBasePath
+  showRankingUi: boolean
+  backHref: string
+  backLabel: string
+}
+
+export function EnteDetail({
+  nivel,
+  ente,
+  objetivoQuery,
+  basePath,
+  showRankingUi,
+  backHref,
+  backLabel,
+}: EnteDetailProps) {
+  const objetivoAtivo =
+    ente.objetivos.find(
+      o => o.objetivoSlug === objetivoQuery && o.nota !== null
+    ) ??
+    ente.objetivos.find(o => o.nota !== null) ??
+    ente.objetivos[0]
+
+  const medias = mediasPorObjetivo(nivel)
+  const { ativos, inativos, indicesAtivos } = objetivosParaRadar(ente.objetivos)
+  const radarEixos = ativos.map(objetivo => ({
+    eixo: String(objetivo.numero).padStart(2, '0'),
+    objetivo: objetivo.titulo,
+  }))
+  const radarSeries: RadarSerie[] = [
+    {
+      nome: ente.nome,
+      cor: 'var(--chart-1)',
+      valores: ativos.map(o => o.nota),
+      fillOpacity: 0.28,
+    },
+    ...(nivel.entes.length > 1
+      ? [
+          {
+            nome: 'Média do nível',
+            cor: 'var(--chart-4)',
+            valores: filtrarValoresPorIndices(medias, indicesAtivos),
+            fillOpacity: 0.12,
+          },
+        ]
+      : []),
+  ]
+  const notaInativos = formatNotaObjetivosInativos(inativos)
+  const mostrarDistribuicao =
+    showRankingUi &&
+    nivel.isRanking &&
+    nivel.entes.length >= 5 &&
+    objetivoAtivo?.nota !== null &&
+    objetivoAtivo?.nota !== undefined
+
+  const entesNoObjetivo = nivel.entes
+    .map(e => {
+      const obj = e.objetivos.find(
+        o => o.objetivoSlug === objetivoAtivo.objetivoSlug
+      )
+      return obj?.nota != null ? { nome: e.nome, indiceGeral: obj.nota } : null
+    })
+    .filter((x): x is { nome: string; indiceGeral: number } => x !== null)
+
+  return (
+    <section className="pb-12">
+      <div className="relative px-6 pb-16 pt-20 sm:px-10">
+        <VariantLink
+          href={backHref}
+          aria-label={backLabel}
+          className="absolute left-6 top-12 inline-flex items-center text-muted-foreground transition-colors hover:text-primary sm:left-10"
+        >
+          <ArrowLeft className="size-5" />
+        </VariantLink>
+
+        <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-4">
+          <div>
+            <span className="block text-sm font-medium text-muted-foreground">
+              {nivel.label}
+            </span>
+            <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text text-4xl font-bold leading-tight tracking-tight text-transparent sm:text-5xl">
+              {ente.nome}
+            </h1>
+            {objetivoAtivo?.nota != null && (
+              <p className="mt-2 text-sm text-muted-foreground">
+                Obj. {String(objetivoAtivo.numero).padStart(2, '0')} —{' '}
+                {objetivoAtivo.titulo}
+                {showRankingUi && objetivoAtivo.posicaoNoObjetivo != null && (
+                  <> · {objetivoAtivo.posicaoNoObjetivo}º no ranking</>
+                )}
+              </p>
+            )}
+          </div>
+          <div className="flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
+            <span className="block pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
+              Sub-índice do objetivo
+            </span>
+            <span className="block bg-linear-to-br from-primary to-primary-glow bg-clip-text text-7xl font-bold leading-tight tracking-tight tabular-nums text-transparent sm:text-8xl">
+              {objetivoAtivo?.nota != null
+                ? formatScore(objetivoAtivo.nota)
+                : '—'}
+            </span>
+          </div>
+        </div>
+
+        <div
+          className={cn(
+            'mt-14 grid gap-10',
+            mostrarDistribuicao && 'lg:grid-cols-2'
+          )}
+        >
+          <div>
+            <h2 className="text-sm font-bold text-foreground">
+              Perfil por objetivo
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {nivel.entes.length > 1
+                ? `Nota do ente em cada objetivo ativo, comparada à média do nível ${nivel.label.toLowerCase()}.`
+                : inativos.length > 0
+                  ? `Nota do ente nos objetivos da ENGD com dados disponíveis.`
+                  : 'Nota do ente em cada um dos dez objetivos da ENGD.'}
+            </p>
+            <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+              <span className="inline-flex items-center gap-1.5">
+                <span className="size-2.5 rounded-full bg-primary" />
+                {ente.nome}
+              </span>
+              {nivel.entes.length > 1 && (
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="size-2.5 rounded-full bg-chart-4" />
+                  Média do nível
+                </span>
+              )}
+            </div>
+
+            <div className="mt-4">
+              <ObjetivosRadar eixos={radarEixos} series={radarSeries} />
+            </div>
+
+            {notaInativos && (
+              <p className="mx-auto mt-4 max-w-md text-center text-xs text-muted-foreground">
+                {notaInativos}
+              </p>
+            )}
+          </div>
+
+          {mostrarDistribuicao && (
+            <div>
+              <h2 className="text-sm font-bold text-foreground">
+                Posição no objetivo
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Distribuição do sub-índice de {objetivoAtivo.titulo} entre os{' '}
+                {entesNoObjetivo.length} entes, com destaque para {ente.nome}.
+              </p>
+              <div className="mt-12">
+                <DistribuicaoChart
+                  entes={entesNoObjetivo}
+                  destaques={[objetivoAtivo.nota!]}
+                  selecionados={[ente.nome]}
+                  alturaClasse="h-100"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="mt-14 flex items-center justify-between text-xs font-medium uppercase tracking-wide text-muted-foreground">
+          <span>Objetivo da ENGD</span>
+          <span>Sub-índice (0–100)</span>
+        </div>
+
+        <div className="-mx-6 mt-3 border-t sm:-mx-10">
+          {ente.objetivos.map(objetivo => {
+            const semCobertura = objetivo.nota === null
+            const conteudo = (
+              <>
+                <span className="w-8 shrink-0 text-sm tabular-nums text-muted-foreground">
+                  {String(objetivo.numero).padStart(2, '0')}
+                </span>
+                <span
+                  className={cn(
+                    'flex-1 text-sm font-medium',
+                    semCobertura ? 'text-muted-foreground' : 'text-primary'
+                  )}
+                >
+                  {objetivo.titulo}
+                </span>
+                {semCobertura ? (
+                  <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                    Sem dados
+                  </span>
+                ) : (
+                  <span className="text-sm font-semibold tabular-nums text-foreground">
+                    {formatScore(objetivo.nota!)}
+                  </span>
+                )}
+              </>
+            )
+
+            if (semCobertura) {
+              return (
+                <div
+                  key={objetivo.objetivoSlug}
+                  className="flex items-center gap-4 border-b px-6 py-5 opacity-60 sm:px-10"
+                >
+                  {conteudo}
+                </div>
+              )
+            }
+
+            return (
+              <VariantLink
+                key={objetivo.objetivoSlug}
+                href={`${basePath}/${nivel.key}/${ente.slug}/${objetivo.objetivoSlug}`}
+                className="flex items-center gap-4 border-b px-6 py-5 transition-colors hover:bg-primary/5 sm:px-10"
+              >
+                {conteudo}
+              </VariantLink>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}

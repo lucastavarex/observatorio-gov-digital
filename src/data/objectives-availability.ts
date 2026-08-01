@@ -110,3 +110,59 @@ export function isObjetivoPrecario(slug: string): boolean {
 export function getNotaPrecaria(slug: string) {
   return OBJETIVOS_PRECARIOS_MOCK.find(o => o.slug === slug) ?? null
 }
+
+type ObjetivoRadarInput = {
+  numero: number
+  titulo: string
+  nota: number | null
+}
+
+/** Separa objetivos com nota dos inativos/sem dados para o radar. */
+export function objetivosParaRadar<T extends ObjetivoRadarInput>(
+  objetivos: T[]
+) {
+  const indicesAtivos: number[] = []
+  const ativos: (T & { nota: number })[] = []
+  const inativos: T[] = []
+
+  objetivos.forEach((objetivo, index) => {
+    if (objetivo.nota !== null) {
+      indicesAtivos.push(index)
+      ativos.push(objetivo as T & { nota: number })
+    } else {
+      inativos.push(objetivo)
+    }
+  })
+
+  return { ativos, inativos, indicesAtivos }
+}
+
+/** Filtra uma série de valores pelos índices ativos do radar. */
+export function filtrarValoresPorIndices<T>(
+  valores: T[],
+  indicesAtivos: number[]
+): T[] {
+  return indicesAtivos.map(i => valores[i])
+}
+
+function formatListaNumerosObjetivo(numeros: number[]): string {
+  const labels = numeros.map(n => String(n).padStart(2, '0'))
+  if (labels.length === 1) return labels[0]
+  if (labels.length === 2) return `${labels[0]} e ${labels[1]}`
+  return `${labels.slice(0, -1).join(', ')} e ${labels[labels.length - 1]}`
+}
+
+/**
+ * Nota de rodapé do radar quando há objetivos inativos.
+ * Ex.: "Objetivos 03, 08 e 10 estão inativos por ausência de dados suficientemente robustos."
+ */
+export function formatNotaObjetivosInativos(
+  inativos: { numero: number }[]
+): string | null {
+  if (inativos.length === 0) return null
+  const lista = formatListaNumerosObjetivo(inativos.map(o => o.numero))
+  if (inativos.length === 1) {
+    return `Objetivo ${lista} está inativo por ausência de dados suficientemente robustos.`
+  }
+  return `Objetivos ${lista} estão inativos por ausência de dados suficientemente robustos.`
+}

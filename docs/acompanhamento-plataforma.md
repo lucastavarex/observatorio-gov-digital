@@ -2,7 +2,7 @@
 
 > **Documento canônico** do que foi decidido, implementado, adiado e do que ainda depende da frente de dados.
 >
-> Última atualização: **2026-07-28**
+> Última atualização: **2026-08-01**
 >
 > Repositório: `observatorio-gov-digital`
 >
@@ -37,6 +37,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 | 4  | **Objetivo 3** (Identificação Única) sem dados suficientes | Desabilitar na UI (chip + tooltip + toast);**manter** lacunas reais de cobertura dos objs. 8 e 10                | Feito (copy do tooltip ainda provisório) |
 | 5  | **Tags / dimensões temáticas** (~50–60)                    | UI no padrão do Caio com**mock** (~20 tags) até entrega oficial                                                | Feito (mock)                              |
 | 6  | Versão**com** e **sem** ranking (teste A/B)            | Versão A =`/` com ranking; Versão B = `/v2` ou `NEXT_PUBLIC_RANKING_MODE=off`                                  | Feito                                     |
+| 6b | Na versão sem ranking, falta caminho até o download das variáveis | Espelhar drill-down sob `/indicadores/[nivel]/[ente]/[objetivo]` (sem reabrir `/ranking` na B) | Feito                                     |
 | 7  | Municípios extras (~100 mil hab., além de capitais)               | **Adiado** na UI; municipal = **só capitais** (mocks extras removidos)                                    | Fora por agora                            |
 | 8  | Nota técnica dos objetivos com cobertura precária                 | Mock na metodologia + chips; validar com Luiza/Gabriel/Bruno                                                           | Feito (mock)                              |
 | 9  | i18n                                                                | **Não** portar                                                                                                  | Fora de escopo                            |
@@ -70,6 +71,9 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 - Radar por objetivos; comparativo temático com scores **mock**
 - Estado compartilhável na URL: `nivel`, `entes`, `por`, `tema`
   Ex.: `/indicadores?nivel=estadual&entes=sp,rj&por=objetivos`
+- Drill-down até variáveis/download (também na variante B): `/indicadores/[nivel]/[ente]` → `/indicadores/[nivel]/[ente]/[objetivo]`
+  Ex.: `/indicadores/estadual/sp/privacidade-e-seguranca`; em `/v2/...` o prefixo é preservado
+- No explorer (modo objetivos), clique no ente da legenda ou CTA “Ver variáveis e detalhes” leva à página do ente
 
 ### 3.4 Ranking (`/ranking`)
 
@@ -82,6 +86,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 - Clique no ente (modo objetivos) leva `?objetivo={slug}` → detalhe dinâmico (não mais “sempre Obj. 1”)
 - Badge com nome do ente no topo da coluna do gráfico “Posição no objetivo” → **removida**
 - Página do objetivo: lista de variáveis + download; **sem** bloco de Recomendações (recomendações ENGD ficam em `/objetivos/[slug]`); ícones de fonte/download ao lado do título da variável
+- UI compartilhada com o drill-down de Indicadores (`src/components/drilldown/`), com posições/distribuição só no ranking
 
 ### 3.5 Objetivo 3 e cobertura
 
@@ -89,18 +94,77 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 - Lacunas reais de dados (ex. objs. 8/10 em alguns níveis) continuam vindas dos dados
 - Obj. 3: bloqueio de produto na UI independentemente de haver linha no JSON
 
-### 3.6 Versão A/B (ranking)
+### 3.6 Versão A/B (ranking) e caminho até o download
 
 | Variante | Como ativar                                                                 | Comportamento                |
 | -------- | --------------------------------------------------------------------------- | ---------------------------- |
 | A        | `/` (default)                                                             | Ranking disponível          |
-| B        | prefixo`/v2/…` **ou** `NEXT_PUBLIC_RANKING_MODE=off` / `farol` | Sem ranking (redirect / nav) |
+| B        | prefixo`/v2/…` **ou** `NEXT_PUBLIC_RANKING_MODE=off` / `farol` | Sem ranking (redirect / nav); download via `/indicadores/.../[objetivo]` |
 
-Arquivos-chave: `src/proxy.ts`, `src/lib/features/ranking-mode.ts`, `use-platform-variant.ts`, `VariantLink`.
+Arquivos-chave: `src/proxy.ts`, `src/lib/features/ranking-mode.ts`, `use-platform-variant.ts`, `VariantLink`, `src/components/drilldown/`.
+
+#### Problema que motivou o espelho em Indicadores
+
+O download das variáveis (`VariavelAcoes`) existia só em `/ranking/[nivel]/[ente]/[objetivo]`. Na variante B o proxy redireciona qualquer `/ranking*`, e o explorer de Indicadores parava nos gráficos — sem caminho até a lista de variáveis nos níveis **federal**, **estadual** e **municipal**.
+
+**Decisão:** não reabrir `/ranking` na variante B (mantém o teste A/B). Ranking continua o caminho principal na variante A; Indicadores ganha o mesmo destino de download em **ambas** as variantes, sem UI de posição/distribuição.
+
+#### Implementação
+
+- Componentes compartilhados: `EnteDetail` e `ObjetivoVariaveis` em `src/components/drilldown/`
+  - Props: `basePath` (`/ranking` | `/indicadores`) e `showRankingUi` (posições / `DistribuicaoChart` só no ranking)
+- Rotas novas: `/indicadores/[nivel]/[ente]` e `/indicadores/[nivel]/[ente]/[objetivo]`
+- Páginas de ranking refatoradas para os mesmos componentes
+- No explorer (modo objetivos): clique no ente da legenda + CTA “Ver variáveis e detalhes”
+- Links via `VariantLink` para preservar o prefixo `/v2`
+
+#### Fluxo de navegação
+
+```mermaid
+flowchart TD
+  subgraph varianteA [Variante A - com ranking]
+    homeA["/"] --> ranking["/ranking"]
+    ranking --> enteR["/ranking/nivel/ente"]
+    enteR --> objR["/ranking/nivel/ente/objetivo"]
+    objR --> dlR["Lista + VariavelAcoes"]
+    homeA --> indA["/indicadores"]
+    indA --> enteI1["/indicadores/nivel/ente"]
+    enteI1 --> objI1["/indicadores/nivel/ente/objetivo"]
+    objI1 --> dlI1["Lista + VariavelAcoes"]
+  end
+
+  subgraph varianteB [Variante B - sem ranking]
+    homeB["/v2"] --> indB["/v2/indicadores"]
+    indB -->|"CTA / legenda do ente"| enteI2["/v2/indicadores/nivel/ente"]
+    enteI2 -->|"objetivo com dados"| objI2["/v2/indicadores/nivel/ente/objetivo"]
+    objI2 --> dlI2["Lista + VariavelAcoes"]
+    homeB -.->|"redirect"| blocked["/ranking bloqueado"]
+  end
+```
+
+#### Exemplos por nível
+
+| Nível | Exemplo (A) | Exemplo (B) |
+| --- | --- | --- |
+| Federal | `/indicadores/federal/brasil/{objetivo}` | `/v2/indicadores/federal/brasil/{objetivo}` |
+| Estadual | `/indicadores/estadual/sp/privacidade-e-seguranca` | `/v2/indicadores/estadual/sp/...` |
+| Municipal | `/indicadores/municipal/{capital}/{objetivo}` | `/v2/indicadores/municipal/...` |
+
+#### Fora de escopo deste ajuste
+
+- Downloads reais (continua CSV mock em `VariavelAcoes`)
+- Reabrir ou renomear `/ranking` na variante B
+- Drill-down por categoria temática (só objetivos ENGD, como no ranking)
 
 ### 3.7 Metodologia
 
 - Nota técnica mock dos 4 objetivos precários (texto placeholder até validação)
+
+### 3.8 Contato (`/contato`) — e-mail via Resend
+
+- Formulário funcional: Server Action + Resend; destino de produção `mbc@mbc.org.br`
+- Validação no servidor, honeypot anti-bot, Reply-To do visitante, toasts Sonner
+- Documentação completa (setup, env, produção, troubleshooting): **[`docs/contato-resend.md`](./contato-resend.md)**
 
 ---
 
@@ -176,12 +240,13 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 ## 7. Como validar rapidamente
 
 1. `/` — home sem overlay de loading; hero e seções ok; com variante B, sem bloco de ranking/mapa se aplicável
-2. `/indicadores?nivel=estadual&entes=sp&por=objetivos` — URL restaura seleção
+2. `/indicadores?nivel=estadual&entes=sp&por=objetivos` — URL restaura seleção; CTA leva a `/indicadores/estadual/sp`
 3. `/ranking?nivel=estadual&por=objetivos&objetivo=gestao-e-governanca` — filtros na URL; Obj. 3 desabilitado com tooltip
 4. Clicar ente na tabela → `/ranking/estadual/{ente}?objetivo=…` com subtítulo/gráficos do objetivo certo
 5. `/ranking/.../{objetivo}` — sem Recomendações; download à esquerda do título da variável
-6. `/v2` — versão sem ranking
+6. `/v2` — versão sem ranking; `/v2/indicadores/estadual/sp/{objetivo}` — lista + download (sem posição no ranking)
 7. `/metodologia` — nota dos objetivos precários (mock)
+8. `/contato` — envio de mensagem (requer env Resend; ver [`contato-resend.md`](./contato-resend.md))
 
 ---
 
@@ -191,18 +256,21 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 | ---------------------------- | --------------------------------------------------------------- |
 | Ranking explorer + URL       | `src/components/ranking/`, `src/lib/ranking-url.ts`         |
 | Indicadores + URL            | `src/components/indicadores/`, `src/lib/indicadores-url.ts` |
+| Drill-down ente/objetivo     | `src/components/drilldown/` (ranking + indicadores)        |
 | Disponibilidade de objetivos | `src/data/objectives-availability.ts`                         |
 | Temáticas (mock)            | `src/data/tematicas/`                                         |
 | Feature ranking A/B          | `src/lib/features/`, `src/proxy.ts`                         |
 | Queries OBGD                 | `src/data/obgd/queries.ts`, `src/data/obgd/server.ts`       |
 | Mapa / bandeiras             | `src/components/shared/mapa-brasil.tsx`, `src/lib/geo/`     |
+| Contato / Resend             | `src/app/actions/contact.ts`, `src/components/content/contact-form.tsx`, [`docs/contato-resend.md`](./contato-resend.md) |
 
 ---
 
-## 9. Documentos legados neste `docs/`
+## 9. Documentos neste `docs/`
 
 | Arquivo                                   | Situação                                                                                                                                                                                                             |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `contato-resend.md`                     | **Ativo** — formulário `/contato`, Resend, env, produção e troubleshooting                                                                                                                                    |
 | `pedidos-dados-gabriel.md`              | **Removido** — conteúdo absorvido na §5                                                                                                                                                                       |
 | `serie-historica-mock.md`               | **Removido** — status absorvido nas §§2–4                                                                                                                                                                    |
 | `implementacao-ranking-por-objetivo.md` | Histórico técnico da 1ª integração com dados reais; trechos sobre “índice geral provisório” e página de variável estão**desatualizados**. Usar **este** arquivo para decisão de produto atual |

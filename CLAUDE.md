@@ -41,6 +41,8 @@ O Brasil ocupa posição de destaque no OECD Digital Government Index (nota 0,79
 
 **Hospedagem:** Insper inicialmente → AWS (MBC) no longo prazo.
 
+**Formulário de contato (`/contato`):** envio de e-mail via Resend + Server Action. Setup, variáveis de ambiente e operação: `docs/contato-resend.md`.
+
 ## Os 10 objetivos da ENGD
 
 | `objetivo` | `objetivo_nome` |

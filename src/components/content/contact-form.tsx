@@ -3,6 +3,7 @@
 import * as React from 'react'
 import { toast } from 'sonner'
 
+import { sendContactMessage } from '@/app/actions/contact'
 import { Input } from '@/components/custom/input'
 import { SelectTrigger } from '@/components/custom/select-trigger'
 import { Textarea } from '@/components/custom/textarea'
@@ -14,20 +15,14 @@ import {
   SelectItem,
   SelectValue,
 } from '@/components/ui/select'
-
-const SUBJECT_OPTIONS = [
-  'Dúvida geral',
-  'Indicadores e dados',
-  'Imprensa',
-  'Parcerias',
-  'Outro assunto',
-] as const
+import { SUBJECT_OPTIONS } from '@/lib/contact'
 
 export function ContactForm() {
   const [submitting, setSubmitting] = React.useState(false)
   const [subject, setSubject] = React.useState('')
+  const [subjectKey, setSubjectKey] = React.useState(0)
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (!subject) {
       toast.error('Selecione um assunto.')
@@ -35,21 +30,54 @@ export function ContactForm() {
     }
 
     const form = event.currentTarget
-    setSubmitting(true)
+    const formData = new FormData(form)
 
-    // Placeholder: integrar com o backend/serviço de e-mail futuramente.
-    setTimeout(() => {
-      setSubmitting(false)
+    setSubmitting(true)
+    try {
+      const result = await sendContactMessage(formData)
+
+      if (!result.ok) {
+        toast.error(result.error)
+        return
+      }
+
       form.reset()
       setSubject('')
+      setSubjectKey(key => key + 1)
       toast.success('Mensagem enviada!', {
         description: 'Retornaremos o seu contato em breve.',
       })
-    }, 600)
+    } catch {
+      toast.error(
+        'Não foi possível enviar a mensagem. Tente novamente mais tarde.'
+      )
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+    <form
+      onSubmit={handleSubmit}
+      className="relative flex flex-col gap-6"
+      autoComplete="on"
+    >
+      {/* Honeypot — leave empty; hidden from users / autofill */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-[-9999px] top-0 h-0 w-0 overflow-hidden opacity-0"
+      >
+        <label htmlFor="company_url_hp">Company URL</label>
+        <input
+          id="company_url_hp"
+          name="company_url_hp"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          defaultValue=""
+        />
+      </div>
+
       <div className="flex flex-col gap-2">
         <Label htmlFor="name" className="text-primary">
           Nome completo
@@ -75,6 +103,7 @@ export function ContactForm() {
           Assunto
         </Label>
         <Select
+          key={subjectKey}
           value={subject || undefined}
           onValueChange={setSubject}
           required
