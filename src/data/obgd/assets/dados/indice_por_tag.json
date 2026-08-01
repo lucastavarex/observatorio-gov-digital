@@ -1,0 +1,4472 @@
+[
+  {
+    "unidade": "1100205",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 50,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 42.9,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 85.7,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 64.3,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 57.1,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 92.9,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 57.1,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 85.7,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 64.3,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 64.3,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 57.1,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 85.7,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 92.9,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 42.9,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 57.1,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 92.9,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 100,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 71.4,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 57.1,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 64.3,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 100,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 71.4,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 85.7,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 64.3,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 64.3,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 57.1,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 92.9,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 76.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 43.6,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 42,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 72.2,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 64.6,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 56.9,
+    "n_indicadores": 53
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 84.1,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 61.5,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 60,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 73.1,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 57.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 89.1,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 82.2,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 82.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 39.3,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 29.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 59.3,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 85,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 51.1,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 85.7,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 38.5,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 66.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 35.6,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 82.3,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 61,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 37.4,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 90.2,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "canais-digitais-atendimento",
+    "nota": 73,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "cidades-inteligentes",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "cidades-inteligentes",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "cidades-inteligentes",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "cidades-inteligentes",
+    "nota": 16.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "cidades-inteligentes",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "cidades-inteligentes",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "cidades-inteligentes",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "cidades-inteligentes",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "cidades-inteligentes",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "cidades-inteligentes",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "cidades-inteligentes",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "cidades-inteligentes",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "cidades-inteligentes",
+    "nota": 15.4,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "cidades-inteligentes",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "cidades-inteligentes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "conectividade",
+    "nota": 71.7,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "conectividade",
+    "nota": 59.7,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "conectividade",
+    "nota": 92.6,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "conectividade",
+    "nota": 63.6,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "conectividade",
+    "nota": 78.1,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "conectividade",
+    "nota": 86.8,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "conectividade",
+    "nota": 74.6,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "conectividade",
+    "nota": 81.6,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "conectividade",
+    "nota": 73.3,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "conectividade",
+    "nota": 83,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "conectividade",
+    "nota": 84.4,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "conectividade",
+    "nota": 81.9,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "conectividade",
+    "nota": 84.5,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "conectividade",
+    "nota": 71.9,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "conectividade",
+    "nota": 75.8,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "conectividade",
+    "nota": 91.2,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "conectividade",
+    "nota": 93.9,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "conectividade",
+    "nota": 76.9,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "conectividade",
+    "nota": 82.8,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "conectividade",
+    "nota": 89.3,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "conectividade",
+    "nota": 95.3,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "conectividade",
+    "nota": 65.8,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "conectividade",
+    "nota": 81.1,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "conectividade",
+    "nota": 65.7,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "conectividade",
+    "nota": 82.9,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "conectividade",
+    "nota": 66.2,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "conectividade",
+    "nota": 82.3,
+    "n_indicadores": 11
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "conectividade",
+    "nota": 63,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "conectividade",
+    "nota": 63.9,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "conectividade",
+    "nota": 65.9,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "conectividade",
+    "nota": 85,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "conectividade",
+    "nota": 61.2,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "conectividade",
+    "nota": 51.6,
+    "n_indicadores": 54
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "conectividade",
+    "nota": 71.9,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "conectividade",
+    "nota": 91.7,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "conectividade",
+    "nota": 61.2,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "conectividade",
+    "nota": 83.1,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "conectividade",
+    "nota": 88.1,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "conectividade",
+    "nota": 75.8,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "conectividade",
+    "nota": 87.1,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "conectividade",
+    "nota": 62.2,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "conectividade",
+    "nota": 70.5,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "conectividade",
+    "nota": 37.9,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "conectividade",
+    "nota": 50.4,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "conectividade",
+    "nota": 91.7,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "conectividade",
+    "nota": 58.3,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "conectividade",
+    "nota": 79.5,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "conectividade",
+    "nota": 86.8,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "conectividade",
+    "nota": 41.7,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "conectividade",
+    "nota": 59.5,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "conectividade",
+    "nota": 74.7,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "conectividade",
+    "nota": 60.6,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "conectividade",
+    "nota": 57.1,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "conectividade",
+    "nota": 89.9,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "conectividade",
+    "nota": 57.6,
+    "n_indicadores": 7
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "contratacoes",
+    "nota": 50,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "contratacoes",
+    "nota": 39.3,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "contratacoes",
+    "nota": 74.3,
+    "n_indicadores": 19
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "contratacoes",
+    "nota": 39.3,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "contratacoes",
+    "nota": 50,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "contratacoes",
+    "nota": 60.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "contratacoes",
+    "nota": 67.9,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "contratacoes",
+    "nota": 50,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "contratacoes",
+    "nota": 39.3,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "contratacoes",
+    "nota": 39.3,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "contratacoes",
+    "nota": 32.1,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "contratacoes",
+    "nota": 39.3,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "contratacoes",
+    "nota": 35.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "contratacoes",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "contratacoes",
+    "nota": 25,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "contratacoes",
+    "nota": 46.4,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "contratacoes",
+    "nota": 35.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "contratacoes",
+    "nota": 50,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "contratacoes",
+    "nota": 57.1,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "dados-interoperabilidade",
+    "nota": 65.6,
+    "n_indicadores": 35
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "educacao-digital",
+    "nota": 71.8,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "educacao-digital",
+    "nota": 47,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "educacao-digital",
+    "nota": 77.2,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "educacao-digital",
+    "nota": 71,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "educacao-digital",
+    "nota": 49.9,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "educacao-digital",
+    "nota": 59.8,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "educacao-digital",
+    "nota": 58,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "educacao-digital",
+    "nota": 69.5,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "educacao-digital",
+    "nota": 72,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "educacao-digital",
+    "nota": 75.9,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "educacao-digital",
+    "nota": 76.8,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "educacao-digital",
+    "nota": 72.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "educacao-digital",
+    "nota": 76.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "educacao-digital",
+    "nota": 53.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "educacao-digital",
+    "nota": 78.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "educacao-digital",
+    "nota": 70.2,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "educacao-digital",
+    "nota": 78.9,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "educacao-digital",
+    "nota": 85.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "educacao-digital",
+    "nota": 74.5,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "educacao-digital",
+    "nota": 51.2,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "educacao-digital",
+    "nota": 82,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "educacao-digital",
+    "nota": 76.5,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "educacao-digital",
+    "nota": 54.5,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "educacao-digital",
+    "nota": 76,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "educacao-digital",
+    "nota": 72.4,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "educacao-digital",
+    "nota": 60,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "educacao-digital",
+    "nota": 74.6,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "educacao-digital",
+    "nota": 92.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "educacao-digital",
+    "nota": 69.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "educacao-digital",
+    "nota": 19.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "educacao-digital",
+    "nota": 23.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "educacao-digital",
+    "nota": 44.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "educacao-digital",
+    "nota": 59.3,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "educacao-digital",
+    "nota": 44.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "educacao-digital",
+    "nota": 23.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "educacao-digital",
+    "nota": 67.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "educacao-digital",
+    "nota": 98.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "educacao-digital",
+    "nota": 23.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "educacao-digital",
+    "nota": 44.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "educacao-digital",
+    "nota": 67.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "educacao-digital",
+    "nota": 67.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "educacao-digital",
+    "nota": 46.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "educacao-digital",
+    "nota": 17.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "educacao-digital",
+    "nota": 57.7,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "educacao-digital",
+    "nota": 98.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "educacao-digital",
+    "nota": 78.8,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "educacao-digital",
+    "nota": 73.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "educacao-digital",
+    "nota": 23.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "educacao-digital",
+    "nota": 46.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "educacao-digital",
+    "nota": 13.5,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "educacao-digital",
+    "nota": 84.6,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "educacao-digital",
+    "nota": 46.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "educacao-digital",
+    "nota": 46.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "educacao-digital",
+    "nota": 98.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "educacao-digital",
+    "nota": 71.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 62.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 37.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 66.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 16.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 65.9,
+    "n_indicadores": 51
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 50,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 54.2,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 62.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 37.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 79.2,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 41.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 62.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 56.3,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 0,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 12.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 100,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 62.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 66.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 81.3,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "gestao-planejamento-ti",
+    "nota": 87.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "identidade-digital",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "identidade-digital",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "identidade-digital",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "identidade-digital",
+    "nota": 33.3,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "identidade-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "identidade-digital",
+    "nota": 33.3,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "identidade-digital",
+    "nota": 57,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "identidade-digital",
+    "nota": 77.8,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "identidade-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "identidade-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "identidade-digital",
+    "nota": 77.8,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "identidade-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "identidade-digital",
+    "nota": 77.8,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "identidade-digital",
+    "nota": 44.4,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "identidade-digital",
+    "nota": 77.8,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "identidade-digital",
+    "nota": 77.8,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "identidade-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "identidade-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "identidade-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 33.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 33.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 16.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 33.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 33.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 33.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 33.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 50,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 66.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 16.7,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 100,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 54.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 77.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 91.7,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 60.4,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 55.4,
+    "n_indicadores": 13
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 68.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 57.6,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 43.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 71.5,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 48.6,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 77.8,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 73.6,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 40.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 69.5,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 41.7,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 63.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 91.7,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 77.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 76.4,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 61.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 59.7,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 48.6,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 77.1,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 83.3,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 57,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 82.6,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "inclusao-acessibilidade",
+    "nota": 72.2,
+    "n_indicadores": 4
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "infraestrutura",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "infraestrutura",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "infraestrutura",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "infraestrutura",
+    "nota": 65,
+    "n_indicadores": 14
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "pagamento-digital",
+    "nota": 0,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "pagamento-digital",
+    "nota": 50,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "pagamento-digital",
+    "nota": 50,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "pagamento-digital",
+    "nota": 50,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "pagamento-digital",
+    "nota": 50,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "pagamento-digital",
+    "nota": 50,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "pagamento-digital",
+    "nota": 50,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "pagamento-digital",
+    "nota": 50,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "pagamento-digital",
+    "nota": 100,
+    "n_indicadores": 2
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "pagamento-digital",
+    "nota": 65.1,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "pagamento-digital",
+    "nota": 14.3,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "pagamento-digital",
+    "nota": 19,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "pagamento-digital",
+    "nota": 27,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "pagamento-digital",
+    "nota": 69.9,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "pagamento-digital",
+    "nota": 60.3,
+    "n_indicadores": 6
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "pagamento-digital",
+    "nota": 79.4,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "pagamento-digital",
+    "nota": 57.1,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "pagamento-digital",
+    "nota": 47.6,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "pagamento-digital",
+    "nota": 81,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "pagamento-digital",
+    "nota": 84.1,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "pagamento-digital",
+    "nota": 79.4,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "pagamento-digital",
+    "nota": 74.6,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "pagamento-digital",
+    "nota": 74.6,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "pagamento-digital",
+    "nota": 38.1,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "pagamento-digital",
+    "nota": 71.4,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "pagamento-digital",
+    "nota": 71.4,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "pagamento-digital",
+    "nota": 90.5,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "pagamento-digital",
+    "nota": 60.3,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "pagamento-digital",
+    "nota": 76.2,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "pagamento-digital",
+    "nota": 47.6,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "pagamento-digital",
+    "nota": 69.9,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "pagamento-digital",
+    "nota": 79.4,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "pagamento-digital",
+    "nota": 74.6,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "pagamento-digital",
+    "nota": 84.1,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "pagamento-digital",
+    "nota": 54,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "pagamento-digital",
+    "nota": 74.6,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "pagamento-digital",
+    "nota": 85.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "saude-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "saude-digital",
+    "nota": 36.5,
+    "n_indicadores": 22
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "saude-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "saude-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "saude-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "saude-digital",
+    "nota": 33.3,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "saude-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "saude-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "saude-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "saude-digital",
+    "nota": 33.3,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "saude-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "saude-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "saude-digital",
+    "nota": 33.3,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "saude-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "saude-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "saude-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "saude-digital",
+    "nota": 0,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "saude-digital",
+    "nota": 100,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "saude-digital",
+    "nota": 66.7,
+    "n_indicadores": 3
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "seguranca-lgpd",
+    "nota": 20,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "seguranca-lgpd",
+    "nota": 40,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "seguranca-lgpd",
+    "nota": 0,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "seguranca-lgpd",
+    "nota": 40,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "seguranca-lgpd",
+    "nota": 20,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "seguranca-lgpd",
+    "nota": 40,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "seguranca-lgpd",
+    "nota": 20,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "seguranca-lgpd",
+    "nota": 20,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "seguranca-lgpd",
+    "nota": 43.9,
+    "n_indicadores": 46
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "seguranca-lgpd",
+    "nota": 20,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "seguranca-lgpd",
+    "nota": 40,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "seguranca-lgpd",
+    "nota": 0,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "seguranca-lgpd",
+    "nota": 40,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "seguranca-lgpd",
+    "nota": 60,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "seguranca-lgpd",
+    "nota": 40,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "seguranca-lgpd",
+    "nota": 100,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "seguranca-lgpd",
+    "nota": 80,
+    "n_indicadores": 5
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "servicos-digitais",
+    "nota": 66.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "servicos-digitais",
+    "nota": 65,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "servicos-digitais",
+    "nota": 66.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "servicos-digitais",
+    "nota": 66.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "servicos-digitais",
+    "nota": 33.3,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "servicos-digitais",
+    "nota": 66.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "servicos-digitais",
+    "nota": 66.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "servicos-digitais",
+    "nota": 33.3,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "servicos-digitais",
+    "nota": 0,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "servicos-digitais",
+    "nota": 66.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "servicos-digitais",
+    "nota": 100,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "servicos-digitais",
+    "nota": 66.7,
+    "n_indicadores": 1
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 81.3,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 43.8,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 87.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 75,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 87.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 62.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 93.8,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 93.8,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 93.8,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 87.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 81.3,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 50,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 87.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 93.8,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 93.8,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 87.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 81.3,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 87.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 75,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 62.5,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 16
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 98.8,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 5.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 35.3,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 51.8,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 56.5,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 69.3,
+    "n_indicadores": 34
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 94.1,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 60,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 88.2,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 88.2,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 62.4,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 95.3,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 92.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 92.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 64.7,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 72.9,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 91.8,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 97.6,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 17.6,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 89.4,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 29.4,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 100,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 57.1,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 55.3,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 87.1,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "servicos-publicos-digitais",
+    "nota": 98.8,
+    "n_indicadores": 17
+  },
+  {
+    "unidade": "1100205",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "1200401",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 66.7,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "1302603",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "1400100",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 66.7,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "1501402",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 55.6,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "1600303",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "1721000",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 55.6,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2111300",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 66.7,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2211001",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 66.7,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2304400",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 66.7,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2408102",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 72.2,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2507507",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2611606",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2704302",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2800308",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 66.7,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "2927408",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "3106200",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "3205309",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "3304557",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "3550308",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "4106902",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "4205407",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "4314902",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "5002704",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "5103403",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.8,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "5208707",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 100,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "5300108",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 88.9,
+    "n_indicadores": 9
+  },
+  {
+    "unidade": "AC",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 60.2,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "AL",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 64.8,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "AM",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 80.2,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "AP",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 77.3,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "BA",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 60.2,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "BR",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 57.9,
+    "n_indicadores": 26
+  },
+  {
+    "unidade": "CE",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 60.3,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "DF",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 74.3,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "ES",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 76.1,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "GO",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 80.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MA",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 65.4,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MG",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 76.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MS",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 84.8,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "MT",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 48.6,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PA",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 64.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PB",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 68.1,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PE",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 62,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PI",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 75.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "PR",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 57.8,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RJ",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 65.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RN",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 60.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RO",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 19.3,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RR",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 62.7,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "RS",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 76.4,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "SC",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 63.9,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "SE",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 62,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "SP",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 78.5,
+    "n_indicadores": 8
+  },
+  {
+    "unidade": "TO",
+    "tag_id": "transparencia-dados-abertos",
+    "nota": 46.6,
+    "n_indicadores": 8
+  }
+]

@@ -35,7 +35,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 | 2  | Ranking pouco claro sobre o que ordena                              | Ordenar por objetivo ENGD**ou** categoria temática; label explícita; sem toggle de índice geral               | Feito                                     |
 | 3  | Página de**variável** + série histórica isolada           | Remover rota e gráfico de série; variáveis só como**lista + download** na página do objetivo                | Feito                                     |
 | 4  | **Objetivo 3** (Identificação Única) sem dados suficientes | Desabilitar na UI (chip + tooltip + toast);**manter** lacunas reais de cobertura dos objs. 8 e 10                | Feito (copy do tooltip ainda provisório) |
-| 5  | **Tags / dimensões temáticas** (~50–60)                    | UI no padrão do Caio com**mock** (~20 tags) até entrega oficial                                                | Feito (mock)                              |
+| 5  | **Tags / dimensões temáticas** (~50–60)                    | Entrega v3 com**16 tags** reais + scores (média por tag); UI desmockada                                      | Feito                                     |
 | 6  | Versão**com** e **sem** ranking (teste A/B)            | Versão A =`/` com ranking; Versão B = `/v2` ou `NEXT_PUBLIC_RANKING_MODE=off`                                  | Feito                                     |
 | 6b | Na versão sem ranking, falta caminho até o download das variáveis | Espelhar drill-down sob `/indicadores/[nivel]/[ente]/[objetivo]` (sem reabrir `/ranking` na B) | Feito                                     |
 | 7  | Municípios extras (~100 mil hab., além de capitais)               | **Adiado** na UI; municipal = **só capitais** (mocks extras removidos)                                    | Fora por agora                            |
@@ -176,7 +176,7 @@ flowchart TD
 | Página`/ranking/.../[variavel]` + série histórica na UI | Removidas a pedido do cliente; gerador de série pode existir no código sem UI |
 | Municípios extras (~100k+ hab.)                             | Adiado; UI municipal = capitais                                                 |
 | Loading/abertura da home                                     | Removido após tentativa (flash, UX, SEO)                                       |
-| Catálogo oficial 50–60 tags + scores reais                 | Aguardando frente de dados (UI mockada)                                         |
+| Catálogo 50–60 tags (expansão futura)                      | v3 entregou **16 tags** oficiais; scores reais ligados; expansão se vier      |
 | Downloads reais de variáveis                                | Ainda CSV mock no cliente (`VariavelAcoes`)                                   |
 | Texto final do tooltip do Obj. 3                             | Copy provisório                                                                |
 | Conteúdo final da nota dos objetivos precários             | Mock                                                                            |
@@ -192,32 +192,35 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 
 | Área                          | Onde no código                                         | O que é fake / provisório                                                           |
 | ------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Tags temáticas (~20)          | `src/data/tematicas/`                                 | Catálogo ilustrativo + scores estáveis + lista de “variáveis atreladas”          |
 | Motivo Obj. 3                  | `objectives-availability.ts` → `OBJETIVO_3_MOTIVO` | Texto até validação oficial                                                        |
 | 4 objetivos precários         | `OBJETIVOS_PRECARIOS_MOCK`                            | Nota técnica na metodologia / chips                                                  |
 | Download de variável          | `VariavelAcoes`                                       | Gera CSV de exemplo no browser                                                        |
 | Campo`indiceGeral` no modelo | `queries.ts` / charts                                 | Pode existir no JSON/modelo;**não** é exposto como ranking/média geral na UI |
 
-### 5.2 Entregas necessárias (para tirar mocks)
+### 5.1b Tags (dados-v3) — já integradas
 
-1. **Tags temáticas (50–60)**
+Documentação completa: [`integracao-dados-v3-tags.md`](./integracao-dados-v3-tags.md).
 
-   - Catálogo: `tag_id`, `slug`, `nome` (distintas dos 10 objetivos ENGD)
-   - Mapeamento tag → indicadores
-   - Score pré-calculado: `ente_codigo` × `tag_id` × edição → nota 0–100
-2. **Objetivo 3**
+- Catálogo: `src/data/obgd/assets/dados/tag.json` (16 tags)
+- Mapeamento: `indicador.tags` + lista em `src/data/tematicas/variaveis.ts`
+- Score: `indice_por_tag.json` (média de `valor_normalizado` por ente × tag)
+- Sync: `node scripts/sync-obgd-assets-from-v3.mjs`
+
+### 5.2 Entregas necessárias (para tirar mocks restantes)
+
+1. **Objetivo 3**
 
    - Texto oficial da razão (tooltip / nota)
-3. **Quatro objetivos precários**
+2. **Quatro objetivos precários**
 
    - Quais são; o que foi avaliado; o que ficou de fora e por quê
-4. **Downloads**
+3. **Downloads**
 
    - URL ou arquivo real por indicador (ou pacote objetivo × ente)
-5. **Municípios extras** *(quando retomar o produto)*
+4. **Municípios extras** *(quando retomar o produto)*
 
    - Lista no threshold + `indice_objetivo` (e tags) no mesmo schema das capitais + posições
-6. **Índice geral**
+5. **Índice geral**
 
    - **Não publicar** na plataforma. Se o JSON mantiver `indice_geral`, tratar como legado interno.
 
@@ -242,11 +245,13 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 1. `/` — home sem overlay de loading; hero e seções ok; com variante B, sem bloco de ranking/mapa se aplicável
 2. `/indicadores?nivel=estadual&entes=sp&por=objetivos` — URL restaura seleção; CTA leva a `/indicadores/estadual/sp`
 3. `/ranking?nivel=estadual&por=objetivos&objetivo=gestao-e-governanca` — filtros na URL; Obj. 3 desabilitado com tooltip
-4. Clicar ente na tabela → `/ranking/estadual/{ente}?objetivo=…` com subtítulo/gráficos do objetivo certo
-5. `/ranking/.../{objetivo}` — sem Recomendações; download à esquerda do título da variável
-6. `/v2` — versão sem ranking; `/v2/indicadores/estadual/sp/{objetivo}` — lista + download (sem posição no ranking)
-7. `/metodologia` — nota dos objetivos precários (mock)
-8. `/contato` — envio de mensagem (requer env Resend; ver [`contato-resend.md`](./contato-resend.md))
+4. `/ranking?nivel=estadual&por=tematicas&tema=conectividade` — 16 tags reais; scores de `indice_por_tag`
+5. Clicar ente na tabela → `/ranking/estadual/{ente}?objetivo=…` com subtítulo/gráficos do objetivo certo
+6. `/ranking/.../{objetivo}` — sem Recomendações; download à esquerda do título da variável
+7. `/indicadores?nivel=estadual&entes=sp&por=tematicas&tema=conectividade` — score + variáveis reais da tag
+8. `/v2` — versão sem ranking; `/v2/indicadores/estadual/sp/{objetivo}` — lista + download (sem posição no ranking)
+9. `/metodologia` — nota dos objetivos precários (mock)
+10. `/contato` — envio de mensagem (requer env Resend; ver [`contato-resend.md`](./contato-resend.md))
 
 ---
 
@@ -258,7 +263,7 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 | Indicadores + URL            | `src/components/indicadores/`, `src/lib/indicadores-url.ts` |
 | Drill-down ente/objetivo     | `src/components/drilldown/` (ranking + indicadores)        |
 | Disponibilidade de objetivos | `src/data/objectives-availability.ts`                         |
-| Temáticas (mock)            | `src/data/tematicas/`                                         |
+| Temáticas (tags reais)      | `src/data/tematicas/`, `src/data/obgd/assets/dados/tag.json` |
 | Feature ranking A/B          | `src/lib/features/`, `src/proxy.ts`                         |
 | Queries OBGD                 | `src/data/obgd/queries.ts`, `src/data/obgd/server.ts`       |
 | Mapa / bandeiras             | `src/components/shared/mapa-brasil.tsx`, `src/lib/geo/`     |
@@ -271,9 +276,10 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 | Arquivo                                   | Situação                                                                                                                                                                                                             |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `contato-resend.md`                     | **Ativo** — formulário `/contato`, Resend, env, produção e troubleshooting                                                                                                                                    |
+| `integracao-dados-v3-tags.md`           | **Ativo** — migração dados-v3, pipeline de sync, tags reais, fórmula de score, operação                                                                                                                        |
 | `pedidos-dados-gabriel.md`              | **Removido** — conteúdo absorvido na §5                                                                                                                                                                       |
 | `serie-historica-mock.md`               | **Removido** — status absorvido nas §§2–4                                                                                                                                                                    |
-| `implementacao-ranking-por-objetivo.md` | Histórico técnico da 1ª integração com dados reais; trechos sobre “índice geral provisório” e página de variável estão**desatualizados**. Usar **este** arquivo para decisão de produto atual |
+| `implementacao-ranking-por-objetivo.md` | Histórico técnico da 1ª integração (dados-v2); trechos sobre “índice geral provisório” e página de variável estão**desatualizados**. Produto atual = este arquivo; dados/tags atuais = `integracao-dados-v3-tags.md` |
 | `mvp-dashboard.md`                      | Estudo/MVP antigo; mapa e big number evoluíram. Consultar só como background; produto atual = este arquivo                                                                                                           |
 
 ---
@@ -285,4 +291,5 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 3. **Migração** home / indicadores / ranking / metodologia / feature flag
 4. **Ajustes finos** (layout, empty states, Sub-índice nowrap, URL ranking/indicadores, objetivo dinâmico no ente, badge do chart, página de objetivo alinhada ao designer)
 5. **Loading da home** tentado e **removido**
-6. **Este documento** como fonte única de acompanhamento
+6. **Este documento** como fonte única de acompanhamento de produto
+7. **dados-v3 + tags reais** — sync de assets, desmock de temáticas; ver [`integracao-dados-v3-tags.md`](./integracao-dados-v3-tags.md)

@@ -1,4 +1,4 @@
-/** Tipos dos JSON em `src/data/obgd/assets/` (subset de dados-v2). */
+/** Tipos dos JSON em `src/data/obgd/assets/` (subset de dados-v3). */
 
 export type ObjetivoEngdRow = {
   id: number
@@ -23,6 +23,13 @@ export type FonteRow = {
   anos_disponiveis: number[]
 }
 
+export type TagRow = {
+  id: string
+  nome: string
+  descricao: string
+  lado: 'cidadao' | 'gestor'
+}
+
 export type IndicadorRow = {
   chave: string
   fonte_id: string
@@ -32,8 +39,18 @@ export type IndicadorRow = {
   escala: string | null
   populacao: string | null
   objetivo_id: number
+  tags: string[]
+  audiencia: 'cidadao' | 'gestor' | 'ambos' | null
   status: string
   anos_observados: number[] | null
+}
+
+/** Média de valor_normalizado por ente × tag (pré-calculada). */
+export type IndicePorTagRow = {
+  unidade: string
+  tag_id: string
+  nota: number
+  n_indicadores: number
 }
 
 export type IndiceLongRow = {
@@ -53,6 +70,7 @@ export type DetalheRow = {
   categoria: string
   objetivo: number
   objetivo_nome: string
+  concept_id?: string
   fonte: string
   indicador: string
   sub_itens: string | null

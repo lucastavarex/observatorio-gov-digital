@@ -46,15 +46,17 @@ src/
 │   ├── ranking/            # lista e explorador de ranking
 │   ├── shared/             # FAQ, copy-button, ações de variável
 │   └── ui/                 # componentes shadcn/ui
-├── data/                   # mocks tipados (indicators, objectives, ranking, …)
+├── data/                   # objectives + camada OBGD (`obgd/`) + temáticas/tags
 ├── lib/
 │   ├── contact.ts          # assuntos, limites e schema Zod do formulário de contato
 │   └── utils.ts            # cn() — clsx + tailwind-merge
-├── local_assets/           # gitignored — dados reais do cliente (ainda não ligados)
+├── local_assets/           # gitignored — entrega completa (dados-v3); app usa subset em data/obgd/assets
 └── proxy.ts                # middleware Next.js (passthrough)
 ```
 
 **Contato / e-mail:** a feature de `/contato` (Resend + Server Action) está documentada em [`docs/contato-resend.md`](docs/contato-resend.md). Não invente outro provedor ou fluxo sem alinhar com esse doc.
+
+**Dados OBGD / tags:** fonte versionada em `src/data/obgd/assets/`; sync a partir de `local_assets/dados-v3` documentado em [`docs/integracao-dados-v3-tags.md`](docs/integracao-dados-v3-tags.md). Status de produto: [`docs/acompanhamento-plataforma.md`](docs/acompanhamento-plataforma.md).
 
 ---
 
@@ -83,7 +85,11 @@ Cada objetivo recebe um `sub_indice` de 0–100. A média dos sub-índices dispo
 
 A pasta `src/local_assets/` é **gitignored** — Não commitar.
 
-### CSVs de índice (`indice_obgd/csvs/`)
+**Canônico atual:** `local_assets/dados-v3/` → sync para `src/data/obgd/assets/` via `node scripts/sync-obgd-assets-from-v3.mjs`. Detalhes: [`docs/integracao-dados-v3-tags.md`](docs/integracao-dados-v3-tags.md).
+
+### Legado — CSVs de índice (`indice_obgd/csvs/`)
+
+> Supersedido por `dados-v2` / `dados-v3`. Mantido abaixo só como referência histórica.
 
 Três escopos disponíveis, cada um com os mesmos 3 arquivos:
 
