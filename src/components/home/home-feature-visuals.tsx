@@ -6,7 +6,6 @@ import { toast } from 'sonner'
 
 import {
   ObjetivosRadar,
-  type RadarEixo,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
 import { type DadoMapa, MapaBrasil } from '@/components/shared/mapa-brasil'
@@ -17,7 +16,13 @@ import {
 } from '@/components/ui/tooltip'
 import { type Ente, formatScore } from '@/data/indicators'
 import { objectives } from '@/data/objectives'
-import { isObjetivo3, OBJETIVO_3_MOTIVO } from '@/data/objectives-availability'
+import {
+  filtrarValoresPorIndices,
+  formatNotaObjetivosInativos,
+  isObjetivo3,
+  OBJETIVO_3_MOTIVO,
+  objetivosParaRadar,
+} from '@/data/objectives-availability'
 import { ufDeEnte } from '@/lib/geo/entes-geo'
 import { cn } from '@/lib/utils'
 
@@ -32,11 +37,6 @@ const CORES = [
 ] as const
 const COR_MEDIA = 'var(--chart-4)'
 const MAX_SELECIONADOS = 5
-
-const RADAR_EIXOS: RadarEixo[] = objectives.map((objetivo, i) => ({
-  eixo: String(i + 1).padStart(2, '0'),
-  objetivo: objetivo.title,
-}))
 
 export type VariavelTeaser = {
   slug: string
@@ -83,17 +83,34 @@ export function VisualPerfil({
     .filter((e): e is Ente => Boolean(e))
   const limiteAtingido = selecionados.length >= MAX_SELECIONADOS
 
+  const radarFonte =
+    entes[0]?.objetivos ??
+    objectives.map((o, i) => ({
+      numero: i + 1,
+      titulo: o.title,
+      nota: null as number | null,
+    }))
+  const { ativos, inativos, indicesAtivos } = objetivosParaRadar(radarFonte)
+  const radarEixos = ativos.map(o => ({
+    eixo: String(o.numero).padStart(2, '0'),
+    objetivo: o.titulo,
+  }))
+  const notaInativos = formatNotaObjetivosInativos(inativos)
+
   const series: RadarSerie[] = [
     ...escolhidos.map((ente, i) => ({
       nome: ente.nome,
       cor: CORES[i],
-      valores: ente.objetivos.map(o => o.nota),
+      valores: filtrarValoresPorIndices(
+        ente.objetivos.map(o => o.nota),
+        indicesAtivos
+      ),
       fillOpacity: 0.2,
     })),
     {
       nome: 'Média do nível',
       cor: COR_MEDIA,
-      valores: medias,
+      valores: filtrarValoresPorIndices(medias, indicesAtivos),
       fillOpacity: 0.12,
     },
   ]
@@ -149,7 +166,12 @@ export function VisualPerfil({
       </ul>
 
       <div className="min-w-0 flex-1">
-        <ObjetivosRadar eixos={RADAR_EIXOS} series={series} />
+        <ObjetivosRadar eixos={radarEixos} series={series} />
+        {notaInativos && (
+          <p className="mx-auto mt-3 max-w-sm text-center text-[11px] leading-snug text-muted-foreground">
+            {notaInativos}
+          </p>
+        )}
       </div>
     </div>
   )

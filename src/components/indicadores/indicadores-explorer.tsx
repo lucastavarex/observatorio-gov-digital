@@ -18,6 +18,11 @@ import {
   niveis,
 } from '@/data/indicators'
 import { objectives } from '@/data/objectives'
+import {
+  filtrarValoresPorIndices,
+  formatNotaObjetivosInativos,
+  objetivosParaRadar,
+} from '@/data/objectives-availability'
 import { notaTematica, tematicas, variaveisPorTematica } from '@/data/tematicas'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { bandeiraSrc } from '@/lib/geo/entes-geo'
@@ -114,16 +119,28 @@ export function IndicadoresExplorer() {
     nivel && entesSelecionados.length >= 1 && selecaoAtiva
   )
 
-  const radarEixos = objectives.map((o, i) => ({
-    eixo: String(i + 1).padStart(2, '0'),
-    objetivo: o.title,
+  const radarFonte =
+    nivel?.entes[0]?.objetivos ??
+    objectives.map((o, i) => ({
+      numero: i + 1,
+      titulo: o.title,
+      nota: null as number | null,
+    }))
+  const { ativos, inativos, indicesAtivos } = objetivosParaRadar(radarFonte)
+  const radarEixos = ativos.map(o => ({
+    eixo: String(o.numero).padStart(2, '0'),
+    objetivo: o.titulo,
   }))
+  const notaInativos = formatNotaObjetivosInativos(inativos)
   const mostrarMedia = Boolean(nivel && nivel.entes.length > 1)
   const radarSeries: RadarSerie[] = [
     ...entesSelecionados.map((e, idx) => ({
       nome: e.nome,
       cor: CORES[idx],
-      valores: e.objetivos.map(o => o.nota),
+      valores: filtrarValoresPorIndices(
+        e.objetivos.map(o => o.nota),
+        indicesAtivos
+      ),
       fillOpacity: entesSelecionados.length > 1 ? 0.14 : 0.24,
     })),
     ...(mostrarMedia
@@ -131,7 +148,7 @@ export function IndicadoresExplorer() {
           {
             nome: 'Média do nível',
             cor: MEDIA_COR,
-            valores: medias,
+            valores: filtrarValoresPorIndices(medias, indicesAtivos),
             fillOpacity: 0.1,
           },
         ]
@@ -342,6 +359,11 @@ export function IndicadoresExplorer() {
                     <div className="mt-2">
                       <ObjetivosRadar eixos={radarEixos} series={radarSeries} />
                     </div>
+                    {notaInativos && (
+                      <p className="mx-auto mt-4 max-w-md text-center text-xs text-muted-foreground">
+                        {notaInativos}
+                      </p>
+                    )}
                   </div>
                 ) : (
                   <div>

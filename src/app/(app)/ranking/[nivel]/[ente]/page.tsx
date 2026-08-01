@@ -13,6 +13,11 @@ import {
   mediasPorObjetivo,
   niveis,
 } from '@/data/indicators'
+import {
+  filtrarValoresPorIndices,
+  formatNotaObjetivosInativos,
+  objetivosParaRadar,
+} from '@/data/objectives-availability'
 import { cn } from '@/lib/utils'
 
 export function generateStaticParams() {
@@ -45,7 +50,8 @@ export default async function EntePage({
     ente.objetivos[0]
 
   const medias = mediasPorObjetivo(nivel)
-  const radarEixos = ente.objetivos.map(objetivo => ({
+  const { ativos, inativos, indicesAtivos } = objetivosParaRadar(ente.objetivos)
+  const radarEixos = ativos.map(objetivo => ({
     eixo: String(objetivo.numero).padStart(2, '0'),
     objetivo: objetivo.titulo,
   }))
@@ -53,7 +59,7 @@ export default async function EntePage({
     {
       nome: ente.nome,
       cor: 'var(--chart-1)',
-      valores: ente.objetivos.map(o => o.nota),
+      valores: ativos.map(o => o.nota),
       fillOpacity: 0.28,
     },
     ...(nivel.entes.length > 1
@@ -61,13 +67,13 @@ export default async function EntePage({
           {
             nome: 'Média do nível',
             cor: 'var(--chart-4)',
-            valores: medias,
+            valores: filtrarValoresPorIndices(medias, indicesAtivos),
             fillOpacity: 0.12,
           },
         ]
       : []),
   ]
-  const semDados = ente.objetivos.filter(o => o.nota === null)
+  const notaInativos = formatNotaObjetivosInativos(inativos)
   const mostrarDistribuicao =
     nivel.isRanking &&
     nivel.entes.length >= 5 &&
@@ -137,8 +143,10 @@ export default async function EntePage({
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
               {nivel.entes.length > 1
-                ? `Nota do ente em cada objetivo, comparada à média do nível ${nivel.label.toLowerCase()}.`
-                : 'Nota do ente em cada um dos dez objetivos da ENGD.'}
+                ? `Nota do ente em cada objetivo ativo, comparada à média do nível ${nivel.label.toLowerCase()}.`
+                : inativos.length > 0
+                  ? `Nota do ente nos objetivos da ENGD com dados disponíveis.`
+                  : 'Nota do ente em cada um dos dez objetivos da ENGD.'}
             </p>
             {/* Legenda do radar */}
             <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
@@ -158,12 +166,9 @@ export default async function EntePage({
               <ObjetivosRadar eixos={radarEixos} series={radarSeries} />
             </div>
 
-            {semDados.length > 0 && (
-              <p className="mx-auto mt-4 flex w-fit rounded-full border border-border bg-muted/40 px-3 py-1 text-xs text-muted-foreground">
-                Objetivos sem dados neste nível:{' '}
-                {semDados
-                  .map(o => String(o.numero).padStart(2, '0'))
-                  .join(', ')}
+            {notaInativos && (
+              <p className="mx-auto mt-4 max-w-md text-center text-xs text-muted-foreground">
+                {notaInativos}
               </p>
             )}
           </div>
