@@ -1,5 +1,6 @@
 'use client'
 
+import { ArrowRight } from 'lucide-react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import * as React from 'react'
 import { toast } from 'sonner'
@@ -10,6 +11,7 @@ import {
 } from '@/components/charts/objetivos-radar'
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
 import { FilterPill } from '@/components/shared/filter-pill'
+import { VariantLink } from '@/components/shared/variant-link'
 import {
   type Ente,
   formatScore,
@@ -333,9 +335,10 @@ export function IndicadoresExplorer() {
                     </p>
                     <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-muted-foreground text-xs">
                       {entesSelecionados.map((e, idx) => (
-                        <span
+                        <VariantLink
                           key={e.slug}
-                          className="inline-flex items-center gap-1.5"
+                          href={`/indicadores/${nivelKey}/${e.slug}`}
+                          className="inline-flex items-center gap-1.5 transition-colors hover:text-primary"
                         >
                           <span
                             aria-hidden="true"
@@ -343,7 +346,7 @@ export function IndicadoresExplorer() {
                             style={{ backgroundColor: CORES[idx] }}
                           />
                           {e.nome}
-                        </span>
+                        </VariantLink>
                       ))}
                       {mostrarMedia && (
                         <span className="inline-flex items-center gap-1.5">
@@ -364,6 +367,18 @@ export function IndicadoresExplorer() {
                         {notaInativos}
                       </p>
                     )}
+                    <div className="mt-6 flex flex-col gap-2">
+                      {entesSelecionados.map(e => (
+                        <VariantLink
+                          key={e.slug}
+                          href={`/indicadores/${nivelKey}/${e.slug}`}
+                          className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                        >
+                          Ver variáveis e detalhes de {e.nome}
+                          <ArrowRight className="size-4" />
+                        </VariantLink>
+                      ))}
+                    </div>
                   </div>
                 ) : (
                   <div>

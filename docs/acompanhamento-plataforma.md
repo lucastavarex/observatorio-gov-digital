@@ -70,6 +70,9 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 - Radar por objetivos; comparativo temático com scores **mock**
 - Estado compartilhável na URL: `nivel`, `entes`, `por`, `tema`
   Ex.: `/indicadores?nivel=estadual&entes=sp,rj&por=objetivos`
+- Drill-down até variáveis/download (também na variante B): `/indicadores/[nivel]/[ente]` → `/indicadores/[nivel]/[ente]/[objetivo]`
+  Ex.: `/indicadores/estadual/sp/privacidade-e-seguranca`; em `/v2/...` o prefixo é preservado
+- No explorer (modo objetivos), clique no ente da legenda ou CTA “Ver variáveis e detalhes” leva à página do ente
 
 ### 3.4 Ranking (`/ranking`)
 
@@ -82,6 +85,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 - Clique no ente (modo objetivos) leva `?objetivo={slug}` → detalhe dinâmico (não mais “sempre Obj. 1”)
 - Badge com nome do ente no topo da coluna do gráfico “Posição no objetivo” → **removida**
 - Página do objetivo: lista de variáveis + download; **sem** bloco de Recomendações (recomendações ENGD ficam em `/objetivos/[slug]`); ícones de fonte/download ao lado do título da variável
+- UI compartilhada com o drill-down de Indicadores (`src/components/drilldown/`), com posições/distribuição só no ranking
 
 ### 3.5 Objetivo 3 e cobertura
 
@@ -94,7 +98,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 | Variante | Como ativar                                                                 | Comportamento                |
 | -------- | --------------------------------------------------------------------------- | ---------------------------- |
 | A        | `/` (default)                                                             | Ranking disponível          |
-| B        | prefixo`/v2/…` **ou** `NEXT_PUBLIC_RANKING_MODE=off` / `farol` | Sem ranking (redirect / nav) |
+| B        | prefixo`/v2/…` **ou** `NEXT_PUBLIC_RANKING_MODE=off` / `farol` | Sem ranking (redirect / nav); download via `/indicadores/.../[objetivo]` |
 
 Arquivos-chave: `src/proxy.ts`, `src/lib/features/ranking-mode.ts`, `use-platform-variant.ts`, `VariantLink`.
 
@@ -176,11 +180,11 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 ## 7. Como validar rapidamente
 
 1. `/` — home sem overlay de loading; hero e seções ok; com variante B, sem bloco de ranking/mapa se aplicável
-2. `/indicadores?nivel=estadual&entes=sp&por=objetivos` — URL restaura seleção
+2. `/indicadores?nivel=estadual&entes=sp&por=objetivos` — URL restaura seleção; CTA leva a `/indicadores/estadual/sp`
 3. `/ranking?nivel=estadual&por=objetivos&objetivo=gestao-e-governanca` — filtros na URL; Obj. 3 desabilitado com tooltip
 4. Clicar ente na tabela → `/ranking/estadual/{ente}?objetivo=…` com subtítulo/gráficos do objetivo certo
 5. `/ranking/.../{objetivo}` — sem Recomendações; download à esquerda do título da variável
-6. `/v2` — versão sem ranking
+6. `/v2` — versão sem ranking; `/v2/indicadores/estadual/sp/{objetivo}` — lista + download (sem posição no ranking)
 7. `/metodologia` — nota dos objetivos precários (mock)
 
 ---
@@ -191,6 +195,7 @@ Preferência: **números já agregados**; o front calcula o mínimo possível.
 | ---------------------------- | --------------------------------------------------------------- |
 | Ranking explorer + URL       | `src/components/ranking/`, `src/lib/ranking-url.ts`         |
 | Indicadores + URL            | `src/components/indicadores/`, `src/lib/indicadores-url.ts` |
+| Drill-down ente/objetivo     | `src/components/drilldown/` (ranking + indicadores)        |
 | Disponibilidade de objetivos | `src/data/objectives-availability.ts`                         |
 | Temáticas (mock)            | `src/data/tematicas/`                                         |
 | Feature ranking A/B          | `src/lib/features/`, `src/proxy.ts`                         |

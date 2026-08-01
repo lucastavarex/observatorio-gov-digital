@@ -8,7 +8,7 @@ export function generateStaticParams() {
   )
 }
 
-export default async function EntePage({
+export default async function IndicadoresEntePage({
   params,
   searchParams,
 }: {
@@ -29,10 +29,10 @@ export default async function EntePage({
       nivel={nivel}
       ente={ente}
       objetivoQuery={objetivoQuery}
-      basePath="/ranking"
-      showRankingUi
-      backHref="/ranking"
-      backLabel="Voltar para Ranking"
+      basePath="/indicadores"
+      showRankingUi={false}
+      backHref="/indicadores"
+      backLabel="Voltar para Indicadores"
     />
   )
 }
