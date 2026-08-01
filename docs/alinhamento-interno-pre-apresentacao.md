@@ -23,7 +23,7 @@ Não separamos aqui “o que veio do design” vs “o que veio da engenharia”
 | **Página de variável + série histórica isolada** | Removidas. Variáveis aparecem na página do objetivo como **lista com download** (sem drill-down temporal). |
 | **Objetivo 3 (Identificação Única)** | Desabilitado na UI (chip com tooltip + aviso). Lacunas reais de cobertura de outros objetivos (ex.: 8 e 10) continuam refletindo os dados. |
 | **Categorias / tags temáticas** | Fluxo na UI pronto (Indicadores e Ranking). Lista e scores ainda são **ilustrativos** (~20 tags), até a lista oficial (~50–60) e os scores. |
-| **Versão com e sem ranking (teste A/B)** | Versão A: site com ranking. Versão B: prefixo `/v2` (ou flag de deploy) **sem** ranking. |
+| **Versão com e sem ranking (teste A/B)** | Versão A: site com ranking. Versão B: prefixo `/v2` (ou flag de deploy) **sem** ranking. Download das variáveis na B via drill-down de Indicadores (`/indicadores/.../[objetivo]`). |
 | **Objetivos com cobertura precária** | Há nota técnica na Metodologia (texto ainda provisório / mock para validação). |
 | **Municípios além das capitais** | **Adiado** nesta etapa. Nível municipal = **capitais**. |
 | **Idioma EN** | Fora de escopo nesta fase (plataforma em português). |
@@ -41,6 +41,7 @@ Melhorias de usabilidade e fidelidade da interface que ajudam na apresentação:
 - **URL compartilhável** nos filtros de Ranking e Indicadores (facilita enviar um recorte específico no feedback).
 - No Ranking, ao abrir um ente, o detalhe respeita o **objetivo selecionado** (não “cai” sempre no objetivo 1).
 - Página do objetivo alinhada: lista de variáveis com ações de fonte/download; sem bloco de recomendações nessa tela (recomendações ENGD seguem em Objetivos).
+- **Versão B:** caminho até o download espelhado em Indicadores (`/indicadores/[nivel]/[ente]/[objetivo]`), sem reabrir o ranking.
 - Ajuste fino de gráficos (ex.: remoção da badge com nome do ente no topo da coluna em “Posição no objetivo”).
 - Tela de **loading/abertura** da home foi **retirada** (impacto em UX e SEO).
 
@@ -84,9 +85,12 @@ A maior parte do índice por **objetivo ENGD** (federal / UF / capitais) já usa
 
 - Home: `/`
 - Indicadores (exemplo): `/indicadores?nivel=estadual&entes=sp&por=objetivos`
+- Detalhe do ente → variáveis/download: `/indicadores/estadual/sp` → `/indicadores/estadual/sp/{objetivo}`
 - Ranking (exemplo): `/ranking?nivel=estadual&por=objetivos&objetivo=gestao-e-governanca`
-- Versão sem ranking: `/v2`
+- Versão sem ranking: `/v2` — mesmo drill-down sob `/v2/indicadores/...` (ranking redireciona)
 - Metodologia (nota precária mock): `/metodologia`
+
+Detalhe do fluxo A/B e diagrama: ver §3.6 em [`acompanhamento-plataforma.md`](./acompanhamento-plataforma.md).
 
 ---
 
