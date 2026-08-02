@@ -124,7 +124,7 @@ const components: MDXComponents = {
   a: ({ className, ...props }) => (
     <a
       className={cn(
-        'font-medium text-accent underline-offset-4 hover:underline',
+        'font-medium text-primary underline-offset-4 hover:underline',
         className
       )}
       {...props}
