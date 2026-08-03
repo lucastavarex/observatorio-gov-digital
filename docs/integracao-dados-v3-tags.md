@@ -265,14 +265,9 @@ Se a entrega voltar a incluir JSON flat oficiais com `ano_indice` preenchido, o 
 
 ## 12. Downloads curados (CSV)
 
-A plataforma **não** hospeda microdados brutos das fontes. O download entrega o recorte usado no índice:
+A plataforma **não** hospeda microdados brutos das fontes. O download entrega o recorte normalizado usado no índice via `GET /api/obgd/export` (por `conceptId`+`nivel` ou por fonte/`metodologiaSlug`).
 
-| Endpoint | Uso |
-|---|---|
-| `GET /api/obgd/export?nivel=estadual&conceptId=tic_gov/B1` | Indicador em todas as unidades do nível |
-| `GET /api/obgd/export?metodologiaSlug=cetic-br` | Todos os indicadores dessa fonte no OBGD (3 níveis) |
-
-UI: `VariavelAcoes` (página do objetivo); em `/metodologia`, a lista “Principais fontes” e o bloco de download em `/metodologia/fontes/[slug]` só incluem fontes com linhas em `detalhes_*` (`hasObgdExportForMetodologiaSlug`). Schema: `src/lib/export-obgd-csv.ts`, `src/data/obgd/export-rows.ts`.
+Documentação completa (fluxo, schema, UI e status de alinhamento): [`export-csv-obgd.md`](./export-csv-obgd.md).
 
 ---
 
