@@ -7,6 +7,7 @@ import { EnteRankingList } from '@/components/ranking/ente-ranking-list'
 import { FilterPill } from '@/components/shared/filter-pill'
 import { type DadoMapa, MapaBrasil } from '@/components/shared/mapa-brasil'
 import { ObjetivoChip } from '@/components/shared/objetivo-chip'
+import { TematicaChip } from '@/components/shared/tematica-chip'
 import { GLOSSARIO, oQueAvaliaObjetivo } from '@/data/help-copy'
 import {
   type NivelKey,
@@ -19,7 +20,13 @@ import {
   objetivoSelecionavel,
   primeiroObjetivoSelecionavel,
 } from '@/data/objectives-availability'
-import { rankingTematico, tematicas } from '@/data/tematicas'
+import {
+  primeiraTematicaSelecionavel,
+  rankingTematico,
+  tematicaSelecionavel,
+  tematicas,
+  tematicasComCobertura,
+} from '@/data/tematicas'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { ufDeEnte } from '@/lib/geo/entes-geo'
 import {
@@ -47,6 +54,10 @@ export function RankingExplorer() {
 
   const nivel = niveis.find(n => n.key === active) ?? niveis[1]
   const cobertura = React.useMemo(() => objetivosComCobertura(nivel), [nivel])
+  const coberturaTemas = React.useMemo(
+    () => tematicasComCobertura(nivel),
+    [nivel]
+  )
 
   const atualizar = React.useCallback(
     (patch: Partial<RankingFiltros>) => {
@@ -57,6 +68,10 @@ export function RankingExplorer() {
       if (!num || !objetivoSelecionavel(num - 1, cob)) {
         const primeiro = primeiroObjetivoSelecionavel(cob)
         next.objetivo = objectives[primeiro - 1].slug
+      }
+      const cobTemas = tematicasComCobertura(nivelAlvo)
+      if (!tematicaSelecionavel(next.tema, cobTemas)) {
+        next.tema = primeiraTematicaSelecionavel(cobTemas)
       }
       router.replace(link(rankingHref(next)), { scroll: false })
     },
@@ -75,8 +90,32 @@ export function RankingExplorer() {
         ),
         { scroll: false }
       )
+      return
     }
-  }, [cobertura, objetivoNumero, filtros, link, router])
+    if (
+      modo === 'tematicas' &&
+      !tematicaSelecionavel(tagSlug, coberturaTemas)
+    ) {
+      router.replace(
+        link(
+          rankingHref({
+            ...filtros,
+            tema: primeiraTematicaSelecionavel(coberturaTemas),
+          })
+        ),
+        { scroll: false }
+      )
+    }
+  }, [
+    cobertura,
+    coberturaTemas,
+    objetivoNumero,
+    tagSlug,
+    modo,
+    filtros,
+    link,
+    router,
+  ])
 
   const objetivo = objectives[objetivoNumero - 1]
   const tematica = tematicas.find(t => t.slug === tagSlug) ?? tematicas[0]
@@ -219,14 +258,15 @@ export function RankingExplorer() {
                       onSelect={() => atualizar({ objetivo: obj.slug })}
                     />
                   ))
-                : tematicas.map(tag => (
-                    <FilterPill
+                : tematicas.map((tag, i) => (
+                    <TematicaChip
                       key={tag.slug}
+                      nome={tag.nome}
+                      nivel={nivel.key}
+                      temCobertura={Boolean(coberturaTemas[i])}
                       active={tag.slug === tagSlug}
-                      onClick={() => atualizar({ tema: tag.slug })}
-                    >
-                      {tag.nome}
-                    </FilterPill>
+                      onSelect={() => atualizar({ tema: tag.slug })}
+                    />
                   ))}
             </div>
             {modo === 'objetivos' && objetivo && (
