@@ -8,7 +8,7 @@
 > - Capítulo: `/metodologia/[capitulo]` — ex.: `/metodologia/cap04-obj01-governanca`
 > - PDF estático: [`/metodologia-completa.pdf`](../public/metodologia-completa.pdf)
 >
-> **Última atualização:** 2026-08-01
+> **Última atualização:** 2026-08-03
 
 ---
 
@@ -32,7 +32,7 @@ Não há geração de PDF **dentro** deste repositório. A compilação Markdown
 | Carregamento | Mapa de `import()` estáticos (`loadMetodologiaCapituloMdx`) |
 | Geração de páginas | SSG (`generateStaticParams`, `dynamicParams = false`) |
 | PDF no portal | Asset estático; **não** gerado a partir dos `.md` em build |
-| Gráficos referenciados | Placeholder “Gráfico indisponível” (PNGs ainda não copiados) |
+| Gráficos referenciados | PNGs em `public/metodologia/graficos/`; `MdxImg` reescreve `../graficos/` → `/metodologia/graficos/` |
 
 ### Fonte de verdade do domínio
 
@@ -58,6 +58,7 @@ flowchart TB
 
   subgraph portal ["observatorio-gov-digital"]
     MD_COPY["src/content/metodologia/capitulos/*.md"]
+    GRAF_COPY["public/metodologia/graficos/*.png"]
     REG["metodologia-capitulos.ts"]
     LOADER["metodologia-mdx.ts"]
     MDX["@next/mdx + mdx-components.tsx"]
@@ -70,10 +71,12 @@ flowchart TB
     REG --> PAGE
     LOADER --> PAGE
     MDX --> PAGE
+    GRAF_COPY --> PAGE
     PUBLIC_PDF --> HUB
   end
 
   MD_SRC -.->|"cópia / sync editorial"| MD_COPY
+  GRAF -.->|"cópia manual"| GRAF_COPY
   PDF_OUT -.->|"cópia manual"| PUBLIC_PDF
 ```
 
@@ -115,7 +118,7 @@ flowchart TB
 
 | Arquivo | Papel |
 | --- | --- |
-| [`src/mdx-components.tsx`](../src/mdx-components.tsx) | `useMDXComponents()` — `h1`–`h4`, `p`, listas, tabelas, `hr`, `MdxImg`, placeholders de gráfico |
+| [`src/mdx-components.tsx`](../src/mdx-components.tsx) | `useMDXComponents()` — `h1`–`h4`, `p`, listas, tabelas, `hr`, `MdxImg` (reescreve paths de gráfico) |
 | [`next.config.ts`](../next.config.ts) | `createMDX`, `pageExtensions`, plugins remark/rehype |
 
 ### Rotas e UI
@@ -195,13 +198,11 @@ Nos capítulos-objetivo, gráficos tipicamente apontam para caminhos relativos h
 
 No portal:
 
-- Qualquer `src` contendo `/graficos/` ou `../graficos/` (ou `src` vazio) é tratado como gráfico e vira placeholder **“Gráfico indisponível”** (`MdxImg` / `isGraficoSrc`).
-- A pasta `src/content/metodologia/graficos/` **não existe** neste repositório; os PNGs canônicos ficam em `plataforma/entregas/graficos/`.
+- `MdxImg` reescreve `../graficos/...` → `/metodologia/graficos/...` e renderiza `<img>`.
+- Os PNGs vivem em [`public/metodologia/graficos/`](../public/metodologia/graficos/) (cópia de `plataforma/entregas/graficos/`).
+- `src` vazio ainda vira placeholder **“Gráfico indisponível”**.
 
-Para exibir um gráfico de verdade no portal, é preciso:
-
-1. Copiar o asset para um caminho público ou importável **sem** o segmento `/graficos/` na URL usada pelo markdown, **ou**
-2. Estender `MdxImg` / servir os PNGs e deixar de forçar o placeholder para esses paths.
+Para atualizar os gráficos no portal: regenerar em `plataforma` e copiar de novo para `public/metodologia/graficos/`.
 
 ### Contrato editorial (capítulos-objetivo)
 
@@ -294,7 +295,7 @@ Capítulo MDX não encontrado: <file>
 | `h2` | `border-t` como separador de seção |
 | `hr` | Régua; **oculto** quando o próximo irmão é `h2` (`has-[+h2]:hidden`) — evita linha duplicada com `---` + `##` |
 | `p` | Se o único filho for imagem (`MdxImg` / `img`), não envolve em `<p>` — evita `<figure>` dentro de `<p>` (hydration error) |
-| `img` / `MdxImg` | Gráficos → `<figure>` placeholder; demais → `<img>` |
+| `img` / `MdxImg` | `../graficos/...` → `/metodologia/graficos/...` e `<img>`; `src` vazio → placeholder |
 | `table` | Wrapper com scroll horizontal; estilos de thead/tbody/td |
 
 ---
@@ -357,12 +358,13 @@ Não há job de CI neste repositório que regenere ou sincronize o PDF automatic
 2. Incluir entrada em `metodologiaCapitulos` (`slug`, `file`, `title`, `order`).
 3. Incluir o mesmo `file` no mapa `modules` de `loadMetodologiaCapituloMdx`.
 4. Conferir sumário, página, prev/next e SSG (`generateStaticParams` já lê o array).
-5. Se houver gráficos: decidir se entram como placeholder, asset público ou extensão de `MdxImg`.
+5. Se houver gráficos novos: copiar PNGs de `plataforma/entregas/graficos/` para `public/metodologia/graficos/`.
 
 ### Checklist de sync pesquisa → portal
 
 - [ ] Capítulos `.md` alinhados a `plataforma/entregas/capitulos/`
 - [ ] Registro + mapa de imports atualizados (se houver arquivo novo)
+- [ ] PNGs alinhados a `plataforma/entregas/graficos/` em `public/metodologia/graficos/`
 - [ ] PDF regenerado em `plataforma` e copiado para `public/metodologia-completa.pdf`
 - [ ] Spot-check: hub, um capítulo com tabela, um com `---` + `##`, um com `![...](../graficos/...)`
 - [ ] Variante B (`/v2/...`): sumário e prev/next com prefixo; PDF continua em `/metodologia-completa.pdf`
@@ -372,7 +374,7 @@ Não há job de CI neste repositório que regenere ou sincronize o PDF automatic
 ## 9. Limitações e armadilhas conhecidas
 
 1. **PDF ≠ build a partir dos `.md` do portal** — o download é um arquivo estático; pode divergir do Markdown web.
-2. **Gráficos indisponíveis** — paths `../graficos/...` sempre viram placeholder até os assets serem publicados no portal.
+2. **Gráficos desatualizados** — `public/metodologia/graficos/` é cópia manual; regenerar em `plataforma` e recopiar quando os PNGs mudarem.
 3. **Duplo registro obrigatório** — esquecer `metodologia-mdx.ts` quebra o load mesmo com entrada no array de capítulos.
 4. **`---` + `##`** — corrigido no `hr` (`has-[+h2]:hidden`); não remova o `border-t` do `h2` sem revisar capítulos sem `---`.
 5. **Imagem sozinha em parágrafo** — corrigido com unwrap no componente `p`; regressões aqui voltam o hydration error de `<figure>` dentro de `<p>`.
@@ -397,4 +399,4 @@ Não há job de CI neste repositório que regenere ou sincronize o PDF automatic
 
 ## 11. Resumo executivo
 
-A feature “metodologia em Markdown nativa” neste repositório é o **pipeline web**: Markdown versionado → MDX/Next → páginas SSG tipografadas, com sumário, navegação entre capítulos e download de um PDF estático. A **produção tipográfica do PDF** e dos gráficos oficiais permanece no repositório **`plataforma`**; o portal consome o resultado como `public/metodologia-completa.pdf` e, hoje, mostra placeholders onde o Markdown ainda aponta para `../graficos/`.
+A feature “metodologia em Markdown nativa” neste repositório é o **pipeline web**: Markdown versionado → MDX/Next → páginas SSG tipografadas, com sumário, navegação entre capítulos e download de um PDF estático. A **produção tipográfica do PDF** e dos gráficos oficiais permanece no repositório **`plataforma`**; o portal consome o resultado como `public/metodologia-completa.pdf` e como PNGs em `public/metodologia/graficos/`, reescritos por `MdxImg` a partir dos paths `../graficos/` do Markdown.
