@@ -8,9 +8,13 @@ import {
 
 import { cn } from '@/lib/utils'
 
-function isGraficoSrc(src: string | undefined): boolean {
-  if (!src) return true
-  return src.includes('/graficos/') || src.includes('../graficos/')
+/** Rewrite methodology chart paths from chapter-relative markdown to public URLs. */
+function resolveMdxImgSrc(src: string | undefined): string | undefined {
+  if (!src) return undefined
+  if (src.startsWith('../graficos/')) {
+    return `/metodologia/graficos/${src.slice('../graficos/'.length)}`
+  }
+  return src
 }
 
 function MdxImg({
@@ -19,9 +23,9 @@ function MdxImg({
   className,
   ...props
 }: ComponentPropsWithoutRef<'img'>) {
-  const srcString = typeof src === 'string' ? src : undefined
+  const srcString = resolveMdxImgSrc(typeof src === 'string' ? src : undefined)
 
-  if (isGraficoSrc(srcString)) {
+  if (!srcString) {
     return (
       <figure
         className={cn(
@@ -47,7 +51,7 @@ function MdxImg({
 
   return (
     // MDX assets may be relative paths without fixed dimensions for next/image.
-    // biome-ignore lint/performance/noImgElement: MDX img fallback for non-chart assets
+    // biome-ignore lint/performance/noImgElement: MDX img fallback for chart and other assets
     <img
       src={srcString}
       alt={alt ?? ''}
