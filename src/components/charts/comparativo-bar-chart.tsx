@@ -14,12 +14,13 @@ export type BarraEnte = { nome: string; valor: number; cor: string }
 
 export function ComparativoBarChart({ entes }: { entes: BarraEnte[] }) {
   const tickStyle = { fill: 'var(--muted-foreground)', fontSize: 11 }
+  const ordenados = [...entes].sort((a, b) => b.valor - a.valor)
 
   return (
     <div className="h-72 w-full">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
-          data={entes}
+          data={ordenados}
           margin={{ top: 24, right: 8, bottom: 4, left: -16 }}
         >
           <XAxis
@@ -37,7 +38,7 @@ export function ComparativoBarChart({ entes }: { entes: BarraEnte[] }) {
             axisLine={false}
           />
           <Bar dataKey="valor" radius={[4, 4, 0, 0]} isAnimationActive={false}>
-            {entes.map(e => (
+            {ordenados.map(e => (
               <Cell key={e.nome} fill={e.cor} />
             ))}
             <LabelList
