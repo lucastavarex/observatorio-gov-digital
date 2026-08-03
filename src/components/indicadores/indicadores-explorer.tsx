@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Info } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import * as React from 'react'
@@ -19,6 +19,11 @@ import { HomeFaq } from '@/components/shared/home-faq'
 import { InfoTip } from '@/components/shared/info-tip'
 import { VariantLink } from '@/components/shared/variant-link'
 import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
+import {
   fontesPorNomes,
   fontesTodosObjetivosAtivos,
   GLOSSARIO,
@@ -36,7 +41,14 @@ import {
   formatNotaObjetivosInativos,
   objetivosParaRadar,
 } from '@/data/objectives-availability'
-import { notaTematica, tematicas, variaveisPorTematica } from '@/data/tematicas'
+import {
+  motivoTematicaDesabilitada,
+  notaTematica,
+  tematicaSelecionavel,
+  tematicas,
+  tematicasComCobertura,
+  variaveisPorTematica,
+} from '@/data/tematicas'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { bandeiraSrc } from '@/lib/geo/entes-geo'
 import {
@@ -73,14 +85,39 @@ export function IndicadoresExplorer() {
 
   const nivel = niveis.find(n => n.key === nivelKey) ?? null
   const medias = nivel ? mediasPorObjetivo(nivel) : []
+  const coberturaTemas = React.useMemo(
+    () => (nivel ? tematicasComCobertura(nivel) : []),
+    [nivel]
+  )
 
   const atualizar = React.useCallback(
     (patch: Partial<IndicadoresFiltros>) => {
       const next = normalizarIndicadoresFiltros({ ...filtros, ...patch })
+      if (next.por === 'tematicas' && next.tema && next.nivel) {
+        const nivelAlvo = niveis.find(n => n.key === next.nivel)
+        if (nivelAlvo) {
+          const cob = tematicasComCobertura(nivelAlvo)
+          if (!tematicaSelecionavel(next.tema, cob)) {
+            next.tema = null
+          }
+        }
+      }
       router.replace(link(indicadoresHref(next)), { scroll: false })
     },
     [filtros, link, router]
   )
+
+  React.useEffect(() => {
+    if (
+      modo !== 'tematicas' ||
+      !tagSlug ||
+      !nivel ||
+      tematicaSelecionavel(tagSlug, coberturaTemas)
+    ) {
+      return
+    }
+    atualizar({ tema: null })
+  }, [modo, tagSlug, nivel, coberturaTemas, atualizar])
 
   function selecionarNivel(key: NivelKey) {
     const alvo = niveis.find(n => n.key === key)
@@ -90,6 +127,18 @@ export function IndicadoresExplorer() {
       entes:
         alvo && !alvo.isRanking && alvo.entes[0] ? [alvo.entes[0].slug] : [],
     })
+  }
+
+  function selecionarTematica(slug: string, temCobertura: boolean) {
+    if (!nivelKey) return
+    const motivo = motivoTematicaDesabilitada(nivelKey, temCobertura)
+    if (motivo) {
+      toast(motivo, {
+        position: 'bottom-right',
+      })
+      return
+    }
+    atualizar({ tema: slug })
   }
 
   function alternarEnte(slug: string) {
@@ -337,22 +386,57 @@ export function IndicadoresExplorer() {
                     </li>
                   )}
                   {nivel &&
-                    tematicas.map(tag => {
+                    tematicas.map((tag, i) => {
                       const isActive = tag.slug === tagSlug
+                      const temCobertura = Boolean(coberturaTemas[i])
+                      const motivo = motivoTematicaDesabilitada(
+                        nivel.key,
+                        temCobertura
+                      )
+                      const desabilitado = Boolean(motivo)
+
+                      const button = (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            selecionarTematica(tag.slug, temCobertura)
+                          }
+                          aria-disabled={desabilitado}
+                          className={cn(
+                            'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
+                            desabilitado &&
+                              'cursor-not-allowed opacity-60 hover:bg-transparent hover:text-foreground',
+                            !desabilitado &&
+                              (isActive
+                                ? 'bg-primary/10 font-medium text-primary'
+                                : 'text-foreground hover:bg-primary/5 hover:text-primary')
+                          )}
+                        >
+                          <span className="truncate">{tag.nome}</span>
+                          {desabilitado && (
+                            <Info
+                              className="ml-auto size-3.5 shrink-0 opacity-70"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </button>
+                      )
+
                       return (
                         <li key={tag.slug}>
-                          <button
-                            type="button"
-                            onClick={() => atualizar({ tema: tag.slug })}
-                            className={cn(
-                              'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
-                              isActive
-                                ? 'bg-primary/10 font-medium text-primary'
-                                : 'text-foreground hover:bg-primary/5 hover:text-primary'
-                            )}
-                          >
-                            <span className="truncate">{tag.nome}</span>
-                          </button>
+                          {motivo ? (
+                            <Tooltip>
+                              <TooltipTrigger asChild>{button}</TooltipTrigger>
+                              <TooltipContent
+                                side="right"
+                                className="max-w-xs text-left leading-relaxed"
+                              >
+                                <p>{motivo}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          ) : (
+                            button
+                          )}
                         </li>
                       )
                     })}
