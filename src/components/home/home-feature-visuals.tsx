@@ -21,7 +21,8 @@ import {
   filtrarValoresPorIndices,
   formatNotaObjetivosInativos,
   isObjetivo3,
-  OBJETIVO_3_MOTIVO,
+  motivoObjetivoDesabilitado,
+  objetivoSelecionavel,
   objetivosParaRadar,
 } from '@/data/objectives-availability'
 import { ufDeEnte } from '@/lib/geo/entes-geo'
@@ -181,12 +182,21 @@ export function VisualPerfil({
 }
 
 export function VisualMapa({ entes }: { entes: Ente[] }) {
+  const cobertura = objectives.map((_, i) =>
+    entes.some(e => e.objetivos[i]?.nota != null)
+  )
+
   const [objetivoSlug, setObjetivoSlug] = useState(() =>
     primeiroObjetivoComNota(entes)
   )
 
+  const indiceAtual = objectives.findIndex(o => o.slug === objetivoSlug)
+  const slugAtivo = objetivoSelecionavel(indiceAtual, cobertura)
+    ? objetivoSlug
+    : primeiroObjetivoComNota(entes)
+
   const notaDe = (ente: Ente) =>
-    ente.objetivos.find(o => o.objetivoSlug === objetivoSlug)?.nota ?? null
+    ente.objetivos.find(o => o.objetivoSlug === slugAtivo)?.nota ?? null
 
   const dados: DadoMapa[] = entes.flatMap(ente => {
     const uf = ufDeEnte('estadual', ente.nome)
@@ -207,8 +217,13 @@ export function VisualMapa({ entes }: { entes: Ente[] }) {
       <div className="w-full shrink-0 sm:w-max sm:self-center">
         <ul className="space-y-0.5">
           {objectives.map((objetivo, i) => {
-            const desabilitado = isObjetivo3(objetivo.slug)
-            const ativo = objetivo.slug === objetivoSlug
+            const motivo = motivoObjetivoDesabilitado(
+              objetivo.slug,
+              'estadual',
+              Boolean(cobertura[i])
+            )
+            const desabilitado = Boolean(motivo)
+            const ativo = objetivo.slug === slugAtivo
             const botao = (
               <button
                 type="button"
@@ -239,7 +254,7 @@ export function VisualMapa({ entes }: { entes: Ente[] }) {
 
             return (
               <li key={objetivo.slug}>
-                {desabilitado ? (
+                {motivo ? (
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <span className="block w-full">{botao}</span>
@@ -248,10 +263,12 @@ export function VisualMapa({ entes }: { entes: Ente[] }) {
                       side="top"
                       className="max-w-xs text-left leading-relaxed"
                     >
-                      <p className="mb-1 font-semibold">
-                        Objetivo desabilitado
-                      </p>
-                      <p>{OBJETIVO_3_MOTIVO}</p>
+                      {isObjetivo3(objetivo.slug) && (
+                        <p className="mb-1 font-semibold">
+                          Objetivo desabilitado
+                        </p>
+                      )}
+                      <p>{motivo}</p>
                     </TooltipContent>
                   </Tooltip>
                 ) : (
