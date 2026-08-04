@@ -502,7 +502,6 @@ export function IndicadoresExplorer() {
                           className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
                         >
                           Ver variáveis e detalhes de {e.nome}
-                          <ArrowRight className="size-4" />
                         </VariantLink>
                       ))}
                     </div>
