@@ -10,7 +10,7 @@ import {
   ObjetivosRadar,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
-import { EntendaGraficoPanel } from '@/components/indicadores/entenda-grafico-panel'
+import { EntendaGraficoTip } from '@/components/indicadores/entenda-grafico-panel'
 import { ObjetivosAvaliaList } from '@/components/indicadores/objetivos-avalia-list'
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
 import { FilterPill } from '@/components/shared/filter-pill'
@@ -256,15 +256,9 @@ export function IndicadoresExplorer() {
             href="/metodologia"
             className="font-medium text-primary underline-offset-2 hover:underline"
           >
-            Como calculamos
+            Veja a metodologia
           </Link>
         </p>
-
-        <EntendaGraficoPanel
-          modo={porObjetivos ? 'objetivos' : 'tematicas'}
-          tagNome={tematica?.nome}
-          tagDescricao={tematica?.descricao}
-        />
 
         <div className="dash-y -mx-6 mt-10 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
           <div>
@@ -460,7 +454,8 @@ export function IndicadoresExplorer() {
                     </div>
                     <p className="mt-1 text-muted-foreground text-sm">
                       Comparação dos entes selecionados nos objetivos da ENGD
-                      com cobertura de dados. Cada eixo é um sub-índice (0–100).
+                      com cobertura de dados. Cada eixo é um sub-índice (0–100).{' '}
+                      <EntendaGraficoTip modo="objetivos" />
                     </p>
                     <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-muted-foreground text-xs">
                       {entesSelecionados.map((e, idx) => (
@@ -526,7 +521,12 @@ export function IndicadoresExplorer() {
                     </div>
                     <p className="mt-1 text-muted-foreground text-sm">
                       {tematica?.descricao ??
-                        'Score da tag (média dos indicadores ativos) dos entes selecionados.'}
+                        'Score da tag (média dos indicadores ativos) dos entes selecionados.'}{' '}
+                      <EntendaGraficoTip
+                        modo="tematicas"
+                        tagNome={tematica?.nome}
+                        tagDescricao={tematica?.descricao}
+                      />
                     </p>
                     {barrasTematicas && (
                       <div className="mt-4">

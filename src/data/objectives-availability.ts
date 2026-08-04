@@ -154,7 +154,7 @@ function formatListaNumerosObjetivo(numeros: number[]): string {
 
 /**
  * Nota de rodapé do radar quando há objetivos inativos.
- * Ex.: "Objetivos 03, 08 e 10 estão inativos por ausência de dados suficientemente robustos."
+ * Ex.: "Objetivos 03, 08 e 10 estão inativos por ausência de dados."
  */
 export function formatNotaObjetivosInativos(
   inativos: { numero: number }[]
@@ -162,7 +162,7 @@ export function formatNotaObjetivosInativos(
   if (inativos.length === 0) return null
   const lista = formatListaNumerosObjetivo(inativos.map(o => o.numero))
   if (inativos.length === 1) {
-    return `Objetivo ${lista} está inativo por ausência de dados suficientemente robustos.`
+    return `Objetivo ${lista} está inativo por ausência de dados.`
   }
-  return `Objetivos ${lista} estão inativos por ausência de dados suficientemente robustos.`
+  return `Objetivos ${lista} estão inativos por ausência de dados.`
 }
