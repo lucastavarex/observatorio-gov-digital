@@ -55,6 +55,7 @@ export function EnteDetail({
   const radarEixos = ativos.map(objetivo => ({
     eixo: String(objetivo.numero).padStart(2, '0'),
     objetivo: objetivo.titulo,
+    slug: objetivo.objetivoSlug,
   }))
   const radarSeries: RadarSerie[] = [
     {

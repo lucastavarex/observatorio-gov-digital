@@ -187,5 +187,3 @@ export function fontesPorNomes(nomes: string[]): FonteResumo[] {
   }
   return out.sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'))
 }
-
-export const HELP_PANEL_STORAGE_KEY = 'obgd-indicadores-help-dismissed'
