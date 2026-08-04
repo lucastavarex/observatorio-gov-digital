@@ -11,7 +11,6 @@ import {
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
 import { EntendaGraficoTip } from '@/components/indicadores/entenda-grafico-panel'
-import { ObjetivosAvaliaList } from '@/components/indicadores/objetivos-avalia-list'
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
 import { FilterPill } from '@/components/shared/filter-pill'
 import { FontesRecorte } from '@/components/shared/fontes-recorte'
@@ -192,6 +191,7 @@ export function IndicadoresExplorer() {
   const radarEixos = ativos.map(o => ({
     eixo: String(o.numero).padStart(2, '0'),
     objetivo: o.titulo,
+    slug: objectives[o.numero - 1]?.slug,
   }))
   const notaInativos = formatNotaObjetivosInativos(inativos)
   const mostrarMedia = Boolean(nivel && nivel.entes.length > 1)
@@ -505,7 +505,6 @@ export function IndicadoresExplorer() {
                         </VariantLink>
                       ))}
                     </div>
-                    <ObjetivosAvaliaList />
                     <FontesRecorte fontes={fontesRecorte} />
                   </div>
                 ) : (

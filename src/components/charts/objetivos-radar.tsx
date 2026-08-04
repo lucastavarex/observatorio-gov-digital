@@ -1,5 +1,6 @@
 'use client'
 
+import { Info } from 'lucide-react'
 import {
   PolarAngleAxis,
   PolarGrid,
@@ -9,8 +10,15 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts'
+import {
+  TooltipContent,
+  TooltipTrigger,
+  Tooltip as UiTooltip,
+} from '@/components/ui/tooltip'
+import { oQueAvaliaObjetivo } from '@/data/help-copy'
+import { cn } from '@/lib/utils'
 
-export type RadarEixo = { eixo: string; objetivo: string }
+export type RadarEixo = { eixo: string; objetivo: string; slug?: string }
 
 export type RadarSerie = {
   nome: string
@@ -49,45 +57,147 @@ type AngleTickProps = {
   payload?: { value?: string }
 }
 
+type EixoMeta = { objetivo: string; slug?: string }
+
+const LINE_HEIGHT = 12
+const FO_WIDTH = 118
+const INFO_SIZE = 12
+
 // Tick do eixo: número + nome do objetivo, quebrado em linhas.
-function renderAngleTick(props: AngleTickProps, eixoMap: Map<string, string>) {
+// Com slug: foreignObject + Tooltip (rótulo e ícone i).
+function renderAngleTick(
+  props: AngleTickProps,
+  eixoMap: Map<string, EixoMeta>
+) {
   const x = Number(props.x ?? 0)
   const y = Number(props.y ?? 0)
   const textAnchor = (props.textAnchor as SvgAnchor) ?? 'middle'
   const eixo = props.payload?.value ?? ''
-  const nome = eixoMap.get(eixo) ?? ''
+  const meta = eixoMap.get(eixo)
+  const nome = meta?.objetivo ?? ''
+  const slug = meta?.slug
   const linhas = wrap(`${eixo} ${nome}`.trim(), 16)
   // Ancoragem vertical: cresce para cima quando o rótulo está acima do centro.
-  const dyInicial =
-    textAnchor === 'middle' && y < 0 ? -(linhas.length - 1) * 12 : 0
+  const above = textAnchor === 'middle' && y < 0
+  const dyInicial = above ? -(linhas.length - 1) * LINE_HEIGHT : 0
 
-  return (
-    <text
-      x={x}
-      y={y}
-      textAnchor={textAnchor}
-      fill="var(--muted-foreground)"
-      fontSize={10}
-    >
-      {linhas.map((linha, i) => {
-        if (i === 0) {
-          const [numero, ...resto] = linha.split(' ')
-          return (
-            <tspan key={linha} x={x} dy={dyInicial}>
-              <tspan fill="var(--foreground)" fontWeight={600}>
-                {numero}
+  if (!slug) {
+    return (
+      <text
+        x={x}
+        y={y}
+        textAnchor={textAnchor}
+        fill="var(--muted-foreground)"
+        fontSize={10}
+      >
+        {linhas.map((linha, i) => {
+          if (i === 0) {
+            const [numero, ...resto] = linha.split(' ')
+            return (
+              <tspan key={linha} x={x} dy={dyInicial}>
+                <tspan fill="var(--foreground)" fontWeight={600}>
+                  {numero}
+                </tspan>
+                {resto.length > 0 && <tspan> {resto.join(' ')}</tspan>}
               </tspan>
-              {resto.length > 0 && <tspan> {resto.join(' ')}</tspan>}
+            )
+          }
+          return (
+            <tspan key={linha} x={x} dy={LINE_HEIGHT}>
+              {linha}
             </tspan>
           )
-        }
-        return (
-          <tspan key={linha} x={x} dy={12}>
-            {linha}
-          </tspan>
-        )
-      })}
-    </text>
+        })}
+      </text>
+    )
+  }
+
+  const { detalhe } = oQueAvaliaObjetivo(slug)
+  const foHeight = linhas.length * LINE_HEIGHT + 4
+  const foX =
+    textAnchor === 'start'
+      ? x
+      : textAnchor === 'end'
+        ? x - FO_WIDTH
+        : x - FO_WIDTH / 2
+  // Alinha o topo do foreignObject à primeira linha do rótulo SVG.
+  const foY = above ? y - (linhas.length - 1) * LINE_HEIGHT - 8 : y - 8
+
+  const justify =
+    textAnchor === 'start'
+      ? 'justify-start'
+      : textAnchor === 'end'
+        ? 'justify-end'
+        : 'justify-center'
+  const textAlign =
+    textAnchor === 'start'
+      ? 'text-left'
+      : textAnchor === 'end'
+        ? 'text-right'
+        : 'text-center'
+
+  return (
+    <g>
+      <foreignObject
+        x={foX}
+        y={foY}
+        width={FO_WIDTH}
+        height={foHeight + 2}
+        style={{ overflow: 'visible' }}
+      >
+        <div className="h-full w-full">
+          <UiTooltip>
+            <TooltipTrigger asChild>
+              <button
+                type="button"
+                aria-label={`O que avalia: ${nome}`}
+                className={cn(
+                  'flex w-full items-start gap-0.5 rounded-sm px-0.5 py-px',
+                  'text-[10px] leading-3 text-muted-foreground',
+                  'transition-colors hover:text-foreground',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+                  justify,
+                  textAlign
+                )}
+              >
+                <span className="min-w-0">
+                  {linhas.map((linha, i) => {
+                    if (i === 0) {
+                      const [numero, ...resto] = linha.split(' ')
+                      return (
+                        <span key={linha} className="block">
+                          <span className="font-semibold text-foreground">
+                            {numero}
+                          </span>
+                          {resto.length > 0 && <> {resto.join(' ')}</>}
+                        </span>
+                      )
+                    }
+                    return (
+                      <span key={linha} className="block">
+                        {linha}
+                      </span>
+                    )
+                  })}
+                </span>
+                <Info
+                  className="mt-px size-3 shrink-0 opacity-70"
+                  aria-hidden="true"
+                  style={{ width: INFO_SIZE, height: INFO_SIZE }}
+                />
+              </button>
+            </TooltipTrigger>
+            <TooltipContent
+              side="top"
+              className="max-w-xs text-left text-xs leading-relaxed sm:max-w-sm"
+            >
+              <p className="mb-1 font-semibold">{nome}</p>
+              <p>{detalhe}</p>
+            </TooltipContent>
+          </UiTooltip>
+        </div>
+      </foreignObject>
+    </g>
   )
 }
 
@@ -129,7 +239,10 @@ function RadarTooltip({
 }
 
 export function ObjetivosRadar({ eixos, series }: ObjetivosRadarProps) {
-  const eixoMap = new Map(eixos.map(e => [e.eixo, e.objetivo]))
+  const eixoMap = new Map(
+    eixos.map(e => [e.eixo, { objetivo: e.objetivo, slug: e.slug }])
+  )
+  const temAjuda = eixos.some(e => Boolean(e.slug))
   const data = eixos.map((e, i) => {
     const ponto: Record<string, string | number | null> = {
       eixo: e.eixo,
@@ -149,7 +262,12 @@ export function ObjetivosRadar({ eixos, series }: ObjetivosRadarProps) {
         <RadarChart
           data={data}
           outerRadius="80%"
-          margin={{ top: 12, right: 76, bottom: 12, left: 76 }}
+          margin={{
+            top: 12,
+            right: temAjuda ? 88 : 76,
+            bottom: 12,
+            left: temAjuda ? 88 : 76,
+          }}
         >
           <PolarGrid stroke="var(--border)" />
           <PolarAngleAxis
