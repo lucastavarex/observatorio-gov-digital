@@ -1,6 +1,5 @@
 'use client'
 
-import { Info } from 'lucide-react'
 import {
   PolarAngleAxis,
   PolarGrid,
@@ -61,10 +60,9 @@ type EixoMeta = { objetivo: string; slug?: string }
 
 const LINE_HEIGHT = 12
 const FO_WIDTH = 118
-const INFO_SIZE = 12
 
 // Tick do eixo: número + nome do objetivo, quebrado em linhas.
-// Com slug: foreignObject + Tooltip (rótulo e ícone i).
+// Com slug: foreignObject + Tooltip no hover do título.
 function renderAngleTick(
   props: AngleTickProps,
   eixoMap: Map<string, EixoMeta>
@@ -180,11 +178,6 @@ function renderAngleTick(
                     )
                   })}
                 </span>
-                <Info
-                  className="mt-px size-3 shrink-0 opacity-70"
-                  aria-hidden="true"
-                  style={{ width: INFO_SIZE, height: INFO_SIZE }}
-                />
               </button>
             </TooltipTrigger>
             <TooltipContent
