@@ -6,7 +6,7 @@ import { IndicadoresExplorer } from '@/components/indicadores/indicadores-explor
 export const metadata: Metadata = {
   title: 'Indicadores',
   description:
-    'Explore e compare a maturidade digital dos governos nos dez objetivos da ENGD.',
+    'Explore e compare o desenvolvimento digital dos governos nos dez objetivos da ENGD.',
 }
 
 export default function IndicadoresPage() {

@@ -15,9 +15,9 @@ export default function MetodologiaPage() {
           Metodologia
         </span>
         <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text text-4xl font-bold leading-tight tracking-tight text-transparent sm:text-5xl">
-          Como medimos a
+          Como medimos o
           <br />
-          maturidade digital
+          desenvolvimento digital
         </h1>
         <div className="mt-6 flex flex-col items-start gap-8">
           <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">

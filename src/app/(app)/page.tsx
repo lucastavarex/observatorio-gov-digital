@@ -93,7 +93,7 @@ export default async function HomePage() {
     {
       titulo: 'Indicadores por ente',
       texto:
-        'Notas de maturidade digital para o governo federal, os 27 estados e as capitais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
+        'Notas de desenvolvimento digital para o governo federal, os 27 estados e as capitais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
       cta: { label: 'Explorar indicadores', href: link('/indicadores') },
       visual: <VisualPerfil entes={estadual.entes} medias={mediasEstadual} />,
       show: true,

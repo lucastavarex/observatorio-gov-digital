@@ -8,9 +8,9 @@ export interface Publication {
 
 export const publications: Publication[] = [
   {
-    title: 'Maturidade digital nos municípios: o que os dados revelam',
+    title: 'Desenvolvimento digital nos municípios: o que os dados revelam',
     excerpt:
-      'Análise aprofundada dos resultados do Índice de Maturidade Digital, com destaque para os fatores que explicam o avanço das capitais...',
+      'Análise aprofundada dos resultados do Índice de Desenvolvimento Digital, com destaque para os fatores que explicam o avanço das capitais...',
     date: '28 JUN 2026',
     category: 'Artigos',
     href: '#',
@@ -48,7 +48,7 @@ export const publications: Publication[] = [
     href: '#',
   },
   {
-    title: 'Como funciona o Índice de Maturidade Digital',
+    title: 'Como funciona o Índice de Desenvolvimento Digital',
     excerpt:
       'Vídeo explicativo apresenta a metodologia, as dimensões avaliadas e como interpretar as pontuações de cada ente federado...',
     date: '30 MAI 2026',

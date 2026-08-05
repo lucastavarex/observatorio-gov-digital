@@ -10,7 +10,7 @@ export interface NewsArticle {
 export const newsArticles: NewsArticle[] = [
   {
     title:
-      'Observatório lança novo Índice de Maturidade Digital dos Municípios',
+      'Observatório lança novo Índice de Desenvolvimento Digital dos Municípios',
     excerpt:
       'A nova edição avalia mais de 5.500 municípios em serviços digitais, transparência e infraestrutura, com dados abertos para consulta...',
     date: '26 JUN 2026',
@@ -30,7 +30,7 @@ export const newsArticles: NewsArticle[] = [
   {
     title: 'Ranking 2026: os estados que mais avançaram em governo digital',
     excerpt:
-      'Confira quais unidades da federação lideraram os ganhos de maturidade digital no último ano e o que impulsionou esse avanço...',
+      'Confira quais unidades da federação lideraram os ganhos de desenvolvimento digital no último ano e o que impulsionou esse avanço...',
     date: '20 JUN 2026',
     source: 'TeleSíntese',
     category: 'Ranking',

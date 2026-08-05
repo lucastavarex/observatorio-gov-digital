@@ -8,7 +8,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # Observatório Brasileiro de Governo Digital
 
-Portal público e interativo de monitoramento da transformação digital no setor público brasileiro. Mede a maturidade digital dos governos federal, estaduais e das 27 capitais com base nos 10 objetivos da Estratégia Nacional de Governo Digital (ENGD, Decreto nº 12.069/2024).
+Portal público e interativo de monitoramento da transformação digital no setor público brasileiro. Mede o desenvolvimento digital dos governos federal, estaduais e das 27 capitais com base nos 10 objetivos da Estratégia Nacional de Governo Digital (ENGD, Decreto nº 12.069/2024).
 
 **Parceiros:** Insper/CGPP (execução técnica) · MBC/Movimento Brasil Competitivo (financiamento) · MGI/Ministério da Gestão e Inovação (vinculação institucional).
 

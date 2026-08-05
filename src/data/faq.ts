@@ -7,10 +7,10 @@ export const faqItems: FaqItem[] = [
   {
     pergunta: 'O que é o Observatório Brasileiro de Governo Digital?',
     resposta:
-      'É uma iniciativa que monitora e compara a maturidade digital dos governos federal, estaduais e municipais brasileiros, organizada segundo os dez objetivos da Estratégia Nacional de Governo Digital (ENGD).',
+      'É uma iniciativa que monitora e compara o desenvolvimento digital dos governos federal, estaduais e municipais brasileiros, organizada segundo os dez objetivos da Estratégia Nacional de Governo Digital (ENGD).',
   },
   {
-    pergunta: 'Como o índice de maturidade é calculado?',
+    pergunta: 'Como o Índice de Desenvolvimento Digital é calculado?',
     resposta:
       'Cada ente recebe uma nota de 0 a 100 em cada objetivo da ENGD, a partir de variáveis extraídas de fontes públicas (IBGE, CGU, ABEP-TIC, entre outras). A plataforma não calcula nem exibe uma média geral entre todos os objetivos — os escores são sempre apresentados diante de um objetivo (ou de um recorte temático) específico.',
   },
