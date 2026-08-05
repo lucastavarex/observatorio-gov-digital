@@ -43,7 +43,7 @@ export type ObjetivoScore = {
   numero: number
   titulo: string
   descricao: string
-  /** Sub-índice 0–100; `null` quando o objetivo não tem cobertura nesse nível. */
+  /** Índice (UI) 0–100; `null` quando o objetivo não tem cobertura nesse nível. Campo de dados: `sub_indice`. */
   nota: number | null
   posicaoNoObjetivo: number | null
   variaveis: Variavel[]
@@ -236,14 +236,14 @@ export type RankingItem = {
   slug: string
   nome: string
   codigo: string
-  /** Sub-índice do objetivo pelo qual se ordena. */
+  /** Índice do objetivo pelo qual se ordena (rótulo UI: Índice). */
   valorPrincipal: number
   subIndice: number | null
   posicao: number
 }
 
 /**
- * Ranking de entes do nível pelo sub-índice de um objetivo.
+ * Ranking de entes do nível pelo índice de um objetivo.
  */
 export function rankingDoNivel(
   nivel: Nivel,

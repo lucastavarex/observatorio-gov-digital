@@ -158,6 +158,15 @@ Fontes: **Plus Jakarta Sans** (sans) · **JetBrains Mono** (mono). Idioma: `pt-B
 
 ## Convenções do projeto
 
+### Nomenclatura de métricas (UI)
+
+Na plataforma, a nota **0–100 de um ente em um objetivo da ENGD** chama-se **Índice** (não “Sub-índice”).
+
+- **Índice** — métrica principal no ranking, mapa, detalhe do ente e tips (`GLOSSARIO.subIndice` em `src/data/help-copy.ts`).
+- **Índice geral / média entre objetivos** — **não** exibir na UI (decisão de produto).
+- No código/dados o campo pode continuar `sub_indice` / `subIndice` (legado de schema); em **copy e labels**, use só “Índice” / “índice”.
+- “Subíndice” em metodologia/anexo sobre iESGo (TCU) refere-se a índices compostos de terceiros — não renomear esses trechos históricos.
+
 ### Nomenclatura de arquivos
 
 Use **kebab-case** para todos os arquivos de componentes, hooks e utilitários:

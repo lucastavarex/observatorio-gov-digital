@@ -123,10 +123,8 @@ export function EnteDetail({
           </div>
           <div className="flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
             <span className="inline-flex items-center justify-end gap-1 pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
-              Sub-índice do objetivo
-              <InfoTip label="O que é o sub-índice?">
-                {GLOSSARIO.subIndice}
-              </InfoTip>
+              Índice do objetivo
+              <InfoTip label="O que é o índice?">{GLOSSARIO.subIndice}</InfoTip>
             </span>
             <span className="block bg-linear-to-br from-primary to-primary-glow bg-clip-text text-7xl font-bold leading-tight tracking-tight tabular-nums text-transparent sm:text-8xl">
               {objetivoAtivo?.nota != null
@@ -186,7 +184,7 @@ export function EnteDetail({
                 Posição no objetivo
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Distribuição do sub-índice de {objetivoAtivo.titulo} entre os{' '}
+                Distribuição do índice de {objetivoAtivo.titulo} entre os{' '}
                 {entesNoObjetivo.length} entes, com destaque para {ente.nome}.
               </p>
               <div className="mt-12">
@@ -204,10 +202,8 @@ export function EnteDetail({
         <div className="mt-14 flex items-center justify-between text-xs font-medium uppercase tracking-wide text-muted-foreground">
           <span>Objetivo da ENGD</span>
           <span className="inline-flex items-center gap-1 normal-case tracking-normal">
-            <span className="uppercase tracking-wide">Sub-índice (0–100)</span>
-            <InfoTip label="O que é o sub-índice?">
-              {GLOSSARIO.subIndice}
-            </InfoTip>
+            <span className="uppercase tracking-wide">Índice (0–100)</span>
+            <InfoTip label="O que é o índice?">{GLOSSARIO.subIndice}</InfoTip>
           </span>
         </div>
 

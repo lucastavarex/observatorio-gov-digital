@@ -190,7 +190,7 @@ export function RankingExplorer() {
         </h1>
         <p className="mt-6 max-w-2xl text-base text-muted-foreground leading-relaxed">
           Escolha um nível de governo e um objetivo da ENGD (ou uma categoria
-          temática) para ordenar os entes pelo sub-índice correspondente. Não há
+          temática) para ordenar os entes pelo índice correspondente. Não há
           média geral entre objetivos.
         </p>
 
@@ -299,8 +299,8 @@ export function RankingExplorer() {
                       ? 'Score da tag de cada ente no mapa do Brasil (0–100).'
                       : 'Quantidade de entes por faixa de score da tag (0–100).'
                     : vista === 'mapa' && podeMapa
-                      ? 'Sub-índice de cada ente no mapa do Brasil (0–100).'
-                      : 'Quantidade de entes por faixa de sub-índice (0–100).'}
+                      ? 'Índice de cada ente no mapa do Brasil (0–100).'
+                      : 'Quantidade de entes por faixa de índice (0–100).'}
                 </p>
               </div>
               {podeMapa && (
@@ -342,7 +342,7 @@ export function RankingExplorer() {
           <EnteRankingList
             entes={lista}
             basePath={link(`/ranking/${nivel.key}`)}
-            colunaValor={modo === 'tematicas' ? 'Score da tag' : 'Sub-índice'}
+            colunaValor={modo === 'tematicas' ? 'Score da tag' : 'Índice'}
             colunaValorTip={
               modo === 'tematicas' ? GLOSSARIO.scoreTag : GLOSSARIO.subIndice
             }

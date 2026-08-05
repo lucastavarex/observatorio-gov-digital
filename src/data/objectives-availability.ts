@@ -25,7 +25,7 @@ export const OBJETIVOS_PRECARIOS_MOCK = [
       'Séries comparáveis de autenticação e interoperabilidade de identidade.',
     ],
     porQueNaoIncluido:
-      'As fontes disponíveis não permitem construir um sub-índice comparável e auditável para todos os entes nesta edição.',
+      'As fontes disponíveis não permitem construir um índice comparável e auditável para todos os entes nesta edição.',
   },
   {
     slug: 'competencias-e-capacitacao',

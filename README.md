@@ -27,7 +27,7 @@ Está alinhado à **Estratégia Nacional de Governo Digital (ENGD)**, instituíd
 | 9 | Transparência e Participação |
 | 10 | Competências em Governo Digital |
 
-Cada objetivo recebe um sub-índice de 0 a 100. A média simples dos sub-índices compõe o **Índice OBGD** de cada ente federativo (nacional, estadual ou municipal).
+Cada objetivo recebe um **índice** de 0 a 100 (média dos indicadores daquele objetivo). Na plataforma **não** há índice geral entre objetivos — rankings e destaques são sempre por objetivo (ou por tag temática).
 
 ### Fontes de dados
 
