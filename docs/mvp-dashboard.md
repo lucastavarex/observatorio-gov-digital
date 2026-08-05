@@ -14,7 +14,7 @@
 
 ## 1. O que o cliente espera (visão geral)
 
-O Observatório Brasileiro de Governo Digital mede a **maturidade digital** do setor público brasileiro com base nos **10 objetivos da ENGD** (Estratégia Nacional de Governo Digital, Decreto 12.069/2024).
+O Observatório Brasileiro de Governo Digital mede o **desenvolvimento digital** do setor público brasileiro com base nos **10 objetivos da ENGD** (Estratégia Nacional de Governo Digital, Decreto 12.069/2024).
 
 O dashboard deve permitir que o usuário **navegue entre recortes temáticos, geográficos e temporais** para explorar índices e indicadores. Na prática, o cliente descreveu uma plataforma com:
 

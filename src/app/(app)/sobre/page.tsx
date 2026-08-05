@@ -7,7 +7,7 @@ import { observatorioLead } from '@/data/site-copy'
 export const metadata = { title: 'Sobre' }
 
 const introText =
-  'O Observatório Brasileiro de Governo Digital acompanha, de forma permanente e baseada em evidências, a maturidade digital de estados e municípios brasileiros. Reunindo indicadores sobre interoperabilidade, governança e capacidade digital do setor público, o projeto dá transparência à transformação digital do governo e ajuda a identificar gargalos e disseminar boas práticas.'
+  'O Observatório Brasileiro de Governo Digital acompanha, de forma permanente e baseada em evidências, o desenvolvimento digital de estados e municípios brasileiros. Reunindo indicadores sobre interoperabilidade, governança e capacidade digital do setor público, o projeto dá transparência à transformação digital do governo e ajuda a identificar gargalos e disseminar boas práticas.'
 
 const ENGD_TERM = 'Estratégia Nacional de Governo Digital'
 const ENGD_URL =
@@ -100,7 +100,7 @@ const historyIntro =
 const historyParagraphs = [
   'Embora o Governo Federal tenha avançado significativamente na implementação de políticas de governo digital, ainda existia a necessidade de consolidar informações provenientes de diferentes bases de dados em um ambiente único, capaz de acompanhar de forma contínua a evolução dos indicadores e apoiar a tomada de decisão.',
   'Em resposta a esse desafio, o Insper, por meio do Centro de Gestão e Políticas Públicas (CGPP), estabeleceu uma parceria com o Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e o Movimento Brasil Competitivo (MBC) para estruturar o Observatório Brasileiro de Governo Digital.',
-  'A primeira versão da plataforma reúne indicadores estratégicos organizados conforme os objetivos da Estratégia Nacional de Governo Digital, estabelecendo as bases para um sistema permanente de acompanhamento da maturidade digital do setor público brasileiro e sua evolução ao longo do tempo.',
+  'A primeira versão da plataforma reúne indicadores estratégicos organizados conforme os objetivos da Estratégia Nacional de Governo Digital, estabelecendo as bases para um sistema permanente de acompanhamento do desenvolvimento digital do setor público brasileiro e sua evolução ao longo do tempo.',
 ]
 
 const members: {

@@ -184,9 +184,9 @@ export function RankingExplorer() {
           Ranking
         </span>
         <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
-          Ranking de maturidade
+          Ranking de Desenvolvimento
           <br />
-          digital dos governos
+          Digital dos Governos
         </h1>
         <p className="mt-6 max-w-2xl text-base text-muted-foreground leading-relaxed">
           Escolha um nível de governo e um objetivo da ENGD (ou uma categoria
