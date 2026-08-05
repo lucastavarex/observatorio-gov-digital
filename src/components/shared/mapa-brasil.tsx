@@ -24,7 +24,7 @@ function interpolarCor(t: number): string {
 
 export function MapaBrasil({
   dados,
-  valorLabel = 'Sub-índice',
+  valorLabel = 'Índice',
 }: {
   dados: DadoMapa[]
   valorLabel?: string
@@ -64,7 +64,7 @@ export function MapaBrasil({
       <svg
         viewBox={MAPA_VIEWBOX}
         role="group"
-        aria-label="Mapa do Brasil colorido por sub-índice de cada ente"
+        aria-label="Mapa do Brasil colorido por índice de cada ente"
         className="mx-auto block h-auto w-full max-w-md"
       >
         {estadosMapa.map(estado => {

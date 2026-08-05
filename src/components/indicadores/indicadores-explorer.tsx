@@ -448,13 +448,13 @@ export function IndicadoresExplorer() {
                       <h2 className="font-bold text-foreground text-sm">
                         Perfil por objetivo
                       </h2>
-                      <InfoTip label="O que é o sub-índice?">
+                      <InfoTip label="O que é o índice?">
                         {GLOSSARIO.subIndice}
                       </InfoTip>
                     </div>
                     <p className="mt-1 text-muted-foreground text-sm">
                       Comparação dos entes selecionados nos objetivos da ENGD
-                      com cobertura de dados. Cada eixo é um sub-índice (0–100).{' '}
+                      com cobertura de dados. Cada eixo é um índice (0–100).{' '}
                       <EntendaGraficoTip modo="objetivos" />
                     </p>
                     <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-muted-foreground text-xs">

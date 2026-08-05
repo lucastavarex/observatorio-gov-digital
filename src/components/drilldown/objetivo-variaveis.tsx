@@ -65,10 +65,8 @@ export function ObjetivoVariaveis({
           </div>
           <div className="flex flex-row-reverse items-end justify-start gap-2.5 text-right sm:block sm:gap-0">
             <span className="inline-flex items-center justify-end gap-1 pb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:pb-0">
-              Sub-índice do objetivo
-              <InfoTip label="O que é o sub-índice?">
-                {GLOSSARIO.subIndice}
-              </InfoTip>
+              Índice do objetivo
+              <InfoTip label="O que é o índice?">{GLOSSARIO.subIndice}</InfoTip>
             </span>
             <span className="block bg-linear-to-br from-primary to-primary-glow bg-clip-text text-7xl font-bold leading-tight tracking-tight tabular-nums text-transparent sm:text-8xl">
               {formatScore(objetivo.nota)}

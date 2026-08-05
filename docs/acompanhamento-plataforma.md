@@ -31,7 +31,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 
 | #  | Pedido / ponto                                                      | Decisão                                                                                                               | Status                                    |
 | -- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| 1  | Não usar**média / índice geral** entre objetivos           | Remover da UI; rankings e destaques só por**objetivo** (sub-índice) ou, se houver, por **tag temática** | Feito                                     |
+| 1  | Não usar**média / índice geral** entre objetivos           | Remover da UI; rankings e destaques só por**objetivo** (índice) ou, se houver, por **tag temática** | Feito                                     |
 | 2  | Ranking pouco claro sobre o que ordena                              | Ordenar por objetivo ENGD**ou** categoria temática; label explícita; sem toggle de índice geral               | Feito                                     |
 | 3  | Página de**variável** + série histórica isolada           | Remover rota e gráfico de série; variáveis só como**lista + download** na página do objetivo                | Feito                                     |
 | 4  | **Objetivo 3** (Identificação Única) sem dados suficientes | Desabilitar na UI (chip + tooltip + toast);**manter** lacunas reais de cobertura dos objs. 8 e 10                | Feito (copy do tooltip ainda provisório) |
@@ -43,10 +43,11 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 | 9  | i18n                                                                | **Não** portar                                                                                                  | Fora de escopo                            |
 | 10 | Loading / abertura da home (protótipo)                             | Implementado com`sessionStorage`, depois **removido** (UX + SEO)                                               | Removido                                  |
 
-### Esclarecimento importante: sub-índice ≠ índice geral
+### Esclarecimento importante: índice (por objetivo) ≠ índice geral
 
 - **Índice geral / média geral** — agregado transversal dos objetivos → **proibido na UI**.
-- **Sub-índice** — nota **de um objetivo** (ou score de uma tag) → **métrica principal** do ranking e do detalhe do ente. Manter.
+- **Índice** — nota **de um objetivo** (0–100; média dos indicadores daquele objetivo) → **métrica principal** do ranking e do detalhe do ente. Na UI, o rótulo é **Índice** (antes “Sub-índice”; renomeado porque não há mais índice geral na plataforma).
+- Campo de dados / código: `sub_indice` / `subIndice` (legado de schema) — não confundir com o rótulo exibido.
 
 ---
 
@@ -81,7 +82,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 - Ordenar por objetivos ENGD ou categorias temáticas
 - Chips de objetivo (Obj. 3 desabilitado) / pills de tag
 - Distribuição + mapa (estadual) + tabela com bandeiras
-- **Sem** índice geral; coluna principal = **Sub-índice**
+- **Sem** índice geral; coluna principal = **Índice**
 - Estado compartilhável na URL: `nivel`, `por`, `objetivo` | `tema`Ex.: `/ranking?nivel=municipal&por=objetivos&objetivo=privacidade-e-seguranca`
 - Clique no ente (modo objetivos) leva `?objetivo={slug}` → detalhe dinâmico (não mais “sempre Obj. 1”)
 - Badge com nome do ente no topo da coluna do gráfico “Posição no objetivo” → **removida**

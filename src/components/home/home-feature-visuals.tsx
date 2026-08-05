@@ -98,6 +98,7 @@ export function VisualPerfil({
   const radarEixos = ativos.map(o => ({
     eixo: String(o.numero).padStart(2, '0'),
     objetivo: o.titulo,
+    slug: objectives[o.numero - 1]?.slug,
   }))
   const notaInativos = formatNotaObjetivosInativos(inativos)
 

@@ -1,9 +1,17 @@
 import { fonteById, fontes as fontesObgd, indicadores } from '@/data/obgd/load'
 import { objectives } from '@/data/objectives'
 
-/** Glossário e textos curtos para ajuda contextual (cidadão). */
+/**
+ * Glossário e textos curtos para ajuda contextual (cidadão).
+ *
+ * Nomenclatura na UI: a nota 0–100 de um ente em um objetivo chama-se **Índice**
+ * (não “Sub-índice”). Não há índice geral entre objetivos na plataforma.
+ * A chave `subIndice` abaixo é só identificador legado no código; o campo de
+ * dados continua `sub_indice`. Em copy/labels, use sempre “Índice” / “índice”.
+ */
 
 export const GLOSSARIO = {
+  /** Texto do tip “O que é o índice?” — rótulo na UI é Índice, não Sub-índice. */
   subIndice:
     'Nota de 0 a 100 de um ente em um objetivo da ENGD. É a média simples dos indicadores daquele objetivo — todos com o mesmo peso. Não é uma média entre os dez objetivos.',
   mediaDoNivel:

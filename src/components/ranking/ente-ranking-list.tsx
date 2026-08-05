@@ -30,7 +30,7 @@ type EnteRankingListProps = {
 export function EnteRankingList({
   entes,
   basePath,
-  colunaValor = 'Sub-índice',
+  colunaValor = 'Índice',
   colunaSecundaria,
   colunaValorTip,
   nivelKey,
