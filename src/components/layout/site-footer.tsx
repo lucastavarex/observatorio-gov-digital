@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 
+import { BrandLogo } from '@/components/layout/brand-logo'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 
 type FooterItem = {
@@ -50,10 +51,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div>
-            <p className="flex flex-col font-semibold text-sm leading-tight tracking-tight">
-              <span>Observatório Brasileiro</span>
-              <span>de Governo Digital</span>
-            </p>
+            <Link href={link('/')} className="inline-block">
+              <BrandLogo className="h-10 w-auto sm:h-12" />
+            </Link>
           </div>
 
           <nav className="flex flex-col gap-6 md:flex-row md:flex-wrap md:items-start md:gap-x-8 md:gap-y-8">

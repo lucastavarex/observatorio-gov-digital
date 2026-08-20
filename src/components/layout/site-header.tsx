@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import * as React from 'react'
+import { BrandLogo } from '@/components/layout/brand-logo'
 import { Button } from '@/components/ui/button'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { cn } from '@/lib/utils'
@@ -118,15 +119,8 @@ export function SiteHeader() {
       <header className="sticky top-0 z-50 w-full border-b bg-background">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo à esquerda */}
-          <Link href={link('/')} className="flex items-center gap-2.5">
-            <span className="flex flex-col leading-none">
-              <span className="text-sm font-semibold tracking-tight sm:text-base">
-                Observatório Brasileiro
-              </span>
-              <span className="-mt-0.5 text-sm font-semibold tracking-tight sm:text-base">
-                de Governo Digital
-              </span>
-            </span>
+          <Link href={link('/')} className="flex items-center">
+            <BrandLogo className="h-9 w-auto" loading="eager" />
           </Link>
 
           {/* Menu à direita (desktop) */}
