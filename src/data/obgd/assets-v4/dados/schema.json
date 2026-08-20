@@ -1,0 +1,154 @@
+{
+  "fonte": {
+    "descricao": "Base de dados de origem (14 fontes publicas).",
+    "pk": "id",
+    "campos": {
+      "id": "str -- id curto (ex.: tic_gov)",
+      "nome": "str",
+      "instituicao": "str",
+      "ano_base": "int -- ano da edicao usada (snapshot)",
+      "formato": "str|null",
+      "granularidade": "list[str]",
+      "anos_disponiveis": "list[int]"
+    },
+    "fk": {}
+  },
+  "objetivo_engd": {
+    "descricao": "Os 10 objetivos da ENGD (Decreto 12.069/2024).",
+    "pk": "id",
+    "campos": {
+      "id": "int 1..10",
+      "nome": "str",
+      "descricao": "str"
+    },
+    "fk": {}
+  },
+  "dimensao_conceitual": {
+    "descricao": "As 3 dimensoes conceituais do marco teorico (cap02).",
+    "pk": "id",
+    "campos": {
+      "id": "str -- slug (capacidade/uso_politicas/valor_publico)",
+      "nome": "str",
+      "descricao": "str"
+    },
+    "fk": {}
+  },
+  "dimensao_tematica": {
+    "descricao": "As 52 dimensoes tematicas que organizam os capitulos.",
+    "pk": "id",
+    "campos": {
+      "id": "int",
+      "objetivo_id": "int",
+      "nome": "str"
+    },
+    "fk": {
+      "objetivo_id": "objetivo_engd"
+    }
+  },
+  "tag": {
+    "descricao": "Temas transversais (tags) que recortam o catalogo atraves dos objetivos, para a visualizacao por tema. Multivaloradas por indicador.",
+    "pk": "id",
+    "campos": {
+      "id": "str -- slug kebab-case",
+      "nome": "str",
+      "descricao": "str",
+      "lado": "str (cidadao|gestor) -- publico tipico do tema"
+    },
+    "fk": {}
+  },
+  "ente": {
+    "descricao": "Unidade de analise: Brasil, 27 UFs, 27 capitais e os 319 municipios com >=100 mil habitantes. As capitais aparecem nos dois recortes municipais (tipo=capital, chave sigla; e tipo=municipio, chave cod_ibge) -- filtre por `tipo`.",
+    "pk": "id",
+    "campos": {
+      "id": "int",
+      "tipo": "str (nacional|uf|capital|municipio)",
+      "codigo": "str (BR | sigla UF | cod IBGE 7 dig do municipio)",
+      "nome": "str",
+      "uf_sigla": "str|null -- UF do municipio/capital",
+      "regiao": "str|null (N/NE/SE/S/CO)"
+    },
+    "fk": {}
+  },
+  "indicador": {
+    "descricao": "Catalogo de variaveis: classificacao de cada indicador.",
+    "pk": "chave",
+    "campos": {
+      "chave": "str -- fonte/indicador[_sub]",
+      "fonte_id": "str",
+      "indicador": "str",
+      "sub_itens": "list[str]|null",
+      "descricao": "str",
+      "pergunta": "str",
+      "escala": "str",
+      "populacao": "str|null",
+      "objetivo_id": "int|null -- objetivo primario",
+      "objetivos_engd": "list[int]",
+      "tags": "list[str] -- ids de tag (temas transversais; FK logica -> tag.id)",
+      "audiencia": "str|null (cidadao|gestor|ambos) -- ambito da prestacao",
+      "dimensao_conceitual_id": "str|null",
+      "dimensao_tematica_id": "int|null",
+      "agregacao": "str|null (max|mean)",
+      "bateria": "str|null -- id do grupo de itens da mesma pergunta-mae",
+      "status": "str (ativo|excluido|saturado)",
+      "motivo_exclusao": "str|null",
+      "anos_observados": "list[int]",
+      "primeiro_ano": "int|null"
+    },
+    "fk": {
+      "fonte_id": "fonte",
+      "objetivo_id": "objetivo_engd",
+      "dimensao_conceitual_id": "dimensao_conceitual",
+      "dimensao_tematica_id": "dimensao_tematica"
+    }
+  },
+  "indicador_valor": {
+    "descricao": "Observacoes: valor normalizado de cada indicador por ente.",
+    "pk": null,
+    "campos": {
+      "indicador_chave": "str|null -- FK para indicador",
+      "fonte_id": "str",
+      "indicador": "str",
+      "sub_itens": "str",
+      "ente_id": "int",
+      "ano": "int|null",
+      "valor_normalizado": "float 0-100",
+      "escala": "str",
+      "populacao": "str|null",
+      "dimensao": "str (nacional|estadual|capitais)"
+    },
+    "fk": {
+      "indicador_chave": "indicador",
+      "fonte_id": "fonte",
+      "ente_id": "ente"
+    }
+  },
+  "indice_objetivo": {
+    "descricao": "Sub-indice (0-100) por ente x objetivo x edicao do indice.",
+    "pk": null,
+    "campos": {
+      "ente_id": "int",
+      "objetivo_id": "int",
+      "ano_indice": "int|null -- ano da EDICAO do indice (nao das fontes); de loader_postgres.ANO_INDICE",
+      "sub_indice": "float 0-100",
+      "n_indicadores": "int|null"
+    },
+    "fk": {
+      "ente_id": "ente",
+      "objetivo_id": "objetivo_engd"
+    }
+  },
+  "indice_geral": {
+    "descricao": "Indice geral (0-100) por ente x edicao. PROVISORIO: a media geral pode ser removida pelo pesquisador.",
+    "pk": null,
+    "campos": {
+      "ente_id": "int",
+      "ano_indice": "int|null -- ano da EDICAO do indice (nao das fontes)",
+      "indice_geral": "float 0-100 (PROVISORIO)",
+      "n_objetivos_com_dados": "int",
+      "provisorio": "bool"
+    },
+    "fk": {
+      "ente_id": "ente"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "ano_indice": null,
+  "escala": "0-100",
+  "entidades": [
+    "fonte",
+    "objetivo_engd",
+    "dimensao_conceitual",
+    "dimensao_tematica",
+    "tag",
+    "ente",
+    "indicador",
+    "indicador_valor",
+    "indice_objetivo",
+    "indice_geral"
+  ],
+  "nota": "ano_indice = ano da EDICAO do indice (loader_postgres.ANO_INDICE), nao o ano das fontes. indice_geral e provisorio."
+}

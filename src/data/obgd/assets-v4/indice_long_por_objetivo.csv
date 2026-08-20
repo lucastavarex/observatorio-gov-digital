@@ -1,0 +1,2676 @@
+nivel,unidade,unidade_nome,objetivo,objetivo_nome,ano_indice,sub_indice,indice_geral,n_objetivos_com_dados,posicao_no_objetivo
+nacional,BR,Brasil,1,Governança do Governo Digital,,65.25,57.89,10.0,1
+nacional,BR,Brasil,2,Qualidade dos Serviços Digitais,,59.91,57.89,10.0,1
+nacional,BR,Brasil,3,Identificação Única,,48.98,57.89,10.0,1
+nacional,BR,Brasil,4,Segurança e LGPD,,43.19,57.89,10.0,1
+nacional,BR,Brasil,5,Dados e Interoperabilidade,,61.11,57.89,10.0,1
+nacional,BR,Brasil,6,Infraestrutura,,57.95,57.89,10.0,1
+nacional,BR,Brasil,7,Inovação e Tecnologias Emergentes,,54.83,57.89,10.0,1
+nacional,BR,Brasil,8,Eficiência e Processos,,67.0,57.89,10.0,1
+nacional,BR,Brasil,9,Transparência e Participação,,54.82,57.89,10.0,1
+nacional,BR,Brasil,10,Competências em Governo Digital,,65.87,57.89,10.0,1
+uf,RO,Rondônia,1,Governança do Governo Digital,,100.0,71.6,9.0,1
+uf,RO,Rondônia,2,Qualidade dos Serviços Digitais,,73.69,71.6,9.0,12
+uf,RO,Rondônia,3,Identificação Única,,100.0,71.6,9.0,1
+uf,RO,Rondônia,4,Segurança e LGPD,,0.0,71.6,9.0,27
+uf,RO,Rondônia,5,Dados e Interoperabilidade,,50.0,71.6,9.0,13
+uf,RO,Rondônia,6,Infraestrutura,,100.0,71.6,9.0,1
+uf,RO,Rondônia,7,Inovação e Tecnologias Emergentes,,100.0,71.6,9.0,1
+uf,RO,Rondônia,8,Eficiência e Processos,,100.0,71.6,9.0,1
+uf,RO,Rondônia,9,Transparência e Participação,,20.74,71.6,9.0,27
+uf,AC,Acre,1,Governança do Governo Digital,,100.0,74.55,9.0,1
+uf,AC,Acre,2,Qualidade dos Serviços Digitais,,85.19,74.55,9.0,5
+uf,AC,Acre,3,Identificação Única,,100.0,74.55,9.0,1
+uf,AC,Acre,4,Segurança e LGPD,,60.0,74.55,9.0,17
+uf,AC,Acre,5,Dados e Interoperabilidade,,75.0,74.55,9.0,2
+uf,AC,Acre,6,Infraestrutura,,50.0,74.55,9.0,17
+uf,AC,Acre,7,Inovação e Tecnologias Emergentes,,40.0,74.55,9.0,23
+uf,AC,Acre,8,Eficiência e Processos,,100.0,74.55,9.0,1
+uf,AC,Acre,9,Transparência e Participação,,60.76,74.55,9.0,15
+uf,AM,Amazonas,1,Governança do Governo Digital,,0.0,38.14,9.0,18
+uf,AM,Amazonas,2,Qualidade dos Serviços Digitais,,33.56,38.14,9.0,25
+uf,AM,Amazonas,3,Identificação Única,,50.0,38.14,9.0,19
+uf,AM,Amazonas,4,Segurança e LGPD,,60.0,38.14,9.0,17
+uf,AM,Amazonas,5,Dados e Interoperabilidade,,19.64,38.14,9.0,18
+uf,AM,Amazonas,6,Infraestrutura,,50.0,38.14,9.0,17
+uf,AM,Amazonas,7,Inovação e Tecnologias Emergentes,,60.0,38.14,9.0,20
+uf,AM,Amazonas,8,Eficiência e Processos,,0.0,38.14,9.0,20
+uf,AM,Amazonas,9,Transparência e Participação,,70.02,38.14,9.0,10
+uf,RR,Roraima,1,Governança do Governo Digital,,0.0,34.96,9.0,18
+uf,RR,Roraima,2,Qualidade dos Serviços Digitais,,30.83,34.96,9.0,26
+uf,RR,Roraima,3,Identificação Única,,66.65,34.96,9.0,14
+uf,RR,Roraima,4,Segurança e LGPD,,40.0,34.96,9.0,22
+uf,RR,Roraima,5,Dados e Interoperabilidade,,12.5,34.96,9.0,23
+uf,RR,Roraima,6,Infraestrutura,,50.0,34.96,9.0,17
+uf,RR,Roraima,7,Inovação e Tecnologias Emergentes,,60.0,34.96,9.0,20
+uf,RR,Roraima,8,Eficiência e Processos,,0.0,34.96,9.0,20
+uf,RR,Roraima,9,Transparência e Participação,,54.66,34.96,9.0,20
+uf,PA,Pará,1,Governança do Governo Digital,,33.3,58.15,9.0,12
+uf,PA,Pará,2,Qualidade dos Serviços Digitais,,43.61,58.15,9.0,22
+uf,PA,Pará,3,Identificação Única,,50.0,58.15,9.0,19
+uf,PA,Pará,4,Segurança e LGPD,,100.0,58.15,9.0,1
+uf,PA,Pará,5,Dados e Interoperabilidade,,25.0,58.15,9.0,16
+uf,PA,Pará,6,Infraestrutura,,100.0,58.15,9.0,1
+uf,PA,Pará,7,Inovação e Tecnologias Emergentes,,20.0,58.15,9.0,27
+uf,PA,Pará,8,Eficiência e Processos,,100.0,58.15,9.0,1
+uf,PA,Pará,9,Transparência e Participação,,51.42,58.15,9.0,23
+uf,AP,Amapá,1,Governança do Governo Digital,,33.3,60.63,9.0,12
+uf,AP,Amapá,2,Qualidade dos Serviços Digitais,,56.68,60.63,9.0,18
+uf,AP,Amapá,3,Identificação Única,,100.0,60.63,9.0,1
+uf,AP,Amapá,4,Segurança e LGPD,,80.0,60.63,9.0,7
+uf,AP,Amapá,5,Dados e Interoperabilidade,,12.5,60.63,9.0,23
+uf,AP,Amapá,6,Infraestrutura,,100.0,60.63,9.0,1
+uf,AP,Amapá,7,Inovação e Tecnologias Emergentes,,80.0,60.63,9.0,10
+uf,AP,Amapá,8,Eficiência e Processos,,0.0,60.63,9.0,20
+uf,AP,Amapá,9,Transparência e Participação,,83.17,60.63,9.0,4
+uf,TO,Tocantins,1,Governança do Governo Digital,,100.0,63.78,9.0,1
+uf,TO,Tocantins,2,Qualidade dos Serviços Digitais,,78.4,63.78,9.0,10
+uf,TO,Tocantins,3,Identificação Única,,50.0,63.78,9.0,19
+uf,TO,Tocantins,4,Segurança e LGPD,,80.0,63.78,9.0,7
+uf,TO,Tocantins,5,Dados e Interoperabilidade,,28.57,63.78,9.0,15
+uf,TO,Tocantins,6,Infraestrutura,,50.0,63.78,9.0,17
+uf,TO,Tocantins,7,Inovação e Tecnologias Emergentes,,40.0,63.78,9.0,23
+uf,TO,Tocantins,8,Eficiência e Processos,,100.0,63.78,9.0,1
+uf,TO,Tocantins,9,Transparência e Participação,,47.0,63.78,9.0,26
+uf,MA,Maranhão,1,Governança do Governo Digital,,0.0,58.23,9.0,18
+uf,MA,Maranhão,2,Qualidade dos Serviços Digitais,,48.95,58.23,9.0,19
+uf,MA,Maranhão,3,Identificação Única,,50.0,58.23,9.0,19
+uf,MA,Maranhão,4,Segurança e LGPD,,60.0,58.23,9.0,17
+uf,MA,Maranhão,5,Dados e Interoperabilidade,,25.0,58.23,9.0,16
+uf,MA,Maranhão,6,Infraestrutura,,100.0,58.23,9.0,1
+uf,MA,Maranhão,7,Inovação e Tecnologias Emergentes,,80.0,58.23,9.0,10
+uf,MA,Maranhão,8,Eficiência e Processos,,100.0,58.23,9.0,1
+uf,MA,Maranhão,9,Transparência e Participação,,60.11,58.23,9.0,16
+uf,PI,Piauí,1,Governança do Governo Digital,,100.0,93.76,9.0,1
+uf,PI,Piauí,2,Qualidade dos Serviços Digitais,,92.65,93.76,9.0,1
+uf,PI,Piauí,3,Identificação Única,,100.0,93.76,9.0,1
+uf,PI,Piauí,4,Segurança e LGPD,,100.0,93.76,9.0,1
+uf,PI,Piauí,5,Dados e Interoperabilidade,,66.07,93.76,9.0,7
+uf,PI,Piauí,6,Infraestrutura,,100.0,93.76,9.0,1
+uf,PI,Piauí,7,Inovação e Tecnologias Emergentes,,100.0,93.76,9.0,1
+uf,PI,Piauí,8,Eficiência e Processos,,100.0,93.76,9.0,1
+uf,PI,Piauí,9,Transparência e Participação,,85.11,93.76,9.0,2
+uf,CE,Ceará,1,Governança do Governo Digital,,0.0,57.81,9.0,18
+uf,CE,Ceará,2,Qualidade dos Serviços Digitais,,74.25,57.81,9.0,11
+uf,CE,Ceará,3,Identificação Única,,100.0,57.81,9.0,1
+uf,CE,Ceará,4,Segurança e LGPD,,80.0,57.81,9.0,7
+uf,CE,Ceará,5,Dados e Interoperabilidade,,62.5,57.81,9.0,8
+uf,CE,Ceará,6,Infraestrutura,,100.0,57.81,9.0,1
+uf,CE,Ceará,7,Inovação e Tecnologias Emergentes,,40.0,57.81,9.0,23
+uf,CE,Ceará,8,Eficiência e Processos,,0.0,57.81,9.0,20
+uf,CE,Ceará,9,Transparência e Participação,,63.58,57.81,9.0,12
+uf,RN,Rio Grande do Norte,1,Governança do Governo Digital,,0.0,37.41,9.0,18
+uf,RN,Rio Grande do Norte,2,Qualidade dos Serviços Digitais,,28.94,37.41,9.0,27
+uf,RN,Rio Grande do Norte,3,Identificação Única,,16.65,37.41,9.0,25
+uf,RN,Rio Grande do Norte,4,Segurança e LGPD,,80.0,37.41,9.0,7
+uf,RN,Rio Grande do Norte,5,Dados e Interoperabilidade,,12.5,37.41,9.0,23
+uf,RN,Rio Grande do Norte,6,Infraestrutura,,100.0,37.41,9.0,1
+uf,RN,Rio Grande do Norte,7,Inovação e Tecnologias Emergentes,,40.0,37.41,9.0,23
+uf,RN,Rio Grande do Norte,8,Eficiência e Processos,,0.0,37.41,9.0,20
+uf,RN,Rio Grande do Norte,9,Transparência e Participação,,58.64,37.41,9.0,17
+uf,PB,Paraíba,1,Governança do Governo Digital,,0.0,50.75,9.0,18
+uf,PB,Paraíba,2,Qualidade dos Serviços Digitais,,37.95,50.75,9.0,24
+uf,PB,Paraíba,3,Identificação Única,,66.65,50.75,9.0,14
+uf,PB,Paraíba,4,Segurança e LGPD,,40.0,50.75,9.0,22
+uf,PB,Paraíba,5,Dados e Interoperabilidade,,19.64,50.75,9.0,18
+uf,PB,Paraíba,6,Infraestrutura,,50.0,50.75,9.0,17
+uf,PB,Paraíba,7,Inovação e Tecnologias Emergentes,,80.0,50.75,9.0,10
+uf,PB,Paraíba,8,Eficiência e Processos,,100.0,50.75,9.0,1
+uf,PB,Paraíba,9,Transparência e Participação,,62.53,50.75,9.0,14
+uf,PE,Pernambuco,1,Governança do Governo Digital,,100.0,80.2,9.0,1
+uf,PE,Pernambuco,2,Qualidade dos Serviços Digitais,,70.3,80.2,9.0,13
+uf,PE,Pernambuco,3,Identificação Única,,100.0,80.2,9.0,1
+uf,PE,Pernambuco,4,Segurança e LGPD,,60.0,80.2,9.0,17
+uf,PE,Pernambuco,5,Dados e Interoperabilidade,,69.64,80.2,9.0,5
+uf,PE,Pernambuco,6,Infraestrutura,,50.0,80.2,9.0,17
+uf,PE,Pernambuco,7,Inovação e Tecnologias Emergentes,,100.0,80.2,9.0,1
+uf,PE,Pernambuco,8,Eficiência e Processos,,100.0,80.2,9.0,1
+uf,PE,Pernambuco,9,Transparência e Participação,,71.87,80.2,9.0,9
+uf,AL,Alagoas,1,Governança do Governo Digital,,0.0,41.11,9.0,18
+uf,AL,Alagoas,2,Qualidade dos Serviços Digitais,,40.12,41.11,9.0,23
+uf,AL,Alagoas,3,Identificação Única,,0.0,41.11,9.0,26
+uf,AL,Alagoas,4,Segurança e LGPD,,80.0,41.11,9.0,7
+uf,AL,Alagoas,5,Dados e Interoperabilidade,,62.5,41.11,9.0,8
+uf,AL,Alagoas,6,Infraestrutura,,50.0,41.11,9.0,17
+uf,AL,Alagoas,7,Inovação e Tecnologias Emergentes,,80.0,41.11,9.0,10
+uf,AL,Alagoas,8,Eficiência e Processos,,0.0,41.11,9.0,20
+uf,AL,Alagoas,9,Transparência e Participação,,57.34,41.11,9.0,19
+uf,SE,Sergipe,1,Governança do Governo Digital,,33.3,50.77,9.0,12
+uf,SE,Sergipe,2,Qualidade dos Serviços Digitais,,47.14,50.77,9.0,21
+uf,SE,Sergipe,3,Identificação Única,,50.0,50.77,9.0,19
+uf,SE,Sergipe,4,Segurança e LGPD,,40.0,50.77,9.0,22
+uf,SE,Sergipe,5,Dados e Interoperabilidade,,17.86,50.77,9.0,22
+uf,SE,Sergipe,6,Infraestrutura,,50.0,50.77,9.0,17
+uf,SE,Sergipe,7,Inovação e Tecnologias Emergentes,,60.0,50.77,9.0,20
+uf,SE,Sergipe,8,Eficiência e Processos,,100.0,50.77,9.0,1
+uf,SE,Sergipe,9,Transparência e Participação,,58.64,50.77,9.0,17
+uf,BA,Bahia,1,Governança do Governo Digital,,33.3,49.74,9.0,12
+uf,BA,Bahia,2,Qualidade dos Serviços Digitais,,48.92,49.74,9.0,20
+uf,BA,Bahia,3,Identificação Única,,0.0,49.74,9.0,26
+uf,BA,Bahia,4,Segurança e LGPD,,20.0,49.74,9.0,25
+uf,BA,Bahia,5,Dados e Interoperabilidade,,12.5,49.74,9.0,23
+uf,BA,Bahia,6,Infraestrutura,,100.0,49.74,9.0,1
+uf,BA,Bahia,7,Inovação e Tecnologias Emergentes,,80.0,49.74,9.0,10
+uf,BA,Bahia,8,Eficiência e Processos,,100.0,49.74,9.0,1
+uf,BA,Bahia,9,Transparência e Participação,,52.98,49.74,9.0,22
+uf,MG,Minas Gerais,1,Governança do Governo Digital,,100.0,91.0,9.0,1
+uf,MG,Minas Gerais,2,Qualidade dos Serviços Digitais,,84.67,91.0,9.0,6
+uf,MG,Minas Gerais,3,Identificação Única,,100.0,91.0,9.0,1
+uf,MG,Minas Gerais,4,Segurança e LGPD,,100.0,91.0,9.0,1
+uf,MG,Minas Gerais,5,Dados e Interoperabilidade,,80.36,91.0,9.0,1
+uf,MG,Minas Gerais,6,Infraestrutura,,100.0,91.0,9.0,1
+uf,MG,Minas Gerais,7,Inovação e Tecnologias Emergentes,,80.0,91.0,9.0,10
+uf,MG,Minas Gerais,8,Eficiência e Processos,,100.0,91.0,9.0,1
+uf,MG,Minas Gerais,9,Transparência e Participação,,74.02,91.0,9.0,6
+uf,ES,Espírito Santo,1,Governança do Governo Digital,,0.0,59.24,9.0,18
+uf,ES,Espírito Santo,2,Qualidade dos Serviços Digitais,,69.98,59.24,9.0,14
+uf,ES,Espírito Santo,3,Identificação Única,,50.0,59.24,9.0,19
+uf,ES,Espírito Santo,4,Segurança e LGPD,,80.0,59.24,9.0,7
+uf,ES,Espírito Santo,5,Dados e Interoperabilidade,,19.64,59.24,9.0,18
+uf,ES,Espírito Santo,6,Infraestrutura,,50.0,59.24,9.0,17
+uf,ES,Espírito Santo,7,Inovação e Tecnologias Emergentes,,100.0,59.24,9.0,1
+uf,ES,Espírito Santo,8,Eficiência e Processos,,100.0,59.24,9.0,1
+uf,ES,Espírito Santo,9,Transparência e Participação,,63.54,59.24,9.0,13
+uf,RJ,Rio de Janeiro,1,Governança do Governo Digital,,100.0,91.48,9.0,1
+uf,RJ,Rio de Janeiro,2,Qualidade dos Serviços Digitais,,89.03,91.48,9.0,2
+uf,RJ,Rio de Janeiro,3,Identificação Única,,100.0,91.48,9.0,1
+uf,RJ,Rio de Janeiro,4,Segurança e LGPD,,100.0,91.48,9.0,1
+uf,RJ,Rio de Janeiro,5,Dados e Interoperabilidade,,67.86,91.48,9.0,6
+uf,RJ,Rio de Janeiro,6,Infraestrutura,,100.0,91.48,9.0,1
+uf,RJ,Rio de Janeiro,7,Inovação e Tecnologias Emergentes,,100.0,91.48,9.0,1
+uf,RJ,Rio de Janeiro,8,Eficiência e Processos,,100.0,91.48,9.0,1
+uf,RJ,Rio de Janeiro,9,Transparência e Participação,,66.41,91.48,9.0,11
+uf,SP,São Paulo,1,Governança do Governo Digital,,100.0,85.14,9.0,1
+uf,SP,São Paulo,2,Qualidade dos Serviços Digitais,,88.18,85.14,9.0,3
+uf,SP,São Paulo,3,Identificação Única,,100.0,85.14,9.0,1
+uf,SP,São Paulo,4,Segurança e LGPD,,100.0,85.14,9.0,1
+uf,SP,São Paulo,5,Dados e Interoperabilidade,,75.0,85.14,9.0,2
+uf,SP,São Paulo,6,Infraestrutura,,100.0,85.14,9.0,1
+uf,SP,São Paulo,7,Inovação e Tecnologias Emergentes,,80.0,85.14,9.0,10
+uf,SP,São Paulo,8,Eficiência e Processos,,50.0,85.14,9.0,18
+uf,SP,São Paulo,9,Transparência e Participação,,73.07,85.14,9.0,8
+uf,PR,Paraná,1,Governança do Governo Digital,,0.0,62.99,9.0,18
+uf,PR,Paraná,2,Qualidade dos Serviços Digitais,,68.03,62.99,9.0,15
+uf,PR,Paraná,3,Identificação Única,,100.0,62.99,9.0,1
+uf,PR,Paraná,4,Segurança e LGPD,,80.0,62.99,9.0,7
+uf,PR,Paraná,5,Dados e Interoperabilidade,,19.64,62.99,9.0,18
+uf,PR,Paraná,6,Infraestrutura,,100.0,62.99,9.0,1
+uf,PR,Paraná,7,Inovação e Tecnologias Emergentes,,100.0,62.99,9.0,1
+uf,PR,Paraná,8,Eficiência e Processos,,50.0,62.99,9.0,18
+uf,PR,Paraná,9,Transparência e Participação,,49.19,62.99,9.0,25
+uf,SC,Santa Catarina,1,Governança do Governo Digital,,0.0,48.65,9.0,18
+uf,SC,Santa Catarina,2,Qualidade dos Serviços Digitais,,58.24,48.65,9.0,17
+uf,SC,Santa Catarina,3,Identificação Única,,66.65,48.65,9.0,14
+uf,SC,Santa Catarina,4,Segurança e LGPD,,60.0,48.65,9.0,17
+uf,SC,Santa Catarina,5,Dados e Interoperabilidade,,73.22,48.65,9.0,4
+uf,SC,Santa Catarina,6,Infraestrutura,,50.0,48.65,9.0,17
+uf,SC,Santa Catarina,7,Inovação e Tecnologias Emergentes,,80.0,48.65,9.0,10
+uf,SC,Santa Catarina,8,Eficiência e Processos,,0.0,48.65,9.0,20
+uf,SC,Santa Catarina,9,Transparência e Participação,,49.74,48.65,9.0,24
+uf,RS,Rio Grande do Sul,1,Governança do Governo Digital,,100.0,92.07,9.0,1
+uf,RS,Rio Grande do Sul,2,Qualidade dos Serviços Digitais,,86.88,92.07,9.0,4
+uf,RS,Rio Grande do Sul,3,Identificação Única,,100.0,92.07,9.0,1
+uf,RS,Rio Grande do Sul,4,Segurança e LGPD,,100.0,92.07,9.0,1
+uf,RS,Rio Grande do Sul,5,Dados e Interoperabilidade,,62.5,92.07,9.0,8
+uf,RS,Rio Grande do Sul,6,Infraestrutura,,100.0,92.07,9.0,1
+uf,RS,Rio Grande do Sul,7,Inovação e Tecnologias Emergentes,,100.0,92.07,9.0,1
+uf,RS,Rio Grande do Sul,8,Eficiência e Processos,,100.0,92.07,9.0,1
+uf,RS,Rio Grande do Sul,9,Transparência e Participação,,79.28,92.07,9.0,5
+uf,MS,Mato Grosso do Sul,1,Governança do Governo Digital,,33.3,76.34,9.0,12
+uf,MS,Mato Grosso do Sul,2,Qualidade dos Serviços Digitais,,83.99,76.34,9.0,7
+uf,MS,Mato Grosso do Sul,3,Identificação Única,,66.65,76.34,9.0,14
+uf,MS,Mato Grosso do Sul,4,Segurança e LGPD,,80.0,76.34,9.0,7
+uf,MS,Mato Grosso do Sul,5,Dados e Interoperabilidade,,33.93,76.34,9.0,14
+uf,MS,Mato Grosso do Sul,6,Infraestrutura,,100.0,76.34,9.0,1
+uf,MS,Mato Grosso do Sul,7,Inovação e Tecnologias Emergentes,,100.0,76.34,9.0,1
+uf,MS,Mato Grosso do Sul,8,Eficiência e Processos,,100.0,76.34,9.0,1
+uf,MS,Mato Grosso do Sul,9,Transparência e Participação,,89.19,76.34,9.0,1
+uf,MT,Mato Grosso,1,Governança do Governo Digital,,100.0,72.25,9.0,1
+uf,MT,Mato Grosso,2,Qualidade dos Serviços Digitais,,83.21,72.25,9.0,9
+uf,MT,Mato Grosso,3,Identificação Única,,100.0,72.25,9.0,1
+uf,MT,Mato Grosso,4,Segurança e LGPD,,20.0,72.25,9.0,25
+uf,MT,Mato Grosso,5,Dados e Interoperabilidade,,62.5,72.25,9.0,8
+uf,MT,Mato Grosso,6,Infraestrutura,,50.0,72.25,9.0,17
+uf,MT,Mato Grosso,7,Inovação e Tecnologias Emergentes,,80.0,72.25,9.0,10
+uf,MT,Mato Grosso,8,Eficiência e Processos,,100.0,72.25,9.0,1
+uf,MT,Mato Grosso,9,Transparência e Participação,,54.57,72.25,9.0,21
+uf,GO,Goiás,1,Governança do Governo Digital,,100.0,89.93,9.0,1
+uf,GO,Goiás,2,Qualidade dos Serviços Digitais,,83.35,89.93,9.0,8
+uf,GO,Goiás,3,Identificação Única,,100.0,89.93,9.0,1
+uf,GO,Goiás,4,Segurança e LGPD,,80.0,89.93,9.0,7
+uf,GO,Goiás,5,Dados e Interoperabilidade,,62.5,89.93,9.0,8
+uf,GO,Goiás,6,Infraestrutura,,100.0,89.93,9.0,1
+uf,GO,Goiás,7,Inovação e Tecnologias Emergentes,,100.0,89.93,9.0,1
+uf,GO,Goiás,8,Eficiência e Processos,,100.0,89.93,9.0,1
+uf,GO,Goiás,9,Transparência e Participação,,83.54,89.93,9.0,3
+uf,DF,Distrito Federal,1,Governança do Governo Digital,,33.3,56.36,9.0,12
+uf,DF,Distrito Federal,2,Qualidade dos Serviços Digitais,,61.23,56.36,9.0,16
+uf,DF,Distrito Federal,3,Identificação Única,,66.65,56.36,9.0,14
+uf,DF,Distrito Federal,4,Segurança e LGPD,,80.0,56.36,9.0,7
+uf,DF,Distrito Federal,5,Dados e Interoperabilidade,,12.5,56.36,9.0,23
+uf,DF,Distrito Federal,6,Infraestrutura,,100.0,56.36,9.0,1
+uf,DF,Distrito Federal,7,Inovação e Tecnologias Emergentes,,80.0,56.36,9.0,10
+uf,DF,Distrito Federal,8,Eficiência e Processos,,0.0,56.36,9.0,20
+uf,DF,Distrito Federal,9,Transparência e Participação,,73.54,56.36,9.0,7
+capital,1100205,Porto Velho,1,Governança do Governo Digital,,100.0,77.43,7.0,1
+capital,1100205,Porto Velho,2,Qualidade dos Serviços Digitais,,67.33,77.43,7.0,23
+capital,1100205,Porto Velho,3,Identificação Única,,100.0,77.43,7.0,1
+capital,1100205,Porto Velho,4,Segurança e LGPD,,100.0,77.43,7.0,1
+capital,1100205,Porto Velho,5,Dados e Interoperabilidade,,0.0,77.43,7.0,20
+capital,1100205,Porto Velho,6,Infraestrutura,,85.8,77.43,7.0,14
+capital,1100205,Porto Velho,9,Transparência e Participação,,88.89,77.43,7.0,1
+capital,1200401,Rio Branco,1,Governança do Governo Digital,,100.0,47.09,7.0,1
+capital,1200401,Rio Branco,2,Qualidade dos Serviços Digitais,,46.67,47.09,7.0,27
+capital,1200401,Rio Branco,3,Identificação Única,,0.0,47.09,7.0,25
+capital,1200401,Rio Branco,4,Segurança e LGPD,,20.0,47.09,7.0,24
+capital,1200401,Rio Branco,5,Dados e Interoperabilidade,,0.0,47.09,7.0,20
+capital,1200401,Rio Branco,6,Infraestrutura,,85.16,47.09,7.0,15
+capital,1200401,Rio Branco,9,Transparência e Participação,,77.78,47.09,7.0,8
+capital,1302603,Manaus,1,Governança do Governo Digital,,100.0,96.48,7.0,1
+capital,1302603,Manaus,2,Qualidade dos Serviços Digitais,,89.33,96.48,7.0,8
+capital,1302603,Manaus,3,Identificação Única,,100.0,96.48,7.0,1
+capital,1302603,Manaus,4,Segurança e LGPD,,100.0,96.48,7.0,1
+capital,1302603,Manaus,5,Dados e Interoperabilidade,,100.0,96.48,7.0,1
+capital,1302603,Manaus,6,Infraestrutura,,97.12,96.48,7.0,3
+capital,1302603,Manaus,9,Transparência e Participação,,88.89,96.48,7.0,1
+capital,1400100,Boa Vista,1,Governança do Governo Digital,,100.0,62.31,7.0,1
+capital,1400100,Boa Vista,2,Qualidade dos Serviços Digitais,,83.33,62.31,7.0,12
+capital,1400100,Boa Vista,3,Identificação Única,,100.0,62.31,7.0,1
+capital,1400100,Boa Vista,4,Segurança e LGPD,,40.0,62.31,7.0,21
+capital,1400100,Boa Vista,5,Dados e Interoperabilidade,,0.0,62.31,7.0,20
+capital,1400100,Boa Vista,6,Infraestrutura,,46.16,62.31,7.0,27
+capital,1400100,Boa Vista,9,Transparência e Participação,,66.67,62.31,7.0,18
+capital,1501402,Belém,1,Governança do Governo Digital,,100.0,58.12,7.0,1
+capital,1501402,Belém,2,Qualidade dos Serviços Digitais,,75.33,58.12,7.0,20
+capital,1501402,Belém,3,Identificação Única,,100.0,58.12,7.0,1
+capital,1501402,Belém,4,Segurança e LGPD,,0.0,58.12,7.0,27
+capital,1501402,Belém,5,Dados e Interoperabilidade,,0.0,58.12,7.0,20
+capital,1501402,Belém,6,Infraestrutura,,75.98,58.12,7.0,21
+capital,1501402,Belém,9,Transparência e Participação,,55.56,58.12,7.0,24
+capital,1600303,Macapá,1,Governança do Governo Digital,,100.0,86.55,7.0,1
+capital,1600303,Macapá,2,Qualidade dos Serviços Digitais,,93.33,86.55,7.0,6
+capital,1600303,Macapá,3,Identificação Única,,100.0,86.55,7.0,1
+capital,1600303,Macapá,4,Segurança e LGPD,,60.0,86.55,7.0,16
+capital,1600303,Macapá,5,Dados e Interoperabilidade,,100.0,86.55,7.0,1
+capital,1600303,Macapá,6,Infraestrutura,,74.72,86.55,7.0,22
+capital,1600303,Macapá,9,Transparência e Participação,,77.78,86.55,7.0,8
+capital,1721000,Palmas,1,Governança do Governo Digital,,100.0,60.28,7.0,1
+capital,1721000,Palmas,2,Qualidade dos Serviços Digitais,,57.33,60.28,7.0,26
+capital,1721000,Palmas,3,Identificação Única,,100.0,60.28,7.0,1
+capital,1721000,Palmas,4,Segurança e LGPD,,40.0,60.28,7.0,21
+capital,1721000,Palmas,5,Dados e Interoperabilidade,,0.0,60.28,7.0,20
+capital,1721000,Palmas,6,Infraestrutura,,46.85,60.28,7.0,26
+capital,1721000,Palmas,9,Transparência e Participação,,77.78,60.28,7.0,8
+capital,2111300,São Luís,1,Governança do Governo Digital,,100.0,82.62,7.0,1
+capital,2111300,São Luís,2,Qualidade dos Serviços Digitais,,85.33,82.62,7.0,9
+capital,2111300,São Luís,3,Identificação Única,,100.0,82.62,7.0,1
+capital,2111300,São Luís,4,Segurança e LGPD,,60.0,82.62,7.0,16
+capital,2111300,São Luís,5,Dados e Interoperabilidade,,100.0,82.62,7.0,1
+capital,2111300,São Luís,6,Infraestrutura,,66.34,82.62,7.0,24
+capital,2111300,São Luís,9,Transparência e Participação,,66.67,82.62,7.0,18
+capital,2211001,Teresina,1,Governança do Governo Digital,,100.0,76.01,7.0,1
+capital,2211001,Teresina,2,Qualidade dos Serviços Digitais,,80.0,76.01,7.0,17
+capital,2211001,Teresina,3,Identificação Única,,100.0,76.01,7.0,1
+capital,2211001,Teresina,4,Segurança e LGPD,,100.0,76.01,7.0,1
+capital,2211001,Teresina,5,Dados e Interoperabilidade,,0.0,76.01,7.0,20
+capital,2211001,Teresina,6,Infraestrutura,,96.51,76.01,7.0,4
+capital,2211001,Teresina,9,Transparência e Participação,,55.56,76.01,7.0,24
+capital,2304400,Fortaleza,1,Governança do Governo Digital,,100.0,85.24,7.0,1
+capital,2304400,Fortaleza,2,Qualidade dos Serviços Digitais,,84.0,85.24,7.0,11
+capital,2304400,Fortaleza,3,Identificação Única,,100.0,85.24,7.0,1
+capital,2304400,Fortaleza,4,Segurança e LGPD,,80.0,85.24,7.0,10
+capital,2304400,Fortaleza,5,Dados e Interoperabilidade,,100.0,85.24,7.0,1
+capital,2304400,Fortaleza,6,Infraestrutura,,77.11,85.24,7.0,19
+capital,2304400,Fortaleza,9,Transparência e Participação,,55.56,85.24,7.0,24
+capital,2408102,Natal,1,Governança do Governo Digital,,100.0,77.19,7.0,1
+capital,2408102,Natal,2,Qualidade dos Serviços Digitais,,82.0,77.19,7.0,14
+capital,2408102,Natal,3,Identificação Única,,100.0,77.19,7.0,1
+capital,2408102,Natal,4,Segurança e LGPD,,20.0,77.19,7.0,24
+capital,2408102,Natal,5,Dados e Interoperabilidade,,100.0,77.19,7.0,1
+capital,2408102,Natal,6,Infraestrutura,,77.22,77.19,7.0,17
+capital,2408102,Natal,9,Transparência e Participação,,61.11,77.19,7.0,23
+capital,2507507,João Pessoa,1,Governança do Governo Digital,,100.0,87.18,7.0,1
+capital,2507507,João Pessoa,2,Qualidade dos Serviços Digitais,,94.67,87.18,7.0,5
+capital,2507507,João Pessoa,3,Identificação Única,,100.0,87.18,7.0,1
+capital,2507507,João Pessoa,4,Segurança e LGPD,,60.0,87.18,7.0,16
+capital,2507507,João Pessoa,5,Dados e Interoperabilidade,,100.0,87.18,7.0,1
+capital,2507507,João Pessoa,6,Infraestrutura,,66.72,87.18,7.0,23
+capital,2507507,João Pessoa,9,Transparência e Participação,,88.89,87.18,7.0,1
+capital,2611606,Recife,1,Governança do Governo Digital,,100.0,91.47,7.0,1
+capital,2611606,Recife,2,Qualidade dos Serviços Digitais,,85.33,91.47,7.0,9
+capital,2611606,Recife,3,Identificação Única,,100.0,91.47,7.0,1
+capital,2611606,Recife,4,Segurança e LGPD,,80.0,91.47,7.0,10
+capital,2611606,Recife,5,Dados e Interoperabilidade,,100.0,91.47,7.0,1
+capital,2611606,Recife,6,Infraestrutura,,97.2,91.47,7.0,2
+capital,2611606,Recife,9,Transparência e Participação,,77.78,91.47,7.0,8
+capital,2704302,Maceió,1,Governança do Governo Digital,,100.0,68.98,7.0,1
+capital,2704302,Maceió,2,Qualidade dos Serviços Digitais,,58.67,68.98,7.0,25
+capital,2704302,Maceió,3,Identificação Única,,100.0,68.98,7.0,1
+capital,2704302,Maceió,4,Segurança e LGPD,,60.0,68.98,7.0,16
+capital,2704302,Maceió,5,Dados e Interoperabilidade,,0.0,68.98,7.0,20
+capital,2704302,Maceió,6,Infraestrutura,,86.44,68.98,7.0,13
+capital,2704302,Maceió,9,Transparência e Participação,,77.78,68.98,7.0,8
+capital,2800308,Aracaju,1,Governança do Governo Digital,,100.0,80.74,7.0,1
+capital,2800308,Aracaju,2,Qualidade dos Serviços Digitais,,73.33,80.74,7.0,22
+capital,2800308,Aracaju,3,Identificação Única,,100.0,80.74,7.0,1
+capital,2800308,Aracaju,4,Segurança e LGPD,,60.0,80.74,7.0,16
+capital,2800308,Aracaju,5,Dados e Interoperabilidade,,100.0,80.74,7.0,1
+capital,2800308,Aracaju,6,Infraestrutura,,87.4,80.74,7.0,8
+capital,2800308,Aracaju,9,Transparência e Participação,,44.44,80.74,7.0,27
+capital,2927408,Salvador,1,Governança do Governo Digital,,100.0,95.74,7.0,1
+capital,2927408,Salvador,2,Qualidade dos Serviços Digitais,,96.0,95.74,7.0,3
+capital,2927408,Salvador,3,Identificação Única,,100.0,95.74,7.0,1
+capital,2927408,Salvador,4,Segurança e LGPD,,100.0,95.74,7.0,1
+capital,2927408,Salvador,5,Dados e Interoperabilidade,,100.0,95.74,7.0,1
+capital,2927408,Salvador,6,Infraestrutura,,96.42,95.74,7.0,5
+capital,2927408,Salvador,9,Transparência e Participação,,77.78,95.74,7.0,8
+capital,3106200,Belo Horizonte,1,Governança do Governo Digital,,100.0,96.46,7.0,1
+capital,3106200,Belo Horizonte,2,Qualidade dos Serviços Digitais,,100.0,96.46,7.0,1
+capital,3106200,Belo Horizonte,3,Identificação Única,,100.0,96.46,7.0,1
+capital,3106200,Belo Horizonte,4,Segurança e LGPD,,100.0,96.46,7.0,1
+capital,3106200,Belo Horizonte,5,Dados e Interoperabilidade,,100.0,96.46,7.0,1
+capital,3106200,Belo Horizonte,6,Infraestrutura,,97.47,96.46,7.0,1
+capital,3106200,Belo Horizonte,9,Transparência e Participação,,77.78,96.46,7.0,8
+capital,3205309,Vitória,1,Governança do Governo Digital,,100.0,75.78,7.0,1
+capital,3205309,Vitória,2,Qualidade dos Serviços Digitais,,83.33,75.78,7.0,12
+capital,3205309,Vitória,3,Identificação Única,,0.0,75.78,7.0,25
+capital,3205309,Vitória,4,Segurança e LGPD,,80.0,75.78,7.0,10
+capital,3205309,Vitória,5,Dados e Interoperabilidade,,100.0,75.78,7.0,1
+capital,3205309,Vitória,6,Infraestrutura,,78.23,75.78,7.0,16
+capital,3205309,Vitória,9,Transparência e Participação,,88.89,75.78,7.0,1
+capital,3304557,Rio de Janeiro,1,Governança do Governo Digital,,100.0,87.94,7.0,1
+capital,3304557,Rio de Janeiro,2,Qualidade dos Serviços Digitais,,82.0,87.94,7.0,14
+capital,3304557,Rio de Janeiro,3,Identificação Única,,100.0,87.94,7.0,1
+capital,3304557,Rio de Janeiro,4,Segurança e LGPD,,80.0,87.94,7.0,10
+capital,3304557,Rio de Janeiro,5,Dados e Interoperabilidade,,100.0,87.94,7.0,1
+capital,3304557,Rio de Janeiro,6,Infraestrutura,,86.94,87.94,7.0,10
+capital,3304557,Rio de Janeiro,9,Transparência e Participação,,66.67,87.94,7.0,18
+capital,3550308,São Paulo,1,Governança do Governo Digital,,100.0,92.85,7.0,1
+capital,3550308,São Paulo,2,Qualidade dos Serviços Digitais,,76.0,92.85,7.0,19
+capital,3550308,São Paulo,3,Identificação Única,,100.0,92.85,7.0,1
+capital,3550308,São Paulo,4,Segurança e LGPD,,100.0,92.85,7.0,1
+capital,3550308,São Paulo,5,Dados e Interoperabilidade,,100.0,92.85,7.0,1
+capital,3550308,São Paulo,6,Infraestrutura,,96.15,92.85,7.0,6
+capital,3550308,São Paulo,9,Transparência e Participação,,77.78,92.85,7.0,8
+capital,4106902,Curitiba,1,Governança do Governo Digital,,100.0,95.09,7.0,1
+capital,4106902,Curitiba,2,Qualidade dos Serviços Digitais,,100.0,95.09,7.0,1
+capital,4106902,Curitiba,3,Identificação Única,,100.0,95.09,7.0,1
+capital,4106902,Curitiba,4,Segurança e LGPD,,100.0,95.09,7.0,1
+capital,4106902,Curitiba,5,Dados e Interoperabilidade,,100.0,95.09,7.0,1
+capital,4106902,Curitiba,6,Infraestrutura,,87.84,95.09,7.0,7
+capital,4106902,Curitiba,9,Transparência e Participação,,77.78,95.09,7.0,8
+capital,4205407,Florianópolis,1,Governança do Governo Digital,,100.0,71.91,7.0,1
+capital,4205407,Florianópolis,2,Qualidade dos Serviços Digitais,,77.33,71.91,7.0,18
+capital,4205407,Florianópolis,3,Identificação Única,,100.0,71.91,7.0,1
+capital,4205407,Florianópolis,4,Segurança e LGPD,,80.0,71.91,7.0,10
+capital,4205407,Florianópolis,5,Dados e Interoperabilidade,,0.0,71.91,7.0,20
+capital,4205407,Florianópolis,6,Infraestrutura,,57.18,71.91,7.0,25
+capital,4205407,Florianópolis,9,Transparência e Participação,,88.89,71.91,7.0,1
+capital,4314902,Porto Alegre,1,Governança do Governo Digital,,100.0,79.47,7.0,1
+capital,4314902,Porto Alegre,2,Qualidade dos Serviços Digitais,,92.0,79.47,7.0,7
+capital,4314902,Porto Alegre,3,Identificação Única,,0.0,79.47,7.0,25
+capital,4314902,Porto Alegre,4,Segurança e LGPD,,100.0,79.47,7.0,1
+capital,4314902,Porto Alegre,5,Dados e Interoperabilidade,,100.0,79.47,7.0,1
+capital,4314902,Porto Alegre,6,Infraestrutura,,86.54,79.47,7.0,12
+capital,4314902,Porto Alegre,9,Transparência e Participação,,77.78,79.47,7.0,8
+capital,5002704,Campo Grande,1,Governança do Governo Digital,,100.0,81.1,7.0,1
+capital,5002704,Campo Grande,2,Qualidade dos Serviços Digitais,,74.0,81.1,7.0,21
+capital,5002704,Campo Grande,3,Identificação Única,,100.0,81.1,7.0,1
+capital,5002704,Campo Grande,4,Segurança e LGPD,,40.0,81.1,7.0,21
+capital,5002704,Campo Grande,5,Dados e Interoperabilidade,,100.0,81.1,7.0,1
+capital,5002704,Campo Grande,6,Infraestrutura,,87.03,81.1,7.0,9
+capital,5002704,Campo Grande,9,Transparência e Participação,,66.67,81.1,7.0,18
+capital,5103403,Cuiabá,1,Governança do Governo Digital,,100.0,86.37,7.0,1
+capital,5103403,Cuiabá,2,Qualidade dos Serviços Digitais,,81.33,86.37,7.0,16
+capital,5103403,Cuiabá,3,Identificação Única,,100.0,86.37,7.0,1
+capital,5103403,Cuiabá,4,Segurança e LGPD,,80.0,86.37,7.0,10
+capital,5103403,Cuiabá,5,Dados e Interoperabilidade,,100.0,86.37,7.0,1
+capital,5103403,Cuiabá,6,Infraestrutura,,76.57,86.37,7.0,20
+capital,5103403,Cuiabá,9,Transparência e Participação,,66.67,86.37,7.0,18
+capital,5208707,Goiânia,1,Governança do Governo Digital,,100.0,78.49,7.0,1
+capital,5208707,Goiânia,2,Qualidade dos Serviços Digitais,,63.33,78.49,7.0,24
+capital,5208707,Goiânia,3,Identificação Única,,100.0,78.49,7.0,1
+capital,5208707,Goiânia,4,Segurança e LGPD,,20.0,78.49,7.0,24
+capital,5208707,Goiânia,5,Dados e Interoperabilidade,,100.0,78.49,7.0,1
+capital,5208707,Goiânia,6,Infraestrutura,,77.2,78.49,7.0,18
+capital,5208707,Goiânia,9,Transparência e Participação,,88.89,78.49,7.0,1
+capital,5300108,Brasília,1,Governança do Governo Digital,,100.0,95.97,7.0,1
+capital,5300108,Brasília,2,Qualidade dos Serviços Digitais,,96.0,95.97,7.0,3
+capital,5300108,Brasília,3,Identificação Única,,100.0,95.97,7.0,1
+capital,5300108,Brasília,4,Segurança e LGPD,,100.0,95.97,7.0,1
+capital,5300108,Brasília,5,Dados e Interoperabilidade,,100.0,95.97,7.0,1
+capital,5300108,Brasília,6,Infraestrutura,,86.93,95.97,7.0,11
+capital,5300108,Brasília,9,Transparência e Participação,,88.89,95.97,7.0,1
+municipio,1100122,Ji-Paraná,1,Governança do Governo Digital,,100.0,,,1
+municipio,1100122,Ji-Paraná,2,Qualidade dos Serviços Digitais,,36.0,,,313
+municipio,1100122,Ji-Paraná,3,Identificação Única,,0.0,,,260
+municipio,1100122,Ji-Paraná,4,Segurança e LGPD,,20.0,,,190
+municipio,1100122,Ji-Paraná,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1100122,Ji-Paraná,6,Infraestrutura,,47.35,,,289
+municipio,1100122,Ji-Paraná,9,Transparência e Participação,,66.67,,,82
+municipio,1100205,Porto Velho,1,Governança do Governo Digital,,100.0,,,1
+municipio,1100205,Porto Velho,2,Qualidade dos Serviços Digitais,,67.33,,,214
+municipio,1100205,Porto Velho,3,Identificação Única,,100.0,,,1
+municipio,1100205,Porto Velho,4,Segurança e LGPD,,100.0,,,1
+municipio,1100205,Porto Velho,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1100205,Porto Velho,6,Infraestrutura,,85.8,,,73
+municipio,1100205,Porto Velho,9,Transparência e Participação,,88.89,,,3
+municipio,1200401,Rio Branco,1,Governança do Governo Digital,,100.0,,,1
+municipio,1200401,Rio Branco,2,Qualidade dos Serviços Digitais,,46.67,,,309
+municipio,1200401,Rio Branco,3,Identificação Única,,0.0,,,260
+municipio,1200401,Rio Branco,4,Segurança e LGPD,,20.0,,,190
+municipio,1200401,Rio Branco,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1200401,Rio Branco,6,Infraestrutura,,85.16,,,75
+municipio,1200401,Rio Branco,9,Transparência e Participação,,77.78,,,23
+municipio,1301902,Itacoatiara,1,Governança do Governo Digital,,100.0,,,1
+municipio,1301902,Itacoatiara,2,Qualidade dos Serviços Digitais,,36.67,,,312
+municipio,1301902,Itacoatiara,3,Identificação Única,,0.0,,,260
+municipio,1301902,Itacoatiara,4,Segurança e LGPD,,0.0,,,257
+municipio,1301902,Itacoatiara,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1301902,Itacoatiara,6,Infraestrutura,,50.66,,,277
+municipio,1301902,Itacoatiara,9,Transparência e Participação,,11.11,,,317
+municipio,1302504,Manacapuru,1,Governança do Governo Digital,,100.0,,,1
+municipio,1302504,Manacapuru,2,Qualidade dos Serviços Digitais,,31.33,,,315
+municipio,1302504,Manacapuru,3,Identificação Única,,0.0,,,260
+municipio,1302504,Manacapuru,4,Segurança e LGPD,,0.0,,,257
+municipio,1302504,Manacapuru,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1302504,Manacapuru,6,Infraestrutura,,50.78,,,276
+municipio,1302504,Manacapuru,9,Transparência e Participação,,44.44,,,256
+municipio,1302603,Manaus,1,Governança do Governo Digital,,100.0,,,1
+municipio,1302603,Manaus,2,Qualidade dos Serviços Digitais,,89.33,,,27
+municipio,1302603,Manaus,3,Identificação Única,,100.0,,,1
+municipio,1302603,Manaus,4,Segurança e LGPD,,100.0,,,1
+municipio,1302603,Manaus,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1302603,Manaus,6,Infraestrutura,,97.12,,,20
+municipio,1302603,Manaus,9,Transparência e Participação,,88.89,,,3
+municipio,1400100,Boa Vista,1,Governança do Governo Digital,,100.0,,,1
+municipio,1400100,Boa Vista,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,1400100,Boa Vista,3,Identificação Única,,100.0,,,1
+municipio,1400100,Boa Vista,4,Segurança e LGPD,,40.0,,,142
+municipio,1400100,Boa Vista,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1400100,Boa Vista,6,Infraestrutura,,46.16,,,299
+municipio,1400100,Boa Vista,9,Transparência e Participação,,66.67,,,82
+municipio,1500107,Abaetetuba,1,Governança do Governo Digital,,100.0,,,1
+municipio,1500107,Abaetetuba,2,Qualidade dos Serviços Digitais,,53.33,,,299
+municipio,1500107,Abaetetuba,3,Identificação Única,,0.0,,,260
+municipio,1500107,Abaetetuba,4,Segurança e LGPD,,20.0,,,190
+municipio,1500107,Abaetetuba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1500107,Abaetetuba,6,Infraestrutura,,31.87,,,311
+municipio,1500107,Abaetetuba,9,Transparência e Participação,,44.44,,,256
+municipio,1500602,Altamira,1,Governança do Governo Digital,,100.0,,,1
+municipio,1500602,Altamira,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,1500602,Altamira,3,Identificação Única,,100.0,,,1
+municipio,1500602,Altamira,4,Segurança e LGPD,,40.0,,,142
+municipio,1500602,Altamira,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1500602,Altamira,6,Infraestrutura,,31.86,,,312
+municipio,1500602,Altamira,9,Transparência e Participação,,66.67,,,82
+municipio,1500800,Ananindeua,1,Governança do Governo Digital,,100.0,,,1
+municipio,1500800,Ananindeua,2,Qualidade dos Serviços Digitais,,84.67,,,53
+municipio,1500800,Ananindeua,3,Identificação Única,,100.0,,,1
+municipio,1500800,Ananindeua,4,Segurança e LGPD,,0.0,,,257
+municipio,1500800,Ananindeua,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1500800,Ananindeua,6,Infraestrutura,,65.08,,,211
+municipio,1500800,Ananindeua,9,Transparência e Participação,,66.67,,,82
+municipio,1501303,Barcarena,1,Governança do Governo Digital,,100.0,,,1
+municipio,1501303,Barcarena,2,Qualidade dos Serviços Digitais,,66.0,,,226
+municipio,1501303,Barcarena,3,Identificação Única,,100.0,,,1
+municipio,1501303,Barcarena,4,Segurança e LGPD,,0.0,,,257
+municipio,1501303,Barcarena,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1501303,Barcarena,6,Infraestrutura,,55.03,,,270
+municipio,1501303,Barcarena,9,Transparência e Participação,,44.44,,,256
+municipio,1501402,Belém,1,Governança do Governo Digital,,100.0,,,1
+municipio,1501402,Belém,2,Qualidade dos Serviços Digitais,,75.33,,,147
+municipio,1501402,Belém,3,Identificação Única,,100.0,,,1
+municipio,1501402,Belém,4,Segurança e LGPD,,0.0,,,257
+municipio,1501402,Belém,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1501402,Belém,6,Infraestrutura,,75.98,,,133
+municipio,1501402,Belém,9,Transparência e Participação,,55.56,,,168
+municipio,1501709,Bragança,1,Governança do Governo Digital,,100.0,,,1
+municipio,1501709,Bragança,2,Qualidade dos Serviços Digitais,,48.0,,,307
+municipio,1501709,Bragança,3,Identificação Única,,100.0,,,1
+municipio,1501709,Bragança,4,Segurança e LGPD,,20.0,,,190
+municipio,1501709,Bragança,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1501709,Bragança,6,Infraestrutura,,23.47,,,317
+municipio,1501709,Bragança,9,Transparência e Participação,,55.56,,,168
+municipio,1501808,Breves,1,Governança do Governo Digital,,0.0,,,312
+municipio,1501808,Breves,2,Qualidade dos Serviços Digitais,,33.33,,,314
+municipio,1501808,Breves,3,Identificação Única,,0.0,,,260
+municipio,1501808,Breves,4,Segurança e LGPD,,0.0,,,257
+municipio,1501808,Breves,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1501808,Breves,6,Infraestrutura,,38.15,,,306
+municipio,1501808,Breves,9,Transparência e Participação,,55.56,,,168
+municipio,1502103,Cametá,1,Governança do Governo Digital,,100.0,,,1
+municipio,1502103,Cametá,2,Qualidade dos Serviços Digitais,,52.67,,,303
+municipio,1502103,Cametá,3,Identificação Única,,0.0,,,260
+municipio,1502103,Cametá,4,Segurança e LGPD,,0.0,,,257
+municipio,1502103,Cametá,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1502103,Cametá,6,Infraestrutura,,30.49,,,313
+municipio,1502103,Cametá,9,Transparência e Participação,,33.33,,,301
+municipio,1502400,Castanhal,1,Governança do Governo Digital,,100.0,,,1
+municipio,1502400,Castanhal,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,1502400,Castanhal,3,Identificação Única,,100.0,,,1
+municipio,1502400,Castanhal,4,Segurança e LGPD,,20.0,,,190
+municipio,1502400,Castanhal,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1502400,Castanhal,6,Infraestrutura,,55.76,,,260
+municipio,1502400,Castanhal,9,Transparência e Participação,,44.44,,,256
+municipio,1503606,Itaituba,1,Governança do Governo Digital,,100.0,,,1
+municipio,1503606,Itaituba,2,Qualidade dos Serviços Digitais,,68.67,,,206
+municipio,1503606,Itaituba,3,Identificação Única,,100.0,,,1
+municipio,1503606,Itaituba,4,Segurança e LGPD,,80.0,,,31
+municipio,1503606,Itaituba,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1503606,Itaituba,6,Infraestrutura,,32.6,,,310
+municipio,1503606,Itaituba,9,Transparência e Participação,,66.67,,,82
+municipio,1504208,Marabá,1,Governança do Governo Digital,,100.0,,,1
+municipio,1504208,Marabá,2,Qualidade dos Serviços Digitais,,58.0,,,282
+municipio,1504208,Marabá,3,Identificação Única,,0.0,,,260
+municipio,1504208,Marabá,4,Segurança e LGPD,,60.0,,,85
+municipio,1504208,Marabá,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1504208,Marabá,6,Infraestrutura,,25.62,,,316
+municipio,1504208,Marabá,9,Transparência e Participação,,55.56,,,168
+municipio,1504422,Marituba,1,Governança do Governo Digital,,0.0,,,312
+municipio,1504422,Marituba,2,Qualidade dos Serviços Digitais,,76.0,,,141
+municipio,1504422,Marituba,3,Identificação Única,,100.0,,,1
+municipio,1504422,Marituba,4,Segurança e LGPD,,20.0,,,190
+municipio,1504422,Marituba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1504422,Marituba,6,Infraestrutura,,54.96,,,271
+municipio,1504422,Marituba,9,Transparência e Participação,,33.33,,,301
+municipio,1505502,Paragominas,1,Governança do Governo Digital,,100.0,,,1
+municipio,1505502,Paragominas,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,1505502,Paragominas,3,Identificação Única,,100.0,,,1
+municipio,1505502,Paragominas,4,Segurança e LGPD,,20.0,,,190
+municipio,1505502,Paragominas,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1505502,Paragominas,6,Infraestrutura,,64.06,,,217
+municipio,1505502,Paragominas,9,Transparência e Participação,,66.67,,,82
+municipio,1505536,Parauapebas,1,Governança do Governo Digital,,100.0,,,1
+municipio,1505536,Parauapebas,2,Qualidade dos Serviços Digitais,,70.67,,,192
+municipio,1505536,Parauapebas,3,Identificação Única,,0.0,,,260
+municipio,1505536,Parauapebas,4,Segurança e LGPD,,0.0,,,257
+municipio,1505536,Parauapebas,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1505536,Parauapebas,6,Infraestrutura,,76.57,,,124
+municipio,1505536,Parauapebas,9,Transparência e Participação,,66.67,,,82
+municipio,1506807,Santarém,1,Governança do Governo Digital,,100.0,,,1
+municipio,1506807,Santarém,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,1506807,Santarém,3,Identificação Única,,100.0,,,1
+municipio,1506807,Santarém,4,Segurança e LGPD,,80.0,,,31
+municipio,1506807,Santarém,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1506807,Santarém,6,Infraestrutura,,62.51,,,218
+municipio,1506807,Santarém,9,Transparência e Participação,,77.78,,,23
+municipio,1600303,Macapá,1,Governança do Governo Digital,,100.0,,,1
+municipio,1600303,Macapá,2,Qualidade dos Serviços Digitais,,93.33,,,12
+municipio,1600303,Macapá,3,Identificação Única,,100.0,,,1
+municipio,1600303,Macapá,4,Segurança e LGPD,,60.0,,,85
+municipio,1600303,Macapá,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1600303,Macapá,6,Infraestrutura,,74.72,,,139
+municipio,1600303,Macapá,9,Transparência e Participação,,77.78,,,23
+municipio,1600600,Santana,1,Governança do Governo Digital,,100.0,,,1
+municipio,1600600,Santana,2,Qualidade dos Serviços Digitais,,86.67,,,37
+municipio,1600600,Santana,3,Identificação Única,,100.0,,,1
+municipio,1600600,Santana,4,Segurança e LGPD,,60.0,,,85
+municipio,1600600,Santana,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1600600,Santana,6,Infraestrutura,,55.32,,,265
+municipio,1600600,Santana,9,Transparência e Participação,,66.67,,,82
+municipio,1702109,Araguaína,1,Governança do Governo Digital,,100.0,,,1
+municipio,1702109,Araguaína,2,Qualidade dos Serviços Digitais,,90.0,,,22
+municipio,1702109,Araguaína,3,Identificação Única,,100.0,,,1
+municipio,1702109,Araguaína,4,Segurança e LGPD,,20.0,,,190
+municipio,1702109,Araguaína,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,1702109,Araguaína,6,Infraestrutura,,57.62,,,225
+municipio,1702109,Araguaína,9,Transparência e Participação,,55.56,,,168
+municipio,1721000,Palmas,1,Governança do Governo Digital,,100.0,,,1
+municipio,1721000,Palmas,2,Qualidade dos Serviços Digitais,,57.33,,,283
+municipio,1721000,Palmas,3,Identificação Única,,100.0,,,1
+municipio,1721000,Palmas,4,Segurança e LGPD,,40.0,,,142
+municipio,1721000,Palmas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,1721000,Palmas,6,Infraestrutura,,46.85,,,294
+municipio,1721000,Palmas,9,Transparência e Participação,,77.78,,,23
+municipio,2100055,Açailândia,1,Governança do Governo Digital,,100.0,,,1
+municipio,2100055,Açailândia,2,Qualidade dos Serviços Digitais,,67.33,,,214
+municipio,2100055,Açailândia,3,Identificação Única,,100.0,,,1
+municipio,2100055,Açailândia,4,Segurança e LGPD,,80.0,,,31
+municipio,2100055,Açailândia,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2100055,Açailândia,6,Infraestrutura,,55.25,,,267
+municipio,2100055,Açailândia,9,Transparência e Participação,,55.56,,,168
+municipio,2101202,Bacabal,1,Governança do Governo Digital,,100.0,,,1
+municipio,2101202,Bacabal,2,Qualidade dos Serviços Digitais,,50.0,,,306
+municipio,2101202,Bacabal,3,Identificação Única,,0.0,,,260
+municipio,2101202,Bacabal,4,Segurança e LGPD,,40.0,,,142
+municipio,2101202,Bacabal,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2101202,Bacabal,6,Infraestrutura,,44.83,,,304
+municipio,2101202,Bacabal,9,Transparência e Participação,,44.44,,,256
+municipio,2101400,Balsas,1,Governança do Governo Digital,,100.0,,,1
+municipio,2101400,Balsas,2,Qualidade dos Serviços Digitais,,62.67,,,253
+municipio,2101400,Balsas,3,Identificação Única,,100.0,,,1
+municipio,2101400,Balsas,4,Segurança e LGPD,,20.0,,,190
+municipio,2101400,Balsas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2101400,Balsas,6,Infraestrutura,,55.09,,,269
+municipio,2101400,Balsas,9,Transparência e Participação,,77.78,,,23
+municipio,2103000,Caxias,1,Governança do Governo Digital,,100.0,,,1
+municipio,2103000,Caxias,2,Qualidade dos Serviços Digitais,,47.33,,,308
+municipio,2103000,Caxias,3,Identificação Única,,0.0,,,260
+municipio,2103000,Caxias,4,Segurança e LGPD,,20.0,,,190
+municipio,2103000,Caxias,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2103000,Caxias,6,Infraestrutura,,52.3,,,275
+municipio,2103000,Caxias,9,Transparência e Participação,,44.44,,,256
+municipio,2103307,Codó,1,Governança do Governo Digital,,100.0,,,1
+municipio,2103307,Codó,2,Qualidade dos Serviços Digitais,,31.33,,,315
+municipio,2103307,Codó,3,Identificação Única,,0.0,,,260
+municipio,2103307,Codó,4,Segurança e LGPD,,60.0,,,85
+municipio,2103307,Codó,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2103307,Codó,6,Infraestrutura,,52.46,,,274
+municipio,2103307,Codó,9,Transparência e Participação,,33.33,,,301
+municipio,2105302,Imperatriz,1,Governança do Governo Digital,,100.0,,,1
+municipio,2105302,Imperatriz,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,2105302,Imperatriz,3,Identificação Única,,100.0,,,1
+municipio,2105302,Imperatriz,4,Segurança e LGPD,,20.0,,,190
+municipio,2105302,Imperatriz,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2105302,Imperatriz,6,Infraestrutura,,75.73,,,136
+municipio,2105302,Imperatriz,9,Transparência e Participação,,55.56,,,168
+municipio,2107506,Paço do Lumiar,1,Governança do Governo Digital,,100.0,,,1
+municipio,2107506,Paço do Lumiar,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,2107506,Paço do Lumiar,3,Identificação Única,,100.0,,,1
+municipio,2107506,Paço do Lumiar,4,Segurança e LGPD,,80.0,,,31
+municipio,2107506,Paço do Lumiar,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2107506,Paço do Lumiar,6,Infraestrutura,,64.16,,,215
+municipio,2107506,Paço do Lumiar,9,Transparência e Participação,,55.56,,,168
+municipio,2111201,São José de Ribamar,1,Governança do Governo Digital,,100.0,,,1
+municipio,2111201,São José de Ribamar,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,2111201,São José de Ribamar,3,Identificação Única,,100.0,,,1
+municipio,2111201,São José de Ribamar,4,Segurança e LGPD,,0.0,,,257
+municipio,2111201,São José de Ribamar,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2111201,São José de Ribamar,6,Infraestrutura,,54.88,,,272
+municipio,2111201,São José de Ribamar,9,Transparência e Participação,,66.67,,,82
+municipio,2111300,São Luís,1,Governança do Governo Digital,,100.0,,,1
+municipio,2111300,São Luís,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,2111300,São Luís,3,Identificação Única,,100.0,,,1
+municipio,2111300,São Luís,4,Segurança e LGPD,,60.0,,,85
+municipio,2111300,São Luís,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2111300,São Luís,6,Infraestrutura,,66.34,,,205
+municipio,2111300,São Luís,9,Transparência e Participação,,66.67,,,82
+municipio,2112209,Timon,1,Governança do Governo Digital,,100.0,,,1
+municipio,2112209,Timon,2,Qualidade dos Serviços Digitais,,44.67,,,310
+municipio,2112209,Timon,3,Identificação Única,,0.0,,,260
+municipio,2112209,Timon,4,Segurança e LGPD,,20.0,,,190
+municipio,2112209,Timon,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2112209,Timon,6,Infraestrutura,,85.32,,,74
+municipio,2112209,Timon,9,Transparência e Participação,,77.78,,,23
+municipio,2207702,Parnaíba,1,Governança do Governo Digital,,100.0,,,1
+municipio,2207702,Parnaíba,2,Qualidade dos Serviços Digitais,,54.67,,,293
+municipio,2207702,Parnaíba,3,Identificação Única,,100.0,,,1
+municipio,2207702,Parnaíba,4,Segurança e LGPD,,20.0,,,190
+municipio,2207702,Parnaíba,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2207702,Parnaíba,6,Infraestrutura,,35.28,,,309
+municipio,2207702,Parnaíba,9,Transparência e Participação,,66.67,,,82
+municipio,2211001,Teresina,1,Governança do Governo Digital,,100.0,,,1
+municipio,2211001,Teresina,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,2211001,Teresina,3,Identificação Única,,100.0,,,1
+municipio,2211001,Teresina,4,Segurança e LGPD,,100.0,,,1
+municipio,2211001,Teresina,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2211001,Teresina,6,Infraestrutura,,96.51,,,23
+municipio,2211001,Teresina,9,Transparência e Participação,,55.56,,,168
+municipio,2303709,Caucaia,1,Governança do Governo Digital,,100.0,,,1
+municipio,2303709,Caucaia,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,2303709,Caucaia,3,Identificação Única,,100.0,,,1
+municipio,2303709,Caucaia,4,Segurança e LGPD,,40.0,,,142
+municipio,2303709,Caucaia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2303709,Caucaia,6,Infraestrutura,,66.55,,,201
+municipio,2303709,Caucaia,9,Transparência e Participação,,55.56,,,168
+municipio,2304202,Crato,1,Governança do Governo Digital,,100.0,,,1
+municipio,2304202,Crato,2,Qualidade dos Serviços Digitais,,60.0,,,276
+municipio,2304202,Crato,3,Identificação Única,,100.0,,,1
+municipio,2304202,Crato,4,Segurança e LGPD,,60.0,,,85
+municipio,2304202,Crato,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2304202,Crato,6,Infraestrutura,,56.98,,,241
+municipio,2304202,Crato,9,Transparência e Participação,,66.67,,,82
+municipio,2304400,Fortaleza,1,Governança do Governo Digital,,100.0,,,1
+municipio,2304400,Fortaleza,2,Qualidade dos Serviços Digitais,,84.0,,,59
+municipio,2304400,Fortaleza,3,Identificação Única,,100.0,,,1
+municipio,2304400,Fortaleza,4,Segurança e LGPD,,80.0,,,31
+municipio,2304400,Fortaleza,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2304400,Fortaleza,6,Infraestrutura,,77.11,,,113
+municipio,2304400,Fortaleza,9,Transparência e Participação,,55.56,,,168
+municipio,2306405,Itapipoca,1,Governança do Governo Digital,,0.0,,,312
+municipio,2306405,Itapipoca,2,Qualidade dos Serviços Digitais,,61.33,,,260
+municipio,2306405,Itapipoca,3,Identificação Única,,100.0,,,1
+municipio,2306405,Itapipoca,4,Segurança e LGPD,,20.0,,,190
+municipio,2306405,Itapipoca,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2306405,Itapipoca,6,Infraestrutura,,55.79,,,259
+municipio,2306405,Itapipoca,9,Transparência e Participação,,33.33,,,301
+municipio,2307304,Juazeiro do Norte,1,Governança do Governo Digital,,100.0,,,1
+municipio,2307304,Juazeiro do Norte,2,Qualidade dos Serviços Digitais,,60.0,,,276
+municipio,2307304,Juazeiro do Norte,3,Identificação Única,,0.0,,,260
+municipio,2307304,Juazeiro do Norte,4,Segurança e LGPD,,100.0,,,1
+municipio,2307304,Juazeiro do Norte,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2307304,Juazeiro do Norte,6,Infraestrutura,,77.11,,,113
+municipio,2307304,Juazeiro do Norte,9,Transparência e Participação,,66.67,,,82
+municipio,2307650,Maracanaú,1,Governança do Governo Digital,,100.0,,,1
+municipio,2307650,Maracanaú,2,Qualidade dos Serviços Digitais,,76.67,,,137
+municipio,2307650,Maracanaú,3,Identificação Única,,100.0,,,1
+municipio,2307650,Maracanaú,4,Segurança e LGPD,,20.0,,,190
+municipio,2307650,Maracanaú,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2307650,Maracanaú,6,Infraestrutura,,57.18,,,233
+municipio,2307650,Maracanaú,9,Transparência e Participação,,55.56,,,168
+municipio,2307700,Maranguape,1,Governança do Governo Digital,,0.0,,,312
+municipio,2307700,Maranguape,2,Qualidade dos Serviços Digitais,,53.33,,,299
+municipio,2307700,Maranguape,3,Identificação Única,,100.0,,,1
+municipio,2307700,Maranguape,4,Segurança e LGPD,,0.0,,,257
+municipio,2307700,Maranguape,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2307700,Maranguape,6,Infraestrutura,,37.21,,,307
+municipio,2307700,Maranguape,9,Transparência e Participação,,33.33,,,301
+municipio,2312908,Sobral,1,Governança do Governo Digital,,100.0,,,1
+municipio,2312908,Sobral,2,Qualidade dos Serviços Digitais,,77.33,,,130
+municipio,2312908,Sobral,3,Identificação Única,,100.0,,,1
+municipio,2312908,Sobral,4,Segurança e LGPD,,20.0,,,190
+municipio,2312908,Sobral,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2312908,Sobral,6,Infraestrutura,,86.29,,,70
+municipio,2312908,Sobral,9,Transparência e Participação,,77.78,,,23
+municipio,2403251,Parnamirim,1,Governança do Governo Digital,,100.0,,,1
+municipio,2403251,Parnamirim,2,Qualidade dos Serviços Digitais,,67.33,,,214
+municipio,2403251,Parnamirim,3,Identificação Única,,100.0,,,1
+municipio,2403251,Parnamirim,4,Segurança e LGPD,,0.0,,,257
+municipio,2403251,Parnamirim,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2403251,Parnamirim,6,Infraestrutura,,76.97,,,118
+municipio,2403251,Parnamirim,9,Transparência e Participação,,55.56,,,168
+municipio,2408003,Mossoró,1,Governança do Governo Digital,,100.0,,,1
+municipio,2408003,Mossoró,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,2408003,Mossoró,3,Identificação Única,,100.0,,,1
+municipio,2408003,Mossoró,4,Segurança e LGPD,,80.0,,,31
+municipio,2408003,Mossoró,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2408003,Mossoró,6,Infraestrutura,,66.8,,,193
+municipio,2408003,Mossoró,9,Transparência e Participação,,77.78,,,23
+municipio,2408102,Natal,1,Governança do Governo Digital,,100.0,,,1
+municipio,2408102,Natal,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,2408102,Natal,3,Identificação Única,,100.0,,,1
+municipio,2408102,Natal,4,Segurança e LGPD,,20.0,,,190
+municipio,2408102,Natal,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2408102,Natal,6,Infraestrutura,,77.22,,,109
+municipio,2408102,Natal,9,Transparência e Participação,,61.11,,,166
+municipio,2412005,São Gonçalo do Amarante,1,Governança do Governo Digital,,100.0,,,1
+municipio,2412005,São Gonçalo do Amarante,2,Qualidade dos Serviços Digitais,,64.0,,,239
+municipio,2412005,São Gonçalo do Amarante,3,Identificação Única,,100.0,,,1
+municipio,2412005,São Gonçalo do Amarante,4,Segurança e LGPD,,20.0,,,190
+municipio,2412005,São Gonçalo do Amarante,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2412005,São Gonçalo do Amarante,6,Infraestrutura,,55.7,,,261
+municipio,2412005,São Gonçalo do Amarante,9,Transparência e Participação,,55.56,,,168
+municipio,2504009,Campina Grande,1,Governança do Governo Digital,,100.0,,,1
+municipio,2504009,Campina Grande,2,Qualidade dos Serviços Digitais,,78.67,,,119
+municipio,2504009,Campina Grande,3,Identificação Única,,0.0,,,260
+municipio,2504009,Campina Grande,4,Segurança e LGPD,,40.0,,,142
+municipio,2504009,Campina Grande,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2504009,Campina Grande,6,Infraestrutura,,75.92,,,134
+municipio,2504009,Campina Grande,9,Transparência e Participação,,55.56,,,168
+municipio,2507507,João Pessoa,1,Governança do Governo Digital,,100.0,,,1
+municipio,2507507,João Pessoa,2,Qualidade dos Serviços Digitais,,94.67,,,8
+municipio,2507507,João Pessoa,3,Identificação Única,,100.0,,,1
+municipio,2507507,João Pessoa,4,Segurança e LGPD,,60.0,,,85
+municipio,2507507,João Pessoa,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2507507,João Pessoa,6,Infraestrutura,,66.72,,,195
+municipio,2507507,João Pessoa,9,Transparência e Participação,,88.89,,,3
+municipio,2510808,Patos,1,Governança do Governo Digital,,100.0,,,1
+municipio,2510808,Patos,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,2510808,Patos,3,Identificação Única,,100.0,,,1
+municipio,2510808,Patos,4,Segurança e LGPD,,80.0,,,31
+municipio,2510808,Patos,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2510808,Patos,6,Infraestrutura,,76.36,,,131
+municipio,2510808,Patos,9,Transparência e Participação,,77.78,,,23
+municipio,2513703,Santa Rita,1,Governança do Governo Digital,,100.0,,,1
+municipio,2513703,Santa Rita,2,Qualidade dos Serviços Digitais,,51.33,,,304
+municipio,2513703,Santa Rita,3,Identificação Única,,0.0,,,260
+municipio,2513703,Santa Rita,4,Segurança e LGPD,,0.0,,,257
+municipio,2513703,Santa Rita,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2513703,Santa Rita,6,Infraestrutura,,64.14,,,216
+municipio,2513703,Santa Rita,9,Transparência e Participação,,66.67,,,82
+municipio,2602902,Cabo de Santo Agostinho,1,Governança do Governo Digital,,100.0,,,1
+municipio,2602902,Cabo de Santo Agostinho,2,Qualidade dos Serviços Digitais,,67.33,,,214
+municipio,2602902,Cabo de Santo Agostinho,3,Identificação Única,,0.0,,,260
+municipio,2602902,Cabo de Santo Agostinho,4,Segurança e LGPD,,40.0,,,142
+municipio,2602902,Cabo de Santo Agostinho,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2602902,Cabo de Santo Agostinho,6,Infraestrutura,,45.45,,,301
+municipio,2602902,Cabo de Santo Agostinho,9,Transparência e Participação,,66.67,,,82
+municipio,2603454,Camaragibe,1,Governança do Governo Digital,,100.0,,,1
+municipio,2603454,Camaragibe,2,Qualidade dos Serviços Digitais,,44.0,,,311
+municipio,2603454,Camaragibe,3,Identificação Única,,100.0,,,1
+municipio,2603454,Camaragibe,4,Segurança e LGPD,,20.0,,,190
+municipio,2603454,Camaragibe,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2603454,Camaragibe,6,Infraestrutura,,56.67,,,247
+municipio,2603454,Camaragibe,9,Transparência e Participação,,55.56,,,168
+municipio,2604106,Caruaru,1,Governança do Governo Digital,,100.0,,,1
+municipio,2604106,Caruaru,2,Qualidade dos Serviços Digitais,,92.67,,,15
+municipio,2604106,Caruaru,3,Identificação Única,,100.0,,,1
+municipio,2604106,Caruaru,4,Segurança e LGPD,,60.0,,,85
+municipio,2604106,Caruaru,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2604106,Caruaru,6,Infraestrutura,,87.24,,,52
+municipio,2604106,Caruaru,9,Transparência e Participação,,77.78,,,23
+municipio,2606002,Garanhuns,1,Governança do Governo Digital,,100.0,,,1
+municipio,2606002,Garanhuns,2,Qualidade dos Serviços Digitais,,76.0,,,141
+municipio,2606002,Garanhuns,3,Identificação Única,,0.0,,,260
+municipio,2606002,Garanhuns,4,Segurança e LGPD,,0.0,,,257
+municipio,2606002,Garanhuns,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2606002,Garanhuns,6,Infraestrutura,,66.57,,,199
+municipio,2606002,Garanhuns,9,Transparência e Participação,,66.67,,,82
+municipio,2606804,Igarassu,1,Governança do Governo Digital,,100.0,,,1
+municipio,2606804,Igarassu,2,Qualidade dos Serviços Digitais,,30.0,,,317
+municipio,2606804,Igarassu,3,Identificação Única,,0.0,,,260
+municipio,2606804,Igarassu,4,Segurança e LGPD,,0.0,,,257
+municipio,2606804,Igarassu,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2606804,Igarassu,6,Infraestrutura,,46.67,,,297
+municipio,2606804,Igarassu,9,Transparência e Participação,,55.56,,,168
+municipio,2607901,Jaboatão dos Guararapes,1,Governança do Governo Digital,,100.0,,,1
+municipio,2607901,Jaboatão dos Guararapes,2,Qualidade dos Serviços Digitais,,88.67,,,33
+municipio,2607901,Jaboatão dos Guararapes,3,Identificação Única,,100.0,,,1
+municipio,2607901,Jaboatão dos Guararapes,4,Segurança e LGPD,,40.0,,,142
+municipio,2607901,Jaboatão dos Guararapes,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2607901,Jaboatão dos Guararapes,6,Infraestrutura,,86.11,,,72
+municipio,2607901,Jaboatão dos Guararapes,9,Transparência e Participação,,88.89,,,3
+municipio,2609600,Olinda,1,Governança do Governo Digital,,100.0,,,1
+municipio,2609600,Olinda,2,Qualidade dos Serviços Digitais,,57.33,,,283
+municipio,2609600,Olinda,3,Identificação Única,,100.0,,,1
+municipio,2609600,Olinda,4,Segurança e LGPD,,40.0,,,142
+municipio,2609600,Olinda,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2609600,Olinda,6,Infraestrutura,,66.24,,,208
+municipio,2609600,Olinda,9,Transparência e Participação,,66.67,,,82
+municipio,2610707,Paulista,1,Governança do Governo Digital,,100.0,,,1
+municipio,2610707,Paulista,2,Qualidade dos Serviços Digitais,,62.67,,,253
+municipio,2610707,Paulista,3,Identificação Única,,100.0,,,1
+municipio,2610707,Paulista,4,Segurança e LGPD,,60.0,,,85
+municipio,2610707,Paulista,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2610707,Paulista,6,Infraestrutura,,67.02,,,184
+municipio,2610707,Paulista,9,Transparência e Participação,,44.44,,,256
+municipio,2611101,Petrolina,1,Governança do Governo Digital,,100.0,,,1
+municipio,2611101,Petrolina,2,Qualidade dos Serviços Digitais,,94.67,,,8
+municipio,2611101,Petrolina,3,Identificação Única,,0.0,,,260
+municipio,2611101,Petrolina,4,Segurança e LGPD,,80.0,,,31
+municipio,2611101,Petrolina,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2611101,Petrolina,6,Infraestrutura,,96.32,,,25
+municipio,2611101,Petrolina,9,Transparência e Participação,,66.67,,,82
+municipio,2611606,Recife,1,Governança do Governo Digital,,100.0,,,1
+municipio,2611606,Recife,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,2611606,Recife,3,Identificação Única,,100.0,,,1
+municipio,2611606,Recife,4,Segurança e LGPD,,80.0,,,31
+municipio,2611606,Recife,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2611606,Recife,6,Infraestrutura,,97.2,,,19
+municipio,2611606,Recife,9,Transparência e Participação,,77.78,,,23
+municipio,2613701,São Lourenço da Mata,1,Governança do Governo Digital,,100.0,,,1
+municipio,2613701,São Lourenço da Mata,2,Qualidade dos Serviços Digitais,,58.67,,,280
+municipio,2613701,São Lourenço da Mata,3,Identificação Única,,0.0,,,260
+municipio,2613701,São Lourenço da Mata,4,Segurança e LGPD,,60.0,,,85
+municipio,2613701,São Lourenço da Mata,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2613701,São Lourenço da Mata,6,Infraestrutura,,45.1,,,303
+municipio,2613701,São Lourenço da Mata,9,Transparência e Participação,,77.78,,,23
+municipio,2616407,Vitória de Santo Antão,1,Governança do Governo Digital,,100.0,,,1
+municipio,2616407,Vitória de Santo Antão,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,2616407,Vitória de Santo Antão,3,Identificação Única,,100.0,,,1
+municipio,2616407,Vitória de Santo Antão,4,Segurança e LGPD,,60.0,,,85
+municipio,2616407,Vitória de Santo Antão,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2616407,Vitória de Santo Antão,6,Infraestrutura,,66.72,,,195
+municipio,2616407,Vitória de Santo Antão,9,Transparência e Participação,,66.67,,,82
+municipio,2700300,Arapiraca,1,Governança do Governo Digital,,100.0,,,1
+municipio,2700300,Arapiraca,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,2700300,Arapiraca,3,Identificação Única,,100.0,,,1
+municipio,2700300,Arapiraca,4,Segurança e LGPD,,40.0,,,142
+municipio,2700300,Arapiraca,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2700300,Arapiraca,6,Infraestrutura,,57.03,,,237
+municipio,2700300,Arapiraca,9,Transparência e Participação,,55.56,,,168
+municipio,2704302,Maceió,1,Governança do Governo Digital,,100.0,,,1
+municipio,2704302,Maceió,2,Qualidade dos Serviços Digitais,,58.67,,,280
+municipio,2704302,Maceió,3,Identificação Única,,100.0,,,1
+municipio,2704302,Maceió,4,Segurança e LGPD,,60.0,,,85
+municipio,2704302,Maceió,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2704302,Maceió,6,Infraestrutura,,86.44,,,66
+municipio,2704302,Maceió,9,Transparência e Participação,,77.78,,,23
+municipio,2800308,Aracaju,1,Governança do Governo Digital,,100.0,,,1
+municipio,2800308,Aracaju,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,2800308,Aracaju,3,Identificação Única,,100.0,,,1
+municipio,2800308,Aracaju,4,Segurança e LGPD,,60.0,,,85
+municipio,2800308,Aracaju,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2800308,Aracaju,6,Infraestrutura,,87.4,,,49
+municipio,2800308,Aracaju,9,Transparência e Participação,,44.44,,,256
+municipio,2802908,Itabaiana,1,Governança do Governo Digital,,100.0,,,1
+municipio,2802908,Itabaiana,2,Qualidade dos Serviços Digitais,,56.67,,,288
+municipio,2802908,Itabaiana,3,Identificação Única,,100.0,,,1
+municipio,2802908,Itabaiana,4,Segurança e LGPD,,0.0,,,257
+municipio,2802908,Itabaiana,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2802908,Itabaiana,6,Infraestrutura,,76.79,,,119
+municipio,2802908,Itabaiana,9,Transparência e Participação,,44.44,,,256
+municipio,2803500,Lagarto,1,Governança do Governo Digital,,100.0,,,1
+municipio,2803500,Lagarto,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,2803500,Lagarto,3,Identificação Única,,100.0,,,1
+municipio,2803500,Lagarto,4,Segurança e LGPD,,60.0,,,85
+municipio,2803500,Lagarto,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2803500,Lagarto,6,Infraestrutura,,55.39,,,264
+municipio,2803500,Lagarto,9,Transparência e Participação,,44.44,,,256
+municipio,2804805,Nossa Senhora do Socorro,1,Governança do Governo Digital,,100.0,,,1
+municipio,2804805,Nossa Senhora do Socorro,2,Qualidade dos Serviços Digitais,,60.0,,,276
+municipio,2804805,Nossa Senhora do Socorro,3,Identificação Única,,0.0,,,260
+municipio,2804805,Nossa Senhora do Socorro,4,Segurança e LGPD,,60.0,,,85
+municipio,2804805,Nossa Senhora do Socorro,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2804805,Nossa Senhora do Socorro,6,Infraestrutura,,56.25,,,254
+municipio,2804805,Nossa Senhora do Socorro,9,Transparência e Participação,,44.44,,,256
+municipio,2900702,Alagoinhas,1,Governança do Governo Digital,,100.0,,,1
+municipio,2900702,Alagoinhas,2,Qualidade dos Serviços Digitais,,78.67,,,119
+municipio,2900702,Alagoinhas,3,Identificação Única,,100.0,,,1
+municipio,2900702,Alagoinhas,4,Segurança e LGPD,,0.0,,,257
+municipio,2900702,Alagoinhas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2900702,Alagoinhas,6,Infraestrutura,,86.32,,,68
+municipio,2900702,Alagoinhas,9,Transparência e Participação,,55.56,,,168
+municipio,2903201,Barreiras,1,Governança do Governo Digital,,100.0,,,1
+municipio,2903201,Barreiras,2,Qualidade dos Serviços Digitais,,78.0,,,124
+municipio,2903201,Barreiras,3,Identificação Única,,100.0,,,1
+municipio,2903201,Barreiras,4,Segurança e LGPD,,0.0,,,257
+municipio,2903201,Barreiras,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2903201,Barreiras,6,Infraestrutura,,64.95,,,212
+municipio,2903201,Barreiras,9,Transparência e Participação,,66.67,,,82
+municipio,2905701,Camaçari,1,Governança do Governo Digital,,100.0,,,1
+municipio,2905701,Camaçari,2,Qualidade dos Serviços Digitais,,63.33,,,246
+municipio,2905701,Camaçari,3,Identificação Única,,100.0,,,1
+municipio,2905701,Camaçari,4,Segurança e LGPD,,0.0,,,257
+municipio,2905701,Camaçari,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2905701,Camaçari,6,Infraestrutura,,67.0,,,185
+municipio,2905701,Camaçari,9,Transparência e Participação,,55.56,,,168
+municipio,2910727,Eunápolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,2910727,Eunápolis,2,Qualidade dos Serviços Digitais,,65.33,,,227
+municipio,2910727,Eunápolis,3,Identificação Única,,0.0,,,260
+municipio,2910727,Eunápolis,4,Segurança e LGPD,,20.0,,,190
+municipio,2910727,Eunápolis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2910727,Eunápolis,6,Infraestrutura,,46.7,,,296
+municipio,2910727,Eunápolis,9,Transparência e Participação,,50.0,,,255
+municipio,2910800,Feira de Santana,1,Governança do Governo Digital,,100.0,,,1
+municipio,2910800,Feira de Santana,2,Qualidade dos Serviços Digitais,,66.67,,,219
+municipio,2910800,Feira de Santana,3,Identificação Única,,100.0,,,1
+municipio,2910800,Feira de Santana,4,Segurança e LGPD,,20.0,,,190
+municipio,2910800,Feira de Santana,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2910800,Feira de Santana,6,Infraestrutura,,47.45,,,283
+municipio,2910800,Feira de Santana,9,Transparência e Participação,,33.33,,,301
+municipio,2913606,Ilhéus,1,Governança do Governo Digital,,100.0,,,1
+municipio,2913606,Ilhéus,2,Qualidade dos Serviços Digitais,,71.33,,,188
+municipio,2913606,Ilhéus,3,Identificação Única,,100.0,,,1
+municipio,2913606,Ilhéus,4,Segurança e LGPD,,60.0,,,85
+municipio,2913606,Ilhéus,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2913606,Ilhéus,6,Infraestrutura,,55.32,,,265
+municipio,2913606,Ilhéus,9,Transparência e Participação,,55.56,,,168
+municipio,2914802,Itabuna,1,Governança do Governo Digital,,100.0,,,1
+municipio,2914802,Itabuna,2,Qualidade dos Serviços Digitais,,66.67,,,219
+municipio,2914802,Itabuna,3,Identificação Única,,0.0,,,260
+municipio,2914802,Itabuna,4,Segurança e LGPD,,80.0,,,31
+municipio,2914802,Itabuna,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2914802,Itabuna,6,Infraestrutura,,66.0,,,210
+municipio,2914802,Itabuna,9,Transparência e Participação,,44.44,,,256
+municipio,2918001,Jequié,1,Governança do Governo Digital,,100.0,,,1
+municipio,2918001,Jequié,2,Qualidade dos Serviços Digitais,,56.67,,,288
+municipio,2918001,Jequié,3,Identificação Única,,100.0,,,1
+municipio,2918001,Jequié,4,Segurança e LGPD,,0.0,,,257
+municipio,2918001,Jequié,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2918001,Jequié,6,Infraestrutura,,54.74,,,273
+municipio,2918001,Jequié,9,Transparência e Participação,,77.78,,,23
+municipio,2918407,Juazeiro,1,Governança do Governo Digital,,100.0,,,1
+municipio,2918407,Juazeiro,2,Qualidade dos Serviços Digitais,,71.33,,,188
+municipio,2918407,Juazeiro,3,Identificação Única,,100.0,,,1
+municipio,2918407,Juazeiro,4,Segurança e LGPD,,40.0,,,142
+municipio,2918407,Juazeiro,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2918407,Juazeiro,6,Infraestrutura,,75.58,,,137
+municipio,2918407,Juazeiro,9,Transparência e Participação,,44.44,,,256
+municipio,2919207,Lauro de Freitas,1,Governança do Governo Digital,,100.0,,,1
+municipio,2919207,Lauro de Freitas,2,Qualidade dos Serviços Digitais,,53.33,,,299
+municipio,2919207,Lauro de Freitas,3,Identificação Única,,100.0,,,1
+municipio,2919207,Lauro de Freitas,4,Segurança e LGPD,,0.0,,,257
+municipio,2919207,Lauro de Freitas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2919207,Lauro de Freitas,6,Infraestrutura,,45.19,,,302
+municipio,2919207,Lauro de Freitas,9,Transparência e Participação,,44.44,,,256
+municipio,2919553,Luís Eduardo Magalhães,1,Governança do Governo Digital,,0.0,,,312
+municipio,2919553,Luís Eduardo Magalhães,2,Qualidade dos Serviços Digitais,,54.67,,,293
+municipio,2919553,Luís Eduardo Magalhães,3,Identificação Única,,0.0,,,260
+municipio,2919553,Luís Eduardo Magalhães,4,Segurança e LGPD,,20.0,,,190
+municipio,2919553,Luís Eduardo Magalhães,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2919553,Luís Eduardo Magalhães,6,Infraestrutura,,56.25,,,254
+municipio,2919553,Luís Eduardo Magalhães,9,Transparência e Participação,,66.67,,,82
+municipio,2924009,Paulo Afonso,1,Governança do Governo Digital,,100.0,,,1
+municipio,2924009,Paulo Afonso,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,2924009,Paulo Afonso,3,Identificação Única,,100.0,,,1
+municipio,2924009,Paulo Afonso,4,Segurança e LGPD,,40.0,,,142
+municipio,2924009,Paulo Afonso,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2924009,Paulo Afonso,6,Infraestrutura,,64.59,,,213
+municipio,2924009,Paulo Afonso,9,Transparência e Participação,,77.78,,,23
+municipio,2925303,Porto Seguro,1,Governança do Governo Digital,,100.0,,,1
+municipio,2925303,Porto Seguro,2,Qualidade dos Serviços Digitais,,64.0,,,239
+municipio,2925303,Porto Seguro,3,Identificação Única,,100.0,,,1
+municipio,2925303,Porto Seguro,4,Segurança e LGPD,,20.0,,,190
+municipio,2925303,Porto Seguro,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2925303,Porto Seguro,6,Infraestrutura,,55.24,,,268
+municipio,2925303,Porto Seguro,9,Transparência e Participação,,77.78,,,23
+municipio,2927408,Salvador,1,Governança do Governo Digital,,100.0,,,1
+municipio,2927408,Salvador,2,Qualidade dos Serviços Digitais,,96.0,,,5
+municipio,2927408,Salvador,3,Identificação Única,,100.0,,,1
+municipio,2927408,Salvador,4,Segurança e LGPD,,100.0,,,1
+municipio,2927408,Salvador,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2927408,Salvador,6,Infraestrutura,,96.42,,,24
+municipio,2927408,Salvador,9,Transparência e Participação,,77.78,,,23
+municipio,2928703,Santo Antônio de Jesus,1,Governança do Governo Digital,,100.0,,,1
+municipio,2928703,Santo Antônio de Jesus,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,2928703,Santo Antônio de Jesus,3,Identificação Única,,100.0,,,1
+municipio,2928703,Santo Antônio de Jesus,4,Segurança e LGPD,,60.0,,,85
+municipio,2928703,Santo Antônio de Jesus,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2928703,Santo Antônio de Jesus,6,Infraestrutura,,55.41,,,263
+municipio,2928703,Santo Antônio de Jesus,9,Transparência e Participação,,55.56,,,168
+municipio,2930709,Simões Filho,1,Governança do Governo Digital,,100.0,,,1
+municipio,2930709,Simões Filho,2,Qualidade dos Serviços Digitais,,54.0,,,296
+municipio,2930709,Simões Filho,3,Identificação Única,,100.0,,,1
+municipio,2930709,Simões Filho,4,Segurança e LGPD,,20.0,,,190
+municipio,2930709,Simões Filho,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,2930709,Simões Filho,6,Infraestrutura,,56.0,,,258
+municipio,2930709,Simões Filho,9,Transparência e Participação,,55.56,,,168
+municipio,2931350,Teixeira de Freitas,1,Governança do Governo Digital,,100.0,,,1
+municipio,2931350,Teixeira de Freitas,2,Qualidade dos Serviços Digitais,,62.0,,,256
+municipio,2931350,Teixeira de Freitas,3,Identificação Única,,100.0,,,1
+municipio,2931350,Teixeira de Freitas,4,Segurança e LGPD,,20.0,,,190
+municipio,2931350,Teixeira de Freitas,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2931350,Teixeira de Freitas,6,Infraestrutura,,56.04,,,257
+municipio,2931350,Teixeira de Freitas,9,Transparência e Participação,,55.56,,,168
+municipio,2933307,Vitória da Conquista,1,Governança do Governo Digital,,100.0,,,1
+municipio,2933307,Vitória da Conquista,2,Qualidade dos Serviços Digitais,,77.33,,,130
+municipio,2933307,Vitória da Conquista,3,Identificação Única,,100.0,,,1
+municipio,2933307,Vitória da Conquista,4,Segurança e LGPD,,80.0,,,31
+municipio,2933307,Vitória da Conquista,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,2933307,Vitória da Conquista,6,Infraestrutura,,95.02,,,28
+municipio,2933307,Vitória da Conquista,9,Transparência e Participação,,100.0,,,1
+municipio,3103504,Araguari,1,Governança do Governo Digital,,100.0,,,1
+municipio,3103504,Araguari,2,Qualidade dos Serviços Digitais,,80.67,,,97
+municipio,3103504,Araguari,3,Identificação Única,,100.0,,,1
+municipio,3103504,Araguari,4,Segurança e LGPD,,20.0,,,190
+municipio,3103504,Araguari,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3103504,Araguari,6,Infraestrutura,,57.14,,,235
+municipio,3103504,Araguari,9,Transparência e Participação,,66.67,,,82
+municipio,3104007,Araxá,1,Governança do Governo Digital,,100.0,,,1
+municipio,3104007,Araxá,2,Qualidade dos Serviços Digitais,,76.0,,,141
+municipio,3104007,Araxá,3,Identificação Única,,100.0,,,1
+municipio,3104007,Araxá,4,Segurança e LGPD,,20.0,,,190
+municipio,3104007,Araxá,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3104007,Araxá,6,Infraestrutura,,97.65,,,11
+municipio,3104007,Araxá,9,Transparência e Participação,,44.44,,,256
+municipio,3105608,Barbacena,1,Governança do Governo Digital,,100.0,,,1
+municipio,3105608,Barbacena,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3105608,Barbacena,3,Identificação Única,,100.0,,,1
+municipio,3105608,Barbacena,4,Segurança e LGPD,,20.0,,,190
+municipio,3105608,Barbacena,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3105608,Barbacena,6,Infraestrutura,,47.38,,,287
+municipio,3105608,Barbacena,9,Transparência e Participação,,66.67,,,82
+municipio,3106200,Belo Horizonte,1,Governança do Governo Digital,,100.0,,,1
+municipio,3106200,Belo Horizonte,2,Qualidade dos Serviços Digitais,,100.0,,,1
+municipio,3106200,Belo Horizonte,3,Identificação Única,,100.0,,,1
+municipio,3106200,Belo Horizonte,4,Segurança e LGPD,,100.0,,,1
+municipio,3106200,Belo Horizonte,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3106200,Belo Horizonte,6,Infraestrutura,,97.47,,,15
+municipio,3106200,Belo Horizonte,9,Transparência e Participação,,77.78,,,23
+municipio,3106705,Betim,1,Governança do Governo Digital,,100.0,,,1
+municipio,3106705,Betim,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,3106705,Betim,3,Identificação Única,,100.0,,,1
+municipio,3106705,Betim,4,Segurança e LGPD,,20.0,,,190
+municipio,3106705,Betim,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3106705,Betim,6,Infraestrutura,,67.35,,,173
+municipio,3106705,Betim,9,Transparência e Participação,,44.44,,,256
+municipio,3118304,Conselheiro Lafaiete,1,Governança do Governo Digital,,100.0,,,1
+municipio,3118304,Conselheiro Lafaiete,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,3118304,Conselheiro Lafaiete,3,Identificação Única,,0.0,,,260
+municipio,3118304,Conselheiro Lafaiete,4,Segurança e LGPD,,0.0,,,257
+municipio,3118304,Conselheiro Lafaiete,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3118304,Conselheiro Lafaiete,6,Infraestrutura,,26.85,,,314
+municipio,3118304,Conselheiro Lafaiete,9,Transparência e Participação,,44.44,,,256
+municipio,3118601,Contagem,1,Governança do Governo Digital,,100.0,,,1
+municipio,3118601,Contagem,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,3118601,Contagem,3,Identificação Única,,100.0,,,1
+municipio,3118601,Contagem,4,Segurança e LGPD,,40.0,,,142
+municipio,3118601,Contagem,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3118601,Contagem,6,Infraestrutura,,87.61,,,44
+municipio,3118601,Contagem,9,Transparência e Participação,,55.56,,,168
+municipio,3119401,Coronel Fabriciano,1,Governança do Governo Digital,,100.0,,,1
+municipio,3119401,Coronel Fabriciano,2,Qualidade dos Serviços Digitais,,68.67,,,206
+municipio,3119401,Coronel Fabriciano,3,Identificação Única,,100.0,,,1
+municipio,3119401,Coronel Fabriciano,4,Segurança e LGPD,,40.0,,,142
+municipio,3119401,Coronel Fabriciano,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3119401,Coronel Fabriciano,6,Infraestrutura,,58.22,,,220
+municipio,3119401,Coronel Fabriciano,9,Transparência e Participação,,55.56,,,168
+municipio,3122306,Divinópolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,3122306,Divinópolis,2,Qualidade dos Serviços Digitais,,86.67,,,37
+municipio,3122306,Divinópolis,3,Identificação Única,,100.0,,,1
+municipio,3122306,Divinópolis,4,Segurança e LGPD,,0.0,,,257
+municipio,3122306,Divinópolis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3122306,Divinópolis,6,Infraestrutura,,67.5,,,165
+municipio,3122306,Divinópolis,9,Transparência e Participação,,33.33,,,301
+municipio,3127701,Governador Valadares,1,Governança do Governo Digital,,100.0,,,1
+municipio,3127701,Governador Valadares,2,Qualidade dos Serviços Digitais,,72.0,,,182
+municipio,3127701,Governador Valadares,3,Identificação Única,,100.0,,,1
+municipio,3127701,Governador Valadares,4,Segurança e LGPD,,20.0,,,190
+municipio,3127701,Governador Valadares,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3127701,Governador Valadares,6,Infraestrutura,,98.19,,,3
+municipio,3127701,Governador Valadares,9,Transparência e Participação,,77.78,,,23
+municipio,3129806,Ibirité,1,Governança do Governo Digital,,100.0,,,1
+municipio,3129806,Ibirité,2,Qualidade dos Serviços Digitais,,96.67,,,3
+municipio,3129806,Ibirité,3,Identificação Única,,100.0,,,1
+municipio,3129806,Ibirité,4,Segurança e LGPD,,0.0,,,257
+municipio,3129806,Ibirité,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3129806,Ibirité,6,Infraestrutura,,66.51,,,202
+municipio,3129806,Ibirité,9,Transparência e Participação,,77.78,,,23
+municipio,3131307,Ipatinga,1,Governança do Governo Digital,,100.0,,,1
+municipio,3131307,Ipatinga,2,Qualidade dos Serviços Digitais,,66.67,,,219
+municipio,3131307,Ipatinga,3,Identificação Única,,0.0,,,260
+municipio,3131307,Ipatinga,4,Segurança e LGPD,,20.0,,,190
+municipio,3131307,Ipatinga,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3131307,Ipatinga,6,Infraestrutura,,47.44,,,284
+municipio,3131307,Ipatinga,9,Transparência e Participação,,44.44,,,256
+municipio,3131703,Itabira,1,Governança do Governo Digital,,100.0,,,1
+municipio,3131703,Itabira,2,Qualidade dos Serviços Digitais,,70.67,,,192
+municipio,3131703,Itabira,3,Identificação Única,,0.0,,,260
+municipio,3131703,Itabira,4,Segurança e LGPD,,40.0,,,142
+municipio,3131703,Itabira,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3131703,Itabira,6,Infraestrutura,,67.23,,,179
+municipio,3131703,Itabira,9,Transparência e Participação,,55.56,,,168
+municipio,3134202,Ituiutaba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3134202,Ituiutaba,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,3134202,Ituiutaba,3,Identificação Única,,100.0,,,1
+municipio,3134202,Ituiutaba,4,Segurança e LGPD,,20.0,,,190
+municipio,3134202,Ituiutaba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3134202,Ituiutaba,6,Infraestrutura,,67.6,,,162
+municipio,3134202,Ituiutaba,9,Transparência e Participação,,55.56,,,168
+municipio,3136702,Juiz de Fora,1,Governança do Governo Digital,,100.0,,,1
+municipio,3136702,Juiz de Fora,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,3136702,Juiz de Fora,3,Identificação Única,,100.0,,,1
+municipio,3136702,Juiz de Fora,4,Segurança e LGPD,,100.0,,,1
+municipio,3136702,Juiz de Fora,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3136702,Juiz de Fora,6,Infraestrutura,,77.1,,,115
+municipio,3136702,Juiz de Fora,9,Transparência e Participação,,77.78,,,23
+municipio,3138203,Lavras,1,Governança do Governo Digital,,100.0,,,1
+municipio,3138203,Lavras,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3138203,Lavras,3,Identificação Única,,100.0,,,1
+municipio,3138203,Lavras,4,Segurança e LGPD,,80.0,,,31
+municipio,3138203,Lavras,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3138203,Lavras,6,Infraestrutura,,76.64,,,123
+municipio,3138203,Lavras,9,Transparência e Participação,,33.33,,,301
+municipio,3143302,Montes Claros,1,Governança do Governo Digital,,100.0,,,1
+municipio,3143302,Montes Claros,2,Qualidade dos Serviços Digitais,,78.0,,,124
+municipio,3143302,Montes Claros,3,Identificação Única,,100.0,,,1
+municipio,3143302,Montes Claros,4,Segurança e LGPD,,0.0,,,257
+municipio,3143302,Montes Claros,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3143302,Montes Claros,6,Infraestrutura,,57.33,,,231
+municipio,3143302,Montes Claros,9,Transparência e Participação,,44.44,,,256
+municipio,3143906,Muriaé,1,Governança do Governo Digital,,100.0,,,1
+municipio,3143906,Muriaé,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,3143906,Muriaé,3,Identificação Única,,0.0,,,260
+municipio,3143906,Muriaé,4,Segurança e LGPD,,0.0,,,257
+municipio,3143906,Muriaé,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3143906,Muriaé,6,Infraestrutura,,57.0,,,238
+municipio,3143906,Muriaé,9,Transparência e Participação,,66.67,,,82
+municipio,3144805,Nova Lima,1,Governança do Governo Digital,,100.0,,,1
+municipio,3144805,Nova Lima,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3144805,Nova Lima,3,Identificação Única,,100.0,,,1
+municipio,3144805,Nova Lima,4,Segurança e LGPD,,0.0,,,257
+municipio,3144805,Nova Lima,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3144805,Nova Lima,6,Infraestrutura,,77.32,,,107
+municipio,3144805,Nova Lima,9,Transparência e Participação,,44.44,,,256
+municipio,3145208,Nova Serrana,1,Governança do Governo Digital,,100.0,,,1
+municipio,3145208,Nova Serrana,2,Qualidade dos Serviços Digitais,,78.0,,,124
+municipio,3145208,Nova Serrana,3,Identificação Única,,100.0,,,1
+municipio,3145208,Nova Serrana,4,Segurança e LGPD,,0.0,,,257
+municipio,3145208,Nova Serrana,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3145208,Nova Serrana,6,Infraestrutura,,97.85,,,7
+municipio,3145208,Nova Serrana,9,Transparência e Participação,,44.44,,,256
+municipio,3147907,Passos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3147907,Passos,2,Qualidade dos Serviços Digitais,,65.33,,,227
+municipio,3147907,Passos,3,Identificação Única,,0.0,,,260
+municipio,3147907,Passos,4,Segurança e LGPD,,0.0,,,257
+municipio,3147907,Passos,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3147907,Passos,6,Infraestrutura,,66.8,,,193
+municipio,3147907,Passos,9,Transparência e Participação,,77.78,,,23
+municipio,3148004,Patos de Minas,1,Governança do Governo Digital,,100.0,,,1
+municipio,3148004,Patos de Minas,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,3148004,Patos de Minas,3,Identificação Única,,100.0,,,1
+municipio,3148004,Patos de Minas,4,Segurança e LGPD,,40.0,,,142
+municipio,3148004,Patos de Minas,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3148004,Patos de Minas,6,Infraestrutura,,56.67,,,247
+municipio,3148004,Patos de Minas,9,Transparência e Participação,,77.78,,,23
+municipio,3151800,Poços de Caldas,1,Governança do Governo Digital,,100.0,,,1
+municipio,3151800,Poços de Caldas,2,Qualidade dos Serviços Digitais,,63.33,,,246
+municipio,3151800,Poços de Caldas,3,Identificação Única,,100.0,,,1
+municipio,3151800,Poços de Caldas,4,Segurança e LGPD,,40.0,,,142
+municipio,3151800,Poços de Caldas,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3151800,Poços de Caldas,6,Infraestrutura,,96.97,,,21
+municipio,3151800,Poços de Caldas,9,Transparência e Participação,,44.44,,,256
+municipio,3152501,Pouso Alegre,1,Governança do Governo Digital,,100.0,,,1
+municipio,3152501,Pouso Alegre,2,Qualidade dos Serviços Digitais,,70.0,,,198
+municipio,3152501,Pouso Alegre,3,Identificação Única,,100.0,,,1
+municipio,3152501,Pouso Alegre,4,Segurança e LGPD,,20.0,,,190
+municipio,3152501,Pouso Alegre,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3152501,Pouso Alegre,6,Infraestrutura,,77.54,,,100
+municipio,3152501,Pouso Alegre,9,Transparência e Participação,,44.44,,,256
+municipio,3154606,Ribeirão das Neves,1,Governança do Governo Digital,,100.0,,,1
+municipio,3154606,Ribeirão das Neves,2,Qualidade dos Serviços Digitais,,72.67,,,178
+municipio,3154606,Ribeirão das Neves,3,Identificação Única,,100.0,,,1
+municipio,3154606,Ribeirão das Neves,4,Segurança e LGPD,,40.0,,,142
+municipio,3154606,Ribeirão das Neves,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3154606,Ribeirão das Neves,6,Infraestrutura,,67.97,,,147
+municipio,3154606,Ribeirão das Neves,9,Transparência e Participação,,55.56,,,168
+municipio,3156700,Sabará,1,Governança do Governo Digital,,100.0,,,1
+municipio,3156700,Sabará,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,3156700,Sabará,3,Identificação Única,,100.0,,,1
+municipio,3156700,Sabará,4,Segurança e LGPD,,20.0,,,190
+municipio,3156700,Sabará,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3156700,Sabará,6,Infraestrutura,,57.73,,,224
+municipio,3156700,Sabará,9,Transparência e Participação,,44.44,,,256
+municipio,3157807,Santa Luzia,1,Governança do Governo Digital,,100.0,,,1
+municipio,3157807,Santa Luzia,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,3157807,Santa Luzia,3,Identificação Única,,100.0,,,1
+municipio,3157807,Santa Luzia,4,Segurança e LGPD,,40.0,,,142
+municipio,3157807,Santa Luzia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3157807,Santa Luzia,6,Infraestrutura,,76.41,,,127
+municipio,3157807,Santa Luzia,9,Transparência e Participação,,88.89,,,3
+municipio,3167202,Sete Lagoas,1,Governança do Governo Digital,,100.0,,,1
+municipio,3167202,Sete Lagoas,2,Qualidade dos Serviços Digitais,,70.0,,,198
+municipio,3167202,Sete Lagoas,3,Identificação Única,,0.0,,,260
+municipio,3167202,Sete Lagoas,4,Segurança e LGPD,,0.0,,,257
+municipio,3167202,Sete Lagoas,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3167202,Sete Lagoas,6,Infraestrutura,,87.15,,,53
+municipio,3167202,Sete Lagoas,9,Transparência e Participação,,55.56,,,168
+municipio,3168606,Teófilo Otoni,1,Governança do Governo Digital,,100.0,,,1
+municipio,3168606,Teófilo Otoni,2,Qualidade dos Serviços Digitais,,57.33,,,283
+municipio,3168606,Teófilo Otoni,3,Identificação Única,,100.0,,,1
+municipio,3168606,Teófilo Otoni,4,Segurança e LGPD,,40.0,,,142
+municipio,3168606,Teófilo Otoni,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3168606,Teófilo Otoni,6,Infraestrutura,,64.56,,,214
+municipio,3168606,Teófilo Otoni,9,Transparência e Participação,,55.56,,,168
+municipio,3169901,Ubá,1,Governança do Governo Digital,,100.0,,,1
+municipio,3169901,Ubá,2,Qualidade dos Serviços Digitais,,70.0,,,198
+municipio,3169901,Ubá,3,Identificação Única,,100.0,,,1
+municipio,3169901,Ubá,4,Segurança e LGPD,,40.0,,,142
+municipio,3169901,Ubá,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3169901,Ubá,6,Infraestrutura,,56.68,,,245
+municipio,3169901,Ubá,9,Transparência e Participação,,66.67,,,82
+municipio,3170107,Uberaba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3170107,Uberaba,2,Qualidade dos Serviços Digitais,,82.67,,,70
+municipio,3170107,Uberaba,3,Identificação Única,,100.0,,,1
+municipio,3170107,Uberaba,4,Segurança e LGPD,,80.0,,,31
+municipio,3170107,Uberaba,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3170107,Uberaba,6,Infraestrutura,,77.81,,,90
+municipio,3170107,Uberaba,9,Transparência e Participação,,55.56,,,168
+municipio,3170206,Uberlândia,1,Governança do Governo Digital,,100.0,,,1
+municipio,3170206,Uberlândia,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,3170206,Uberlândia,3,Identificação Única,,100.0,,,1
+municipio,3170206,Uberlândia,4,Segurança e LGPD,,80.0,,,31
+municipio,3170206,Uberlândia,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3170206,Uberlândia,6,Infraestrutura,,97.29,,,18
+municipio,3170206,Uberlândia,9,Transparência e Participação,,77.78,,,23
+municipio,3170701,Varginha,1,Governança do Governo Digital,,100.0,,,1
+municipio,3170701,Varginha,2,Qualidade dos Serviços Digitais,,90.0,,,22
+municipio,3170701,Varginha,3,Identificação Única,,0.0,,,260
+municipio,3170701,Varginha,4,Segurança e LGPD,,20.0,,,190
+municipio,3170701,Varginha,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3170701,Varginha,6,Infraestrutura,,77.6,,,97
+municipio,3170701,Varginha,9,Transparência e Participação,,77.78,,,23
+municipio,3171204,Vespasiano,1,Governança do Governo Digital,,100.0,,,1
+municipio,3171204,Vespasiano,2,Qualidade dos Serviços Digitais,,63.33,,,246
+municipio,3171204,Vespasiano,3,Identificação Única,,0.0,,,260
+municipio,3171204,Vespasiano,4,Segurança e LGPD,,0.0,,,257
+municipio,3171204,Vespasiano,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3171204,Vespasiano,6,Infraestrutura,,47.1,,,293
+municipio,3171204,Vespasiano,9,Transparência e Participação,,55.56,,,168
+municipio,3201209,Cachoeiro de Itapemirim,1,Governança do Governo Digital,,100.0,,,1
+municipio,3201209,Cachoeiro de Itapemirim,2,Qualidade dos Serviços Digitais,,93.33,,,12
+municipio,3201209,Cachoeiro de Itapemirim,3,Identificação Única,,100.0,,,1
+municipio,3201209,Cachoeiro de Itapemirim,4,Segurança e LGPD,,100.0,,,1
+municipio,3201209,Cachoeiro de Itapemirim,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3201209,Cachoeiro de Itapemirim,6,Infraestrutura,,87.78,,,41
+municipio,3201209,Cachoeiro de Itapemirim,9,Transparência e Participação,,88.89,,,3
+municipio,3201308,Cariacica,1,Governança do Governo Digital,,100.0,,,1
+municipio,3201308,Cariacica,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3201308,Cariacica,3,Identificação Única,,100.0,,,1
+municipio,3201308,Cariacica,4,Segurança e LGPD,,100.0,,,1
+municipio,3201308,Cariacica,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3201308,Cariacica,6,Infraestrutura,,77.15,,,111
+municipio,3201308,Cariacica,9,Transparência e Participação,,88.89,,,3
+municipio,3201506,Colatina,1,Governança do Governo Digital,,100.0,,,1
+municipio,3201506,Colatina,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,3201506,Colatina,3,Identificação Única,,100.0,,,1
+municipio,3201506,Colatina,4,Segurança e LGPD,,80.0,,,31
+municipio,3201506,Colatina,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3201506,Colatina,6,Infraestrutura,,67.77,,,154
+municipio,3201506,Colatina,9,Transparência e Participação,,72.22,,,81
+municipio,3202405,Guarapari,1,Governança do Governo Digital,,100.0,,,1
+municipio,3202405,Guarapari,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,3202405,Guarapari,3,Identificação Única,,100.0,,,1
+municipio,3202405,Guarapari,4,Segurança e LGPD,,0.0,,,257
+municipio,3202405,Guarapari,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3202405,Guarapari,6,Infraestrutura,,48.48,,,278
+municipio,3202405,Guarapari,9,Transparência e Participação,,66.67,,,82
+municipio,3203205,Linhares,1,Governança do Governo Digital,,100.0,,,1
+municipio,3203205,Linhares,2,Qualidade dos Serviços Digitais,,92.0,,,17
+municipio,3203205,Linhares,3,Identificação Única,,100.0,,,1
+municipio,3203205,Linhares,4,Segurança e LGPD,,80.0,,,31
+municipio,3203205,Linhares,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3203205,Linhares,6,Infraestrutura,,74.99,,,138
+municipio,3203205,Linhares,9,Transparência e Participação,,55.56,,,168
+municipio,3204906,São Mateus,1,Governança do Governo Digital,,100.0,,,1
+municipio,3204906,São Mateus,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,3204906,São Mateus,3,Identificação Única,,100.0,,,1
+municipio,3204906,São Mateus,4,Segurança e LGPD,,20.0,,,190
+municipio,3204906,São Mateus,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3204906,São Mateus,6,Infraestrutura,,67.27,,,178
+municipio,3204906,São Mateus,9,Transparência e Participação,,83.33,,,22
+municipio,3205002,Serra,1,Governança do Governo Digital,,100.0,,,1
+municipio,3205002,Serra,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,3205002,Serra,3,Identificação Única,,100.0,,,1
+municipio,3205002,Serra,4,Segurança e LGPD,,40.0,,,142
+municipio,3205002,Serra,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3205002,Serra,6,Infraestrutura,,77.8,,,91
+municipio,3205002,Serra,9,Transparência e Participação,,77.78,,,23
+municipio,3205200,Vila Velha,1,Governança do Governo Digital,,100.0,,,1
+municipio,3205200,Vila Velha,2,Qualidade dos Serviços Digitais,,86.0,,,41
+municipio,3205200,Vila Velha,3,Identificação Única,,100.0,,,1
+municipio,3205200,Vila Velha,4,Segurança e LGPD,,40.0,,,142
+municipio,3205200,Vila Velha,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3205200,Vila Velha,6,Infraestrutura,,98.29,,,2
+municipio,3205200,Vila Velha,9,Transparência e Participação,,100.0,,,1
+municipio,3205309,Vitória,1,Governança do Governo Digital,,100.0,,,1
+municipio,3205309,Vitória,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,3205309,Vitória,3,Identificação Única,,0.0,,,260
+municipio,3205309,Vitória,4,Segurança e LGPD,,80.0,,,31
+municipio,3205309,Vitória,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3205309,Vitória,6,Infraestrutura,,78.23,,,82
+municipio,3205309,Vitória,9,Transparência e Participação,,88.89,,,3
+municipio,3300100,Angra dos Reis,1,Governança do Governo Digital,,100.0,,,1
+municipio,3300100,Angra dos Reis,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,3300100,Angra dos Reis,3,Identificação Única,,100.0,,,1
+municipio,3300100,Angra dos Reis,4,Segurança e LGPD,,100.0,,,1
+municipio,3300100,Angra dos Reis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3300100,Angra dos Reis,6,Infraestrutura,,76.4,,,128
+municipio,3300100,Angra dos Reis,9,Transparência e Participação,,88.89,,,3
+municipio,3300209,Araruama,1,Governança do Governo Digital,,100.0,,,1
+municipio,3300209,Araruama,2,Qualidade dos Serviços Digitais,,62.0,,,256
+municipio,3300209,Araruama,3,Identificação Única,,100.0,,,1
+municipio,3300209,Araruama,4,Segurança e LGPD,,0.0,,,257
+municipio,3300209,Araruama,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3300209,Araruama,6,Infraestrutura,,44.35,,,305
+municipio,3300209,Araruama,9,Transparência e Participação,,22.22,,,314
+municipio,3300407,Barra Mansa,1,Governança do Governo Digital,,100.0,,,1
+municipio,3300407,Barra Mansa,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,3300407,Barra Mansa,3,Identificação Única,,100.0,,,1
+municipio,3300407,Barra Mansa,4,Segurança e LGPD,,60.0,,,85
+municipio,3300407,Barra Mansa,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3300407,Barra Mansa,6,Infraestrutura,,67.57,,,163
+municipio,3300407,Barra Mansa,9,Transparência e Participação,,66.67,,,82
+municipio,3300456,Belford Roxo,1,Governança do Governo Digital,,100.0,,,1
+municipio,3300456,Belford Roxo,2,Qualidade dos Serviços Digitais,,63.33,,,246
+municipio,3300456,Belford Roxo,3,Identificação Única,,100.0,,,1
+municipio,3300456,Belford Roxo,4,Segurança e LGPD,,60.0,,,85
+municipio,3300456,Belford Roxo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3300456,Belford Roxo,6,Infraestrutura,,55.62,,,262
+municipio,3300456,Belford Roxo,9,Transparência e Participação,,66.67,,,82
+municipio,3300704,Cabo Frio,1,Governança do Governo Digital,,100.0,,,1
+municipio,3300704,Cabo Frio,2,Qualidade dos Serviços Digitais,,76.67,,,137
+municipio,3300704,Cabo Frio,3,Identificação Única,,0.0,,,260
+municipio,3300704,Cabo Frio,4,Segurança e LGPD,,40.0,,,142
+municipio,3300704,Cabo Frio,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3300704,Cabo Frio,6,Infraestrutura,,56.62,,,251
+municipio,3300704,Cabo Frio,9,Transparência e Participação,,55.56,,,168
+municipio,3301009,Campos dos Goytacazes,1,Governança do Governo Digital,,0.0,,,312
+municipio,3301009,Campos dos Goytacazes,2,Qualidade dos Serviços Digitais,,0.0,,,318
+municipio,3301009,Campos dos Goytacazes,3,Identificação Única,,0.0,,,260
+municipio,3301009,Campos dos Goytacazes,4,Segurança e LGPD,,60.0,,,85
+municipio,3301009,Campos dos Goytacazes,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3301009,Campos dos Goytacazes,6,Infraestrutura,,16.62,,,319
+municipio,3301009,Campos dos Goytacazes,9,Transparência e Participação,,22.22,,,314
+municipio,3301702,Duque de Caxias,1,Governança do Governo Digital,,100.0,,,1
+municipio,3301702,Duque de Caxias,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3301702,Duque de Caxias,3,Identificação Única,,100.0,,,1
+municipio,3301702,Duque de Caxias,4,Segurança e LGPD,,60.0,,,85
+municipio,3301702,Duque de Caxias,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3301702,Duque de Caxias,6,Infraestrutura,,96.95,,,22
+municipio,3301702,Duque de Caxias,9,Transparência e Participação,,44.44,,,256
+municipio,3301900,Itaboraí,1,Governança do Governo Digital,,100.0,,,1
+municipio,3301900,Itaboraí,2,Qualidade dos Serviços Digitais,,62.67,,,253
+municipio,3301900,Itaboraí,3,Identificação Única,,0.0,,,260
+municipio,3301900,Itaboraí,4,Segurança e LGPD,,40.0,,,142
+municipio,3301900,Itaboraí,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3301900,Itaboraí,6,Infraestrutura,,56.49,,,252
+municipio,3301900,Itaboraí,9,Transparência e Participação,,55.56,,,168
+municipio,3302007,Itaguaí,1,Governança do Governo Digital,,100.0,,,1
+municipio,3302007,Itaguaí,2,Qualidade dos Serviços Digitais,,61.33,,,260
+municipio,3302007,Itaguaí,3,Identificação Única,,100.0,,,1
+municipio,3302007,Itaguaí,4,Segurança e LGPD,,0.0,,,257
+municipio,3302007,Itaguaí,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3302007,Itaguaí,6,Infraestrutura,,77.67,,,95
+municipio,3302007,Itaguaí,9,Transparência e Participação,,33.33,,,301
+municipio,3302205,Itaperuna,1,Governança do Governo Digital,,100.0,,,1
+municipio,3302205,Itaperuna,2,Qualidade dos Serviços Digitais,,72.67,,,178
+municipio,3302205,Itaperuna,3,Identificação Única,,100.0,,,1
+municipio,3302205,Itaperuna,4,Segurança e LGPD,,0.0,,,257
+municipio,3302205,Itaperuna,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3302205,Itaperuna,6,Infraestrutura,,26.62,,,315
+municipio,3302205,Itaperuna,9,Transparência e Participação,,44.44,,,256
+municipio,3302403,Macaé,1,Governança do Governo Digital,,100.0,,,1
+municipio,3302403,Macaé,2,Qualidade dos Serviços Digitais,,86.0,,,41
+municipio,3302403,Macaé,3,Identificação Única,,0.0,,,260
+municipio,3302403,Macaé,4,Segurança e LGPD,,20.0,,,190
+municipio,3302403,Macaé,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3302403,Macaé,6,Infraestrutura,,86.3,,,69
+municipio,3302403,Macaé,9,Transparência e Participação,,66.67,,,82
+municipio,3302502,Magé,1,Governança do Governo Digital,,100.0,,,1
+municipio,3302502,Magé,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,3302502,Magé,3,Identificação Única,,100.0,,,1
+municipio,3302502,Magé,4,Segurança e LGPD,,20.0,,,190
+municipio,3302502,Magé,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3302502,Magé,6,Infraestrutura,,66.3,,,207
+municipio,3302502,Magé,9,Transparência e Participação,,77.78,,,23
+municipio,3302700,Maricá,1,Governança do Governo Digital,,100.0,,,1
+municipio,3302700,Maricá,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3302700,Maricá,3,Identificação Única,,100.0,,,1
+municipio,3302700,Maricá,4,Segurança e LGPD,,80.0,,,31
+municipio,3302700,Maricá,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3302700,Maricá,6,Infraestrutura,,76.4,,,128
+municipio,3302700,Maricá,9,Transparência e Participação,,55.56,,,168
+municipio,3302858,Mesquita,1,Governança do Governo Digital,,100.0,,,1
+municipio,3302858,Mesquita,2,Qualidade dos Serviços Digitais,,70.0,,,198
+municipio,3302858,Mesquita,3,Identificação Única,,100.0,,,1
+municipio,3302858,Mesquita,4,Segurança e LGPD,,60.0,,,85
+municipio,3302858,Mesquita,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3302858,Mesquita,6,Infraestrutura,,87.06,,,54
+municipio,3302858,Mesquita,9,Transparência e Participação,,66.67,,,82
+municipio,3303203,Nilópolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,3303203,Nilópolis,2,Qualidade dos Serviços Digitais,,55.33,,,290
+municipio,3303203,Nilópolis,3,Identificação Única,,100.0,,,1
+municipio,3303203,Nilópolis,4,Segurança e LGPD,,60.0,,,85
+municipio,3303203,Nilópolis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3303203,Nilópolis,6,Infraestrutura,,66.82,,,192
+municipio,3303203,Nilópolis,9,Transparência e Participação,,66.67,,,82
+municipio,3303302,Niterói,1,Governança do Governo Digital,,100.0,,,1
+municipio,3303302,Niterói,2,Qualidade dos Serviços Digitais,,82.67,,,70
+municipio,3303302,Niterói,3,Identificação Única,,100.0,,,1
+municipio,3303302,Niterói,4,Segurança e LGPD,,80.0,,,31
+municipio,3303302,Niterói,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3303302,Niterói,6,Infraestrutura,,86.91,,,62
+municipio,3303302,Niterói,9,Transparência e Participação,,66.67,,,82
+municipio,3303401,Nova Friburgo,1,Governança do Governo Digital,,100.0,,,1
+municipio,3303401,Nova Friburgo,2,Qualidade dos Serviços Digitais,,66.67,,,219
+municipio,3303401,Nova Friburgo,3,Identificação Única,,100.0,,,1
+municipio,3303401,Nova Friburgo,4,Segurança e LGPD,,0.0,,,257
+municipio,3303401,Nova Friburgo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3303401,Nova Friburgo,6,Infraestrutura,,75.92,,,134
+municipio,3303401,Nova Friburgo,9,Transparência e Participação,,66.67,,,82
+municipio,3303500,Nova Iguaçu,1,Governança do Governo Digital,,100.0,,,1
+municipio,3303500,Nova Iguaçu,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,3303500,Nova Iguaçu,3,Identificação Única,,100.0,,,1
+municipio,3303500,Nova Iguaçu,4,Segurança e LGPD,,20.0,,,190
+municipio,3303500,Nova Iguaçu,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3303500,Nova Iguaçu,6,Infraestrutura,,76.53,,,126
+municipio,3303500,Nova Iguaçu,9,Transparência e Participação,,55.56,,,168
+municipio,3303906,Petrópolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,3303906,Petrópolis,2,Qualidade dos Serviços Digitais,,89.33,,,27
+municipio,3303906,Petrópolis,3,Identificação Única,,100.0,,,1
+municipio,3303906,Petrópolis,4,Segurança e LGPD,,60.0,,,85
+municipio,3303906,Petrópolis,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3303906,Petrópolis,6,Infraestrutura,,66.71,,,197
+municipio,3303906,Petrópolis,9,Transparência e Participação,,66.67,,,82
+municipio,3304144,Queimados,1,Governança do Governo Digital,,100.0,,,1
+municipio,3304144,Queimados,2,Qualidade dos Serviços Digitais,,80.67,,,97
+municipio,3304144,Queimados,3,Identificação Única,,100.0,,,1
+municipio,3304144,Queimados,4,Segurança e LGPD,,20.0,,,190
+municipio,3304144,Queimados,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3304144,Queimados,6,Infraestrutura,,56.99,,,240
+municipio,3304144,Queimados,9,Transparência e Participação,,55.56,,,168
+municipio,3304201,Resende,1,Governança do Governo Digital,,100.0,,,1
+municipio,3304201,Resende,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,3304201,Resende,3,Identificação Única,,100.0,,,1
+municipio,3304201,Resende,4,Segurança e LGPD,,20.0,,,190
+municipio,3304201,Resende,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3304201,Resende,6,Infraestrutura,,77.78,,,93
+municipio,3304201,Resende,9,Transparência e Participação,,66.67,,,82
+municipio,3304524,Rio das Ostras,1,Governança do Governo Digital,,100.0,,,1
+municipio,3304524,Rio das Ostras,2,Qualidade dos Serviços Digitais,,69.33,,,204
+municipio,3304524,Rio das Ostras,3,Identificação Única,,100.0,,,1
+municipio,3304524,Rio das Ostras,4,Segurança e LGPD,,20.0,,,190
+municipio,3304524,Rio das Ostras,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3304524,Rio das Ostras,6,Infraestrutura,,67.64,,,160
+municipio,3304524,Rio das Ostras,9,Transparência e Participação,,44.44,,,256
+municipio,3304557,Rio de Janeiro,1,Governança do Governo Digital,,100.0,,,1
+municipio,3304557,Rio de Janeiro,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3304557,Rio de Janeiro,3,Identificação Única,,100.0,,,1
+municipio,3304557,Rio de Janeiro,4,Segurança e LGPD,,80.0,,,31
+municipio,3304557,Rio de Janeiro,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3304557,Rio de Janeiro,6,Infraestrutura,,86.94,,,60
+municipio,3304557,Rio de Janeiro,9,Transparência e Participação,,66.67,,,82
+municipio,3304904,São Gonçalo,1,Governança do Governo Digital,,100.0,,,1
+municipio,3304904,São Gonçalo,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3304904,São Gonçalo,3,Identificação Única,,0.0,,,260
+municipio,3304904,São Gonçalo,4,Segurança e LGPD,,20.0,,,190
+municipio,3304904,São Gonçalo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3304904,São Gonçalo,6,Infraestrutura,,66.32,,,206
+municipio,3304904,São Gonçalo,9,Transparência e Participação,,55.56,,,168
+municipio,3305109,São João de Meriti,1,Governança do Governo Digital,,100.0,,,1
+municipio,3305109,São João de Meriti,2,Qualidade dos Serviços Digitais,,78.67,,,119
+municipio,3305109,São João de Meriti,3,Identificação Única,,0.0,,,260
+municipio,3305109,São João de Meriti,4,Segurança e LGPD,,40.0,,,142
+municipio,3305109,São João de Meriti,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3305109,São João de Meriti,6,Infraestrutura,,66.36,,,204
+municipio,3305109,São João de Meriti,9,Transparência e Participação,,44.44,,,256
+municipio,3305208,São Pedro da Aldeia,1,Governança do Governo Digital,,100.0,,,1
+municipio,3305208,São Pedro da Aldeia,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,3305208,São Pedro da Aldeia,3,Identificação Única,,0.0,,,260
+municipio,3305208,São Pedro da Aldeia,4,Segurança e LGPD,,60.0,,,85
+municipio,3305208,São Pedro da Aldeia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3305208,São Pedro da Aldeia,6,Infraestrutura,,45.63,,,300
+municipio,3305208,São Pedro da Aldeia,9,Transparência e Participação,,66.67,,,82
+municipio,3305802,Teresópolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,3305802,Teresópolis,2,Qualidade dos Serviços Digitais,,87.33,,,36
+municipio,3305802,Teresópolis,3,Identificação Única,,100.0,,,1
+municipio,3305802,Teresópolis,4,Segurança e LGPD,,100.0,,,1
+municipio,3305802,Teresópolis,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3305802,Teresópolis,6,Infraestrutura,,66.94,,,188
+municipio,3305802,Teresópolis,9,Transparência e Participação,,66.67,,,82
+municipio,3306305,Volta Redonda,1,Governança do Governo Digital,,100.0,,,1
+municipio,3306305,Volta Redonda,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,3306305,Volta Redonda,3,Identificação Única,,100.0,,,1
+municipio,3306305,Volta Redonda,4,Segurança e LGPD,,40.0,,,142
+municipio,3306305,Volta Redonda,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3306305,Volta Redonda,6,Infraestrutura,,68.2,,,141
+municipio,3306305,Volta Redonda,9,Transparência e Participação,,55.56,,,168
+municipio,3501608,Americana,1,Governança do Governo Digital,,100.0,,,1
+municipio,3501608,Americana,2,Qualidade dos Serviços Digitais,,70.0,,,198
+municipio,3501608,Americana,3,Identificação Única,,100.0,,,1
+municipio,3501608,Americana,4,Segurança e LGPD,,20.0,,,190
+municipio,3501608,Americana,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3501608,Americana,6,Infraestrutura,,67.39,,,172
+municipio,3501608,Americana,9,Transparência e Participação,,77.78,,,23
+municipio,3502804,Araçatuba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3502804,Araçatuba,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,3502804,Araçatuba,3,Identificação Única,,100.0,,,1
+municipio,3502804,Araçatuba,4,Segurança e LGPD,,60.0,,,85
+municipio,3502804,Araçatuba,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3502804,Araçatuba,6,Infraestrutura,,68.23,,,140
+municipio,3502804,Araçatuba,9,Transparência e Participação,,55.56,,,168
+municipio,3503208,Araraquara,1,Governança do Governo Digital,,100.0,,,1
+municipio,3503208,Araraquara,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,3503208,Araraquara,3,Identificação Única,,100.0,,,1
+municipio,3503208,Araraquara,4,Segurança e LGPD,,80.0,,,31
+municipio,3503208,Araraquara,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3503208,Araraquara,6,Infraestrutura,,78.1,,,84
+municipio,3503208,Araraquara,9,Transparência e Participação,,66.67,,,82
+municipio,3503307,Araras,1,Governança do Governo Digital,,100.0,,,1
+municipio,3503307,Araras,2,Qualidade dos Serviços Digitais,,71.33,,,188
+municipio,3503307,Araras,3,Identificação Única,,100.0,,,1
+municipio,3503307,Araras,4,Segurança e LGPD,,0.0,,,257
+municipio,3503307,Araras,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3503307,Araras,6,Infraestrutura,,68.05,,,144
+municipio,3503307,Araras,9,Transparência e Participação,,66.67,,,82
+municipio,3504008,Assis,1,Governança do Governo Digital,,100.0,,,1
+municipio,3504008,Assis,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,3504008,Assis,3,Identificação Única,,100.0,,,1
+municipio,3504008,Assis,4,Segurança e LGPD,,40.0,,,142
+municipio,3504008,Assis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3504008,Assis,6,Infraestrutura,,87.98,,,35
+municipio,3504008,Assis,9,Transparência e Participação,,77.78,,,23
+municipio,3504107,Atibaia,1,Governança do Governo Digital,,100.0,,,1
+municipio,3504107,Atibaia,2,Qualidade dos Serviços Digitais,,71.33,,,188
+municipio,3504107,Atibaia,3,Identificação Única,,100.0,,,1
+municipio,3504107,Atibaia,4,Segurança e LGPD,,20.0,,,190
+municipio,3504107,Atibaia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3504107,Atibaia,6,Infraestrutura,,57.45,,,229
+municipio,3504107,Atibaia,9,Transparência e Participação,,55.56,,,168
+municipio,3505500,Barretos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3505500,Barretos,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3505500,Barretos,3,Identificação Única,,100.0,,,1
+municipio,3505500,Barretos,4,Segurança e LGPD,,60.0,,,85
+municipio,3505500,Barretos,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3505500,Barretos,6,Infraestrutura,,67.28,,,177
+municipio,3505500,Barretos,9,Transparência e Participação,,55.56,,,168
+municipio,3505708,Barueri,1,Governança do Governo Digital,,100.0,,,1
+municipio,3505708,Barueri,2,Qualidade dos Serviços Digitais,,93.33,,,12
+municipio,3505708,Barueri,3,Identificação Única,,100.0,,,1
+municipio,3505708,Barueri,4,Segurança e LGPD,,40.0,,,142
+municipio,3505708,Barueri,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3505708,Barueri,6,Infraestrutura,,88.47,,,29
+municipio,3505708,Barueri,9,Transparência e Participação,,77.78,,,23
+municipio,3506003,Bauru,1,Governança do Governo Digital,,100.0,,,1
+municipio,3506003,Bauru,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,3506003,Bauru,3,Identificação Única,,100.0,,,1
+municipio,3506003,Bauru,4,Segurança e LGPD,,20.0,,,190
+municipio,3506003,Bauru,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3506003,Bauru,6,Infraestrutura,,57.5,,,228
+municipio,3506003,Bauru,9,Transparência e Participação,,55.56,,,168
+municipio,3506508,Birigui,1,Governança do Governo Digital,,100.0,,,1
+municipio,3506508,Birigui,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3506508,Birigui,3,Identificação Única,,0.0,,,260
+municipio,3506508,Birigui,4,Segurança e LGPD,,20.0,,,190
+municipio,3506508,Birigui,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3506508,Birigui,6,Infraestrutura,,48.21,,,279
+municipio,3506508,Birigui,9,Transparência e Participação,,55.56,,,168
+municipio,3507506,Botucatu,1,Governança do Governo Digital,,100.0,,,1
+municipio,3507506,Botucatu,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,3507506,Botucatu,3,Identificação Única,,100.0,,,1
+municipio,3507506,Botucatu,4,Segurança e LGPD,,80.0,,,31
+municipio,3507506,Botucatu,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3507506,Botucatu,6,Infraestrutura,,67.43,,,169
+municipio,3507506,Botucatu,9,Transparência e Participação,,55.56,,,168
+municipio,3507605,Bragança Paulista,1,Governança do Governo Digital,,100.0,,,1
+municipio,3507605,Bragança Paulista,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,3507605,Bragança Paulista,3,Identificação Única,,100.0,,,1
+municipio,3507605,Bragança Paulista,4,Segurança e LGPD,,60.0,,,85
+municipio,3507605,Bragança Paulista,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3507605,Bragança Paulista,6,Infraestrutura,,88.0,,,34
+municipio,3507605,Bragança Paulista,9,Transparência e Participação,,66.67,,,82
+municipio,3509502,Campinas,1,Governança do Governo Digital,,100.0,,,1
+municipio,3509502,Campinas,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3509502,Campinas,3,Identificação Única,,100.0,,,1
+municipio,3509502,Campinas,4,Segurança e LGPD,,100.0,,,1
+municipio,3509502,Campinas,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3509502,Campinas,6,Infraestrutura,,97.8,,,8
+municipio,3509502,Campinas,9,Transparência e Participação,,66.67,,,82
+municipio,3510500,Caraguatatuba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3510500,Caraguatatuba,2,Qualidade dos Serviços Digitais,,86.67,,,37
+municipio,3510500,Caraguatatuba,3,Identificação Única,,100.0,,,1
+municipio,3510500,Caraguatatuba,4,Segurança e LGPD,,0.0,,,257
+municipio,3510500,Caraguatatuba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3510500,Caraguatatuba,6,Infraestrutura,,78.11,,,83
+municipio,3510500,Caraguatatuba,9,Transparência e Participação,,66.67,,,82
+municipio,3510609,Carapicuíba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3510609,Carapicuíba,2,Qualidade dos Serviços Digitais,,76.67,,,137
+municipio,3510609,Carapicuíba,3,Identificação Única,,100.0,,,1
+municipio,3510609,Carapicuíba,4,Segurança e LGPD,,0.0,,,257
+municipio,3510609,Carapicuíba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3510609,Carapicuíba,6,Infraestrutura,,67.1,,,181
+municipio,3510609,Carapicuíba,9,Transparência e Participação,,11.11,,,317
+municipio,3511102,Catanduva,1,Governança do Governo Digital,,100.0,,,1
+municipio,3511102,Catanduva,2,Qualidade dos Serviços Digitais,,75.33,,,147
+municipio,3511102,Catanduva,3,Identificação Única,,100.0,,,1
+municipio,3511102,Catanduva,4,Segurança e LGPD,,80.0,,,31
+municipio,3511102,Catanduva,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3511102,Catanduva,6,Infraestrutura,,87.83,,,39
+municipio,3511102,Catanduva,9,Transparência e Participação,,55.56,,,168
+municipio,3513009,Cotia,1,Governança do Governo Digital,,100.0,,,1
+municipio,3513009,Cotia,2,Qualidade dos Serviços Digitais,,68.67,,,206
+municipio,3513009,Cotia,3,Identificação Única,,0.0,,,260
+municipio,3513009,Cotia,4,Segurança e LGPD,,60.0,,,85
+municipio,3513009,Cotia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3513009,Cotia,6,Infraestrutura,,86.96,,,58
+municipio,3513009,Cotia,9,Transparência e Participação,,88.89,,,3
+municipio,3513504,Cubatão,1,Governança do Governo Digital,,100.0,,,1
+municipio,3513504,Cubatão,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,3513504,Cubatão,3,Identificação Única,,100.0,,,1
+municipio,3513504,Cubatão,4,Segurança e LGPD,,0.0,,,257
+municipio,3513504,Cubatão,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3513504,Cubatão,6,Infraestrutura,,47.48,,,281
+municipio,3513504,Cubatão,9,Transparência e Participação,,44.44,,,256
+municipio,3513801,Diadema,1,Governança do Governo Digital,,100.0,,,1
+municipio,3513801,Diadema,2,Qualidade dos Serviços Digitais,,77.33,,,130
+municipio,3513801,Diadema,3,Identificação Única,,100.0,,,1
+municipio,3513801,Diadema,4,Segurança e LGPD,,40.0,,,142
+municipio,3513801,Diadema,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3513801,Diadema,6,Infraestrutura,,98.01,,,5
+municipio,3513801,Diadema,9,Transparência e Participação,,77.78,,,23
+municipio,3515004,Embu das Artes,1,Governança do Governo Digital,,100.0,,,1
+municipio,3515004,Embu das Artes,2,Qualidade dos Serviços Digitais,,54.0,,,296
+municipio,3515004,Embu das Artes,3,Identificação Única,,0.0,,,260
+municipio,3515004,Embu das Artes,4,Segurança e LGPD,,60.0,,,85
+municipio,3515004,Embu das Artes,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3515004,Embu das Artes,6,Infraestrutura,,57.55,,,226
+municipio,3515004,Embu das Artes,9,Transparência e Participação,,44.44,,,256
+municipio,3515707,Ferraz de Vasconcelos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3515707,Ferraz de Vasconcelos,2,Qualidade dos Serviços Digitais,,68.0,,,211
+municipio,3515707,Ferraz de Vasconcelos,3,Identificação Única,,0.0,,,260
+municipio,3515707,Ferraz de Vasconcelos,4,Segurança e LGPD,,0.0,,,257
+municipio,3515707,Ferraz de Vasconcelos,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3515707,Ferraz de Vasconcelos,6,Infraestrutura,,57.3,,,232
+municipio,3515707,Ferraz de Vasconcelos,9,Transparência e Participação,,55.56,,,168
+municipio,3516200,Franca,1,Governança do Governo Digital,,100.0,,,1
+municipio,3516200,Franca,2,Qualidade dos Serviços Digitais,,90.67,,,21
+municipio,3516200,Franca,3,Identificação Única,,100.0,,,1
+municipio,3516200,Franca,4,Segurança e LGPD,,60.0,,,85
+municipio,3516200,Franca,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3516200,Franca,6,Infraestrutura,,77.8,,,91
+municipio,3516200,Franca,9,Transparência e Participação,,77.78,,,23
+municipio,3516309,Francisco Morato,1,Governança do Governo Digital,,100.0,,,1
+municipio,3516309,Francisco Morato,2,Qualidade dos Serviços Digitais,,70.67,,,192
+municipio,3516309,Francisco Morato,3,Identificação Única,,100.0,,,1
+municipio,3516309,Francisco Morato,4,Segurança e LGPD,,60.0,,,85
+municipio,3516309,Francisco Morato,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3516309,Francisco Morato,6,Infraestrutura,,66.9,,,190
+municipio,3516309,Francisco Morato,9,Transparência e Participação,,66.67,,,82
+municipio,3516408,Franco da Rocha,1,Governança do Governo Digital,,100.0,,,1
+municipio,3516408,Franco da Rocha,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3516408,Franco da Rocha,3,Identificação Única,,100.0,,,1
+municipio,3516408,Franco da Rocha,4,Segurança e LGPD,,80.0,,,31
+municipio,3516408,Franco da Rocha,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3516408,Franco da Rocha,6,Infraestrutura,,86.77,,,63
+municipio,3516408,Franco da Rocha,9,Transparência e Participação,,33.33,,,301
+municipio,3518404,Guaratinguetá,1,Governança do Governo Digital,,100.0,,,1
+municipio,3518404,Guaratinguetá,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,3518404,Guaratinguetá,3,Identificação Única,,100.0,,,1
+municipio,3518404,Guaratinguetá,4,Segurança e LGPD,,20.0,,,190
+municipio,3518404,Guaratinguetá,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3518404,Guaratinguetá,6,Infraestrutura,,67.65,,,159
+municipio,3518404,Guaratinguetá,9,Transparência e Participação,,44.44,,,256
+municipio,3518701,Guarujá,1,Governança do Governo Digital,,100.0,,,1
+municipio,3518701,Guarujá,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3518701,Guarujá,3,Identificação Única,,100.0,,,1
+municipio,3518701,Guarujá,4,Segurança e LGPD,,80.0,,,31
+municipio,3518701,Guarujá,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3518701,Guarujá,6,Infraestrutura,,67.29,,,176
+municipio,3518701,Guarujá,9,Transparência e Participação,,55.56,,,168
+municipio,3518800,Guarulhos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3518800,Guarulhos,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,3518800,Guarulhos,3,Identificação Única,,100.0,,,1
+municipio,3518800,Guarulhos,4,Segurança e LGPD,,80.0,,,31
+municipio,3518800,Guarulhos,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3518800,Guarulhos,6,Infraestrutura,,87.81,,,40
+municipio,3518800,Guarulhos,9,Transparência e Participação,,55.56,,,168
+municipio,3519071,Hortolândia,1,Governança do Governo Digital,,100.0,,,1
+municipio,3519071,Hortolândia,2,Qualidade dos Serviços Digitais,,76.67,,,137
+municipio,3519071,Hortolândia,3,Identificação Única,,100.0,,,1
+municipio,3519071,Hortolândia,4,Segurança e LGPD,,60.0,,,85
+municipio,3519071,Hortolândia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3519071,Hortolândia,6,Infraestrutura,,47.26,,,291
+municipio,3519071,Hortolândia,9,Transparência e Participação,,55.56,,,168
+municipio,3520509,Indaiatuba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3520509,Indaiatuba,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,3520509,Indaiatuba,3,Identificação Única,,100.0,,,1
+municipio,3520509,Indaiatuba,4,Segurança e LGPD,,20.0,,,190
+municipio,3520509,Indaiatuba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3520509,Indaiatuba,6,Infraestrutura,,77.89,,,87
+municipio,3520509,Indaiatuba,9,Transparência e Participação,,66.67,,,82
+municipio,3522109,Itanhaém,1,Governança do Governo Digital,,100.0,,,1
+municipio,3522109,Itanhaém,2,Qualidade dos Serviços Digitais,,86.67,,,37
+municipio,3522109,Itanhaém,3,Identificação Única,,100.0,,,1
+municipio,3522109,Itanhaém,4,Segurança e LGPD,,0.0,,,257
+municipio,3522109,Itanhaém,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3522109,Itanhaém,6,Infraestrutura,,57.54,,,227
+municipio,3522109,Itanhaém,9,Transparência e Participação,,77.78,,,23
+municipio,3522208,Itapecerica da Serra,1,Governança do Governo Digital,,100.0,,,1
+municipio,3522208,Itapecerica da Serra,2,Qualidade dos Serviços Digitais,,61.33,,,260
+municipio,3522208,Itapecerica da Serra,3,Identificação Única,,100.0,,,1
+municipio,3522208,Itapecerica da Serra,4,Segurança e LGPD,,40.0,,,142
+municipio,3522208,Itapecerica da Serra,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3522208,Itapecerica da Serra,6,Infraestrutura,,87.34,,,50
+municipio,3522208,Itapecerica da Serra,9,Transparência e Participação,,44.44,,,256
+municipio,3522307,Itapetininga,1,Governança do Governo Digital,,100.0,,,1
+municipio,3522307,Itapetininga,2,Qualidade dos Serviços Digitais,,53.33,,,299
+municipio,3522307,Itapetininga,3,Identificação Única,,100.0,,,1
+municipio,3522307,Itapetininga,4,Segurança e LGPD,,20.0,,,190
+municipio,3522307,Itapetininga,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3522307,Itapetininga,6,Infraestrutura,,67.31,,,175
+municipio,3522307,Itapetininga,9,Transparência e Participação,,66.67,,,82
+municipio,3522505,Itapevi,1,Governança do Governo Digital,,100.0,,,1
+municipio,3522505,Itapevi,2,Qualidade dos Serviços Digitais,,63.33,,,246
+municipio,3522505,Itapevi,3,Identificação Única,,100.0,,,1
+municipio,3522505,Itapevi,4,Segurança e LGPD,,80.0,,,31
+municipio,3522505,Itapevi,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3522505,Itapevi,6,Infraestrutura,,77.92,,,86
+municipio,3522505,Itapevi,9,Transparência e Participação,,66.67,,,82
+municipio,3523107,Itaquaquecetuba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3523107,Itaquaquecetuba,2,Qualidade dos Serviços Digitais,,72.67,,,178
+municipio,3523107,Itaquaquecetuba,3,Identificação Única,,100.0,,,1
+municipio,3523107,Itaquaquecetuba,4,Segurança e LGPD,,0.0,,,257
+municipio,3523107,Itaquaquecetuba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3523107,Itaquaquecetuba,6,Infraestrutura,,87.01,,,56
+municipio,3523107,Itaquaquecetuba,9,Transparência e Participação,,44.44,,,256
+municipio,3523404,Itatiba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3523404,Itatiba,2,Qualidade dos Serviços Digitais,,75.33,,,147
+municipio,3523404,Itatiba,3,Identificação Única,,100.0,,,1
+municipio,3523404,Itatiba,4,Segurança e LGPD,,0.0,,,257
+municipio,3523404,Itatiba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3523404,Itatiba,6,Infraestrutura,,87.72,,,42
+municipio,3523404,Itatiba,9,Transparência e Participação,,55.56,,,168
+municipio,3523909,Itu,1,Governança do Governo Digital,,100.0,,,1
+municipio,3523909,Itu,2,Qualidade dos Serviços Digitais,,54.0,,,296
+municipio,3523909,Itu,3,Identificação Única,,100.0,,,1
+municipio,3523909,Itu,4,Segurança e LGPD,,40.0,,,142
+municipio,3523909,Itu,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3523909,Itu,6,Infraestrutura,,78.63,,,77
+municipio,3523909,Itu,9,Transparência e Participação,,66.67,,,82
+municipio,3524402,Jacareí,1,Governança do Governo Digital,,100.0,,,1
+municipio,3524402,Jacareí,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,3524402,Jacareí,3,Identificação Única,,100.0,,,1
+municipio,3524402,Jacareí,4,Segurança e LGPD,,60.0,,,85
+municipio,3524402,Jacareí,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3524402,Jacareí,6,Infraestrutura,,97.5,,,13
+municipio,3524402,Jacareí,9,Transparência e Participação,,55.56,,,168
+municipio,3525003,Jandira,1,Governança do Governo Digital,,100.0,,,1
+municipio,3525003,Jandira,2,Qualidade dos Serviços Digitais,,64.0,,,239
+municipio,3525003,Jandira,3,Identificação Única,,0.0,,,260
+municipio,3525003,Jandira,4,Segurança e LGPD,,0.0,,,257
+municipio,3525003,Jandira,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3525003,Jandira,6,Infraestrutura,,47.13,,,292
+municipio,3525003,Jandira,9,Transparência e Participação,,55.56,,,168
+municipio,3525300,Jaú,1,Governança do Governo Digital,,100.0,,,1
+municipio,3525300,Jaú,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3525300,Jaú,3,Identificação Única,,100.0,,,1
+municipio,3525300,Jaú,4,Segurança e LGPD,,60.0,,,85
+municipio,3525300,Jaú,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3525300,Jaú,6,Infraestrutura,,67.69,,,158
+municipio,3525300,Jaú,9,Transparência e Participação,,66.67,,,82
+municipio,3525904,Jundiaí,1,Governança do Governo Digital,,100.0,,,1
+municipio,3525904,Jundiaí,2,Qualidade dos Serviços Digitais,,92.67,,,15
+municipio,3525904,Jundiaí,3,Identificação Única,,100.0,,,1
+municipio,3525904,Jundiaí,4,Segurança e LGPD,,60.0,,,85
+municipio,3525904,Jundiaí,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3525904,Jundiaí,6,Infraestrutura,,87.43,,,47
+municipio,3525904,Jundiaí,9,Transparência e Participação,,77.78,,,23
+municipio,3526902,Limeira,1,Governança do Governo Digital,,100.0,,,1
+municipio,3526902,Limeira,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,3526902,Limeira,3,Identificação Única,,100.0,,,1
+municipio,3526902,Limeira,4,Segurança e LGPD,,60.0,,,85
+municipio,3526902,Limeira,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3526902,Limeira,6,Infraestrutura,,68.13,,,143
+municipio,3526902,Limeira,9,Transparência e Participação,,77.78,,,23
+municipio,3529005,Marília,1,Governança do Governo Digital,,100.0,,,1
+municipio,3529005,Marília,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,3529005,Marília,3,Identificação Única,,100.0,,,1
+municipio,3529005,Marília,4,Segurança e LGPD,,80.0,,,31
+municipio,3529005,Marília,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3529005,Marília,6,Infraestrutura,,68.0,,,146
+municipio,3529005,Marília,9,Transparência e Participação,,66.67,,,82
+municipio,3529401,Mauá,1,Governança do Governo Digital,,100.0,,,1
+municipio,3529401,Mauá,2,Qualidade dos Serviços Digitais,,68.0,,,211
+municipio,3529401,Mauá,3,Identificação Única,,0.0,,,260
+municipio,3529401,Mauá,4,Segurança e LGPD,,40.0,,,142
+municipio,3529401,Mauá,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3529401,Mauá,6,Infraestrutura,,67.92,,,150
+municipio,3529401,Mauá,9,Transparência e Participação,,66.67,,,82
+municipio,3530607,Mogi das Cruzes,1,Governança do Governo Digital,,100.0,,,1
+municipio,3530607,Mogi das Cruzes,2,Qualidade dos Serviços Digitais,,88.0,,,34
+municipio,3530607,Mogi das Cruzes,3,Identificação Única,,100.0,,,1
+municipio,3530607,Mogi das Cruzes,4,Segurança e LGPD,,100.0,,,1
+municipio,3530607,Mogi das Cruzes,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3530607,Mogi das Cruzes,6,Infraestrutura,,88.05,,,33
+municipio,3530607,Mogi das Cruzes,9,Transparência e Participação,,88.89,,,3
+municipio,3530706,Mogi Guaçu,1,Governança do Governo Digital,,100.0,,,1
+municipio,3530706,Mogi Guaçu,2,Qualidade dos Serviços Digitais,,78.0,,,124
+municipio,3530706,Mogi Guaçu,3,Identificação Única,,100.0,,,1
+municipio,3530706,Mogi Guaçu,4,Segurança e LGPD,,60.0,,,85
+municipio,3530706,Mogi Guaçu,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3530706,Mogi Guaçu,6,Infraestrutura,,67.42,,,170
+municipio,3530706,Mogi Guaçu,9,Transparência e Participação,,55.56,,,168
+municipio,3534401,Osasco,1,Governança do Governo Digital,,100.0,,,1
+municipio,3534401,Osasco,2,Qualidade dos Serviços Digitais,,89.33,,,27
+municipio,3534401,Osasco,3,Identificação Única,,100.0,,,1
+municipio,3534401,Osasco,4,Segurança e LGPD,,80.0,,,31
+municipio,3534401,Osasco,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3534401,Osasco,6,Infraestrutura,,97.48,,,14
+municipio,3534401,Osasco,9,Transparência e Participação,,77.78,,,23
+municipio,3534708,Ourinhos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3534708,Ourinhos,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,3534708,Ourinhos,3,Identificação Única,,100.0,,,1
+municipio,3534708,Ourinhos,4,Segurança e LGPD,,80.0,,,31
+municipio,3534708,Ourinhos,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3534708,Ourinhos,6,Infraestrutura,,88.12,,,32
+municipio,3534708,Ourinhos,9,Transparência e Participação,,77.78,,,23
+municipio,3536505,Paulínia,1,Governança do Governo Digital,,100.0,,,1
+municipio,3536505,Paulínia,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,3536505,Paulínia,3,Identificação Única,,100.0,,,1
+municipio,3536505,Paulínia,4,Segurança e LGPD,,20.0,,,190
+municipio,3536505,Paulínia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3536505,Paulínia,6,Infraestrutura,,95.5,,,27
+municipio,3536505,Paulínia,9,Transparência e Participação,,66.67,,,82
+municipio,3538006,Pindamonhangaba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3538006,Pindamonhangaba,2,Qualidade dos Serviços Digitais,,94.67,,,8
+municipio,3538006,Pindamonhangaba,3,Identificação Única,,100.0,,,1
+municipio,3538006,Pindamonhangaba,4,Segurança e LGPD,,80.0,,,31
+municipio,3538006,Pindamonhangaba,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3538006,Pindamonhangaba,6,Infraestrutura,,87.56,,,45
+municipio,3538006,Pindamonhangaba,9,Transparência e Participação,,66.67,,,82
+municipio,3538709,Piracicaba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3538709,Piracicaba,2,Qualidade dos Serviços Digitais,,72.0,,,182
+municipio,3538709,Piracicaba,3,Identificação Única,,100.0,,,1
+municipio,3538709,Piracicaba,4,Segurança e LGPD,,60.0,,,85
+municipio,3538709,Piracicaba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3538709,Piracicaba,6,Infraestrutura,,67.61,,,161
+municipio,3538709,Piracicaba,9,Transparência e Participação,,66.67,,,82
+municipio,3539806,Poá,1,Governança do Governo Digital,,100.0,,,1
+municipio,3539806,Poá,2,Qualidade dos Serviços Digitais,,64.0,,,239
+municipio,3539806,Poá,3,Identificação Única,,100.0,,,1
+municipio,3539806,Poá,4,Segurança e LGPD,,0.0,,,257
+municipio,3539806,Poá,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3539806,Poá,6,Infraestrutura,,47.37,,,288
+municipio,3539806,Poá,9,Transparência e Participação,,55.56,,,168
+municipio,3541000,Praia Grande,1,Governança do Governo Digital,,100.0,,,1
+municipio,3541000,Praia Grande,2,Qualidade dos Serviços Digitais,,84.67,,,53
+municipio,3541000,Praia Grande,3,Identificação Única,,100.0,,,1
+municipio,3541000,Praia Grande,4,Segurança e LGPD,,100.0,,,1
+municipio,3541000,Praia Grande,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3541000,Praia Grande,6,Infraestrutura,,78.33,,,81
+municipio,3541000,Praia Grande,9,Transparência e Participação,,88.89,,,3
+municipio,3541406,Presidente Prudente,1,Governança do Governo Digital,,100.0,,,1
+municipio,3541406,Presidente Prudente,2,Qualidade dos Serviços Digitais,,96.67,,,3
+municipio,3541406,Presidente Prudente,3,Identificação Única,,100.0,,,1
+municipio,3541406,Presidente Prudente,4,Segurança e LGPD,,100.0,,,1
+municipio,3541406,Presidente Prudente,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3541406,Presidente Prudente,6,Infraestrutura,,67.96,,,148
+municipio,3541406,Presidente Prudente,9,Transparência e Participação,,77.78,,,23
+municipio,3543303,Ribeirão Pires,1,Governança do Governo Digital,,100.0,,,1
+municipio,3543303,Ribeirão Pires,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,3543303,Ribeirão Pires,3,Identificação Única,,100.0,,,1
+municipio,3543303,Ribeirão Pires,4,Segurança e LGPD,,80.0,,,31
+municipio,3543303,Ribeirão Pires,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3543303,Ribeirão Pires,6,Infraestrutura,,67.79,,,152
+municipio,3543303,Ribeirão Pires,9,Transparência e Participação,,55.56,,,168
+municipio,3543402,Ribeirão Preto,1,Governança do Governo Digital,,100.0,,,1
+municipio,3543402,Ribeirão Preto,2,Qualidade dos Serviços Digitais,,63.33,,,246
+municipio,3543402,Ribeirão Preto,3,Identificação Única,,100.0,,,1
+municipio,3543402,Ribeirão Preto,4,Segurança e LGPD,,20.0,,,190
+municipio,3543402,Ribeirão Preto,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3543402,Ribeirão Preto,6,Infraestrutura,,97.77,,,9
+municipio,3543402,Ribeirão Preto,9,Transparência e Participação,,44.44,,,256
+municipio,3543907,Rio Claro,1,Governança do Governo Digital,,100.0,,,1
+municipio,3543907,Rio Claro,2,Qualidade dos Serviços Digitais,,72.0,,,182
+municipio,3543907,Rio Claro,3,Identificação Única,,0.0,,,260
+municipio,3543907,Rio Claro,4,Segurança e LGPD,,0.0,,,257
+municipio,3543907,Rio Claro,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3543907,Rio Claro,6,Infraestrutura,,47.44,,,284
+municipio,3543907,Rio Claro,9,Transparência e Participação,,55.56,,,168
+municipio,3545209,Salto,1,Governança do Governo Digital,,100.0,,,1
+municipio,3545209,Salto,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3545209,Salto,3,Identificação Única,,100.0,,,1
+municipio,3545209,Salto,4,Segurança e LGPD,,0.0,,,257
+municipio,3545209,Salto,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3545209,Salto,6,Infraestrutura,,78.59,,,79
+municipio,3545209,Salto,9,Transparência e Participação,,66.67,,,82
+municipio,3545803,Santa Bárbara d'Oeste,1,Governança do Governo Digital,,100.0,,,1
+municipio,3545803,Santa Bárbara d'Oeste,2,Qualidade dos Serviços Digitais,,77.33,,,130
+municipio,3545803,Santa Bárbara d'Oeste,3,Identificação Única,,100.0,,,1
+municipio,3545803,Santa Bárbara d'Oeste,4,Segurança e LGPD,,20.0,,,190
+municipio,3545803,Santa Bárbara d'Oeste,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3545803,Santa Bárbara d'Oeste,6,Infraestrutura,,77.87,,,88
+municipio,3545803,Santa Bárbara d'Oeste,9,Transparência e Participação,,44.44,,,256
+municipio,3547304,Santana de Parnaíba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3547304,Santana de Parnaíba,2,Qualidade dos Serviços Digitais,,94.67,,,8
+municipio,3547304,Santana de Parnaíba,3,Identificação Única,,100.0,,,1
+municipio,3547304,Santana de Parnaíba,4,Segurança e LGPD,,80.0,,,31
+municipio,3547304,Santana de Parnaíba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3547304,Santana de Parnaíba,6,Infraestrutura,,68.02,,,145
+municipio,3547304,Santana de Parnaíba,9,Transparência e Participação,,66.67,,,82
+municipio,3547809,Santo André,1,Governança do Governo Digital,,100.0,,,1
+municipio,3547809,Santo André,2,Qualidade dos Serviços Digitais,,61.33,,,260
+municipio,3547809,Santo André,3,Identificação Única,,100.0,,,1
+municipio,3547809,Santo André,4,Segurança e LGPD,,60.0,,,85
+municipio,3547809,Santo André,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3547809,Santo André,6,Infraestrutura,,98.15,,,4
+municipio,3547809,Santo André,9,Transparência e Participação,,44.44,,,256
+municipio,3548500,Santos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3548500,Santos,2,Qualidade dos Serviços Digitais,,90.0,,,22
+municipio,3548500,Santos,3,Identificação Única,,100.0,,,1
+municipio,3548500,Santos,4,Segurança e LGPD,,80.0,,,31
+municipio,3548500,Santos,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3548500,Santos,6,Infraestrutura,,88.16,,,30
+municipio,3548500,Santos,9,Transparência e Participação,,88.89,,,3
+municipio,3548708,São Bernardo do Campo,1,Governança do Governo Digital,,100.0,,,1
+municipio,3548708,São Bernardo do Campo,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3548708,São Bernardo do Campo,3,Identificação Única,,100.0,,,1
+municipio,3548708,São Bernardo do Campo,4,Segurança e LGPD,,0.0,,,257
+municipio,3548708,São Bernardo do Campo,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3548708,São Bernardo do Campo,6,Infraestrutura,,97.94,,,6
+municipio,3548708,São Bernardo do Campo,9,Transparência e Participação,,55.56,,,168
+municipio,3548807,São Caetano do Sul,1,Governança do Governo Digital,,100.0,,,1
+municipio,3548807,São Caetano do Sul,2,Qualidade dos Serviços Digitais,,91.33,,,20
+municipio,3548807,São Caetano do Sul,3,Identificação Única,,100.0,,,1
+municipio,3548807,São Caetano do Sul,4,Segurança e LGPD,,40.0,,,142
+municipio,3548807,São Caetano do Sul,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3548807,São Caetano do Sul,6,Infraestrutura,,97.71,,,10
+municipio,3548807,São Caetano do Sul,9,Transparência e Participação,,77.78,,,23
+municipio,3548906,São Carlos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3548906,São Carlos,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,3548906,São Carlos,3,Identificação Única,,100.0,,,1
+municipio,3548906,São Carlos,4,Segurança e LGPD,,0.0,,,257
+municipio,3548906,São Carlos,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3548906,São Carlos,6,Infraestrutura,,77.43,,,103
+municipio,3548906,São Carlos,9,Transparência e Participação,,55.56,,,168
+municipio,3549805,São José do Rio Preto,1,Governança do Governo Digital,,100.0,,,1
+municipio,3549805,São José do Rio Preto,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,3549805,São José do Rio Preto,3,Identificação Única,,100.0,,,1
+municipio,3549805,São José do Rio Preto,4,Segurança e LGPD,,80.0,,,31
+municipio,3549805,São José do Rio Preto,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3549805,São José do Rio Preto,6,Infraestrutura,,78.34,,,80
+municipio,3549805,São José do Rio Preto,9,Transparência e Participação,,66.67,,,82
+municipio,3549904,São José dos Campos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3549904,São José dos Campos,2,Qualidade dos Serviços Digitais,,89.33,,,27
+municipio,3549904,São José dos Campos,3,Identificação Única,,100.0,,,1
+municipio,3549904,São José dos Campos,4,Segurança e LGPD,,100.0,,,1
+municipio,3549904,São José dos Campos,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3549904,São José dos Campos,6,Infraestrutura,,87.9,,,37
+municipio,3549904,São José dos Campos,9,Transparência e Participação,,77.78,,,23
+municipio,3550308,São Paulo,1,Governança do Governo Digital,,100.0,,,1
+municipio,3550308,São Paulo,2,Qualidade dos Serviços Digitais,,76.0,,,141
+municipio,3550308,São Paulo,3,Identificação Única,,100.0,,,1
+municipio,3550308,São Paulo,4,Segurança e LGPD,,100.0,,,1
+municipio,3550308,São Paulo,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3550308,São Paulo,6,Infraestrutura,,96.15,,,26
+municipio,3550308,São Paulo,9,Transparência e Participação,,77.78,,,23
+municipio,3551009,São Vicente,1,Governança do Governo Digital,,100.0,,,1
+municipio,3551009,São Vicente,2,Qualidade dos Serviços Digitais,,84.67,,,53
+municipio,3551009,São Vicente,3,Identificação Única,,100.0,,,1
+municipio,3551009,São Vicente,4,Segurança e LGPD,,20.0,,,190
+municipio,3551009,São Vicente,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3551009,São Vicente,6,Infraestrutura,,66.95,,,187
+municipio,3551009,São Vicente,9,Transparência e Participação,,55.56,,,168
+municipio,3551702,Sertãozinho,1,Governança do Governo Digital,,100.0,,,1
+municipio,3551702,Sertãozinho,2,Qualidade dos Serviços Digitais,,64.67,,,230
+municipio,3551702,Sertãozinho,3,Identificação Única,,100.0,,,1
+municipio,3551702,Sertãozinho,4,Segurança e LGPD,,0.0,,,257
+municipio,3551702,Sertãozinho,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3551702,Sertãozinho,6,Infraestrutura,,57.89,,,221
+municipio,3551702,Sertãozinho,9,Transparência e Participação,,44.44,,,256
+municipio,3552205,Sorocaba,1,Governança do Governo Digital,,100.0,,,1
+municipio,3552205,Sorocaba,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3552205,Sorocaba,3,Identificação Única,,100.0,,,1
+municipio,3552205,Sorocaba,4,Segurança e LGPD,,100.0,,,1
+municipio,3552205,Sorocaba,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3552205,Sorocaba,6,Infraestrutura,,87.3,,,51
+municipio,3552205,Sorocaba,9,Transparência e Participação,,77.78,,,23
+municipio,3552403,Sumaré,1,Governança do Governo Digital,,100.0,,,1
+municipio,3552403,Sumaré,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,3552403,Sumaré,3,Identificação Única,,100.0,,,1
+municipio,3552403,Sumaré,4,Segurança e LGPD,,0.0,,,257
+municipio,3552403,Sumaré,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3552403,Sumaré,6,Infraestrutura,,47.48,,,281
+municipio,3552403,Sumaré,9,Transparência e Participação,,44.44,,,256
+municipio,3552502,Suzano,1,Governança do Governo Digital,,100.0,,,1
+municipio,3552502,Suzano,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,3552502,Suzano,3,Identificação Única,,100.0,,,1
+municipio,3552502,Suzano,4,Segurança e LGPD,,40.0,,,142
+municipio,3552502,Suzano,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3552502,Suzano,6,Infraestrutura,,87.92,,,36
+municipio,3552502,Suzano,9,Transparência e Participação,,66.67,,,82
+municipio,3552809,Taboão da Serra,1,Governança do Governo Digital,,100.0,,,1
+municipio,3552809,Taboão da Serra,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,3552809,Taboão da Serra,3,Identificação Única,,100.0,,,1
+municipio,3552809,Taboão da Serra,4,Segurança e LGPD,,40.0,,,142
+municipio,3552809,Taboão da Serra,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3552809,Taboão da Serra,6,Infraestrutura,,88.14,,,31
+municipio,3552809,Taboão da Serra,9,Transparência e Participação,,55.56,,,168
+municipio,3554003,Tatuí,1,Governança do Governo Digital,,100.0,,,1
+municipio,3554003,Tatuí,2,Qualidade dos Serviços Digitais,,76.0,,,141
+municipio,3554003,Tatuí,3,Identificação Única,,100.0,,,1
+municipio,3554003,Tatuí,4,Segurança e LGPD,,20.0,,,190
+municipio,3554003,Tatuí,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3554003,Tatuí,6,Infraestrutura,,66.57,,,199
+municipio,3554003,Tatuí,9,Transparência e Participação,,77.78,,,23
+municipio,3554102,Taubaté,1,Governança do Governo Digital,,100.0,,,1
+municipio,3554102,Taubaté,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,3554102,Taubaté,3,Identificação Única,,100.0,,,1
+municipio,3554102,Taubaté,4,Segurança e LGPD,,60.0,,,85
+municipio,3554102,Taubaté,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3554102,Taubaté,6,Infraestrutura,,77.54,,,100
+municipio,3554102,Taubaté,9,Transparência e Participação,,77.78,,,23
+municipio,3556206,Valinhos,1,Governança do Governo Digital,,100.0,,,1
+municipio,3556206,Valinhos,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,3556206,Valinhos,3,Identificação Única,,100.0,,,1
+municipio,3556206,Valinhos,4,Segurança e LGPD,,40.0,,,142
+municipio,3556206,Valinhos,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3556206,Valinhos,6,Infraestrutura,,77.66,,,96
+municipio,3556206,Valinhos,9,Transparência e Participação,,44.44,,,256
+municipio,3556503,Várzea Paulista,1,Governança do Governo Digital,,100.0,,,1
+municipio,3556503,Várzea Paulista,2,Qualidade dos Serviços Digitais,,78.0,,,124
+municipio,3556503,Várzea Paulista,3,Identificação Única,,100.0,,,1
+municipio,3556503,Várzea Paulista,4,Segurança e LGPD,,0.0,,,257
+municipio,3556503,Várzea Paulista,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,3556503,Várzea Paulista,6,Infraestrutura,,68.15,,,142
+municipio,3556503,Várzea Paulista,9,Transparência e Participação,,66.67,,,82
+municipio,3557006,Votorantim,1,Governança do Governo Digital,,100.0,,,1
+municipio,3557006,Votorantim,2,Qualidade dos Serviços Digitais,,82.67,,,70
+municipio,3557006,Votorantim,3,Identificação Única,,100.0,,,1
+municipio,3557006,Votorantim,4,Segurança e LGPD,,60.0,,,85
+municipio,3557006,Votorantim,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,3557006,Votorantim,6,Infraestrutura,,67.75,,,155
+municipio,3557006,Votorantim,9,Transparência e Participação,,66.67,,,82
+municipio,4100400,Almirante Tamandaré,1,Governança do Governo Digital,,100.0,,,1
+municipio,4100400,Almirante Tamandaré,2,Qualidade dos Serviços Digitais,,55.33,,,290
+municipio,4100400,Almirante Tamandaré,3,Identificação Única,,0.0,,,260
+municipio,4100400,Almirante Tamandaré,4,Segurança e LGPD,,80.0,,,31
+municipio,4100400,Almirante Tamandaré,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4100400,Almirante Tamandaré,6,Infraestrutura,,56.8,,,243
+municipio,4100400,Almirante Tamandaré,9,Transparência e Participação,,66.67,,,82
+municipio,4101408,Apucarana,1,Governança do Governo Digital,,100.0,,,1
+municipio,4101408,Apucarana,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,4101408,Apucarana,3,Identificação Única,,100.0,,,1
+municipio,4101408,Apucarana,4,Segurança e LGPD,,100.0,,,1
+municipio,4101408,Apucarana,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4101408,Apucarana,6,Infraestrutura,,78.9,,,76
+municipio,4101408,Apucarana,9,Transparência e Participação,,66.67,,,82
+municipio,4101507,Arapongas,1,Governança do Governo Digital,,100.0,,,1
+municipio,4101507,Arapongas,2,Qualidade dos Serviços Digitais,,72.0,,,182
+municipio,4101507,Arapongas,3,Identificação Única,,100.0,,,1
+municipio,4101507,Arapongas,4,Segurança e LGPD,,60.0,,,85
+municipio,4101507,Arapongas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4101507,Arapongas,6,Infraestrutura,,67.08,,,182
+municipio,4101507,Arapongas,9,Transparência e Participação,,66.67,,,82
+municipio,4101804,Araucária,1,Governança do Governo Digital,,100.0,,,1
+municipio,4101804,Araucária,2,Qualidade dos Serviços Digitais,,70.0,,,198
+municipio,4101804,Araucária,3,Identificação Única,,100.0,,,1
+municipio,4101804,Araucária,4,Segurança e LGPD,,40.0,,,142
+municipio,4101804,Araucária,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4101804,Araucária,6,Infraestrutura,,56.81,,,242
+municipio,4101804,Araucária,9,Transparência e Participação,,44.44,,,256
+municipio,4103701,Cambé,1,Governança do Governo Digital,,100.0,,,1
+municipio,4103701,Cambé,2,Qualidade dos Serviços Digitais,,57.33,,,283
+municipio,4103701,Cambé,3,Identificação Única,,0.0,,,260
+municipio,4103701,Cambé,4,Segurança e LGPD,,20.0,,,190
+municipio,4103701,Cambé,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4103701,Cambé,6,Infraestrutura,,66.41,,,203
+municipio,4103701,Cambé,9,Transparência e Participação,,22.22,,,314
+municipio,4104204,Campo Largo,1,Governança do Governo Digital,,100.0,,,1
+municipio,4104204,Campo Largo,2,Qualidade dos Serviços Digitais,,77.33,,,130
+municipio,4104204,Campo Largo,3,Identificação Única,,100.0,,,1
+municipio,4104204,Campo Largo,4,Segurança e LGPD,,60.0,,,85
+municipio,4104204,Campo Largo,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4104204,Campo Largo,6,Infraestrutura,,77.99,,,85
+municipio,4104204,Campo Largo,9,Transparência e Participação,,66.67,,,82
+municipio,4104808,Cascavel,1,Governança do Governo Digital,,100.0,,,1
+municipio,4104808,Cascavel,2,Qualidade dos Serviços Digitais,,89.33,,,27
+municipio,4104808,Cascavel,3,Identificação Única,,100.0,,,1
+municipio,4104808,Cascavel,4,Segurança e LGPD,,80.0,,,31
+municipio,4104808,Cascavel,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4104808,Cascavel,6,Infraestrutura,,67.82,,,151
+municipio,4104808,Cascavel,9,Transparência e Participação,,55.56,,,168
+municipio,4105805,Colombo,1,Governança do Governo Digital,,100.0,,,1
+municipio,4105805,Colombo,2,Qualidade dos Serviços Digitais,,74.67,,,150
+municipio,4105805,Colombo,3,Identificação Única,,100.0,,,1
+municipio,4105805,Colombo,4,Segurança e LGPD,,0.0,,,257
+municipio,4105805,Colombo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4105805,Colombo,6,Infraestrutura,,67.45,,,167
+municipio,4105805,Colombo,9,Transparência e Participação,,44.44,,,256
+municipio,4106902,Curitiba,1,Governança do Governo Digital,,100.0,,,1
+municipio,4106902,Curitiba,2,Qualidade dos Serviços Digitais,,100.0,,,1
+municipio,4106902,Curitiba,3,Identificação Única,,100.0,,,1
+municipio,4106902,Curitiba,4,Segurança e LGPD,,100.0,,,1
+municipio,4106902,Curitiba,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4106902,Curitiba,6,Infraestrutura,,87.84,,,38
+municipio,4106902,Curitiba,9,Transparência e Participação,,77.78,,,23
+municipio,4107652,Fazenda Rio Grande,1,Governança do Governo Digital,,100.0,,,1
+municipio,4107652,Fazenda Rio Grande,2,Qualidade dos Serviços Digitais,,70.67,,,192
+municipio,4107652,Fazenda Rio Grande,3,Identificação Única,,100.0,,,1
+municipio,4107652,Fazenda Rio Grande,4,Segurança e LGPD,,80.0,,,31
+municipio,4107652,Fazenda Rio Grande,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4107652,Fazenda Rio Grande,6,Infraestrutura,,77.07,,,117
+municipio,4107652,Fazenda Rio Grande,9,Transparência e Participação,,66.67,,,82
+municipio,4108304,Foz do Iguaçu,1,Governança do Governo Digital,,100.0,,,1
+municipio,4108304,Foz do Iguaçu,2,Qualidade dos Serviços Digitais,,70.67,,,192
+municipio,4108304,Foz do Iguaçu,3,Identificação Única,,100.0,,,1
+municipio,4108304,Foz do Iguaçu,4,Segurança e LGPD,,40.0,,,142
+municipio,4108304,Foz do Iguaçu,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4108304,Foz do Iguaçu,6,Infraestrutura,,67.96,,,148
+municipio,4108304,Foz do Iguaçu,9,Transparência e Participação,,33.33,,,301
+municipio,4109401,Guarapuava,1,Governança do Governo Digital,,100.0,,,1
+municipio,4109401,Guarapuava,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,4109401,Guarapuava,3,Identificação Única,,100.0,,,1
+municipio,4109401,Guarapuava,4,Segurança e LGPD,,0.0,,,257
+municipio,4109401,Guarapuava,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4109401,Guarapuava,6,Infraestrutura,,78.63,,,77
+municipio,4109401,Guarapuava,9,Transparência e Participação,,77.78,,,23
+municipio,4113700,Londrina,1,Governança do Governo Digital,,100.0,,,1
+municipio,4113700,Londrina,2,Qualidade dos Serviços Digitais,,72.0,,,182
+municipio,4113700,Londrina,3,Identificação Única,,100.0,,,1
+municipio,4113700,Londrina,4,Segurança e LGPD,,60.0,,,85
+municipio,4113700,Londrina,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4113700,Londrina,6,Infraestrutura,,67.4,,,171
+municipio,4113700,Londrina,9,Transparência e Participação,,77.78,,,23
+municipio,4115200,Maringá,1,Governança do Governo Digital,,100.0,,,1
+municipio,4115200,Maringá,2,Qualidade dos Serviços Digitais,,90.0,,,22
+municipio,4115200,Maringá,3,Identificação Única,,100.0,,,1
+municipio,4115200,Maringá,4,Segurança e LGPD,,100.0,,,1
+municipio,4115200,Maringá,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4115200,Maringá,6,Infraestrutura,,77.14,,,112
+municipio,4115200,Maringá,9,Transparência e Participação,,88.89,,,3
+municipio,4118204,Paranaguá,1,Governança do Governo Digital,,100.0,,,1
+municipio,4118204,Paranaguá,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,4118204,Paranaguá,3,Identificação Única,,100.0,,,1
+municipio,4118204,Paranaguá,4,Segurança e LGPD,,80.0,,,31
+municipio,4118204,Paranaguá,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4118204,Paranaguá,6,Infraestrutura,,56.8,,,243
+municipio,4118204,Paranaguá,9,Transparência e Participação,,55.56,,,168
+municipio,4119152,Pinhais,1,Governança do Governo Digital,,100.0,,,1
+municipio,4119152,Pinhais,2,Qualidade dos Serviços Digitais,,78.67,,,119
+municipio,4119152,Pinhais,3,Identificação Única,,100.0,,,1
+municipio,4119152,Pinhais,4,Segurança e LGPD,,80.0,,,31
+municipio,4119152,Pinhais,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4119152,Pinhais,6,Infraestrutura,,77.85,,,89
+municipio,4119152,Pinhais,9,Transparência e Participação,,77.78,,,23
+municipio,4119509,Piraquara,1,Governança do Governo Digital,,100.0,,,1
+municipio,4119509,Piraquara,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,4119509,Piraquara,3,Identificação Única,,100.0,,,1
+municipio,4119509,Piraquara,4,Segurança e LGPD,,0.0,,,257
+municipio,4119509,Piraquara,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4119509,Piraquara,6,Infraestrutura,,58.6,,,219
+municipio,4119509,Piraquara,9,Transparência e Participação,,33.33,,,301
+municipio,4119905,Ponta Grossa,1,Governança do Governo Digital,,100.0,,,1
+municipio,4119905,Ponta Grossa,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,4119905,Ponta Grossa,3,Identificação Única,,100.0,,,1
+municipio,4119905,Ponta Grossa,4,Segurança e LGPD,,60.0,,,85
+municipio,4119905,Ponta Grossa,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4119905,Ponta Grossa,6,Infraestrutura,,87.52,,,46
+municipio,4119905,Ponta Grossa,9,Transparência e Participação,,66.67,,,82
+municipio,4125506,São José dos Pinhais,1,Governança do Governo Digital,,100.0,,,1
+municipio,4125506,São José dos Pinhais,2,Qualidade dos Serviços Digitais,,80.0,,,100
+municipio,4125506,São José dos Pinhais,3,Identificação Única,,100.0,,,1
+municipio,4125506,São José dos Pinhais,4,Segurança e LGPD,,20.0,,,190
+municipio,4125506,São José dos Pinhais,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4125506,São José dos Pinhais,6,Infraestrutura,,67.0,,,185
+municipio,4125506,São José dos Pinhais,9,Transparência e Participação,,55.56,,,168
+municipio,4126256,Sarandi,1,Governança do Governo Digital,,100.0,,,1
+municipio,4126256,Sarandi,2,Qualidade dos Serviços Digitais,,64.0,,,239
+municipio,4126256,Sarandi,3,Identificação Única,,100.0,,,1
+municipio,4126256,Sarandi,4,Segurança e LGPD,,40.0,,,142
+municipio,4126256,Sarandi,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4126256,Sarandi,6,Infraestrutura,,57.11,,,236
+municipio,4126256,Sarandi,9,Transparência e Participação,,77.78,,,23
+municipio,4127700,Toledo,1,Governança do Governo Digital,,100.0,,,1
+municipio,4127700,Toledo,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,4127700,Toledo,3,Identificação Única,,100.0,,,1
+municipio,4127700,Toledo,4,Segurança e LGPD,,80.0,,,31
+municipio,4127700,Toledo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4127700,Toledo,6,Infraestrutura,,98.59,,,1
+municipio,4127700,Toledo,9,Transparência e Participação,,55.56,,,168
+municipio,4128104,Umuarama,1,Governança do Governo Digital,,100.0,,,1
+municipio,4128104,Umuarama,2,Qualidade dos Serviços Digitais,,69.33,,,204
+municipio,4128104,Umuarama,3,Identificação Única,,100.0,,,1
+municipio,4128104,Umuarama,4,Segurança e LGPD,,80.0,,,31
+municipio,4128104,Umuarama,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4128104,Umuarama,6,Infraestrutura,,47.56,,,280
+municipio,4128104,Umuarama,9,Transparência e Participação,,55.56,,,168
+municipio,4202008,Balneário Camboriú,1,Governança do Governo Digital,,100.0,,,1
+municipio,4202008,Balneário Camboriú,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,4202008,Balneário Camboriú,3,Identificação Única,,100.0,,,1
+municipio,4202008,Balneário Camboriú,4,Segurança e LGPD,,0.0,,,257
+municipio,4202008,Balneário Camboriú,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4202008,Balneário Camboriú,6,Infraestrutura,,77.34,,,105
+municipio,4202008,Balneário Camboriú,9,Transparência e Participação,,55.56,,,168
+municipio,4202404,Blumenau,1,Governança do Governo Digital,,100.0,,,1
+municipio,4202404,Blumenau,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,4202404,Blumenau,3,Identificação Única,,0.0,,,260
+municipio,4202404,Blumenau,4,Segurança e LGPD,,100.0,,,1
+municipio,4202404,Blumenau,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4202404,Blumenau,6,Infraestrutura,,97.33,,,16
+municipio,4202404,Blumenau,9,Transparência e Participação,,88.89,,,3
+municipio,4202909,Brusque,1,Governança do Governo Digital,,100.0,,,1
+municipio,4202909,Brusque,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,4202909,Brusque,3,Identificação Única,,100.0,,,1
+municipio,4202909,Brusque,4,Segurança e LGPD,,100.0,,,1
+municipio,4202909,Brusque,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4202909,Brusque,6,Infraestrutura,,77.49,,,102
+municipio,4202909,Brusque,9,Transparência e Participação,,77.78,,,23
+municipio,4203204,Camboriú,1,Governança do Governo Digital,,100.0,,,1
+municipio,4203204,Camboriú,2,Qualidade dos Serviços Digitais,,68.67,,,206
+municipio,4203204,Camboriú,3,Identificação Única,,100.0,,,1
+municipio,4203204,Camboriú,4,Segurança e LGPD,,40.0,,,142
+municipio,4203204,Camboriú,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4203204,Camboriú,6,Infraestrutura,,66.09,,,209
+municipio,4203204,Camboriú,9,Transparência e Participação,,55.56,,,168
+municipio,4204202,Chapecó,1,Governança do Governo Digital,,100.0,,,1
+municipio,4204202,Chapecó,2,Qualidade dos Serviços Digitais,,78.67,,,119
+municipio,4204202,Chapecó,3,Identificação Única,,100.0,,,1
+municipio,4204202,Chapecó,4,Segurança e LGPD,,100.0,,,1
+municipio,4204202,Chapecó,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4204202,Chapecó,6,Infraestrutura,,67.55,,,164
+municipio,4204202,Chapecó,9,Transparência e Participação,,77.78,,,23
+municipio,4204608,Criciúma,1,Governança do Governo Digital,,100.0,,,1
+municipio,4204608,Criciúma,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,4204608,Criciúma,3,Identificação Única,,100.0,,,1
+municipio,4204608,Criciúma,4,Segurança e LGPD,,80.0,,,31
+municipio,4204608,Criciúma,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4204608,Criciúma,6,Infraestrutura,,77.55,,,99
+municipio,4204608,Criciúma,9,Transparência e Participação,,66.67,,,82
+municipio,4205407,Florianópolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,4205407,Florianópolis,2,Qualidade dos Serviços Digitais,,77.33,,,130
+municipio,4205407,Florianópolis,3,Identificação Única,,100.0,,,1
+municipio,4205407,Florianópolis,4,Segurança e LGPD,,80.0,,,31
+municipio,4205407,Florianópolis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4205407,Florianópolis,6,Infraestrutura,,57.18,,,233
+municipio,4205407,Florianópolis,9,Transparência e Participação,,88.89,,,3
+municipio,4208203,Itajaí,1,Governança do Governo Digital,,100.0,,,1
+municipio,4208203,Itajaí,2,Qualidade dos Serviços Digitais,,88.0,,,34
+municipio,4208203,Itajaí,3,Identificação Única,,100.0,,,1
+municipio,4208203,Itajaí,4,Segurança e LGPD,,60.0,,,85
+municipio,4208203,Itajaí,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4208203,Itajaí,6,Infraestrutura,,86.96,,,58
+municipio,4208203,Itajaí,9,Transparência e Participação,,66.67,,,82
+municipio,4208906,Jaraguá do Sul,1,Governança do Governo Digital,,100.0,,,1
+municipio,4208906,Jaraguá do Sul,2,Qualidade dos Serviços Digitais,,84.67,,,53
+municipio,4208906,Jaraguá do Sul,3,Identificação Única,,100.0,,,1
+municipio,4208906,Jaraguá do Sul,4,Segurança e LGPD,,80.0,,,31
+municipio,4208906,Jaraguá do Sul,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4208906,Jaraguá do Sul,6,Infraestrutura,,97.63,,,12
+municipio,4208906,Jaraguá do Sul,9,Transparência e Participação,,66.67,,,82
+municipio,4209102,Joinville,1,Governança do Governo Digital,,100.0,,,1
+municipio,4209102,Joinville,2,Qualidade dos Serviços Digitais,,72.67,,,178
+municipio,4209102,Joinville,3,Identificação Única,,100.0,,,1
+municipio,4209102,Joinville,4,Segurança e LGPD,,80.0,,,31
+municipio,4209102,Joinville,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4209102,Joinville,6,Infraestrutura,,97.33,,,16
+municipio,4209102,Joinville,9,Transparência e Participação,,55.56,,,168
+municipio,4209300,Lages,1,Governança do Governo Digital,,100.0,,,1
+municipio,4209300,Lages,2,Qualidade dos Serviços Digitais,,68.67,,,206
+municipio,4209300,Lages,3,Identificação Única,,100.0,,,1
+municipio,4209300,Lages,4,Segurança e LGPD,,40.0,,,142
+municipio,4209300,Lages,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4209300,Lages,6,Infraestrutura,,86.17,,,71
+municipio,4209300,Lages,9,Transparência e Participação,,55.56,,,168
+municipio,4211900,Palhoça,1,Governança do Governo Digital,,100.0,,,1
+municipio,4211900,Palhoça,2,Qualidade dos Serviços Digitais,,82.0,,,73
+municipio,4211900,Palhoça,3,Identificação Única,,100.0,,,1
+municipio,4211900,Palhoça,4,Segurança e LGPD,,20.0,,,190
+municipio,4211900,Palhoça,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4211900,Palhoça,6,Infraestrutura,,66.92,,,189
+municipio,4211900,Palhoça,9,Transparência e Participação,,55.56,,,168
+municipio,4216602,São José,1,Governança do Governo Digital,,100.0,,,1
+municipio,4216602,São José,2,Qualidade dos Serviços Digitais,,95.33,,,7
+municipio,4216602,São José,3,Identificação Única,,100.0,,,1
+municipio,4216602,São José,4,Segurança e LGPD,,20.0,,,190
+municipio,4216602,São José,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4216602,São José,6,Infraestrutura,,87.43,,,47
+municipio,4216602,São José,9,Transparência e Participação,,77.78,,,23
+municipio,4218707,Tubarão,1,Governança do Governo Digital,,100.0,,,1
+municipio,4218707,Tubarão,2,Qualidade dos Serviços Digitais,,68.0,,,211
+municipio,4218707,Tubarão,3,Identificação Única,,100.0,,,1
+municipio,4218707,Tubarão,4,Segurança e LGPD,,40.0,,,142
+municipio,4218707,Tubarão,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4218707,Tubarão,6,Infraestrutura,,57.43,,,230
+municipio,4218707,Tubarão,9,Transparência e Participação,,66.67,,,82
+municipio,4300604,Alvorada,1,Governança do Governo Digital,,100.0,,,1
+municipio,4300604,Alvorada,2,Qualidade dos Serviços Digitais,,61.33,,,260
+municipio,4300604,Alvorada,3,Identificação Única,,100.0,,,1
+municipio,4300604,Alvorada,4,Segurança e LGPD,,0.0,,,257
+municipio,4300604,Alvorada,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4300604,Alvorada,6,Infraestrutura,,66.59,,,198
+municipio,4300604,Alvorada,9,Transparência e Participação,,44.44,,,256
+municipio,4301602,Bagé,1,Governança do Governo Digital,,0.0,,,312
+municipio,4301602,Bagé,2,Qualidade dos Serviços Digitais,,0.0,,,318
+municipio,4301602,Bagé,3,Identificação Única,,0.0,,,260
+municipio,4301602,Bagé,4,Segurança e LGPD,,0.0,,,257
+municipio,4301602,Bagé,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4301602,Bagé,6,Infraestrutura,,16.96,,,318
+municipio,4301602,Bagé,9,Transparência e Participação,,0.0,,,319
+municipio,4302105,Bento Gonçalves,1,Governança do Governo Digital,,100.0,,,1
+municipio,4302105,Bento Gonçalves,2,Qualidade dos Serviços Digitais,,72.0,,,182
+municipio,4302105,Bento Gonçalves,3,Identificação Única,,100.0,,,1
+municipio,4302105,Bento Gonçalves,4,Segurança e LGPD,,20.0,,,190
+municipio,4302105,Bento Gonçalves,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4302105,Bento Gonçalves,6,Infraestrutura,,76.72,,,121
+municipio,4302105,Bento Gonçalves,9,Transparência e Participação,,66.67,,,82
+municipio,4303103,Cachoeirinha,1,Governança do Governo Digital,,100.0,,,1
+municipio,4303103,Cachoeirinha,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,4303103,Cachoeirinha,3,Identificação Única,,100.0,,,1
+municipio,4303103,Cachoeirinha,4,Segurança e LGPD,,0.0,,,257
+municipio,4303103,Cachoeirinha,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4303103,Cachoeirinha,6,Infraestrutura,,76.7,,,122
+municipio,4303103,Cachoeirinha,9,Transparência e Participação,,55.56,,,168
+municipio,4304606,Canoas,1,Governança do Governo Digital,,100.0,,,1
+municipio,4304606,Canoas,2,Qualidade dos Serviços Digitais,,84.67,,,53
+municipio,4304606,Canoas,3,Identificação Única,,100.0,,,1
+municipio,4304606,Canoas,4,Segurança e LGPD,,20.0,,,190
+municipio,4304606,Canoas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4304606,Canoas,6,Infraestrutura,,77.27,,,108
+municipio,4304606,Canoas,9,Transparência e Participação,,77.78,,,23
+municipio,4305108,Caxias do Sul,1,Governança do Governo Digital,,100.0,,,1
+municipio,4305108,Caxias do Sul,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,4305108,Caxias do Sul,3,Identificação Única,,100.0,,,1
+municipio,4305108,Caxias do Sul,4,Segurança e LGPD,,80.0,,,31
+municipio,4305108,Caxias do Sul,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4305108,Caxias do Sul,6,Infraestrutura,,87.01,,,56
+municipio,4305108,Caxias do Sul,9,Transparência e Participação,,66.67,,,82
+municipio,4307005,Erechim,1,Governança do Governo Digital,,100.0,,,1
+municipio,4307005,Erechim,2,Qualidade dos Serviços Digitais,,89.33,,,27
+municipio,4307005,Erechim,3,Identificação Única,,100.0,,,1
+municipio,4307005,Erechim,4,Segurança e LGPD,,100.0,,,1
+municipio,4307005,Erechim,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4307005,Erechim,6,Infraestrutura,,77.56,,,98
+municipio,4307005,Erechim,9,Transparência e Participação,,66.67,,,82
+municipio,4309209,Gravataí,1,Governança do Governo Digital,,100.0,,,1
+municipio,4309209,Gravataí,2,Qualidade dos Serviços Digitais,,92.0,,,17
+municipio,4309209,Gravataí,3,Identificação Única,,100.0,,,1
+municipio,4309209,Gravataí,4,Segurança e LGPD,,60.0,,,85
+municipio,4309209,Gravataí,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4309209,Gravataí,6,Infraestrutura,,76.4,,,128
+municipio,4309209,Gravataí,9,Transparência e Participação,,66.67,,,82
+municipio,4313409,Novo Hamburgo,1,Governança do Governo Digital,,100.0,,,1
+municipio,4313409,Novo Hamburgo,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,4313409,Novo Hamburgo,3,Identificação Única,,100.0,,,1
+municipio,4313409,Novo Hamburgo,4,Segurança e LGPD,,80.0,,,31
+municipio,4313409,Novo Hamburgo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4313409,Novo Hamburgo,6,Infraestrutura,,57.75,,,222
+municipio,4313409,Novo Hamburgo,9,Transparência e Participação,,55.56,,,168
+municipio,4314100,Passo Fundo,1,Governança do Governo Digital,,100.0,,,1
+municipio,4314100,Passo Fundo,2,Qualidade dos Serviços Digitais,,85.33,,,43
+municipio,4314100,Passo Fundo,3,Identificação Única,,100.0,,,1
+municipio,4314100,Passo Fundo,4,Segurança e LGPD,,60.0,,,85
+municipio,4314100,Passo Fundo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4314100,Passo Fundo,6,Infraestrutura,,67.45,,,167
+municipio,4314100,Passo Fundo,9,Transparência e Participação,,66.67,,,82
+municipio,4314407,Pelotas,1,Governança do Governo Digital,,100.0,,,1
+municipio,4314407,Pelotas,2,Qualidade dos Serviços Digitais,,66.67,,,219
+municipio,4314407,Pelotas,3,Identificação Única,,100.0,,,1
+municipio,4314407,Pelotas,4,Segurança e LGPD,,40.0,,,142
+municipio,4314407,Pelotas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4314407,Pelotas,6,Infraestrutura,,37.15,,,308
+municipio,4314407,Pelotas,9,Transparência e Participação,,55.56,,,168
+municipio,4314902,Porto Alegre,1,Governança do Governo Digital,,100.0,,,1
+municipio,4314902,Porto Alegre,2,Qualidade dos Serviços Digitais,,92.0,,,17
+municipio,4314902,Porto Alegre,3,Identificação Única,,0.0,,,260
+municipio,4314902,Porto Alegre,4,Segurança e LGPD,,100.0,,,1
+municipio,4314902,Porto Alegre,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4314902,Porto Alegre,6,Infraestrutura,,86.54,,,65
+municipio,4314902,Porto Alegre,9,Transparência e Participação,,77.78,,,23
+municipio,4315602,Rio Grande,1,Governança do Governo Digital,,100.0,,,1
+municipio,4315602,Rio Grande,2,Qualidade dos Serviços Digitais,,54.67,,,293
+municipio,4315602,Rio Grande,3,Identificação Única,,100.0,,,1
+municipio,4315602,Rio Grande,4,Segurança e LGPD,,60.0,,,85
+municipio,4315602,Rio Grande,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4315602,Rio Grande,6,Infraestrutura,,56.66,,,249
+municipio,4315602,Rio Grande,9,Transparência e Participação,,66.67,,,82
+municipio,4316808,Santa Cruz do Sul,1,Governança do Governo Digital,,100.0,,,1
+municipio,4316808,Santa Cruz do Sul,2,Qualidade dos Serviços Digitais,,84.67,,,53
+municipio,4316808,Santa Cruz do Sul,3,Identificação Única,,100.0,,,1
+municipio,4316808,Santa Cruz do Sul,4,Segurança e LGPD,,60.0,,,85
+municipio,4316808,Santa Cruz do Sul,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4316808,Santa Cruz do Sul,6,Infraestrutura,,47.28,,,290
+municipio,4316808,Santa Cruz do Sul,9,Transparência e Participação,,66.67,,,82
+municipio,4316907,Santa Maria,1,Governança do Governo Digital,,100.0,,,1
+municipio,4316907,Santa Maria,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,4316907,Santa Maria,3,Identificação Única,,100.0,,,1
+municipio,4316907,Santa Maria,4,Segurança e LGPD,,60.0,,,85
+municipio,4316907,Santa Maria,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4316907,Santa Maria,6,Infraestrutura,,77.69,,,94
+municipio,4316907,Santa Maria,9,Transparência e Participação,,77.78,,,23
+municipio,4318705,São Leopoldo,1,Governança do Governo Digital,,100.0,,,1
+municipio,4318705,São Leopoldo,2,Qualidade dos Serviços Digitais,,80.67,,,97
+municipio,4318705,São Leopoldo,3,Identificação Única,,100.0,,,1
+municipio,4318705,São Leopoldo,4,Segurança e LGPD,,20.0,,,190
+municipio,4318705,São Leopoldo,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4318705,São Leopoldo,6,Infraestrutura,,56.66,,,249
+municipio,4318705,São Leopoldo,9,Transparência e Participação,,66.67,,,82
+municipio,4320008,Sapucaia do Sul,1,Governança do Governo Digital,,100.0,,,1
+municipio,4320008,Sapucaia do Sul,2,Qualidade dos Serviços Digitais,,77.33,,,130
+municipio,4320008,Sapucaia do Sul,3,Identificação Única,,100.0,,,1
+municipio,4320008,Sapucaia do Sul,4,Segurança e LGPD,,100.0,,,1
+municipio,4320008,Sapucaia do Sul,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4320008,Sapucaia do Sul,6,Infraestrutura,,67.49,,,166
+municipio,4320008,Sapucaia do Sul,9,Transparência e Participação,,55.56,,,168
+municipio,4322400,Uruguaiana,1,Governança do Governo Digital,,100.0,,,1
+municipio,4322400,Uruguaiana,2,Qualidade dos Serviços Digitais,,65.33,,,227
+municipio,4322400,Uruguaiana,3,Identificação Única,,0.0,,,260
+municipio,4322400,Uruguaiana,4,Segurança e LGPD,,0.0,,,257
+municipio,4322400,Uruguaiana,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,4322400,Uruguaiana,6,Infraestrutura,,66.86,,,191
+municipio,4322400,Uruguaiana,9,Transparência e Participação,,55.56,,,168
+municipio,4323002,Viamão,1,Governança do Governo Digital,,100.0,,,1
+municipio,4323002,Viamão,2,Qualidade dos Serviços Digitais,,66.67,,,219
+municipio,4323002,Viamão,3,Identificação Única,,100.0,,,1
+municipio,4323002,Viamão,4,Segurança e LGPD,,20.0,,,190
+municipio,4323002,Viamão,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,4323002,Viamão,6,Infraestrutura,,86.58,,,64
+municipio,4323002,Viamão,9,Transparência e Participação,,44.44,,,256
+municipio,5002704,Campo Grande,1,Governança do Governo Digital,,100.0,,,1
+municipio,5002704,Campo Grande,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,5002704,Campo Grande,3,Identificação Única,,100.0,,,1
+municipio,5002704,Campo Grande,4,Segurança e LGPD,,40.0,,,142
+municipio,5002704,Campo Grande,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5002704,Campo Grande,6,Infraestrutura,,87.03,,,55
+municipio,5002704,Campo Grande,9,Transparência e Participação,,66.67,,,82
+municipio,5003702,Dourados,1,Governança do Governo Digital,,100.0,,,1
+municipio,5003702,Dourados,2,Qualidade dos Serviços Digitais,,62.0,,,256
+municipio,5003702,Dourados,3,Identificação Única,,100.0,,,1
+municipio,5003702,Dourados,4,Segurança e LGPD,,80.0,,,31
+municipio,5003702,Dourados,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5003702,Dourados,6,Infraestrutura,,77.43,,,103
+municipio,5003702,Dourados,9,Transparência e Participação,,55.56,,,168
+municipio,5008305,Três Lagoas,1,Governança do Governo Digital,,100.0,,,1
+municipio,5008305,Três Lagoas,2,Qualidade dos Serviços Digitais,,57.33,,,283
+municipio,5008305,Três Lagoas,3,Identificação Única,,100.0,,,1
+municipio,5008305,Três Lagoas,4,Segurança e LGPD,,80.0,,,31
+municipio,5008305,Três Lagoas,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5008305,Três Lagoas,6,Infraestrutura,,67.7,,,157
+municipio,5008305,Três Lagoas,9,Transparência e Participação,,77.78,,,23
+municipio,5103403,Cuiabá,1,Governança do Governo Digital,,100.0,,,1
+municipio,5103403,Cuiabá,2,Qualidade dos Serviços Digitais,,81.33,,,89
+municipio,5103403,Cuiabá,3,Identificação Única,,100.0,,,1
+municipio,5103403,Cuiabá,4,Segurança e LGPD,,80.0,,,31
+municipio,5103403,Cuiabá,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5103403,Cuiabá,6,Infraestrutura,,76.57,,,124
+municipio,5103403,Cuiabá,9,Transparência e Participação,,66.67,,,82
+municipio,5107602,Rondonópolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,5107602,Rondonópolis,2,Qualidade dos Serviços Digitais,,59.33,,,279
+municipio,5107602,Rondonópolis,3,Identificação Única,,100.0,,,1
+municipio,5107602,Rondonópolis,4,Segurança e LGPD,,80.0,,,31
+municipio,5107602,Rondonópolis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5107602,Rondonópolis,6,Infraestrutura,,86.42,,,67
+municipio,5107602,Rondonópolis,9,Transparência e Participação,,55.56,,,168
+municipio,5107909,Sinop,1,Governança do Governo Digital,,100.0,,,1
+municipio,5107909,Sinop,2,Qualidade dos Serviços Digitais,,60.67,,,265
+municipio,5107909,Sinop,3,Identificação Única,,0.0,,,260
+municipio,5107909,Sinop,4,Segurança e LGPD,,60.0,,,85
+municipio,5107909,Sinop,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5107909,Sinop,6,Infraestrutura,,67.79,,,152
+municipio,5107909,Sinop,9,Transparência e Participação,,66.67,,,82
+municipio,5107925,Sorriso,1,Governança do Governo Digital,,100.0,,,1
+municipio,5107925,Sorriso,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,5107925,Sorriso,3,Identificação Única,,100.0,,,1
+municipio,5107925,Sorriso,4,Segurança e LGPD,,80.0,,,31
+municipio,5107925,Sorriso,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5107925,Sorriso,6,Infraestrutura,,77.33,,,106
+municipio,5107925,Sorriso,9,Transparência e Participação,,77.78,,,23
+municipio,5107958,Tangará da Serra,1,Governança do Governo Digital,,100.0,,,1
+municipio,5107958,Tangará da Serra,2,Qualidade dos Serviços Digitais,,76.0,,,141
+municipio,5107958,Tangará da Serra,3,Identificação Única,,100.0,,,1
+municipio,5107958,Tangará da Serra,4,Segurança e LGPD,,100.0,,,1
+municipio,5107958,Tangará da Serra,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5107958,Tangará da Serra,6,Infraestrutura,,56.68,,,245
+municipio,5107958,Tangará da Serra,9,Transparência e Participação,,66.67,,,82
+municipio,5108402,Várzea Grande,1,Governança do Governo Digital,,0.0,,,312
+municipio,5108402,Várzea Grande,2,Qualidade dos Serviços Digitais,,83.33,,,61
+municipio,5108402,Várzea Grande,3,Identificação Única,,0.0,,,260
+municipio,5108402,Várzea Grande,4,Segurança e LGPD,,100.0,,,1
+municipio,5108402,Várzea Grande,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5108402,Várzea Grande,6,Infraestrutura,,57.0,,,238
+municipio,5108402,Várzea Grande,9,Transparência e Participação,,55.56,,,168
+municipio,5200258,Águas Lindas de Goiás,1,Governança do Governo Digital,,100.0,,,1
+municipio,5200258,Águas Lindas de Goiás,2,Qualidade dos Serviços Digitais,,78.0,,,124
+municipio,5200258,Águas Lindas de Goiás,3,Identificação Única,,100.0,,,1
+municipio,5200258,Águas Lindas de Goiás,4,Segurança e LGPD,,80.0,,,31
+municipio,5200258,Águas Lindas de Goiás,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5200258,Águas Lindas de Goiás,6,Infraestrutura,,47.39,,,286
+municipio,5200258,Águas Lindas de Goiás,9,Transparência e Participação,,44.44,,,256
+municipio,5201108,Anápolis,1,Governança do Governo Digital,,100.0,,,1
+municipio,5201108,Anápolis,2,Qualidade dos Serviços Digitais,,90.0,,,22
+municipio,5201108,Anápolis,3,Identificação Única,,100.0,,,1
+municipio,5201108,Anápolis,4,Segurança e LGPD,,60.0,,,85
+municipio,5201108,Anápolis,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5201108,Anápolis,6,Infraestrutura,,76.73,,,120
+municipio,5201108,Anápolis,9,Transparência e Participação,,55.56,,,168
+municipio,5201405,Aparecida de Goiânia,1,Governança do Governo Digital,,100.0,,,1
+municipio,5201405,Aparecida de Goiânia,2,Qualidade dos Serviços Digitais,,64.0,,,239
+municipio,5201405,Aparecida de Goiânia,3,Identificação Única,,100.0,,,1
+municipio,5201405,Aparecida de Goiânia,4,Segurança e LGPD,,40.0,,,142
+municipio,5201405,Aparecida de Goiânia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5201405,Aparecida de Goiânia,6,Infraestrutura,,67.13,,,180
+municipio,5201405,Aparecida de Goiânia,9,Transparência e Participação,,66.67,,,82
+municipio,5205109,Catalão,1,Governança do Governo Digital,,100.0,,,1
+municipio,5205109,Catalão,2,Qualidade dos Serviços Digitais,,73.33,,,168
+municipio,5205109,Catalão,3,Identificação Única,,100.0,,,1
+municipio,5205109,Catalão,4,Segurança e LGPD,,0.0,,,257
+municipio,5205109,Catalão,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5205109,Catalão,6,Infraestrutura,,76.32,,,132
+municipio,5205109,Catalão,9,Transparência e Participação,,66.67,,,82
+municipio,5208004,Formosa,1,Governança do Governo Digital,,100.0,,,1
+municipio,5208004,Formosa,2,Qualidade dos Serviços Digitais,,67.33,,,214
+municipio,5208004,Formosa,3,Identificação Única,,100.0,,,1
+municipio,5208004,Formosa,4,Segurança e LGPD,,60.0,,,85
+municipio,5208004,Formosa,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5208004,Formosa,6,Infraestrutura,,56.18,,,256
+municipio,5208004,Formosa,9,Transparência e Participação,,55.56,,,168
+municipio,5208707,Goiânia,1,Governança do Governo Digital,,100.0,,,1
+municipio,5208707,Goiânia,2,Qualidade dos Serviços Digitais,,63.33,,,246
+municipio,5208707,Goiânia,3,Identificação Única,,100.0,,,1
+municipio,5208707,Goiânia,4,Segurança e LGPD,,20.0,,,190
+municipio,5208707,Goiânia,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5208707,Goiânia,6,Infraestrutura,,77.2,,,110
+municipio,5208707,Goiânia,9,Transparência e Participação,,88.89,,,3
+municipio,5211503,Itumbiara,1,Governança do Governo Digital,,100.0,,,1
+municipio,5211503,Itumbiara,2,Qualidade dos Serviços Digitais,,70.67,,,192
+municipio,5211503,Itumbiara,3,Identificação Única,,100.0,,,1
+municipio,5211503,Itumbiara,4,Segurança e LGPD,,20.0,,,190
+municipio,5211503,Itumbiara,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5211503,Itumbiara,6,Infraestrutura,,67.75,,,155
+municipio,5211503,Itumbiara,9,Transparência e Participação,,55.56,,,168
+municipio,5211909,Jataí,1,Governança do Governo Digital,,100.0,,,1
+municipio,5211909,Jataí,2,Qualidade dos Serviços Digitais,,62.0,,,256
+municipio,5211909,Jataí,3,Identificação Única,,100.0,,,1
+municipio,5211909,Jataí,4,Segurança e LGPD,,0.0,,,257
+municipio,5211909,Jataí,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5211909,Jataí,6,Infraestrutura,,67.34,,,174
+municipio,5211909,Jataí,9,Transparência e Participação,,44.44,,,256
+municipio,5212501,Luziânia,1,Governança do Governo Digital,,100.0,,,1
+municipio,5212501,Luziânia,2,Qualidade dos Serviços Digitais,,64.0,,,239
+municipio,5212501,Luziânia,3,Identificação Única,,0.0,,,260
+municipio,5212501,Luziânia,4,Segurança e LGPD,,20.0,,,190
+municipio,5212501,Luziânia,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5212501,Luziânia,6,Infraestrutura,,56.46,,,253
+municipio,5212501,Luziânia,9,Transparência e Participação,,33.33,,,301
+municipio,5215231,Novo Gama,1,Governança do Governo Digital,,100.0,,,1
+municipio,5215231,Novo Gama,2,Qualidade dos Serviços Digitais,,51.33,,,304
+municipio,5215231,Novo Gama,3,Identificação Única,,0.0,,,260
+municipio,5215231,Novo Gama,4,Segurança e LGPD,,0.0,,,257
+municipio,5215231,Novo Gama,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5215231,Novo Gama,6,Infraestrutura,,46.66,,,298
+municipio,5215231,Novo Gama,9,Transparência e Participação,,61.11,,,166
+municipio,5217609,Planaltina,1,Governança do Governo Digital,,100.0,,,1
+municipio,5217609,Planaltina,2,Qualidade dos Serviços Digitais,,79.33,,,109
+municipio,5217609,Planaltina,3,Identificação Única,,0.0,,,260
+municipio,5217609,Planaltina,4,Segurança e LGPD,,20.0,,,190
+municipio,5217609,Planaltina,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5217609,Planaltina,6,Infraestrutura,,57.75,,,222
+municipio,5217609,Planaltina,9,Transparência e Participação,,77.78,,,23
+municipio,5218805,Rio Verde,1,Governança do Governo Digital,,100.0,,,1
+municipio,5218805,Rio Verde,2,Qualidade dos Serviços Digitais,,66.67,,,219
+municipio,5218805,Rio Verde,3,Identificação Única,,100.0,,,1
+municipio,5218805,Rio Verde,4,Segurança e LGPD,,60.0,,,85
+municipio,5218805,Rio Verde,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5218805,Rio Verde,6,Infraestrutura,,67.05,,,183
+municipio,5218805,Rio Verde,9,Transparência e Participação,,55.56,,,168
+municipio,5220454,Senador Canedo,1,Governança do Governo Digital,,100.0,,,1
+municipio,5220454,Senador Canedo,2,Qualidade dos Serviços Digitais,,84.0,,,59
+municipio,5220454,Senador Canedo,3,Identificação Única,,100.0,,,1
+municipio,5220454,Senador Canedo,4,Segurança e LGPD,,40.0,,,142
+municipio,5220454,Senador Canedo,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5220454,Senador Canedo,6,Infraestrutura,,77.09,,,116
+municipio,5220454,Senador Canedo,9,Transparência e Participação,,88.89,,,3
+municipio,5221403,Trindade,1,Governança do Governo Digital,,100.0,,,1
+municipio,5221403,Trindade,2,Qualidade dos Serviços Digitais,,74.0,,,158
+municipio,5221403,Trindade,3,Identificação Única,,100.0,,,1
+municipio,5221403,Trindade,4,Segurança e LGPD,,60.0,,,85
+municipio,5221403,Trindade,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5221403,Trindade,6,Infraestrutura,,87.68,,,43
+municipio,5221403,Trindade,9,Transparência e Participação,,55.56,,,168
+municipio,5221858,Valparaíso de Goiás,1,Governança do Governo Digital,,100.0,,,1
+municipio,5221858,Valparaíso de Goiás,2,Qualidade dos Serviços Digitais,,55.33,,,290
+municipio,5221858,Valparaíso de Goiás,3,Identificação Única,,0.0,,,260
+municipio,5221858,Valparaíso de Goiás,4,Segurança e LGPD,,40.0,,,142
+municipio,5221858,Valparaíso de Goiás,5,Dados e Interoperabilidade,,0.0,,,139
+municipio,5221858,Valparaíso de Goiás,6,Infraestrutura,,46.76,,,295
+municipio,5221858,Valparaíso de Goiás,9,Transparência e Participação,,55.56,,,168
+municipio,5300108,Brasília,1,Governança do Governo Digital,,100.0,,,1
+municipio,5300108,Brasília,2,Qualidade dos Serviços Digitais,,96.0,,,5
+municipio,5300108,Brasília,3,Identificação Única,,100.0,,,1
+municipio,5300108,Brasília,4,Segurança e LGPD,,100.0,,,1
+municipio,5300108,Brasília,5,Dados e Interoperabilidade,,100.0,,,1
+municipio,5300108,Brasília,6,Infraestrutura,,86.93,,,61
+municipio,5300108,Brasília,9,Transparência e Participação,,88.89,,,3
