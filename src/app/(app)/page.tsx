@@ -27,7 +27,7 @@ import {
 import { cn } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Observatório Brasileiro de Governo Digital',
+  title: 'Home',
   description:
     'Acompanhe, compare e explore o desempenho do governo federal, dos estados e das capitais nos dez objetivos da ENGD.',
 }
