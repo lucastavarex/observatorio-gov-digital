@@ -96,14 +96,14 @@ export default async function HomePage() {
       visual: <VisualPerfil entes={estadual.entes} medias={mediasEstadual} />,
       show: true,
     },
-    {
-      titulo: 'Ranking comparativo',
-      texto:
-        'Compare o desempenho dos entes e desça do ranking do nível até o ente, a nota de cada objetivo e as variáveis disponíveis para download.',
-      cta: { label: 'Ver ranking', href: link('/ranking') },
-      visual: <VisualMapa entes={estadual.entes} />,
-      show: rankingOn,
-    },
+    // {
+    //   titulo: 'Ranking comparativo',
+    //   texto:
+    //     'Compare o desempenho dos entes e desça do ranking do nível até o ente, a nota de cada objetivo e as variáveis disponíveis para download.',
+    //   cta: { label: 'Ver ranking', href: link('/ranking') },
+    //   visual: <VisualMapa entes={estadual.entes} />,
+    //   show: rankingOn,
+    // },
     {
       titulo: 'Dados abertos e verificáveis',
       texto:
@@ -137,7 +137,7 @@ export default async function HomePage() {
         <div className="px-6 py-56 text-center sm:px-10">
           <PesoVariavel
             as="h1"
-            texto="Dados abertos sobre a evolução digital dos governos"
+            texto="Dados abertos sobre o governo digital"
             de={400}
             para={800}
             forca={22}
