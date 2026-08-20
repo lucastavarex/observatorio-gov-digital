@@ -23,7 +23,6 @@ const footerNavBase: FooterItem[] = [
     ],
   },
   { label: 'Publicações', href: '/publicacoes' },
-  { label: 'Notícias', href: '/noticias' },
   {
     label: 'Sobre',
     href: '/sobre',

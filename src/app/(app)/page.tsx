@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { NewsGrid } from '@/components/content/news-list'
 import { PublicationsGrid } from '@/components/content/publications-list'
 import {
   VisualDados,
@@ -14,7 +13,6 @@ import { PixelCanvas } from '@/components/home/pixel-canvas'
 import { ScrollRevealText } from '@/components/shared/scroll-reveal-text'
 import { Button } from '@/components/ui/button'
 import { mediasPorObjetivo, niveis } from '@/data/indicators'
-import { newsArticles } from '@/data/news'
 import { getEnteComVariaveis } from '@/data/obgd/server'
 import { objectives } from '@/data/objectives'
 import { publications } from '@/data/publications'
@@ -279,23 +277,6 @@ export default async function HomePage() {
               </p>
             </Link>
           ))}
-        </div>
-      </div>
-
-      <div className="px-6 py-20 sm:px-10">
-        <div className="flex flex-wrap items-baseline justify-between gap-4">
-          <h2 className="font-bold text-3xl text-foreground tracking-tight sm:text-4xl">
-            Últimas notícias
-          </h2>
-          <Link
-            href={link('/noticias')}
-            className="font-medium text-primary text-sm transition-opacity hover:opacity-70"
-          >
-            Ver todas as notícias
-          </Link>
-        </div>
-        <div className="-mx-6 mt-10 sm:-mx-10">
-          <NewsGrid articles={newsArticles.slice(0, 4)} />
         </div>
       </div>
     </section>

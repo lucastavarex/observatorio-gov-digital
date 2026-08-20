@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: '%s | Observatório Brasileiro de Governo Digital',
   },
   description:
-    'Observatório Brasileiro de Governo Digital — indicadores, rankings, publicações e notícias sobre a transformação digital do setor público.',
+    'Observatório Brasileiro de Governo Digital — indicadores, rankings e publicações sobre a transformação digital do setor público.',
 }
 
 export default function RootLayout({

@@ -58,7 +58,6 @@ const navItems: NavItem[] = [
   },
   { label: 'Metodologia', href: '/metodologia' },
   { label: 'Publicações', href: '/publicacoes' },
-  { label: 'Notícias', href: '/noticias' },
   { label: 'Sobre', href: '/sobre' },
   { label: 'Contato', href: '/contato' },
 ]
