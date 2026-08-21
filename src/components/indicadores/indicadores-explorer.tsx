@@ -673,13 +673,13 @@ export function IndicadoresExplorer() {
                         {!varsTagLoading &&
                           varsTagNotas &&
                           varsTagNotas.length > 0 && (
-                            <ul className="mt-4 border-t">
+                            <ul className="mt-4 grid grid-cols-[minmax(0,1fr)_auto_auto] gap-x-3 border-t">
                               {varsTagNotas.map(v => (
                                 <li
                                   key={v.slug}
-                                  className="flex items-center gap-3 border-b py-3"
+                                  className="col-span-3 grid grid-cols-subgrid items-center border-b py-3 last:border-b-0"
                                 >
-                                  <span className="min-w-0 flex-1">
+                                  <span className="min-w-0">
                                     <span className="block text-foreground text-xs font-medium">
                                       {v.nome}
                                     </span>
@@ -687,7 +687,7 @@ export function IndicadoresExplorer() {
                                       {v.fonte}
                                     </span>
                                   </span>
-                                  {nivelKey && (
+                                  {nivelKey ? (
                                     <VariavelAcoes
                                       nome={v.nome}
                                       fonteUrl={v.fonteUrl}
@@ -700,8 +700,10 @@ export function IndicadoresExplorer() {
                                       conceptId={v.conceptId}
                                       subItens={v.subItens}
                                     />
+                                  ) : (
+                                    <span />
                                   )}
-                                  <span className="flex shrink-0 flex-col items-end gap-1">
+                                  <span className="flex flex-col items-end gap-1">
                                     {entesSelecionados.map((e, idx) => {
                                       const nota = v.notas[e.slug]
                                       return (
@@ -736,7 +738,7 @@ export function IndicadoresExplorer() {
                               {varsTag.map(v => (
                                 <li
                                   key={v.slug}
-                                  className="flex items-center justify-between gap-3 border-b py-3"
+                                  className="flex items-center justify-between gap-3 border-b py-3 last:border-b-0"
                                 >
                                   <span className="min-w-0">
                                     <span className="block text-foreground text-xs font-medium">
