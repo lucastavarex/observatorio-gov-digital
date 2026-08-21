@@ -7,7 +7,7 @@ export const faqItems: FaqItem[] = [
   {
     pergunta: 'O que é o Observatório Brasileiro de Governo Digital?',
     resposta:
-      'É uma iniciativa que monitora e compara o desenvolvimento digital dos governos federal, estaduais e municipais brasileiros, organizada segundo os dez objetivos da Estratégia Nacional de Governo Digital (ENGD).',
+      'É uma iniciativa que monitora e compara o desenvolvimento digital do governo federal, dos estados, das capitais e dos municípios com 100 mil habitantes ou mais, organizada segundo os dez objetivos da Estratégia Nacional de Governo Digital (ENGD).',
   },
   {
     pergunta: 'Como o Índice de Desenvolvimento Digital é calculado?',
@@ -22,12 +22,12 @@ export const faqItems: FaqItem[] = [
   {
     pergunta: 'O que é a média do nível no radar?',
     resposta:
-      'Para cada objetivo, é a média das notas dos entes daquele nível (por exemplo, todos os estados) que têm dado. Serve só de referência de comparação — não é um ranking e não mistura objetivos diferentes.',
+      'Para cada objetivo, é a média das notas dos entes daquele nível (por exemplo, todos os estados, todas as capitais ou os municípios com 100 mil habitantes ou mais) que têm dado. Serve só de referência de comparação — não é um ranking e não mistura objetivos diferentes.',
   },
   {
     pergunta: 'Posso comparar diferentes entes?',
     resposta:
-      'Sim. Na página de Indicadores você seleciona até cinco entes e visualiza os perfis lado a lado no radar; no Ranking, é possível explorar cada ente do nível até o objetivo e ver as variáveis associadas.',
+      'Sim. Na página de Indicadores você seleciona até cinco entes do mesmo recorte (federal, estadual, capitais ou municípios com 100 mil habitantes ou mais) e visualiza os perfis lado a lado no radar; no Ranking, é possível explorar cada ente do nível até o objetivo e ver as variáveis associadas. Capitais aparecem nos dois recortes municipais.',
   },
   {
     pergunta: 'Os dados são atualizados?',

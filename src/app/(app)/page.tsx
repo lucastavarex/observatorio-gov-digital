@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { NewsGrid } from '@/components/content/news-list'
 import { PublicationsGrid } from '@/components/content/publications-list'
 import {
   VisualDados,
@@ -14,7 +13,6 @@ import { PixelCanvas } from '@/components/home/pixel-canvas'
 import { ScrollRevealText } from '@/components/shared/scroll-reveal-text'
 import { Button } from '@/components/ui/button'
 import { mediasPorObjetivo, niveis } from '@/data/indicators'
-import { newsArticles } from '@/data/news'
 import { getEnteComVariaveis } from '@/data/obgd/server'
 import { objectives } from '@/data/objectives'
 import { publications } from '@/data/publications'
@@ -27,9 +25,9 @@ import {
 import { cn } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Observatório Brasileiro de Governo Digital',
+  title: 'Home',
   description:
-    'Acompanhe, compare e explore o desempenho do governo federal, dos estados e das capitais nos dez objetivos da ENGD.',
+    'Acompanhe, compare e explore o desempenho do governo federal, dos estados, das capitais e dos municípios com 100 mil habitantes ou mais nos dez objetivos da ENGD.',
 }
 
 function getNivelEstadual() {
@@ -93,19 +91,19 @@ export default async function HomePage() {
     {
       titulo: 'Indicadores por ente',
       texto:
-        'Notas de desenvolvimento digital para o governo federal, os 27 estados e as capitais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
+        'Notas de desenvolvimento digital para o governo federal, os 27 estados, as 27 capitais e os municípios com 100 mil habitantes ou mais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
       cta: { label: 'Explorar indicadores', href: link('/indicadores') },
       visual: <VisualPerfil entes={estadual.entes} medias={mediasEstadual} />,
       show: true,
     },
-    {
-      titulo: 'Ranking comparativo',
-      texto:
-        'Compare o desempenho dos entes e desça do ranking do nível até o ente, a nota de cada objetivo e as variáveis disponíveis para download.',
-      cta: { label: 'Ver ranking', href: link('/ranking') },
-      visual: <VisualMapa entes={estadual.entes} />,
-      show: rankingOn,
-    },
+    // {
+    //   titulo: 'Ranking comparativo',
+    //   texto:
+    //     'Compare o desempenho dos entes e desça do ranking do nível até o ente, a nota de cada objetivo e as variáveis disponíveis para download.',
+    //   cta: { label: 'Ver ranking', href: link('/ranking') },
+    //   visual: <VisualMapa entes={estadual.entes} />,
+    //   show: rankingOn,
+    // },
     {
       titulo: 'Dados abertos e verificáveis',
       texto:
@@ -139,7 +137,7 @@ export default async function HomePage() {
         <div className="px-6 py-56 text-center sm:px-10">
           <PesoVariavel
             as="h1"
-            texto="Dados abertos sobre a evolução digital dos governos"
+            texto="Dados abertos sobre o governo digital"
             de={400}
             para={800}
             forca={22}
@@ -148,8 +146,8 @@ export default async function HomePage() {
           />
           <p className="mx-auto mt-0 max-w-3xl text-muted-foreground text-sm leading-relaxed sm:text-base">
             Acompanhe, compare e explore o desempenho do governo federal, dos
-            estados e das capitais nos dez objetivos da Estratégia Nacional de
-            Governo Digital.
+            estados, das capitais e dos municípios com 100 mil habitantes ou
+            mais nos dez objetivos da Estratégia Nacional de Governo Digital.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button
@@ -279,23 +277,6 @@ export default async function HomePage() {
               </p>
             </Link>
           ))}
-        </div>
-      </div>
-
-      <div className="px-6 py-20 sm:px-10">
-        <div className="flex flex-wrap items-baseline justify-between gap-4">
-          <h2 className="font-bold text-3xl text-foreground tracking-tight sm:text-4xl">
-            Últimas notícias
-          </h2>
-          <Link
-            href={link('/noticias')}
-            className="font-medium text-primary text-sm transition-opacity hover:opacity-70"
-          >
-            Ver todas as notícias
-          </Link>
-        </div>
-        <div className="-mx-6 mt-10 sm:-mx-10">
-          <NewsGrid articles={newsArticles.slice(0, 4)} />
         </div>
       </div>
     </section>

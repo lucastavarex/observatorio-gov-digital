@@ -40,7 +40,7 @@ src/
 │   └── layout.tsx          # root layout (header, footer, Plus Jakarta Sans)
 ├── components/
 │   ├── charts/             # recharts (radar, distribuição)
-│   ├── content/            # notícias, publicações, formulário de contato
+│   ├── content/            # publicações, formulário de contato
 │   ├── indicadores/        # explorador comparativo (client)
 │   ├── layout/             # site-header, site-footer
 │   ├── ranking/            # lista e explorador de ranking

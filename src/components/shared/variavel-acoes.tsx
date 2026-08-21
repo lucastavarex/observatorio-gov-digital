@@ -9,7 +9,7 @@ type VariavelAcoesProps = {
   nome: string
   fonteUrl: string
   arquivo: ArquivoDados
-  /** Nível da página (federal | estadual | municipal). */
+  /** Nível da página (federal | estadual | municipal | municipios). */
   nivelKey: NivelKey
   conceptId: string
   subItens?: string | null
@@ -94,7 +94,7 @@ export function VariavelAcoes({
 
   return (
     <div className="flex shrink-0 items-center gap-1">
-      <a
+      {/* <a
         href={fonteUrl}
         target="_blank"
         rel="noopener noreferrer"
@@ -103,7 +103,7 @@ export function VariavelAcoes({
       >
         <Eye className="size-4" aria-hidden="true" />
         <Tooltip>Ver fonte original</Tooltip>
-      </a>
+      </a> */}
 
       <button
         type="button"

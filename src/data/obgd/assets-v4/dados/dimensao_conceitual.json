@@ -1,0 +1,17 @@
+[
+  {
+    "id": "capacidade",
+    "nome": "Capacidade estatal digital",
+    "descricao": "Recursos organizacionais, técnicos e institucionais que permitem ao Estado operar de forma coordenada no ambiente digital: integração de sistemas, interoperabilidade, governança, arranjos institucionais."
+  },
+  {
+    "id": "uso_politicas",
+    "nome": "Uso da tecnologia em políticas públicas",
+    "descricao": "Tecnologia mobilizada ao longo do ciclo de políticas públicas (decisão, formulação, implementação), orientada a problemas públicos concretos e contextos locais."
+  },
+  {
+    "id": "valor_publico",
+    "nome": "Geração de valor público",
+    "descricao": "Efeitos concretos da transformação digital sobre a sociedade: qualidade dos serviços, transparência, equidade, acesso, redução de desigualdades, uso efetivo."
+  }
+]

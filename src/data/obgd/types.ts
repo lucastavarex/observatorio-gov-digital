@@ -1,4 +1,9 @@
-/** Tipos dos JSON em `src/data/obgd/assets/` (subset de dados-v3). */
+/** Tipos dos JSON em `src/data/obgd/assets/` (subset de dados-v4). */
+
+export type EnteTipo = 'nacional' | 'uf' | 'capital' | 'municipio'
+
+/** Recorte do índice / detalhes (alinhado a `indice_long.nivel`). */
+export type DataNivel = EnteTipo
 
 export type ObjetivoEngdRow = {
   id: number
@@ -8,7 +13,7 @@ export type ObjetivoEngdRow = {
 
 export type EnteRow = {
   id: number
-  tipo: 'nacional' | 'uf' | 'capital'
+  tipo: EnteTipo
   codigo: string
   nome: string
   uf_sigla: string | null
@@ -47,6 +52,7 @@ export type IndicadorRow = {
 
 /** Média de valor_normalizado por ente × tag (pré-calculada). */
 export type IndicePorTagRow = {
+  tipo: EnteTipo
   unidade: string
   tag_id: string
   nota: number
@@ -54,16 +60,16 @@ export type IndicePorTagRow = {
 }
 
 export type IndiceLongRow = {
-  nivel: 'nacional' | 'uf' | 'capital'
+  nivel: DataNivel
   unidade: string
   unidade_nome: string
   objetivo: number
   objetivo_nome: string
   ano_indice: number
-  sub_indice: number
-  indice_geral: number
-  n_objetivos_com_dados: number
-  posicao_no_objetivo: number
+  sub_indice: number | null
+  indice_geral: number | null
+  n_objetivos_com_dados: number | null
+  posicao_no_objetivo: number | null
 }
 
 export type DetalheRow = {

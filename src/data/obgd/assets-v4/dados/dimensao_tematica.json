@@ -1,0 +1,267 @@
+[
+  {
+    "id": 1,
+    "objetivo_id": 1,
+    "nome": "Estrutura de governança"
+  },
+  {
+    "id": 2,
+    "objetivo_id": 1,
+    "nome": "Estratégia e planejamento"
+  },
+  {
+    "id": 3,
+    "objetivo_id": 1,
+    "nome": "Recursos e contratações"
+  },
+  {
+    "id": 4,
+    "objetivo_id": 1,
+    "nome": "Gestão e maturidade de processos de TI"
+  },
+  {
+    "id": 5,
+    "objetivo_id": 1,
+    "nome": "Pessoas e força de trabalho em TI"
+  },
+  {
+    "id": 6,
+    "objetivo_id": 1,
+    "nome": "Adoção de instrumentos do SGD/SISP"
+  },
+  {
+    "id": 7,
+    "objetivo_id": 2,
+    "nome": "Informação pública digital"
+  },
+  {
+    "id": 8,
+    "objetivo_id": 2,
+    "nome": "Serviços transversais"
+  },
+  {
+    "id": 9,
+    "objetivo_id": 2,
+    "nome": "Serviços setoriais — Saúde"
+  },
+  {
+    "id": 10,
+    "objetivo_id": 2,
+    "nome": "Serviços setoriais — Educação"
+  },
+  {
+    "id": 11,
+    "objetivo_id": 2,
+    "nome": "Serviços setoriais — Cidadania, segurança e fiscal"
+  },
+  {
+    "id": 12,
+    "objetivo_id": 2,
+    "nome": "Serviços setoriais — Mobilidade urbana"
+  },
+  {
+    "id": 13,
+    "objetivo_id": 2,
+    "nome": "Canais e atendimento multicanal"
+  },
+  {
+    "id": 14,
+    "objetivo_id": 2,
+    "nome": "Personalização da jornada e ambiente autenticado"
+  },
+  {
+    "id": 15,
+    "objetivo_id": 2,
+    "nome": "Linguagem e usabilidade"
+  },
+  {
+    "id": 16,
+    "objetivo_id": 2,
+    "nome": "Acessibilidade"
+  },
+  {
+    "id": 17,
+    "objetivo_id": 2,
+    "nome": "Satisfação e experiência do cidadão"
+  },
+  {
+    "id": 18,
+    "objetivo_id": 3,
+    "nome": "Autenticação digital"
+  },
+  {
+    "id": 19,
+    "objetivo_id": 3,
+    "nome": "Assinatura eletrônica"
+  },
+  {
+    "id": 20,
+    "objetivo_id": 3,
+    "nome": "Identidade civil"
+  },
+  {
+    "id": 21,
+    "objetivo_id": 4,
+    "nome": "Governança e responsabilidades"
+  },
+  {
+    "id": 22,
+    "objetivo_id": 4,
+    "nome": "Planos, políticas e diagnóstico"
+  },
+  {
+    "id": 23,
+    "objetivo_id": 4,
+    "nome": "Proteção de dados pessoais — práticas LGPD"
+  },
+  {
+    "id": 24,
+    "objetivo_id": 4,
+    "nome": "Controles, riscos e auditoria"
+  },
+  {
+    "id": 25,
+    "objetivo_id": 4,
+    "nome": "Resposta a incidentes e continuidade"
+  },
+  {
+    "id": 26,
+    "objetivo_id": 4,
+    "nome": "Capacitação e conscientização"
+  },
+  {
+    "id": 27,
+    "objetivo_id": 5,
+    "nome": "Governança de dados"
+  },
+  {
+    "id": 28,
+    "objetivo_id": 5,
+    "nome": "Qualidade e gestão dos ativos de dados"
+  },
+  {
+    "id": 29,
+    "objetivo_id": 5,
+    "nome": "Interoperabilidade e compartilhamento entre órgãos"
+  },
+  {
+    "id": 30,
+    "objetivo_id": 5,
+    "nome": "Dados abertos"
+  },
+  {
+    "id": 31,
+    "objetivo_id": 5,
+    "nome": "Análise de dados e decisão"
+  },
+  {
+    "id": 32,
+    "objetivo_id": 6,
+    "nome": "Conectividade do ambiente brasileiro"
+  },
+  {
+    "id": 33,
+    "objetivo_id": 6,
+    "nome": "Infraestrutura digital nas escolas"
+  },
+  {
+    "id": 34,
+    "objetivo_id": 6,
+    "nome": "Conectividade pública e em equipamentos públicos"
+  },
+  {
+    "id": 35,
+    "objetivo_id": 6,
+    "nome": "Plataformas digitais e armazenamento de dados"
+  },
+  {
+    "id": 36,
+    "objetivo_id": 6,
+    "nome": "Gestão e qualificação da rede de TI federal"
+  },
+  {
+    "id": 37,
+    "objetivo_id": 6,
+    "nome": "Programas de inclusão digital ao cidadão"
+  },
+  {
+    "id": 38,
+    "objetivo_id": 6,
+    "nome": "Infraestrutura urbana inteligente"
+  },
+  {
+    "id": 39,
+    "objetivo_id": 7,
+    "nome": "Inteligência artificial e tecnologias emergentes"
+  },
+  {
+    "id": 40,
+    "objetivo_id": 7,
+    "nome": "Laboratórios e fomento à inovação"
+  },
+  {
+    "id": 41,
+    "objetivo_id": 8,
+    "nome": "Sistemas administrativos integrados"
+  },
+  {
+    "id": 42,
+    "objetivo_id": 8,
+    "nome": "Compras e contratações de TI"
+  },
+  {
+    "id": 43,
+    "objetivo_id": 8,
+    "nome": "Processos administrativos eletrônicos e simplificação"
+  },
+  {
+    "id": 44,
+    "objetivo_id": 8,
+    "nome": "Sistemas eletrônicos em saúde e educação"
+  },
+  {
+    "id": 45,
+    "objetivo_id": 8,
+    "nome": "Apoio à decisão clínica"
+  },
+  {
+    "id": 46,
+    "objetivo_id": 9,
+    "nome": "Transparência ativa e dados abertos"
+  },
+  {
+    "id": 47,
+    "objetivo_id": 9,
+    "nome": "Acesso à informação (LAI)"
+  },
+  {
+    "id": 48,
+    "objetivo_id": 9,
+    "nome": "Participação social e cocriação"
+  },
+  {
+    "id": 49,
+    "objetivo_id": 10,
+    "nome": "Força de trabalho de TIC no SISP"
+  },
+  {
+    "id": 50,
+    "objetivo_id": 10,
+    "nome": "Formação continuada de professores em TIC"
+  },
+  {
+    "id": 51,
+    "objetivo_id": 10,
+    "nome": "Competências digitais e educação crítica"
+  },
+  {
+    "id": 52,
+    "objetivo_id": 10,
+    "nome": "Plano e processo de capacitação em TI no SISP"
+  },
+  {
+    "id": 53,
+    "objetivo_id": 10,
+    "nome": "Áreas temáticas das capacitações desenvolvidas em TI no SISP"
+  }
+]

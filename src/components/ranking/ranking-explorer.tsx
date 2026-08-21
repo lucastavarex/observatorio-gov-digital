@@ -128,12 +128,14 @@ export function RankingExplorer() {
       ? rankingObjetivo.map(e => ({
           slug: e.slug,
           nome: e.nome,
+          ufSigla: e.ufSigla,
           valorPrincipal: e.valorPrincipal,
           posicao: e.posicao,
         }))
       : rankingTema.map(e => ({
           slug: e.slug,
           nome: e.nome,
+          ufSigla: e.ufSigla,
           valorPrincipal: e.valor,
           posicao: e.posicao,
         }))
@@ -171,7 +173,7 @@ export function RankingExplorer() {
       router.push(link(`/ranking/${key}/${alvo.entes[0].slug}`))
       return
     }
-    if (key === 'estadual' || key === 'municipal') {
+    if (key === 'estadual' || key === 'municipal' || key === 'municipios') {
       atualizar({ nivel: key })
       if (key !== 'estadual') setVista('grafico')
     }
@@ -340,6 +342,7 @@ export function RankingExplorer() {
 
         <div className="mt-12">
           <EnteRankingList
+            key={nivel.key}
             entes={lista}
             basePath={link(`/ranking/${nivel.key}`)}
             colunaValor={modo === 'tematicas' ? 'Score da tag' : 'Índice'}

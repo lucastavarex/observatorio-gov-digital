@@ -8,7 +8,7 @@ Portal público e interativo de monitoramento da transformação digital no seto
 
 ## Sobre o projeto
 
-O Observatório Brasileiro de Governo Digital monitora de forma sistemática, transparente e orientada por evidências os avanços e desafios da transformação digital no setor público brasileiro — federal, estadual e municipal.
+O Observatório Brasileiro de Governo Digital monitora de forma sistemática, transparente e orientada por evidências os avanços e desafios da transformação digital no setor público brasileiro — federal, estadual, capitais e municípios com 100 mil habitantes ou mais.
 
 Está alinhado à **Estratégia Nacional de Governo Digital (ENGD)**, instituída pelo Decreto nº 12.069/2024, e à Portaria SGD/MGI nº 4.248/2024. Os indicadores são compatíveis com padrões internacionais como o E-Government Development Index (EGDI/ONU), o OECD Digital Government Index (nota 0,79 — acima da média da OCDE) e o GovTech Maturity Index (Banco Mundial).
 

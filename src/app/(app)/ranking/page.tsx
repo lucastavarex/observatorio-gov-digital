@@ -6,7 +6,7 @@ import { RankingExplorer } from '@/components/ranking/ranking-explorer'
 export const metadata: Metadata = {
   title: 'Ranking',
   description:
-    'Ranking de Desenvolvimento Digital dos Governos federal, estaduais e municipais.',
+    'Ranking de Desenvolvimento Digital dos Governos — federal, estadual, capitais e municípios com 100 mil habitantes ou mais.',
 }
 
 export default function RankingPage() {
