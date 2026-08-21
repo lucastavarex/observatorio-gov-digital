@@ -3,7 +3,7 @@ import { tematicas } from '@/data/tematicas'
 
 export type RankingModo = 'objetivos' | 'tematicas'
 
-export type RankingNivelFiltro = 'estadual' | 'municipal'
+export type RankingNivelFiltro = 'estadual' | 'municipal' | 'municipios'
 
 export type RankingFiltros = {
   nivel: RankingNivelFiltro
@@ -24,7 +24,9 @@ export function parseRankingSearchParams(
 ): RankingFiltros {
   const nivelRaw = sp.get('nivel')
   const nivel: RankingNivelFiltro =
-    nivelRaw === 'municipal' ? 'municipal' : 'estadual'
+    nivelRaw === 'municipal' || nivelRaw === 'municipios'
+      ? nivelRaw
+      : 'estadual'
 
   const por: RankingModo =
     sp.get('por') === 'tematicas' ? 'tematicas' : 'objetivos'

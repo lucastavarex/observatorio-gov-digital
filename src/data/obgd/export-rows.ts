@@ -6,17 +6,22 @@ import {
   slugifyFilename,
 } from '@/lib/export-obgd-csv'
 import { detalhesForNivel } from './detalhes'
-import { ANO_INDICE, enteByCodigo, fonteById } from './load'
+import {
+  ANO_INDICE,
+  capitalByUfSigla,
+  enteByCodigo,
+  fonteById,
+  getEnteByTipoCodigo,
+} from './load'
 import type { NivelKey } from './queries'
 import { NIVEL_MAP } from './queries'
-import type { DetalheRow } from './types'
-
-export type DataNivel = 'nacional' | 'uf' | 'capital'
+import type { DataNivel, DetalheRow } from './types'
 
 const NIVEL_LABEL: Record<DataNivel, string> = {
   nacional: 'nacional',
   uf: 'estadual',
   capital: 'capitais',
+  municipio: 'municipios',
 }
 
 /** Slug da página Metodologia → ids de fonte no catálogo OBGD. */
@@ -48,10 +53,10 @@ function unidadeNome(dataNivel: DataNivel, categoria: string): string {
   if (dataNivel === 'uf') {
     return enteByCodigo.get(categoria)?.nome ?? categoria
   }
-  // detalhes_capitais usa UF como categoria
-  const capital = [...enteByCodigo.values()].find(
-    e => e.tipo === 'capital' && e.uf_sigla === categoria
-  )
+  if (dataNivel === 'municipio') {
+    return getEnteByTipoCodigo('municipio', categoria)?.nome ?? categoria
+  }
+  const capital = capitalByUfSigla.get(categoria)
   return capital?.nome ?? categoria
 }
 
@@ -110,7 +115,7 @@ export function buildExportByFonteIds(fonteIds: string[]): {
   filename: string
 } {
   const idSet = new Set(fonteIds)
-  const niveis: DataNivel[] = ['nacional', 'uf', 'capital']
+  const niveis: DataNivel[] = ['nacional', 'uf', 'capital', 'municipio']
   const rows: ObgdExportRow[] = []
   for (const dataNivel of niveis) {
     for (const r of detalhesForNivel(dataNivel)) {

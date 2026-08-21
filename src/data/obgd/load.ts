@@ -7,6 +7,7 @@ import tagJson from './assets/dados/tag.json'
 import indiceLongJson from './assets/indice_long_por_objetivo.json'
 import type {
   EnteRow,
+  EnteTipo,
   FonteRow,
   IndicadorRow,
   IndiceLongRow,
@@ -27,12 +28,33 @@ export const ANO_INDICE = 2026
 
 export const fonteById = new Map(fontes.map(f => [f.id, f]))
 export const indicadorByChave = new Map(indicadores.map(i => [i.chave, i]))
-export const enteByCodigo = new Map(entes.map(e => [e.codigo, e]))
 export const tagById = new Map(tags.map(t => [t.id, t]))
 
-/** Lookup `unidade|tag_id` → nota (média pré-calculada). */
+/** Lookup `tipo|codigo` — capitais e municípios compartilham código IBGE. */
+export const enteByTipoCodigo = new Map(
+  entes.map(e => [`${e.tipo}|${e.codigo}`, e] as const)
+)
+
+export function getEnteByTipoCodigo(
+  tipo: EnteTipo,
+  codigo: string
+): EnteRow | undefined {
+  return enteByTipoCodigo.get(`${tipo}|${codigo}`)
+}
+
+/**
+ * Lookup só por codigo. Códigos IBGE de capital/município colidem:
+ * prefira `getEnteByTipoCodigo`. Mantido para UF (`SP`) e BR.
+ */
+export const enteByCodigo = new Map(
+  entes
+    .filter(e => e.tipo === 'nacional' || e.tipo === 'uf')
+    .map(e => [e.codigo, e])
+)
+
+/** Lookup `tipo|unidade|tag_id` → nota (média pré-calculada). */
 export const notaPorUnidadeTag = new Map(
-  indicePorTag.map(r => [`${r.unidade}|${r.tag_id}`, r.nota])
+  indicePorTag.map(r => [`${r.tipo}|${r.unidade}|${r.tag_id}`, r.nota])
 )
 
 /** Capital lookup by UF sigla (detalhes_capitais uses UF as categoria). */

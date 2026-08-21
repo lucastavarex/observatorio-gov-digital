@@ -1,10 +1,20 @@
 import { objectives } from '@/data/objectives'
-import { ANO_INDICE, capitalByUfSigla, indiceLong } from './load'
-import type { IndiceLongRow, SerieHistoricaPonto } from './types'
+import {
+  ANO_INDICE,
+  capitalByUfSigla,
+  getEnteByTipoCodigo,
+  indiceLong,
+} from './load'
+import type {
+  DataNivel,
+  EnteTipo,
+  IndiceLongRow,
+  SerieHistoricaPonto,
+} from './types'
 
-export type { SerieHistoricaPonto }
+export type { DataNivel, EnteTipo, SerieHistoricaPonto }
 
-export type NivelKey = 'federal' | 'estadual' | 'municipal'
+export type NivelKey = 'federal' | 'estadual' | 'municipal' | 'municipios'
 
 export type TabelaLinha = { item: string; valor: string }
 
@@ -54,6 +64,8 @@ export type Ente = {
   nome: string
   nivel: NivelKey
   codigo: string
+  tipo: EnteTipo
+  ufSigla: string | null
   indiceGeral: number
   nObjetivosComDados: number
   objetivos: ObjetivoScore[]
@@ -62,9 +74,9 @@ export type Ente = {
 export type Nivel = {
   key: NivelKey
   label: string
-  /** Federal é entidade única (sem ranking); estadual/municipal são rankings. */
+  /** Federal é entidade única (sem ranking); estadual/municipal/municípios são rankings. */
   isRanking: boolean
-  dataNivel: 'nacional' | 'uf' | 'capital'
+  dataNivel: DataNivel
   entes: Ente[]
 }
 
@@ -73,12 +85,13 @@ const NIVEL_MAP: Record<
   {
     label: string
     isRanking: boolean
-    dataNivel: 'nacional' | 'uf' | 'capital'
+    dataNivel: DataNivel
   }
 > = {
   federal: { label: 'Federal', isRanking: false, dataNivel: 'nacional' },
   estadual: { label: 'Estadual', isRanking: true, dataNivel: 'uf' },
-  municipal: { label: 'Municipal', isRanking: true, dataNivel: 'capital' },
+  municipal: { label: 'Capitais', isRanking: true, dataNivel: 'capital' },
+  municipios: { label: 'Municípios', isRanking: true, dataNivel: 'municipio' },
 }
 
 export function slugify(text: string): string {
@@ -94,10 +107,7 @@ function round1(n: number): number {
   return Math.round(n * 10) / 10
 }
 
-function rowsForEnte(
-  dataNivel: 'nacional' | 'uf' | 'capital',
-  codigo: string
-): IndiceLongRow[] {
+function rowsForEnte(dataNivel: DataNivel, codigo: string): IndiceLongRow[] {
   return indiceLong.filter(
     r =>
       r.nivel === dataNivel &&
@@ -108,7 +118,7 @@ function rowsForEnte(
 
 function buildEnte(
   nivelKey: NivelKey,
-  dataNivel: 'nacional' | 'uf' | 'capital',
+  dataNivel: DataNivel,
   codigo: string,
   nome: string
 ): Ente {
@@ -116,19 +126,21 @@ function buildEnte(
   const byObj = new Map(rows.map(r => [r.objetivo, r]))
   const indiceGeral = rows[0]?.indice_geral ?? 0
   const nObjetivosComDados = rows[0]?.n_objetivos_com_dados ?? rows.length
+  const meta = getEnteByTipoCodigo(dataNivel, codigo)
 
   const objetivos: ObjetivoScore[] = objectives.map((objetivo, index) => {
     const numero = index + 1
     const row = byObj.get(numero)
     // Objetivo 3 desabilitado por decisão de produto (mesmo com linhas no JSON).
     const desabilitadoPorPolitica = numero === 3
+    const sub = row?.sub_indice
 
     return {
       objetivoSlug: objetivo.slug,
       numero,
       titulo: objetivo.title,
       descricao: objetivo.description,
-      nota: desabilitadoPorPolitica || !row ? null : round1(row.sub_indice),
+      nota: desabilitadoPorPolitica || sub == null ? null : round1(sub),
       posicaoNoObjetivo: desabilitadoPorPolitica
         ? null
         : (row?.posicao_no_objetivo ?? null),
@@ -141,15 +153,17 @@ function buildEnte(
     nome,
     nivel: nivelKey,
     codigo,
+    tipo: dataNivel,
+    ufSigla: meta?.uf_sigla ?? null,
     // Mantido no modelo para compatibilidade com o JSON; não expor na UI.
-    indiceGeral: round1(indiceGeral),
+    indiceGeral: round1(typeof indiceGeral === 'number' ? indiceGeral : 0),
     nObjetivosComDados,
     objetivos,
   }
 }
 
 function listUnidades(
-  dataNivel: 'nacional' | 'uf' | 'capital'
+  dataNivel: DataNivel
 ): { codigo: string; nome: string }[] {
   const seen = new Map<string, string>()
   for (const row of indiceLong) {
@@ -182,7 +196,7 @@ function buildNivel(key: NivelKey): Nivel {
 
 /** Árvore leve (sem variáveis) — segura para Client Components. */
 export const niveis: Nivel[] = (
-  ['federal', 'estadual', 'municipal'] as NivelKey[]
+  ['federal', 'estadual', 'municipal', 'municipios'] as NivelKey[]
 ).map(buildNivel)
 
 export function getNivel(key: string): Nivel | undefined {
@@ -236,6 +250,7 @@ export type RankingItem = {
   slug: string
   nome: string
   codigo: string
+  ufSigla: string | null
   /** Índice do objetivo pelo qual se ordena (rótulo UI: Índice). */
   valorPrincipal: number
   subIndice: number | null
@@ -259,8 +274,7 @@ export function rankingDoNivel(
     })
     .filter((x): x is { ente: Ente; obj: ObjetivoScore } => x !== null)
     .sort((a, b) => {
-      // Preferir posição oficial quando ambos têm; senão ordenar por nota
-      // (necessário ao misturar capitais reais com municípios mock).
+      // Preferir posição oficial quando ambos têm; senão ordenar por nota.
       const pa = a.obj.posicaoNoObjetivo
       const pb = b.obj.posicaoNoObjetivo
       if (pa != null && pb != null && pa !== pb) return pa - pb
@@ -271,6 +285,7 @@ export function rankingDoNivel(
     slug: ente.slug,
     nome: ente.nome,
     codigo: ente.codigo,
+    ufSigla: ente.ufSigla,
     valorPrincipal: obj.nota!,
     subIndice: obj.nota,
     posicao: i + 1,

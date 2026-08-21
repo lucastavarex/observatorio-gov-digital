@@ -438,5 +438,2557 @@
     "nome": "Brasília",
     "uf_sigla": "DF",
     "regiao": "CO"
+  },
+  {
+    "id": 56,
+    "tipo": "municipio",
+    "codigo": "1100122",
+    "nome": "Ji-Paraná",
+    "uf_sigla": "RO",
+    "regiao": "N"
+  },
+  {
+    "id": 57,
+    "tipo": "municipio",
+    "codigo": "1100205",
+    "nome": "Porto Velho",
+    "uf_sigla": "RO",
+    "regiao": "N"
+  },
+  {
+    "id": 58,
+    "tipo": "municipio",
+    "codigo": "1200401",
+    "nome": "Rio Branco",
+    "uf_sigla": "AC",
+    "regiao": "N"
+  },
+  {
+    "id": 59,
+    "tipo": "municipio",
+    "codigo": "1301902",
+    "nome": "Itacoatiara",
+    "uf_sigla": "AM",
+    "regiao": "N"
+  },
+  {
+    "id": 60,
+    "tipo": "municipio",
+    "codigo": "1302504",
+    "nome": "Manacapuru",
+    "uf_sigla": "AM",
+    "regiao": "N"
+  },
+  {
+    "id": 61,
+    "tipo": "municipio",
+    "codigo": "1302603",
+    "nome": "Manaus",
+    "uf_sigla": "AM",
+    "regiao": "N"
+  },
+  {
+    "id": 62,
+    "tipo": "municipio",
+    "codigo": "1400100",
+    "nome": "Boa Vista",
+    "uf_sigla": "RR",
+    "regiao": "N"
+  },
+  {
+    "id": 63,
+    "tipo": "municipio",
+    "codigo": "1500107",
+    "nome": "Abaetetuba",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 64,
+    "tipo": "municipio",
+    "codigo": "1500602",
+    "nome": "Altamira",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 65,
+    "tipo": "municipio",
+    "codigo": "1500800",
+    "nome": "Ananindeua",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 66,
+    "tipo": "municipio",
+    "codigo": "1501303",
+    "nome": "Barcarena",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 67,
+    "tipo": "municipio",
+    "codigo": "1501402",
+    "nome": "Belém",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 68,
+    "tipo": "municipio",
+    "codigo": "1501709",
+    "nome": "Bragança",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 69,
+    "tipo": "municipio",
+    "codigo": "1501808",
+    "nome": "Breves",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 70,
+    "tipo": "municipio",
+    "codigo": "1502103",
+    "nome": "Cametá",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 71,
+    "tipo": "municipio",
+    "codigo": "1502400",
+    "nome": "Castanhal",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 72,
+    "tipo": "municipio",
+    "codigo": "1503606",
+    "nome": "Itaituba",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 73,
+    "tipo": "municipio",
+    "codigo": "1504208",
+    "nome": "Marabá",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 74,
+    "tipo": "municipio",
+    "codigo": "1504422",
+    "nome": "Marituba",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 75,
+    "tipo": "municipio",
+    "codigo": "1505502",
+    "nome": "Paragominas",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 76,
+    "tipo": "municipio",
+    "codigo": "1505536",
+    "nome": "Parauapebas",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 77,
+    "tipo": "municipio",
+    "codigo": "1506807",
+    "nome": "Santarém",
+    "uf_sigla": "PA",
+    "regiao": "N"
+  },
+  {
+    "id": 78,
+    "tipo": "municipio",
+    "codigo": "1600303",
+    "nome": "Macapá",
+    "uf_sigla": "AP",
+    "regiao": "N"
+  },
+  {
+    "id": 79,
+    "tipo": "municipio",
+    "codigo": "1600600",
+    "nome": "Santana",
+    "uf_sigla": "AP",
+    "regiao": "N"
+  },
+  {
+    "id": 80,
+    "tipo": "municipio",
+    "codigo": "1702109",
+    "nome": "Araguaína",
+    "uf_sigla": "TO",
+    "regiao": "N"
+  },
+  {
+    "id": 81,
+    "tipo": "municipio",
+    "codigo": "1721000",
+    "nome": "Palmas",
+    "uf_sigla": "TO",
+    "regiao": "N"
+  },
+  {
+    "id": 82,
+    "tipo": "municipio",
+    "codigo": "2100055",
+    "nome": "Açailândia",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 83,
+    "tipo": "municipio",
+    "codigo": "2101202",
+    "nome": "Bacabal",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 84,
+    "tipo": "municipio",
+    "codigo": "2101400",
+    "nome": "Balsas",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 85,
+    "tipo": "municipio",
+    "codigo": "2103000",
+    "nome": "Caxias",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 86,
+    "tipo": "municipio",
+    "codigo": "2103307",
+    "nome": "Codó",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 87,
+    "tipo": "municipio",
+    "codigo": "2105302",
+    "nome": "Imperatriz",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 88,
+    "tipo": "municipio",
+    "codigo": "2107506",
+    "nome": "Paço do Lumiar",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 89,
+    "tipo": "municipio",
+    "codigo": "2111201",
+    "nome": "São José de Ribamar",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 90,
+    "tipo": "municipio",
+    "codigo": "2111300",
+    "nome": "São Luís",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 91,
+    "tipo": "municipio",
+    "codigo": "2112209",
+    "nome": "Timon",
+    "uf_sigla": "MA",
+    "regiao": "NE"
+  },
+  {
+    "id": 92,
+    "tipo": "municipio",
+    "codigo": "2207702",
+    "nome": "Parnaíba",
+    "uf_sigla": "PI",
+    "regiao": "NE"
+  },
+  {
+    "id": 93,
+    "tipo": "municipio",
+    "codigo": "2211001",
+    "nome": "Teresina",
+    "uf_sigla": "PI",
+    "regiao": "NE"
+  },
+  {
+    "id": 94,
+    "tipo": "municipio",
+    "codigo": "2303709",
+    "nome": "Caucaia",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 95,
+    "tipo": "municipio",
+    "codigo": "2304202",
+    "nome": "Crato",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 96,
+    "tipo": "municipio",
+    "codigo": "2304400",
+    "nome": "Fortaleza",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 97,
+    "tipo": "municipio",
+    "codigo": "2306405",
+    "nome": "Itapipoca",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 98,
+    "tipo": "municipio",
+    "codigo": "2307304",
+    "nome": "Juazeiro do Norte",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 99,
+    "tipo": "municipio",
+    "codigo": "2307650",
+    "nome": "Maracanaú",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 100,
+    "tipo": "municipio",
+    "codigo": "2307700",
+    "nome": "Maranguape",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 101,
+    "tipo": "municipio",
+    "codigo": "2312908",
+    "nome": "Sobral",
+    "uf_sigla": "CE",
+    "regiao": "NE"
+  },
+  {
+    "id": 102,
+    "tipo": "municipio",
+    "codigo": "2403251",
+    "nome": "Parnamirim",
+    "uf_sigla": "RN",
+    "regiao": "NE"
+  },
+  {
+    "id": 103,
+    "tipo": "municipio",
+    "codigo": "2408003",
+    "nome": "Mossoró",
+    "uf_sigla": "RN",
+    "regiao": "NE"
+  },
+  {
+    "id": 104,
+    "tipo": "municipio",
+    "codigo": "2408102",
+    "nome": "Natal",
+    "uf_sigla": "RN",
+    "regiao": "NE"
+  },
+  {
+    "id": 105,
+    "tipo": "municipio",
+    "codigo": "2412005",
+    "nome": "São Gonçalo do Amarante",
+    "uf_sigla": "RN",
+    "regiao": "NE"
+  },
+  {
+    "id": 106,
+    "tipo": "municipio",
+    "codigo": "2504009",
+    "nome": "Campina Grande",
+    "uf_sigla": "PB",
+    "regiao": "NE"
+  },
+  {
+    "id": 107,
+    "tipo": "municipio",
+    "codigo": "2507507",
+    "nome": "João Pessoa",
+    "uf_sigla": "PB",
+    "regiao": "NE"
+  },
+  {
+    "id": 108,
+    "tipo": "municipio",
+    "codigo": "2510808",
+    "nome": "Patos",
+    "uf_sigla": "PB",
+    "regiao": "NE"
+  },
+  {
+    "id": 109,
+    "tipo": "municipio",
+    "codigo": "2513703",
+    "nome": "Santa Rita",
+    "uf_sigla": "PB",
+    "regiao": "NE"
+  },
+  {
+    "id": 110,
+    "tipo": "municipio",
+    "codigo": "2602902",
+    "nome": "Cabo de Santo Agostinho",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 111,
+    "tipo": "municipio",
+    "codigo": "2603454",
+    "nome": "Camaragibe",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 112,
+    "tipo": "municipio",
+    "codigo": "2604106",
+    "nome": "Caruaru",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 113,
+    "tipo": "municipio",
+    "codigo": "2606002",
+    "nome": "Garanhuns",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 114,
+    "tipo": "municipio",
+    "codigo": "2606804",
+    "nome": "Igarassu",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 115,
+    "tipo": "municipio",
+    "codigo": "2607901",
+    "nome": "Jaboatão dos Guararapes",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 116,
+    "tipo": "municipio",
+    "codigo": "2609600",
+    "nome": "Olinda",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 117,
+    "tipo": "municipio",
+    "codigo": "2610707",
+    "nome": "Paulista",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 118,
+    "tipo": "municipio",
+    "codigo": "2611101",
+    "nome": "Petrolina",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 119,
+    "tipo": "municipio",
+    "codigo": "2611606",
+    "nome": "Recife",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 120,
+    "tipo": "municipio",
+    "codigo": "2613701",
+    "nome": "São Lourenço da Mata",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 121,
+    "tipo": "municipio",
+    "codigo": "2616407",
+    "nome": "Vitória de Santo Antão",
+    "uf_sigla": "PE",
+    "regiao": "NE"
+  },
+  {
+    "id": 122,
+    "tipo": "municipio",
+    "codigo": "2700300",
+    "nome": "Arapiraca",
+    "uf_sigla": "AL",
+    "regiao": "NE"
+  },
+  {
+    "id": 123,
+    "tipo": "municipio",
+    "codigo": "2704302",
+    "nome": "Maceió",
+    "uf_sigla": "AL",
+    "regiao": "NE"
+  },
+  {
+    "id": 124,
+    "tipo": "municipio",
+    "codigo": "2800308",
+    "nome": "Aracaju",
+    "uf_sigla": "SE",
+    "regiao": "NE"
+  },
+  {
+    "id": 125,
+    "tipo": "municipio",
+    "codigo": "2802908",
+    "nome": "Itabaiana",
+    "uf_sigla": "SE",
+    "regiao": "NE"
+  },
+  {
+    "id": 126,
+    "tipo": "municipio",
+    "codigo": "2803500",
+    "nome": "Lagarto",
+    "uf_sigla": "SE",
+    "regiao": "NE"
+  },
+  {
+    "id": 127,
+    "tipo": "municipio",
+    "codigo": "2804805",
+    "nome": "Nossa Senhora do Socorro",
+    "uf_sigla": "SE",
+    "regiao": "NE"
+  },
+  {
+    "id": 128,
+    "tipo": "municipio",
+    "codigo": "2900702",
+    "nome": "Alagoinhas",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 129,
+    "tipo": "municipio",
+    "codigo": "2903201",
+    "nome": "Barreiras",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 130,
+    "tipo": "municipio",
+    "codigo": "2905701",
+    "nome": "Camaçari",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 131,
+    "tipo": "municipio",
+    "codigo": "2910727",
+    "nome": "Eunápolis",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 132,
+    "tipo": "municipio",
+    "codigo": "2910800",
+    "nome": "Feira de Santana",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 133,
+    "tipo": "municipio",
+    "codigo": "2913606",
+    "nome": "Ilhéus",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 134,
+    "tipo": "municipio",
+    "codigo": "2914802",
+    "nome": "Itabuna",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 135,
+    "tipo": "municipio",
+    "codigo": "2918001",
+    "nome": "Jequié",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 136,
+    "tipo": "municipio",
+    "codigo": "2918407",
+    "nome": "Juazeiro",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 137,
+    "tipo": "municipio",
+    "codigo": "2919207",
+    "nome": "Lauro de Freitas",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 138,
+    "tipo": "municipio",
+    "codigo": "2919553",
+    "nome": "Luís Eduardo Magalhães",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 139,
+    "tipo": "municipio",
+    "codigo": "2924009",
+    "nome": "Paulo Afonso",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 140,
+    "tipo": "municipio",
+    "codigo": "2925303",
+    "nome": "Porto Seguro",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 141,
+    "tipo": "municipio",
+    "codigo": "2927408",
+    "nome": "Salvador",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 142,
+    "tipo": "municipio",
+    "codigo": "2928703",
+    "nome": "Santo Antônio de Jesus",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 143,
+    "tipo": "municipio",
+    "codigo": "2930709",
+    "nome": "Simões Filho",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 144,
+    "tipo": "municipio",
+    "codigo": "2931350",
+    "nome": "Teixeira de Freitas",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 145,
+    "tipo": "municipio",
+    "codigo": "2933307",
+    "nome": "Vitória da Conquista",
+    "uf_sigla": "BA",
+    "regiao": "NE"
+  },
+  {
+    "id": 146,
+    "tipo": "municipio",
+    "codigo": "3103504",
+    "nome": "Araguari",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 147,
+    "tipo": "municipio",
+    "codigo": "3104007",
+    "nome": "Araxá",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 148,
+    "tipo": "municipio",
+    "codigo": "3105608",
+    "nome": "Barbacena",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 149,
+    "tipo": "municipio",
+    "codigo": "3106200",
+    "nome": "Belo Horizonte",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 150,
+    "tipo": "municipio",
+    "codigo": "3106705",
+    "nome": "Betim",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 151,
+    "tipo": "municipio",
+    "codigo": "3118304",
+    "nome": "Conselheiro Lafaiete",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 152,
+    "tipo": "municipio",
+    "codigo": "3118601",
+    "nome": "Contagem",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 153,
+    "tipo": "municipio",
+    "codigo": "3119401",
+    "nome": "Coronel Fabriciano",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 154,
+    "tipo": "municipio",
+    "codigo": "3122306",
+    "nome": "Divinópolis",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 155,
+    "tipo": "municipio",
+    "codigo": "3127701",
+    "nome": "Governador Valadares",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 156,
+    "tipo": "municipio",
+    "codigo": "3129806",
+    "nome": "Ibirité",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 157,
+    "tipo": "municipio",
+    "codigo": "3131307",
+    "nome": "Ipatinga",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 158,
+    "tipo": "municipio",
+    "codigo": "3131703",
+    "nome": "Itabira",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 159,
+    "tipo": "municipio",
+    "codigo": "3134202",
+    "nome": "Ituiutaba",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 160,
+    "tipo": "municipio",
+    "codigo": "3136702",
+    "nome": "Juiz de Fora",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 161,
+    "tipo": "municipio",
+    "codigo": "3138203",
+    "nome": "Lavras",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 162,
+    "tipo": "municipio",
+    "codigo": "3143302",
+    "nome": "Montes Claros",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 163,
+    "tipo": "municipio",
+    "codigo": "3143906",
+    "nome": "Muriaé",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 164,
+    "tipo": "municipio",
+    "codigo": "3144805",
+    "nome": "Nova Lima",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 165,
+    "tipo": "municipio",
+    "codigo": "3145208",
+    "nome": "Nova Serrana",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 166,
+    "tipo": "municipio",
+    "codigo": "3147907",
+    "nome": "Passos",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 167,
+    "tipo": "municipio",
+    "codigo": "3148004",
+    "nome": "Patos de Minas",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 168,
+    "tipo": "municipio",
+    "codigo": "3151800",
+    "nome": "Poços de Caldas",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 169,
+    "tipo": "municipio",
+    "codigo": "3152501",
+    "nome": "Pouso Alegre",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 170,
+    "tipo": "municipio",
+    "codigo": "3154606",
+    "nome": "Ribeirão das Neves",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 171,
+    "tipo": "municipio",
+    "codigo": "3156700",
+    "nome": "Sabará",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 172,
+    "tipo": "municipio",
+    "codigo": "3157807",
+    "nome": "Santa Luzia",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 173,
+    "tipo": "municipio",
+    "codigo": "3167202",
+    "nome": "Sete Lagoas",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 174,
+    "tipo": "municipio",
+    "codigo": "3168606",
+    "nome": "Teófilo Otoni",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 175,
+    "tipo": "municipio",
+    "codigo": "3169901",
+    "nome": "Ubá",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 176,
+    "tipo": "municipio",
+    "codigo": "3170107",
+    "nome": "Uberaba",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 177,
+    "tipo": "municipio",
+    "codigo": "3170206",
+    "nome": "Uberlândia",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 178,
+    "tipo": "municipio",
+    "codigo": "3170701",
+    "nome": "Varginha",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 179,
+    "tipo": "municipio",
+    "codigo": "3171204",
+    "nome": "Vespasiano",
+    "uf_sigla": "MG",
+    "regiao": "SE"
+  },
+  {
+    "id": 180,
+    "tipo": "municipio",
+    "codigo": "3201209",
+    "nome": "Cachoeiro de Itapemirim",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 181,
+    "tipo": "municipio",
+    "codigo": "3201308",
+    "nome": "Cariacica",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 182,
+    "tipo": "municipio",
+    "codigo": "3201506",
+    "nome": "Colatina",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 183,
+    "tipo": "municipio",
+    "codigo": "3202405",
+    "nome": "Guarapari",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 184,
+    "tipo": "municipio",
+    "codigo": "3203205",
+    "nome": "Linhares",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 185,
+    "tipo": "municipio",
+    "codigo": "3204906",
+    "nome": "São Mateus",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 186,
+    "tipo": "municipio",
+    "codigo": "3205002",
+    "nome": "Serra",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 187,
+    "tipo": "municipio",
+    "codigo": "3205200",
+    "nome": "Vila Velha",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 188,
+    "tipo": "municipio",
+    "codigo": "3205309",
+    "nome": "Vitória",
+    "uf_sigla": "ES",
+    "regiao": "SE"
+  },
+  {
+    "id": 189,
+    "tipo": "municipio",
+    "codigo": "3300100",
+    "nome": "Angra dos Reis",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 190,
+    "tipo": "municipio",
+    "codigo": "3300209",
+    "nome": "Araruama",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 191,
+    "tipo": "municipio",
+    "codigo": "3300407",
+    "nome": "Barra Mansa",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 192,
+    "tipo": "municipio",
+    "codigo": "3300456",
+    "nome": "Belford Roxo",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 193,
+    "tipo": "municipio",
+    "codigo": "3300704",
+    "nome": "Cabo Frio",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 194,
+    "tipo": "municipio",
+    "codigo": "3301009",
+    "nome": "Campos dos Goytacazes",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 195,
+    "tipo": "municipio",
+    "codigo": "3301702",
+    "nome": "Duque de Caxias",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 196,
+    "tipo": "municipio",
+    "codigo": "3301900",
+    "nome": "Itaboraí",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 197,
+    "tipo": "municipio",
+    "codigo": "3302007",
+    "nome": "Itaguaí",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 198,
+    "tipo": "municipio",
+    "codigo": "3302205",
+    "nome": "Itaperuna",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 199,
+    "tipo": "municipio",
+    "codigo": "3302403",
+    "nome": "Macaé",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 200,
+    "tipo": "municipio",
+    "codigo": "3302502",
+    "nome": "Magé",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 201,
+    "tipo": "municipio",
+    "codigo": "3302700",
+    "nome": "Maricá",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 202,
+    "tipo": "municipio",
+    "codigo": "3302858",
+    "nome": "Mesquita",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 203,
+    "tipo": "municipio",
+    "codigo": "3303203",
+    "nome": "Nilópolis",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 204,
+    "tipo": "municipio",
+    "codigo": "3303302",
+    "nome": "Niterói",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 205,
+    "tipo": "municipio",
+    "codigo": "3303401",
+    "nome": "Nova Friburgo",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 206,
+    "tipo": "municipio",
+    "codigo": "3303500",
+    "nome": "Nova Iguaçu",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 207,
+    "tipo": "municipio",
+    "codigo": "3303906",
+    "nome": "Petrópolis",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 208,
+    "tipo": "municipio",
+    "codigo": "3304144",
+    "nome": "Queimados",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 209,
+    "tipo": "municipio",
+    "codigo": "3304201",
+    "nome": "Resende",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 210,
+    "tipo": "municipio",
+    "codigo": "3304524",
+    "nome": "Rio das Ostras",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 211,
+    "tipo": "municipio",
+    "codigo": "3304557",
+    "nome": "Rio de Janeiro",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 212,
+    "tipo": "municipio",
+    "codigo": "3304904",
+    "nome": "São Gonçalo",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 213,
+    "tipo": "municipio",
+    "codigo": "3305109",
+    "nome": "São João de Meriti",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 214,
+    "tipo": "municipio",
+    "codigo": "3305208",
+    "nome": "São Pedro da Aldeia",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 215,
+    "tipo": "municipio",
+    "codigo": "3305802",
+    "nome": "Teresópolis",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 216,
+    "tipo": "municipio",
+    "codigo": "3306305",
+    "nome": "Volta Redonda",
+    "uf_sigla": "RJ",
+    "regiao": "SE"
+  },
+  {
+    "id": 217,
+    "tipo": "municipio",
+    "codigo": "3501608",
+    "nome": "Americana",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 218,
+    "tipo": "municipio",
+    "codigo": "3502804",
+    "nome": "Araçatuba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 219,
+    "tipo": "municipio",
+    "codigo": "3503208",
+    "nome": "Araraquara",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 220,
+    "tipo": "municipio",
+    "codigo": "3503307",
+    "nome": "Araras",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 221,
+    "tipo": "municipio",
+    "codigo": "3504008",
+    "nome": "Assis",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 222,
+    "tipo": "municipio",
+    "codigo": "3504107",
+    "nome": "Atibaia",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 223,
+    "tipo": "municipio",
+    "codigo": "3505500",
+    "nome": "Barretos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 224,
+    "tipo": "municipio",
+    "codigo": "3505708",
+    "nome": "Barueri",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 225,
+    "tipo": "municipio",
+    "codigo": "3506003",
+    "nome": "Bauru",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 226,
+    "tipo": "municipio",
+    "codigo": "3506508",
+    "nome": "Birigui",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 227,
+    "tipo": "municipio",
+    "codigo": "3507506",
+    "nome": "Botucatu",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 228,
+    "tipo": "municipio",
+    "codigo": "3507605",
+    "nome": "Bragança Paulista",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 229,
+    "tipo": "municipio",
+    "codigo": "3509502",
+    "nome": "Campinas",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 230,
+    "tipo": "municipio",
+    "codigo": "3510500",
+    "nome": "Caraguatatuba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 231,
+    "tipo": "municipio",
+    "codigo": "3510609",
+    "nome": "Carapicuíba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 232,
+    "tipo": "municipio",
+    "codigo": "3511102",
+    "nome": "Catanduva",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 233,
+    "tipo": "municipio",
+    "codigo": "3513009",
+    "nome": "Cotia",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 234,
+    "tipo": "municipio",
+    "codigo": "3513504",
+    "nome": "Cubatão",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 235,
+    "tipo": "municipio",
+    "codigo": "3513801",
+    "nome": "Diadema",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 236,
+    "tipo": "municipio",
+    "codigo": "3515004",
+    "nome": "Embu das Artes",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 237,
+    "tipo": "municipio",
+    "codigo": "3515707",
+    "nome": "Ferraz de Vasconcelos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 238,
+    "tipo": "municipio",
+    "codigo": "3516200",
+    "nome": "Franca",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 239,
+    "tipo": "municipio",
+    "codigo": "3516309",
+    "nome": "Francisco Morato",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 240,
+    "tipo": "municipio",
+    "codigo": "3516408",
+    "nome": "Franco da Rocha",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 241,
+    "tipo": "municipio",
+    "codigo": "3518404",
+    "nome": "Guaratinguetá",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 242,
+    "tipo": "municipio",
+    "codigo": "3518701",
+    "nome": "Guarujá",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 243,
+    "tipo": "municipio",
+    "codigo": "3518800",
+    "nome": "Guarulhos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 244,
+    "tipo": "municipio",
+    "codigo": "3519071",
+    "nome": "Hortolândia",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 245,
+    "tipo": "municipio",
+    "codigo": "3520509",
+    "nome": "Indaiatuba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 246,
+    "tipo": "municipio",
+    "codigo": "3522109",
+    "nome": "Itanhaém",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 247,
+    "tipo": "municipio",
+    "codigo": "3522208",
+    "nome": "Itapecerica da Serra",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 248,
+    "tipo": "municipio",
+    "codigo": "3522307",
+    "nome": "Itapetininga",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 249,
+    "tipo": "municipio",
+    "codigo": "3522505",
+    "nome": "Itapevi",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 250,
+    "tipo": "municipio",
+    "codigo": "3523107",
+    "nome": "Itaquaquecetuba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 251,
+    "tipo": "municipio",
+    "codigo": "3523404",
+    "nome": "Itatiba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 252,
+    "tipo": "municipio",
+    "codigo": "3523909",
+    "nome": "Itu",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 253,
+    "tipo": "municipio",
+    "codigo": "3524402",
+    "nome": "Jacareí",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 254,
+    "tipo": "municipio",
+    "codigo": "3525003",
+    "nome": "Jandira",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 255,
+    "tipo": "municipio",
+    "codigo": "3525300",
+    "nome": "Jaú",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 256,
+    "tipo": "municipio",
+    "codigo": "3525904",
+    "nome": "Jundiaí",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 257,
+    "tipo": "municipio",
+    "codigo": "3526902",
+    "nome": "Limeira",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 258,
+    "tipo": "municipio",
+    "codigo": "3529005",
+    "nome": "Marília",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 259,
+    "tipo": "municipio",
+    "codigo": "3529401",
+    "nome": "Mauá",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 260,
+    "tipo": "municipio",
+    "codigo": "3530607",
+    "nome": "Mogi das Cruzes",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 261,
+    "tipo": "municipio",
+    "codigo": "3530706",
+    "nome": "Mogi Guaçu",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 262,
+    "tipo": "municipio",
+    "codigo": "3534401",
+    "nome": "Osasco",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 263,
+    "tipo": "municipio",
+    "codigo": "3534708",
+    "nome": "Ourinhos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 264,
+    "tipo": "municipio",
+    "codigo": "3536505",
+    "nome": "Paulínia",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 265,
+    "tipo": "municipio",
+    "codigo": "3538006",
+    "nome": "Pindamonhangaba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 266,
+    "tipo": "municipio",
+    "codigo": "3538709",
+    "nome": "Piracicaba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 267,
+    "tipo": "municipio",
+    "codigo": "3539806",
+    "nome": "Poá",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 268,
+    "tipo": "municipio",
+    "codigo": "3541000",
+    "nome": "Praia Grande",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 269,
+    "tipo": "municipio",
+    "codigo": "3541406",
+    "nome": "Presidente Prudente",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 270,
+    "tipo": "municipio",
+    "codigo": "3543303",
+    "nome": "Ribeirão Pires",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 271,
+    "tipo": "municipio",
+    "codigo": "3543402",
+    "nome": "Ribeirão Preto",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 272,
+    "tipo": "municipio",
+    "codigo": "3543907",
+    "nome": "Rio Claro",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 273,
+    "tipo": "municipio",
+    "codigo": "3545209",
+    "nome": "Salto",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 274,
+    "tipo": "municipio",
+    "codigo": "3545803",
+    "nome": "Santa Bárbara d'Oeste",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 275,
+    "tipo": "municipio",
+    "codigo": "3547304",
+    "nome": "Santana de Parnaíba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 276,
+    "tipo": "municipio",
+    "codigo": "3547809",
+    "nome": "Santo André",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 277,
+    "tipo": "municipio",
+    "codigo": "3548500",
+    "nome": "Santos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 278,
+    "tipo": "municipio",
+    "codigo": "3548708",
+    "nome": "São Bernardo do Campo",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 279,
+    "tipo": "municipio",
+    "codigo": "3548807",
+    "nome": "São Caetano do Sul",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 280,
+    "tipo": "municipio",
+    "codigo": "3548906",
+    "nome": "São Carlos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 281,
+    "tipo": "municipio",
+    "codigo": "3549805",
+    "nome": "São José do Rio Preto",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 282,
+    "tipo": "municipio",
+    "codigo": "3549904",
+    "nome": "São José dos Campos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 283,
+    "tipo": "municipio",
+    "codigo": "3550308",
+    "nome": "São Paulo",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 284,
+    "tipo": "municipio",
+    "codigo": "3551009",
+    "nome": "São Vicente",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 285,
+    "tipo": "municipio",
+    "codigo": "3551702",
+    "nome": "Sertãozinho",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 286,
+    "tipo": "municipio",
+    "codigo": "3552205",
+    "nome": "Sorocaba",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 287,
+    "tipo": "municipio",
+    "codigo": "3552403",
+    "nome": "Sumaré",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 288,
+    "tipo": "municipio",
+    "codigo": "3552502",
+    "nome": "Suzano",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 289,
+    "tipo": "municipio",
+    "codigo": "3552809",
+    "nome": "Taboão da Serra",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 290,
+    "tipo": "municipio",
+    "codigo": "3554003",
+    "nome": "Tatuí",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 291,
+    "tipo": "municipio",
+    "codigo": "3554102",
+    "nome": "Taubaté",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 292,
+    "tipo": "municipio",
+    "codigo": "3556206",
+    "nome": "Valinhos",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 293,
+    "tipo": "municipio",
+    "codigo": "3556503",
+    "nome": "Várzea Paulista",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 294,
+    "tipo": "municipio",
+    "codigo": "3557006",
+    "nome": "Votorantim",
+    "uf_sigla": "SP",
+    "regiao": "SE"
+  },
+  {
+    "id": 295,
+    "tipo": "municipio",
+    "codigo": "4100400",
+    "nome": "Almirante Tamandaré",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 296,
+    "tipo": "municipio",
+    "codigo": "4101408",
+    "nome": "Apucarana",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 297,
+    "tipo": "municipio",
+    "codigo": "4101507",
+    "nome": "Arapongas",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 298,
+    "tipo": "municipio",
+    "codigo": "4101804",
+    "nome": "Araucária",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 299,
+    "tipo": "municipio",
+    "codigo": "4103701",
+    "nome": "Cambé",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 300,
+    "tipo": "municipio",
+    "codigo": "4104204",
+    "nome": "Campo Largo",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 301,
+    "tipo": "municipio",
+    "codigo": "4104808",
+    "nome": "Cascavel",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 302,
+    "tipo": "municipio",
+    "codigo": "4105805",
+    "nome": "Colombo",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 303,
+    "tipo": "municipio",
+    "codigo": "4106902",
+    "nome": "Curitiba",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 304,
+    "tipo": "municipio",
+    "codigo": "4107652",
+    "nome": "Fazenda Rio Grande",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 305,
+    "tipo": "municipio",
+    "codigo": "4108304",
+    "nome": "Foz do Iguaçu",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 306,
+    "tipo": "municipio",
+    "codigo": "4109401",
+    "nome": "Guarapuava",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 307,
+    "tipo": "municipio",
+    "codigo": "4113700",
+    "nome": "Londrina",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 308,
+    "tipo": "municipio",
+    "codigo": "4115200",
+    "nome": "Maringá",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 309,
+    "tipo": "municipio",
+    "codigo": "4118204",
+    "nome": "Paranaguá",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 310,
+    "tipo": "municipio",
+    "codigo": "4119152",
+    "nome": "Pinhais",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 311,
+    "tipo": "municipio",
+    "codigo": "4119509",
+    "nome": "Piraquara",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 312,
+    "tipo": "municipio",
+    "codigo": "4119905",
+    "nome": "Ponta Grossa",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 313,
+    "tipo": "municipio",
+    "codigo": "4125506",
+    "nome": "São José dos Pinhais",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 314,
+    "tipo": "municipio",
+    "codigo": "4126256",
+    "nome": "Sarandi",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 315,
+    "tipo": "municipio",
+    "codigo": "4127700",
+    "nome": "Toledo",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 316,
+    "tipo": "municipio",
+    "codigo": "4128104",
+    "nome": "Umuarama",
+    "uf_sigla": "PR",
+    "regiao": "S"
+  },
+  {
+    "id": 317,
+    "tipo": "municipio",
+    "codigo": "4202008",
+    "nome": "Balneário Camboriú",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 318,
+    "tipo": "municipio",
+    "codigo": "4202404",
+    "nome": "Blumenau",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 319,
+    "tipo": "municipio",
+    "codigo": "4202909",
+    "nome": "Brusque",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 320,
+    "tipo": "municipio",
+    "codigo": "4203204",
+    "nome": "Camboriú",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 321,
+    "tipo": "municipio",
+    "codigo": "4204202",
+    "nome": "Chapecó",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 322,
+    "tipo": "municipio",
+    "codigo": "4204608",
+    "nome": "Criciúma",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 323,
+    "tipo": "municipio",
+    "codigo": "4205407",
+    "nome": "Florianópolis",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 324,
+    "tipo": "municipio",
+    "codigo": "4208203",
+    "nome": "Itajaí",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 325,
+    "tipo": "municipio",
+    "codigo": "4208906",
+    "nome": "Jaraguá do Sul",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 326,
+    "tipo": "municipio",
+    "codigo": "4209102",
+    "nome": "Joinville",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 327,
+    "tipo": "municipio",
+    "codigo": "4209300",
+    "nome": "Lages",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 328,
+    "tipo": "municipio",
+    "codigo": "4211900",
+    "nome": "Palhoça",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 329,
+    "tipo": "municipio",
+    "codigo": "4216602",
+    "nome": "São José",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 330,
+    "tipo": "municipio",
+    "codigo": "4218707",
+    "nome": "Tubarão",
+    "uf_sigla": "SC",
+    "regiao": "S"
+  },
+  {
+    "id": 331,
+    "tipo": "municipio",
+    "codigo": "4300604",
+    "nome": "Alvorada",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 332,
+    "tipo": "municipio",
+    "codigo": "4301602",
+    "nome": "Bagé",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 333,
+    "tipo": "municipio",
+    "codigo": "4302105",
+    "nome": "Bento Gonçalves",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 334,
+    "tipo": "municipio",
+    "codigo": "4303103",
+    "nome": "Cachoeirinha",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 335,
+    "tipo": "municipio",
+    "codigo": "4304606",
+    "nome": "Canoas",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 336,
+    "tipo": "municipio",
+    "codigo": "4305108",
+    "nome": "Caxias do Sul",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 337,
+    "tipo": "municipio",
+    "codigo": "4307005",
+    "nome": "Erechim",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 338,
+    "tipo": "municipio",
+    "codigo": "4309209",
+    "nome": "Gravataí",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 339,
+    "tipo": "municipio",
+    "codigo": "4313409",
+    "nome": "Novo Hamburgo",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 340,
+    "tipo": "municipio",
+    "codigo": "4314100",
+    "nome": "Passo Fundo",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 341,
+    "tipo": "municipio",
+    "codigo": "4314407",
+    "nome": "Pelotas",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 342,
+    "tipo": "municipio",
+    "codigo": "4314902",
+    "nome": "Porto Alegre",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 343,
+    "tipo": "municipio",
+    "codigo": "4315602",
+    "nome": "Rio Grande",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 344,
+    "tipo": "municipio",
+    "codigo": "4316808",
+    "nome": "Santa Cruz do Sul",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 345,
+    "tipo": "municipio",
+    "codigo": "4316907",
+    "nome": "Santa Maria",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 346,
+    "tipo": "municipio",
+    "codigo": "4318705",
+    "nome": "São Leopoldo",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 347,
+    "tipo": "municipio",
+    "codigo": "4320008",
+    "nome": "Sapucaia do Sul",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 348,
+    "tipo": "municipio",
+    "codigo": "4322400",
+    "nome": "Uruguaiana",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 349,
+    "tipo": "municipio",
+    "codigo": "4323002",
+    "nome": "Viamão",
+    "uf_sigla": "RS",
+    "regiao": "S"
+  },
+  {
+    "id": 350,
+    "tipo": "municipio",
+    "codigo": "5002704",
+    "nome": "Campo Grande",
+    "uf_sigla": "MS",
+    "regiao": "CO"
+  },
+  {
+    "id": 351,
+    "tipo": "municipio",
+    "codigo": "5003702",
+    "nome": "Dourados",
+    "uf_sigla": "MS",
+    "regiao": "CO"
+  },
+  {
+    "id": 352,
+    "tipo": "municipio",
+    "codigo": "5008305",
+    "nome": "Três Lagoas",
+    "uf_sigla": "MS",
+    "regiao": "CO"
+  },
+  {
+    "id": 353,
+    "tipo": "municipio",
+    "codigo": "5103403",
+    "nome": "Cuiabá",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 354,
+    "tipo": "municipio",
+    "codigo": "5107602",
+    "nome": "Rondonópolis",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 355,
+    "tipo": "municipio",
+    "codigo": "5107909",
+    "nome": "Sinop",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 356,
+    "tipo": "municipio",
+    "codigo": "5107925",
+    "nome": "Sorriso",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 357,
+    "tipo": "municipio",
+    "codigo": "5107958",
+    "nome": "Tangará da Serra",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 358,
+    "tipo": "municipio",
+    "codigo": "5108402",
+    "nome": "Várzea Grande",
+    "uf_sigla": "MT",
+    "regiao": "CO"
+  },
+  {
+    "id": 359,
+    "tipo": "municipio",
+    "codigo": "5200258",
+    "nome": "Águas Lindas de Goiás",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 360,
+    "tipo": "municipio",
+    "codigo": "5201108",
+    "nome": "Anápolis",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 361,
+    "tipo": "municipio",
+    "codigo": "5201405",
+    "nome": "Aparecida de Goiânia",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 362,
+    "tipo": "municipio",
+    "codigo": "5205109",
+    "nome": "Catalão",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 363,
+    "tipo": "municipio",
+    "codigo": "5208004",
+    "nome": "Formosa",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 364,
+    "tipo": "municipio",
+    "codigo": "5208707",
+    "nome": "Goiânia",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 365,
+    "tipo": "municipio",
+    "codigo": "5211503",
+    "nome": "Itumbiara",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 366,
+    "tipo": "municipio",
+    "codigo": "5211909",
+    "nome": "Jataí",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 367,
+    "tipo": "municipio",
+    "codigo": "5212501",
+    "nome": "Luziânia",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 368,
+    "tipo": "municipio",
+    "codigo": "5215231",
+    "nome": "Novo Gama",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 369,
+    "tipo": "municipio",
+    "codigo": "5217609",
+    "nome": "Planaltina",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 370,
+    "tipo": "municipio",
+    "codigo": "5218805",
+    "nome": "Rio Verde",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 371,
+    "tipo": "municipio",
+    "codigo": "5220454",
+    "nome": "Senador Canedo",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 372,
+    "tipo": "municipio",
+    "codigo": "5221403",
+    "nome": "Trindade",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 373,
+    "tipo": "municipio",
+    "codigo": "5221858",
+    "nome": "Valparaíso de Goiás",
+    "uf_sigla": "GO",
+    "regiao": "CO"
+  },
+  {
+    "id": 374,
+    "tipo": "municipio",
+    "codigo": "5300108",
+    "nome": "Brasília",
+    "uf_sigla": "DF",
+    "regiao": "CO"
   }
 ]

@@ -74,7 +74,7 @@ export function ObjetivoVariaveis({
           </div>
         </div>
 
-        <div className="mt-6 max-w-2xl rounded-lg border border-border bg-muted/30 px-4 py-3">
+        <div className="mt-6 py-3">
           <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
             O que está sendo avaliado
           </p>

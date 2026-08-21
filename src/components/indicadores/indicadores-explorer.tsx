@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowRight, Info } from 'lucide-react'
+import { Info } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import * as React from 'react'
@@ -12,11 +12,13 @@ import {
 } from '@/components/charts/objetivos-radar'
 import { EntendaGraficoTip } from '@/components/indicadores/entenda-grafico-panel'
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
+import { EnteBusca } from '@/components/shared/ente-busca'
 import { FilterPill } from '@/components/shared/filter-pill'
 import { FontesRecorte } from '@/components/shared/fontes-recorte'
 import { HomeFaq } from '@/components/shared/home-faq'
 import { InfoTip } from '@/components/shared/info-tip'
 import { VariantLink } from '@/components/shared/variant-link'
+import { VariavelAcoes } from '@/components/shared/variavel-acoes'
 import {
   Tooltip,
   TooltipContent,
@@ -48,6 +50,7 @@ import {
   tematicasComCobertura,
   variaveisPorTematica,
 } from '@/data/tematicas'
+import { ENTE_BUSCA_LIMIAR, entePassaBusca } from '@/lib/ente-busca'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { bandeiraSrc } from '@/lib/geo/entes-geo'
 import {
@@ -67,6 +70,16 @@ const CORES = [
   '#b4536a',
 ]
 const MEDIA_COR = 'var(--chart-4)'
+
+type TagVariavelNotas = {
+  slug: string
+  nome: string
+  fonte: string
+  fonteUrl: string
+  conceptId: string
+  subItens: string | null
+  notas: Record<string, number | null>
+}
 
 export function IndicadoresExplorer() {
   const router = useRouter()
@@ -119,6 +132,7 @@ export function IndicadoresExplorer() {
   }, [modo, tagSlug, nivel, coberturaTemas, atualizar])
 
   function selecionarNivel(key: NivelKey) {
+    setBuscaEnte('')
     const alvo = niveis.find(n => n.key === key)
     atualizar({
       nivel: key,
@@ -229,6 +243,54 @@ export function IndicadoresExplorer() {
       )
 
   const varsTag = tematica ? (variaveisPorTematica[tematica.slug] ?? []) : []
+  const [varsTagNotas, setVarsTagNotas] = React.useState<
+    TagVariavelNotas[] | null
+  >(null)
+  const [varsTagLoading, setVarsTagLoading] = React.useState(false)
+  const [buscaEnte, setBuscaEnte] = React.useState('')
+
+  const entesKey = enteSlugs.join(',')
+  React.useEffect(() => {
+    if (porObjetivos || !tematica || !nivelKey || enteSlugs.length === 0) {
+      setVarsTagNotas(null)
+      setVarsTagLoading(false)
+      return
+    }
+    const ac = new AbortController()
+    setVarsTagLoading(true)
+    const params = new URLSearchParams({
+      nivel: nivelKey,
+      tema: tematica.slug,
+      entes: entesKey,
+    })
+    fetch(`/api/obgd/tag-variaveis?${params}`, { signal: ac.signal })
+      .then(async res => {
+        const data = (await res.json()) as { variaveis?: TagVariavelNotas[] }
+        if (!ac.signal.aborted) {
+          setVarsTagNotas(Array.isArray(data.variaveis) ? data.variaveis : [])
+        }
+      })
+      .catch(() => {
+        if (!ac.signal.aborted) setVarsTagNotas([])
+      })
+      .finally(() => {
+        if (!ac.signal.aborted) setVarsTagLoading(false)
+      })
+    return () => ac.abort()
+  }, [porObjetivos, tematica, nivelKey, entesKey, enteSlugs.length])
+
+  const mostrarBuscaEntes =
+    Boolean(nivel?.isRanking) &&
+    (nivelKey === 'municipios' ||
+      (nivel?.entes.length ?? 0) > ENTE_BUSCA_LIMIAR)
+  const entesVisiveis = nivel
+    ? nivel.entes.filter(
+        e =>
+          enteSlugs.includes(e.slug) ||
+          !mostrarBuscaEntes ||
+          entePassaBusca(e, buscaEnte)
+      )
+    : []
 
   const fontesRecorte = React.useMemo(() => {
     if (!completo) return []
@@ -249,9 +311,10 @@ export function IndicadoresExplorer() {
           Explorar indicadores
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Compare estados, capitais e o governo federal nos objetivos da ENGD ou
-          em categorias temáticas. As notas vêm de indicadores de fontes
-          públicas — sem precisar de uma média geral entre objetivos.{' '}
+          Compare o governo federal, os estados, as capitais e os municípios com
+          100 mil habitantes ou mais nos objetivos da ENGD ou em categorias
+          temáticas. As notas vêm de indicadores de fontes públicas — sem
+          precisar de uma média geral entre objetivos.{' '}
           <Link
             href="/metodologia"
             className="font-medium text-primary underline-offset-2 hover:underline"
@@ -315,13 +378,29 @@ export function IndicadoresExplorer() {
                   </span>
                 )}
               </div>
-              <ul className="flex flex-col gap-1">
+              {mostrarBuscaEntes && (
+                <div className="mb-2 px-1">
+                  <EnteBusca value={buscaEnte} onChange={setBuscaEnte} />
+                </div>
+              )}
+              <ul
+                className={
+                  mostrarBuscaEntes
+                    ? 'flex max-h-[36rem] flex-col gap-1 overflow-y-auto'
+                    : 'flex flex-col gap-1'
+                }
+              >
                 {!nivel && (
                   <li className="px-3 py-2 text-muted-foreground text-sm">
                     Selecione um nível.
                   </li>
                 )}
-                {nivel?.entes.map(e => {
+                {nivel && entesVisiveis.length === 0 && (
+                  <li className="px-3 py-2 text-muted-foreground text-sm">
+                    Nenhum ente encontrado.
+                  </li>
+                )}
+                {entesVisiveis.map(e => {
                   const idx = enteSlugs.indexOf(e.slug)
                   const isActive = idx >= 0
                   const bloqueado =
@@ -351,10 +430,15 @@ export function IndicadoresExplorer() {
                             />
                           )}
                           <BandeiraEnte
-                            src={bandeiraSrc(nivel.key, e.slug)}
+                            src={bandeiraSrc(e.nivel, e.slug, e.ufSigla)}
                             nome={e.nome}
                           />
                           <span className="truncate">{e.nome}</span>
+                          {e.nivel === 'municipios' && e.ufSigla && (
+                            <span className="shrink-0 text-[10px] text-muted-foreground">
+                              {e.ufSigla}
+                            </span>
+                          )}
                         </span>
                         {valor != null && (
                           <span className="shrink-0 text-muted-foreground text-xs tabular-nums">
@@ -531,31 +615,100 @@ export function IndicadoresExplorer() {
                         <ComparativoBarChart entes={barrasTematicas} />
                       </div>
                     )}
-                    {varsTag.length > 0 && (
+                    {(varsTag.length > 0 || varsTagLoading || varsTagNotas) && (
                       <div className="dash-t mt-8 pt-6">
                         <h3 className="font-bold text-foreground text-sm">
                           Variáveis atreladas à tag
                         </h3>
                         <p className="mt-1 text-muted-foreground text-xs">
-                          Indicadores ativos associados a esta tag.
+                          Indicadores ativos associados a esta tag, com a nota
+                          (0–100) de cada ente selecionado.
                         </p>
-                        <ul className="mt-4 border-t">
-                          {varsTag.map(v => (
-                            <li
-                              key={v.slug}
-                              className="flex items-center justify-between gap-3 border-b py-3"
-                            >
-                              <span className="min-w-0">
-                                <span className="block text-foreground text-xs font-medium">
-                                  {v.nome}
-                                </span>
-                                <span className="mt-0.5 block text-[10px] text-muted-foreground uppercase tracking-wide">
-                                  {v.fonte}
-                                </span>
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
+                        {varsTagLoading && (
+                          <p className="mt-4 text-muted-foreground text-xs">
+                            Carregando valores…
+                          </p>
+                        )}
+                        {!varsTagLoading &&
+                          varsTagNotas &&
+                          varsTagNotas.length > 0 && (
+                            <ul className="mt-4 border-t">
+                              {varsTagNotas.map(v => (
+                                <li
+                                  key={v.slug}
+                                  className="flex items-center gap-3 border-b py-3"
+                                >
+                                  <span className="min-w-0 flex-1">
+                                    <span className="block text-foreground text-xs font-medium">
+                                      {v.nome}
+                                    </span>
+                                    <span className="mt-0.5 block text-[10px] text-muted-foreground uppercase tracking-wide">
+                                      {v.fonte}
+                                    </span>
+                                  </span>
+                                  {nivelKey && (
+                                    <VariavelAcoes
+                                      nome={v.nome}
+                                      fonteUrl={v.fonteUrl}
+                                      arquivo={{
+                                        nome: `obgd-${v.slug}.csv`,
+                                        tamanho: 'CSV',
+                                        tabelas: 1,
+                                      }}
+                                      nivelKey={nivelKey}
+                                      conceptId={v.conceptId}
+                                      subItens={v.subItens}
+                                    />
+                                  )}
+                                  <span className="flex shrink-0 flex-col items-end gap-1">
+                                    {entesSelecionados.map((e, idx) => {
+                                      const nota = v.notas[e.slug]
+                                      return (
+                                        <span
+                                          key={e.slug}
+                                          className="inline-flex items-center gap-1.5 text-xs tabular-nums text-foreground"
+                                        >
+                                          {entesSelecionados.length > 1 && (
+                                            <span
+                                              aria-hidden="true"
+                                              className="size-1.5 rounded-full"
+                                              style={{
+                                                backgroundColor: CORES[idx],
+                                              }}
+                                            />
+                                          )}
+                                          {nota == null
+                                            ? '—'
+                                            : formatScore(nota)}
+                                        </span>
+                                      )
+                                    })}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        {!varsTagLoading &&
+                          (!varsTagNotas || varsTagNotas.length === 0) &&
+                          varsTag.length > 0 && (
+                            <ul className="mt-4 border-t">
+                              {varsTag.map(v => (
+                                <li
+                                  key={v.slug}
+                                  className="flex items-center justify-between gap-3 border-b py-3"
+                                >
+                                  <span className="min-w-0">
+                                    <span className="block text-foreground text-xs font-medium">
+                                      {v.nome}
+                                    </span>
+                                    <span className="mt-0.5 block text-[10px] text-muted-foreground uppercase tracking-wide">
+                                      {v.fonte}
+                                    </span>
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                       </div>
                     )}
                     <FontesRecorte fontes={fontesRecorte} />

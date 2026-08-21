@@ -1,10 +1,35 @@
 # Integração dados-v3 e tags reais
 
-> Documento técnico da migração da entrega **dados-v2** → **dados-v3** e da substituição dos mocks de categorias temáticas pelos **16 tags oficiais** (Gabriel / Luiza).
+> Documento técnico da migração da entrega **dados-v2** → **dados-v3** e da substituição dos mocks de categorias temáticas pelos **16 tags oficiais** (Gabriel / Luiza). A seção **0** registra o snapshot **assets-v4** (319 municípios), que é o que o app consome hoje.
 >
 > Escopo: pipeline de assets, camada OBGD, ranking/indicadores por tag, critérios de score · Edição do índice: **2026** · Fonte versionada: `src/data/obgd/assets/`
 >
 > Status de produto geral: [`acompanhamento-plataforma.md`](./acompanhamento-plataforma.md) · Histórico da 1ª integração (v2): [`implementacao-ranking-por-objetivo.md`](./implementacao-ranking-por-objetivo.md)
+
+---
+
+## 0. Snapshot atual: assets-v4 (ago/2026)
+
+O app lê [`src/data/obgd/assets/`](../src/data/obgd/assets/), gerado a partir de [`src/data/obgd/assets-v4/`](../src/data/obgd/assets-v4/).
+
+| Recorte na UI (`NivelKey`) | Rótulo | `indice_long.nivel` | Entes |
+|---|---|---|---|
+| `federal` | Federal | `nacional` | Brasil |
+| `estadual` | Estadual | `uf` | 27 UFs |
+| `municipal` | **Capitais** | `capital` | 27 capitais — URLs `/municipal/sao-paulo` intactas |
+| `municipios` | **Municípios** | `municipio` | 319 ≥ 100 mil hab. (capitais inclusas como município) |
+
+Capitais existem duas vezes no `ente.json` (mesmo código IBGE, `id`s diferentes, `tipo` `capital` vs `municipio`). Lookup composto: `(tipo, codigo)`.
+
+```bash
+node --max-old-space-size=4096 scripts/sync-obgd-assets-from-v4.mjs
+```
+
+O script v4: CSV → JSON (`ano_indice` vazio → `2026`); `detalhes_municipios.json`; `indice_por_tag` por `(tipo, unidade, tag)`; **não** versiona `indicador_valor.json`. Municípios no long sem `n_objetivos_com_dados` recebem fallback `7`.
+
+**Fora de escopo (pedido de tags API / IA / emergentes):** API não existe no catálogo; IA/emergentes são poucos indicadores do Objetivo 7, quase só nacionais. Permanecem no recorte federal do Obj. 7. Devolver à frente de dados: `ano_indice` nulo na entrega, ranking municipal dos objs. 7/8/10 vazio, e se a duplicata capital/município é permanente.
+
+O restante deste documento descreve a integração **v3** (tags reais), que a v4 preserva.
 
 ---
 
@@ -67,8 +92,9 @@ Premissas adotadas na integração (alinhamento interno):
 | Pergunta | Resposta |
 |---|---|
 | **Onde o app lê?** | [`src/data/obgd/assets/`](../src/data/obgd/assets/) — versionado no Git |
-| **Origem da entrega completa** | `src/local_assets/dados-v3/` — **gitignored** |
-| **Como atualizar?** | `node scripts/sync-obgd-assets-from-v3.mjs` |
+| **Origem atual** | `src/data/obgd/assets-v4/` — sync com `scripts/sync-obgd-assets-from-v4.mjs` |
+| **Origem histórica v3** | `src/local_assets/dados-v3/` — **gitignored**; script `sync-obgd-assets-from-v3.mjs` |
+| **Como atualizar?** | `node --max-old-space-size=4096 scripts/sync-obgd-assets-from-v4.mjs` |
 | **Legado** | `local_assets/dados-v2/` (referência histórica); `indice_obgd/` (supersedido) |
 
 ### 3.2 Inventário versionado (app)
@@ -79,6 +105,7 @@ src/data/obgd/assets/
 ├── detalhes_nacional.json
 ├── detalhes_estadual.json
 ├── detalhes_capitais.json          ← drill-down de variáveis (+ concept_id)
+├── detalhes_municipios.json        ← 319 municípios ≥ 100 mil hab.
 └── dados/
     ├── ente.json
     ├── fonte.json
@@ -259,6 +286,7 @@ Se a entrega voltar a incluir JSON flat oficiais com `ano_indice` preenchido, o 
 - Filtro ou dual-view **cidadão × gestor** (`audiencia` / `tag.lado`)
 - Score oficial pré-calculado pela frente de dados (substituiria o nosso `indice_por_tag` se o contrato for outro)
 - Expansão do catálogo além das 16 tags
+- Tags **API**, **IA** e **tecnologias emergentes** (sem cobertura suficiente no snapshot)
 - Texto oficial do Objetivo 3 e nota dos objetivos precários
 
 ---
