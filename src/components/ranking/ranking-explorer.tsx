@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import * as React from 'react'
 import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
 import { EnteRankingList } from '@/components/ranking/ente-ranking-list'
@@ -29,22 +29,24 @@ import {
 } from '@/data/tematicas'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { ufDeEnte } from '@/lib/geo/entes-geo'
-import {
-  parseRankingSearchParams,
-  type RankingFiltros,
-  rankingHref,
-} from '@/lib/ranking-url'
+import { type RankingFiltros, rankingHref } from '@/lib/ranking-url'
 
 type Vista = 'grafico' | 'mapa'
 
-export function RankingExplorer() {
+export function RankingExplorer({
+  filtros: filtrosServidor,
+}: {
+  filtros: RankingFiltros
+}) {
   const router = useRouter()
-  const searchParams = useSearchParams()
   const { link } = usePlatformVariant()
-  const filtros = React.useMemo(
-    () => parseRankingSearchParams(searchParams),
-    [searchParams]
-  )
+  const [filtros, setFiltros] = React.useState(filtrosServidor)
+  const filtrosKey = rankingHref(filtrosServidor)
+  const [prevFiltrosKey, setPrevFiltrosKey] = React.useState(filtrosKey)
+  if (filtrosKey !== prevFiltrosKey) {
+    setPrevFiltrosKey(filtrosKey)
+    setFiltros(filtrosServidor)
+  }
   const [vista, setVista] = React.useState<Vista>('grafico')
 
   const active = filtros.nivel
@@ -73,6 +75,7 @@ export function RankingExplorer() {
       if (!tematicaSelecionavel(next.tema, cobTemas)) {
         next.tema = primeiraTematicaSelecionavel(cobTemas)
       }
+      setFiltros(next)
       router.replace(link(rankingHref(next)), { scroll: false })
     },
     [filtros, link, router]
@@ -81,41 +84,16 @@ export function RankingExplorer() {
   React.useEffect(() => {
     if (!objetivoSelecionavel(objetivoNumero - 1, cobertura)) {
       const primeiro = primeiroObjetivoSelecionavel(cobertura)
-      router.replace(
-        link(
-          rankingHref({
-            ...filtros,
-            objetivo: objectives[primeiro - 1].slug,
-          })
-        ),
-        { scroll: false }
-      )
+      atualizar({ objetivo: objectives[primeiro - 1].slug })
       return
     }
     if (
       modo === 'tematicas' &&
       !tematicaSelecionavel(tagSlug, coberturaTemas)
     ) {
-      router.replace(
-        link(
-          rankingHref({
-            ...filtros,
-            tema: primeiraTematicaSelecionavel(coberturaTemas),
-          })
-        ),
-        { scroll: false }
-      )
+      atualizar({ tema: primeiraTematicaSelecionavel(coberturaTemas) })
     }
-  }, [
-    cobertura,
-    coberturaTemas,
-    objetivoNumero,
-    tagSlug,
-    modo,
-    filtros,
-    link,
-    router,
-  ])
+  }, [cobertura, coberturaTemas, objetivoNumero, tagSlug, modo, atualizar])
 
   const objetivo = objectives[objetivoNumero - 1]
   const tematica = tematicas.find(t => t.slug === tagSlug) ?? tematicas[0]

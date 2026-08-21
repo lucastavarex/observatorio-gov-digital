@@ -2,7 +2,7 @@
 
 import { Info } from 'lucide-react'
 import Link from 'next/link'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import * as React from 'react'
 import { toast } from 'sonner'
 import { ComparativoBarChart } from '@/components/charts/comparativo-bar-chart'
@@ -58,7 +58,6 @@ import {
   indicadoresHref,
   MAX_ENTES_COMPARATIVO,
   normalizarIndicadoresFiltros,
-  parseIndicadoresSearchParams,
 } from '@/lib/indicadores-url'
 import { cn } from '@/lib/utils'
 
@@ -81,14 +80,20 @@ type TagVariavelNotas = {
   notas: Record<string, number | null>
 }
 
-export function IndicadoresExplorer() {
+export function IndicadoresExplorer({
+  filtros: filtrosServidor,
+}: {
+  filtros: IndicadoresFiltros
+}) {
   const router = useRouter()
-  const searchParams = useSearchParams()
   const { link } = usePlatformVariant()
-  const filtros = React.useMemo(
-    () => parseIndicadoresSearchParams(searchParams),
-    [searchParams]
-  )
+  const [filtros, setFiltros] = React.useState(filtrosServidor)
+  const filtrosKey = indicadoresHref(filtrosServidor)
+  const [prevFiltrosKey, setPrevFiltrosKey] = React.useState(filtrosKey)
+  if (filtrosKey !== prevFiltrosKey) {
+    setPrevFiltrosKey(filtrosKey)
+    setFiltros(filtrosServidor)
+  }
 
   const nivelKey = filtros.nivel
   const enteSlugs = filtros.entes
@@ -114,6 +119,7 @@ export function IndicadoresExplorer() {
           }
         }
       }
+      setFiltros(next)
       router.replace(link(indicadoresHref(next)), { scroll: false })
     },
     [filtros, link, router]
