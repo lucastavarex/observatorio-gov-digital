@@ -248,6 +248,8 @@ export function IndicadoresExplorer() {
   >(null)
   const [varsTagLoading, setVarsTagLoading] = React.useState(false)
   const [buscaEnte, setBuscaEnte] = React.useState('')
+  const listaEntesRef = React.useRef<HTMLUListElement>(null)
+  const [listaTemMaisAbaixo, setListaTemMaisAbaixo] = React.useState(false)
 
   const entesKey = enteSlugs.join(',')
   React.useEffect(() => {
@@ -291,6 +293,33 @@ export function IndicadoresExplorer() {
           entePassaBusca(e, buscaEnte)
       )
     : []
+
+  const atualizarFadeLista = React.useCallback(() => {
+    const el = listaEntesRef.current
+    if (!el) {
+      setListaTemMaisAbaixo(false)
+      return
+    }
+    setListaTemMaisAbaixo(el.scrollHeight - el.scrollTop - el.clientHeight > 1)
+  }, [])
+
+  React.useEffect(() => {
+    if (!mostrarBuscaEntes) {
+      setListaTemMaisAbaixo(false)
+      return
+    }
+    const el = listaEntesRef.current
+    if (!el) return
+    atualizarFadeLista()
+    if (entesVisiveis.length === 0) return
+    el.addEventListener('scroll', atualizarFadeLista, { passive: true })
+    const observer = new ResizeObserver(atualizarFadeLista)
+    observer.observe(el)
+    return () => {
+      el.removeEventListener('scroll', atualizarFadeLista)
+      observer.disconnect()
+    }
+  }, [mostrarBuscaEntes, atualizarFadeLista, entesVisiveis.length])
 
   const fontesRecorte = React.useMemo(() => {
     if (!completo) return []
@@ -383,73 +412,85 @@ export function IndicadoresExplorer() {
                   <EnteBusca value={buscaEnte} onChange={setBuscaEnte} />
                 </div>
               )}
-              <ul
-                className={
-                  mostrarBuscaEntes
-                    ? 'flex max-h-[36rem] flex-col gap-1 overflow-y-auto'
-                    : 'flex flex-col gap-1'
-                }
-              >
-                {!nivel && (
-                  <li className="px-3 py-2 text-muted-foreground text-sm">
-                    Selecione um nível.
-                  </li>
-                )}
-                {nivel && entesVisiveis.length === 0 && (
-                  <li className="px-3 py-2 text-muted-foreground text-sm">
-                    Nenhum ente encontrado.
-                  </li>
-                )}
-                {entesVisiveis.map(e => {
-                  const idx = enteSlugs.indexOf(e.slug)
-                  const isActive = idx >= 0
-                  const bloqueado =
-                    !isActive && enteSlugs.length >= MAX_ENTES_COMPARATIVO
-                  const valor = selecaoAtiva ? valorEnte(e) : null
-                  return (
-                    <li key={e.slug}>
-                      <button
-                        type="button"
-                        aria-disabled={bloqueado}
-                        onClick={() => alternarEnte(e.slug)}
-                        className={cn(
-                          'flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
-                          isActive
-                            ? 'bg-primary/10 font-medium text-primary'
-                            : bloqueado
-                              ? 'cursor-not-allowed text-muted-foreground/40'
-                              : 'text-foreground hover:bg-primary/5 hover:text-primary'
-                        )}
-                      >
-                        <span className="flex min-w-0 items-center gap-2">
-                          {isActive && (
-                            <span
-                              aria-hidden="true"
-                              className="size-2 shrink-0 rounded-full"
-                              style={{ backgroundColor: CORES[idx] }}
-                            />
+              <div className={cn(mostrarBuscaEntes && 'relative')}>
+                <ul
+                  ref={listaEntesRef}
+                  className={
+                    mostrarBuscaEntes
+                      ? 'flex max-h-[36rem] flex-col gap-1 overflow-y-auto'
+                      : 'flex flex-col gap-1'
+                  }
+                >
+                  {!nivel && (
+                    <li className="px-3 py-2 text-muted-foreground text-sm">
+                      Selecione um nível.
+                    </li>
+                  )}
+                  {nivel && entesVisiveis.length === 0 && (
+                    <li className="px-3 py-2 text-muted-foreground text-sm">
+                      Nenhum ente encontrado.
+                    </li>
+                  )}
+                  {entesVisiveis.map(e => {
+                    const idx = enteSlugs.indexOf(e.slug)
+                    const isActive = idx >= 0
+                    const bloqueado =
+                      !isActive && enteSlugs.length >= MAX_ENTES_COMPARATIVO
+                    const valor = selecaoAtiva ? valorEnte(e) : null
+                    return (
+                      <li key={e.slug}>
+                        <button
+                          type="button"
+                          aria-disabled={bloqueado}
+                          onClick={() => alternarEnte(e.slug)}
+                          className={cn(
+                            'flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-[13px] transition-colors',
+                            isActive
+                              ? 'bg-primary/10 font-medium text-primary'
+                              : bloqueado
+                                ? 'cursor-not-allowed text-muted-foreground/40'
+                                : 'text-foreground hover:bg-primary/5 hover:text-primary'
                           )}
-                          <BandeiraEnte
-                            src={bandeiraSrc(e.nivel, e.slug, e.ufSigla)}
-                            nome={e.nome}
-                          />
-                          <span className="truncate">{e.nome}</span>
-                          {e.nivel === 'municipios' && e.ufSigla && (
-                            <span className="shrink-0 text-[10px] text-muted-foreground">
-                              {e.ufSigla}
+                        >
+                          <span className="flex min-w-0 items-center gap-2">
+                            {isActive && (
+                              <span
+                                aria-hidden="true"
+                                className="size-2 shrink-0 rounded-full"
+                                style={{ backgroundColor: CORES[idx] }}
+                              />
+                            )}
+                            <BandeiraEnte
+                              src={bandeiraSrc(e.nivel, e.slug, e.ufSigla)}
+                              nome={e.nome}
+                            />
+                            <span className="truncate">{e.nome}</span>
+                            {e.nivel === 'municipios' && e.ufSigla && (
+                              <span className="shrink-0 text-[10px] text-muted-foreground">
+                                {e.ufSigla}
+                              </span>
+                            )}
+                          </span>
+                          {valor != null && (
+                            <span className="shrink-0 text-muted-foreground text-xs tabular-nums">
+                              {formatScore(valor)}
                             </span>
                           )}
-                        </span>
-                        {valor != null && (
-                          <span className="shrink-0 text-muted-foreground text-xs tabular-nums">
-                            {formatScore(valor)}
-                          </span>
-                        )}
-                      </button>
-                    </li>
-                  )
-                })}
-              </ul>
+                        </button>
+                      </li>
+                    )
+                  })}
+                </ul>
+                {mostrarBuscaEntes && (
+                  <div
+                    aria-hidden
+                    className={cn(
+                      'pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-background to-transparent transition-opacity',
+                      listaTemMaisAbaixo ? 'opacity-100' : 'opacity-0'
+                    )}
+                  />
+                )}
+              </div>
             </div>
 
             {!porObjetivos && (
