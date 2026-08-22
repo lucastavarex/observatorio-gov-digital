@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
-import { Suspense } from 'react'
 
 import { IndicadoresExplorer } from '@/components/indicadores/indicadores-explorer'
+import { parseIndicadoresSearchParams } from '@/lib/indicadores-url'
+import {
+  fromNextSearchParams,
+  type NextSearchParams,
+} from '@/lib/search-params'
 
 export const metadata: Metadata = {
   title: 'Indicadores',
@@ -9,10 +13,13 @@ export const metadata: Metadata = {
     'Explore e compare o desenvolvimento digital do governo federal, dos estados, das capitais e dos municípios com 100 mil habitantes ou mais nos dez objetivos da ENGD.',
 }
 
-export default function IndicadoresPage() {
-  return (
-    <Suspense fallback={null}>
-      <IndicadoresExplorer />
-    </Suspense>
-  )
+export default async function IndicadoresPage({
+  searchParams,
+}: {
+  searchParams: Promise<NextSearchParams>
+}) {
+  const sp = await searchParams
+  const filtros = parseIndicadoresSearchParams(fromNextSearchParams(sp))
+
+  return <IndicadoresExplorer filtros={filtros} />
 }
