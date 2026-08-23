@@ -14,6 +14,7 @@ import { PublicationsGrid } from '@/components/content/publications-list'
 import { getHomeData } from '@/components/home/home-data'
 import { VisualPerfil } from '@/components/home/home-feature-visuals'
 import { PesoVariavel } from '@/components/home/peso-variavel'
+import { PixelCanvas } from '@/components/home/pixel-canvas'
 import { ScrollRevealText } from '@/components/shared/scroll-reveal-text'
 import { Button } from '@/components/ui/button'
 import { objectives } from '@/data/objectives'
@@ -83,28 +84,40 @@ export default async function HomeV2Page() {
   return (
     <section className="pb-12">
       {/* Hero: abre com a pergunta do usuário */}
-      <div className="px-6 py-40 text-center sm:px-10">
-        <PesoVariavel
-          as="h1"
-          texto="Como está o governo digital no seu estado?"
-          de={400}
-          para={800}
-          forca={22}
-          duracao={0.12}
-          className="mx-auto mt-3 block max-w-3xl bg-linear-to-br from-primary to-primary-glow bg-clip-text pb-2 text-3xl text-transparent leading-[1.1] tracking-tight sm:text-5xl"
+      <div className="relative">
+        <PixelCanvas
+          className="pointer-events-none absolute inset-0 -z-10 mask-[radial-gradient(ellipse_at_center,transparent_20%,black_80%)]"
+          colors={['#d1d1d1', '#bcbcbc', '#a1a1a1']}
+          gap={12}
+          pixelSize={1.6}
+          speed={40}
+          appearFrom="middle"
+          duration={0.9}
         />
-        <p className="mx-auto mt-2 max-w-2xl text-muted-foreground text-sm leading-relaxed sm:text-base">
-          Uma plataforma pública que transforma dados oficiais dispersos em
-          indicadores comparáveis sobre a transformação digital do governo
-          federal, dos estados, das capitais e dos municípios.
-        </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <Button
-            asChild
-            className="h-auto rounded-full bg-primary px-8 py-3 text-primary-foreground text-sm hover:bg-primary/90 has-[>svg]:px-8"
-          >
-            <Link href={link('/indicadores')}>Começar a explorar</Link>
-          </Button>
+
+        <div className="px-6 py-40 text-center sm:px-10">
+          <PesoVariavel
+            as="h1"
+            texto="Como está o governo digital no seu estado?"
+            de={400}
+            para={800}
+            forca={22}
+            duracao={0.12}
+            className="mx-auto mt-3 block max-w-3xl bg-linear-to-br from-primary to-primary-glow bg-clip-text pb-2 text-3xl text-transparent leading-[1.1] tracking-tight sm:text-5xl"
+          />
+          <p className="mx-auto mt-2 max-w-2xl text-muted-foreground text-sm leading-relaxed sm:text-base">
+            Uma plataforma pública que transforma dados oficiais dispersos em
+            indicadores comparáveis sobre a transformação digital do governo
+            federal, dos estados, das capitais e dos municípios.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Button
+              asChild
+              className="h-auto rounded-full bg-primary px-8 py-3 text-primary-foreground text-sm hover:bg-primary/90 has-[>svg]:px-8"
+            >
+              <Link href={link('/indicadores')}>Começar a explorar</Link>
+            </Button>
+          </div>
         </div>
       </div>
 
