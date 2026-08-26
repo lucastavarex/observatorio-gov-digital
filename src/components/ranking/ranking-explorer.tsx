@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import * as React from 'react'
 import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
 import { EnteRankingList } from '@/components/ranking/ente-ranking-list'
+import { RankingVariaveisDisclaimer } from '@/components/ranking/ranking-variaveis-disclaimer'
 import { FilterPill } from '@/components/shared/filter-pill'
 import { type DadoMapa, MapaBrasil } from '@/components/shared/mapa-brasil'
 import { ObjetivoChip } from '@/components/shared/objetivo-chip'
@@ -15,6 +16,7 @@ import {
   objetivosComCobertura,
   rankingDoNivel,
 } from '@/data/indicators'
+import { variaveisDoObjetivoNoNivel } from '@/data/obgd/variaveis-por-objetivo-nivel'
 import { getObjectiveNumber, objectives } from '@/data/objectives'
 import {
   objetivoSelecionavel,
@@ -97,6 +99,14 @@ export function RankingExplorer({
 
   const objetivo = objectives[objetivoNumero - 1]
   const tematica = tematicas.find(t => t.slug === tagSlug) ?? tematicas[0]
+
+  const variaveisRecorte = React.useMemo(
+    () =>
+      modo === 'objetivos'
+        ? variaveisDoObjetivoNoNivel(active, objetivoNumero)
+        : [],
+    [modo, active, objetivoNumero]
+  )
 
   const rankingObjetivo = rankingDoNivel(nivel, objetivoNumero, 'objetivo')
   const rankingTema = rankingTematico(nivel.entes, tagSlug)
@@ -261,6 +271,9 @@ export function RankingExplorer({
                 </span>
                 {oQueAvaliaObjetivo(objetivo.slug).blurb}
               </p>
+            )}
+            {modo === 'objetivos' && variaveisRecorte.length > 0 && (
+              <RankingVariaveisDisclaimer variaveis={variaveisRecorte} />
             )}
             {modo === 'tematicas' && tematica.descricao && (
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">

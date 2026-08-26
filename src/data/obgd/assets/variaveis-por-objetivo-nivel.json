@@ -1,0 +1,2353 @@
+{
+  "federal": {
+    "1": [
+      {
+        "id": "igovsisp/G106GPN",
+        "nome": "Analisou alternativas (IA, cloud)",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_gov/B1",
+        "nome": "Área de TI",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "igovsisp/G109GP",
+        "nome": "Avaliação de políticas de TI no processo orçamentário",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G115GP",
+        "nome": "Avaliações regulares de conformidade em TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G103GP",
+        "nome": "Comitê de Governança Digital",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPO",
+        "nome": "Detalhou capacitações e orçamentos",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPP",
+        "nome": "Detalhou orçamento por contrato",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPQ",
+        "nome": "Detalhou riscos e tratamento",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPL",
+        "nome": "Estimou mínimo pessoal por competência",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "iospd/IOSPD_I10",
+        "nome": "Estratégia de governo digital (IOSPD I.10)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/MUNIC_TI_ESTRUTURA",
+        "nome": "Estrutura organizacional de TI na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "igovsisp/G101GP",
+        "nome": "Estruturas/diretrizes de governança de TIC",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G111GP",
+        "nome": "Framework para gestão de riscos de entregas de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G105GP",
+        "nome": "Gerenciamento de projetos de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G217SPD",
+        "nome": "Gestão de mudanças em TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G112GP",
+        "nome": "Gestão eficiente de recursos de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPS",
+        "nome": "Grau de execução do PDTIC",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G107GP",
+        "nome": "Orçamento adequado para necessidades de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPE",
+        "nome": "PDTIC publicado",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G146GP",
+        "nome": "PEI/PDI com objetivos de TIC",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G102GP",
+        "nome": "Planejamento alinhado à EFGD",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPR",
+        "nome": "Planejou metas intermediárias",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G505CTI",
+        "nome": "Portaria 1.070/2023 (infraestrutura)",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G506CTI",
+        "nome": "Portaria 2.715/2023 (estações)",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G504CTI",
+        "nome": "Portaria 750/2023 (software)",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G114GP",
+        "nome": "Previsão orçamentária por cenários alternativos",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G116GP",
+        "nome": "Registros precisos de ativos de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPH",
+        "nome": "Revisão anual do PDTIC",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G106GPG",
+        "nome": "Usa Guia PDTIC do SISP",
+        "fonte": "iGovSISP"
+      }
+    ],
+    "2": [
+      {
+        "id": "estadic/ESTADIC_ACESSIBILIDADE",
+        "nome": "Acessibilidade da página e serviços eletrônicos",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_V09",
+        "nome": "Acessibilidade da plataforma digital (IOSPD V.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_I03",
+        "nome": "Agendamento digital unificado (IOSPD I.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V04",
+        "nome": "Ambiente autenticado e personalizado de serviços (IOSPD V.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV08",
+        "nome": "Aplicação da técnica de Linguagem Simples (IOSPD IV.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/C6B_C",
+        "nome": "Aplicativo criado pelo ente",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "iospd/IOSPD_V01",
+        "nome": "Aplicativo móvel para portal de serviços (IOSPD V.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_APP_PREF",
+        "nome": "Aplicativos criados pela prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_APP_OUTROS",
+        "nome": "Aplicativos criados por outros organismos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "tic_gov/E1_CHATBOT",
+        "nome": "Atendimento automatizado por assistente virtual ou chatbot",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_ATIV_REDES_DIVULGAR",
+        "nome": "Atividade em redes sociais — divulgar serviços/campanhas",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ATIV_REDES_NOTICIAS",
+        "nome": "Atividade em redes sociais — postar notícias",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ATIV_REDES_RESPOSTAS",
+        "nome": "Atividade em redes sociais — responder comentários",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "estadic/ESTADIC_ATIV_REDES",
+        "nome": "Atividades do governo nas redes sociais nos últimos 12 meses",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I04",
+        "nome": "Avaliação de satisfação dos usuários (IOSPD I.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_III01d",
+        "nome": "Avaliação de Serviços Públicos normatizada (IOSPD III.1d)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/MUNIC_SMART_BILHETE",
+        "nome": "Bilhete eletrônico no transporte público",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "estadic/ESTADIC_BILHETE_UNICO",
+        "nome": "Bilhete único para uso de transporte público",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_II08",
+        "nome": "Boletim de ocorrência online violência doméstica (IOSPD II.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/E1_SUGGESTIONS",
+        "nome": "Canal de sugestões para melhoria de serviços públicos",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "iospd/IOSPD_III01a",
+        "nome": "Carta de Serviços normatizada (IOSPD III.1a)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V06",
+        "nome": "Certidão Negativa Estadual online (IOSPD V.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/E1_LIVE_CHAT",
+        "nome": "Chat com atendentes em tempo real",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "iospd/IOSPD_III01c",
+        "nome": "Conselho de Usuários normatizado (IOSPD III.1c)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II09",
+        "nome": "Consulta online medicamentos disponíveis (IOSPD II.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/E1_COMPLAINT",
+        "nome": "Denúncia online como forma de contato",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_IMAGENS",
+        "nome": "Descrição do conteúdo das imagens",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_BOLETOS",
+        "nome": "Emissão de boletos ou guias de pagamento",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_II11",
+        "nome": "Emissão online diplomas ensino médio (IOSPD II.11)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II10",
+        "nome": "Emissão/envio de receita médica online (IOSPD II.10)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/E1_EMAIL",
+        "nome": "Endereço de e-mail como forma de contato",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/C6B_E",
+        "nome": "Envio de mensagens por WhatsApp ou Telegram",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/C6B_A",
+        "nome": "Envio de SMS para o cidadão",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_SMS_ENVIO",
+        "nome": "Envio de SMS para o cidadão",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_I12",
+        "nome": "Ferramenta digital integrada de atendimento (IOSPD I.12)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_ATEND_DISTANCIA",
+        "nome": "Formas de atendimento a distância ao cidadão",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "tic_gov/E1_FORM",
+        "nome": "Formulário eletrônico como forma de contato",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "iospd/IOSPD_IV02",
+        "nome": "Frases curtas com ação única (IOSPD IV.2)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_FREQ_REDES",
+        "nome": "Frequência de atualização do conteúdo nas redes sociais",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I06",
+        "nome": "Gestão de cadastro e perfil do cidadão (IOSPD I.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V05",
+        "nome": "Licenciamento de veículo com pagamento eletrônico (IOSPD V.5)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV09",
+        "nome": "Mecanismo de melhoria na apresentação (IOSPD IV.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/C5B",
+        "nome": "Meios de contato da central de atendimento",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "estadic/ESTADIC_MODELO_ACESS",
+        "nome": "Modelo de acessibilidade adotado",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_NAVEGACAO",
+        "nome": "Navegação acessível por todos os itens interativos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_GPS_ONIBUS",
+        "nome": "Ônibus com GPS para informação ao usuário",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_I07",
+        "nome": "Ouvidoria integrada ao portal (IOSPD I.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_III01b",
+        "nome": "Ouvidorias Públicas normatizadas (IOSPD III.1b)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V03",
+        "nome": "Pagamento por PIX/cartão digital (IOSPD V.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/PAGINA_POSSUI_TITULO",
+        "nome": "Páginas com título descritivo na aba do navegador (WCAG 2.4.2)",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_IV04",
+        "nome": "Parágrafos curtos (IOSPD IV.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_REDES_SOCIAIS",
+        "nome": "Plataformas de rede social do governo estadual",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I01",
+        "nome": "Portal único ou de serviços (IOSPD I.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/MUNIC_PAGINA_INTERNET",
+        "nome": "Prefeitura com página na Internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_REDES_SOCIAIS",
+        "nome": "Prefeitura com perfil em plataformas online",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "tic_gov/C1",
+        "nome": "Presença de website",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_saude/C6",
+        "nome": "Presença em redes sociais (B6_1 quest. → C6 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "iospd/IOSPD_II04",
+        "nome": "Prova de vida online (IOSPD II.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/C6B_B",
+        "nome": "Recebimento de SMS enviado pelo cidadão",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_SMS_RECEB",
+        "nome": "Recebimento de SMS pelo cidadão",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_II05",
+        "nome": "Recurso/defesa online infrações de trânsito (IOSPD II.5)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II06",
+        "nome": "Registro digital reclamação CDC (IOSPD II.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II01",
+        "nome": "Rematrícula online escolas estaduais (IOSPD II.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/E1_FOI_REQUEST",
+        "nome": "Serviço de solicitação de acesso à informação",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_DOCUMENTOS",
+        "nome": "Serviço informativo — acesso a documentos/formulários",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_CONCURSOS",
+        "nome": "Serviço informativo — concursos públicos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_DIARIO",
+        "nome": "Serviço informativo — diário oficial",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_LEGISLACAO",
+        "nome": "Serviço informativo — legislação municipal",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_LICITACOES",
+        "nome": "Serviço informativo — licitações",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_NOTICIAS",
+        "nome": "Serviço informativo na página — notícias",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_SAUDE",
+        "nome": "Serviço transacional — agendamento consulta saúde",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_CERTIDAO",
+        "nome": "Serviço transacional — certidão negativa de débito",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_PROCESSOS",
+        "nome": "Serviço transacional — consulta a processos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_DOWNLOAD",
+        "nome": "Serviço transacional — download de documentos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_TRIBUTOS",
+        "nome": "Serviço transacional — guia de pagamento de tributos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_MATRICULA",
+        "nome": "Serviço transacional — matrícula escolar online",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_NFE",
+        "nome": "Serviço transacional — Nota Fiscal Eletrônica",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_OUVIDORIA",
+        "nome": "Serviço transacional — ouvidoria online",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_SATISFACAO",
+        "nome": "Serviço transacional — pesquisa de satisfação",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ATEND_DISTANCIA",
+        "nome": "Serviços de atendimento ao público a distância",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "estadic/ESTADIC_SERV_CELULAR",
+        "nome": "Serviços disponibilizados por celular/smartphone",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_SERV_INFORMATIVOS",
+        "nome": "Serviços informativos disponibilizados na página da internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "tic_saude/C1",
+        "nome": "Serviços online ao paciente (D1 questionário → C1 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "estadic/ESTADIC_SERV_TRANSACIONAIS",
+        "nome": "Serviços transacionais disponibilizados na página da internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I08",
+        "nome": "Simplificação de serviços online (IOSPD I.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II02",
+        "nome": "Solicitação de medicamento de alto custo digital (IOSPD II.2)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II07",
+        "nome": "Solicitação online 2ª via RG (IOSPD II.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_SALTAR",
+        "nome": "Tecnologia assistiva para saltar itens repetitivos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_II03",
+        "nome": "Tele-atendimento saúde por videoconferência (IOSPD II.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_saude/C2",
+        "nome": "Telessaúde modalidades (D2A quest. → C2 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "iospd/IOSPD_IV01",
+        "nome": "Tempos verbais 2ª/3ª pessoa (IOSPD IV.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/C3",
+        "nome": "Tipos de serviço disponibilizados no website",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "iospd/IOSPD_IV03",
+        "nome": "Título objetivo e curto (IOSPD IV.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_LIBRAS",
+        "nome": "Tradução de conteúdo em LIBRAS",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_V08",
+        "nome": "Transferência digital de veículos (IOSPD V.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II12",
+        "nome": "Transferência online entre escolas estaduais (IOSPD II.12)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV06",
+        "nome": "Uso de caracteres especiais (IOSPD IV.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV05",
+        "nome": "Uso do tempo presente (IOSPD IV.5)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV07",
+        "nome": "Vocabulário de fácil entendimento (IOSPD IV.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_saude/C5",
+        "nome": "Website (B6-A quest. → C5 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "tic_gov/C6B_D",
+        "nome": "Website adaptado para dispositivos móveis",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_WEBSITE_MOBILE",
+        "nome": "Website adaptado para dispositivos móveis",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "3": [
+      {
+        "id": "iospd/IOSPD_I09",
+        "nome": "Assinatura eletrônica Gov.br (IOSPD I.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "munic/MUNIC_AUTENTICACAO",
+        "nome": "Autenticação para acessar serviços pela internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_V07",
+        "nome": "Emissão da CIN — Carteira de Identidade Nacional (IOSPD V.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/C9B_A",
+        "nome": "Login único Gov.br para acesso a serviços online",
+        "fonte": "TIC Governo Eletrônico"
+      }
+    ],
+    "4": [
+      {
+        "id": "igovsisp/G225SPD",
+        "nome": "Auditorias de segurança",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "estadic/ESTADIC_LGPD_CANAL_TITULAR",
+        "nome": "Canal internet para titulares de dados (LGPD)",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "tic_saude/A12_B",
+        "nome": "Canal online para titulares de dados",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "tic_gov/G3_B",
+        "nome": "Canal online sobre o uso de dados pessoais",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_LGPD_CANAL_TITULAR",
+        "nome": "Canal pela internet para titulares de dados (LGPD)",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "igovsisp/G222SPD",
+        "nome": "Capacitação em SI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G219SPD",
+        "nome": "Classificação da informação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G226SPD",
+        "nome": "Conformidade Portaria GSI 852/2023",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/A12_D",
+        "nome": "Conscientização interna sobre a LGPD",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "igovsisp/G208SPD",
+        "nome": "Conscientização SI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "iospd/IOSPD_III07",
+        "nome": "Consentimento LGPD no portal (IOSPD III.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "igovsisp/G206SPD",
+        "nome": "Continuidade negócios SI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G214SPD",
+        "nome": "Controle de acesso",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "munic/MUNIC_LGPD_CAPACIT",
+        "nome": "Cursos de segurança da informação e proteção de dados para servidores",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "estadic/ESTADIC_LGPD_CAPACIT",
+        "nome": "Cursos segurança da informação e proteção de dados para servidores",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "munic/MUNIC_LGPD",
+        "nome": "Disseminação de orientações sobre LGPD na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "tic_gov/G3_C_PREF",
+        "nome": "Documento de papéis e responsabilidades sobre a LGPD",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "igovsisp/G224SPD",
+        "nome": "Encarregado dados pessoais (LGPD)",
+        "fonte": "iGovSISP"
+      },
+      { "id": "igovsisp/G202SPD", "nome": "ETIR", "fonte": "iGovSISP" },
+      {
+        "id": "tic_saude/A10",
+        "nome": "Ferramentas de segurança (C9a quest. → A10 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "igovsisp/G629IPD",
+        "nome": "Framework Privacidade e SI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G223SPD",
+        "nome": "Gestão riscos privacidade/LGPD",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G203SPD",
+        "nome": "Gestão riscos SI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G212SPD",
+        "nome": "Gestor SI designado",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G631IPD",
+        "nome": "Guias e Modelos PPSI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G209SPD",
+        "nome": "Inventário ativos informação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_gov/G3_A",
+        "nome": "Nomeação de encarregado de dados pessoais (DPO)",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_saude/A12_A",
+        "nome": "Nomeação de encarregado de dados pessoais (DPO)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "tic_saude/A12_E",
+        "nome": "Plano de resposta a incidentes com dados pessoais",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "tic_gov/G3_D",
+        "nome": "Plano de resposta a incidentes relacionados a dados pessoais",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "igovsisp/G215SPD",
+        "nome": "Plano Gestão Incidentes Cibernéticos",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/A12_C",
+        "nome": "Política de privacidade publicada",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "tic_gov/G3_C",
+        "nome": "Política de privacidade publicada com bases legais",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_saude/A8",
+        "nome": "Política de segurança da informação (C8a quest. → A8 portal)",
+        "fonte": "TIC Saúde"
+      },
+      { "id": "igovsisp/G201SPD", "nome": "POSIN", "fonte": "iGovSISP" },
+      { "id": "igovsisp/G630IPD", "nome": "PPSI", "fonte": "iGovSISP" },
+      {
+        "id": "igovsisp/G221SPD",
+        "nome": "Proteção privacidade/dados pessoais",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "estadic/ESTADIC_LGPD_REGULAMENT",
+        "nome": "Regulamentação estadual específica sobre LGPD",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "munic/MUNIC_LGPD_REGULAMENT",
+        "nome": "Regulamentação municipal específica sobre LGPD",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "tic_gov/G1",
+        "nome": "Responsável LGPD",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "estadic/ESTADIC_LGPD_RESP",
+        "nome": "Responsável LGPD designado",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "munic/MUNIC_LGPD_RESP",
+        "nome": "Responsável LGPD designado no município",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "igovsisp/G211SPD",
+        "nome": "SI deliberada pelo CGD",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G213SPD",
+        "nome": "Testes segurança cibernética",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/A8A",
+        "nome": "Treinamento em segurança (C8b quest. → A8A portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "igovsisp/G210SPD",
+        "nome": "Vulnerabilidades TIC",
+        "fonte": "iGovSISP"
+      }
+    ],
+    "5": [
+      {
+        "id": "igovsisp/G361DI",
+        "nome": "Alinhamento dados-objetivos estratégicos",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_gov/H1",
+        "nome": "Análise big data",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_saude/D2",
+        "nome": "Big Data em saúde (H2 quest. → D2 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "igovsisp/G308DI",
+        "nome": "Capacidade analítica",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G325DI",
+        "nome": "Ciclo de vida dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G336DI",
+        "nome": "Compartilhamento dados externos",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G309DI",
+        "nome": "Cultura de dados promovida pela alta gestão",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G385DI",
+        "nome": "Cultura qualidade dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G382DI",
+        "nome": "Dados geoespaciais",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G313DI",
+        "nome": "Dados mestres e de referência",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G326DI",
+        "nome": "Dados não estruturados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G307DI",
+        "nome": "Decisão baseada em dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G311DI",
+        "nome": "Documentação ativos de dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G315DI",
+        "nome": "Ecossistema dados abertos",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G322DI",
+        "nome": "Estrutura de governança de dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G334DI",
+        "nome": "Ética no tratamento dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "estadic/ESTADIC_FORMATO_DADOS",
+        "nome": "Formato de publicação dos dados da administração estadual",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "igovsisp/G324DI",
+        "nome": "Gestão de metadados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G384DI",
+        "nome": "Gestão qualidade dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G312DI",
+        "nome": "Glossário termos de negócio",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "iospd/IOSPD_I05",
+        "nome": "Governança de dados (IOSPD I.5)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "igovsisp/G383DI",
+        "nome": "Infraestrutura análise dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G310DI",
+        "nome": "Integração de dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G329DI",
+        "nome": "Integração de sistemas",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/B9",
+        "nome": "Interoperabilidade rede de atenção (C8 quest. → B9 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "igovsisp/G381DI",
+        "nome": "Letramento em dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G386DI",
+        "nome": "Medição e controle qualidade",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G359DI",
+        "nome": "Modelagem de dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G330DI",
+        "nome": "Monitoramento interoperabilidade",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G328DI",
+        "nome": "Padrões interoperabilidade",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G314DI",
+        "nome": "Política dados abertos",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "munic/MUNIC_DADOS_ABERTOS",
+        "nome": "Portal de dados abertos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "igovsisp/G321DI",
+        "nome": "Princípios e políticas de dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G333DI",
+        "nome": "Qualidade dos dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G301DI",
+        "nome": "Relevância e suficiência dados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/B6",
+        "nome": "Troca eletrônica entre estabelecimentos (C7 quest. → B6 portal)",
+        "fonte": "TIC Saúde"
+      }
+    ],
+    "6": [
+      {
+        "id": "anatel/BLM02",
+        "nome": "% de domicílios cobertos por telefonia móvel",
+        "fonte": "ANATEL Telecomunicações"
+      },
+      {
+        "id": "pnad_tic/V4080",
+        "nome": "% domicílios com Internet",
+        "fonte": "PNAD Contínua TIC"
+      },
+      {
+        "id": "censo_escolar/IN_INTERNET",
+        "nome": "% escolas com acesso à Internet",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_COMPUTADOR",
+        "nome": "% escolas com computador",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_INTERNET_ALUNOS",
+        "nome": "% escolas com Internet para alunos",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_INTERNET_APRENDIZAGEM",
+        "nome": "% escolas com Internet para ensino",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_LABORATORIO_INFORMATICA",
+        "nome": "% escolas com laboratório de informática",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "munic/MUNIC_WIFI_PUBLICO",
+        "nome": "Acesso público à Internet (Wi-Fi) pela prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_CENTRO_CONTROLE",
+        "nome": "Centro de controle operacional",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CPD",
+        "nome": "Centro de Processamento de Dados na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "tic_gov/C7_A",
+        "nome": "Centros públicos de acesso gratuito à Internet",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "estadic/ESTADIC_INCLUSAO_PROGRAMA",
+        "nome": "Desenvolve programa ou ação de inclusão digital",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_WIFI_EXISTE",
+        "nome": "Disponibiliza acesso por conexão Wi-Fi pública",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "igovsisp/G607IPD",
+        "nome": "Documentação ativos rede",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "munic/MUNIC_SMART_ILUMINACAO",
+        "nome": "Iluminação inteligente com medição de consumo",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "igovsisp/G609IPD",
+        "nome": "Manutenção preventiva rede",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G634IPD",
+        "nome": "Maturidade adoção IPv6",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G625IPD",
+        "nome": "Maturidade computação em nuvem",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G608IPD",
+        "nome": "Monitoramento rede",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "munic/MUNIC_INTERNET",
+        "nome": "Municípios com evidência afirmativa de conexão à Internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "tic_educacao/G4",
+        "nome": "Plataformas digitais EAD (P42 quest. → G4 portal)",
+        "fonte": "TIC Educação"
+      },
+      {
+        "id": "igovsisp/G637IPD",
+        "nome": "Portaria 5.950/2023 (nuvem)",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "munic/MUNIC_INCLUSAO_DIGITAL",
+        "nome": "Programa ou ação de inclusão digital",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_SEMAFOROS",
+        "nome": "Semáforos inteligentes controlados a distância",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_SENSORES",
+        "nome": "Sensores para monitoramento de áreas de risco",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "7": [
+      {
+        "id": "estadic/ESTADIC_CAPACIT_EMPREEND",
+        "nome": "Capacitação para empreendedorismo digital",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_ESPACO_INOVACAO",
+        "nome": "Espaços de inovação, coworking ou espaços compartilhados",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "igovsisp/G337DI",
+        "nome": "Estratégia de IA",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "iospd/IOSPD_III06",
+        "nome": "Laboratório de Inovação em Governo (IOSPD III.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_PREMIO_INOVACAO",
+        "nome": "Prêmio ou edital para empresas inovadoras e projetos criativos",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "tic_saude/D5",
+        "nome": "Tecnologias emergentes em saúde (H5 quest. → D5A portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "tic_gov/H3",
+        "nome": "Uso de IA",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "iospd/IOSPD_V02",
+        "nome": "Uso de IA/ciência de dados em serviço público (IOSPD V.2)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "tic_gov/H4",
+        "nome": "Uso de IoT",
+        "fonte": "TIC Governo Eletrônico"
+      }
+    ],
+    "8": [
+      {
+        "id": "igovsisp/G520CTI",
+        "nome": "Acessibilidade digital em editais (eMAG/WCAG)",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G517CTI",
+        "nome": "Critérios sustentáveis em contratações",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G507CTI",
+        "nome": "Definição requisitos contratação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/B4",
+        "nome": "Funcionalidades de apoio à decisão clínica (C5 quest. → B4 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "igovsisp/G511CTI",
+        "nome": "Gestão de contratos de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "iospd/IOSPD_III02",
+        "nome": "Grupos de desburocratização regulamentados (IOSPD III.2)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "igovsisp/G502CTI",
+        "nome": "IN SGD/ME nº 94/2022 (proc. contratação TIC)",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/B3",
+        "nome": "Maior percentual entre as funcionalidades eletrônicas disponíveis",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "igovsisp/G513CTI",
+        "nome": "Pessoal para contratações de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G508CTI",
+        "nome": "Procedimentos padronizados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_saude/B1",
+        "nome": "Prontuários mantidos apenas em formato eletrônico (C1 quest. → B1 portal)",
+        "fonte": "TIC Saúde"
+      },
+      {
+        "id": "tic_gov/C8",
+        "nome": "Realização de pregão eletrônico",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_educacao/E1",
+        "nome": "Registro eletrônico (P33 quest. → E1 portal)",
+        "fonte": "TIC Educação"
+      },
+      {
+        "id": "igovsisp/G516CTI",
+        "nome": "Servidores com conhecimento em normas",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_gov/B4_I",
+        "nome": "Sistema de apoio à decisão",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_E",
+        "nome": "Sistema de compras",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_G",
+        "nome": "Sistema de contratos",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_F",
+        "nome": "Sistema de convênios",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_D",
+        "nome": "Sistema de finanças e contabilidade",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_K",
+        "nome": "Sistema de gestão de documentos",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_L",
+        "nome": "Sistema de gestão integrada (ERP)",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_educacao/E1A",
+        "nome": "Sistema de gestão online (P33a quest. → E1A portal)",
+        "fonte": "TIC Educação"
+      },
+      {
+        "id": "tic_gov/B4_H",
+        "nome": "Sistema de informação geográfica, mapas ou geoprocessamento",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_C",
+        "nome": "Sistema de orçamento",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_B",
+        "nome": "Sistema de patrimônio",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_J",
+        "nome": "Sistema de protocolos",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "tic_gov/B4_A",
+        "nome": "Sistema de recursos humanos",
+        "fonte": "TIC Governo Eletrônico"
+      }
+    ],
+    "9": [
+      {
+        "id": "munic/MUNIC_ATIV_REDES_CONSULTA",
+        "nome": "Atividade em redes sociais — consulta pública/enquete",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "iospd/IOSPD_I11",
+        "nome": "Cartas de Serviços na Base Nacional (IOSPD I.11)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_CONSELHO_TRANSP",
+        "nome": "Conselho Estadual de Transparência ou similar",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_LAI_CONTEUDO",
+        "nome": "Conteúdo da legislação estadual de acesso à informação (LAI)",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_TRANSP_CONTEUDO",
+        "nome": "Conteúdo da página internet / portal da transparência",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_ORCAM_TEMPO_REAL",
+        "nome": "Disponibiliza informações orçamentárias/financeiras em tempo real",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "munic/MUNIC_LAI",
+        "nome": "Disseminação de orientações sobre LAI na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CONSELHO_TRANSP",
+        "nome": "Existência de Conselho Municipal de Transparência",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "estadic/ESTADIC_PARTICIP_INTERNET",
+        "nome": "Formas de participação do cidadão pela internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_CTRL_INT_ONLINE",
+        "nome": "Informações do controle interno publicadas na internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "munic/MUNIC_LAI_LEI",
+        "nome": "Legislação municipal específica sobre LAI",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "estadic/ESTADIC_LAI_MEIOS",
+        "nome": "Meios de solicitação de acesso à informação pública",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "tic_gov/E2A",
+        "nome": "Ouvidoria online",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_PARTICIPACAO",
+        "nome": "Participação do cidadão pela internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "tic_gov/E4A",
+        "nome": "Participação social",
+        "fonte": "TIC Governo Eletrônico"
+      },
+      {
+        "id": "munic/MUNIC_PORTAL_TRANSP",
+        "nome": "Portal da transparência",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "estadic/ESTADIC_PORTAL_TRANSP",
+        "nome": "Portal da transparência e portal de dados abertos",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "munic/MUNIC_LAI_PUBLICA_PR",
+        "nome": "Publicação de perguntas e respostas feitas pela LAI",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_FINANCAS",
+        "nome": "Serviço informativo — finanças públicas",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LAI_SOLICITACOES",
+        "nome": "Solicitações de acesso à informação recebidas em 2023",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "10": [
+      {
+        "id": "igovsisp/G130GP",
+        "nome": "% de titulares de funções de TI concursados",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_educacao/P42a_G",
+        "nome": "Atividades com alunos sobre impactos da inteligência artificial",
+        "fonte": "TIC Educação"
+      },
+      {
+        "id": "tic_educacao/G2_C",
+        "nome": "Atividades com alunos sobre privacidade e dados pessoais",
+        "fonte": "TIC Educação"
+      },
+      {
+        "id": "igovsisp/G135GP",
+        "nome": "Avalia execução do plano de capacitação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G141GP",
+        "nome": "Capacitações em Contratações de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G139GP",
+        "nome": "Capacitações em Dados e Informações",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G137GP",
+        "nome": "Capacitações em Gestão e Planejamento de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G142GP",
+        "nome": "Capacitações em Infraestrutura e Plataformas Digitais",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G140GP",
+        "nome": "Capacitações em Privacidade e Segurança da Informação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G138GP",
+        "nome": "Capacitações em Sistemas e Serviços Públicos Digitais",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G132GP",
+        "nome": "Critérios para pedidos de capacitação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G131GP",
+        "nome": "Define competências necessárias para pessoal de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G134GP",
+        "nome": "Executa plano de capacitação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G123GP",
+        "nome": "Força de trabalho de TIC: Contratações de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G121GP",
+        "nome": "Força de trabalho de TIC: Dados e Informações",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G119GP",
+        "nome": "Força de trabalho de TIC: Gestão e Planejamento de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G124GP",
+        "nome": "Força de trabalho de TIC: Infraestrutura e Plataformas Digitais",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G122GP",
+        "nome": "Força de trabalho de TIC: Privacidade e Segurança da Informação",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G120GP",
+        "nome": "Força de trabalho de TIC: Sistemas e Serviços Públicos Digitais",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "tic_educacao/H3",
+        "nome": "Formação continuada TIC (P45a quest. → H3 portal)",
+        "fonte": "TIC Educação"
+      },
+      {
+        "id": "igovsisp/G136GP",
+        "nome": "Incentivos para competências de TI",
+        "fonte": "iGovSISP"
+      },
+      {
+        "id": "igovsisp/G133GP",
+        "nome": "Plano de capacitação periódico",
+        "fonte": "iGovSISP"
+      }
+    ]
+  },
+  "estadual": {
+    "1": [
+      {
+        "id": "iospd/IOSPD_I10",
+        "nome": "Estratégia de governo digital (IOSPD I.10)",
+        "fonte": "IOSPD"
+      }
+    ],
+    "2": [
+      {
+        "id": "estadic/ESTADIC_ACESSIBILIDADE",
+        "nome": "Acessibilidade da página e serviços eletrônicos",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_V09",
+        "nome": "Acessibilidade da plataforma digital (IOSPD V.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_I03",
+        "nome": "Agendamento digital unificado (IOSPD I.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V04",
+        "nome": "Ambiente autenticado e personalizado de serviços (IOSPD V.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV08",
+        "nome": "Aplicação da técnica de Linguagem Simples (IOSPD IV.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V01",
+        "nome": "Aplicativo móvel para portal de serviços (IOSPD V.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_ATIV_REDES",
+        "nome": "Atividades do governo nas redes sociais nos últimos 12 meses",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I04",
+        "nome": "Avaliação de satisfação dos usuários (IOSPD I.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_III01d",
+        "nome": "Avaliação de Serviços Públicos normatizada (IOSPD III.1d)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_BILHETE_UNICO",
+        "nome": "Bilhete único para uso de transporte público",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_II08",
+        "nome": "Boletim de ocorrência online violência doméstica (IOSPD II.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_III01a",
+        "nome": "Carta de Serviços normatizada (IOSPD III.1a)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V06",
+        "nome": "Certidão Negativa Estadual online (IOSPD V.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_III01c",
+        "nome": "Conselho de Usuários normatizado (IOSPD III.1c)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II09",
+        "nome": "Consulta online medicamentos disponíveis (IOSPD II.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II11",
+        "nome": "Emissão online diplomas ensino médio (IOSPD II.11)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II10",
+        "nome": "Emissão/envio de receita médica online (IOSPD II.10)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_I12",
+        "nome": "Ferramenta digital integrada de atendimento (IOSPD I.12)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_ATEND_DISTANCIA",
+        "nome": "Formas de atendimento a distância ao cidadão",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_IV02",
+        "nome": "Frases curtas com ação única (IOSPD IV.2)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_FREQ_REDES",
+        "nome": "Frequência de atualização do conteúdo nas redes sociais",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I06",
+        "nome": "Gestão de cadastro e perfil do cidadão (IOSPD I.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V05",
+        "nome": "Licenciamento de veículo com pagamento eletrônico (IOSPD V.5)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV09",
+        "nome": "Mecanismo de melhoria na apresentação (IOSPD IV.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_MODELO_ACESS",
+        "nome": "Modelo de acessibilidade adotado",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I07",
+        "nome": "Ouvidoria integrada ao portal (IOSPD I.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_III01b",
+        "nome": "Ouvidorias Públicas normatizadas (IOSPD III.1b)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V03",
+        "nome": "Pagamento por PIX/cartão digital (IOSPD V.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV04",
+        "nome": "Parágrafos curtos (IOSPD IV.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_REDES_SOCIAIS",
+        "nome": "Plataformas de rede social do governo estadual",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I01",
+        "nome": "Portal único ou de serviços (IOSPD I.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II04",
+        "nome": "Prova de vida online (IOSPD II.4)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II05",
+        "nome": "Recurso/defesa online infrações de trânsito (IOSPD II.5)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II06",
+        "nome": "Registro digital reclamação CDC (IOSPD II.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II01",
+        "nome": "Rematrícula online escolas estaduais (IOSPD II.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_SERV_CELULAR",
+        "nome": "Serviços disponibilizados por celular/smartphone",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_SERV_INFORMATIVOS",
+        "nome": "Serviços informativos disponibilizados na página da internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_SERV_TRANSACIONAIS",
+        "nome": "Serviços transacionais disponibilizados na página da internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I08",
+        "nome": "Simplificação de serviços online (IOSPD I.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II02",
+        "nome": "Solicitação de medicamento de alto custo digital (IOSPD II.2)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II07",
+        "nome": "Solicitação online 2ª via RG (IOSPD II.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II03",
+        "nome": "Tele-atendimento saúde por videoconferência (IOSPD II.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV01",
+        "nome": "Tempos verbais 2ª/3ª pessoa (IOSPD IV.1)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV03",
+        "nome": "Título objetivo e curto (IOSPD IV.3)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V08",
+        "nome": "Transferência digital de veículos (IOSPD V.8)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_II12",
+        "nome": "Transferência online entre escolas estaduais (IOSPD II.12)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV06",
+        "nome": "Uso de caracteres especiais (IOSPD IV.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV05",
+        "nome": "Uso do tempo presente (IOSPD IV.5)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_IV07",
+        "nome": "Vocabulário de fácil entendimento (IOSPD IV.7)",
+        "fonte": "IOSPD"
+      }
+    ],
+    "3": [
+      {
+        "id": "iospd/IOSPD_I09",
+        "nome": "Assinatura eletrônica Gov.br (IOSPD I.9)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "iospd/IOSPD_V07",
+        "nome": "Emissão da CIN — Carteira de Identidade Nacional (IOSPD V.7)",
+        "fonte": "IOSPD"
+      }
+    ],
+    "4": [
+      {
+        "id": "estadic/ESTADIC_LGPD_CANAL_TITULAR",
+        "nome": "Canal internet para titulares de dados (LGPD)",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_III07",
+        "nome": "Consentimento LGPD no portal (IOSPD III.7)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_LGPD_CAPACIT",
+        "nome": "Cursos segurança da informação e proteção de dados para servidores",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_LGPD_REGULAMENT",
+        "nome": "Regulamentação estadual específica sobre LGPD",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_LGPD_RESP",
+        "nome": "Responsável LGPD designado",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      }
+    ],
+    "5": [
+      {
+        "id": "estadic/ESTADIC_FORMATO_DADOS",
+        "nome": "Formato de publicação dos dados da administração estadual",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_I05",
+        "nome": "Governança de dados (IOSPD I.5)",
+        "fonte": "IOSPD"
+      }
+    ],
+    "6": [
+      {
+        "id": "estadic/ESTADIC_INCLUSAO_PROGRAMA",
+        "nome": "Desenvolve programa ou ação de inclusão digital",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_WIFI_EXISTE",
+        "nome": "Disponibiliza acesso por conexão Wi-Fi pública",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      }
+    ],
+    "7": [
+      {
+        "id": "estadic/ESTADIC_CAPACIT_EMPREEND",
+        "nome": "Capacitação para empreendedorismo digital",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_ESPACO_INOVACAO",
+        "nome": "Espaços de inovação, coworking ou espaços compartilhados",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_III06",
+        "nome": "Laboratório de Inovação em Governo (IOSPD III.6)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_PREMIO_INOVACAO",
+        "nome": "Prêmio ou edital para empresas inovadoras e projetos criativos",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "iospd/IOSPD_V02",
+        "nome": "Uso de IA/ciência de dados em serviço público (IOSPD V.2)",
+        "fonte": "IOSPD"
+      }
+    ],
+    "8": [
+      {
+        "id": "iospd/IOSPD_III02",
+        "nome": "Grupos de desburocratização regulamentados (IOSPD III.2)",
+        "fonte": "IOSPD"
+      }
+    ],
+    "9": [
+      {
+        "id": "iospd/IOSPD_I11",
+        "nome": "Cartas de Serviços na Base Nacional (IOSPD I.11)",
+        "fonte": "IOSPD"
+      },
+      {
+        "id": "estadic/ESTADIC_CONSELHO_TRANSP",
+        "nome": "Conselho Estadual de Transparência ou similar",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_LAI_CONTEUDO",
+        "nome": "Conteúdo da legislação estadual de acesso à informação (LAI)",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_TRANSP_CONTEUDO",
+        "nome": "Conteúdo da página internet / portal da transparência",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_ORCAM_TEMPO_REAL",
+        "nome": "Disponibiliza informações orçamentárias/financeiras em tempo real",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_PARTICIP_INTERNET",
+        "nome": "Formas de participação do cidadão pela internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_CTRL_INT_ONLINE",
+        "nome": "Informações do controle interno publicadas na internet",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_LAI_MEIOS",
+        "nome": "Meios de solicitação de acesso à informação pública",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      },
+      {
+        "id": "estadic/ESTADIC_PORTAL_TRANSP",
+        "nome": "Portal da transparência e portal de dados abertos",
+        "fonte": "ESTADIC - Pesquisa de Informações Básicas Estaduais"
+      }
+    ]
+  },
+  "municipios": {
+    "1": [
+      {
+        "id": "munic/MUNIC_TI_ESTRUTURA",
+        "nome": "Estrutura organizacional de TI na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "2": [
+      {
+        "id": "munic/MUNIC_CELULAR_APP_PREF",
+        "nome": "Aplicativos criados pela prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_APP_OUTROS",
+        "nome": "Aplicativos criados por outros organismos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ATIV_REDES_DIVULGAR",
+        "nome": "Atividade em redes sociais — divulgar serviços/campanhas",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ATIV_REDES_NOTICIAS",
+        "nome": "Atividade em redes sociais — postar notícias",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ATIV_REDES_RESPOSTAS",
+        "nome": "Atividade em redes sociais — responder comentários",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_BILHETE",
+        "nome": "Bilhete eletrônico no transporte público",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_IMAGENS",
+        "nome": "Descrição do conteúdo das imagens",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_BOLETOS",
+        "nome": "Emissão de boletos ou guias de pagamento",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_SMS_ENVIO",
+        "nome": "Envio de SMS para o cidadão",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_NAVEGACAO",
+        "nome": "Navegação acessível por todos os itens interativos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_GPS_ONIBUS",
+        "nome": "Ônibus com GPS para informação ao usuário",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/PAGINA_POSSUI_TITULO",
+        "nome": "Páginas com título descritivo na aba do navegador (WCAG 2.4.2)",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_PAGINA_INTERNET",
+        "nome": "Prefeitura com página na Internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_REDES_SOCIAIS",
+        "nome": "Prefeitura com perfil em plataformas online",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_SMS_RECEB",
+        "nome": "Recebimento de SMS pelo cidadão",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_DOCUMENTOS",
+        "nome": "Serviço informativo — acesso a documentos/formulários",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_CONCURSOS",
+        "nome": "Serviço informativo — concursos públicos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_DIARIO",
+        "nome": "Serviço informativo — diário oficial",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_LEGISLACAO",
+        "nome": "Serviço informativo — legislação municipal",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_LICITACOES",
+        "nome": "Serviço informativo — licitações",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_NOTICIAS",
+        "nome": "Serviço informativo na página — notícias",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_SAUDE",
+        "nome": "Serviço transacional — agendamento consulta saúde",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_CERTIDAO",
+        "nome": "Serviço transacional — certidão negativa de débito",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_PROCESSOS",
+        "nome": "Serviço transacional — consulta a processos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_DOWNLOAD",
+        "nome": "Serviço transacional — download de documentos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_TRIBUTOS",
+        "nome": "Serviço transacional — guia de pagamento de tributos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_MATRICULA",
+        "nome": "Serviço transacional — matrícula escolar online",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_NFE",
+        "nome": "Serviço transacional — Nota Fiscal Eletrônica",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_OUVIDORIA",
+        "nome": "Serviço transacional — ouvidoria online",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_TRANS_SATISFACAO",
+        "nome": "Serviço transacional — pesquisa de satisfação",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ATEND_DISTANCIA",
+        "nome": "Serviços de atendimento ao público a distância",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_SALTAR",
+        "nome": "Tecnologia assistiva para saltar itens repetitivos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_ACESS_LIBRAS",
+        "nome": "Tradução de conteúdo em LIBRAS",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CELULAR_WEBSITE_MOBILE",
+        "nome": "Website adaptado para dispositivos móveis",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "3": [
+      {
+        "id": "munic/MUNIC_AUTENTICACAO",
+        "nome": "Autenticação para acessar serviços pela internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "4": [
+      {
+        "id": "munic/MUNIC_LGPD_CANAL_TITULAR",
+        "nome": "Canal pela internet para titulares de dados (LGPD)",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LGPD_CAPACIT",
+        "nome": "Cursos de segurança da informação e proteção de dados para servidores",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LGPD",
+        "nome": "Disseminação de orientações sobre LGPD na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LGPD_REGULAMENT",
+        "nome": "Regulamentação municipal específica sobre LGPD",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LGPD_RESP",
+        "nome": "Responsável LGPD designado no município",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "5": [
+      {
+        "id": "munic/MUNIC_DADOS_ABERTOS",
+        "nome": "Portal de dados abertos",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "6": [
+      {
+        "id": "anatel/BLM02",
+        "nome": "% de domicílios cobertos por telefonia móvel",
+        "fonte": "ANATEL Telecomunicações"
+      },
+      {
+        "id": "censo_escolar/IN_INTERNET",
+        "nome": "% escolas com acesso à Internet",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_COMPUTADOR",
+        "nome": "% escolas com computador",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_INTERNET_ALUNOS",
+        "nome": "% escolas com Internet para alunos",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_INTERNET_APRENDIZAGEM",
+        "nome": "% escolas com Internet para ensino",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "censo_escolar/IN_LABORATORIO_INFORMATICA",
+        "nome": "% escolas com laboratório de informática",
+        "fonte": "Censo Escolar"
+      },
+      {
+        "id": "munic/MUNIC_WIFI_PUBLICO",
+        "nome": "Acesso público à Internet (Wi-Fi) pela prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_CENTRO_CONTROLE",
+        "nome": "Centro de controle operacional",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CPD",
+        "nome": "Centro de Processamento de Dados na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_ILUMINACAO",
+        "nome": "Iluminação inteligente com medição de consumo",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_INTERNET",
+        "nome": "Municípios com evidência afirmativa de conexão à Internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_INCLUSAO_DIGITAL",
+        "nome": "Programa ou ação de inclusão digital",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_SEMAFOROS",
+        "nome": "Semáforos inteligentes controlados a distância",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SMART_SENSORES",
+        "nome": "Sensores para monitoramento de áreas de risco",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ],
+    "9": [
+      {
+        "id": "munic/MUNIC_ATIV_REDES_CONSULTA",
+        "nome": "Atividade em redes sociais — consulta pública/enquete",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LAI",
+        "nome": "Disseminação de orientações sobre LAI na prefeitura",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_CONSELHO_TRANSP",
+        "nome": "Existência de Conselho Municipal de Transparência",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LAI_LEI",
+        "nome": "Legislação municipal específica sobre LAI",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_PARTICIPACAO",
+        "nome": "Participação do cidadão pela internet",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_PORTAL_TRANSP",
+        "nome": "Portal da transparência",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LAI_PUBLICA_PR",
+        "nome": "Publicação de perguntas e respostas feitas pela LAI",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_SERV_INFO_FINANCAS",
+        "nome": "Serviço informativo — finanças públicas",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      },
+      {
+        "id": "munic/MUNIC_LAI_SOLICITACOES",
+        "nome": "Solicitações de acesso à informação recebidas em 2023",
+        "fonte": "MUNIC - Pesquisa de Informações Básicas Municipais"
+      }
+    ]
+  }
+}
