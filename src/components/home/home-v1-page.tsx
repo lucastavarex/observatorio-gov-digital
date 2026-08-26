@@ -68,7 +68,7 @@ export async function HomeV1Page() {
         <div className="px-6 py-48 text-center sm:px-10">
           <PesoVariavel
             as="h1"
-            texto="Entenda como o governo digital evolui no Brasil"
+            texto="Entenda o governo digital no Brasil, em um só lugar"
             de={400}
             para={800}
             forca={22}
