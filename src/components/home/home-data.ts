@@ -103,7 +103,7 @@ export function getHomeData(): HomeData {
         path: `/indicadores/estadual/${enteDestaque.slug}/${o.objetivoSlug}`,
       }))
     })
-    .slice(0, 5)
+    .slice(0, 6)
 
   const numeros: HomeNumeros = {
     entesTotal: niveis.reduce((total, nivel) => total + nivel.entes.length, 0),

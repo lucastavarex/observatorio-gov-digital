@@ -1,7 +1,6 @@
 'use client'
 
 import { Download, Info } from 'lucide-react'
-import Link from 'next/link'
 import { useState } from 'react'
 import { toast } from 'sonner'
 
@@ -289,31 +288,43 @@ export function VisualMapa({ entes }: { entes: Ente[] }) {
 }
 
 export function VisualDados({ variaveis }: { variaveis: VariavelTeaser[] }) {
+  const itens = variaveis.slice(0, 6)
+  const visiveis = itens.slice(0, 5)
+  const fade = itens[5]
+
+  function linha(variavel: VariavelTeaser) {
+    return (
+      <div className="flex items-center justify-between gap-3 py-3">
+        <span className="min-w-0">
+          <span className="block font-semibold text-foreground text-xs leading-snug">
+            {variavel.nome}
+          </span>
+          <span className="mt-1 inline-block font-medium text-[10px] text-muted-foreground/70">
+            {variavel.fonte}
+          </span>
+        </span>
+        <span
+          aria-hidden="true"
+          className="flex size-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"
+        >
+          <Download className="size-3.5" />
+        </span>
+      </div>
+    )
+  }
+
   return (
-    <ul className="w-full border-t">
-      {variaveis.slice(0, 5).map(variavel => (
+    <ul className="w-full border-t" aria-hidden="true">
+      {visiveis.map(variavel => (
         <li key={`${variavel.href}:${variavel.slug}`} className="border-b">
-          <Link
-            href={variavel.href}
-            className="flex items-center justify-between gap-3 py-3 transition-colors hover:bg-muted/40"
-          >
-            <span className="min-w-0">
-              <span className="block font-semibold text-foreground text-xs leading-snug">
-                {variavel.nome}
-              </span>
-              <span className="mt-1 inline-block font-medium text-[10px] text-muted-foreground/70">
-                {variavel.fonte}
-              </span>
-            </span>
-            <span
-              aria-hidden="true"
-              className="flex size-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"
-            >
-              <Download className="size-3.5" />
-            </span>
-          </Link>
+          {linha(variavel)}
         </li>
       ))}
+      {fade && (
+        <li className="pointer-events-none border-b mask-[linear-gradient(to_bottom,black_0%,transparent_85%)]">
+          {linha(fade)}
+        </li>
+      )}
     </ul>
   )
 }
