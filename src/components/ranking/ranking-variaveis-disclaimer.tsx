@@ -1,44 +1,63 @@
 'use client'
 
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion'
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
+import { Separator } from '@/components/ui/separator'
 import type { VariavelDoRecorte } from '@/data/obgd/variaveis-por-objetivo-nivel'
 
 type Props = {
   variaveis: VariavelDoRecorte[]
+  objetivoTitulo: string
+  nivelLabel: string
 }
 
-export function RankingVariaveisDisclaimer({ variaveis }: Props) {
+export function RankingVariaveisDisclaimer({
+  variaveis,
+  objetivoTitulo,
+  nivelLabel,
+}: Props) {
   const n = variaveis.length
   if (n === 0) return null
 
   const rotulo =
     n === 1 ? '1 variável' : `${n.toLocaleString('pt-BR')} variáveis`
-  const listaKey = variaveis.map(v => v.id).join('|')
 
   return (
     <div className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-      <p>Neste nível, este índice usa {rotulo}.</p>
-      <Accordion
-        key={listaKey}
-        type="single"
-        collapsible
-        className="mt-1 w-full"
-      >
-        <AccordionItem value="variaveis" className="border-0">
-          <AccordionTrigger className="w-fit items-center justify-start gap-1.5 py-1.5 text-primary hover:text-primary/90 hover:no-underline [&>svg]:translate-y-0 [&>svg]:text-primary">
-            Ver quais são
-          </AccordionTrigger>
-          <AccordionContent className="pb-0">
-            <ul className="max-h-64 list-none overflow-y-auto rounded-md border border-border bg-muted/30 px-3 py-1">
+      <p>
+        Neste nível, este índice usa {rotulo}.{' '}
+        <Dialog>
+          <DialogTrigger asChild>
+            <button
+              type="button"
+              className="cursor-pointer font-medium text-primary underline underline-offset-2 transition-colors hover:text-primary/90"
+            >
+              Ver quais são
+            </button>
+          </DialogTrigger>
+          <DialogContent
+            className="flex max-h-[min(85vh,36rem)] flex-col gap-0 overflow-hidden p-0 sm:max-w-lg"
+            onOpenAutoFocus={e => e.preventDefault()}
+          >
+            <DialogHeader className="gap-2 px-6 pt-6 pb-4 text-left">
+              <DialogTitle>Variáveis · {objetivoTitulo}</DialogTitle>
+              <DialogDescription>
+                Indicadores que compõem o índice deste objetivo no nível{' '}
+                {nivelLabel}.
+              </DialogDescription>
+            </DialogHeader>
+            <Separator />
+            <ul className="min-h-0 flex-1 list-none overflow-y-auto px-6 py-2">
               {variaveis.map(v => (
                 <li
                   key={v.id}
-                  className="border-b border-border/60 py-2 last:border-b-0"
+                  className="border-b border-border/60 py-3 last:border-b-0"
                 >
                   <span className="block text-sm font-medium text-foreground">
                     {v.nome}
@@ -49,9 +68,9 @@ export function RankingVariaveisDisclaimer({ variaveis }: Props) {
                 </li>
               ))}
             </ul>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+          </DialogContent>
+        </Dialog>
+      </p>
     </div>
   )
 }

@@ -17,7 +17,7 @@ No ranking ordenado por objetivo, a plataforma informa **quantas variáveis** en
 | --- | --- |
 | Escopo da UI | Modo `por=objetivos` em `/ranking` (estadual e municípios) |
 | Contagem | Painel de `detalhes_*` do nível — **não** o catálogo global de indicadores |
-| Lista | Accordion shadcn (`Ver quais são`) com nome + fonte |
+| Lista | Modal Dialog shadcn (`Ver quais são`) com nome + fonte |
 | Bundle | JSON pré-agregado leve no client; sem importar `detalhes_municipios.json` |
 | Fora de escopo | Modo `por=tematicas`; link para `/objetivos/{slug}` (catálogo nacional) |
 
@@ -30,7 +30,7 @@ No ranking ordenado por objetivo, a plataforma informa **quantas variáveis** en
 1. O usuário escolhe nível (estadual / municípios) e um objetivo da ENGD.
 2. Abaixo da blurb “Este objetivo avalia…”, aparece:
    - *Neste nível, este índice usa **N** variável(is).*
-   - Trigger **Ver quais são** (Accordion) que expande a lista.
+   - Link **Ver quais são** que abre um **modal** com título (`Variáveis · {objetivo}`), descrição do recorte por nível, separador e lista.
 3. Cada item mostra o nome legível (`descricao` do detalhe) e o nome da fonte (catálogo `fonte.json`).
 4. Se `N = 0` (objetivo sem linhas em `detalhes_*` naquele nível), o bloco **não** é renderizado — alinhado aos chips sem cobertura.
 
@@ -39,7 +39,7 @@ Componentes:
 | Arquivo | Papel |
 | --- | --- |
 | [`ranking-explorer.tsx`](../src/components/ranking/ranking-explorer.tsx) | Obtém a lista via helper e monta o disclaimer no modo objetivos |
-| [`ranking-variaveis-disclaimer.tsx`](../src/components/ranking/ranking-variaveis-disclaimer.tsx) | Copy + Accordion shadcn |
+| [`ranking-variaveis-disclaimer.tsx`](../src/components/ranking/ranking-variaveis-disclaimer.tsx) | Copy + Dialog shadcn (modal) |
 | [`variaveis-por-objetivo-nivel.ts`](../src/data/obgd/variaveis-por-objetivo-nivel.ts) | API client-safe `variaveisDoObjetivoNoNivel(nivel, objetivoNumero)` |
 
 ---

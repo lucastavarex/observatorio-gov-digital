@@ -272,9 +272,15 @@ export function RankingExplorer({
                 {oQueAvaliaObjetivo(objetivo.slug).blurb}
               </p>
             )}
-            {modo === 'objetivos' && variaveisRecorte.length > 0 && (
-              <RankingVariaveisDisclaimer variaveis={variaveisRecorte} />
-            )}
+            {modo === 'objetivos' &&
+              variaveisRecorte.length > 0 &&
+              objetivo && (
+                <RankingVariaveisDisclaimer
+                  variaveis={variaveisRecorte}
+                  objetivoTitulo={objetivo.title}
+                  nivelLabel={nivel.label}
+                />
+              )}
             {modo === 'tematicas' && tematica.descricao && (
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                 {tematica.descricao}
