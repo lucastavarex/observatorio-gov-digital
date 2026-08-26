@@ -28,7 +28,7 @@ A plataforma **não** hospeda microdados brutos das fontes oficiais. O CSV é ge
 | Entrada                                                  | Componente                  | Comportamento                                                                            |
 | -------------------------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------- |
 | Lista de variáveis (ranking / indicadores por objetivo) | `VariavelAcoes`           | Ícone de download → diálogo de confirmação → CSV do indicador no nível da página |
-| Página de fonte (`/metodologia/fontes/[slug]`)        | `ObgdFonteDownloadButton` | Botão “Baixar CSV do OBGD”, só se`hasObgdExportForMetodologiaSlug` for verdadeiro  |
+| Página de fonte (`/metodologia/fontes/[fonteId]`) | `ObgdFonteDownloadButton` | Botão “Baixar CSV do OBGD”, só se `hasObgdExportForFonteId` for verdadeiro |
 
 ---
 
@@ -76,10 +76,10 @@ flowchart LR
 | Query                                               | Escopo                                                 | Exemplo                                                  |
 | --------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------- |
 | `nivel` + `conceptId` (+ `subItens` opcional) | Indicador em todas as unidades daquele nível          | `/api/obgd/export?nivel=estadual&conceptId=tic_gov/B1` |
-| `metodologiaSlug`                                 | Indicadores das fontes mapeadas ao slug, nos 3 níveis | `/api/obgd/export?metodologiaSlug=cetic-br`            |
-| `fonteId`                                         | Indicadores de uma fonte OBGD, nos 3 níveis           | `/api/obgd/export?fonteId=tic_gov`                     |
+| `fonteId`                                         | Indicadores de uma fonte OBGD (pesquisa), nos 3 níveis | `/api/obgd/export?fonteId=munic`                     |
+| `metodologiaSlug` (legado)                        | Indicadores agregados por órgão (várias pesquisas)    | `/api/obgd/export?metodologiaSlug=cetic-br`            |
 
-O mapa slug → ids de fonte fica em `METODOLOGIA_SLUG_PARA_FONTE_IDS` (`export-rows.ts`). Fontes sem linhas em `detalhes_*` (ou lista vazia, ex.: `cgu`) não exibem o botão / respondem 404.
+A UI das páginas `/metodologia/fontes/[fonteId]` usa **`fonteId`** (uma pesquisa, ex. `munic`). O parâmetro `metodologiaSlug` permanece na API por compatibilidade; o mapa slug → ids fica em `METODOLOGIA_SLUG_PARA_FONTE_IDS` (`export-rows.ts`). Fontes sem linhas em `detalhes_*` (ou lista vazia, ex.: `cgu`) não exibem o botão / respondem 404.
 
 **Erros comuns:** `400` parâmetros inválidos; `404` sem linhas ou fonte sem mapeamento.
 

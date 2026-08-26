@@ -1,81 +1,63 @@
+import { FONTE_URLS } from '@/data/obgd/fonte-urls'
+import { fontes as fontesObgd } from '@/data/obgd/load'
+
 export type Fonte = {
+  /** Id OBGD (= slug da rota `/metodologia/fontes/[fonte]`). */
   slug: string
+  /** Nome da pesquisa/base (H1). */
   name: string
-  /** Site oficial do órgão. */
-  url: string
+  instituicao: string
+  /** URL da página da pesquisa (preferencial). */
+  urlPesquisa: string
+  /** Site oficial do órgão produtor. */
+  urlOrgao: string
   descricao: string
 }
 
+/** Slugs antigos das páginas por órgão — redirecionados em `next.config`.
+ * Não incluir ids que coincidem com `fonte_id` OBGD (ex.: `anatel`). */
+export const LEGACY_INSTITUICAO_FONTE_SLUGS = [
+  'cetic-br',
+  'mgi',
+  'gov-br',
+  'tcu',
+  'ibge',
+  'inep',
+  'abep-tic',
+  'cgu',
+] as const
+
+/** Site do órgão a partir do rótulo `instituicao` em `fonte.json`. */
+const ORGAO_URL_POR_INSTITUICAO: Record<string, string> = {
+  'CETIC.br': 'https://cetic.br/',
+  TCU: 'https://portal.tcu.gov.br/',
+  'ABEP-TIC': 'https://abep.org.br/',
+  ANATEL: 'https://www.gov.br/anatel/',
+  INEP: 'https://www.gov.br/inep/',
+  IBGE: 'https://www.ibge.gov.br/',
+  'SGD/MGI': 'https://www.gov.br/governodigital/pt-br',
+}
+
+const ORGAO_URL_FALLBACK = 'https://www.gov.br/'
+
 /**
- * Catálogo institucional das páginas `/metodologia/fontes/[slug]`.
+ * Catálogo das páginas `/metodologia/fontes/[slug]` — uma por pesquisa OBGD.
  * Downloads de microdados brutos não são oferecidos — apenas link ao portal
- * e CSV curado dos indicadores OBGD (`/api/obgd/export?metodologiaSlug=`).
+ * e CSV curado (`/api/obgd/export?fonteId=`).
  */
-export const fontes: Fonte[] = [
-  {
-    slug: 'cetic-br',
-    name: 'CETIC.br',
-    url: 'https://cetic.br/',
-    descricao:
-      'Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação, responsável por pesquisas sobre acesso e uso das tecnologias de informação e comunicação no Brasil.',
-  },
-  {
-    slug: 'mgi',
-    name: 'Ministério da Gestão e Inovação (MGI)',
-    url: 'https://www.gov.br/gestao/pt-br',
-    descricao:
-      'Órgão responsável pela política de transformação digital do governo federal e pela coordenação da Estratégia Nacional de Governo Digital (ENGD).',
-  },
-  {
-    slug: 'gov-br',
-    name: 'Gov.br / SGD',
-    url: 'https://www.gov.br/governodigital/pt-br',
-    descricao:
-      'Plataforma e Secretaria de Governo Digital — serviços digitais, identidade e painéis de satisfação do cidadão.',
-  },
-  {
-    slug: 'tcu',
-    name: 'Tribunal de Contas da União (TCU)',
-    url: 'https://portal.tcu.gov.br/',
-    descricao:
-      'Tribunal de Contas da União, responsável por avaliações de governança e pelo índice iESGo de órgãos federais.',
-  },
-  {
-    slug: 'ibge',
-    name: 'IBGE',
-    url: 'https://www.ibge.gov.br/',
-    descricao:
-      'Instituto Brasileiro de Geografia e Estatística — pesquisas estruturais (MUNIC, ESTADIC) e PNAD Contínua TIC.',
-  },
-  {
-    slug: 'inep',
-    name: 'INEP',
-    url: 'https://www.gov.br/inep/',
-    descricao:
-      'Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira — Censo Escolar e indicadores de educação.',
-  },
-  {
-    slug: 'anatel',
-    name: 'ANATEL',
-    url: 'https://www.gov.br/anatel/',
-    descricao:
-      'Agência Nacional de Telecomunicações — dados de conectividade e telecomunicações.',
-  },
-  {
-    slug: 'abep-tic',
-    name: 'ABEP-TIC',
-    url: 'https://abep.org.br/',
-    descricao:
-      'Associação Brasileira de Entidades Estaduais de Tecnologia da Informação e Comunicação — índice IOSPD.',
-  },
-  {
-    slug: 'cgu',
-    name: 'CGU',
-    url: 'https://www.gov.br/cgu/',
-    descricao:
-      'Controladoria-Geral da União — transparência, acesso à informação e integridade no setor público.',
-  },
-]
+export const fontes: Fonte[] = fontesObgd.map(f => {
+  const urlOrgao =
+    ORGAO_URL_POR_INSTITUICAO[f.instituicao] ?? ORGAO_URL_FALLBACK
+  const urlPesquisa = FONTE_URLS[f.id] ?? urlOrgao
+  return {
+    slug: f.id,
+    name: f.nome,
+    instituicao: f.instituicao,
+    urlPesquisa,
+    urlOrgao,
+    descricao: `Pesquisa/base usada no Observatório. Produzida por ${f.instituicao}.`,
+  }
+})
 
 export function getFonte(slug: string): Fonte | undefined {
   return fontes.find(f => f.slug === slug)

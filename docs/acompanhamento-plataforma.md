@@ -224,7 +224,8 @@ Documentação completa: [`integracao-dados-v3-tags.md`](./integracao-dados-v3-t
 
 - CSV real via `GET /api/obgd/export` a partir de `detalhes_*` (valores normalizados do snapshot)
 - Por variável (nível): `?nivel=&conceptId=`
-- Por fonte (metodologia): `?metodologiaSlug=` — recorte OBGD, não microdado bruto
+- Por fonte/pesquisa: `?fonteId=` — recorte OBGD de uma pesquisa (`munic`, `tic_gov`, …), não microdado bruto
+- Por órgão (legado API): `?metodologiaSlug=` — agrega várias pesquisas do mesmo órgão
 - Ver também [`integracao-dados-v3-tags.md`](./integracao-dados-v3-tags.md) § downloads
 
 ### 5.3 Explicitamente fora de pedido de dados nesta fase

@@ -143,7 +143,7 @@ flowchart TB
 
 | Arquivo | Papel |
 | --- | --- |
-| [`src/app/(app)/metodologia/fontes/[fonte]/page.tsx`](../src/app/(app)/metodologia/fontes/[fonte]/page.tsx) | Páginas institucionais de fontes + export CSV — **não** usam o pipeline MDX |
+| [`src/app/(app)/metodologia/fontes/[fonte]/page.tsx`](../src/app/(app)/metodologia/fontes/[fonte]/page.tsx) | Páginas por **pesquisa OBGD** (`fonte_id`, ex. `munic`) + export CSV — **não** usam o pipeline MDX. Slugs antigos de órgão (`ibge`, `cetic-br`, …) redirecionam para `/metodologia` (exceto quando o slug coincide com um `fonte_id`, ex. `anatel`). |
 
 ### Dependências npm (MDX)
 

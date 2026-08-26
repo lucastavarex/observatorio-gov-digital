@@ -131,11 +131,16 @@ export function buildExportByFonteIds(fonteIds: string[]): {
   return { rows, filename: `obgd-fonte-${slug}.csv` }
 }
 
-/** Há linhas em `detalhes_*` para o slug da página de Metodologia? */
+/** Há linhas em `detalhes_*` para o slug institucional legado? */
 export function hasObgdExportForMetodologiaSlug(slug: string): boolean {
   const ids = METODOLOGIA_SLUG_PARA_FONTE_IDS[slug]
   if (!ids || ids.length === 0) return false
   return buildExportByFonteIds(ids).rows.length > 0
+}
+
+/** Há linhas em `detalhes_*` para um `fonte_id` OBGD? */
+export function hasObgdExportForFonteId(fonteId: string): boolean {
+  return buildExportByFonteIds([fonteId]).rows.length > 0
 }
 
 export function exportRowsToCsvResponse(

@@ -3,10 +3,11 @@ import { ExternalLink } from 'lucide-react'
 import { ObgdFonteDownloadButton } from '@/components/metodologia/obgd-fonte-download-button'
 import { BackButton } from '@/components/shared/back-button'
 import type { Fonte } from '@/data/fontes'
-import { hasObgdExportForMetodologiaSlug } from '@/data/obgd/export-rows'
+import { hasObgdExportForFonteId } from '@/data/obgd/export-rows'
 
 export function FonteContent({ fonte }: { fonte: Fonte }) {
-  const temExportObgd = hasObgdExportForMetodologiaSlug(fonte.slug)
+  const temExportObgd = hasObgdExportForFonteId(fonte.slug)
+  const urlPesquisaDistinta = fonte.urlPesquisa !== fonte.urlOrgao
 
   return (
     <section className="pb-12">
@@ -23,20 +24,34 @@ export function FonteContent({ fonte }: { fonte: Fonte }) {
         <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
           {fonte.name}
         </h1>
-        <p className="mt-6 max-w-2xl text-base text-muted-foreground leading-relaxed">
+        <p className="mt-3 text-base font-medium text-foreground">
+          Produzida por {fonte.instituicao}
+        </p>
+        <p className="mt-4 max-w-2xl text-base text-muted-foreground leading-relaxed">
           {fonte.descricao}
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
           <a
-            href={fonte.url}
+            href={fonte.urlPesquisa}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 font-medium text-muted-foreground text-sm transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
           >
             <ExternalLink className="size-4" aria-hidden="true" />
-            Acessar site do órgão
+            Acessar página da pesquisa
           </a>
+          {urlPesquisaDistinta && (
+            <a
+              href={fonte.urlOrgao}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 font-medium text-muted-foreground text-sm transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+            >
+              <ExternalLink className="size-4" aria-hidden="true" />
+              Site do órgão
+            </a>
+          )}
         </div>
 
         {temExportObgd && (
@@ -56,7 +71,7 @@ export function FonteContent({ fonte }: { fonte: Fonte }) {
             </p>
             <div className="mt-4">
               <ObgdFonteDownloadButton
-                metodologiaSlug={fonte.slug}
+                fonteId={fonte.slug}
                 fonteNome={fonte.name}
               />
             </div>
