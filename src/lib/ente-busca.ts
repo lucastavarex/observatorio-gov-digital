@@ -1,4 +1,4 @@
-/** A partir deste tamanho a lista ganha campo de busca (27 capitais cabem; 319 não). */
+/** A partir deste tamanho a lista ganha campo de busca (lista curta cabe; 319 não). */
 export const ENTE_BUSCA_LIMIAR = 30
 
 function normalizar(s: string): string {

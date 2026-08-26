@@ -5,7 +5,6 @@
 export {
   ANO_INDICE,
   type ArquivoDados,
-  capitalNomePorUf,
   type DataNivel,
   type Ente,
   type EnteTipo,

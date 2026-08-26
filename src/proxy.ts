@@ -6,7 +6,31 @@ import {
   stripV2Prefix,
 } from '@/lib/features/ranking-mode'
 
+/** URLs do antigo recorte Capitais (`municipal`) → Municípios. */
+function redirectMunicipalToMunicipios(
+  request: NextRequest
+): NextResponse | null {
+  const url = request.nextUrl.clone()
+  let changed = false
+
+  if (url.pathname.includes('/municipal')) {
+    url.pathname = url.pathname.replaceAll('/municipal', '/municipios')
+    changed = true
+  }
+
+  if (url.searchParams.get('nivel') === 'municipal') {
+    url.searchParams.set('nivel', 'municipios')
+    changed = true
+  }
+
+  if (!changed) return null
+  return NextResponse.redirect(url, 308)
+}
+
 export function proxy(request: NextRequest) {
+  const municipalRedirect = redirectMunicipalToMunicipios(request)
+  if (municipalRedirect) return municipalRedirect
+
   const { pathname } = request.nextUrl
   const { pathname: stripped, variant: pathVariant } = stripV2Prefix(pathname)
   const envV = envVariant()

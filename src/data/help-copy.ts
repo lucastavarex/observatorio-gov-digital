@@ -15,7 +15,7 @@ export const GLOSSARIO = {
   subIndice:
     'Nota de 0 a 100 de um ente em um objetivo da ENGD. É a média simples dos indicadores daquele objetivo — todos com o mesmo peso. Não é uma média entre os dez objetivos.',
   mediaDoNivel:
-    'Para cada objetivo, é a média das notas dos entes daquele nível (por exemplo, todos os estados, todas as capitais ou os municípios com 100 mil habitantes ou mais) que têm dado. Serve de referência de comparação — não é um ranking nem a média entre objetivos diferentes.',
+    'Para cada objetivo, é a média das notas dos entes daquele nível (por exemplo, todos os estados ou os municípios com 100 mil habitantes ou mais) que têm dado. Serve de referência de comparação — não é um ranking nem a média entre objetivos diferentes.',
   scoreTag:
     'Nota de 0 a 100 do ente na categoria temática escolhida. É a média dos indicadores ativos associados a essa tag.',
   fonte:

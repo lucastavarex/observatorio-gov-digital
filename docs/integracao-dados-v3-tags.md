@@ -16,18 +16,17 @@ O app lê [`src/data/obgd/assets/`](../src/data/obgd/assets/), gerado a partir d
 |---|---|---|---|
 | `federal` | Federal | `nacional` | Brasil |
 | `estadual` | Estadual | `uf` | 27 UFs |
-| `municipal` | **Capitais** | `capital` | 27 capitais — URLs `/municipal/sao-paulo` intactas |
-| `municipios` | **Municípios** | `municipio` | 319 ≥ 100 mil hab. (capitais inclusas como município) |
+| `municipios` | **Municípios** | `municipio` | 319 ≥ 100 mil hab. (inclui as capitais) |
 
-Capitais existem duas vezes no `ente.json` (mesmo código IBGE, `id`s diferentes, `tipo` `capital` vs `municipio`). Lookup composto: `(tipo, codigo)`.
+O sync **filtra** `tipo`/`nivel` `capital` da entrega bruta: a UI não tem mais recorte Capitais. URLs antigas `/municipal/...` redirecionam para `/municipios/...`.
 
 ```bash
 node --max-old-space-size=4096 scripts/sync-obgd-assets-from-v4.mjs
 ```
 
-O script v4: CSV → JSON (`ano_indice` vazio → `2026`); `detalhes_municipios.json`; `indice_por_tag` por `(tipo, unidade, tag)`; **não** versiona `indicador_valor.json`. Municípios no long sem `n_objetivos_com_dados` recebem fallback `7`.
+O script v4: CSV → JSON (`ano_indice` vazio → `2026`); `detalhes_municipios.json`; filtra capitais; `indice_por_tag` por `(tipo, unidade, tag)`; **não** versiona `indicador_valor.json` nem emite `detalhes_capitais.json`. Municípios no long sem `n_objetivos_com_dados` recebem fallback `7`.
 
-**Fora de escopo (pedido de tags API / IA / emergentes):** API não existe no catálogo; IA/emergentes são poucos indicadores do Objetivo 7, quase só nacionais. Permanecem no recorte federal do Obj. 7. Devolver à frente de dados: `ano_indice` nulo na entrega, ranking municipal dos objs. 7/8/10 vazio, e se a duplicata capital/município é permanente.
+**Fora de escopo (pedido de tags API / IA / emergentes):** API não existe no catálogo; IA/emergentes são poucos indicadores do Objetivo 7, quase só nacionais. Permanecem no recorte federal do Obj. 7. Devolver à frente de dados: `ano_indice` nulo na entrega, ranking municipal dos objs. 7/8/10 vazio.
 
 O restante deste documento descreve a integração **v3** (tags reais), que a v4 preserva.
 

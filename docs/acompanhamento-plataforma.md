@@ -38,7 +38,7 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 | 5  | **Tags / dimensões temáticas** (~50–60)                    | Entrega v3 com**16 tags** reais + scores (média por tag); UI desmockada                                      | Feito                                     |
 | 6  | Versão**com** e **sem** ranking (teste A/B)            | Versão A =`/` com ranking; Versão B = `/v2` ou `NEXT_PUBLIC_RANKING_MODE=off`                                  | Feito                                     |
 | 6b | Na versão sem ranking, falta caminho até o download das variáveis | Espelhar drill-down sob `/indicadores/[nivel]/[ente]/[objetivo]` (sem reabrir `/ranking` na B) | Feito                                     |
-| 7  | Municípios extras (~100 mil hab., além de capitais)               | Dois recortes: **Capitais** (`municipal`, 27) e **Municípios** (`municipios`, 319 ≥ 100 mil). Capitais nos dois, mesmo IBGE, ids diferentes. | **Feito** (assets-v4)                     |
+| 7  | Municípios extras (~100 mil hab., além de capitais)               | Um recorte **Municípios** (`municipios`, 319 ≥ 100 mil, inclui capitais). Recorte Capitais removido da UI. | **Feito** (assets-v4 + unificação) |
 | 8  | Nota técnica dos objetivos com cobertura precária                 | Mock na metodologia + chips; validar com Luiza/Gabriel/Bruno                                                           | Feito (mock)                              |
 | 9  | i18n                                                                | **Não** portar                                                                                                  | Fora de escopo                            |
 | 10 | Loading / abertura da home (protótipo)                             | Implementado com`sessionStorage`, depois **removido** (UX + SEO)                                               | Removido                                  |
@@ -78,12 +78,12 @@ Fonte: pontos levantados na conversa com o cliente (e alinhamento interno com Lu
 
 ### 3.4 Ranking (`/ranking`)
 
-- Nível (estadual / capitais / municípios ≥100 mil; federal vai direto ao ente)
+- Nível (estadual / municípios ≥100 mil; federal vai direto ao ente)
 - Ordenar por objetivos ENGD ou categorias temáticas
 - Chips de objetivo (Obj. 3 desabilitado) / pills de tag
 - Distribuição + mapa (estadual) + tabela com bandeiras
 - **Sem** índice geral; coluna principal = **Índice**
-- Estado compartilhável na URL: `nivel`, `por`, `objetivo` | `tema`Ex.: `/ranking?nivel=municipal&por=objetivos&objetivo=privacidade-e-seguranca`
+- Estado compartilhável na URL: `nivel`, `por`, `objetivo` | `tema`Ex.: `/ranking?nivel=municipios&por=objetivos&objetivo=privacidade-e-seguranca`
 - Clique no ente (modo objetivos) leva `?objetivo={slug}` → detalhe dinâmico (não mais “sempre Obj. 1”)
 - Badge com nome do ente no topo da coluna do gráfico “Posição no objetivo” → **removida**
 - Página do objetivo: lista de variáveis + download; **sem** bloco de Recomendações (recomendações ENGD ficam em `/objetivos/[slug]`); ícones de fonte/download ao lado do título da variável
@@ -106,7 +106,7 @@ Arquivos-chave: `src/proxy.ts`, `src/lib/features/ranking-mode.ts`, `use-platfor
 
 #### Problema que motivou o espelho em Indicadores
 
-O download das variáveis (`VariavelAcoes`) existia só em `/ranking/[nivel]/[ente]/[objetivo]`. Na variante B o proxy redireciona qualquer `/ranking*`, e o explorer de Indicadores parava nos gráficos — sem caminho até a lista de variáveis nos recortes **federal**, **estadual**, **capitais** e **municípios**.
+O download das variáveis (`VariavelAcoes`) existia só em `/ranking/[nivel]/[ente]/[objetivo]`. Na variante B o proxy redireciona qualquer `/ranking*`, e o explorer de Indicadores parava nos gráficos — sem caminho até a lista de variáveis nos recortes **federal**, **estadual** e **municípios**.
 
 **Decisão:** não reabrir `/ranking` na variante B (mantém o teste A/B). Ranking continua o caminho principal na variante A; Indicadores ganha o mesmo destino de download em **ambas** as variantes, sem UI de posição/distribuição.
 
@@ -149,7 +149,6 @@ flowchart TD
 | --- | --- | --- |
 | Federal | `/indicadores/federal/brasil/{objetivo}` | `/v2/indicadores/federal/brasil/{objetivo}` |
 | Estadual | `/indicadores/estadual/sp/privacidade-e-seguranca` | `/v2/indicadores/estadual/sp/...` |
-| Municipal (capitais) | `/indicadores/municipal/{capital}/{objetivo}` | `/v2/indicadores/municipal/...` |
 | Municípios (≥100 mil) | `/indicadores/municipios/{municipio}/{objetivo}` | `/v2/indicadores/municipios/...` |
 
 #### Fora de escopo deste ajuste
@@ -216,7 +215,7 @@ Documentação completa: [`integracao-dados-v3-tags.md`](./integracao-dados-v3-t
 2. **Quatro objetivos precários**
 
    - Quais são; o que foi avaliado; o que ficou de fora e por quê
-3. **Municípios extras** — **feito** (v4): 319 ≥ 100 mil + recorte de capitais. Pendente na frente de dados: `ano_indice` nulo, ranking municipal dos objs. 7/8/10 vazio, confirmar se a duplicata capital/município (mesmo IBGE, dois `id`s) é permanente.
+3. **Municípios extras** — **feito** (v4 + unificação): 319 ≥ 100 mil; sem recorte Capitais na UI. Pendente na frente de dados: `ano_indice` nulo, ranking municipal dos objs. 7/8/10 vazio.
 4. **Índice geral**
 
    - **Não publicar** na plataforma. Se o JSON mantiver `indice_geral`, tratar como legado interno.
@@ -298,4 +297,4 @@ Documentação completa: [`integracao-dados-v3-tags.md`](./integracao-dados-v3-t
 6. **Este documento** como fonte única de acompanhamento de produto
 7. **dados-v3 + tags reais** — sync de assets, desmock de temáticas; ver [`integracao-dados-v3-tags.md`](./integracao-dados-v3-tags.md)
 8. **Downloads curados** — CSV real a partir de `detalhes_*` (variável × nível e fonte × OBGD); Metodologia sem fake de base completa
-9. **assets-v4** — 319 municípios ≥ 100 mil; UI com quatro recortes (Federal, Estadual, Capitais, Municípios); variáveis visíveis em `/objetivos` e nas tags do explorer. Tags API/IA ficam como **futuro**.
+9. **assets-v4** — 319 municípios ≥ 100 mil; UI com três recortes (Federal, Estadual, Municípios); variáveis visíveis em `/objetivos` e nas tags do explorer. Tags API/IA ficam como **futuro**.

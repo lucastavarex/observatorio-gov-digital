@@ -8,7 +8,6 @@ import {
 import { detalhesForNivel } from './detalhes'
 import {
   ANO_INDICE,
-  capitalByUfSigla,
   enteByCodigo,
   fonteById,
   getEnteByTipoCodigo,
@@ -20,7 +19,6 @@ import type { DataNivel, DetalheRow } from './types'
 const NIVEL_LABEL: Record<DataNivel, string> = {
   nacional: 'nacional',
   uf: 'estadual',
-  capital: 'capitais',
   municipio: 'municipios',
 }
 
@@ -53,11 +51,7 @@ function unidadeNome(dataNivel: DataNivel, categoria: string): string {
   if (dataNivel === 'uf') {
     return enteByCodigo.get(categoria)?.nome ?? categoria
   }
-  if (dataNivel === 'municipio') {
-    return getEnteByTipoCodigo('municipio', categoria)?.nome ?? categoria
-  }
-  const capital = capitalByUfSigla.get(categoria)
-  return capital?.nome ?? categoria
+  return getEnteByTipoCodigo('municipio', categoria)?.nome ?? categoria
 }
 
 function rowToExport(row: DetalheRow, dataNivel: DataNivel): ObgdExportRow {
@@ -115,7 +109,7 @@ export function buildExportByFonteIds(fonteIds: string[]): {
   filename: string
 } {
   const idSet = new Set(fonteIds)
-  const niveis: DataNivel[] = ['nacional', 'uf', 'capital', 'municipio']
+  const niveis: DataNivel[] = ['nacional', 'uf', 'municipio']
   const rows: ObgdExportRow[] = []
   for (const dataNivel of niveis) {
     for (const r of detalhesForNivel(dataNivel)) {

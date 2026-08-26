@@ -30,7 +30,7 @@ export const fonteById = new Map(fontes.map(f => [f.id, f]))
 export const indicadorByChave = new Map(indicadores.map(i => [i.chave, i]))
 export const tagById = new Map(tags.map(t => [t.id, t]))
 
-/** Lookup `tipo|codigo` — capitais e municípios compartilham código IBGE. */
+/** Lookup `tipo|codigo`. */
 export const enteByTipoCodigo = new Map(
   entes.map(e => [`${e.tipo}|${e.codigo}`, e] as const)
 )
@@ -43,8 +43,8 @@ export function getEnteByTipoCodigo(
 }
 
 /**
- * Lookup só por codigo. Códigos IBGE de capital/município colidem:
- * prefira `getEnteByTipoCodigo`. Mantido para UF (`SP`) e BR.
+ * Lookup só por codigo. Prefira `getEnteByTipoCodigo` quando o tipo importa.
+ * Mantido para UF (`SP`) e BR.
  */
 export const enteByCodigo = new Map(
   entes
@@ -55,11 +55,4 @@ export const enteByCodigo = new Map(
 /** Lookup `tipo|unidade|tag_id` → nota (média pré-calculada). */
 export const notaPorUnidadeTag = new Map(
   indicePorTag.map(r => [`${r.tipo}|${r.unidade}|${r.tag_id}`, r.nota])
-)
-
-/** Capital lookup by UF sigla (detalhes_capitais uses UF as categoria). */
-export const capitalByUfSigla = new Map(
-  entes
-    .filter(e => e.tipo === 'capital' && e.uf_sigla)
-    .map(e => [e.uf_sigla!, e])
 )

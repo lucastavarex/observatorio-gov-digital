@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: 'Indicadores',
   description:
-    'Explore e compare o desenvolvimento digital do governo federal, dos estados, das capitais e dos municípios com 100 mil habitantes ou mais nos dez objetivos da ENGD.',
+    'Explore e compare o desenvolvimento digital do governo federal, dos estados e dos municípios com 100 mil habitantes ou mais nos dez objetivos da ENGD.',
 }
 
 export default async function IndicadoresPage({

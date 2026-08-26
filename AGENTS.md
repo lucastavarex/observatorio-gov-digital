@@ -8,7 +8,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # Observatório Brasileiro de Governo Digital
 
-Portal público e interativo de monitoramento da transformação digital no setor público brasileiro. Mede o desenvolvimento digital dos governos federal, estaduais e das 27 capitais com base nos 10 objetivos da Estratégia Nacional de Governo Digital (ENGD, Decreto nº 12.069/2024).
+Portal público e interativo de monitoramento da transformação digital no setor público brasileiro. Mede o desenvolvimento digital dos governos federal, estaduais e dos municípios com 100 mil habitantes ou mais com base nos 10 objetivos da Estratégia Nacional de Governo Digital (ENGD, Decreto nº 12.069/2024).
 
 **Parceiros:** Insper/CGPP (execução técnica) · MBC/Movimento Brasil Competitivo (financiamento) · MGI/Ministério da Gestão e Inovação (vinculação institucional).
 
@@ -20,7 +20,7 @@ Antes de criar qualquer componente ou rota nova, confirme o escopo de features c
 
 **Fonte de verdade do domínio:** [`public/metodologia-completa.pdf`](public/metodologia-completa.pdf)
 
-Em caso de dúvida sobre indicadores, objetivos da ENGD, cálculo de índices/subíndices, fontes de dados, escopos (nacional/estadual/capitais), nomenclatura, interpretação de valores ou qualquer conceito metodológico do Observatório, **consulte esse PDF antes de assumir ou inventar**. Ele prevalece sobre resumos em markdown, mocks e memória do modelo quando houver conflito.
+Em caso de dúvida sobre indicadores, objetivos da ENGD, cálculo de índices/subíndices, fontes de dados, escopos (nacional/estadual/municípios), nomenclatura, interpretação de valores ou qualquer conceito metodológico do Observatório, **consulte esse PDF antes de assumir ou inventar**. Ele prevalece sobre resumos em markdown, mocks e memória do modelo quando houver conflito.
 
 Como consultar:
 1. Abra/leia `public/metodologia-completa.pdf` (ou a rota pública `/metodologia-completa.pdf`).
