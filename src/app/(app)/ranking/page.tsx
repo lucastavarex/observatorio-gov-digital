@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: 'Ranking',
   description:
-    'Ranking de Desenvolvimento Digital dos Governos — federal, estadual, capitais e municípios com 100 mil habitantes ou mais.',
+    'Ranking de Desenvolvimento Digital dos Governos — federal, estadual e municípios com 100 mil habitantes ou mais.',
 }
 
 export default async function RankingPage({

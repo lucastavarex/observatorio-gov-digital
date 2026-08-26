@@ -36,7 +36,7 @@ export const OBJETIVOS_PRECARIOS_MOCK = [
       'Indicadores de capacitação e competências disponíveis no escopo nacional.',
     ],
     oQueNaoFoiIncluido: [
-      'Séries homogêneas de capacitação em TI para estados e capitais.',
+      'Séries homogêneas de capacitação em TI para estados e municípios.',
     ],
     porQueNaoIncluido:
       'A entrega atual não cobre de forma equilibrada os níveis subnacionais.',

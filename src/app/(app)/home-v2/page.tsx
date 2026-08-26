@@ -108,7 +108,8 @@ export default async function HomeV2Page() {
           <p className="mx-auto mt-2 max-w-2xl text-muted-foreground text-sm leading-relaxed sm:text-base">
             Uma plataforma pública que transforma dados oficiais dispersos em
             indicadores comparáveis sobre a transformação digital do governo
-            federal, dos estados, das capitais e dos municípios.
+            federal, dos estados e dos municípios com 100 mil habitantes ou
+            mais.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button

@@ -7,7 +7,7 @@ import { observatorioLead } from '@/data/site-copy'
 export const metadata = { title: 'Sobre' }
 
 const introText =
-  'O Observatório Brasileiro de Governo Digital acompanha, de forma permanente e baseada em evidências, o desenvolvimento digital do governo federal, dos estados, das capitais e dos municípios com 100 mil habitantes ou mais. Reunindo indicadores sobre interoperabilidade, governança e capacidade digital do setor público, o projeto dá transparência à transformação digital do governo e ajuda a identificar gargalos e disseminar boas práticas.'
+  'O Observatório Brasileiro de Governo Digital acompanha, de forma permanente e baseada em evidências, o desenvolvimento digital do governo federal, dos estados e dos municípios com 100 mil habitantes ou mais. Reunindo indicadores sobre interoperabilidade, governança e capacidade digital do setor público, o projeto dá transparência à transformação digital do governo e ajuda a identificar gargalos e disseminar boas práticas.'
 
 const ENGD_TERM = 'Estratégia Nacional de Governo Digital'
 const ENGD_URL =

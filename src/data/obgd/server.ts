@@ -3,7 +3,7 @@ import 'server-only'
 import { objectives } from '@/data/objectives'
 import { detalhesForNivel } from './detalhes'
 import { FONTE_URLS } from './fonte-urls'
-import { fonteById, getEnteByTipoCodigo, indicadorByChave } from './load'
+import { fonteById, indicadorByChave } from './load'
 import {
   type Ente,
   getNivel,
@@ -33,9 +33,7 @@ function formatScoreLocal(n: number): string {
 
 function detalheCategoriaKey(dataNivel: DataNivel, codigo: string): string {
   if (dataNivel === 'nacional') return 'Total'
-  if (dataNivel === 'uf' || dataNivel === 'municipio') return codigo
-  const capital = getEnteByTipoCodigo('capital', codigo)
-  return capital?.uf_sigla ?? codigo
+  return codigo
 }
 
 function buildVariavel(row: DetalheRow, enteCodigo: string): Variavel {

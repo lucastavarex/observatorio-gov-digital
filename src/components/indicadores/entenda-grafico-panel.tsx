@@ -44,8 +44,8 @@ export function EntendaGraficoTip({
             </p>
             <p>
               A série <strong className="font-medium">Média do nível</strong> é
-              a referência dos demais entes do mesmo nível (estados ou capitais)
-              que têm dado — não é uma média entre objetivos.
+              a referência dos demais entes do mesmo nível (estados ou
+              municípios) que têm dado — não é uma média entre objetivos.
             </p>
           </>
         ) : (

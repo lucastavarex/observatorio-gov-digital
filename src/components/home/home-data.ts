@@ -62,7 +62,7 @@ function getNivelEstadual() {
 
 /** Contagens de alcance da base (calculadas dos dados, não hardcoded). */
 export type HomeNumeros = {
-  /** Total de entes avaliados (federal + estados + capitais + municípios). */
+  /** Total de entes avaliados (federal + estados + municípios ≥100 mil). */
   entesTotal: number
   /** Municípios com 100 mil+ habitantes cobertos. */
   municipios: number

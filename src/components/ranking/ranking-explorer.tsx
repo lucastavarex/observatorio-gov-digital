@@ -151,7 +151,7 @@ export function RankingExplorer({
       router.push(link(`/ranking/${key}/${alvo.entes[0].slug}`))
       return
     }
-    if (key === 'estadual' || key === 'municipal' || key === 'municipios') {
+    if (key === 'estadual' || key === 'municipios') {
       atualizar({ nivel: key })
       if (key !== 'estadual') setVista('grafico')
     }
@@ -194,6 +194,11 @@ export function RankingExplorer({
                 )
               })}
             </div>
+            {active === 'municipios' && (
+              <p className="mt-3 text-muted-foreground text-xs leading-relaxed">
+                Municípios com 100 mil habitantes ou mais.
+              </p>
+            )}
           </div>
 
           {nivel.isRanking && (

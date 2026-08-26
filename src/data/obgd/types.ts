@@ -1,6 +1,6 @@
 /** Tipos dos JSON em `src/data/obgd/assets/` (subset de dados-v4). */
 
-export type EnteTipo = 'nacional' | 'uf' | 'capital' | 'municipio'
+export type EnteTipo = 'nacional' | 'uf' | 'municipio'
 
 /** Recorte do índice / detalhes (alinhado a `indice_long.nivel`). */
 export type DataNivel = EnteTipo

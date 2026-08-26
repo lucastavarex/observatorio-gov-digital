@@ -62,14 +62,14 @@ O Brasil ocupa posição de destaque no OECD Digital Government Index (nota 0,79
 
 ## Dados disponíveis
 
-Três escopos: **nacional** · **estadual** (27 UFs) · **capitais** (27 capitais).
+Três escopos: **nacional** · **estadual** (27 UFs) · **municípios** (319 ≥ 100 mil hab., inclui capitais).
 
 Cada escopo tem 3 arquivos: `indice_*.csv` (índice por objetivo; campo `sub_indice`), `detalhes_*.csv` (indicadores individuais) e `ranking_*.csv` (ranking por `indice_geral`). Na UI o rótulo é **Índice** — ver nomenclatura em `AGENTS.md`.
 
 **Referências numéricas:**
 - Índice nacional: **58,26**
 - Top 3 estados: PI 93,52 · MG 92,27 · RJ 92,02
-- Top 3 capitais: Belo Horizonte 94,89 · Brasília 94,84 · Salvador 94,80
+- Top 3 municípios (referência histórica de capitais): Belo Horizonte 94,89 · Brasília 94,84 · Salvador 94,80
 
 ## Design system
 

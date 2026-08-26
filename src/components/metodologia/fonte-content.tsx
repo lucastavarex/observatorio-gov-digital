@@ -52,7 +52,7 @@ export function FonteContent({ fonte }: { fonte: Fonte }) {
               </strong>{' '}
               — os mesmos valores normalizados (0–100) dos indicadores desta
               fonte que entram no índice (snapshot 2026), em todos os níveis
-              (nacional, estadual e capitais).
+              (nacional, estadual e municípios com 100 mil habitantes ou mais).
             </p>
             <div className="mt-4">
               <ObgdFonteDownloadButton

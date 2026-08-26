@@ -1,10 +1,5 @@
 import { objectives } from '@/data/objectives'
-import {
-  ANO_INDICE,
-  capitalByUfSigla,
-  getEnteByTipoCodigo,
-  indiceLong,
-} from './load'
+import { ANO_INDICE, getEnteByTipoCodigo, indiceLong } from './load'
 import type {
   DataNivel,
   EnteTipo,
@@ -14,7 +9,7 @@ import type {
 
 export type { DataNivel, EnteTipo, SerieHistoricaPonto }
 
-export type NivelKey = 'federal' | 'estadual' | 'municipal' | 'municipios'
+export type NivelKey = 'federal' | 'estadual' | 'municipios'
 
 export type TabelaLinha = { item: string; valor: string }
 
@@ -74,7 +69,7 @@ export type Ente = {
 export type Nivel = {
   key: NivelKey
   label: string
-  /** Federal é entidade única (sem ranking); estadual/municipal/municípios são rankings. */
+  /** Federal é entidade única (sem ranking); estadual/municípios são rankings. */
   isRanking: boolean
   dataNivel: DataNivel
   entes: Ente[]
@@ -90,7 +85,6 @@ const NIVEL_MAP: Record<
 > = {
   federal: { label: 'Federal', isRanking: false, dataNivel: 'nacional' },
   estadual: { label: 'Estadual', isRanking: true, dataNivel: 'uf' },
-  municipal: { label: 'Capitais', isRanking: true, dataNivel: 'capital' },
   municipios: { label: 'Municípios', isRanking: true, dataNivel: 'municipio' },
 }
 
@@ -196,7 +190,7 @@ function buildNivel(key: NivelKey): Nivel {
 
 /** Árvore leve (sem variáveis) — segura para Client Components. */
 export const niveis: Nivel[] = (
-  ['federal', 'estadual', 'municipal', 'municipios'] as NivelKey[]
+  ['federal', 'estadual', 'municipios'] as NivelKey[]
 ).map(buildNivel)
 
 export function getNivel(key: string): Nivel | undefined {
@@ -290,11 +284,6 @@ export function rankingDoNivel(
     subIndice: obj.nota,
     posicao: i + 1,
   }))
-}
-
-/** Resolve capital a partir da UF (para joins de detalhes_capitais). */
-export function capitalNomePorUf(ufSigla: string): string | undefined {
-  return capitalByUfSigla.get(ufSigla)?.nome
 }
 
 export { ANO_INDICE, NIVEL_MAP }

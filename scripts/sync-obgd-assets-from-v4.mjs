@@ -3,8 +3,10 @@
  *
  * - Converts flat CSVs → JSON (ano_indice empty → 2026)
  * - Copies canonical dados/ entities (incl. tag + indicador with tags)
+ * - Filters out tipo/nivel `capital` (UI unificada em Municípios ≥100 mil)
  * - Precomputes indice_por_tag.json keyed by (tipo, codigo, tag)
  * - Does NOT copy indicador_valor.json (too large for the app bundle)
+ * - Does NOT emit detalhes_capitais.json
  *
  * Usage: node --max-old-space-size=4096 scripts/sync-obgd-assets-from-v4.mjs
  */
@@ -103,24 +105,26 @@ function writeJson(path, data, pretty = true) {
 
 async function convertIndiceLong() {
   const rows = await readCsv(join(SRC, 'indice_long_por_objetivo.csv'))
-  return rows.map(r => {
-    const nivel = r.nivel
-    const nObj =
-      num(r.n_objetivos_com_dados) ??
-      (nivel === 'municipio' ? N_OBJETIVOS_MUNICIPIO_FALLBACK : null)
-    return {
-      nivel,
-      unidade: r.unidade,
-      unidade_nome: r.unidade_nome,
-      objetivo: num(r.objetivo),
-      objetivo_nome: r.objetivo_nome,
-      ano_indice: num(r.ano_indice, ANO_INDICE),
-      sub_indice: num(r.sub_indice),
-      indice_geral: num(r.indice_geral),
-      n_objetivos_com_dados: nObj,
-      posicao_no_objetivo: num(r.posicao_no_objetivo),
-    }
-  })
+  return rows
+    .filter(r => r.nivel !== 'capital')
+    .map(r => {
+      const nivel = r.nivel
+      const nObj =
+        num(r.n_objetivos_com_dados) ??
+        (nivel === 'municipio' ? N_OBJETIVOS_MUNICIPIO_FALLBACK : null)
+      return {
+        nivel,
+        unidade: r.unidade,
+        unidade_nome: r.unidade_nome,
+        objetivo: num(r.objetivo),
+        objetivo_nome: r.objetivo_nome,
+        ano_indice: num(r.ano_indice, ANO_INDICE),
+        sub_indice: num(r.sub_indice),
+        indice_geral: num(r.indice_geral),
+        n_objetivos_com_dados: nObj,
+        posicao_no_objetivo: num(r.posicao_no_objetivo),
+      }
+    })
 }
 
 async function convertDetalhes(name) {
@@ -168,7 +172,7 @@ function buildIndicePorTag() {
     const tags = tagsByChave.get(chave)
     if (!tags) continue
     const ente = enteById.get(v.ente_id)
-    if (!ente) continue
+    if (!ente || ente.tipo === 'capital') continue
     const val = v.valor_normalizado
     if (typeof val !== 'number' || !Number.isFinite(val)) continue
     for (const tagId of tags) {
@@ -206,11 +210,7 @@ async function main() {
     join(DEST, 'indice_long_por_objetivo.json'),
     await convertIndiceLong()
   )
-  for (const name of [
-    'detalhes_nacional',
-    'detalhes_estadual',
-    'detalhes_capitais',
-  ]) {
+  for (const name of ['detalhes_nacional', 'detalhes_estadual']) {
     writeJson(join(DEST, `${name}.json`), await convertDetalhes(name))
   }
   writeJson(
@@ -219,12 +219,17 @@ async function main() {
     false
   )
 
-  for (const name of ['ente', 'fonte', 'indicador', 'objetivo_engd', 'tag']) {
+  for (const name of ['fonte', 'indicador', 'objetivo_engd', 'tag']) {
     const from = join(SRC, 'dados', `${name}.json`)
     const to = join(DEST, 'dados', `${name}.json`)
     copyFileSync(from, to)
     console.log(`copied ${to}`)
   }
+
+  const entes = JSON.parse(
+    readFileSync(join(SRC, 'dados/ente.json'), 'utf8')
+  ).filter(e => e.tipo !== 'capital')
+  writeJson(join(DEST, 'dados/ente.json'), entes)
 
   writeJson(join(DEST, 'dados/indice_por_tag.json'), buildIndicePorTag())
   console.log('done.')

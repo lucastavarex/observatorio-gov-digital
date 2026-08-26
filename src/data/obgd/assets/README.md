@@ -11,10 +11,9 @@ assets/
 ├── indice_long_por_objetivo.json
 ├── detalhes_nacional.json
 ├── detalhes_estadual.json
-├── detalhes_capitais.json
 ├── detalhes_municipios.json      # 319 municípios ≥ 100 mil hab.
 └── dados/
-    ├── ente.json                 # 374 entes (BR + 27 UF + 27 capitais + 319 municípios)
+    ├── ente.json                 # 347 entes (BR + 27 UF + 319 municípios)
     ├── fonte.json
     ├── indicador.json            # tags[] + audiencia
     ├── objetivo_engd.json
@@ -22,7 +21,7 @@ assets/
     └── indice_por_tag.json       # média valor_normalizado por (tipo × unidade × tag)
 ```
 
-Não versionar `indicador_valor.json` (~7,5 MB).
+Não versionar `indicador_valor.json` (~7,5 MB). Não emitir `detalhes_capitais.json` (recorte Capitais removido da UI).
 
 ## Atualizar após nova entrega
 
@@ -35,10 +34,11 @@ node --max-old-space-size=4096 scripts/sync-obgd-assets-from-v4.mjs
 O script:
 
 1. Converte CSVs flat → JSON (`ano_indice` vazio → `2026`; `n_objetivos_com_dados` vazio nos municípios → `7`)
-2. Copia entidades canônicas (incl. `tag` e `indicador` com `tags`/`audiencia`)
-3. Pré-calcula `indice_por_tag.json` agrupando por `(tipo, codigo, tag)` — capitais e municípios com o mesmo IBGE não se misturam
-4. **Não** copia `indicador_valor.json`
+2. Filtra `tipo`/`nivel` `capital` (entrega bruta em assets-v4 pode ainda trazer capitais)
+3. Copia entidades canônicas (incl. `tag` e `indicador` com `tags`/`audiencia`)
+4. Pré-calcula `indice_por_tag.json` agrupando por `(tipo, codigo, tag)` — sem linhas de capital
+5. **Não** copia `indicador_valor.json`
 
-Em seguida, conferir smoke em ranking/indicadores nos quatro recortes (federal, estadual, capitais, municípios) e commitar `src/data/obgd/assets/`.
+Em seguida, conferir smoke em ranking/indicadores nos três recortes (federal, estadual, municípios) e commitar `src/data/obgd/assets/`.
 
 O script legado `scripts/sync-obgd-assets-from-v3.mjs` permanece só como histórico.

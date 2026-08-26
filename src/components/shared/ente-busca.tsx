@@ -7,7 +7,7 @@ import { Input } from '@/components/custom/input'
 export function EnteBusca({
   value,
   onChange,
-  placeholder = 'Buscar por nome ou UF…',
+  placeholder = 'Buscar por município ou sigla da UF…',
 }: {
   value: string
   onChange: (value: string) => void

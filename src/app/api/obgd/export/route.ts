@@ -7,7 +7,7 @@ import {
 } from '@/data/obgd/export-rows'
 import type { NivelKey } from '@/data/obgd/queries'
 
-const NIVEIS: NivelKey[] = ['federal', 'estadual', 'municipal', 'municipios']
+const NIVEIS: NivelKey[] = ['federal', 'estadual', 'municipios']
 
 /**
  * GET /api/obgd/export?nivel=estadual&conceptId=tic_gov/B1

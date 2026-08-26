@@ -346,10 +346,10 @@ export function IndicadoresExplorer({
           Explorar indicadores
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Compare o governo federal, os estados, as capitais e os municípios com
-          100 mil habitantes ou mais nos objetivos da ENGD ou em categorias
-          temáticas. As notas vêm de indicadores de fontes públicas — sem
-          precisar de uma média geral entre objetivos.{' '}
+          Compare o governo federal, os estados e os municípios com 100 mil
+          habitantes ou mais nos objetivos da ENGD ou em categorias temáticas.
+          As notas vêm de indicadores de fontes públicas — sem precisar de uma
+          média geral entre objetivos.{' '}
           <Link
             href="/metodologia"
             className="font-medium text-primary underline-offset-2 hover:underline"
@@ -375,6 +375,11 @@ export function IndicadoresExplorer({
                 </FilterPill>
               ))}
             </div>
+            {nivelKey === 'municipios' && (
+              <p className="mt-3 text-muted-foreground text-xs leading-relaxed">
+                Municípios com 100 mil habitantes ou mais.
+              </p>
+            )}
           </div>
 
           <div className="lg:dash-l lg:pl-8">

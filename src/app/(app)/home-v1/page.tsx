@@ -36,7 +36,7 @@ export default async function HomeV1Page() {
     {
       titulo: 'Compare o desempenho de cada ente',
       texto:
-        'Notas de desenvolvimento digital para o governo federal, os 27 estados, as 27 capitais e os municípios com 100 mil habitantes ou mais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
+        'Notas de desenvolvimento digital para o governo federal, os 27 estados e os municípios com 100 mil habitantes ou mais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
       cta: { label: 'Explorar indicadores', href: link('/indicadores') },
       visual: <VisualPerfil entes={estadual.entes} medias={mediasEstadual} />,
     },

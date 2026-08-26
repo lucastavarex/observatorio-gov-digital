@@ -27,7 +27,7 @@ import { cn } from '@/lib/utils'
 export const metadata: Metadata = {
   title: 'Home',
   description:
-    'Acompanhe, compare e explore o desempenho do governo federal, dos estados, das capitais e dos municípios com 100 mil habitantes ou mais nos dez objetivos da ENGD.',
+    'Acompanhe, compare e explore o desempenho do governo federal, dos estados e dos municípios com 100 mil habitantes ou mais nos dez objetivos da ENGD.',
 }
 
 function getNivelEstadual() {
@@ -91,7 +91,7 @@ export default async function HomePage() {
     {
       titulo: 'Indicadores por ente',
       texto:
-        'Notas de desenvolvimento digital para o governo federal, os 27 estados, as 27 capitais e os municípios com 100 mil habitantes ou mais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
+        'Notas de desenvolvimento digital para o governo federal, os 27 estados e os municípios com 100 mil habitantes ou mais, nos dez objetivos da ENGD. Radares comparam o perfil de cada um com a média do nível.',
       cta: { label: 'Explorar indicadores', href: link('/indicadores') },
       visual: <VisualPerfil entes={estadual.entes} medias={mediasEstadual} />,
       show: true,
@@ -146,8 +146,8 @@ export default async function HomePage() {
           />
           <p className="mx-auto mt-0 max-w-3xl text-muted-foreground text-sm leading-relaxed sm:text-base">
             Acompanhe, compare e explore o desempenho do governo federal, dos
-            estados, das capitais e dos municípios com 100 mil habitantes ou
-            mais nos dez objetivos da Estratégia Nacional de Governo Digital.
+            estados e dos municípios com 100 mil habitantes ou mais nos dez
+            objetivos da Estratégia Nacional de Governo Digital.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button
