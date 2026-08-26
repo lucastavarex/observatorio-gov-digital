@@ -35,10 +35,10 @@ export function parseIndicadoresSearchParams(
   sp: URLSearchParams | { get(name: string): string | null }
 ): IndicadoresFiltros {
   const nivelRaw = sp.get('nivel')
-  const nivel =
+  const nivel: NivelKey =
     nivelRaw && NIVEIS_VALIDOS.has(nivelRaw as NivelKey)
       ? (nivelRaw as NivelKey)
-      : null
+      : 'federal'
 
   const por: IndicadoresModo =
     sp.get('por') === 'tematicas' ? 'tematicas' : 'objetivos'
@@ -53,7 +53,7 @@ export function parseIndicadoresSearchParams(
     .map(s => s.trim())
     .filter(Boolean)
 
-  const entes = nivel ? entesValidos(nivel, entesBrutos) : []
+  const entes = entesValidos(nivel, entesBrutos)
 
   return { nivel, entes, por, tema }
 }
