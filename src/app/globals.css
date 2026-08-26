@@ -99,7 +99,7 @@
   --chart-2: #e08a2e;
   --chart-3: #2f9e6b;
   --chart-4: #94a3b8;
-  --chart-5: oklch(0.769 0.188 70.08);
+  --chart-5: #7c6bc4;
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
@@ -168,7 +168,7 @@
   --chart-2: #e08a2e;
   --chart-3: #2f9e6b;
   --chart-4: #94a3b8;
-  --chart-5: oklch(0.269 0 0);
+  --chart-5: #a78bfa;
   --radius: 0.6rem;
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
