@@ -4,12 +4,12 @@ import { Download, Loader2 } from 'lucide-react'
 import * as React from 'react'
 
 type ObgdFonteDownloadButtonProps = {
-  metodologiaSlug: string
+  fonteId: string
   fonteNome: string
 }
 
 export function ObgdFonteDownloadButton({
-  metodologiaSlug,
+  fonteId,
   fonteNome,
 }: ObgdFonteDownloadButtonProps) {
   const [baixando, setBaixando] = React.useState(false)
@@ -20,7 +20,7 @@ export function ObgdFonteDownloadButton({
     setErro(null)
     try {
       const res = await fetch(
-        `/api/obgd/export?metodologiaSlug=${encodeURIComponent(metodologiaSlug)}`
+        `/api/obgd/export?fonteId=${encodeURIComponent(fonteId)}`
       )
       if (!res.ok) {
         const body = (await res.json().catch(() => null)) as {
@@ -31,7 +31,7 @@ export function ObgdFonteDownloadButton({
       const blob = await res.blob()
       const cd = res.headers.get('Content-Disposition')
       const match = cd?.match(/filename="([^"]+)"/)
-      const filename = match?.[1] ?? `obgd-fonte-${metodologiaSlug}.csv`
+      const filename = match?.[1] ?? `obgd-fonte-${fonteId}.csv`
       const url = URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.href = url

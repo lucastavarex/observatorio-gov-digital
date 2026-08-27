@@ -292,7 +292,7 @@ Se a entrega voltar a incluir JSON flat oficiais com `ano_indice` preenchido, o 
 
 ## 12. Downloads curados (CSV)
 
-A plataforma **não** hospeda microdados brutos das fontes. O download entrega o recorte normalizado usado no índice via `GET /api/obgd/export` (por `conceptId`+`nivel` ou por fonte/`metodologiaSlug`).
+A plataforma **não** hospeda microdados brutos das fontes. O download entrega o recorte normalizado usado no índice via `GET /api/obgd/export` (por `conceptId`+`nivel` ou por `fonteId`; `metodologiaSlug` permanece como modo legado por órgão).
 
 Documentação completa (fluxo, schema, UI e status de alinhamento): [`export-csv-obgd.md`](./export-csv-obgd.md).
 

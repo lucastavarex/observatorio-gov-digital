@@ -10,6 +10,7 @@ import {
   ObjetivosRadar,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
+import { TourTriggerButton } from '@/components/guided-tour/tour-trigger-button'
 import { EntendaGraficoTip } from '@/components/indicadores/entenda-grafico-panel'
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
 import { EnteBusca } from '@/components/shared/ente-busca'
@@ -50,6 +51,8 @@ import {
   tematicasComCobertura,
   variaveisPorTematica,
 } from '@/data/tematicas'
+import { INDICADORES_TOUR_STEPS } from '@/data/tour-copy'
+import { useGuidedTour } from '@/hooks/use-guided-tour'
 import { ENTE_BUSCA_LIMIAR, entePassaBusca } from '@/lib/ente-busca'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { bandeiraSrc } from '@/lib/geo/entes-geo'
@@ -87,6 +90,11 @@ export function IndicadoresExplorer({
 }) {
   const router = useRouter()
   const { link } = usePlatformVariant()
+  const { startTour } = useGuidedTour({
+    id: 'indicadores',
+    steps: INDICADORES_TOUR_STEPS,
+    readySelector: '[data-tour="indicadores-nivel"]',
+  })
   const [filtros, setFiltros] = React.useState(filtrosServidor)
   const filtrosKey = indicadoresHref(filtrosServidor)
   const [prevFiltrosKey, setPrevFiltrosKey] = React.useState(filtrosKey)
@@ -339,27 +347,30 @@ export function IndicadoresExplorer({
   return (
     <section className="pb-12">
       <div className="px-6 pt-28 pb-16 sm:px-10">
-        <span className="text-sm font-medium text-muted-foreground">
-          Indicadores
-        </span>
-        <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
-          Explorar indicadores
-        </h1>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Compare o governo federal, os estados e os municípios com 100 mil
-          habitantes ou mais nos objetivos da ENGD ou em categorias temáticas.
-          As notas vêm de indicadores de fontes públicas — sem precisar de uma
-          média geral entre objetivos.{' '}
-          <Link
-            href="/metodologia"
-            className="font-medium text-primary underline-offset-2 hover:underline"
-          >
-            Veja a metodologia
-          </Link>
-        </p>
+        <div data-tour="indicadores-intro">
+          <span className="text-sm font-medium text-muted-foreground">
+            Indicadores
+          </span>
+          <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
+            Explorar indicadores
+          </h1>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+            Compare o governo federal, os estados e os municípios com 100 mil
+            habitantes ou mais nos objetivos da ENGD ou em categorias temáticas.
+            As notas vêm de indicadores de fontes públicas — sem precisar de uma
+            média geral entre objetivos.{' '}
+            <Link
+              href="/metodologia"
+              className="font-medium text-primary underline-offset-2 hover:underline"
+            >
+              Veja a metodologia
+            </Link>
+          </p>
+          <TourTriggerButton onClick={() => startTour()} />
+        </div>
 
         <div className="dash-y -mx-6 mt-10 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
-          <div>
+          <div data-tour="indicadores-nivel">
             <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
               Nível de governo
             </span>
@@ -382,7 +393,7 @@ export function IndicadoresExplorer({
             )}
           </div>
 
-          <div className="lg:dash-l lg:pl-8">
+          <div className="lg:dash-l lg:pl-8" data-tour="indicadores-modo">
             <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
               Ordenar por
             </span>
@@ -407,7 +418,10 @@ export function IndicadoresExplorer({
           <div
             className={cn('grid', porObjetivos ? 'grid-cols-1' : 'grid-cols-2')}
           >
-            <div className={cn('flex flex-col', !porObjetivos && 'pr-4')}>
+            <div
+              className={cn('flex flex-col', !porObjetivos && 'pr-4')}
+              data-tour="indicadores-entes"
+            >
               <div className="flex items-baseline justify-between gap-2 px-3 pb-2">
                 <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
                   Ente
@@ -575,7 +589,7 @@ export function IndicadoresExplorer({
             )}
           </div>
 
-          <div>
+          <div data-tour="indicadores-resultado">
             {completo ? (
               <div className="space-y-8">
                 {porObjetivos ? (
@@ -808,7 +822,7 @@ export function IndicadoresExplorer({
           </div>
         </div>
 
-        <div className="dash-t mt-16 pt-10">
+        <div className="dash-t mt-16 pt-10" data-tour="indicadores-ajuda">
           <h2 className="font-bold text-foreground text-lg tracking-tight">
             Perguntas frequentes
           </h2>

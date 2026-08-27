@@ -60,6 +60,8 @@ src/
 
 **Dados OBGD / tags:** fonte versionada em `src/data/obgd/assets/`; sync a partir de `local_assets/dados-v3` documentado em [`docs/integracao-dados-v3-tags.md`](docs/integracao-dados-v3-tags.md). Status de produto: [`docs/acompanhamento-plataforma.md`](docs/acompanhamento-plataforma.md).
 
+**Disclaimer de variáveis no ranking:** contagem e lista do painel por nível × objetivo em [`docs/ranking-disclaimer-variaveis.md`](docs/ranking-disclaimer-variaveis.md).
+
 ---
 
 ## Os 10 objetivos da ENGD

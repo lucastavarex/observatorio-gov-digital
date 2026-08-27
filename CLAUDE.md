@@ -43,6 +43,8 @@ O Brasil ocupa posição de destaque no OECD Digital Government Index (nota 0,79
 
 **Formulário de contato (`/contato`):** envio de e-mail via Resend + Server Action. Setup, variáveis de ambiente e operação: `docs/contato-resend.md`.
 
+**Disclaimer de variáveis no ranking:** painel por nível × objetivo (contagem + lista): `docs/ranking-disclaimer-variaveis.md`.
+
 **Metodologia (Markdown → páginas + PDF):** conteúdo MDX em `/metodologia`, registro de capítulos, sync com `plataforma` e PDF estático: `docs/metodologia-mdx-pdf.md`.
 
 ## Os 10 objetivos da ENGD

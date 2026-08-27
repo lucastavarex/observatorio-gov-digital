@@ -346,6 +346,128 @@
   opacity: 1 !important;
 }
 
+/* Guided tour (Driver.js) — tema com tokens do portal */
+.obgd-driver-popover {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  color: var(--foreground);
+  background-color: var(--popover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 20rem;
+}
+
+.obgd-driver-popover .driver-popover-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--foreground);
+  line-height: 1.4;
+  padding-right: 1.5rem;
+}
+
+.obgd-driver-popover .driver-popover-description {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  line-height: 1.55;
+}
+
+.obgd-driver-popover .driver-popover-progress-text {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.obgd-driver-popover .driver-popover-close-btn {
+  color: var(--muted-foreground);
+}
+
+.obgd-driver-popover .driver-popover-close-btn:hover,
+.obgd-driver-popover .driver-popover-close-btn:focus {
+  color: var(--foreground);
+}
+
+.obgd-driver-popover .driver-popover-prev-btn,
+.obgd-driver-popover .driver-popover-next-btn {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(var(--radius) * 0.8);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.obgd-driver-popover .driver-popover-prev-btn {
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.obgd-driver-popover .driver-popover-prev-btn:hover,
+.obgd-driver-popover .driver-popover-prev-btn:focus {
+  background-color: var(--muted);
+}
+
+.obgd-driver-popover .driver-popover-next-btn {
+  border: 1px solid transparent;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  text-shadow: none;
+}
+
+.obgd-driver-popover .driver-popover-next-btn:hover,
+.obgd-driver-popover .driver-popover-next-btn:focus {
+  background-color: color-mix(in oklch, var(--primary) 90%, black);
+}
+
+.obgd-driver-popover .driver-popover-navigation-btns {
+  gap: 0.5rem;
+}
+
+/* Seta triangular (técnica de borders) — não usar border-color em todos os lados */
+.obgd-driver-popover .driver-popover-arrow {
+  border: 6px solid var(--popover);
+}
+
+.obgd-driver-popover .driver-popover-arrow-side-left {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.obgd-driver-popover .driver-popover-arrow-side-right {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.obgd-driver-popover .driver-popover-arrow-side-top {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.obgd-driver-popover .driver-popover-arrow-side-bottom {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .driver-active .driver-overlay,
+  .driver-active * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
 /* ScrollRevealText — máscaras por palavra (GSAP + SplitType) */
 /* Antes do JS: cor “não revelada” (evita flicker do texto cheio → mascarado). */
 .split-word:not([data-ready]) {

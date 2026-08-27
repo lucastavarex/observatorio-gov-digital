@@ -232,6 +232,17 @@ async function main() {
   writeJson(join(DEST, 'dados/ente.json'), entes)
 
   writeJson(join(DEST, 'dados/indice_por_tag.json'), buildIndicePorTag())
+
+  const { spawnSync } = await import('node:child_process')
+  const buildVars = spawnSync(
+    process.execPath,
+    [join(__dirname, 'build-variaveis-por-objetivo-nivel.mjs')],
+    { stdio: 'inherit' }
+  )
+  if (buildVars.status !== 0) {
+    throw new Error('build-variaveis-por-objetivo-nivel.mjs failed')
+  }
+
   console.log('done.')
 }
 

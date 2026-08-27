@@ -100,24 +100,6 @@ export function oQueAvaliaObjetivo(slug: string): {
   )
 }
 
-/** Mapeia id da fonte OBGD → slug da página `/metodologia/fontes/[slug]`. */
-const FONTE_ID_PARA_METODOLOGIA: Record<string, string> = {
-  tic_gov: 'cetic-br',
-  tic_saude: 'cetic-br',
-  tic_educacao: 'cetic-br',
-  tic_cultura: 'cetic-br',
-  tic_domicilios: 'cetic-br',
-  iesgo: 'tcu',
-  iospd: 'abep-tic',
-  anatel: 'anatel',
-  censo_escolar: 'inep',
-  pnad_tic: 'ibge',
-  munic: 'ibge',
-  estadic: 'ibge',
-  sgd_sat: 'mgi',
-  igovsisp: 'mgi',
-}
-
 export type FonteResumo = {
   id: string
   nome: string
@@ -127,8 +109,9 @@ export type FonteResumo = {
 }
 
 function hrefFonte(fonteId: string): string {
-  const slug = FONTE_ID_PARA_METODOLOGIA[fonteId]
-  return slug ? `/metodologia/fontes/${slug}` : '/metodologia'
+  return fonteById.has(fonteId)
+    ? `/metodologia/fontes/${fonteId}`
+    : '/metodologia'
 }
 
 /** Fontes distintas dos indicadores ativos de um objetivo (1–10). */
