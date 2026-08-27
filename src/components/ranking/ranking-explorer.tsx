@@ -284,22 +284,13 @@ export function RankingExplorer({
                   ))}
             </div>
             {modo === 'objetivos' && objetivo && (
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                <span className="font-medium text-foreground">
-                  Este objetivo avalia:{' '}
-                </span>
-                {oQueAvaliaObjetivo(objetivo.slug).blurb}
-              </p>
+              <RankingVariaveisDisclaimer
+                blurb={oQueAvaliaObjetivo(objetivo.slug).blurb}
+                variaveis={variaveisRecorte}
+                objetivoTitulo={objetivo.title}
+                nivelLabel={nivel.label}
+              />
             )}
-            {modo === 'objetivos' &&
-              variaveisRecorte.length > 0 &&
-              objetivo && (
-                <RankingVariaveisDisclaimer
-                  variaveis={variaveisRecorte}
-                  objetivoTitulo={objetivo.title}
-                  nivelLabel={nivel.label}
-                />
-              )}
             {modo === 'tematicas' && tematica.descricao && (
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                 {tematica.descricao}

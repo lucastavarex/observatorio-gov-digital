@@ -92,15 +92,15 @@ export const RANKING_TOUR_STEPS: TourStepCopy[] = [
     element: '[data-tour="ranking-selecao"]',
     title: 'Escolha o que ordena a lista',
     description:
-      'Selecione um objetivo (ou tema). O texto “Este objetivo avalia…” resume o que está sendo medido naquele recorte.',
+      'Selecione um objetivo (ou tema). O card abaixo resume o que está sendo medido e quantas variáveis entram no índice neste nível.',
     side: 'bottom',
     align: 'start',
   },
   {
     element: '[data-tour="ranking-variaveis"]',
-    title: 'Quais variáveis entram no índice',
+    title: 'O que o índice mede',
     description:
-      'O aviso indica quantas variáveis compõem o índice neste nível. Em “Ver quais são” você vê a lista completa com as fontes.',
+      'O card explica o objetivo e quantas variáveis compõem o índice neste nível. Em “Ver quais são” você vê a lista completa com as fontes.',
     side: 'bottom',
     align: 'start',
   },

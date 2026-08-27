@@ -97,7 +97,7 @@ export default async function ObjetivoPage({
         </div>
 
         <div className="mt-16">
-          <h2 className="text-sm font-bold tracking-tight text-foreground">
+          <h2 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text text-2xl font-bold leading-tight tracking-tight text-transparent sm:text-3xl">
             Indicadores que compõem este objetivo
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
