@@ -697,11 +697,11 @@ export function IndicadoresExplorer({
                         {!varsTagLoading &&
                           varsTagNotas &&
                           varsTagNotas.length > 0 && (
-                            <ul className="mt-4 grid grid-cols-[minmax(0,1fr)_auto_auto] gap-x-3 border-t">
+                            <ul className="mt-4 border-t">
                               {varsTagNotas.map(v => (
                                 <li
                                   key={v.slug}
-                                  className="col-span-3 grid grid-cols-subgrid items-center border-b py-3 last:border-b-0"
+                                  className="flex items-center justify-between gap-3 border-b py-3 last:border-b-0"
                                 >
                                   <span className="min-w-0">
                                     <span className="block text-foreground text-xs font-medium">
@@ -709,6 +709,31 @@ export function IndicadoresExplorer({
                                     </span>
                                     <span className="mt-0.5 block text-[10px] text-muted-foreground uppercase tracking-wide">
                                       {v.fonte}
+                                    </span>
+                                    <span className="mt-2 flex flex-wrap gap-1.5">
+                                      {entesSelecionados.map((e, idx) => {
+                                        const nota = v.notas[e.slug]
+                                        return (
+                                          <span
+                                            key={e.slug}
+                                            className="inline-flex items-center gap-1.5 rounded-md bg-muted px-2 py-1 text-xs tabular-nums text-foreground"
+                                            title={e.nome}
+                                          >
+                                            {entesSelecionados.length > 1 && (
+                                              <span
+                                                aria-hidden="true"
+                                                className="size-1.5 shrink-0 rounded-full"
+                                                style={{
+                                                  backgroundColor: CORES[idx],
+                                                }}
+                                              />
+                                            )}
+                                            {nota == null
+                                              ? '—'
+                                              : formatScore(nota)}
+                                          </span>
+                                        )
+                                      })}
                                     </span>
                                   </span>
                                   {nivelKey ? (
@@ -724,33 +749,7 @@ export function IndicadoresExplorer({
                                       conceptId={v.conceptId}
                                       subItens={v.subItens}
                                     />
-                                  ) : (
-                                    <span />
-                                  )}
-                                  <span className="flex flex-col items-end gap-1">
-                                    {entesSelecionados.map((e, idx) => {
-                                      const nota = v.notas[e.slug]
-                                      return (
-                                        <span
-                                          key={e.slug}
-                                          className="inline-flex items-center gap-1.5 text-xs tabular-nums text-foreground"
-                                        >
-                                          {entesSelecionados.length > 1 && (
-                                            <span
-                                              aria-hidden="true"
-                                              className="size-1.5 rounded-full"
-                                              style={{
-                                                backgroundColor: CORES[idx],
-                                              }}
-                                            />
-                                          )}
-                                          {nota == null
-                                            ? '—'
-                                            : formatScore(nota)}
-                                        </span>
-                                      )
-                                    })}
-                                  </span>
+                                  ) : null}
                                 </li>
                               ))}
                             </ul>
