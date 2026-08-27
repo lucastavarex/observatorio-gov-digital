@@ -346,9 +346,11 @@
   opacity: 1 !important;
 }
 
-/* Guided tour (Driver.js) — tema com tokens do portal */
-.obgd-driver-popover {
-  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+/* Guided tour (Driver.js) — tema com tokens do portal.
+ * A fonte vem de --driver-popover-font-family (setada em run-tour.ts).
+ * Aqui: cores, layout e botões (all:unset do Driver zera font-family). */
+.driver-popover.obgd-driver-popover {
+  letter-spacing: var(--tracking-normal);
   color: var(--foreground);
   background-color: var(--popover);
   border: 1px solid var(--border);
@@ -377,6 +379,7 @@
 }
 
 .obgd-driver-popover .driver-popover-close-btn {
+  font-family: inherit;
   color: var(--muted-foreground);
 }
 
@@ -395,9 +398,11 @@
   justify-content: center;
   border-radius: calc(var(--radius) * 0.8);
   padding: 0.375rem 0.75rem;
+  font-family: inherit;
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25;
+  letter-spacing: var(--tracking-normal);
   transition:
     background-color 0.15s ease,
     color 0.15s ease,

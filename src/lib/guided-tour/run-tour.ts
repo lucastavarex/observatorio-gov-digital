@@ -30,10 +30,16 @@ export async function runGuidedTour({
   activeDestroy?.()
   activeDestroy = null
 
-  const [{ driver }, _css] = await Promise.all([
+  const [{ driver }] = await Promise.all([
     import('driver.js'),
     import('driver.js/dist/driver.css'),
   ])
+
+  // Driver usa var(--driver-popover-font-family, Helvetica/Inter…). Força a fonte do site.
+  document.documentElement.style.setProperty(
+    '--driver-popover-font-family',
+    getComputedStyle(document.body).fontFamily
+  )
 
   const driveSteps = steps
     .filter(step => {

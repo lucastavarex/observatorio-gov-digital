@@ -208,7 +208,7 @@ export async function HomeV1Page() {
           >
             <div className="lg:pr-10">
               {'eyebrow' in r && r.eyebrow ? (
-                <span className="font-medium text-primary text-sm">
+                <span className="font-medium text-muted-foreground text-sm">
                   {r.eyebrow}
                 </span>
               ) : null}
@@ -220,7 +220,7 @@ export async function HomeV1Page() {
               >
                 {r.titulo}
               </h2>
-              <p className="mt-4 max-w-sm text-muted-foreground text-sm leading-relaxed">
+              <p className="mt-4 max-w-sm text-muted-foreground text-sm leading-relaxed sm:text-base">
                 {r.texto}
               </p>
               <Link
@@ -313,12 +313,12 @@ export async function HomeV1Page() {
         <h2 className="mt-3 max-w-3xl font-bold text-2xl text-foreground leading-tight tracking-tight sm:text-3xl">
           Os dez objetivos da Estratégia Nacional de Governo Digital
         </h2>
-        <p className="mt-4 max-w-2xl text-muted-foreground text-sm leading-relaxed">
+        <p className="mt-4 max-w-2xl text-muted-foreground text-sm leading-relaxed sm:text-base">
           A estrutura do Observatório conecta os indicadores aos objetivos da
           ENGD, ajudando o usuário a entender não apenas o número, mas também o
           tema de política pública ao qual ele se relaciona.
         </p>
-        <p className="mt-2 max-w-2xl text-muted-foreground text-sm leading-relaxed">
+        <p className="mt-2 max-w-2xl text-muted-foreground text-sm leading-relaxed sm:text-base">
           Clique em um objetivo para ver uma explicação resumida.
         </p>
         <div className="dash-t -mx-6 mt-10 sm:-mx-10">

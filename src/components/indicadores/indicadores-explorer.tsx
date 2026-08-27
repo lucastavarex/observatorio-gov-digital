@@ -10,7 +10,6 @@ import {
   ObjetivosRadar,
   type RadarSerie,
 } from '@/components/charts/objetivos-radar'
-import { TourTriggerButton } from '@/components/guided-tour/tour-trigger-button'
 import { EntendaGraficoTip } from '@/components/indicadores/entenda-grafico-panel'
 import { BandeiraEnte } from '@/components/shared/bandeira-ente'
 import { EnteBusca } from '@/components/shared/ente-busca'
@@ -359,14 +358,14 @@ export function IndicadoresExplorer({
             habitantes ou mais nos objetivos da ENGD ou em categorias temáticas.
             As notas vêm de indicadores de fontes públicas — sem precisar de uma
             média geral entre objetivos.{' '}
-            <Link
-              href="/metodologia"
+            <button
+              type="button"
+              onClick={() => startTour()}
               className="font-medium text-primary underline-offset-2 hover:underline"
             >
-              Veja a metodologia
-            </Link>
+              Como funciona
+            </button>
           </p>
-          <TourTriggerButton onClick={() => startTour()} />
         </div>
 
         <div className="dash-y -mx-6 mt-10 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">

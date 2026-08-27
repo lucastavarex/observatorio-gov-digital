@@ -3,7 +3,6 @@
 import { useRouter } from 'next/navigation'
 import * as React from 'react'
 import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
-import { TourTriggerButton } from '@/components/guided-tour/tour-trigger-button'
 import { EnteRankingList } from '@/components/ranking/ente-ranking-list'
 import { RankingVariaveisDisclaimer } from '@/components/ranking/ranking-variaveis-disclaimer'
 import { FilterPill } from '@/components/shared/filter-pill'
@@ -190,9 +189,15 @@ export function RankingExplorer({
           <p className="mt-6 max-w-2xl text-base text-muted-foreground leading-relaxed">
             Escolha um nível de governo e um objetivo da ENGD (ou uma categoria
             temática) para ordenar os entes pelo índice correspondente. Não há
-            média geral entre objetivos.
+            média geral entre objetivos.{' '}
+            <button
+              type="button"
+              onClick={() => startTour()}
+              className="font-medium text-primary underline-offset-2 hover:underline"
+            >
+              Como funciona
+            </button>
           </p>
-          <TourTriggerButton onClick={() => startTour()} />
         </div>
 
         <div className="dash-y -mx-6 mt-8 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
