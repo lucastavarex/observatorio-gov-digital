@@ -29,7 +29,11 @@ export function RankingVariaveisDisclaimer({
     n === 1 ? '1 variável' : `${n.toLocaleString('pt-BR')} variáveis`
 
   return (
-    <div className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+    <div
+      className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground"
+      data-tour="ranking-variaveis"
+    >
+      {' '}
       <p>
         Neste nível, este índice usa {rotulo}.{' '}
         <Dialog>

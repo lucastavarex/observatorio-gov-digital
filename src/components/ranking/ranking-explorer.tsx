@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation'
 import * as React from 'react'
 import { DistribuicaoChart } from '@/components/charts/distribuicao-chart'
+import { TourTriggerButton } from '@/components/guided-tour/tour-trigger-button'
 import { EnteRankingList } from '@/components/ranking/ente-ranking-list'
 import { RankingVariaveisDisclaimer } from '@/components/ranking/ranking-variaveis-disclaimer'
 import { FilterPill } from '@/components/shared/filter-pill'
@@ -29,6 +30,8 @@ import {
   tematicas,
   tematicasComCobertura,
 } from '@/data/tematicas'
+import { RANKING_TOUR_STEPS } from '@/data/tour-copy'
+import { useGuidedTour } from '@/hooks/use-guided-tour'
 import { usePlatformVariant } from '@/lib/features/use-platform-variant'
 import { ufDeEnte } from '@/lib/geo/entes-geo'
 import { type RankingFiltros, rankingHref } from '@/lib/ranking-url'
@@ -42,6 +45,11 @@ export function RankingExplorer({
 }) {
   const router = useRouter()
   const { link } = usePlatformVariant()
+  const { startTour } = useGuidedTour({
+    id: 'ranking',
+    steps: RANKING_TOUR_STEPS,
+    readySelector: '[data-tour="ranking-nivel"]',
+  })
   const [filtros, setFiltros] = React.useState(filtrosServidor)
   const filtrosKey = rankingHref(filtrosServidor)
   const [prevFiltrosKey, setPrevFiltrosKey] = React.useState(filtrosKey)
@@ -170,22 +178,25 @@ export function RankingExplorer({
   return (
     <section className="pb-12">
       <div className="px-6 pt-28 pb-16 sm:px-10">
-        <span className="text-sm font-medium text-muted-foreground">
-          Ranking
-        </span>
-        <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
-          Ranking de Desenvolvimento
-          <br />
-          Digital dos Governos
-        </h1>
-        <p className="mt-6 max-w-2xl text-base text-muted-foreground leading-relaxed">
-          Escolha um nível de governo e um objetivo da ENGD (ou uma categoria
-          temática) para ordenar os entes pelo índice correspondente. Não há
-          média geral entre objetivos.
-        </p>
+        <div data-tour="ranking-intro">
+          <span className="text-sm font-medium text-muted-foreground">
+            Ranking
+          </span>
+          <h1 className="bg-linear-to-br from-primary to-primary-glow bg-clip-text font-bold text-4xl text-transparent leading-tight tracking-tight sm:text-5xl">
+            Ranking de Desenvolvimento
+            <br />
+            Digital dos Governos
+          </h1>
+          <p className="mt-6 max-w-2xl text-base text-muted-foreground leading-relaxed">
+            Escolha um nível de governo e um objetivo da ENGD (ou uma categoria
+            temática) para ordenar os entes pelo índice correspondente. Não há
+            média geral entre objetivos.
+          </p>
+          <TourTriggerButton onClick={() => startTour()} />
+        </div>
 
         <div className="dash-y -mx-6 mt-8 grid gap-8 px-6 pt-8 pb-8 sm:-mx-10 sm:px-10 lg:grid-cols-2 lg:gap-0">
-          <div>
+          <div data-tour="ranking-nivel">
             <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
               Nível de governo
             </span>
@@ -212,7 +223,7 @@ export function RankingExplorer({
           </div>
 
           {nivel.isRanking && (
-            <div className="lg:dash-l lg:pl-8">
+            <div className="lg:dash-l lg:pl-8" data-tour="ranking-modo">
               <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
                 Ordenar por
               </span>
@@ -235,7 +246,10 @@ export function RankingExplorer({
         </div>
 
         {nivel.isRanking && (
-          <div className="-mx-6 mt-0 px-6 py-6 sm:-mx-10 sm:px-10">
+          <div
+            className="-mx-6 mt-0 px-6 py-6 sm:-mx-10 sm:px-10"
+            data-tour="ranking-selecao"
+          >
             <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">
               {modo === 'objetivos' ? 'Objetivo da ENGD' : 'Categoria temática'}
             </span>
@@ -290,7 +304,10 @@ export function RankingExplorer({
         )}
 
         {nivel.isRanking && lista.length >= 5 && (
-          <div className="dash-t -mx-6 mt-12 px-6 pt-10 sm:-mx-10 sm:px-10">
+          <div
+            className="dash-t -mx-6 mt-12 px-6 pt-10 sm:-mx-10 sm:px-10"
+            data-tour="ranking-distribuicao"
+          >
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
                 <h2 className="font-bold text-foreground text-sm">
@@ -342,7 +359,7 @@ export function RankingExplorer({
           </div>
         )}
 
-        <div className="mt-12">
+        <div className="mt-12" data-tour="ranking-lista">
           <EnteRankingList
             key={nivel.key}
             entes={lista}
